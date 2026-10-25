@@ -8,6 +8,9 @@ See also `maps/mass_requirements.md` and `maps/degrees_of_freedom.md`.
 - `registration_rate.py` — energy = registration rate, on the carrier.
 - `live_web_push.py` — the live relational web (D-arc joint action) kicked, web engagement.
 - `effective_mass.py` — ring-down frequency shift → effective mass & damping vs amplitude and κ.
+- `link_laws.py` — the two floor-grounded link laws (adiabatic w(ψ) with full variational force; first-order relaxational).
+- `pentagon_frustration.py` — the pentagonal vertex-figure (5 triangles) and the frustration ε, grounded in the carrier.
+- `pentagon_driver.py` — co-definition driven by the pentagonal 5-cycle circulation carrying ε.
 
 ## 1. energy = registration rate  [cold, verified]
 On the 120-icosian adjacency, the committed 2nd-order wave `ψ_{t+1}=2ψ_t−ψ_{t−1}−c²Lψ_t` has,
@@ -55,3 +58,26 @@ the floor: (i) the state-dependence form (co-definition weakens with |Δψ|²); 
 (iii) the ORDER — 1st-order relaxational (dissipative, = the structural arrow F2/F3 toward Haar) vs
 the D-arc's 2nd-order conservative. If co-definition is relaxational, the dissipative resistance is
 native, not an artifact.
+
+## 4. Floor-grounded link laws (`link_laws.py`)  [cold]
+Built the two laws the exp/κ decomposition pointed to, with the variational force done correctly
+(verified analytic gradV vs finite-diff, err 1.2e-8 — `ψ̈=−L[w]ψ` drops the ∂w/∂ψ term, which matters).
+- **Law A (adiabatic w(ψ), conservative):** a genuine REACTIVE effective-mass *increase* — m_eff=(ω_bare/ω_live)²
+  up to **1.22** (μ=12, A=2), scaling with amplitude² and μ. (The earlier "softening/lighter" was the
+  dropped-term artifact; done correctly, co-definition makes the mode genuinely heavier.)
+- **Law B (first-order relaxational, rate Γ):** adds genuine DISSIPATION (the structural arrow), damping
+  rate rising with Γ.
+So **fast co-definition → reactive inertia; lagging co-definition → dissipative resistance; the tick rate Γ
+sets the balance.** Remaining knobs: β (co-definition strength) and Γ (to be pinned to the tick).
+
+## 5. Pentagonal vertex-figure & frustration (`pentagon_frustration.py`, `pentagon_driver.py`)  [cold structure; additive driver near-null]
+The generative unit is the **pentagonal vertex-figure** (5 triangles around a point), not the bare triad;
+the out-of-plane apex gives the frustration **ε = 2π − 5·arccos(1/3) = 7.356°** (container 16) — the same ε
+that set the electron mass (m_e = 2π/120 − ε/10). Confirmed cold: **every one of the 720 edges has exactly 5
+common neighbours forming a clean 5-cycle** (the 5 tetrahedra around the edge, the {3,3,5} edge-figure). A
+circulation operator C_e(ψ)=Im Σ conj(ψ)ψ around each pentagon is 0 for a uniform-phase field, nonzero for a
+chiral one ("change needs the loop + phase"). **Driving co-definition by Φ=ε+C_e (additive) is near-null:**
+C_e (~0.01) ≪ ε (0.128), so additive ε is a uniform, trivial rescale. **Lesson:** a frustration entering as
+an additive *scalar* is uniform and trivial; **ε must enter as a FLUX / geometric phase** (holonomy ε threaded
+through each pentagon, ungaugeable because pentagons share edges), which gaps the spectrum = rest mass — the
+Koide-δ geometric-phase mechanism. Next: the ε-as-flux spectral test.
