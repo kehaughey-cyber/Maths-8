@@ -4,6 +4,12 @@
 
 Locked 2026-10-25. This replaces the older bottom-up objective (particle content → atoms). It is the single contract for Maths 8.
 
+## Why — the end the understanding serves
+
+Understanding is the method; what we can *do* with it is the point. The work is to understand gravity, magnetism, mass — why QFT and GR do not reconcile and how they in fact can — in order to put real **handles** on what we perceive as the substance of the universe. The handles are for something: a world with more abundance and less suffering; the resources a life rests on — high-quality food, clean water, power, clean air — made more available, more ubiquitous, more widely shared; a relationship with the ecosystem that is stewardship and cooperation rather than extraction; the **facilitation** of agency and flourishing, never the definition or enforcement of them.
+
+Reach is part of this, and it is an option, not a demand. On a short horizon, better handles on the substance of the universe bring exploration and resources that are beyond our current grasp within reach. On a long enough horizon, the ability to leave this planet is a condition of survival — without it, eventually, we do not continue. So the point is capability in service of life: the honestly-graded structure (what is forced vs. what is merely read) is the **means**; what it lets us do is the **end**. Reaching the irreducible roots is where *derivation* bottoms out — a stopping point to recognize honestly, never the finish line. A clean separation of forced-from-read, admired for its own sake with nothing ever turned, is itself the ceremony this project exists to escape (see `README.md`).
+
 ## What the question refuses to assume
 
 QFT imports Hilbert space; GR imports spacetime; QM imports probability. All three take their container as **pre-existent**. This project does not. Space, time, number, geometry, amplitude, probability are **readings** of one recursive act — observation and being — at different extents of coordination (triad / cell / collective; see `floor/`). There is no background. There is therefore nothing to *unify* and nothing to *reconcile*: unification is a **consequence** of there being one act, never a goal. Any sentence that says "reconcile X and Y" or "unify the N forces" has smuggled the duality back in, and is wrong.
