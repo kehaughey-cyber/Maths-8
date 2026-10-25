@@ -1,0 +1,359 @@
+0001 THE PRIME FRAMEWORK
+0002 Field Equations — Constants, Expressions, and Derived Equations · V3 (updated 13 July 2026; every change itemized in the Change Log)
+0003 The native equations of the framework, with a comprehensive constant/expression reference followed by a formal treatment of each equation: its derivation pathway (cross-referenced to the Proof Ladder rungs R1–R29) and its meaning or application. No quantity is founded on mass–energy equivalence. A contamination audit closes the document; every term is a group order, character/torsion angle, entropy, or element of ℚ(√5,√6). Measured masses appear only as external check values in the consistency layer, never in a derivation. All values below were regenerated from the 120 vertices of 2I.
+0004 1.  Comprehensive constants and expressions
+0005 THEOREM = unconditional; COND = conditional on arccos(1/3) (surviving only in δ); CONS = consistency (matched to a measured ratio); DEFINITION = notation or susceptibility, no content; IDENTIFICATION = a priced modelling step, declared; CANDIDATE = verified pending exact derivation.
+0006 1.1  Base and scaling constants
+0007 Symbol
+0008 Native expression
+0009 Value
+0010 Role
+0011 Grade
+0012 φ
+0013 (1+√5)/2
+0014 1.618034
+0015 golden ratio; M primitive eigenline; overlap φ/2
+0016 THEOREM
+0017 ψ
+0018 −1/φ
+0019 −0.618034
+0020 Galois partner; M covariant eigenline (φψ=−1)
+0021 THEOREM
+0022 φ/2
+0023 half the golden overlap
+0024 0.809017
+0025 adjacency overlap ⟨v,w⟩; tick contraction rate
+0026 THEOREM
+0027 gap
+0028 1 − φ/2 = 1/(2φ²)
+0029 0.190983
+0030 temporal-field relaxation gap
+0031 THEOREM
+0032 ω
+0033 e^{2πi/3}
+0034 (1+ω+ω²=0)
+0035 native hue root on ℂ³
+0036 THEOREM
+0037 1.2  Carrier and incidence
+0038 Symbol
+0039 Expression
+0040 Value
+0041 Role
+0042 Grade
+0043 |2I|
+0044 binary icosahedral order
+0045 120
+0046 carrier size (600-cell vertices)
+0047 THEOREM
+0048 deg, E, F, C
+0049 incidence of {3,3,5}
+0050 12, 720, 1200, 600
+0051 adjacency 12; χ(S³)=120−720+1200−600=0
+0052 THEOREM
+0053 diameter
+0054 graph diameter
+0055 5
+0056 causal depth of the temporal field
+0057 THEOREM
+0058 classes
+0059 conjugacy classes
+0060 9
+0061 sector map (R28)
+0062 THEOREM
+0063 1.3  Torsion, curvature, and gravity
+0064 Symbol
+0065 Native expression
+0066 Value
+0067 Role
+0068 Grade
+0069 Λ
+0070 2π/3 (metric dev., per-edge)
+0071 2.094395
+0072 edge-link development (SO(3) conv., F6)
+0073 THEOREM
+0074 —
+0075 2π/5 (group/Dirac dev., SO(3) convention)
+0076 1.256637
+0077 triangle development (see F6 convention)
+0078 THEOREM
+0079 κ
+0080 (π/3)² = ¼·(2π/3)²
+0081 1.096623
+0082 number/Milnor identity (gravity reading conjectural)
+0083 THEOREM (number)
+0084 κ/Λ
+0085 π/6
+0086 0.523599
+0087 quantum-to-vacuum ratio
+0088 THEOREM
+0089 G_nat
+0090 κ/gap := 2φ²π²/9
+0091 5.741991
+0092 DEFINITION (susceptibility := quantum/rate)
+0093 DEFINITION
+0094 ε
+0095 2π − 5·arccos(1/3)
+0096 7.356103°
+0097 flat Regge deficit (never closes)
+0098 THEOREM
+0099 arccos(1/3)
+0100 tetrahedral dihedral
+0101 70.528779°
+0102 the single conditional (δ only)
+0103 COND
+0104 1.4  Native constants √6 and prime 11
+0105 Symbol
+0106 Native expression
+0107 Value
+0108 Role
+0109 Grade
+0110 √6
+0111 √2·√3 (√2=A; √3=2·|Im| order-3)
+0112 2.449490
+0113 native constant (arccos-free)
+0114 THEOREM
+0115 √(2/3)
+0116 √6/3
+0117 0.816497
+0118 = cos(arccos(1/3)/2), secondary form
+0119 THEOREM
+0120 11
+0121 |T₅(√(2/3))|·27 = |64−120+45|
+0122 11
+0123 Chebyshev resultant of ℤ₅ on 3-fold
+0124 THEOREM
+0125 1.5  Fermion amplitudes, phases, and consistency ratios
+0126 Symbol
+0127 Native expression
+0128 Value
+0129 Role
+0130 Grade
+0131 Q_lep
+0132 1/3 + A²/6, A=√2
+0133 2/3 = 0.666667
+0134 colourless amplitude quadrature
+0135 THEOREM (identity)
+0136 Q_down
+0137 1/3 + A²/6, A=(√2+√3)/2 = (13+2√6)/24
+0138 0.745791
+0139 coloured (dual-Z) quadrature
+0140 THEOREM (identity)
+0141 δ
+0142 4π/15 − ξ − ς   (δ_nat = 4π/15 − ξ)
+0143 12.7323526° (≈ 2/9 rad)
+0144 generation phase (no free parameter)
+0145 THEOREM
+0146 δ_ν
+0147 12° + 21ε/10
+0148 27.447817°
+0149 neutrino phase (consistency)
+0150 CONS
+0151 sin²θ_W
+0152 1/φ³
+0153 0.236068
+0154 weak mixing (value forced, rep unforced)
+0155 CONS
+0156 mass_d
+0157 12/d (d∣12); 0 for d=5
+0158 12,6,4,3,·,2
+0159 native mass invariant over the link
+0160 THEOREM
+0161 ς
+0162 ε·ζ⁽³⁰⁾/(864φ²)
+0163 5.686×10⁻⁵ rad
+0164 standing-lag sag: corrects δ; predicts √A_s
+0165 THEOREM (identity)
+0166 √A_s
+0167 (φ/2)·ς
+0168 4.600×10⁻⁵
+0169 primordial amplitude vs Planck 4.583±0.033×10⁻⁵ (0.51σ)
+0170 CONS / CROSS-LOCK
+0171 mass_α
+0172 12·√|μ_α μ_α^σ|
+0173 {12,6,6,4,4,3,3,0,2}
+0174 visibility law over the full representation ring
+0175 THEOREM
+0176 1.6  Tick eigenvalues and gauge gradings
+0177 Symbol
+0178 Native expression
+0179 Value
+0180 Role
+0181 Grade
+0182 λ(2)
+0183 6φ
+0184 9.708204
+0185 spinor transport register (vertex tick)
+0186 THEOREM
+0187 λ(3)
+0188 4φ
+0189 6.472136
+0190 colour triplet 3
+0191 THEOREM
+0192 λ(3′)
+0193 −4/φ
+0194 −2.472136
+0195 colour triplet 3′
+0196 THEOREM
+0197 Y
+0198 −(t/3 + w/2) mod 1
+0199 (fractional)
+0200 hypercharge grading
+0201 THEOREM
+0202 Y₆
+0203 −(2t + 3w) mod 6
+0204 (prime coeff 2,3)
+0205 hypercharge in ×6 units
+0206 THEOREM
+0207 2.  The derived equations
+0208 Each equation is stated, its derivation pathway given (with Proof-Ladder rungs), and its meaning or application discussed. Grades follow the Notation ledger.
+0209 F1 — Carrier, observer, inner product
+0210 carrier = 2I ⊂ ℍ×,  |2I| = 120;   ⟨a,b⟩ = Re(āb),  Euclidean (+,+,+,+)
+0211 Derivation pathway.  A4+A5 force H4 and the 600-cell whose vertices are 2I (R1); injective registration + finiteness force ℍ by Frobenius (R2); registration is left-multiplication L(g)∈SO(4) (R3); the unique left-invariant form is Re(āb) (R4).
+0212 Meaning / application.  Fixes the substrate: a finite non-commutative division-algebra observer on a curved 3-sphere. The overlap |⟨a,b⟩|² is the native ('Born') probability amplitude, derived cold — the ground for every later quadrature.
+0213 F2 — Unital channel (static aspect)
+0214 ℰ(ρ) = Σ_g q(g) L(g) ρ L(g)†,   Σ K_g†K_g = Σ K_g K_g† = I
+0215 Derivation pathway.  Kraus form K_g = √q(g) L(g) gives CP; unitarity of L(g) and Σq=1 give TP and unitality, i.e. bistochastic (R5). Fixed set = commutant of L(2I); Haar fixed.
+0216 Meaning / application.  The static/equilibrium descriptor — geometry and within-scale relaxation. Its classical marginal carries the second-law arrow (F3).
+0217 F3 — Arrows and the propagative tick (dynamic aspect)
+0218 S(p_t ‖ Haar) ↓ strictly;   det = 0;   gap = 1 − φ/2 = 1/(2φ²);   diameter = 5
+0219 Derivation pathway.  Data-processing on the bistochastic marginal gives strict monotone relative entropy (the structural/2nd-law arrow); det=0 gives irreversibility; |λ₂|=φ/2 sets the rate (R6). The propagative tick transfers one hop per tick (A2b) with causal depth = diameter 5 (R7); the cross-scale order-30 beat re-injects the deficit, giving perpetuity — the temporal arrow (R8).
+0220 Meaning / application.  Two arrows: the structural arrow (outward relaxation toward Haar) and the temporal arrow (frustration transport, a spiral on S³). Perpetuity follows because frustration ε never closes; the coupling constant G_nat inherits the gap 1/(2φ²) (F11).
+0221 F4 — Generation grading
+0222 T₃ = C₃-convolution projection,  T₃² = T₃,  spec {0,1},  rank 40 = 120/3
+0223 Derivation pathway.  Left-multiplication by an order-3 element acts as 40 disjoint 3-cycles (no fixed points), giving eigenspaces 40/40/40; count 3 forced by 3¹∥120 (R10). Flavour ≡ this outer ℤ/3; it commutes with colour (inner ℤ/3).
+0224 Meaning / application.  Three generations as a divisibility quantum, not a fit. Flavour multiplicity is the generation count; colour and generation give 9 joint labels.
+0225 F5 — Clifford and transport (two operators)
+0226 γ_{vw} = L(unit Im(w·v̄)),  γ² = −I;    q(v,w) = w·v̄ / |w·v̄|  (transport)
+0227 Derivation pathway.  Re(w·v̄)=φ/2≠0 so the full quaternion is not pure-imaginary; the Clifford relation holds only for the Im-part map γ (R11). The full q is the transport used for the torsion developments (F6).
+0228 Meaning / application.  Separates the Dirac algebra (γ, spectral triple, tangent rank 3) from parallel transport (q). Earlier conflation is corrected.
+0229 F6 — Two torsion sectors (teleparallel)
+0230 Hol_proper(q) = I  (flat);    dev_△ = 2π/5  (triangle);    dev_link = 2π/3  (edge-link)   [SO(3) rotation-angle convention]
+0231 Derivation pathway.  q(v,w)=w·v̄ (unit, left-acting) is a coboundary g_w g_v⁻¹, so the PROPER holonomy telescopes to I (flat). The native object is NOT this holonomy but the group COMMUTATOR of consecutive edge-transports, computed as the index-ordered product P=∏_i q(v_i,v_{i+1}); on a triangle P=[u₁⁻¹,u₂⁻¹] exactly (u₁=q(v₁,v₂), u₂=q(v₂,v₀)) — a genuine 2I-invariant, not an ordering artifact. Angle = canonical SO(3) rotation angle of the tangent action x↦PxP̄: θ_dev = arccos((tr R − 1)/2), in [0,180°] by construction (FORCED, not folded by hand). Edge-link: tr R = 0 ⇒ 120°=2π/3; triangle: tr R = 1.618 ⇒ 72°=2π/5. The raw 240° on the link is only a redundant (axis,angle) label of the same rotation (R(240°,n)=R(120°,−n)); κ and δ use θ_dev, so a literal 240° gives a 4× wrong κ. Full worked coordinates in Proof Ladder R12. Non-unifying: ⟨g₅,g₃⟩=2I (R13).
+0232 Meaning / application.  The two developments (ratio 3:5) are provably distinct invariants (THEOREM).
+0233 F7 — √6 and prime 11
+0234 √6 = √2·√3;    11 = |T₅(√(2/3))|·27 = |64 − 120 + 45|,   cos(ε/2) = 11√6/27
+0235 Derivation pathway.  √2 = A (R24), √3 = 2·|Im| of an order-3 element (R20) ⇒ √6 unconditional (R16). √(2/3)=√6/3, and T₅(√(2/3)) = −11√6/27 gives the integer 11 unconditionally (R17).
+0236 Meaning / application.  Both constants are native and arccos-free. The prime 11 is a Chebyshev resultant of native ℤ₅ data on the 3-fold angle, not a foreign object; it appears (with ε) in the fermion phase.
+0237 F8 — Colour and flavour as MUB gradings
+0238 D = diag(1,ω,ω²),  P = shift;   DP = ωPD;   |⟨D-eig|P-eig⟩|² = 1/3
+0239 Derivation pathway.  The Weyl–Heisenberg pair on ℂ³: clock D (colour) and shift P (flavour), mutually unbiased (all overlaps 1/3), Heisenberg cocycle DP=ωPD (R18). Lie-closure of ⟨log P,log D⟩ = su(3), so su(3)_c is native (R19).
+0240 Meaning / application.  Replaces the retired 'hue circle' (only D) with a choice-free complementary pair. su(3)_c is native; the unique order-3 class carries both colour and metric gravity (R20).
+0241 F9 — Amplitude quadrature (Koide form)
+0242 Q = Σ a_k² / (Σ a_k)² = 1/3 + A²/6,   a_k = 1 + A·cos(2πk/3 + δ)
+0243 Derivation pathway.  Σcos=0, Σcos²=3/2 over C₃ give Q=1/3+A²/6, δ-independent and m-free — THEOREM (R24). A=√2 is ASSERTED via one explicit grant (referee Item 3): with the two within-observers e_A=i, e_B=j (orthonormal in Im ℍ), the registered cosine amplitude is identified with the coaxial sum norm A=|e_A+e_B|, so A²=2+2⟨e_A,e_B⟩=2, A=√2, Q=2/3. The map (two within-vectors → one amplitude via |e_A+e_B|) is a modelling identification, not a derivation. GENERALIZATION (Full Board, THEOREM): A = √N, the chord of N orthonormal witnesses; the marriage law — voices average, debts add — gives the down-type dual-average A_down = (√2+√3)/2. Isospin splitting A²_up − A²_down = (7−2√6)/4 = 0.525255 exactly (the earlier 1/√2 is an ERRATUM, X.12).
+0244 Meaning / application.  The identity is native (THEOREM); The mass-space image √m_k∝a_k reproduces the Koide ratio as an external COMPARISON, never a derivation.
+0245 F10 — Curvature quantum
+0246 κ = ¼·(2π/3)² = (π/3)²,   κ/Λ = π/6
+0247 Derivation pathway.  Milnor K = ¼|[X,Y]|² on the bi-invariant metric; [i,j]=2k ⇒ ¼·4 = 1 = unit S³ curvature. The ¼ = ½² is the left/right (Levi-Civita) dual coefficient (R14). The 2π/3 in κ=¼·(2π/3)² is the trace-defined development magnitude θ_dev (R12/F6), not the double-cover 240°; a literal 240° would give a 4× wrong κ.
+0248 Meaning / application.  κ=(π/3)² and the Milnor ¼=½² are exact as a number/identity (THEOREM). 
+0249 F11 — Native Regge–Einstein equation (three-field coupling)
+0250 (curv_e − Λ) = G_nat · ρ̂_e,   Λ = 2π/3,   G_nat = κ/gap = 2φ²π²/9,   ρ̂_e = S(ρ_e‖Haar) − ⟨S⟩
+0251 Derivation pathway.  G_nat := κ/gap = 2φ²π²/9 is a DEFINITION (susceptibility := quantum/rate); the equation is that definition rearranged and is NOT an independent prediction (referee G9). φ² enters only via the gap; the development is rational.
+0252 Meaning / application.  A defining relation among the three native fields, not an independent law. 
+0253 F12 — Matter as a codim-3 defect
+0254 vertex link = icosahedron;   conj rep = 1 ⊕ 3 ⊕ 3′ ⊕ 5  (dims 12)
+0255 Derivation pathway.  V−E+F−C = 0 = χ(S³) makes the vertex the codim-3 locus (one past the codim-2 torsion edge). The conjugation action on the 12 neighbours decomposes as 1⊕3⊕3′⊕5; colour triplet = (3,3′), tick eigenvalues 4φ, −4/φ; transport register = spinor 2 (6φ=9.708) (R25). Vector/spinor split {1,3,3′,4,5}/{2,2′,4′,6}.
+0256 Meaning / application.  Matter and gravity are one construction at successive codimensions. The charge lattice is a THEOREM; the map to specific SM multiplets is COMPARISON.
+0257 F13 — Gauge algebra and forced parity
+0258 [P/D ⊗ I, I ⊗ Imℍ] = 0;   L(gh)=L(g)L(h),  R(gh)=R(h)R(g)  (anti)
+0259 Derivation pathway.  Colour ℤ/3 and su(2)_L commute as tensor factors on ℂ³⊗ℍ; su(2)_L = left-fundamental doublet (j=½) on ℍ≅ℂ² — THEOREM (R18, R22). CAVEAT (referee G7): L a homomorphism / R an anti-homomorphism holds for every non-abelian group and does not by itself select physical LEFT-handedness, and the geometric antiprism route is convention-defined; so the identification with observed weak parity violation is COMPARISON, not a forcing. The 36° antiprism twist is a genuine chiral geometry (THEOREM).
+0260 Meaning / application.  (SU(3)×SU(2)) at group level (THEOREM); matching its handedness to the observed V−A weak interaction is COMPARISON. su(2)_R is the right/EM candidate (K2).
+0261 F14 — U(1)_Y hypercharge grading
+0262 Y ≡ −(t/3 + w/2) mod 1;   Y₆ = −(2t + 3w) mod 6;   t/3 + w/2 + Y ∈ ℤ
+0263 Derivation pathway.  Schur forces Y block-scalar on the reducible multiplet space; the central character splits vector {1,3,3′,4,5}/spinor {2,2′,4′,6}. The ℤ/6=ℤ/3×ℤ/2 grading forces the fractional part; Y₆=−(2t+3w) carries prime coefficients 2,3; chiral content is anomaly-free (ΣY₆=ΣY₆³=0) (R27). Absolute levels via Tr Y=Tr Y³=0, CONDITIONAL on content (K2).
+0264 Meaning / application.  Realises (SU(3)×SU(2)×U(1))/ℤ₆ at group level from two native gradings; Gell-Mann–Nishijima Q=T₃+Y is mass-founded and NOT used.
+0265 F15 — Native mass law
+0266 over matter lattice {1,3,3′,5}:   mass = {12, 4, 4, 0}   (mass_3 = mass_3′ = 4, Galois pair;  mass_5 = 0)
+0267 Derivation pathway.  Neighbour class C: 12 elements, θ=π/5, χ_d=sin(dθ)/sinθ, λ_d=12χ_d/d. Over the matter lattice {1,3,3′,5} (referee Item 4) λ_d splits into two channels: MASS m_d=√|λ_d·λ_d^{gal}| (Galois-invariant) and AMPLIFICATION r_d=λ_d/λ_d^{gal} (Galois-covariant). Worked: d=1→λ=12,m=12; d=3→λ=4φ,m=4,r=−φ²; d=3′→λ=−4/φ,m=4,r=−ψ²; d=5→χ_5=sin(π)/sin(π/5)=0⇒m_5=0 (derived within the set). Spectrum {12,4,4,0}; the 3/3′ mass-degeneracy is a consequence (mass channel is Galois-symmetric). The Sym tower {12,6,4,3,·,2} is NOT the matter lattice (R26).
+0268 Meaning / application.  A closed, φ-free, integer spectrum {12,4,4,0} over the matter lattice {1,3,3′,5}; the 5-plet is uniquely massless (forced, not imposed). Amplification is the φ-covariant partner. The mass structure is two algebraic pieces: (i) this across-irrep invariant (matter-lattice spectrum {12,4,4,0}), and (ii) the WITHIN-family structure — the two δ-INDEPENDENT amplitude branches colourless A=√2 ⇒ Q=2/3 and coloured A=(√2+√3)/2 ⇒ Q=(13+2√6)/24 (F9). Both are algebraic and phase-free; the generation phase δ (F16) is a SEPARATE, finer layer that fixes specific values, not the forced Q structure. Mapping to specific SM masses is COMPARISON (12-state vector lattice vs 15-state chiral generation). EXTENSION (13 July, THEOREM, exact): the law extends to the ENTIRE representation ring as mass_α = 12·√|μ_α·μ_α^σ| — twelve times the Galois-symmetrized walk eigenvalue — giving {12, 6, 6, 4, 4, 3, 3, 0, 2} across all nine irreps. KERNEL IDENTITY (THEOREM): the 5-plet carries the only zero walk eigenvalue; its 25-dimensional isotypic block is the ENTIRE kernel of the tick (walk rank 95 = 120 − 25), so det = 0, the strict H-theorem, and the massless matter floor are one fact — what adjacency cannot see it cannot weigh, and cannot un-happen. Further (THEOREM): every 12-seat latitude shell decomposes under conjugation as exactly the matter lattice 1⊕3⊕3′⊕5 (C₁₀ induction).
+0269 F16 — Generation phase (purified)
+0270 δ_nat = (2π/3 − 2π/5) − ½·arccos(1/3) = 4π/15 − ξ = 12.7356103°;   δ = δ_nat − ς = 12.7323526°, indistinguishable from the sieve 2/9 rad = 12.7323954° (gap 4.3×10⁻⁵ °)
+0271 Derivation pathway.  δ = π/15 + ε/10 = 4π/15 − ½·arccos(1/3), and 4π/15 = 2π/3 − 2π/5 exactly (R29). The beat of the two torsion developments minus the half tetrahedral dihedral.
+0272 Meaning / application.  The within-family mass phase is a torsion-interference phase with no free parameter; conditional only on arccos(1/3). The standing-lag tier (R29b) applies the sag: δ = δ_nat − ς, with ς = ε·ζ⁽³⁰⁾/(864φ²) (§1.6). Convergent second route (Full Board): δ = |[e_A,e_B]| / η(W) = 2/9 rad exactly — numerator 2 THEOREM (the double cover's own doubling), denominator 9 THEOREM (the extremal winding's lag budget; census 960 circuits / 30 gates), metering step IDENTIFICATION — the corpus's single priced assumption. Channel extension: δ_f = 2/(9k), k = colocated channel count (lepton 1, down 2, up 3; k is IDENTIFICATION grade; one-phase snapshot for quarks REJECTED — running/rung-flow owed). Charged-lepton ratios at δ = 2/9: 1 : 206.7703 : 3477.473 vs measured 1 : 206.7683 : 3477.23 (+0.001%, +0.007%); absolute masses anchored on m_e pass at ~1σ. Tier-1 vs sieve supersession pending; declared discriminator: a sub-10-keV τ mass or a tightened √A_s. [Resolves the V2 EDIT note: the cascade effects are implemented via ς.]
+0273 F17 — Consistency ratios
+0274 sin²θ_W = 1/φ³ = 0.2361;   Q_down = (13+2√6)/24 = 0.7458;   δ_ν = 12° + 21ε/10;   √A_s = (φ/2)·ς = 4.600×10⁻⁵;   n_s = 1 − 2·ln(120/119)/ln φ = 0.96522;   Ω_m = 1/3
+0275 Derivation pathway.  Native closed forms matched to measured dimensionless ratios by inversion-then-match (not derivation): weak mixing 1/φ³ (value forced, representation unforced); down-quark dual-Z quadrature; neutrino phase (R29 family).
+0276 Meaning / application.  The consistency layer, correctly bounded by the mass law (F15). The FORCED within-family mass structure is the two δ-independent, algebraic Q branches (colourless Q=2/3, coloured Q=(13+2√6)/24); the phase δ is a SEPARATE finer layer — purified to a torsion beat with standing-lag sag for charged leptons (F16) and matched by inversion for the rest (neutrino δ_ν, coloured phases, sin²θ_W). The earlier c = 2(1−|Q|) parametrization remains SUPERSEDED. Masses enter only as checks. The cascade equations are now implemented via the ζ-notation (§1.6); CROSS-LOCK (verified 13 July): the sag ς both corrects δ (F16) and predicts √A_s = (φ/2)·ς = 4.600×10⁻⁵ vs Planck 4.583±0.033×10⁻⁵ (0.51σ) — one native object, the muon's fourth decimal and the sky's amplitude. Frozen cosmological rows (Standing-Lag ledger): √A_s 0.5σ; n_s 0.08σ; Ω_m 0.05σ. The scalar-clock expansion reading is REJECTED (Pantheon+, 1,580 SNe, Δχ² = 120); only the ΛCDM-form Ω_m = 1/3 reading survives (Δχ² = 0.7).
+0277 1.6  Cascade notation and the sag / lag / lean symbols (V3) — DEFINITION
+0278 ζ⁽ʳ⁾ := Σ_{n≥0} (φ/2)^{rn} = 1 / (1 − (φ/2)^r) — the SURVIVAL CASCADE at rung r: the closed form of every nested geometric tower in the corpus; the default decay is the carrier contraction φ/2, with subscripted variants ζ_X^{(r)} = (1 − X^r)⁻¹ for other decays (e.g. the temporal cascade ζ_τ). Frustration cascade: ζ_ε^{(r)} := ε·ζ^{(r)}, the frustration budget summed down the rung tower (rung-dependence of cascade amounts: OPEN, flagged for study).
+0279 η := LAG — budgets and delays; the extremal winding's lag budget is η(W) = 9 (formerly L(W)).  ς := SAG — the standing-lag dose ς = ε·ζ⁽³⁰⁾/(864φ²) = 5.686×10⁻⁵ rad (the final sigma: the letter that sags at the word's end).  ξ := LEAN — the arbiter tilt ξ = arcsin(√3/3) = ½·arccos(1/3) = 0.61548 rad.
+0280 Canonical rewrites (values unchanged, series eliminated):  δ_nat = 4π/15 − ξ;   δ = δ_nat − ς;   √A_s = (φ/2)·ς;   [hunt layer] proton-capture correction c_p = ζ_ε^{(30)} / ( 960·(φ − (1/144)(1 + (φ/2)³⁰)) ). Grade: DEFINITION (notation); collision note: ζ is always subscripted/superscripted here and never denotes a root of unity (roots of unity remain ω, ζ₆ only in the Y₆ sums).
+0281 F18 — The braided floor (Dirac transit winding)
+0282 Statement.  The two fold-partner Dirac shells (Re = ±1/(2φ)) COUNTER-WIND under forced transit: mean signed azimuthal advance −6.0000° per transit on the order-5 floor, +6.0000° on the order-10 floor; 6° × 60 forced transits = 360° — exactly ONE FULL TURN per floor, opposite senses; the sign flips with computational direction (descending vs ascending).
+0283 Derivation pathway.  Fold pairing −(D+) = D− exact. Transit = maximal-alignment forced continuation; chiral datum = signed azimuthal advance about the pole axis. Instrument note, confessed: the first witness (pairwise-summed pseudoscalar) is structurally NULL by multilinearity — ΣΣ det[u,s,w] = det[Σu, s, Σw] collapses identically; the braid lives in CORRELATED transit, not summed volumes.
+0284 Meaning / application.  The Dirac shell's identity — invisible to symmetry content (its conjugation decomposition equals the standing shell's, both 1⊕3⊕3′⊕5) — lives in chiral transit: a quantized winding number ±1 per floor; particle strand and antiparticle strand braided once about the axis, metered by the uniform 60-edge descent load. GRADE: STRONG CANDIDATE (float-flagged geometry; the exact values indicate an underlying exact theorem — derivation owed). Signed-count asymmetry (26/28 vs 28/26, net ∓2) recorded as OBSERVATION.
+0285 F19 — Belt trichotomy and the crossing inventory
+0286 Statement.  The 30-seat order-4 belt, under the three colour fibers' polar rings (10/10/10), splits as dark 6 / private 18 / shared 6; colour cycles the three private hexads exactly. Internal-overlap censuses: dark hexad {φ/2 ×12, 1×3} — golden-major pure; shared hexad {1/(2φ) ×12, 1×3} — golden-minor pure; QUARK HEXAD {φ/2 ×4, 1/(2φ) ×8, 1×3} — golden-MIXED, crossing inventory 4 major : 8 minor. GRADE: THEOREM (rebuilt cold, exhaustive, 13 July).
+0287 Open items.  (i) The ±k / 2+4 anatomy casting reconciliation (colour-labelling of the 'own' ring). (ii) DESIGNATED HUNT: the braid-length mechanism for the quark hierarchy — the hierarchy COMPOUNDS rather than composes (six graves' lesson, Referee's Chapter); this inventory is its raw material, with the running recast as a rung-map fixed point and the straddle about 2/9 − ε (split ε/10) as the discriminator.
+0288 3.  Contamination audit
+0289 Each equation is audited at the level of its mathematics (A1), not its name. The question for every term: is it a group order, rank, character/torsion angle, entropy, or element of ℚ(√5,√6) — or does it originate in, calibrate against, or route through E=mc², a stress–energy metric, an eigenvalue-promoted-to-mass, or an imported Hilbert construct? Every native term passes; masses appear only as external check values in the consistency layer (F17).
+0290 Equation
+0291 Native basis of every term
+0292 Verdict
+0293 F1 carrier/observer/⟨·,·⟩
+0294 group order 120; division-algebra classification; Re(āb) from the quaternion product
+0295 clean
+0296 F2 unital channel
+0297 Kraus form of unitary L(g); probability distribution q
+0298 clean
+0299 F3 arrows / tick
+0300 relative entropy (data-processing); spectral gap φ/2; graph diameter 5
+0301 clean
+0302 F4 generation
+0303 order-3 eigenspaces; divisibility 3¹∥120
+0304 clean
+0305 F5 Clifford/transport
+0306 imaginary part of quaternion products; unit quaternion transport
+0307 clean
+0308 F6 developments
+0309 forward products (SO(3) convention); flat proper holonomy
+0310 clean (dev.); 
+0311 F7 √6, 11
+0312 √2=|i−j| (order-4 chord), √3=|Im| order-3; Chebyshev resultant
+0313 clean (unconditional)
+0314 F8 colour/flavour
+0315 clock/shift on ℂ³; ω∈ℚ(√−3); Lie closure dim 8
+0316 clean
+0317 F9 quadrature
+0318 C₃ trig identity (THEOREM); amplitude A=√2 ASSERTED (identification)
+0319 identity clean; A asserted
+0320 F10 κ
+0321 Milnor ¼|[X,Y]|²; [i,j]=2k; unit S³ curvature
+0322 clean
+0323 F11 Regge–Einstein
+0324 G_nat:=κ/gap; equation = definition rearranged
+0325 clean numbers; a definition, not a prediction
+0326 F12 matter lattice
+0327 χ(S³)=0; conjugation character; tick eigenvalues (φ)
+0328 clean
+0329 F13 gauge/parity
+0330 commutant & Casimir clean; parity identification COMPARISON
+0331 clean (algebra); parity = comparison
+0332 F14 U(1)_Y
+0333 triality (ℤ/3), duality (ℤ/2 central char); anomaly traces
+0334 clean
+0335 F15 mass law
+0336 Weyl characters; Galois mean; matter-lattice {12,4,4,0}
+0337 clean (no mass input)
+0338 F16 δ
+0339 torsion beat 2π/3−2π/5; half dihedral (arccos, δ only)
+0340 clean (COND on arccos)
+0341 F17 consistency ratios
+0342 1/φ³, (13+2√6)/24, ε — native forms matched to ratios
+0343 clean (masses = checks only)
+0344 Result. No equation is founded on mass–energy equivalence (the contamination audit above is independent).
+0345 G_nat and the Regge–Einstein equation are a DEFINITION, not an independent prediction; Measured masses appear nowhere in a derivation — only as checks.
+0346 End of Field Equations. Constants and equations regenerated from the 120 vertices of 2I; every value verified symbolically or by exact finite check. The finite-group facts are THEOREM; The matter-lattice mass spectrum is {12,4,4,0}; √6 and prime 11 are unconditional (√2=|i−j|, √3=2|Im|). No value was normalized or transformed.
+0347 CHANGE LOG
+0348 CHANGE LOG — V2 → V3 (13 July 2026). Every alteration to this document, with its verification source. Nothing else was touched; all other text is copied verbatim from V2.
+0349 1. Title line: version and date added.
+0350 2. Grade legend: DEFINITION, IDENTIFICATION, CANDIDATE added (already in corpus usage).
+0351 3. F6 Meaning: exhaustive verification recorded (all 1,200 faces / 720 edge-links; session of 13 July).
+0352 4. F9 Derivation: amplitude law generalized A = √N (Full Board, THEOREM); marriage law; isospin-splitting ERRATUM X.12 recorded ((7−2√6)/4, not 1/√2).
+0353 5. F15 Meaning: Visibility Law extension to all nine irreps (THEOREM, exact); Kernel Identity (5-plet = entire kernel; massless ≡ irreversibility source); every 12-shell carries the matter lattice (THEOREM). Source: 13 July trials, exact arithmetic.
+0354 6. F16: statement and Meaning superseded — standing-lag tier δ = δ_nat − ς ≈ 2/9; convergent bracket/η(W) route with grades; channel extension 2/(9k); lepton ratios updated to +0.001% / +0.007%; V2 EDIT note resolved. Sources: Full Board §4–5, regenerated 13 July.
+0355 7. F17: statement extended with √A_s, n_s, Ω_m; Meaning updated — cascade equations implemented via ζ; sag/sky CROSS-LOCK recorded (0.51σ); frozen cosmological rows and the Pantheon+ rejection recorded. Sources: Full Board §6–7, regenerated 13 July.
+0356 8. NEW §1.6: cascade notation ζ⁽ʳ⁾, ζ_ε; symbols η (lag), ς (sag), ξ (lean); canonical rewrites. DEFINITION grade; all values unchanged.
+0357 9. NEW F18: the braided floor — Dirac counter-winding ±6°, one turn per floor, direction-signed. STRONG CANDIDATE; derivation owed. Source: 13 July resurrection trial (null first instrument confessed).
+0358 10. NEW F19: belt trichotomy and crossing inventory 4:8 (THEOREM, rebuilt cold); ±k reconciliation and the designated braid hunt recorded.
+0359 11. Consistency table (T4): δ row updated to tier form; rows added for ς, √A_s, and mass_α (visibility form).
