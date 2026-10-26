@@ -12,6 +12,8 @@ See also `maps/mass_requirements.md` and `maps/degrees_of_freedom.md`.
 - `pentagon_frustration.py` — the pentagonal vertex-figure (5 triangles) and the frustration ε, grounded in the carrier.
 - `pentagon_driver.py` — co-definition driven by the pentagonal 5-cycle circulation carrying ε.
 - `pentagon_flux.py` — ε threaded as flux (Peierls phase) per pentagon; the frustration gaps the vacuum mode (∝ ε²).
+- `route56_repro.py` — cold reproduction of the F5/F6 Clifford connection (γ, Dirac D=Aγ, faces, μ).
+- `route56_massgap.py` — connects the reproduced operator to the mass gap via the pentagon-ε frustration flux.
 
 ## 1. energy = registration rate  [cold, verified]
 On the 120-icosian adjacency, the committed 2nd-order wave `ψ_{t+1}=2ψ_t−ψ_{t−1}−c²Lψ_t` has,
@@ -96,3 +98,18 @@ dependence as the electron-mass δ-displacement. Caveats: the least-squares conn
 the pentagons exactly but also loads other cycles; the carrier's intrinsic connection is **SU(2)**
 (F5/F6 torsion), so the faithful frustration is non-abelian and this U(1) flux is an abelian model;
 the gap is dimensionless (unit bridge owed for an absolute MeV number).
+
+## 7. route56 reproduced cold + connected to the mass gap (`route56_repro.py`, `route56_massgap.py`)  [cold]
+Before building a new SU(2) connection, checked the spine: it is already in route56 (2026-10-19). Independent
+cold rebuild of the F5/F6 Clifford connection reproduces **every banked number**: γ (γ²=−I, γ†=−γ,
+γ_ji=−γ_ij); the Dirac operator **D=Aγ** (Hermitian on 240 components, spectrum −7.60845…4.12915, **28 zero
+modes** at tol 1e-7 — float γ noise ~1e-8); Tr(D²)=2880; **1200 faces** with Clifford trace
+−(8/5)sin(π/5)=−0.940456; Ω=cI−sγ; and the pinned **μ=(48/5)sin(π/5)=5.642738**.
+**Connection to the mass gap:** threading the pentagon-ε frustration flux (holonomy ε per pentagon) onto the
+banked operator gaps, all ∝ ε² (flux²): the **scalar vacuum mode** (0→0.011 at native ε), the **Dirac zero
+modes** (0→0.000165), at energy **V_spec = μ·Σ_faces(1−cosF) = 17.76** with **μ PINNED** (derived, not fitted).
+So the frustration-mass carries a non-arbitrary energy coefficient — the constant the pure-U(1) flux lacked.
+Caveats: least-squares flux realization (exact gap/V_spec realization-dependent; μ pinned regardless;
+ε²-scaling robust); this threads an *abelian* flux on the non-abelian D (route56's own D_a=e^{ia}D) — the
+28 zero modes already exist *with* γ, so the fully-native step is the non-abelian *curvature* itself; MeV
+bridge owed.
