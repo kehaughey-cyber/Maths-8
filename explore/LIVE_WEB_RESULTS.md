@@ -14,6 +14,7 @@ See also `maps/mass_requirements.md` and `maps/degrees_of_freedom.md`.
 - `pentagon_flux.py` — ε threaded as flux (Peierls phase) per pentagon; the frustration gaps the vacuum mode (∝ ε²).
 - `route56_repro.py` — cold reproduction of the F5/F6 Clifford connection (γ, Dirac D=Aγ, faces, μ).
 - `route56_massgap.py` — connects the reproduced operator to the mass gap via the pentagon-ε frustration flux.
+- `route56_native.py` — the fully-native non-abelian curvature: uniform per-face Wilson holonomy + the native Dirac spectrum.
 
 ## 1. energy = registration rate  [cold, verified]
 On the 120-icosian adjacency, the committed 2nd-order wave `ψ_{t+1}=2ψ_t−ψ_{t−1}−c²Lψ_t` has,
@@ -113,3 +114,15 @@ Caveats: least-squares flux realization (exact gap/V_spec realization-dependent;
 ε²-scaling robust); this threads an *abelian* flux on the non-abelian D (route56's own D_a=e^{ia}D) — the
 28 zero modes already exist *with* γ, so the fully-native step is the non-abelian *curvature* itself; MeV
 bridge owed.
+
+## 8. The native non-abelian curvature (`route56_native.py`)  [cold structure; physical-mass bridge open]
+Going fully native (the curvature *in* γ, not an abelian flux on top): the per-face Wilson holonomy
+`W = γ_ij γ_jk γ_ki` is **uniform across all 1200 faces** — SU(2), det 1, Tr = −(8/5)sin(π/5) = −0.940456
+(std 1.4e-9), SO(3) rotation angle **123.90°**. So the native frustration is a **homogeneous non-abelian
+field strength**, already present in γ, not fitted. The native Dirac spectrum `D=Aγ` splits into **28 massless
++ 212 massive** over 12 levels (mults {6,2,12,20,30,24,28,18,8,30,30,12,20}), asymmetric −7.6085…4.1291 — a
+real massless/massive split from the pure geometry. **Honest gap:** the native spectrum does *not* obviously
+map to the physical mass ladder {12,4,4,0} (mults aren't d²; the endpoints and the 123.90° face angle aren't
+recognizable golden/torsion values). So fully-native gives a clean uniform curvature and a real
+massless/massive split, but the bridge to physical masses is open; the pinned-μ abelian-flux route (§6–7,
+V_spec) stays the controllable handle. Next: identify the 28 massless modes (which carrier sector/irreps).
