@@ -16,6 +16,7 @@ See also `maps/mass_requirements.md` and `maps/degrees_of_freedom.md`.
 - `route56_massgap.py` — connects the reproduced operator to the mass gap via the pentagon-ε frustration flux.
 - `route56_native.py` — the fully-native non-abelian curvature: uniform per-face Wilson holonomy + the native Dirac spectrum.
 - `route56_kernel.py` — the 28 massless Dirac modes resolved onto the carrier irreps ({1, 2′, 3′}⊗spinor).
+- `route56_chirality.py` — parity test showing the kernel's {1,2′,3′} selection is algebraic (Galois), not geometric chirality.
 
 ## 1. energy = registration rate  [cold, verified]
 On the 120-icosian adjacency, the committed 2nd-order wave `ψ_{t+1}=2ψ_t−ψ_{t−1}−c²Lψ_t` has,
@@ -138,3 +139,14 @@ notions of "massless" pick *different* carrier sectors; (ii) the selected irreps
 the **Galois-conjugate (primed)** members 2′,3′ of the d≤3 pairs — suggesting a **chirality/Galois selection**
 by the γ-connection (the φ vs ψ branch). Open: the selection mechanism, and whether {1,2′,3′}⊗spinor reads
 as a physical multiplet.
+
+## 10. Why {1,2′,3′}: algebraic Galois, not geometric chirality (`route56_chirality.py`)  [cold]
+Tested the chirality reading with a **parity** operation — an orientation-reversing reflection (q3→−q3,
+det −1) that permutes the 120 icosians. The kernel is **unchanged** (still {1,2′,3′}, weights 2/8/18): the
+massless sector is **parity-robust**, so the selection is **not** a geometric chirality/orientation effect
+(correcting an earlier guess). It is a **Galois-branch** feature: the kernel eigenvalues {12, **6ψ**, **−4/φ**}
+are precisely the Galois conjugates (√5→−√5) of the *excluded* {6φ, 4φ} (6ψ=σ(6φ); −4/φ=4ψ=σ(4φ)). The
+γ-connection built on **c=φ/2=cos(π/5)** — one branch of ℚ(√5) — selects the opposite (ψ) branch irreps;
+only the field automorphism √5→−√5, not any rotation or reflection, would flip it to {1,2,3}. So all the
+"splits" in this arc (Galois-readout vs Dirac-kernel masslessness; the kernel's branch) are algebraic ℚ(√5)
+features tied to the φ in γ.
