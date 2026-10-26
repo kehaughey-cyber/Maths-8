@@ -11,6 +11,7 @@ See also `maps/mass_requirements.md` and `maps/degrees_of_freedom.md`.
 - `link_laws.py` — the two floor-grounded link laws (adiabatic w(ψ) with full variational force; first-order relaxational).
 - `pentagon_frustration.py` — the pentagonal vertex-figure (5 triangles) and the frustration ε, grounded in the carrier.
 - `pentagon_driver.py` — co-definition driven by the pentagonal 5-cycle circulation carrying ε.
+- `pentagon_flux.py` — ε threaded as flux (Peierls phase) per pentagon; the frustration gaps the vacuum mode (∝ ε²).
 
 ## 1. energy = registration rate  [cold, verified]
 On the 120-icosian adjacency, the committed 2nd-order wave `ψ_{t+1}=2ψ_t−ψ_{t−1}−c²Lψ_t` has,
@@ -81,3 +82,17 @@ C_e (~0.01) ≪ ε (0.128), so additive ε is a uniform, trivial rescale. **Less
 an additive *scalar* is uniform and trivial; **ε must enter as a FLUX / geometric phase** (holonomy ε threaded
 through each pentagon, ungaugeable because pentagons share edges), which gaps the spectrum = rest mass — the
 Koide-δ geometric-phase mechanism. Next: the ε-as-flux spectral test.
+
+## 6. ε as FLUX gaps the vacuum mode (`pentagon_flux.py`)  [cold]
+Threading holonomy ε through each of the 720 pentagons as Peierls phases **opens a mass gap**. The
+Laplacian's zero mode — the **constant/uniform (dispersion-massless) mode, multiplicity 1** (not the
+adjacency-λ=0 irrep-5, which is the Laplacian *top*, μ=12) — lifts from 0 to **0.011 at native ε**,
+scaling **exactly as flux²** (gap ∝ ε²): f=0.25→0.00069, 0.5→0.00275, 1→0.01099, 2→0.04389. So a
+uniform *scalar* frustration is trivial (it rescales), but a uniform *flux* frustration is
+**ungaugeable** (a genuine holonomy) and **removes the zero-energy state → the field is massive**.
+**Frustration flux → rest mass, with ε the source** (the same ε that set the electron mass). Since the
+eigenvalue reads as a frequency², the mass-frequency ω ∝ √gap ∝ **ε (linear)** — the same linear-in-ε
+dependence as the electron-mass δ-displacement. Caveats: the least-squares connection realizes ε on
+the pentagons exactly but also loads other cycles; the carrier's intrinsic connection is **SU(2)**
+(F5/F6 torsion), so the faithful frustration is non-abelian and this U(1) flux is an abelian model;
+the gap is dimensionless (unit bridge owed for an absolute MeV number).
