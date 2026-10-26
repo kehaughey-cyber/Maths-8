@@ -15,6 +15,7 @@ See also `maps/mass_requirements.md` and `maps/degrees_of_freedom.md`.
 - `route56_repro.py` — cold reproduction of the F5/F6 Clifford connection (γ, Dirac D=Aγ, faces, μ).
 - `route56_massgap.py` — connects the reproduced operator to the mass gap via the pentagon-ε frustration flux.
 - `route56_native.py` — the fully-native non-abelian curvature: uniform per-face Wilson holonomy + the native Dirac spectrum.
+- `route56_kernel.py` — the 28 massless Dirac modes resolved onto the carrier irreps ({1, 2′, 3′}⊗spinor).
 
 ## 1. energy = registration rate  [cold, verified]
 On the 120-icosian adjacency, the committed 2nd-order wave `ψ_{t+1}=2ψ_t−ψ_{t−1}−c²Lψ_t` has,
@@ -126,3 +127,14 @@ map to the physical mass ladder {12,4,4,0} (mults aren't d²; the endpoints and 
 recognizable golden/torsion values). So fully-native gives a clean uniform curvature and a real
 massless/massive split, but the bridge to physical masses is open; the pinned-μ abelian-flux route (§6–7,
 V_spec) stays the controllable handle. Next: identify the 28 massless modes (which carrier sector/irreps).
+
+## 9. The 28 massless Dirac modes = {1, 2′, 3′} ⊗ spinor (`route56_kernel.py`)  [cold]
+Projecting ker D onto the carrier irreps (the adjacency eigenspaces = the mass sectors): the 28 are **the
+full spinor-doubled content of exactly three irreps** — irrep **1** (λ=12, weight 2), irrep **2′** (λ=6ψ,
+weight 8), irrep **3′** (λ=−4/φ, weight 18); 2+8+18 = 28 = 2·(1²+2²+3²), each the *entire* d²×2 block, all
+other irreps weight 0. The modes are **spin-unpolarized** (spinor density 14/14). **Key facts:** (i) this is
+**NOT the Galois-massless irrep 5** (weight 0) — the algebraic (Galois-readout) and dynamical (Dirac-kernel)
+notions of "massless" pick *different* carrier sectors; (ii) the selected irreps are the trivial singlet plus
+the **Galois-conjugate (primed)** members 2′,3′ of the d≤3 pairs — suggesting a **chirality/Galois selection**
+by the γ-connection (the φ vs ψ branch). Open: the selection mechanism, and whether {1,2′,3′}⊗spinor reads
+as a physical multiplet.
