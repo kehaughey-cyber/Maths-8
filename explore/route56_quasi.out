@@ -1,0 +1,24 @@
+(iv) scalar phi^2 dilation seam: chain of S scales, hops phi^2 (outward) / phi^-2 (inward)
+   S=6: max|eig(M)-2cos(k pi/(S+1))| = 5.6e-15;  max|M - Dg P Dg^-1| = 4.4e-16  (flat: the scalar dilation is a gauge on this tree; each in-shell square has hop product phi^2*phi^-2 = 1)
+
+-- CONTROL simple cubic (expect 8 species at low L): N=1551, ball radius 7.141, mean degree 5.38 (interior 6.00), density 1.0166; interior anisotropy max 1.000, interior imbalance max 0.000
+   hermiticity A 0e+00;  geometric scale kappa (mean sum r_ij/3, interior) = 2.0000
+   A/kappa  kernel 42;  count/Weyl:  L=0.15: 66/0.2  L=0.30: 86/1.4  L=0.50: 158/6.4  L=0.80: 442/26.4  L=1.20: 1702/89.0;  log-log slope of N(|lambda|) between counts 30 and 15%: 0.08 (Weyl: 3)
+   B        kernel 42;  count/Weyl:  L=0.15: 66/0.2  L=0.30: 66/1.4  L=0.50: 134/6.4  L=0.80: 294/26.4  L=1.20: 1166/89.0;  log-log slope of N(|lambda|) between counts 30 and 15%: 0.08 (Weyl: 3)
+
+cut-and-project quasilattice K=6: 19588 vertices
+
+-- icosahedral quasicrystal: N=300, ball radius 2.288, mean degree 14.86 (interior 17.86), density 5.9776; interior anisotropy max 1.697, interior imbalance max 3.861
+   hermiticity A 0e+00;  geometric scale kappa (mean sum r_ij/3, interior) = 4.1744
+   A/kappa  kernel 0;  count/Weyl:  L=0.15: 104/0.0  L=0.30: 196/0.0  L=0.50: 302/0.2  L=0.80: 376/0.9  L=1.20: 476/2.9;  log-log slope of N(|lambda|) between counts 30 and 15%: 1.02 (Weyl: 3)
+   B        kernel 0;  count/Weyl:  L=0.15: 60/0.0  L=0.30: 112/0.0  L=0.50: 204/0.2  L=0.80: 308/0.9  L=1.20: 392/2.9;  log-log slope of N(|lambda|) between counts 30 and 15%: 0.91 (Weyl: 3)
+
+-- icosahedral quasicrystal: N=700, ball radius 3.228, mean degree 13.31 (interior 18.30), density 4.9688; interior anisotropy max 1.697, interior imbalance max 3.861
+   hermiticity A 0e+00;  geometric scale kappa (mean sum r_ij/3, interior) = 4.0679
+   A/kappa  kernel 0;  count/Weyl:  L=0.15: 228/0.0  L=0.30: 408/0.1  L=0.50: 610/0.6  L=0.80: 820/2.4  L=1.20: 1104/8.2;  log-log slope of N(|lambda|) between counts 30 and 15%: 0.93 (Weyl: 3)
+   B        kernel 0;  count/Weyl:  L=0.15: 116/0.0  L=0.30: 244/0.1  L=0.50: 416/0.6  L=0.80: 620/2.4  L=1.20: 844/8.2;  log-log slope of N(|lambda|) between counts 30 and 15%: 0.83 (Weyl: 3)
+
+-- icosahedral quasicrystal: N=1300, ball radius 3.893, mean degree 13.00 (interior 16.95), density 5.2602; interior anisotropy max 1.697, interior imbalance max 3.861
+   hermiticity A 0e+00;  geometric scale kappa (mean sum r_ij/3, interior) = 3.8581
+   A/kappa  kernel 0;  count/Weyl:  L=0.15: 384/0.0  L=0.30: 708/0.2  L=0.50: 1064/1.0  L=0.80: 1440/4.3  L=1.20: 1984/14.4;  log-log slope of N(|lambda|) between counts 30 and 15%: 1.00 (Weyl: 3)
+   B        kernel 0;  count/Weyl:  L=0.15: 242/0.0  L=0.30: 466/0.2  L=0.50: 762/1.0  L=0.80: 1128/4.3  L=1.20: 1530/14.4;  log-log slope of N(|lambda|) between counts 30 and 15%: 1.01 (Weyl: 3)

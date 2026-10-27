@@ -1,0 +1,33 @@
+
+== CONTROL simple cubic (exact central-difference dispersion): N=1839, packet width 1.8, ball radius 7.56, interior degree 6.00, kappa(core)=2.0000
+   |k|     op   <E/E_cont> over dirs & helicity (mean, min, max)   mean resid/|k|   (E_cont = continuum Weyl value; cubic: lattice dispersion)
+   0.40   A/kap 0.9257  0.9257  0.9257      1.540
+   0.40   B     0.9257  0.9257  0.9257      1.540
+   0.70   A/kap 0.9256  0.9255  0.9257      0.838
+   0.70   B     0.9256  0.9255  0.9257      0.838
+   1.00   A/kap 0.9252  0.9246  0.9255      0.548
+   1.00   B     0.9252  0.9246  0.9255      0.548
+   1.40   A/kap 0.9234  0.9207  0.9249      0.355
+   1.40   B     0.9234  0.9207  0.9249      0.355
+
+quasilattice K=6: 19588 vertices; max |x| of available points 10.91 (need >= 7.6)
+
+== icosahedral quasicrystal (continuum E = |k|): N=8386, packet width 1.8, ball radius 7.56, interior degree 15.31, kappa(core)=3.5469
+   |k|     op   <E/E_cont> over dirs & helicity (mean, min, max)   mean resid/|k|   (E_cont = continuum Weyl value; cubic: lattice dispersion)
+   0.40   A/kap 1.0278  1.0278  1.0278      2.469
+   0.40   B     0.9595  0.9595  0.9595      1.554
+   0.70   A/kap 1.0109  1.0109  1.0109      1.386
+   0.70   B     0.9434  0.9434  0.9434      0.864
+   1.00   A/kap 0.9853  0.9852  0.9853      0.945
+   1.00   B     0.9189  0.9189  0.9189      0.581
+   1.40   A/kap 0.9383  0.9382  0.9384      0.643
+   1.40   B     0.8741  0.8740  0.8741      0.388
+
+== icosahedral quasicrystal, wider packet 2.4: N=18258, packet width 2.4, ball radius 10.08, interior degree 15.27, kappa(core)=3.5265
+   |k|     op   <E/E_cont> over dirs & helicity (mean, min, max)   mean resid/|k|   (E_cont = continuum Weyl value; cubic: lattice dispersion)
+   0.40   A/kap 1.0044  1.0044  1.0044      1.962
+   0.40   B     0.9727  0.9727  0.9727      1.194
+   0.70   A/kap 0.9878  0.9878  0.9878      1.106
+   0.70   B     0.9563  0.9563  0.9564      0.664
+   1.00   A/kap 0.9626  0.9626  0.9626      0.759
+   1.00   B     0.9314  0.9314  0.9314      0.447

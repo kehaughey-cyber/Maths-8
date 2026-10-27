@@ -248,3 +248,39 @@ The constant spinor stays an exact 2-fold zero at every n. **In the smooth (SU(2
 5. Frequencies 1–3 only; the quasicrystal inflation (the other refinement the corpus has) is untested, and the user's view is that it is not an either/or with
    subdivision. No MeV scale, no observation, no identification of levels as masses.
 Command: `py -3 -I -u route56_subdiv.py 1 2 3 > route56_subdiv_all.out` (~70 s). sha256: route56_subdiv.py 7d2a7a4f4905c4bb57caec44427ad0059d9074d22d499381bf559e47371f67c1; route56_subdiv_all.out 690eaa5c8e74d4d744a380fcb71ba27226f7545aa0b40ca5a59cb1418ead4899.
+
+## 15. The quasicrystal refinement; clues from Skull Candy (`route56_quasi.py`, `route56_quasi2.py`)  [cold, dispersion only]
+**Source read (C:\Users\Dad\OneDrive\Desktop\Active\skull candy, repo HEAD 2bfaf0b "v20 quasicrystal DOS on the carrier").** What bears on the scalar
+interactions: `SESSION_HANDOFF.md` §0 ("scale-up is one continuous geometry talking across the seams … harmonics, scalars, scalar walks and pathing");
+`silicon/coresident/interferometer/seam_loops.py` (the seam is the *scalar alphabet* — the overlap values — carried by each tick-loop; Q8-loops vs φ-loops
+carry distinguishable alphabets, with a random-partition negative control); `sim/distinguish/RESULTS_v4_scale.md` + `rtl/web_engine_scale.sv` (S scaled copies of the
+carrier, each node coupled to its own direction at the neighbouring scale by an exact ×φ^{±2} (or ×φ^{±1}) in ℤ[φ]; 1,561,680/1,561,680 lines bit-exact;
+the walk climbs one scale per tick; per-scale shape of the dominant eigenvector is scale-invariant); `RESULTS_v15_nested.md` (tick and seam commute,
+[T,M]=0; ×φ^{-2} then ×φ^{2} is lossless); `RESULTS_v20_dos.md` + `dos_web.py` (the walk is tight-binding; kissing-12 motif spectrum
+{−√5×3, −1×5, √5×3, …}; dominant pseudogap at filling 12/13, e/a = 24/13 = 1.846; the stated ceiling is KPM on the φ-inflated extended quasilattice).
+My reading, to be corrected if wrong: the "scalar interactions" are (a) the shell scalars c (the alphabet) and their class-sum eigenvalues λ_X, which
+are exactly what enter my channel formula (c′λ_ρ − λ_σ)/s′, and (b) the radial φ^{±2} dilation. I tested (b): the S=6 dilation chain M (hops φ² out,
+φ^{-2} in) is a diagonal similarity of the plain path graph, max|M − D P D⁻¹| = 4.4e-16, spectrum 2cos(kπ/7) to 5.6e-15. **The scalar dilation seam is pure
+gauge (flat, product around every in-shell square = φ²·φ^{-2} = 1), like the SU(2) transport (§13).** It adds the path spectrum to the shell spectrum
+and nothing else; the ×φ growth seen in the raw amplitudes is the gauge factor, which is why only the shape is scale-invariant.
+
+**Quasicrystal refinement.** The inherited Maths 6 6D→3D icosahedral cut-and-project (`explore/scale.py`, triacontahedron window, first shell 0.78,
+19588 vertices at K=6) is a refinement of the *local icosahedral motif in R³*, not a refinement of S³; the connection transfers because the per-edge
+object is γ_ij = −i n_ij·σ (§14), whose continuum limit in flat R³ is the Weyl operator σ·p (levels ±|k|, no curvature shift).
+- **FAILED first test (`route56_quasi.py`, output `route56_quasi.out`): open-ball state counting.** The simple-cubic control gave 42 zero modes and a
+  count slope of 0.08 against Weyl's 3; the quasicrystal gave slope ≈ 0.8–1.0 with hundreds of modes at L = 0.15. Cause: truncated stencils at the
+  surface of a small ball (interior imbalance and anisotropy also large: 3.9 and 1.7 for the quasilattice) create O(1) boundary modes; the pipeline was not a valid
+  Weyl counter, so **this test shows nothing about the quasicrystal either way.** (Also: interior degree is ~18, not 12–13.)
+- **Replacement (`route56_quasi2.py`, `route56_quasi2.out`): Gaussian wave packets, no eigen-decomposition, no boundary.** ψ = g e^{ik·x} u_±(k) at the centre
+  of a ball of radius 4.2 widths; E = ⟨ψ|D|ψ⟩/⟨ψ|ψ⟩ against ±|k|. Control (simple cubic): E/|k| = 0.9257 for every |k| ≤ 1 — exactly the analytic envelope
+  factor e^{−1/(4w²)} = 0.9257 for w = 1.8 (central-difference sin averaged over the packet), so the machinery is validated. Quasicrystal (N = 8386, w = 1.8):
+  B 0.9595, 0.9434, 0.9189, 0.8741 and A/κ 1.0278, 1.0109, 0.9853, 0.9383 at |k| = 0.4, 0.7, 1.0, 1.4; w = 2.4 (N = 18258): B 0.9727, 0.9563, 0.9314; A/κ 1.0044,
+  0.9878, 0.9626 at |k| = 0.4, 0.7, 1.0. **The Weyl dispersion E = ±|k| holds to 1–4% at low k with no fit (κ geometric), and is isotropic:** over 8 random directions × 2 helicities
+  min = max to 1e-4 (e.g. A/κ 0.9852–0.9853 at |k| = 1) against 0.9246–0.9255 for the cubic control (icosahedral symmetry has no l = 4 invariant). The
+  shortfall shrinks with a wider packet, as the envelope-plus-lattice-curvature account predicts (A/κ at |k|=0.4: +2.8% → +0.4%).
+**Not shown.** (1) Residuals ‖(D−E)ψ‖/‖ψ‖/|k| are 1.2–2.5, but the continuum value for this packet is √(3/2)/(w|k|) (1.7 at w = 1.8, |k| = 0.4): the residual is the envelope's, not
+the lattice's; A has visibly more (2.47 vs B 1.55 at |k| = 0.4), consistent with unit weights on an uneven mesh. (2) This is a dispersion check on the smooth sector; it says
+nothing about doublers or the non-smooth low modes of §14 (not probed; high-k and zero-mode content of the quasicrystal is untested), nor about the 28-mode core. (3) Spherical region around
+a vertex-free origin, one realisation, no inflation sequence: the φ³-self-similarity of the quasilattice has not been used as the refinement parameter.
+(4) No link yet from the R³ quasicrystal to the S³ carrier (how the orbifold/double-cone relates), no observation, no mass identification.
+Commands: `py -3 -I -u route56_quasi.py > route56_quasi.out`; `py -3 -I -u route56_quasi2.py > route56_quasi2.out`. sha256: route56_quasi.py 23f48650…739a3f; route56_quasi.out 94bbb33f…540522; route56_quasi2.py baa9634e…343238; route56_quasi2.out ffc45e4a…df8cb (full values: `sha256sum explore/route56_quasi*`).
