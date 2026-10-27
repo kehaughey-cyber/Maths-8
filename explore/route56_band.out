@@ -1,0 +1,35 @@
+PART S3  full spectra of the geodesically refined 600-cell (unit S^3; a = mean edge angle)
+   n    N     a(rad)   kappa     op       E_max      E_max*a   E_min(nonzero)  #|lam|>0.9 E_max
+   1    120  0.62832  2.51327  A/kappa     3.0273    1.9021  0.28908        20
+   1    120  0.62832  2.51327  B           3.0273    1.9021  0.28908        20
+   2    840  0.32288  1.29151  A/kappa     4.8476    1.5652  0.10091        142
+   2    840  0.32288  1.29151  B           4.8367    1.5617  0.10113        142
+   3   2760  0.21664  0.86654  A/kappa     6.8465    1.4832  0.00709        474
+   3   2760  0.21664  0.86654  B           6.7939    1.4718  0.00554        480
+
+PART Q  icosahedral quasicrystal, full spectra of balls (a = 3*kappa/degree)
+   N=700 A/kappa  a=0.6673: E_max=2.1522  E_max*a=1.4361;  interior weight (r<0.6R, volume fraction 0.22) of the six top eigenvectors: 0.84, 0.84, 0.84, 0.84, 0.84, 0.84
+   N=700 B        a=0.6673: E_max=2.2983  E_max*a=1.5336;  interior weight (r<0.6R, volume fraction 0.22) of the six top eigenvectors: 0.01, 0.01, 0.01, 0.01, 0.01, 0.01
+   N=1300 A/kappa  a=0.6828: E_max=2.2724  E_max*a=1.5516;  interior weight (r<0.6R, volume fraction 0.22) of the six top eigenvectors: 0.99, 0.99, 0.99, 0.99, 0.99, 0.99
+   N=1300 B        a=0.6828: E_max=2.2878  E_max*a=1.5621;  interior weight (r<0.6R, volume fraction 0.22) of the six top eigenvectors: 0.00, 0.00, 0.00, 0.00, 0.00, 0.00
+
+PART C  simple-cubic control (analytic: E = |sin k|, a=1, E_max=1 at k=pi/2, v_g(0)=1, m*=1, m*/E_top=1); packet estimator on the x axis and (111):
+
+   cubic: N=4337, w=2.4, a=1.0000, interior degree 6.0, envelope floor^2 = 0.260
+      B x axis  : v_g(k->0) = 1.097;  max v_g = 1.141;  band top |d|_max = 0.905 (0.905/a) at k = 1.57 (k a = 1.57);  m* = 1.085, m*/E_top = 1.199;  |d| at k=1,2,4,6: 0.76, 0.82, 0.00, 0.00
+      B (111)   : v_g(k->0) = 1.120;  max v_g = 1.157;  band top |d|_max = 1.581 (1.581/a) at k = 2.72 (k a = 2.72);  m* = 1.886, m*/E_top = 1.193;  |d| at k=1,2,4,6: 0.85, 1.45, 1.54, 1.54
+      analytic along x: |sin k| at k=1,2 = 0.841, 0.909 ; along (111) |d| = sqrt(3)|sin(k/sqrt3)|, at k=1,2 = 0.945, 1.584
+
+PART Q (continued)  dispersion |d|(k) of the quasicrystal from packets
+
+   icosahedral quasicrystal: N=18259, w=2.4, a=0.6929, interior degree 15.3, envelope floor^2 = 0.260
+      B 5-fold  : v_g(k->0) = 1.036;  max v_g = 1.218;  band top |d|_max = 1.785 (1.237/a) at k = 3.02 (k a = 2.09);  m* = 2.308, m*/E_top = 1.293;  |d| at k=1,2,4,6: 0.90, 1.56, 1.59, 0.72
+      B 3-fold  : v_g(k->0) = 1.036;  max v_g = 1.218;  band top |d|_max = 1.777 (1.231/a) at k = 2.99 (k a = 2.07);  m* = 2.258, m*/E_top = 1.270;  |d| at k=1,2,4,6: 0.90, 1.55, 1.57, 0.82
+      B 2-fold  : v_g(k->0) = 1.036;  max v_g = 1.218;  band top |d|_max = 1.778 (1.232/a) at k = 2.99 (k a = 2.07);  m* = 2.269, m*/E_top = 1.276;  |d| at k=1,2,4,6: 0.90, 1.55, 1.57, 0.86
+      B rand0   : v_g(k->0) = 1.036;  max v_g = 1.218;  band top |d|_max = 1.784 (1.236/a) at k = 3.01 (k a = 2.09);  m* = 2.300, m*/E_top = 1.290;  |d| at k=1,2,4,6: 0.90, 1.56, 1.59, 0.75
+      B rand1   : v_g(k->0) = 1.036;  max v_g = 1.218;  band top |d|_max = 1.783 (1.235/a) at k = 3.01 (k a = 2.08);  m* = 2.295, m*/E_top = 1.287;  |d| at k=1,2,4,6: 0.90, 1.55, 1.58, 0.77
+      A 5-fold  : v_g(k->0) = 0.577;  max v_g = 0.708;  band top |d|_max = 1.912 (1.325/a) at k = 2.94 (k a = 2.04);  m* = 2.228, m*/E_top = 1.165;  |d| at k=1,2,4,6: 1.11, 1.71, 1.67, 0.58
+      A 3-fold  : v_g(k->0) = 0.577;  max v_g = 0.708;  band top |d|_max = 1.902 (1.318/a) at k = 2.91 (k a = 2.02);  m* = 2.153, m*/E_top = 1.132;  |d| at k=1,2,4,6: 1.11, 1.71, 1.64, 0.62
+      A 2-fold  : v_g(k->0) = 0.577;  max v_g = 0.708;  band top |d|_max = 1.904 (1.319/a) at k = 2.92 (k a = 2.02);  m* = 2.167, m*/E_top = 1.138;  |d| at k=1,2,4,6: 1.11, 1.71, 1.65, 0.68
+      A rand0   : v_g(k->0) = 0.577;  max v_g = 0.708;  band top |d|_max = 1.910 (1.323/a) at k = 2.94 (k a = 2.04);  m* = 2.216, m*/E_top = 1.160;  |d| at k=1,2,4,6: 1.11, 1.71, 1.67, 0.60
+      A rand1   : v_g(k->0) = 0.577;  max v_g = 0.708;  band top |d|_max = 1.909 (1.323/a) at k = 2.93 (k a = 2.03);  m* = 2.207, m*/E_top = 1.156;  |d| at k=1,2,4,6: 1.11, 1.71, 1.66, 0.61
