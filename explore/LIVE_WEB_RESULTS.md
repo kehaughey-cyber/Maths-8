@@ -18,6 +18,9 @@ See also `maps/mass_requirements.md` and `maps/degrees_of_freedom.md`.
 - `route56_kernel.py` — the 28 massless Dirac modes resolved onto the carrier irreps ({1, 2′, 3′}⊗spinor).
 - `route56_chirality.py` — parity test showing the kernel's {1,2′,3′} selection is algebraic (Galois), not geometric chirality.
 - `route56_galois.py` — rebuilds the connection on the φ- and ψ-branch graphs and reports each kernel (see §11 caveat).
+- `route56_selection.py` — kernel selection rule (ρ⊗2 irreducible), flip-vs-relabel test, L×R content, D^tr energies.
+- `route56_shells.py` — the connection on all 7 class-shell graphs, both spinor transports, every level labelled by channel.
+- `route56_formula.py` — tests the closed spectrum formula on all 14 operators (run from any directory; needs `route56_shells.py` beside it).
 
 ## 1. energy = registration rate  [cold, verified]
 On the 120-icosian adjacency, the committed 2nd-order wave `ψ_{t+1}=2ψ_t−ψ_{t−1}−c²Lψ_t` has,
@@ -161,3 +164,23 @@ kernel by that branch's *own* adjacency eigenvalues: φ-branch {1,2′,3′} (we
 come from each graph's own eigenvalues. Both graphs are built from the same group, so their eigenspaces may be
 the same isotypic blocks under different names. This script does not test whether the kernel *subspace* flips
 or only its labels; that is tested in §12.
+
+## 12. Selection rule, correction of §11, and the whole-shell spectrum (`route56_selection.py`, `route56_shells.py`, `route56_formula.py`)  [cold]
+**Correction of §11.** The φ-graph and ψ-graph kernels are the **same subspace** (overlap tr(Π_aΠ_b)/28 = 1.0000):
+both graphs come from one group, so they share the isotypic blocks V_ρ, and the §11 "flip" was a relabeling by each
+graph's own eigenvalues. The two graphs are nevertheless **different operators** (same kernel, different massive
+spectra: e.g. channel 2→1 is −7.0534 on the φ-shell and −11.4127 on the ψ-shell).
+**Selection rule (derived, verified on all 9 irreps × 3 connections).** ker D = ⊕ V_ρ⊗C² over {ρ : ρ⊗2 irreducible}. For f in V_ρ,
+D(f⊗χ)=0 ∀χ ⇔ A(fQ)=cλ_ρ(fQ); fQ lies in the blocks of ρ⊗2; λ_σ = |C|χ_σ(h)/d_σ and χ_2(h)=2c, so irreducible ρ⊗2=σ gives
+λ_σ=cλ_ρ identically; reducible → components with different λ → not in the kernel. Only ρ ∈ {1,2′,3′} qualify (1⊗2=2, 2′⊗2=4, 3′⊗2=6).
+**The genuine Galois flip** is swapping the *spinor transport* 2→2′ (Q′ = Q∘σ, a homomorphism, character χ_2′; σ(2I) is the mirror
+copy, so Q′ is not indexed by vertices): the kernel becomes {1,2,3}, overlap with the original 2/28 (the shared singlet).
+**Content.** Kernel = (σ_L,ρ_R) = (2,1)⊕(4,2′)⊕(6,3′), 2+8+18 = 28 modes; left-fold-odd (spinor-like) 20, even 8. Each block is an irreducible,
+mutually inequivalent L×R rep, so any L×R-invariant perturbation lifts the 28 into three levels (Schur; argued, not run). D^tr = cD + sA⊗I
+(checked 1.8e-9) acts on the kernel as s·λ_ρ: 7.0534(×2), −2.1796(×8), −1.4531(×18) (ratios 12 : 6/φ : 4/φ), and D has the exact shadow at −sλ_ρ.
+**All seven class-shell graphs** (overlap cos(nπ/5), n=1..4, plus 1/2, 0, −1/2; the antipode c=−1 is degenerate), transports 2 and 2′ (14 operators):
+(i) **closed spectrum formula, exact on all 14:** level(ρ→σ) = (c′λ_ρ − λ_σ)/s′, multiplicity d_ρ d_σ, over σ ⊂ ρ⊗τ (max diff ≤2e-8);
+(ii) the **core kernel (1→2, 2′→4, 3′→6) is identical on all 7 shells**; extra zero channels only at order 6/3 (+18, kernel 46) and order 4 (+124, kernel 152);
+(iii) **antipodal shells** c ↔ −c: level₋c = ε_σ·level_c (ε = fold parity of the left irrep), 16/16 channels in all three pairs; the Galois-conjugate
+shell pairs are n=1↔3 and n=2↔4; (iv) channel 2→1 has level −|C| sinθ_n.
+**Limits.** The route56 assembly is one choice (not unique); no MeV scale; the ε-flux breaks L×R and its effect on the three levels is untested.
