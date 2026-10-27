@@ -6,3 +6,4 @@
 - [What is energy](what-is-energy.md) — energy = capacity to cause the change itself (the event), clocked three ways; registration is only the record of the change, not the change. Maps recorded in maps/.
 - [Commit to main, not branches](commit-to-main-not-branches.md) — in the Maths 8 repo, commit directly to main; no feature branches or PRs unless asked; don't push unprompted.
 - [SU(2) connection already built](su2-connection-already-built.md) — the canonical Clifford/transport connection (γ, Dirac D=Aγ) and its frustration-flux energy V_spec=μΣ(1−cosF) with pinned μ=(48/5)sin(π/5) are in route56; reuse, don't rebuild. The U(1) pentagon flux was its abelian shadow.
+- [Calibration is allowed](calibration-is-allowed.md) — take one dimensionful handle (c, ħ, G, a mass) and test it; "no scale established" is the wall to avoid; sigma = statistical σ
