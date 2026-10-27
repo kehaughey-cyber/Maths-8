@@ -1,0 +1,26 @@
+PART 1  local chart of the 600-cell around vertex 0 (radius = geodesic angle, deg) vs quasicrystal shells around its icosahedral origin
+   600-cell shells (angle:count) = 36.0:12, 60.0:20, 72.0:12, 90.0:30, 108.0:12, 120.0:20, 144.0:12;  ratios to first: 1.000, 1.667, 2.000, 2.500, 3.000, 3.333
+   quasicrystal shells around the origin (radius:count) = 0.707:12, 1.203:30, 1.395:60, 1.686:20, 1.701:60, 1.946:30, 2.071:60, 2.288:72, 2.575:60;  ratios to first: 1.000, 1.701, 1.973, 2.384, 2.406, 2.753, 2.929, 3.236
+   (both are unions of orbits of the icosahedral group I: allowed orbit sizes 1, 12, 20, 30, 60, 120; the 600-cell's 12,20,12,30 against the quasicrystal's)
+
+PART 2  icosian pair sums q = u+v:  class c, count of pairs, |q|^2 (physical), |sigma(q)|^2 (internal), product, is the direction an existing vertex?
+   c=phi/2       pairs   720  |q|^2=3.6180  |sigma(q)|^2=1.3820  product=5.0000  existing vertex: False
+   c=1/(2phi)    pairs   720  |q|^2=2.6180  |sigma(q)|^2=0.3820  product=1.0000  existing vertex: True
+   c=1/2         pairs  1200  |q|^2=3.0000  |sigma(q)|^2=3.0000  product=9.0000  existing vertex: False
+   c=0           pairs  1800  |q|^2=2.0000  |sigma(q)|^2=2.0000  product=4.0000  existing vertex: False
+   c=-1/2        pairs  1200  |q|^2=1.0000  |sigma(q)|^2=1.0000  product=1.0000  existing vertex: True
+   c=-1/(2phi)   pairs   720  |q|^2=1.3820  |sigma(q)|^2=3.6180  product=5.0000  existing vertex: False
+   c=-phi/2      pairs   720  |q|^2=0.3820  |sigma(q)|^2=2.6180  product=1.0000  existing vertex: True
+   new directions after dedupe: 2520;  total set 120 + new = 2640 points on S^3 (n=2 subdivision has 840)
+   continuum targets (d<=4): -5(x12) -4(x6) -3(x2) 0(x2) +1(x6) +2(x12) +3(x20)
+   geodesic subdivision, from route56_subdiv_all.out (mean edge angle 18.50 deg, n=2): -4.319(x12) -3.728(x6) -2.948(x2) 0 +0.983(x6) +1.864(x12) +2.592(x20)   [A/kappa]
+
+   -- icosian pair-midpoint refinement of S^3: N=2640, kNN=14, mean edge angle 13.278 deg, kappa=1.0815
+      A/kappa  full spectrum: kernel (|ev|<1e-6) = 2;  #|lambda|<0.5: 712;  #|lambda|<1.0: 1282 of 5280;  lowest nonzero |lambda| = 0.00174
+      B        full spectrum: kernel (|ev|<1e-6) = 2;  #|lambda|<0.5: 678;  #|lambda|<1.0: 1318 of 5280;  lowest nonzero |lambda| = 0.00251
+      A/kappa  Ritz levels (d<=4): -4.687(x2)  -4.684(x2)  -4.680(x2)  -4.465(x4)  -4.459(x2)  -3.831(x4)  -3.828(x2)  -2.968(x2)  -0.000(x2)  +0.983(x2)  +0.988(x2)  +0.992(x2)  +1.862(x2)  +1.868(x2)  +1.871(x2)  +1.959(x2)  +1.962(x2)  +1.968(x2)  +2.593(x2)  +2.686(x2)  +2.690(x2)  +2.700(x2)  +2.725(x2)  +2.732(x2)  +2.791(x2)  +2.801(x2)  +2.806(x2)  +2.923(x2)
+      B        Ritz levels (d<=4): -4.654(x2)  -4.651(x4)  -4.453(x2)  -4.450(x2)  -4.447(x2)  -3.823(x2)  -3.820(x4)  -2.968(x2)  -0.000(x2)  +0.989(x6)  +1.890(x6)  +1.931(x6)  +2.632(x2)  +2.705(x4)  +2.709(x2)  +2.739(x4)  +2.755(x2)  +2.758(x4)  +2.810(x2)
+
+real	0m56.150s
+user	0m0.031s
+sys	0m0.016s

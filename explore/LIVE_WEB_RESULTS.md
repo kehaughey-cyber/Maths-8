@@ -284,3 +284,43 @@ nothing about doublers or the non-smooth low modes of §14 (not probed; high-k a
 a vertex-free origin, one realisation, no inflation sequence: the φ³-self-similarity of the quasilattice has not been used as the refinement parameter.
 (4) No link yet from the R³ quasicrystal to the S³ carrier (how the orbifold/double-cone relates), no observation, no mass identification.
 Commands: `py -3 -I -u route56_quasi.py > route56_quasi.out`; `py -3 -I -u route56_quasi2.py > route56_quasi2.out`. sha256: route56_quasi.py 23f48650…739a3f; route56_quasi.out 94bbb33f…540522; route56_quasi2.py baa9634e…343238; route56_quasi2.out ffc45e4a…df8cb (full values: `sha256sum explore/route56_quasi*`).
+
+## 16. Self-similarity, doublers, deviation floor, and the R³↔S³ link (`route56_scale.py`, `route56_link.py`; raw `route56_scale.out`, `route56_link.out`)  [cold]
+**1. The inflation unit is φ³, exactly.** For the 19589-point cut-and-project set: φ³·Λ ⊂ Λ with fraction **1.0000** whenever the image lies inside the generated
+region (|x|<1, 1.5, 2.0: 13/13, 103/103, 213/213), 0.965 at |x|<2.5 only because the images reach the box edge (10.59 of 10.91 available); φ·Λ and φ²·Λ
+are *not* subsets (0.077–0.568, identical for φ and φ²). (The internal coordinate shrinks by (−1/φ)³.) So the lattice contains a coarse copy of itself at every φ³.
+**2. Doublers (packet scan, 1<|k|<9; `E(k)` sign change and ‖Dψ‖/‖ψ‖ against the k=0 envelope floor 0.680).** Control, simple cubic: E changes sign at
+k = 3.20, 4.48, 5.52 along x, (110), (111) = π, π√2, π√3 (to the 0.08 step) and ‖Dψ‖ falls to the floor (0.63): the detector works. Quasicrystal: E(k)
+changes sign at |k| = 6.1–7.1 in **every** direction tested (5-,3-,2-fold axes + 4 random; a = 0.69, so |k|a ≈ 4.4–4.9). Operator B (LS-consistent) never reaches the floor
+(min ‖Dψ‖ 0.87 on the 5-fold axis, 0.97–1.05 elsewhere): a sign change of the helicity-projected energy but no zero-energy state in the sampled directions. Operator A (route56's
+raw rule, κ geometric) reaches 0.67 on the 5-fold axis and 0.81–0.89 in four others, E ≈ 0.00–0.15: **A has near-zero-energy high-k states (doubler-like); B does not.** Directions
+sampled coarsely (step 0.12, 7 directions); a packet cannot resolve a gap below ~1/w.
+**3. Deviation law (B, packets of width 1.5/1.8/2.4, |k| = 0.3–1.4, 4 directions, 15 points).** 1 − E/|k| = α/w² + βk² + γk⁴ with α = 0.103 (envelope), **β = 0.0517**, γ = −0.0019,
+max |fit−data| = 0.0021. With mean edge a = 0.693: **δ_lattice = 0.0248 (ka)²**. For A the same fit is poor (max error 0.029, α < 0) — the unit-weight rule is not consistent on this uneven mesh.
+**4. Where the smooth-sector deviation reaches a floor (my reading of "sigma": the lattice-vs-continuum deviation of the smooth sector; if you meant the Galois σ or a statistical σ, say so).**
+| floor | k·a | λ/a | φ³ steps above the lattice | φ steps |
+|---|---|---|---|---|
+| 1e-2 | 0.63 | 9.9 | 1.6 | 4.8 |
+| 1e-6 | 6.3e-3 | 9.9e2 | 4.8 | 14.3 |
+| 1e-9 | 2.0e-4 | 3.1e4 | 7.2 | 21.5 |
+| 1e-12 | 6.3e-6 | 9.9e5 | 9.6 | 28.7 |
+| 1e-16 | 6.3e-8 | 9.9e7 | 12.8 | 38.3 |
+One decade of length = 1.595 φ³ steps. So **in the smooth sector the lattice signature is below 1e-12 about ten φ³-inflations above the lattice spacing and below double precision at ~13**;
+a tower of ~97 φ³ steps spans 61 decades. Caveats: (i) the k² law was measured only for ka ≈ 0.2–1 and is extrapolated ~8 decades; (ii) it is the smooth sector only — the
+non-smooth/high-k sector (§14, item 2; doubler-like states above) sits at fixed ka ≈ 4–5 at every scale and does not flow down; the structure that survives below a smooth-sector noise floor
+is that lattice-scale sector; (iii) no lattice constant in metres is established (hop↔metre owed), so no physical scale is claimed.
+**5. The link R³ ↔ S³ (`route56_link.py`).**
+(a) *Local chart.* The 600-cell star in the log chart has shells 12 (36°), 20 (60°), 12 (72°), 30 (90°) with radius ratios 1, 1.667, 2.000, 2.500; the quasicrystal around its
+icosahedral origin has 12 (0.707), 30 (1.203), 60, 20 (1.686), 60, 30 … with ratios 1, 1.701, 1.973, 2.384. **Only the first shell (the kissing-12 icosahedron) coincides**; beyond it the
+orbit sequences differ. Both are unions of icosahedral-group orbits, nothing more is identified.
+(b) *The exact link is algebraic.* The 120 units are the unit shell of the 4D icosian quasicrystal (the icosian ring is the E8 cut-and-project with Galois conjugation as the internal space);
+the S³ refinement is the set of directions of icosians of larger norm. For a pair at overlap class c, u+v has |q|² = 2+2c and internal norm |σ(q)|² = 2+2σ(c); norm product 1 ⇒ existing vertex
+(classes 1/(2φ), −1/2, −φ/2), otherwise a **new direction with norm product 5 (classes φ/2, −1/(2φ): the edge midpoints, √5), 9 (class 1/2: 3²), 4 (class 0: 2²)** — the refinement ladder runs along the
+primes 2, 3, √5 of ℤ[φ]. One rung (all pair sums): 2520 new points, 2640 on S³.
+(c) *The route56 rule on that set* (kNN-14 edges symmetrised; mean edge 13.28°; counting-measure Ritz on SU(2) harmonics, d≤4): A/κ levels +0.983–0.992 (target 1, ×6 split by the set's symmetry), 1.86–1.97 (2), 2.59–2.93 (3), −2.968 (−3), −3.83 (−4), −4.46…−4.69 (−5); B similar.
+At comparable angle the geodesic subdivision gave 0.992, 1.938, 2.811, −2.977, −3.876, −4.686 at 12.41°: **the two refinements flow to the same continuum integers with comparable θ² coefficients** (e.g. level +1: err/θ² ≈ 0.17 in both).
+(d) *Zero modes / the 28-core on this set (full spectrum, 5280 modes).* Kernel = **2** for both A and B (the constant spinor only); modes below |λ|<0.5: 712 (A), 678 (B) against 2 in the continuum; lowest nonzero |λ| 0.0017/0.0025.
+**The 28-mode core does not appear on this refinement, nor on the n=3 subdivision, nor on a non-group R³ set** — it is a feature of the exact 2I×2I-symmetric 120-vertex (and its symmetric n=2) graph; the kNN construction here is irregular, so this is "not seen on this
+graph" rather than "excluded" (a regular, symmetric icosian refinement graph is the clean test). The 28-core is defined by the 2I irreps and has no direct R³ analogue; on R³ I tested the doubler content instead (item 2).
+**Not done.** Window-restricted icosian ladders beyond one rung (sums of three units); an exactly symmetric edge rule for the icosian set; periodic approximants of the R³ set (the only way to get a boundary-free spectrum there); relating the 2D orbifold; any observation.
+Commands: `py -3 -I -u route56_scale.py > route56_scale.out` (~3 min), `py -3 -I -u route56_link.py > route56_link.out` (~1 min). sha256 route56_scale.py 89cf67f7…18e33; route56_scale.out 02da7acf…f08ba; route56_link.py f898a421…ac14; route56_link.out f6ee9dac…5e44 (full values: `sha256sum explore/route56_scale* explore/route56_link*`).

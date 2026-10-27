@@ -1,0 +1,41 @@
+(1) phi^n self-similarity of the point set (K=6, 19589 points incl. origin)
+    |x|<1.0 (N=13): fraction with phi x, phi^2 x, phi^3 x in Lambda = 0.0769, 0.0769, 1.0000   (phi^3 x reaches |.|<4.24 of 10.91 available)
+    |x|<1.5 (N=103): fraction with phi x, phi^2 x, phi^3 x in Lambda = 0.3010, 0.3010, 1.0000   (phi^3 x reaches |.|<6.35 of 10.91 available)
+    |x|<2.0 (N=213): fraction with phi x, phi^2 x, phi^3 x in Lambda = 0.5681, 0.5681, 1.0000   (phi^3 x reaches |.|<8.47 of 10.91 available)
+    |x|<2.5 (N=345): fraction with phi x, phi^2 x, phi^3 x in Lambda = 0.5594, 0.5594, 0.9652   (phi^3 x reaches |.|<10.59 of 10.91 available)
+
+(2) doubler scan: CONTROL simple cubic (doublers at k=pi on an axis, pi*sqrt2 along (110), pi*sqrt3 along (111)): N=1839, w=1.8, interior degree 6.0, envelope floor ||D psi|| at k=0 -> 0.680
+    B x axis  : sign changes of E(k) (k>0.5) at ['3.20'];     B x axis  : E/k at 0.3..0.8 ~ 0.875;  min ||D psi|| for k>1: 0.631 at k=3.12;  candidate zero-energy states (||D psi|| < 1.3 floor): k=3.12 (|D psi|=0.63, E=+0.02)
+    B (110)   : sign changes of E(k) (k>0.5) at ['4.48'];     B (110)   : E/k at 0.3..0.8 ~ 0.900;  min ||D psi|| for k>1: 0.632 at k=4.48;  candidate zero-energy states (||D psi|| < 1.3 floor): k=4.48 (|D psi|=0.63, E=-0.03)
+    B (111)   : sign changes of E(k) (k>0.5) at ['5.52'];     B (111)   : E/k at 0.3..0.8 ~ 0.908;  min ||D psi|| for k>1: 0.631 at k=5.44;  candidate zero-energy states (||D psi|| < 1.3 floor): k=5.44 (|D psi|=0.63, E=+0.00)
+
+(2) doubler scan: icosahedral quasicrystal: N=8387, w=1.8, interior degree 15.3, envelope floor ||D psi|| at k=0 -> 0.680
+    B 5-fold  : sign changes of E(k) (k>0.5) at ['6.84'];     B 5-fold  : E/k at 0.3..0.8 ~ 0.953;  min ||D psi|| for k>1: 0.866 at k=6.84;  candidate zero-energy states (||D psi|| < 1.3 floor): k=6.84 (|D psi|=0.87, E=-0.02)
+    B 3-fold  : sign changes of E(k) (k>0.5) at ['6.36'];     B 3-fold  : E/k at 0.3..0.8 ~ 0.953;  min ||D psi|| for k>1: 1.014 at k=6.12;  candidate zero-energy states (||D psi|| < 1.3 floor): none
+    B 2-fold  : sign changes of E(k) (k>0.5) at ['6.48'];     B 2-fold  : E/k at 0.3..0.8 ~ 0.953;  min ||D psi|| for k>1: 1.046 at k=6.12;  candidate zero-energy states (||D psi|| < 1.3 floor): none
+    B rand0   : sign changes of E(k) (k>0.5) at ['6.60'];     B rand0   : E/k at 0.3..0.8 ~ 0.953;  min ||D psi|| for k>1: 0.975 at k=6.36;  candidate zero-energy states (||D psi|| < 1.3 floor): none
+    B rand1   : sign changes of E(k) (k>0.5) at ['6.48'];     B rand1   : E/k at 0.3..0.8 ~ 0.953;  min ||D psi|| for k>1: 1.022 at k=6.12;  candidate zero-energy states (||D psi|| < 1.3 floor): none
+    B rand2   : sign changes of E(k) (k>0.5) at ['6.48'];     B rand2   : E/k at 0.3..0.8 ~ 0.953;  min ||D psi|| for k>1: 1.004 at k=6.24;  candidate zero-energy states (||D psi|| < 1.3 floor): none
+    B rand3   : sign changes of E(k) (k>0.5) at ['6.60'];     B rand3   : E/k at 0.3..0.8 ~ 0.953;  min ||D psi|| for k>1: 0.988 at k=6.36;  candidate zero-energy states (||D psi|| < 1.3 floor): none
+    A 5-fold  : sign changes of E(k) (k>0.5) at ['7.08'];     A 5-fold  : E/k at 0.3..0.8 ~ 1.022;  min ||D psi|| for k>1: 0.669 at k=7.08;  candidate zero-energy states (||D psi|| < 1.3 floor): k=7.08 (|D psi|=0.67, E=-0.00)
+    A 3-fold  : sign changes of E(k) (k>0.5) at ['6.48'];     A 3-fold  : E/k at 0.3..0.8 ~ 1.022;  min ||D psi|| for k>1: 0.841 at k=6.36;  candidate zero-energy states (||D psi|| < 1.3 floor): k=6.36 (|D psi|=0.84, E=+0.06)
+    A 2-fold  : sign changes of E(k) (k>0.5) at ['6.60'];     A 2-fold  : E/k at 0.3..0.8 ~ 1.022;  min ||D psi|| for k>1: 0.891 at k=6.24;  candidate zero-energy states (||D psi|| < 1.3 floor): none
+    A rand0   : sign changes of E(k) (k>0.5) at ['6.84'];     A rand0   : E/k at 0.3..0.8 ~ 1.022;  min ||D psi|| for k>1: 0.808 at k=6.48;  candidate zero-energy states (||D psi|| < 1.3 floor): k=6.48 (|D psi|=0.81, E=+0.14)
+    A rand1   : sign changes of E(k) (k>0.5) at ['6.60'];     A rand1   : E/k at 0.3..0.8 ~ 1.022;  min ||D psi|| for k>1: 0.858 at k=6.36;  candidate zero-energy states (||D psi|| < 1.3 floor): k=6.36 (|D psi|=0.86, E=+0.11)
+    A rand2   : sign changes of E(k) (k>0.5) at ['6.72'];     A rand2   : E/k at 0.3..0.8 ~ 1.022;  min ||D psi|| for k>1: 0.840 at k=6.36;  candidate zero-energy states (||D psi|| < 1.3 floor): k=6.36 (|D psi|=0.84, E=+0.15)
+    A rand3   : sign changes of E(k) (k>0.5) at ['6.72'];     A rand3   : E/k at 0.3..0.8 ~ 1.022;  min ||D psi|| for k>1: 0.822 at k=6.48;  candidate zero-energy states (||D psi|| < 1.3 floor): k=6.48 (|D psi|=0.82, E=+0.11)
+
+(3) deviation scaling delta = 1 - E/|k|  fitted as alpha/w^2 + beta k^2 + gamma k^4 (mean of 4 directions, helicity +)
+    B: alpha=0.1030  beta=0.0517  gamma=-0.0019;  max |fit - data| = 0.0021 over 15 points (delta range 0.0237..0.1385)
+    A: alpha=-0.0219  beta=0.0239  gamma=0.0101;  max |fit - data| = 0.0286 over 15 points (delta range -0.0331..0.0912)
+    mean edge length a = 3*kappa/degree = 0.6929 (lattice units);  beta_hat = beta*a^2 = 0.0248
+
+(4) lattice deviation floor: delta_lat = beta_hat (k a)^2  =>  k a = sqrt(floor/beta_hat);  wavelength lambda/a = 2 pi/(k a);  phi^3-inflation steps above the lattice scale n = ln(lambda/a)/ln(phi^3)
+     floor            k*a            lambda/a         phi^3 steps   phi steps
+        1e-02      6.345e-01        9.903e+00         1.59        4.76
+        1e-04      6.345e-02        9.903e+01         3.18        9.55
+        1e-06      6.345e-03        9.903e+02         4.78       14.33
+        1e-09      2.006e-04        3.132e+04         7.17       21.51
+        1e-12      6.345e-06        9.903e+05         9.56       28.69
+        1e-16      6.345e-08        9.903e+07        12.75       38.26
+     reference: 1 decade of length = 1.595 phi^3 steps = 4.785 phi steps
