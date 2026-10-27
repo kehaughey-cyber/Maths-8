@@ -21,6 +21,8 @@ See also `maps/mass_requirements.md` and `maps/degrees_of_freedom.md`.
 - `route56_selection.py` — kernel selection rule (ρ⊗2 irreducible), flip-vs-relabel test, L×R content, D^tr energies.
 - `route56_shells.py` — the connection on all 7 class-shell graphs, both spinor transports, every level labelled by channel.
 - `route56_formula.py` — tests the closed spectrum formula on all 14 operators (run from any directory; needs `route56_shells.py` beside it).
+- `route56_meaning.py` — weighted-mix kernel test; shell-meaning tests T1 (hop layers), T2 (flatness, first attempt FAILED — see §13), T3 (continuum limit).
+- `route56_meaning2.py` — corrected flatness test with the pull-back transport; pure-gauge identity; layer polynomials; order6+order3 mixes.
 
 ## 1. energy = registration rate  [cold, verified]
 On the 120-icosian adjacency, the committed 2nd-order wave `ψ_{t+1}=2ψ_t−ψ_{t−1}−c²Lψ_t` has,
@@ -184,3 +186,27 @@ mutually inequivalent L×R rep, so any L×R-invariant perturbation lifts the 28 
 (iii) **antipodal shells** c ↔ −c: level₋c = ε_σ·level_c (ε = fold parity of the left irrep), 16/16 channels in all three pairs; the Galois-conjugate
 shell pairs are n=1↔3 and n=2↔4; (iv) channel 2→1 has level −|C| sinθ_n.
 **Limits.** The route56 assembly is one choice (not unique); no MeV scale; the ε-flux breaks L×R and its effect on the three levels is untested.
+
+## 13. Weighted mixes keep the core; what the shell family means (`route56_meaning.py`, `route56_meaning2.py`)  [cold]
+**Weighted mixes.** 180 random mixes Σ w_c D_c of the 7 shell connections (positive, signed, sparse; transport 2): kernel dimension **exactly 28 every
+time**, core intact to 1e-9. Mixes of only the special shells (order 6, 4, 3): 28. Order 6 + order 3 with generic weights: **46** (the extra 6→3′
+channel survives). Order 6 + order 3 with **equal weights: 146 = 120 + 8 + 18** — by level₋c = ε_σ·level_c every left-fold-odd channel (120 modes)
+cancels, and the core channel 2′→4 (8) and 6→3′ (18) are already zero (count worked out after seeing 146). Mixing the two spinor transports,
+a·D⁽²⁾ + b·D⁽²′⁾ on the n=1 shell: kernel **2** (the singlet block only).
+**T1 — hop layers.** The shells are the hop-distance layers of the 600-cell graph (sizes 1, 12, 32, 42, 32, 1): d1 = n1; d2 = n2 + order 6 (12+20);
+d3 = order 4 + n3 (30+12); d4 = order 3 + n4 (20+12); d5 = antipode.
+**T2 — flatness. The first attempt FAILED (errors 1.6, 15, 190 for n=2,3,4), and the cause was my test design, not the physics:** I built the
+twisted adjacency with push-forward blocks Q_jQ_i†, whose matrix products compose the transports in the wrong order. With the pull-back transport
+Ω_ij = Q_iQ_j† = c − sγ_ij (route56's "full return transport"): TO(A) = W(A⊗I)W† with W = diag(Q_i), **exact to 1e-16 — the transport is pure
+gauge (flat, F6)**; TO(A₁)ⁿ = Σ m_n(c) TO(A_c) with the same walk counts as A₁ⁿ (relative error ~3e-9, float); and
+**D_c = (c·A_c⊗I − W(A_c⊗I)W†)/s_c, exact to 3e-9** — D_c is the frame-twist difference of the shell sum (flat connection, frame Q: teleparallel),
+which is why the channel formula is (cλ_ρ − λ_σ)/s. **The shells are not graded n-th powers:** the distance-2…5 layers are degree-8 polynomials in
+A₁ (the 600-cell graph is not distance-regular); A₁² = 12I + 5A_{n1} + 1A_{n2} + 3A_{order6}, so literal walk-powers are specific weighted
+*mixes* of shells (which keep the core).
+**T3 — continuum limit.** On the six irreps that are restrictions of SU(2) irreps (d = 1,2,3,4′,5,6) the lattice eigenvalue equals the SU(2) shell
+formula |C| sin(dθ)/(d sinθ) to 5e-14. Its small-angle limit, level/(|C|θ/3) → (d−1) for d→d+1 and −(d+1) for d→d−1 (closed form evaluated down to
+θ = 0.01), are the eigenvalues of 2σ·J: the teleparallel (left-invariant-frame) Dirac operator on S³; the Riemannian Dirac operator is that plus 3/2
+(analytic, standard). The continuum operator's only zero is the constant spinor (channel 1→2); the core channels 2′→4 and 3′→6 have no SU(2)
+analogue. The lattice at its smallest angle (36°) is coarse: 6% (d=2), 24% (d=3), 45% (d=4), 66% (d=5) below the continuum value, so the
+identification rests on the exact chain formula, not on lattice convergence.
+**Not tested / no basis to test:** any comparison with observation; any identification of these levels as physical masses; whether shell weights carry meaning.
