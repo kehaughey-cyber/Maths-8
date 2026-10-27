@@ -1,0 +1,66 @@
+
+==== frequency n=1:  120 vertices (120 original), 720 edges, degrees {np.int64(12): np.int64(120)}
+  edge angle: min 36.0000  max 36.0000  mean 36.0000 deg;  hermiticity A 0.0e+00
+  local anisotropy lambda_max/lambda_min of sum v v^T: original vertices max 1.0000 ; new vertices max nan
+  neighbour-direction imbalance |sum n_ij|: original max 4.941e-09 ; new max nan
+  geometric scale kappa = mean_i (sum_j theta_ij)/3 = 2.513274  (A ~ kappa*B on an isotropic mesh; no fit)
+  -- A/kappa (route56 rule): kernel dim 28; full-spectrum lowest |levels| (continuum units): -0.0000(x28)  -0.2891(x24)  +0.5782(x18)  +0.8672(x8)  +0.9355(x30)  -1.0953(x30)  +1.3539(x30)  +1.5137(x12)  +1.6429(x20)  -2.0308(x20)
+     spectral count: #|lambda|<0.5: 52   #|lambda|<1.0: 108   (of 240; smooth continuum has 2 below 0.5, 2+6=8 below 1.5)
+     smooth subspace d<=3 (dim 28): leakage ||(1-P)D P|| = 0.0000;  Ritz levels:
+       -3.027(x6)  -2.806(x2)  +0.000(x2)  +0.935(x6)  +1.514(x12)
+     smooth subspace d<=4 (dim 60): leakage ||(1-P)D P|| = 0.0000;  Ritz levels:
+       -3.027(x6)  -2.806(x2)  -2.738(x12)  +0.000(x2)  +0.935(x6)  +1.514(x12)  +1.643(x20)
+     smooth subspace d<=6 (dim 182): leakage ||(1-P)D P|| = 0.0000;  Ritz levels:
+       -3.027(x6)  -2.806(x2)  -2.738(x12)  -2.031(x20)  -1.095(x30)  +0.000(x2)  +0.578(x18)  +0.935(x30)  +1.354(x30)  +1.514(x12)  +1.643(x20)
+  -- B (LS control): kernel dim 28; full-spectrum lowest |levels| (continuum units): +0.0000(x28)  -0.2891(x24)  +0.5782(x18)  +0.8672(x8)  +0.9355(x30)  -1.0953(x30)  +1.3539(x30)  +1.5137(x12)  +1.6429(x20)  -2.0308(x20)
+     spectral count: #|lambda|<0.5: 52   #|lambda|<1.0: 108   (of 240; smooth continuum has 2 below 0.5, 2+6=8 below 1.5)
+     smooth subspace d<=3 (dim 28): leakage ||(1-P)D P|| = 0.0000;  Ritz levels:
+       -3.027(x6)  -2.806(x2)  +0.000(x2)  +0.935(x6)  +1.514(x12)
+     smooth subspace d<=4 (dim 60): leakage ||(1-P)D P|| = 0.0000;  Ritz levels:
+       -3.027(x6)  -2.806(x2)  -2.738(x12)  -0.000(x2)  +0.935(x6)  +1.514(x12)  +1.643(x20)
+     smooth subspace d<=6 (dim 182): leakage ||(1-P)D P|| = 0.0000;  Ritz levels:
+       -3.027(x6)  -2.806(x2)  -2.738(x12)  -2.031(x20)  -1.095(x30)  +0.000(x2)  +0.578(x18)  +0.935(x30)  +1.354(x30)  +1.514(x12)  +1.643(x20)
+
+==== frequency n=2:  840 vertices (120 original), 5040 edges, degrees {np.int64(12): np.int64(840)}
+  edge angle: min 18.0000  max 18.6994  mean 18.4996 deg;  hermiticity A 0.0e+00
+  local anisotropy lambda_max/lambda_min of sum v v^T: original vertices max 1.0000 ; new vertices max 1.1897
+  neighbour-direction imbalance |sum n_ij|: original max 4.941e-09 ; new max 3.888e-09
+  geometric scale kappa = mean_i (sum_j theta_ij)/3 = 1.291514  (A ~ kappa*B on an isotropic mesh; no fit)
+  -- A/kappa (route56 rule): kernel dim 30; full-spectrum lowest |levels| (continuum units): +0.0000(x30)  -0.1009(x24)  +0.1538(x12)  +0.2378(x10)  -0.2640(x16)  +0.2728(x12)  -0.2851(x12)  -0.3772(x18)  -0.4192(x30)  -0.4270(x6)
+     spectral count: #|lambda|<0.5: 202   #|lambda|<1.0: 382   (of 1680; smooth continuum has 2 below 0.5, 2+6=8 below 1.5)
+     smooth subspace d<=3 (dim 28): leakage ||(1-P)D P|| = 0.2561;  Ritz levels:
+       -3.728(x6)  -2.948(x2)  +0.000(x2)  +0.983(x6)  +1.864(x12)
+     smooth subspace d<=4 (dim 60): leakage ||(1-P)D P|| = 0.3234;  Ritz levels:
+       -4.319(x12)  -3.728(x6)  -2.948(x2)  +0.000(x2)  +0.983(x6)  +1.864(x12)  +2.592(x20)
+     smooth subspace d<=6 (dim 182): leakage ||(1-P)D P|| = 0.4461;  Ritz levels:
+       -4.821(x30)  -4.690(x20)  -4.319(x12)  -3.728(x6)  -2.948(x2)  -0.000(x2)  +0.983(x6)  +1.864(x12)  +2.592(x20)  +3.127(x30)  +3.434(x18)  +3.450(x24)
+  -- B (LS control): kernel dim 30; full-spectrum lowest |levels| (continuum units): -0.0000(x30)  -0.1011(x24)  +0.1740(x12)  +0.2396(x10)  -0.2552(x12)  -0.2646(x16)  +0.2896(x12)  -0.3655(x18)  -0.4073(x30)  +0.4155(x2)
+     spectral count: #|lambda|<0.5: 202   #|lambda|<1.0: 364   (of 1680; smooth continuum has 2 below 0.5, 2+6=8 below 1.5)
+     smooth subspace d<=3 (dim 28): leakage ||(1-P)D P|| = 0.2151;  Ritz levels:
+       -3.727(x6)  -2.948(x2)  +0.000(x2)  +0.983(x6)  +1.864(x12)
+     smooth subspace d<=4 (dim 60): leakage ||(1-P)D P|| = 0.2718;  Ritz levels:
+       -4.319(x12)  -3.727(x6)  -2.948(x2)  -0.000(x2)  +0.983(x6)  +1.864(x12)  +2.591(x20)
+     smooth subspace d<=6 (dim 182): leakage ||(1-P)D P|| = 0.3870;  Ritz levels:
+       -4.819(x30)  -4.689(x20)  -4.319(x12)  -3.727(x6)  -2.948(x2)  +0.000(x2)  +0.983(x6)  +1.864(x12)  +2.591(x20)  +3.126(x30)  +3.433(x18)  +3.448(x24)
+
+==== frequency n=3:  2760 vertices (120 original), 16560 edges, degrees {np.int64(12): np.int64(2760)}
+  edge angle: min 11.8186  max 12.6611  mean 12.4123 deg;  hermiticity A 0.0e+00
+  local anisotropy lambda_max/lambda_min of sum v v^T: original vertices max 1.0000 ; new vertices max 1.1931
+  neighbour-direction imbalance |sum n_ij|: original max 4.941e-09 ; new max 1.324e-01
+  geometric scale kappa = mean_i (sum_j theta_ij)/3 = 0.866540  (A ~ kappa*B on an isotropic mesh; no fit)
+  -- A/kappa (route56 rule): kernel dim 4; full-spectrum lowest |levels| (continuum units): +0.0000(x4)  +0.0071(x16)  -0.0115(x6)  -0.0686(x24)  +0.0716(x30)  -0.0841(x6)  +0.1168(x8)  +0.1360(x18)  +0.1809(x18)  +0.2282(x20)
+     spectral count: #|lambda|<0.5: 312   #|lambda|<1.0: 704   (of 5520; smooth continuum has 2 below 0.5, 2+6=8 below 1.5)
+     smooth subspace d<=3 (dim 28): leakage ||(1-P)D P|| = 0.2320;  Ritz levels:
+       -3.876(x6)  -2.977(x2)  +0.000(x2)  +0.992(x6)  +1.938(x12)
+     smooth subspace d<=4 (dim 60): leakage ||(1-P)D P|| = 0.2917;  Ritz levels:
+       -4.686(x12)  -3.876(x6)  -2.977(x2)  +0.000(x2)  +0.992(x6)  +1.938(x12)  +2.811(x20)
+     smooth subspace d<=6 (dim 182): leakage ||(1-P)D P|| = 0.4042;  Ritz levels:
+       -5.952(x30)  -5.384(x20)  -4.686(x12)  -3.876(x6)  -2.977(x2)  +0.000(x2)  +0.992(x6)  +1.938(x12)  +2.811(x20)  +3.589(x30)  +4.249(x18)  +4.252(x24)
+  -- B (LS control): kernel dim 4; full-spectrum lowest |levels| (continuum units): -0.0000(x4)  +0.0055(x16)  -0.0232(x6)  -0.0544(x24)  +0.0660(x30)  -0.0884(x6)  +0.1241(x8)  +0.1407(x18)  +0.1855(x18)  +0.2271(x12)
+     spectral count: #|lambda|<0.5: 312   #|lambda|<1.0: 734   (of 5520; smooth continuum has 2 below 0.5, 2+6=8 below 1.5)
+     smooth subspace d<=3 (dim 28): leakage ||(1-P)D P|| = 0.3344;  Ritz levels:
+       -3.876(x6)  -2.977(x2)  -0.000(x2)  +0.992(x6)  +1.938(x12)
+     smooth subspace d<=4 (dim 60): leakage ||(1-P)D P|| = 0.3443;  Ritz levels:
+       -4.686(x12)  -3.876(x6)  -2.977(x2)  +0.000(x2)  +0.992(x6)  +1.938(x12)  +2.811(x20)
+     smooth subspace d<=6 (dim 182): leakage ||(1-P)D P|| = 0.3851;  Ritz levels:
+       -5.951(x30)  -5.384(x20)  -4.686(x12)  -3.876(x6)  -2.977(x2)  +0.000(x2)  +0.992(x6)  +1.938(x12)  +2.811(x20)  +3.589(x30)  +4.249(x18)  +4.252(x24)

@@ -210,3 +210,41 @@ formula |C| sin(dθ)/(d sinθ) to 5e-14. Its small-angle limit, level/(|C|θ/3) 
 analogue. The lattice at its smallest angle (36°) is coarse: 6% (d=2), 24% (d=3), 45% (d=4), 66% (d=5) below the continuum value, so the
 identification rests on the exact chain formula, not on lattice convergence.
 **Not tested / no basis to test:** any comparison with observation; any identification of these levels as physical masses; whether shell weights carry meaning.
+
+## 14. Scale flow under geodesic subdivision (`route56_subdiv.py`, raw output `route56_subdiv_all.out`)  [cold]
+**Setup.** Each of the 600 tetrahedral cells is cut into the barycentric lattice at frequency n and projected to S³ (n=1: the inherited 120-vertex n=1 shell
+graph; n=2: 840 vertices; n=3: 2760). Edges = the 12 FCC-type neighbours. Operator **A** is the route56 rule on the refined edges, unit weight, per-edge overlap
+c_ij = p_i·p_j: D_ij = (Q_jQ_i† − c_ij)/s_ij = −i n_ij·σ (Hermitian to 0). The only scale is geometric, κ = mean_i(Σ_j θ_ij)/3 (0.6283·4 = 2.5133, 1.2915, 0.8665
+for n=1,2,3), not fitted. Control **B**: least-squares first-order discretisation of the same teleparallel operator on the same mesh (scale 1 by construction).
+Test functions: the sampled SU(2) matrix elements D^(d)_{mm'}(p), d ≤ K, ⊗ C²; Ritz values of the compressed operator. The continuum targets are the
+teleparallel levels (d−1) ×d(d+1) and −(d+1) ×d(d−1) (branch fixed by the data: this frame gives +(d−1), −(d+1)).
+A first version calibrated on a "6-fold level" and found none — the lattice splits the continuum multiplets by 2I, and I had asked for the wrong thing; the
+geometric κ replaced the calibration.
+
+**Result (A/κ Ritz levels; B agrees to 3 digits).**
+| target (mult) | n=1 (θ=36°) | n=2 (18.50°) | n=3 (12.41°) | err/θ² at n=1,2,3 |
+|---|---|---|---|---|
+| +1 (6) | 0.9355 | 0.983 | 0.992 | 0.163, 0.163, 0.170 |
+| −3 (2) | −2.806 | −2.948 | −2.977 | 0.49, 0.50, 0.49 |
+| +2 (12) | 1.514 | 1.864 | 1.938 | 1.23, 1.30, 1.32 |
+| −4 (6) | −3.027 | −3.728 | −3.876 | 2.46, 2.61, 2.64 |
+| +3 (20) | 1.643 | 2.592 | 2.811 | 3.44, 3.91, 4.03 |
+| −5 (12) | −2.738 | −4.319 | −4.686 | 5.73, 6.53, 6.69 |
+The constant spinor stays an exact 2-fold zero at every n. **In the smooth (SU(2)-chain) sector the lattice levels approach the continuum integers with error ∝ θ²**
+(err/θ² flat to ~5–15% over a factor 2.9 in θ). The 6/24/45/66% gaps of §13 are the first rung of this flow, not a defect of the identification; the
+"too coarse to confirm the continuum" and "the identification is exact on the chain" statements are the two ends of one scale flow.
+
+**What this does NOT show (read before citing).**
+1. *Strong convergence is not shown.* Leakage ||(1−P)DP|| does not vanish: A 0.256/0.232 (d≤3, n=2/3), B 0.215/0.334. The mesh is not uniform (local
+   anisotropy up to 1.19; at n=3 the new vertices have neighbour-direction imbalance 0.13, an O(1) first-order inconsistency there). Ritz values converge;
+   the operator norm on the smooth subspace does not (yet). A mesh with consistent weights or a regular refinement is needed to close this.
+2. *The non-smooth sector does not flow to the continuum.* Only 2 modes below |λ|<0.5 belong to the continuum, but the lattice has 52, 202, 312 (n=1,2,3):
+   lattice levels below 1 in |λ|: 108, 382(A)/364(B), 704(A)/734(B). Most low-lying modes are not SU(2) harmonics and their levels go *down* with n
+   (lowest nonzero: 0.289, 0.101, 0.0055–0.0071). They are the Galois-conjugate / non-chain irreps (2′, 3′, 4 …) plus mesh modes; I did not separate them.
+3. *The 28-mode massless core is not refinement-stable.* Kernel dimension: 28 (n=1), 30 (n=2), **4** (n=3; mesh imbalance). The smooth sector contributes exactly
+   the constant spinor (2); the remaining 26/28/2 are non-smooth. Whether the core is a lattice (doubler-like) object, or survives on a refinement that
+   keeps full L×R balance, is open; at n=3 it did not.
+4. A and B share the mesh and (for B) the answer assumed; their agreement shows A is the teleparallel operator to leading order, not that the mesh is good.
+5. Frequencies 1–3 only; the quasicrystal inflation (the other refinement the corpus has) is untested, and the user's view is that it is not an either/or with
+   subdivision. No MeV scale, no observation, no identification of levels as masses.
+Command: `py -3 -I -u route56_subdiv.py 1 2 3 > route56_subdiv_all.out` (~70 s). sha256: route56_subdiv.py 7d2a7a4f4905c4bb57caec44427ad0059d9074d22d499381bf559e47371f67c1; route56_subdiv_all.out 690eaa5c8e74d4d744a380fcb71ba27226f7545aa0b40ca5a59cb1418ead4899.
