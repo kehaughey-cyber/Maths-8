@@ -1,0 +1,11 @@
+edge arc = 36.0000 deg, SO(3) rotation per hop = 72.0000 deg
+  after  1 hops: arc  36 deg, rotation angle  72 deg, spin-lift matrix = neither, tr/2 = +0.809017
+  after  2 hops: arc  72 deg, rotation angle 144 deg, spin-lift matrix = neither, tr/2 = +0.309017
+  after  3 hops: arc 108 deg, rotation angle 216 deg, spin-lift matrix = neither, tr/2 = -0.309017
+  after  4 hops: arc 144 deg, rotation angle 288 deg, spin-lift matrix = neither, tr/2 = -0.809017
+  after  5 hops: arc 180 deg, rotation angle 360 deg, spin-lift matrix = -I, tr/2 = -1.000000
+  after  6 hops: arc 216 deg, rotation angle 432 deg, spin-lift matrix = neither, tr/2 = -0.809017
+  after  7 hops: arc 252 deg, rotation angle 504 deg, spin-lift matrix = neither, tr/2 = -0.309017
+  after  8 hops: arc 288 deg, rotation angle 576 deg, spin-lift matrix = neither, tr/2 = +0.309017
+  after  9 hops: arc 324 deg, rotation angle 648 deg, spin-lift matrix = neither, tr/2 = +0.809017
+  after 10 hops: arc 360 deg, rotation angle 720 deg, spin-lift matrix = +I, tr/2 = +1.000000

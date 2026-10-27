@@ -1,0 +1,6 @@
+tau=3/2: N=136, volume 30.896, degree mean 11.94 (min 10, max 16), kappa=2.7786, a=0.6981, sqrt2/a=2.0259
+  B: best top eigenvalue 2.10522 at K=[ 1.2252 -1.1063 -0.7462] (|K|=1.8115);  E_max*a = 1.46959  (coarse-start best 1.46584; five refined maxima E_max*a: [np.float64(1.4696), np.float64(1.4696), np.float64(1.4696), np.float64(1.4696), np.float64(1.4696)])
+  A: best top eigenvalue 2.24025 at K=[ 0.881  -2.8179  0.8875] (|K|=3.0829);  E_max*a = 1.56385  (coarse-start best 1.56265; five refined maxima E_max*a: [np.float64(1.5639), np.float64(1.5639), np.float64(1.5639), np.float64(1.5639), np.float64(1.5639)])
+tau=5/3: N=576, volume 132.125, degree mean 13.20 (min 11, max 18), kappa=3.1108, a=0.7067, sqrt2/a=2.0010
+  B: best top eigenvalue 1.98721 at K=[ 0.4796  0.1248 -3.5791] (|K|=3.6132);  E_max*a = 1.40446  (coarse-start best 1.40395; five refined maxima E_max*a: [np.float64(1.4045), np.float64(1.4045), np.float64(1.4045), np.float64(1.4043), np.float64(1.4043)])
+  A: best top eigenvalue 2.07136 at K=[ 1.1354 -2.3545 -0.1033] (|K|=2.6160);  E_max*a = 1.46393  (coarse-start best 1.46346; five refined maxima E_max*a: [np.float64(1.4639), np.float64(1.4639), np.float64(1.4639), np.float64(1.4639), np.float64(1.4639)])

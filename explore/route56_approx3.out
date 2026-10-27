@@ -1,0 +1,16 @@
+tau=3/2: N=136, volume 30.896, degree mean 11.94 (min 10, max 16), kappa=2.7786, a=0.6981, sqrt2/a=2.0259
+  Lanczos check B: 2.1051313024 vs eigvalsh 2.1051313024
+  Lanczos check A: 2.2373307928 vs eigvalsh 2.2373307928
+  B: best top eigenvalue 2.10522 at K=[ 1.2252 -1.1063 -0.7462] (|K|=1.8115);  E_max*a = 1.46959  (coarse-start best 1.46584; five refined maxima E_max*a: [np.float64(1.4696), np.float64(1.4696), np.float64(1.4696), np.float64(1.4696), np.float64(1.4696)])
+  A: best top eigenvalue 2.24025 at K=[ 0.881  -2.8179  0.8875] (|K|=3.0829);  E_max*a = 1.56385  (coarse-start best 1.56265; five refined maxima E_max*a: [np.float64(1.5639), np.float64(1.5639), np.float64(1.5639), np.float64(1.5639), np.float64(1.5639)])
+tau=5/3: N=576, volume 132.125, degree mean 13.20 (min 11, max 18), kappa=3.1108, a=0.7067, sqrt2/a=2.0010
+  Lanczos check B: 1.9854256677 vs eigvalsh 1.9854285573
+  Lanczos check A: 2.0658349646 vs eigvalsh 2.0658360883
+  B: best top eigenvalue 1.98721 at K=[ 0.4796  0.1248 -3.5791] (|K|=3.6132);  E_max*a = 1.40446  (coarse-start best 1.40395; five refined maxima E_max*a: [np.float64(1.4045), np.float64(1.4045), np.float64(1.4045), np.float64(1.4045), np.float64(1.4043)])
+  A: best top eigenvalue 2.07136 at K=[-2.369  -0.1129 -1.1305] (|K|=2.6273);  E_max*a = 1.46393  (coarse-start best 1.46346; five refined maxima E_max*a: [np.float64(1.4639), np.float64(1.4639), np.float64(1.4639), np.float64(1.4639), np.float64(1.4639)])
+tau=8/5: N=1220, volume 280.232, degree mean 13.23 (min 11, max 19), kappa=3.1183, a=0.7070, sqrt2/a=2.0002
+  Lanczos check B: 1.9841723681 vs eigvalsh 1.9842462290
+  Lanczos check A: 2.1175053705 vs eigvalsh 2.1176104493
+  B: best top eigenvalue 1.98527 at K=[1.9705 0.008  1.9642] (|K|=2.7823);  E_max*a = 1.40364  (coarse-start best 1.40334; five refined maxima E_max*a: [np.float64(1.4036), np.float64(1.4036), np.float64(1.4036), np.float64(1.4035), np.float64(1.4035)])
+  A: best top eigenvalue 2.12058 at K=[-1.9499 -1.0932  0.3321] (|K|=2.2600);  E_max*a = 1.49931  (coarse-start best 1.49928; five refined maxima E_max*a: [np.float64(1.4993), np.float64(1.4993), np.float64(1.4993), np.float64(1.4993), np.float64(1.4993)])
+done

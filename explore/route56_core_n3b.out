@@ -1,0 +1,9 @@
+character table: 9 irreps orthonormal over the 120 icosians (asserted)
+
+==== n=3: N=2760, kappa=0.86654; symmetry check: [D,T_g] residual 1.1e-09; [D,R_g] residual 9.9e-10
+  kernel (|lam|<1e-8): dim 4;  left-2I content {'2': 2.0};  right-2I content {'1': 4.0}
+  0 < |lam| < 0.02: dim 22;  left-2I content {'1': 6.0, '4g': 4.0};  right-2I content {'4s': 4.0, '6': 1.0}
+  0.02 <= |lam| < 0.1: dim 60;  left-2I content {'6': 9.0, "2'": 3.0};  right-2I content {'3': 2.0, '5': 6.0, '4g': 6.0}
+  0 < |lam| < 0.5 (lattice units/kappa-scaled): dim 308;  left-2I content {'1': 10.0, '2': 11.0, '3': 4.0, '5': 12.0, '6': 23.0, "2'": 3.0, "3'": 4.0, '4g': 12.0};  right-2I content {'2': 4.0, '3': 10.0, '4s': 16.0, '5': 14.0, '6': 10.0, "2'": 5.0, "3'": 14.0, '4g': 6.0}
+  0.5 <= |lam| < 1.0: dim 392;  left-2I content {'1': 2.0, '2': 9.0, '3': 18.0, '4s': 24.0, '5': 16.0, '6': 5.0, "2'": 13.0, "3'": 18.0, '4g': 8.0};  right-2I content {'1': 6.0, '2': 7.0, '3': 4.0, '4s': 5.0, '5': 12.0, '6': 29.0, "2'": 7.0, "3'": 4.0, '4g': 20.0}
+done

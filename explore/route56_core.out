@@ -1,0 +1,11 @@
+character table: 9 irreps orthonormal over the 120 icosians (asserted)
+
+==== n=1: N=120, kappa=2.51327; symmetry check: [D,T_g] residual 1.1e-09; [D,R_g] residual 1.1e-09
+  kernel (|lam|<1e-8): dim 28;  left-2I content {'2': 1.0, '6': 3.0, '4g': 2.0};  right-2I content {'1': 2.0, "2'": 4.0, "3'": 6.0}
+  0 < |lam| < 0.5 (lattice units/kappa-scaled): dim 24;  left-2I content {'6': 4.0};  right-2I content {'4g': 6.0}
+  0.5 <= |lam| < 1.0: dim 56;  left-2I content {'3': 2.0, "2'": 4.0, "3'": 6.0, '4g': 6.0};  right-2I content {'2': 3.0, '6': 7.0, '4g': 2.0}
+
+==== n=2: N=840, kappa=1.29151; symmetry check: [D,T_g] residual 1.1e-09; [D,R_g] residual 1.0e-09
+  kernel (|lam|<1e-8): dim 30;  left-2I content {'2': 2.0, '6': 3.0, '4g': 2.0};  right-2I content {'1': 4.0, "2'": 4.0, "3'": 6.0}
+  0 < |lam| < 0.5 (lattice units/kappa-scaled): dim 172;  left-2I content {'1': 8.0, '2': 8.0, '3': 4.0, '4s': 8.0, '5': 6.0, '6': 3.0, "2'": 5.0, "3'": 2.0, '4g': 10.0};  right-2I content {'2': 4.0, '3': 12.0, '4s': 7.0, '5': 8.0, '6': 10.0}
+  0.5 <= |lam| < 1.0: dim 180;  left-2I content {'2': 3.0, '3': 8.0, '5': 8.0, '6': 14.0, "2'": 4.0, "3'": 6.0};  right-2I content {'1': 6.0, '2': 8.0, '4s': 5.0, '5': 6.0, '6': 6.0, "2'": 5.0, "3'": 2.0, '4g': 14.0}

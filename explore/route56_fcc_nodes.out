@@ -1,0 +1,18 @@
+distinct zero-energy k-points modulo the reciprocal lattice (the roots can lie on nodal lines; each found root listed): 297
+  isolated Weyl points (full-rank M): 9;  points on nodal lines/surfaces (rank-deficient M): 288
+   kappa=[0. 0. 0.]  singular values [2.2214 2.2214 2.2214]  det M=+10.9624  chirality +1
+   kappa=[ 1. -1. -1.]  singular values [2.2214 1.1107 1.1107]  det M=-2.7406  chirality -1
+   kappa=[-1.  1. -1.]  singular values [2.2214 1.1107 1.1107]  det M=-2.7406  chirality -1
+   kappa=[ 1. -1.  1.]  singular values [2.2214 1.1107 1.1107]  det M=-2.7406  chirality -1
+   kappa=[1. 1. 1.]  singular values [2.2214 1.1107 1.1107]  det M=-2.7406  chirality -1
+   kappa=[-1. -1. -1.]  singular values [2.2214 1.1107 1.1107]  det M=-2.7406  chirality -1
+   kappa=[-1. -1.  1.]  singular values [2.2214 1.1107 1.1107]  det M=-2.7406  chirality -1
+   kappa=[-1.  1.  1.]  singular values [2.2214 1.1107 1.1107]  det M=-2.7406  chirality -1
+   kappa=[ 1.  1. -1.]  singular values [2.2214 1.1107 1.1107]  det M=-2.7406  chirality -1
+  sum of chiralities of the isolated points: -7
+   (rank-deficient) kappa=[ 0. -2.  0.]  singular values [2.2214 0.     0.    ]
+   (rank-deficient) kappa=[ 0.  0. -2.]  singular values [2.2214 0.     0.    ]
+   (rank-deficient) kappa=[2. 0. 0.]  singular values [2.2214 0.     0.    ]
+   (rank-deficient) kappa=[-0.  0.  2.]  singular values [2.2214 0.     0.    ]
+   (rank-deficient) kappa=[-0.  2.  0.]  singular values [2.2214 0.     0.    ]
+   (rank-deficient) kappa=[-2. -0.  0.]  singular values [2.2214 0.     0.    ]
