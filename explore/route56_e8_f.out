@@ -1,0 +1,26 @@
+generators of 2I found: orders 6,10; st order 4; (st)^2=s^3=t^5 = [-2  0  0  0  0  0  0  0]
+element orders: {'o3': 3, 'o5': 5, 'o6': 6, 'o10': 10, 'o4': 4}
+L_o3: lattice order 3; eigenangles(deg) [np.float64(120.0), np.float64(240.0)]; twists with phi^N=id: 256/256; fixed-subalgebra dim -> count {80: 256}
+conj_o3 (x->g x g^-1): lattice order 3; eigenangles(deg) [np.float64(0.0), np.float64(120.0), np.float64(240.0)]; twists with phi^N=id: 16/256; fixed-subalgebra dim -> count {92: 16}
+L_o5: lattice order 5; eigenangles(deg) [np.float64(72.0), np.float64(144.0), np.float64(216.0), np.float64(288.0)]; twists with phi^N=id: 256/256; fixed-subalgebra dim -> count {48: 256}
+conj_o5 (x->g x g^-1): lattice order 5; eigenangles(deg) [np.float64(0.0), np.float64(72.0), np.float64(144.0), np.float64(216.0), np.float64(288.0), np.float64(360.0)]; twists with phi^N=id: 16/256; fixed-subalgebra dim -> count {68: 16}
+L_o10: lattice order 10; eigenangles(deg) [np.float64(36.0), np.float64(108.0), np.float64(252.0), np.float64(324.0)]; twists with phi^N=id: 256/256; fixed-subalgebra dim -> count {24: 256}
+conj_o10 (x->g x g^-1): lattice order 5; eigenangles(deg) [np.float64(0.0), np.float64(72.0), np.float64(144.0), np.float64(216.0), np.float64(288.0)]; twists with phi^N=id: 16/256; fixed-subalgebra dim -> count {68: 16}
+L_o4: lattice order 4; eigenangles(deg) [np.float64(90.0), np.float64(270.0)]; twists with phi^N=id: 256/256; fixed-subalgebra dim -> count {60: 256}
+conj_o4 (x->g x g^-1): lattice order 2; eigenangles(deg) [np.float64(0.0), np.float64(180.0)]; twists with phi^N=id: 16/256; fixed-subalgebra dim -> count {120: 16}
+L_o5 R_o6: lattice order 30; eigenangles(deg) [np.float64(12.0), np.float64(84.0), np.float64(132.0), np.float64(156.0), np.float64(204.0), np.float64(228.0), np.float64(276.0), np.float64(348.0)]; twists with phi^N=id: 256/256; fixed-subalgebra dim -> count {8: 256}
+L_o5 R_o3: lattice order 15; eigenangles(deg) [np.float64(24.0), np.float64(48.0), np.float64(96.0), np.float64(168.0), np.float64(192.0), np.float64(264.0), np.float64(312.0), np.float64(336.0)]; twists with phi^N=id: 256/256; fixed-subalgebra dim -> count {16: 256}
+L_o5 R_o4: lattice order 20; eigenangles(deg) [np.float64(18.0), np.float64(54.0), np.float64(126.0), np.float64(162.0), np.float64(198.0), np.float64(234.0), np.float64(306.0), np.float64(342.0)]; twists with phi^N=id: 256/256; fixed-subalgebra dim -> count {12: 256}
+L_o5 R_o10: lattice order 10; eigenangles(deg) [np.float64(36.0), np.float64(108.0), np.float64(252.0), np.float64(324.0)]; twists with phi^N=id: 256/256; fixed-subalgebra dim -> count {24: 256}
+L_o10 R_o6: lattice order 15; eigenangles(deg) [np.float64(24.0), np.float64(48.0), np.float64(96.0), np.float64(168.0), np.float64(192.0), np.float64(264.0), np.float64(312.0), np.float64(336.0)]; twists with phi^N=id: 256/256; fixed-subalgebra dim -> count {16: 256}
+L_o10 R_o3: lattice order 30; eigenangles(deg) [np.float64(12.0), np.float64(84.0), np.float64(132.0), np.float64(156.0), np.float64(204.0), np.float64(228.0), np.float64(276.0), np.float64(348.0)]; twists with phi^N=id: 256/256; fixed-subalgebra dim -> count {8: 256}
+L_o10 R_o4: lattice order 20; eigenangles(deg) [np.float64(18.0), np.float64(54.0), np.float64(126.0), np.float64(162.0), np.float64(198.0), np.float64(234.0), np.float64(306.0), np.float64(342.0)]; twists with phi^N=id: 256/256; fixed-subalgebra dim -> count {12: 256}
+L_o10 R_o10: lattice order 5; eigenangles(deg) [np.float64(0.0), np.float64(72.0), np.float64(144.0), np.float64(216.0), np.float64(288.0)]; twists with phi^N=id: 16/256; fixed-subalgebra dim -> count {68: 16}
+L_o4 R_o6: lattice order 12; eigenangles(deg) [np.float64(30.0), np.float64(150.0), np.float64(210.0), np.float64(330.0)]; twists with phi^N=id: 256/256; fixed-subalgebra dim -> count {20: 256}
+L_o4 R_o3: lattice order 12; eigenangles(deg) [np.float64(30.0), np.float64(150.0), np.float64(210.0), np.float64(330.0)]; twists with phi^N=id: 256/256; fixed-subalgebra dim -> count {20: 256}
+L_o4 R_o4: lattice order 2; eigenangles(deg) [np.float64(0.0), np.float64(180.0)]; twists with phi^N=id: 16/256; fixed-subalgebra dim -> count {120: 16}
+L_o4 R_o10: lattice order 20; eigenangles(deg) [np.float64(18.0), np.float64(54.0), np.float64(126.0), np.float64(162.0), np.float64(198.0), np.float64(234.0), np.float64(306.0), np.float64(342.0)]; twists with phi^N=id: 256/256; fixed-subalgebra dim -> count {12: 256}
+L_o3 R_o6: lattice order 6; eigenangles(deg) [np.float64(60.0), np.float64(180.0), np.float64(300.0)]; twists with phi^N=id: 256/256; fixed-subalgebra dim -> count {44: 256}
+L_o3 R_o3: lattice order 3; eigenangles(deg) [np.float64(0.0), np.float64(120.0), np.float64(240.0)]; twists with phi^N=id: 16/256; fixed-subalgebra dim -> count {92: 16}
+L_o3 R_o4: lattice order 12; eigenangles(deg) [np.float64(30.0), np.float64(150.0), np.float64(210.0), np.float64(330.0)]; twists with phi^N=id: 256/256; fixed-subalgebra dim -> count {20: 256}
+L_o3 R_o10: lattice order 30; eigenangles(deg) [np.float64(12.0), np.float64(84.0), np.float64(132.0), np.float64(156.0), np.float64(204.0), np.float64(228.0), np.float64(276.0), np.float64(348.0)]; twists with phi^N=id: 256/256; fixed-subalgebra dim -> count {8: 256}
