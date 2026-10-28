@@ -3,3 +3,6 @@ __pycache__/
 .DS_Store
 Thumbs.db
 *.tmp
+
+# regenerable by explore/route56_e8_b.py (116 MB, over GitHub limit)
+explore/route56_e8_struct.npy
