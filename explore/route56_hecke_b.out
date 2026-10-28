@@ -1,0 +1,25 @@
+shell V: 120 icosians, |q|^2 (phys) = [1.], |sigma q|^2 = [1.]
+shell E: 720 icosians, |q|^2 (phys) = [3.618034], |sigma q|^2 = [1.381966]
+shell F: 1200 icosians, |q|^2 (phys) = [7.854102], |sigma q|^2 = [1.145898]
+shell C: 600 icosians, |q|^2 (phys) = [13.708204], |sigma q|^2 = [0.291796]
+
+==== set V+C: N=720, edges 3600; degrees by shell: V:[np.int64(20)], C:[np.int64(8)]
+   kernel dim: phi-branch 12, psi-branch 12; overlap tr(P_phi P_psi)/dim = 0.3333; lowest nonzero |lambda|: phi 0.00420, psi 0.07565
+   right-2I content of the phi-branch kernel: {'1': 4.0, "2'": 4.0}
+
+==== set V+F: N=1320, edges 7200; degrees by shell: V:[np.int64(30)], F:[np.int64(9)]
+   kernel dim: phi-branch 4, psi-branch 4; overlap tr(P_phi P_psi)/dim = 1.0000; lowest nonzero |lambda|: phi 0.08155, psi 0.02159
+   right-2I content of the phi-branch kernel: {'1': 4.0}
+
+==== set V+E+C: N=1440, edges 5040; degrees by shell: V:[np.int64(12)], E:[np.int64(7)], C:[np.int64(6)]
+   kernel dim: phi-branch 164, psi-branch 164; overlap tr(P_phi P_psi)/dim = 0.1541; lowest nonzero |lambda|: phi 0.07611, psi 0.13090
+   right-2I content of the phi-branch kernel: {'1': 12.0, '2': 10.0, '4s': 10.0, '5': 8.0, "2'": 10.0, '4g': 8.0}
+
+==== set V+E+F: N=2040, edges 5040; degrees by shell: V:[np.int64(12)], E:[np.int64(7)], F:[np.int64(3)]
+   kernel dim: phi-branch 1204, psi-branch 1204; overlap tr(P_phi P_psi)/dim = 0.4116; lowest nonzero |lambda|: phi 0.56836, psi 0.28969
+   right-2I content of the phi-branch kernel: {'1': 14.0, '2': 20.0, '3': 30.0, '4s': 40.0, '5': 50.0, '6': 60.0, "2'": 20.0, "3'": 30.0, '4g': 40.0}
+
+==== set V+E+F+C: N=2640, edges 7440; degrees by shell: V:[np.int64(12)], E:[np.int64(7)], F:[np.int64(5)], C:[np.int64(4)]
+   kernel dim: phi-branch 8, psi-branch 8; overlap tr(P_phi P_psi)/dim = 1.0000; lowest nonzero |lambda|: phi 0.28653, psi 0.05080
+   right-2I content of the phi-branch kernel: {'1': 8.0}
+done

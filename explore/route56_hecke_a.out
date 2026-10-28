@@ -1,0 +1,12 @@
+shell V: 120 icosians, |q|^2 (phys) = [1.], |sigma q|^2 = [1.]
+shell E: 720 icosians, |q|^2 (phys) = [3.618034], |sigma q|^2 = [1.381966]
+shell F: 1200 icosians, |q|^2 (phys) = [7.854102], |sigma q|^2 = [1.145898]
+shell C: 600 icosians, |q|^2 (phys) = [13.708204], |sigma q|^2 = [0.291796]
+
+==== set V: N=120, edges 720; degrees by shell: V:[np.int64(12)]
+   kernel dim: phi-branch 28, psi-branch 28; overlap tr(P_phi P_psi)/dim = 0.0714; lowest nonzero |lambda|: phi 0.72654, psi 0.64984
+   right-2I content of the phi-branch kernel: {'1': 2.0, "2'": 4.0, "3'": 6.0}
+
+==== set V+E: N=840, edges 5040; degrees by shell: V:[np.int64(12)], E:[np.int64(12)]
+   kernel dim: phi-branch 30, psi-branch 30; overlap tr(P_phi P_psi)/dim = 0.1333; lowest nonzero |lambda|: phi 0.13033, psi 0.02108
+   right-2I content of the phi-branch kernel: {'1': 4.0, "2'": 4.0, "3'": 6.0}
