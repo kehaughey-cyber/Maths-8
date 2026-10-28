@@ -1,3 +1,16 @@
 A=4.0, B=4.0: lattice points with |x|^2<=4.0, |sigma x|^2<=4.0: N=5143
    degrees: min 12, mean 41.7, max 120;  full-degree fraction 0.017;  nnz 858640;  build 2s
-[stopped by hand after >25 min with no eigenvalues returned: filtered-Lanczos eigsh k=100 m=30 at A=B=4, N=5143; earlier shift-invert (sigma=-0.1) also did not finish in 10 min. See route56_window_kpm.py]
+   lmax(s^2)=772.5; eigsh k=100 done in 2949s;  E^ of the K lowest: 5.949e-10 .. 0.0061;  max residual |H2v-lv|/l_max: 1.92e-08
+   eps    count(E^<eps)   bulk 2N P(eps)   ratio    [complete iff eps <= 0.0061]
+    0.001        17            0.0   17000000000.00   complete
+    0.003        49            0.0    1429.13   complete
+    0.010       100            0.9     108.02   TRUNCATED
+    0.020       100            7.1      14.02   TRUNCATED
+    0.050       100          101.5       0.99   TRUNCATED
+    0.100       100          660.2       0.15   TRUNCATED
+    0.200       100         3177.7       0.03   TRUNCATED
+    0.500       100         8881.5       0.01   TRUNCATED
+   share of lowest-M modes inside polynomials deg<=d of sigma(x) [int] vs x [phys]  (random baseline = dim/(2N))
+      d=2 dim 30 base 0.0029: M=20: int 0.004 phys 0.001;  M=100: int 0.003 phys 0.001
+      d=4 dim 140 base 0.0136: M=20: int 0.032 phys 0.009;  M=100: int 0.031 phys 0.010
+      d=6 dim 420 base 0.0408: M=20: int 0.092 phys 0.031;  M=100: int 0.090 phys 0.033
