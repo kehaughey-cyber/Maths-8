@@ -1,0 +1,12 @@
+A=6.0, B=6.0: N=22297
+   degrees: min 16, mean 50.2, full-degree fraction 0.032; nnz 4476816; build 1s
+   lmax(s^2)=969.70  (Ehat_max ~ 1.0278)
+   600 Chebyshev moments x 20 vectors in 156s
+   eps     KPM count(E^<eps) [of 2N=44594]   bulk 2N P(eps)   ratio
+    0.005         617.1            0.3    2075.84
+    0.010        1242.9            4.0     309.69
+    0.020        2527.3           30.9      81.74
+    0.050        6570.4          440.1      14.93
+    0.100       13413.2         2862.2       4.69
+    0.200       27260.1        13776.4       1.98
+    0.500       42944.5        38505.0       1.12

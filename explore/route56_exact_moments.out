@@ -1,0 +1,25 @@
+all 120 units: P.P = 1 exactly (checked 5), count 120
+
+== argument monomials in the internal (Galois S) coordinates ==
+degree 0: 0 of 4 moments T[c,alpha] non-zero (exact)
+degree 1: 0 of 16 moments T[c,alpha] non-zero (exact)
+degree 2: 0 of 40 moments T[c,alpha] non-zero (exact)
+degree 3: 0 of 80 moments T[c,alpha] non-zero (exact)
+degree 4: 0 of 140 moments T[c,alpha] non-zero (exact)
+degree 5: 0 of 224 moments T[c,alpha] non-zero (exact)
+degree 6: 0 of 336 moments T[c,alpha] non-zero (exact)
+degree 7: 68 of 480 moments T[c,alpha] non-zero (exact)
+degree 8: 0 of 660 moments T[c,alpha] non-zero (exact)
+degree 9: 104 of 880 moments T[c,alpha] non-zero (exact)
+
+== argument monomials in the physical control (P) coordinates ==
+degree 0: 0 of 4 moments T[c,alpha] non-zero (exact)
+degree 1: 4 of 16 moments T[c,alpha] non-zero (exact)
+degree 2: 0 of 40 moments T[c,alpha] non-zero (exact)
+degree 3: 16 of 80 moments T[c,alpha] non-zero (exact)
+degree 4: 0 of 140 moments T[c,alpha] non-zero (exact)
+degree 5: 40 of 224 moments T[c,alpha] non-zero (exact)
+degree 6: 0 of 336 moments T[c,alpha] non-zero (exact)
+degree 7: 80 of 480 moments T[c,alpha] non-zero (exact)
+degree 8: 0 of 660 moments T[c,alpha] non-zero (exact)
+degree 9: 140 of 880 moments T[c,alpha] non-zero (exact)
