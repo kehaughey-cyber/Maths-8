@@ -1,0 +1,16 @@
+A=3.0, B=3.0: lattice points with |x|^2<=3.0, |sigma x|^2<=3.0: N=1669
+   degrees: min 11, mean 31.8, max 120 (bulk 120);  fraction of sites with full degree: 0.001
+   eps    count(E^<eps)   bulk-torus prediction 2N P(eps)   ratio
+    0.01        94              0.3     312.90
+    0.02       194              2.3      83.82
+    0.05       566             32.9      17.18
+    0.10      1282            214.2       5.98
+    0.20      2508           1031.2       2.43
+    0.50      3282           2882.2       1.14
+   smallest E^: [0.00055382 0.00055382 0.00044711 0.00044711 0.         0.        ]
+   lowest-M right singular subspace: share inside polynomials (deg<=d) of sigma(x) [internal] vs of x [physical], each x C^2:
+      d=1 (dims 10/10): M=20: int 0.006 phys 0.004;  M=100: int 0.006 phys 0.004;  M=400: int 0.005 phys 0.002
+      d=2 (dims 30/30): M=20: int 0.012 phys 0.007;  M=100: int 0.014 phys 0.007;  M=400: int 0.011 phys 0.006
+      d=3 (dims 70/70): M=20: int 0.024 phys 0.014;  M=100: int 0.025 phys 0.015;  M=400: int 0.023 phys 0.013
+      d=4 (dims 140/140): M=20: int 0.050 phys 0.024;  M=100: int 0.052 phys 0.026;  M=400: int 0.050 phys 0.023
+done

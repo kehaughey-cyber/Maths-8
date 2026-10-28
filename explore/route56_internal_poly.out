@@ -1,0 +1,10 @@
+degree d : max ||sum_u Q(u) h(x+u)||/sum|h|  for h(sigma x) [internal]   and   h(x) [physical control]
+  d=0:   internal 7.401e-18    physical 7.401e-18
+  d=1:   internal 1.896e-16    physical 6.143e-01
+  d=2:   internal 3.063e-16    physical 6.143e-01
+  d=3:   internal 3.575e-16    physical 7.347e-01
+  d=4:   internal 4.003e-16    physical 7.347e-01
+  d=5:   internal 3.429e-16    physical 8.057e-01
+  d=6:   internal 3.371e-16    physical 8.057e-01
+  d=7:   internal 6.038e-02    physical 8.454e-01
+  d=8:   internal 8.992e-02    physical 8.454e-01
