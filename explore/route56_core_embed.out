@@ -1,0 +1,9 @@
+n=1: kernel dim 28
+
+n=2: N=840, kernel dim 30; kernel weight on the 120 original vertices 0.3237 (uniform would be 0.1429)
+   zero-padded n=1 kernel vectors: ||D v||/||v|| min 3.4751 mean 3.7128 max 3.8190;  share of the residual on original vertices 0.0000
+   overlap of the zero-padded vectors with the n=2 kernel (1 = inside): min 0.5447 mean 0.5883
+
+n=3: N=2760, kernel dim 4; kernel weight on the 120 original vertices 0.2242 (uniform would be 0.0435)
+   zero-padded n=1 kernel vectors: ||D v||/||v|| min 3.4641 mean 3.4641 max 3.4641;  share of the residual on original vertices 0.0000
+   overlap of the zero-padded vectors with the n=3 kernel (1 = inside): min 0.0835 mean 0.1722

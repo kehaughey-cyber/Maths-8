@@ -1,0 +1,4 @@
+tau=8/5: N=1220, a=0.7070, sqrt2/a=2.0002; BZ basis lengths [1.0777 1.0777 1.0777]; Lanczos check 1.98427508 vs dense 1.98477214
+  grid 18^3: max Lambda = 1.985245 at K=[-0.3387  0.     -0.3387];  M=2.615, covering radius r=0.0423, curvature margin (1/2)M r^2 = 0.002343
+  => E_max*a in [1.40362, 1.40528];  sqrt2 = 1.41421: the upper bound is below sqrt2
+done
