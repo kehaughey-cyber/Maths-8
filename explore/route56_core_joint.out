@@ -1,0 +1,7 @@
+kernel dim 28
+kernel invariant under T,R:  1.0153933167760189e-08
+joint multiplicities m(left rho, right tau) on the 28-core:
+   (2, 1): m = 1.0000, dim 2
+   (6, 3'): m = 1.0000, dim 18
+   (4g, 2'): m = 1.0000, dim 8
+total dimension 28.0 ; commutant dimension sum m^2 = 3
