@@ -1,0 +1,5 @@
+generators of 2I found: orders 6,10; st order 4; (st)^2=s^3=t^5 = [-2  0  0  0  0  0  0  0]
+variant 0: residual is affine in the 32 twist bits: True; base residual weight 624
+variant 0: NO solution: no exactly commuting homomorphic lift of 2I_L x 2I_R to Aut(e8) in this torus family
+variant 1: residual is affine in the 32 twist bits: True; base residual weight 624
+variant 1: NO solution: no exactly commuting homomorphic lift of 2I_L x 2I_R to Aut(e8) in this torus family

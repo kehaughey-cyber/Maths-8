@@ -1,0 +1,15 @@
+generators of 2I found: orders 6,10; st order 4; (st)^2=s^3=t^5 = [-2  0  0  0  0  0  0  0]
+  side L: twist freedom dims 8,8
+  side L: homomorphic lifts of the two generators (relations (st)^2=s^3=t^5 exact): 4096 of 65536   [3s]
+   automorphism defect of first lift (s,t): 0 0
+  side L: dimension of the subalgebra fixed by the lifted 2I_L -> number of lifts (first 2000): {2: 2000}
+  side R: twist freedom dims 8,8
+  side R: homomorphic lifts of the two generators (relations (st)^2=s^3=t^5 exact): 4096 of 65536   [55s]
+   automorphism defect of first lift (s,t): 0 0
+  side R: dimension of the subalgebra fixed by the lifted 2I_R -> number of lifts (first 2000): {2: 2000}
+all 4096 L lifts: dim of fixed subalgebra -> Counter({2: 4096})
+all 4096 R lifts: dim -> Counter({2: 4096})
+L-fixed space (lift 0): [f1,f2] norm 3.9521310391199426e-16 ; Cartan part of the fixed vectors: 0.0 ; Killing-type check <f,f> via ad trace: [-59.999999999999986, -59.99999999999993]
+lifts with 2-dim fixed space: 4096 4096
+over all 16777216 (L,R) lift pairs: fixed-space intersection dim 2: 0, dim 1: 0, dim 0: 6516736, other overlap values: 10260480
+random (L,R) lift pairs that commute exactly on both generators: 0 of 40000

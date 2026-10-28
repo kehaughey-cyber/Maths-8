@@ -1,0 +1,6 @@
+generators of 2I found: orders 6,10; st order 4; (st)^2=s^3=t^5 = [-2  0  0  0  0  0  0  0]
+  side L: twist freedom dims 8,8
+L fixed dims Counter({2: 4096})
+  side R: twist freedom dims 8,8
+R fixed dims Counter({2: 4096})
+intersection dimension of F_L and F_R over all 4096x4096 lift pairs: {0: 16777216}

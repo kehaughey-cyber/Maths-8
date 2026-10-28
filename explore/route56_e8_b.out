@@ -1,0 +1,4 @@
+basis det check, euclid Gram det: 2.4414062500000004
+Gram (E8, even unimodular) verified; det = 1
+number of norm-2 vectors: 240
+[e_r,e_-r] = +1*(-1)^eps(r,-r) h(r): max Jacobi defect 0
