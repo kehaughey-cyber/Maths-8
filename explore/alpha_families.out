@@ -1,0 +1,56 @@
+alpha 0.0072973525693  1/alpha 137.0359990836958  alpha/2pi 0.0011614097328884378  2pi/alpha 861.0225759973526
+
+Carrier: 120 vertices, closed under quaternion product: True
+element orders: {1: 1, 2: 1, 3: 20, 4: 30, 5: 24, 6: 20, 10: 24}
+order-5 elements 24  order-6 elements 20  pairs (a,b): 480
+
+=== F1  T-C beat on the 1,440 histories ===
+  all 480 C = L_a R_b (a order 5, b order 6) commute with T on histories: 480 / 480
+  cycle lengths of C on histories (24 sampled): [30] ;  max cycle length over all T^i C^j (24 C sampled): 30
+  => every eigenphase of any T^i C^j is a multiple of 1/30 cycle; smallest nonzero beat = 0.033333 cycle; alpha/2pi = 0.0011614 cycle (ratio 28.70)
+
+=== F2  propagation dispersion of the 4D icosian lattice (physical sector, k'=0) ===
+  exact claim: the 60 pairs of the 600-cell form a spherical 11-design => V(k) = 120 J_2(|k|)/|k| k_hat, E = 8 J_2(kappa)/kappa = kappa (1 - kappa^2/12 + kappa^4/384 - ...)
+  kappa   E_lattice(mean over 400 dirs)   spread(max-min)    8 J2/kappa     |diff|
+  0.001   0.000999999917            8.67e-19       0.000999999917   2.17e-19
+  0.100   0.099916692704            8.33e-17       0.099916692704   1.39e-17
+  0.500   0.489664375339            1.49e-14       0.489664375339   5.55e-17
+  1.000   0.919227879455            3.02e-11       0.919227879455   2.15e-13
+  2.000   1.411336114050            5.81e-08       1.411336114463   4.13e-10
+  3.000   1.296243329416            4.52e-06       1.296243361562   3.21e-08
+  4.000   0.728255636453            9.22e-05       0.728256291704   6.55e-07
+  5.000   0.074498260887            8.84e-04       0.074504186044   5.93e-06
+  beta = (1 - E/kappa)/kappa^2 at kappa=1e-3: 0.08333333068044624   (1/12 = 0.08333333333333333 )
+  band top: kappa* = 2.29991033022841  E_max = 1.43970293026904 ;  first zero shell j_{2,1} = 5.13562230184068
+     1/12          0.0833333333333   x/alpha =    11.41966659   alpha/x =  0.08756823083
+     E_max           1.43970293027   x/alpha =    197.2911294   alpha/x = 0.005068651606
+     kappa*          2.29991033023   x/alpha =    315.1705099   alpha/x = 0.003172885687
+     j21             5.13562230184   x/alpha =     703.765133   alpha/x = 0.001420928593
+     j21/kappa*      2.23296631801   x/alpha =    305.9967703   alpha/x = 0.003268008349
+     E_max/kappa*   0.625982200848   x/alpha =     85.7820963   alpha/x =  0.01165744419
+  speed matrix at internal label k' (eigenvalue mean of vmat):  {0.0: 1.0, 0.5: 0.969074, 1.0: 0.880101, 2.0: 0.576725}
+
+=== F3  cross-scale reinjection and mixing of the 144 ten-cycles ===
+  random-exit chain P on 1,440 histories: distinct |eigenvalue| (mult): [(1.0, 1), (0.809016994, 4), (0.539344663, 9), (0.309016994, 4), (0.25, 32), (0.20601133, 9), (0.166666667, 36), (6e-09, 10), (5e-09, 20), (4e-09, 8), (3e-09, 4), (2e-09, 8), (0.0, 1295)]
+  top-level ratios: |lambda2| = phi/2 = 0.8090169943749475 ;  (phi/2)^30 = 0.0017327237874264498 ;  gain 1/(1-(phi/2)^30) = 1.0017357313303912
+  (phi/2)^30 / alpha = 0.23744553534606888 ;  (gain-1)/alpha = 0.23785767700102742
+  M_w = (1-w) T + w P, w = 0.0833: eigenvalues on the unit circle 1, largest |lambda| below 1 = 0.957427108
+  M_w = (1-w) T + w P, w = 0.1667: eigenvalues on the unit circle 1, largest |lambda| below 1 = 0.912870929
+  M_w = (1-w) T + w P, w = 0.5000: eigenvalues on the unit circle 1, largest |lambda| below 1 = 0.707106781
+  M_w = (1-w) T + w P, w = 1.0000: eigenvalues on the unit circle 1, largest |lambda| below 1 = 0.809016994
+  coarse-grained chain on the 144 ten-cycles: top |eigenvalues| [1.0, 0.333333333, 0.333333333, 0.333333333, 0.333333333, 0.333333333, 0.333333333, 0.333333333]
+
+=== F4  recursion-limit sums over the contraction ladder ===
+  70 sum/product values over 10 contraction ratios; 3671640 expressions (singles with a,b<=30; pairs with a,b<=12); tolerance 1e-09
+  target 1/alpha   : hits 0   decoy mean 0.00e+00 (max 0)
+       nearest: (3/1)*euler(phi/2)^-1*sigma(1/12)^1                                    rel err -1.04e-06
+       nearest: (3/1)*part(phi/2)^1*sigma(1/12)^1                                      rel err -1.04e-06
+       nearest: (3/11)*sigma(phi/2)^2*geo((phi/2)^5)^-2                                rel err -1.10e-05
+  target 2pi/alpha : hits 0   decoy mean 0.00e+00 (max 0)
+       nearest: (3/2)*nq(phi/2)^2*theta3(1/12)^1                                       rel err -9.66e-06
+       nearest: (1/10)*geo((phi/2)^5)^-2*nq(1/144)^-2                                  rel err +1.31e-05
+       nearest: (2/1)*part(phi/2)^1*geo(1/144)^1                                       rel err -2.14e-05
+  target pi/alpha  : hits 0   decoy mean 0.00e+00 (max 0)
+       nearest: (3/4)*nq(phi/2)^2*theta3(1/12)^1                                       rel err -9.66e-06
+       nearest: (8/11)*euler(phi/2)^-1*theta3(gap)^1                                   rel err -1.27e-05
+       nearest: (8/11)*part(phi/2)^1*theta3(gap)^1                                     rel err -1.27e-05

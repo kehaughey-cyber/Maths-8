@@ -1,0 +1,57 @@
+1/alpha CODATA 2018 137.0359990836958  2022 137.035999177  mid 137.0359991303479  spread rel 6.808737076076727e-10
+
+C4 floor carrier: vertices 120  unique 120  all unit True
+   adjacency degree set {np.int64(12)}  overlap phi/2 = 0.8090169943749475
+   histories 1440  T cycles 144  lengths [10]
+   T^5 = antipode on all histories: True  T^10 = identity on all: True
+   => the finite carrier closes EXACTLY (spin doubling 2 pi -> -1, 4 pi -> +1 with zero excess); any alpha/2pi excess is not in the finite carrier.
+
+C5 adjacency spectrum of the 600-cell graph (distinct, multiplicity); /12 = relaxation chain eigenvalues
+     12.000000000  x  1   /12 =  1.000000000
+      9.708203932  x  4   /12 =  0.809016994
+      6.472135955  x  9   /12 =  0.539344663
+      3.000000000  x 16   /12 =  0.250000000
+     -0.000000000  x 25   /12 = -0.000000000
+     -2.000000000  x 36   /12 = -0.166666667
+     -2.472135955  x  9   /12 = -0.206011330
+     -3.000000000  x 16   /12 = -0.250000000
+     -3.708203932  x  4   /12 = -0.309016994
+   distinct |eigenvalue| ratios to the top (12): [np.float64(1.0), np.float64(0.809016994), np.float64(0.539344663), np.float64(0.309016994), np.float64(0.25), np.float64(0.20601133), np.float64(0.166666667), np.float64(0.0)]
+   alpha = 0.0072973525693  1/alpha = 137.0359990836958   any ratio within 1e-6 of alpha or 1/alpha? False
+
+C1 single-level floor quantities in cycles (value/2pi for angles) and ratio to alpha
+   tick 1/30              0.03333333333   alpha/x = 0.21892058   x/alpha = 4.5678666
+   radit 1/12             0.08333333333   alpha/x = 0.087568231   x/alpha = 11.419667
+   eps/2pi                0.02043361992   alpha/x = 0.35712481   x/alpha = 2.8001415
+   delta=2/9 rad /2pi     0.03536776513   alpha/x = 0.20632778   x/alpha = 4.846657
+   K=ln(phi)/15 /2pi      0.005105816042   alpha/x = 1.4292236   x/alpha = 0.6996806
+   kappa=(pi/3)^2         1.096622711   alpha/x = 0.0066543876   x/alpha = 150.27679
+   gap=1-phi/2            0.1909830056   alpha/x = 0.038209434   x/alpha = 26.171547
+   phi/2                  0.8090169944   alpha/x = 0.0090200238   x/alpha = 110.86445
+   (phi/2)^30             0.001732723787   alpha/x = 4.2114921   x/alpha = 0.23744554
+   lean xi/2pi            0.09795663801   alpha/x = 0.074495743   x/alpha = 13.423586
+   2/15 (=1/3-1/5)        0.1333333333   alpha/x = 0.054730144   x/alpha = 18.271467
+C2 near-misses (relative error to 1/alpha 2018):
+   exp(2pi)/4             133.872913881   rel err -2.308e-02
+   125 kappa              137.077838904   rel err +3.053e-04
+   144 - 7                137.000000000   rel err -2.627e-04
+   12^2 (full cycle)      144.000000000   rel err +5.082e-02
+   (1-eps/2pi)^2 * 144    138.175242189   rel err +8.313e-03
+C3 closure: 137.036/144 = 0.9516388825256653 ; (1-eps/2pi) = 0.9795663800765183 ; (1-eps/2pi)^2 = 0.959550292976214 ; exponent n with (1-eps/2pi)^n = 137.036/144: 2.40101632561315
+C6 floor hop counts per cycle (closest to 137.036): {10: '0.927', 30: '0.781', 60: '0.562', 120: '0.124', 144: '0.051', 1440: '9.508'}
+   alpha/2pi in cycles 0.0011614097328884378  in ticks 0.03484229198665313  ; 2pi/alpha = 861.0225759973526 ; smallest floor beat is 1/30 cycle = 0.03333333333333333  ; beat F16 delta_nat/2pi = 0.0353766953256815
+C9 coupling = (cell/wavelength)^2: EM cell = sqrt(alpha) lam_e = 3.298747902114398e-14 m ; = sqrt(r_e lam_e): 3.2987479021404156e-14
+   dispersion deviation coefficients from the ledger (lattice B): 0.0517 k^2 and 0.0248 (ka)^2 ; / alpha = 7.084761152627073 3.3984927772756555
+
+C10 grammar sweep: 1731600 expressions (rationals a/b with a,b<=30; one or two factors from 20 floor constants with exponents in (-2, -1, 1, 2)); tolerance 1e-09
+   hits on the real target 1/alpha: 0   decoy mean hits per target: 0.000e+00 over 1976 decoys (max 0)
+   nearest 8 expressions (relative error):
+     (25/7)*acos(1/3)^1*K=ln(phi)/15^-1                           137.037892808  +1.38e-05
+     (27/5)*e^pi^1*kappa^1                                        137.033689112  -1.69e-05
+     (3/5)*pi^2*e^pi^1                                            137.033689112  -1.69e-05
+     (25/23)*ln_phi^-1*eps^-2                                     137.033112756  -2.11e-05
+     (2/15)*G_nat=2phi^2pi^2/9^2*K=ln(phi)/15^-1                  137.030969047  -3.67e-05
+     (2/1)*ln_phi^-1*G_nat=2phi^2pi^2/9^2                         137.030969047  -3.67e-05
+     (28/5)*pi^1*eps^-1                                           137.029073188  -5.05e-05
+     (21/11)*phi^2*gap=1-phi/2^-2                                 137.028985495  -5.12e-05
+   typical nearest-miss scale = 1/(2 * density) ~ 2.0597849596734886e-05
