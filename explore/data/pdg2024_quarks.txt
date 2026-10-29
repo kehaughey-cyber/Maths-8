@@ -1,0 +1,156 @@
+                Citation: S. Navas et al. (Particle Data Group), Phys. Rev. D 110, 030001 (2024)
+
+                    QUARKS
+
+   The u-, d-, and s-quark masses are the MS masses at the scale µ
+   = 2 GeV. The c- and b-quark masses are the MS masses renor-
+   malized at the MS mass, i.e. m = m(µ = m). The t-quark
+   mass is extracted from event kinematics (see the review "The Top
+   Quark").
+
+u                                I (JP ) = 1 ( 1 +)
+
+                                                22
+
+       mu = 2.16 ± 0.07 MeV, CL = 90%                     Charge   =     2  e     Iz  =   +1
+       mu/md = 0.462 ± 0.020, CL = 90%                                   3
+                                                                                             2
+
+d                                I (JP ) = 1 ( 1 +)
+
+                                                22
+
+       md = 4.70 ± 0.07 MeV, CL = 90%                     Charge   =     -1    e      Iz  =       -1
+
+                                                                            3                        2
+
+       ms /md = 17-22
+
+       m = (mu+md )/2 = 3.49 ± 0.07 MeV, CL = 90%
+
+s                                I (JP )              =  0( 1 +)
+
+                                                            2
+
+   ms = 93.5 ± 0.8 MeV, CL = 90%                  Charge  =  -1    e  Strangeness = -1
+
+                                 27.33 + 0.18,                  3
+
+   ms  /  ((mu  +    md )/2)  =           - 0.14  CL  =  90%
+
+c                                I (JP )              =  0( 1 +)
+
+                                                            2
+
+   mc = 1.2730 ± 0.0046 GeV, CL = 90%                     Charge   =     2  e     Charm = +1
+   mb-mc = 3.45 ± 0.05 GeV                                               3
+
+b                                I (JP )              =  0( 1 +)
+
+                                                            2
+
+   mb = 4.183 ± 0.007 GeV, CL = 90%                   Charge  =    -1    e     Bottom = -1
+
+                                                                      3
+
+https://pdg.lbl.gov              Page 1                                           Created: 5/31/2024 10:12
+        Citation: S. Navas et al. (Particle Data Group), Phys. Rev. D 110, 030001 (2024)
+
+t                                             I (JP )  =  0( 1 +)
+
+                                                             2
+
+                                Charge        =        2  e          Top = +1
+                                                       3
+
+             Mass (direct measurements) m = 172.57 ± 0.29 GeV [a,b] (S = 1.5)
+
+             Mass    (from  cross-section     measurements)  m     =  162.5 + 2.1         GeV  [a]
+
+                                                                               - 1.5
+
+             Mass (Pole from cross-section measurements) m = 172.4 ± 0.7 GeV
+
+             mt - mt = -0.15 ± 0.20 GeV (S = 1.1)
+                               1.42 + 0.19
+             Full  width    =                 GeV      (S = 1.4)
+                                      - 0.15
+
+              W b / W q (q = b, s, d) = 0.957 ± 0.034 (S = 1.5)
+
+        t-quark EW Couplings
+
+             F0 = 0.693 ± 0.013
+             F- = 0.315 ± 0.010
+             F+ = -0.005 ± 0.007
+             FV +A < 0.29, CL = 95%
+
+t DECAY MODES                   Fraction (i /) Confidence level                               p
+                                                                                          (MeV/c)
+W q (q = b, s, d)                          (11.10± 0.30) %
+   Wb                                                                                            -
+      e e b                                (11.40± 0.20) %                                       -
+      µ µ b                                                                                      -
+        b                                  (10.7 ± 0.5 ) %                                       -
+      qqb                                                                                        -
+                                           (66.5 ± 1.4 ) %                                       -
+ q (q=u,c)                                                                                       -
+                                [c] < 4.5                    × 10-5   95%
+
+             T = 1 weak neutral current (T1 ) modes
+
+Z q (q=u,c)                 T1 [d] < 1.2                     × 10-4   95%                      -
+
+Hu                          T1  < 1.9                        × 10-4   95%                      -
+
+Hc                          T1  < 4.3                        × 10-4   95%                      -
+                                < 1.6
++ q q (q=d,s,b; q=u,c) T1                                    × 10-3   95%                      -
+
+             Lepton Family number (LF ) violating modes
+
+e± µ c                      LF  < 8.9                        × 10-7                            -
+
+e± µ u                      LF  <7                           × 10-8                            -
+
+https://pdg.lbl.gov             Page 2                       Created: 5/31/2024 10:12
+Citation: S. Navas et al. (Particle Data Group), Phys. Rev. D 110, 030001 (2024)
+
+b (4th Generation) Quark, Searches for
+
+Mass m >             190 GeV, CL = 95%   (p p, quasi-stable b)
+Mass m >             1390 GeV, CL = 95%   (B(b  Z b) = 1)
+Mass m >             1350 GeV, CL = 95%   (B(b  W t) = 1)
+Mass m >             1570 GeV, CL = 95%   (B(b  H b) = 1)
+Mass m >             46.0 GeV, CL = 95%  (e+ e-, all decays)
+
+t (4th Generation) Quark, Searches for
+
+            m(t(2/3)) > 1280 GeV, CL = 95% (B(t  Z t) = 1)
+            m(t(2/3)) > 1295 GeV, CL = 95% (B(t  W b) = 1)
+            m(t(2/3)) > 1310 GeV, CL = 95% (singlet t)
+            m(t(2/3)) > 1350 GeV, CL = 95% (t in a weak isospin dou-
+
+                 blet (t,b))
+            m(t(5/3)) > 1.460 ×103 GeV, CL = 95% (t(5/3)  t W +)
+
+Free Quark Searches
+
+  All searches since 1977 have had negative results.
+                                          NOTES
+
+[a] A discussion of the definition of the top quark mass in these measure-
+    ments can be found in the review "The Top Quark."
+
+[b] Based on published top massmeasurements using data from Tevatron
+    Run-I and Run-II and LHC at s = 7 TeV. Including the most recent un-
+    published results from Tevatron Run-II, the Tevatron Electroweak Work-
+    ing Group reports a top mass of 173.2 ± 0.9 GeV. See the note "The
+    Top Quark' in the Quark Particle Listings of this Review.
+
+[c] This limit is for (t   q)/(t  W b).
+
+[d] This limit is for (t  Z q)/(t  W b).
+
+https://pdg.lbl.gov  Page 3              Created: 5/31/2024 10:12
+

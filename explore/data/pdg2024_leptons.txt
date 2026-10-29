@@ -1,0 +1,835 @@
+   Citation: S. Navas et al. (Particle Data Group), Phys. Rev. D 110, 030001 (2024)
+
+                     LEPTONS
+
+e                            J=1
+
+                                     2
+
+   Mass m = (548.579909065 ± 0.000000016) × 10-6 u
+
+   Mass m = 0.51099895000 ± 0.00000000015 MeV
+    me+ - me- /m < 8 × 10-9, CL = 90%
+    qe+ + qe- e < 4 × 10-8
+   Magnetic moment anomaly
+
+        (g-2)/2 = (1159.65218062 ± 0.00000012) × 10-6
+   (ge+ - ge- ) / gaverage = (- 0.5 ± 2.1) × 10-12
+   Electric dipole moment d < 0.041 × 10-28 e cm, CL = 90%
+   Mean life  > 6.6 × 1028 yr, CL = 90% [a]
+
+µ                            J=1
+
+                                     2
+
+   Mass m = 0.1134289259 ± 0.0000000025 u
+
+   Mass m = 105.6583755 ± 0.0000023 MeV
+   Mean life  = (2.1969811 ± 0.0000022) × 10-6 s
+
+    µ+/ µ- = 1.00002 ± 0.00008
+        c = 658.6384 m
+
+   Magnetic moment anomaly (g-2)/2 = (11659205.9 ± 2.2) × 10-10
+   (gµ+ - gµ- ) / gaverage = (- 0.11 ± 0.12) × 10-8
+   Electric dipole moment d < 1.8 × 10-19 e cm, CL = 95%
+
+   Decay parameters [b]
+
+         = 0.74979 ± 0.00026
+
+         = 0.057 ± 0.034
+
+         = 0.75047 ± 0.00034
+        Pµ = 1.0009 + 0.0016 [c]
+
+                                 - 0.0007
+
+        Pµ/ = 1.0018 + 0.0016 [c]
+
+                                      - 0.0007
+
+         = 1.00 ± 0.04
+         = 0.98 ± 0.04
+        /A = (0 ± 4) × 10-3
+        /A = (-10 ± 20) × 10-3
+        /A = (4 ± 6) × 10-3
+        /A = (2 ± 7) × 10-3
+
+         = 0.02 ± 0.08
+
+https://pdg.lbl.gov  Page 1                     Created: 5/31/2024 10:12
+          Citation: S. Navas et al. (Particle Data Group), Phys. Rev. D 110, 030001 (2024)
+
+  µ+ modes are charge conjugates of the modes below.
+
+µ- DECAY MODES                    Fraction (i /)         Confidence level                       p
+                                                                                            (MeV/c)
+e- e µ                                 100%
+   e- e µ                         [d] (6.0± 0.5) × 10-8                                            53
+                                  [e] (3.4± 0.4) × 10-5                                            53
+e- e µ e+ e-                                                                                       53
+
+          Lepton Family number (LF ) violating modes
+
+e- e µ                        LF [f ] < 1.2          %        90%                           53
+e- 
+e- e+ e-                      LF  < 4.2              × 10-13  90%                           53
+                                                     × 10-12
+e- 2                          LF  < 1.0              × 10-11  90%                           53
+
+                              LF  < 7.2                       90%                           53
+
+                                          J=1
+
+                                                  2
+
+          Mass m = 1776.93 ± 0.09 MeV
+          (m + - m - )/maverage < 2.8 × 10-4, CL = 90%
+          Mean life  = (290.3 ± 0.5) × 10-15 s
+
+              c = 87.03 µm
+
+          Magnetic moment anomaly = -0.057 to 0.024, CL = 95%
+          Re(d ) = -0.185 to 0.061 × 10-16 e cm, CL = 95%
+          Im(d ) = -0.103 to 0.0230 × 10-16 e cm, CL = 95%
+
+  Weak dipole moment
+      Re(dw ) < 0.50 × 10-17 e cm, CL = 95%
+      Im(dw ) < 1.1 × 10-17 e cm, CL = 95%
+
+  Weak anomalous magnetic dipole moment
+
+          Re(w ) < 1.1 × 10-3, CL = 95%
+          Im(w ) < 2.7 × 10-3, CL = 95%
+          ±          ±     0
+                        K  S    (RATE DIFFERENCE) / (RATE SUM) =
+
+          (-0.36 ± 0.25)%
+
+  Decay parameters
+
+  See the  Particle Listings for a note concerning  -decay parameters.
+
+      (e or µ) = 0.745 ± 0.008
+      (e) = 0.747 ± 0.010
+      (µ) = 0.763 ± 0.020
+      (e or µ) = 0.985 ± 0.030
+      (e) = 0.994 ± 0.040
+      (µ) = 1.030 ± 0.059
+      (e or µ) = 0.013 ± 0.020
+      (µ) = 0.094 ± 0.073
+
+https://pdg.lbl.gov               Page 2             Created: 5/31/2024 10:12
+       Citation: S. Navas et al. (Particle Data Group), Phys. Rev. D 110, 030001 (2024)
+
+       ()(e or µ) = 0.746 ± 0.021
+       ()(e) = 0.734 ± 0.028
+       ()(µ) = 0.778 ± 0.037
+       () = 0.993 ± 0.022
+       () = 0.994 ± 0.008
+       (a1) = 1.001 ± 0.027
+       (all hadronic modes) = 0.995 ± 0.007
+       (µ) = 0.2 ± 1.0
+       (µ) = -1.3 ± 1.7
+       ()(e or µ) = 0.5 ± 0.4
+       ()(e) = -0.4 ± 1.2
+       ()(µ) = 0.8 ± 0.6
+
+      + modes are charge conjugates of the modes below. "h±" stands for
+     ± or K ±. "" stands for e or µ. "Neutrals" stands for 's and/or 0's.
+
+ - DECAY MODES                    Fraction (i /)            Scale factor/ p
+                                                        Confidence level (MeV/c)
+
+                       Modes with one charged particle
+particle-  0 neutrals  0K 0 
+                                        (85.24 ± 0.06 ) %                                -
+
+("1-prong")
+
+particle-  0 neutrals    0K  0          (84.58 ± 0.06 ) %                                -
+                             L
+µ- µ 
+                                  [g ] (17.39 ± 0.04 ) %                                 885
+
+µ- µ                              [e] ( 3.67 ± 0.08 ) × 10-3                             885
+
+e- e                              [g ] (17.82 ± 0.04 ) %                                 888
+
+e- e                              [e] ( 1.83 ± 0.05 ) %                                  888
+
+h-    0K  0                             (12.03 ± 0.05 ) %                                883
+          L
+h- 
+                                        (11.51 ± 0.05 ) %                                883
+
+-                                 [g ] (10.82 ± 0.05 ) %                                 883
+
+K -                               [g ] ( 6.96 ± 0.10 ) × 10-3                            820
+
+h-  1 neutrals                          (37.00 ± 0.09 ) %                                -
+
+h-  10  (ex.K 0)                        (36.50 ± 0.09 ) %                                -
+
+h- 0                                    (25.93 ± 0.09 ) %                                878
+
+    - 0                           [g ] (25.49 ± 0.09 ) %                                 878
+
+    - 0 non-(770)                       ( 3.0 ± 3.2 ) × 10-3                             878
+
+    K - 0                         [g ] ( 4.33 ± 0.15 ) × 10-3                            814
+
+h-  20                                  (10.81 ± 0.09 ) %                                -
+
+    h- 20                               ( 9.48 ± 0.10 ) %                                862
+
+      h- 20  (ex.K 0)                   ( 9.32 ± 0.10 ) %                                862
+
+          - 20  (ex.K 0) [g ] ( 9.26 ± 0.10 ) %                                          862
+
+          - 20  (ex.K 0),         <9              × 10-3CL=95%                           862
+
+             scalar
+          - 20  (ex.K 0),                         × 10-3CL=95%
+                                  <7                                                     862
+
+             vector
+
+https://pdg.lbl.gov             Page 3            Created: 5/31/2024 10:12
+      Citation: S. Navas et al. (Particle Data Group), Phys. Rev. D 110, 030001 (2024)
+
+      K - 20  (ex.K 0) [g ] ( 6.5 ± 2.2 ) × 10-4                                        796
+
+      h-  30                       ( 1.34 ± 0.07 ) %                                    -
+
+      h-  30  (ex. K 0)            ( 1.25 ± 0.07 ) %                                    -
+
+      h- 30                        ( 1.18 ± 0.07 ) %                                    836
+
+      - 30  (ex.K 0) [g ] ( 1.04 ± 0.07 ) %                                             836
+
+      K - 30  (ex.K 0, [g ] ( 4.8 ± 2.1 ) × 10-4                                        766
+
+                    )
+      h- 40  (ex.K 0)
+                                   ( 1.6 ± 0.4 ) × 10-3                                 800
+
+      h- 40  (ex.K 0,)     [g ] ( 1.1 ± 0.4 ) × 10-3                                    800
+
+a1(1260)  -                        ( 4.0 ± 1.5 ) × 10-4                                 -
+
+K -  00  0K 0  0                   ( 1.552± 0.029) %                                    820
+
+   K -  1 (0 or K 0 or )           ( 8.59 ± 0.28 ) × 10-3                               -
+
+   0  (particles)-         Modes with K 0's
+   S                               ( 9.43 ± 0.28 ) × 10-3
+K                                                                                       -
+
+      h- K 0                       ( 9.87 ± 0.14 ) × 10-3                               812
+
+      - K 0                [g ] ( 8.38 ± 0.14 ) × 10-3                                  812
+
+      - K0                         ( 5.4 ± 2.1 ) × 10-4                                 812
+
+      (non-K (892)-) 
+      K - K 0              [g ] ( 1.486± 0.034) × 10-3
+                                                                                        737
+
+      K - K 0  00                  ( 2.99 ± 0.07 ) × 10-3                               737
+
+      h- K 0 0                     ( 5.32 ± 0.13 ) × 10-3                               794
+
+      - K 0 0              [g ] ( 3.82 ± 0.13 ) × 10-3                                  794
+
+      K 0 -                        ( 2.2 ± 0.5 ) × 10-3                                 612
+
+      K - K 0 0            [g ] ( 1.50 ± 0.07 ) × 10-3                                  685
+
+      - K 0  10                    ( 4.08 ± 0.25 ) × 10-3                               -
+
+      - K 0 0 0  (ex.K 0)  [g ] ( 2.6 ± 2.3 ) × 10-4                                    763
+
+      K - K 0 0 0          < 1.6             × 10-4CL=95%                               619
+
+      - K 0 K 0                    ( 1.55 ± 0.24 ) × 10-3                               682
+
+      - K 0 K 0            [g ] ( 2.35 ± 0.06 ) × 10-4                                  682
+
+              SS
+      - K 0 K 0            [g ] ( 1.08 ± 0.24 ) × 10-3
+                                                                                        682
+              SL
+      - K 0 K 0                    ( 2.35 ± 0.06 ) × 10-4
+                                                                                        682
+              LL
+      - K 0 K 0 0                  ( 3.6 ± 1.2 ) × 10-4
+                                                                                        614
+
+      - K 0 K 0 0          [g ] ( 1.82 ± 0.21 ) × 10-5                                  614
+
+              SS
+      K - K 0 0                    ( 1.08 ± 0.21 ) × 10-5
+                                                                                        -
+      - K 0 K 0 0 
+                       SS
+      f1(1285)-                    ( 6.8 ± 1.5 ) × 10-6
+                                                                                        -
+      - K 0 K 0 0 
+                       SS
+      f1(1420)-                    ( 2.4 ± 0.8 ) × 10-6
+                                                                                        -
+      - K 0 K 0 0 
+                       SS
+      - K 0 K 0 0          [g ] ( 3.2 ± 1.2 ) × 10-4
+                                                                                        614
+              SL
+      - K 0 K 0 0                  ( 1.82 ± 0.21 ) × 10-5
+                                                                                        614
+              LL
+      K - K 0 K 0                            × 10-7CL=90%
+                           < 6.3                                                        466
+               SS
+      K - K 0 K 0 0                          × 10-7CL=90%
+                           < 4.0                                                        337
+               SS
+
+https://pdg.lbl.gov        Page 4            Created: 5/31/2024 10:12
+          Citation: S. Navas et al. (Particle Data Group), Phys. Rev. D 110, 030001 (2024)
+
+K 0 h+ h- h-  0 neutrals          < 1.7  × 10-3CL=95%                                       760
+
+K 0 h+ h- h-                      [g ] ( 2.5 ± 2.0 ) × 10-4                                 760
+
+                     Modes with three charged particles
+
+h- h- h+   0 neutrals    0K  0          (15.20 ± 0.06 ) %                                   861
+                             L
+h- h- h+  0 neutrals 
+                                        (14.55 ± 0.06 ) %                                   861
+
+(ex. K 0  + -)
+          S
+("3-prong")
+h- h- h+ 
+                                        ( 9.80 ± 0.05 ) %                                   861
+
+h- h- h+  (ex.K 0)                      ( 9.46 ± 0.05 ) %                                   861
+
+h- h- h+  (ex.K 0,)                     ( 9.43 ± 0.05 ) %                                   861
+
+- + -                                   ( 9.31 ± 0.05 ) %                                   861
+
+- + -  (ex.K 0)                         ( 9.02 ± 0.05 ) %                                   861
+
+- + -  (ex.K 0),                  < 2.4  %                      CL=95%                      861
+
+non-axial vector
+- + -  (ex.K 0,)
+                                  [g ] ( 8.99 ± 0.05 ) %                                    861
+
+h- h- h+  1 neutrals                    ( 5.29 ± 0.05 ) %                                   -
+
+h- h- h+  1 0  (ex. K 0)                ( 5.09 ± 0.05 ) %                                   -
+
+h- h- h+ 0                              ( 4.76 ± 0.05 ) %                                   834
+
+h- h- h+ 0  (ex.K 0)                    ( 4.57 ± 0.05 ) %                                   834
+
+h- h- h+ 0  (ex. K 0, )                 ( 2.79 ± 0.07 ) %                                   834
+
+- + - 0                                 ( 4.62 ± 0.05 ) %                                   834
+
+- + - 0  (ex.K 0)                       ( 4.49 ± 0.05 ) %                                   834
+
+- + - 0  (ex.K 0,) [g] ( 2.74 ± 0.07 ) %                                                    834
+
+h- h- h+  20  (ex.                      ( 5.17 ± 0.31 ) × 10-3                              -
+
+K 0)
+h- h- h+ 20 
+                                        ( 5.05 ± 0.31 ) × 10-3                              797
+
+h- h- h+ 20  (ex.K 0)                   ( 4.95 ± 0.31 ) × 10-3                              797
+
+h- h- h+ 20  (ex.K 0,,) [g] (10 ± 4 ) × 10-4                                                797
+
+h- h- h+ 30                             ( 2.13 ± 0.30 ) × 10-4                              749
+
+2- + 30  (ex.K 0)                       ( 1.94 ± 0.30 ) × 10-4                              749
+
+2- + 30  (ex.K 0, ,                     ( 1.7 ± 0.4 ) × 10-4                                -
+
+          f1(1285))
+2- + 30  (ex.K 0, , [g] ( 1.4 ± 2.7 ) × 10-5
+                                                                                            -
+
+          , f1(1285))
+K - h+ h-  0 neutrals                   ( 6.29 ± 0.14 ) × 10-3
+                                                                                            794
+
+K - h+ -  (ex.K 0)                      ( 4.37 ± 0.07 ) × 10-3                              794
+
+K - h+ - 0  (ex.K 0)                    ( 8.6 ± 1.2 ) × 10-4                                763
+
+K - + -  0 neutrals                     ( 4.77 ± 0.14 ) × 10-3                              794
+
+K- + -                                  ( 3.73 ± 0.13 ) × 10-3                              794
+
+00  (ex.K 0)
+K - + -                                 ( 3.45 ± 0.07 ) × 10-3
+                                                                                            794
+
+K - + -  (ex.K 0)                       ( 2.93 ± 0.07 ) × 10-3                              794
+
+K - + -  (ex.K 0,) [g ] ( 2.93 ± 0.07 ) × 10-3                                              794
+
+https://pdg.lbl.gov             Page 5   Created: 5/31/2024 10:12
+         Citation: S. Navas et al. (Particle Data Group), Phys. Rev. D 110, 030001 (2024)
+
+      K - 0                        ( 1.4 ± 0.5 ) × 10-3                                    -
+
+         K - + - 
+      K - + - 0                    ( 1.31 ± 0.12 ) × 10-3
+                                                                                           763
+
+      K - + - 0  (ex.K 0)          ( 7.9 ± 1.2 ) × 10-4                                    763
+
+      K - + - 0  (ex.K 0,)         ( 7.6 ± 1.2 ) × 10-4                                    763
+
+      K - + - 0  (ex.K 0,)         ( 3.7 ± 0.9 ) × 10-4                                    763
+
+      K - + - 0  (ex.K 0,,)[g] ( 3.9 ± 1.4 ) × 10-4                                        763
+
+K - + K -  0 neut.          <9           × 10-4CL=95%                                      685
+
+K - K + -  0 neut.                 ( 1.496± 0.033) × 10-3                                  685
+
+      K - K + -             [g ] ( 1.435± 0.027) × 10-3                                    685
+
+      K - K + - 0           [g ] ( 6.1 ± 1.8 ) × 10-5                                      618
+
+K - K + K -                        ( 2.2 ± 0.8 ) × 10-5 S=5.4                              472
+
+      K - K + K -  (ex. )   < 2.5        × 10-6CL=90%                                      -
+
+K - K + K - 0               < 4.8        × 10-6CL=90%                                      346
+
+- K + -  0 neut.            < 2.5        × 10-3CL=95%                                      794
+
+e- e- e+ e                         ( 2.8 ± 1.5 ) × 10-5                                    888
+
+µ- e- e+ µ                  < 3.2        × 10-5CL=90%                                      885
+
+- e- e+                            seen                                                    883
+
+- µ- µ+                     < 1.14       × 10-5CL=90%                                      870
+
+                     Modes with five charged particles
+
+3h- 2h+  0 neutrals                ( 9.9 ± 0.4 ) × 10-4                                    794
+
+(ex.  K0     - +)
+
+         S
+("5-prong")
+3h- 2h+  (ex.K 0)
+                                   ( 8.29 ± 0.31 ) × 10-4                                  794
+
+3- 2+  (ex.K 0, )                  ( 8.27 ± 0.31 ) × 10-4                                  794
+
+3- 2+  (ex.K 0, ,           [g ] ( 7.75 ± 0.30 ) × 10-4                                    -
+
+      f1(1285))
+K - 2- 2+  (ex.K 0)         [g ] ( 6 ± 12 ) × 10-7
+                                                                                           716
+
+K + 3- +                    < 5.0        × 10-6CL=90%                                      716
+
+K + K - 2- +                < 4.5        × 10-7CL=90%                                      528
+
+3h- 2h+ 0  (ex.K 0)                ( 1.65 ± 0.11 ) × 10-4                                  746
+
+3- 2+ 0  (ex.K 0)                  ( 1.64 ± 0.11 ) × 10-4                                  746
+
+3- 2+ 0  (ex.K 0, ,                ( 1.11 ± 0.10 ) × 10-4                                  -
+
+      f1(1285))
+3- 2+ 0  (ex.K 0, , [g] ( 3.8 ± 0.9 ) × 10-5
+                                                                                           -
+
+      , f1(1285))
+K - 2- 2+ 0  (ex.K 0) [g] ( 1.1 ± 0.6 ) × 10-6
+                                                                                           657
+
+K + 3- + 0                  <8           × 10-7CL=90%                                      657
+
+3h- 2h+ 20                  < 3.4        × 10-6CL=90%                                      687
+
+( 5 )-               Miscellaneous other allowed modes
+                                   ( 7.8 ± 0.5 ) × 10-3
+                                                                                           800
+
+4h- 3h+  0 neutrals         < 3.0        × 10-7CL=90%                                      682
+
+("7-prong")
+
+https://pdg.lbl.gov        Page 6        Created: 5/31/2024 10:12
+         Citation: S. Navas et al. (Particle Data Group), Phys. Rev. D 110, 030001 (2024)
+
+   4h- 3h+                 < 4.3          × 10-7CL=90%                                     682
+   4h- 3h+ 0               < 2.5
+X - (S=- 1)                               × 10-7CL=90%                                     612
+K (892)-  0 neutrals 
+    0K 0L                          ( 2.92 ± 0.04 ) %                                       -
+   K (892)- 
+   K (892)-   - K 0                ( 1.42 ± 0.18 ) %       S=1.4                           665
+K (892)0 K -  0 neutrals 
+   K (892)0 K -                    ( 1.20 ± 0.07 ) %       S=1.8                           665
+K (892)0 -  0 neutrals 
+   K (892)0 -                      ( 7.82 ± 0.26 ) × 10-3                                  -
+( K (892) )-  
+    - K 0 0                        ( 3.2 ± 1.4 ) × 10-3                                    542
+K1(1270)- 
+K1(1400)-                          ( 2.1 ± 0.4 ) × 10-3                                    542
+
+                                   ( 3.8 ± 1.7 ) × 10-3                                    656
+
+                                   ( 2.2 ± 0.5 ) × 10-3                                    656
+
+                                   ( 1.0 ± 0.4 ) × 10-3                                    -
+
+                                   ( 4.7 ± 1.1 ) × 10-3                                    447
+
+                                   ( 1.7 ± 2.6 ) × 10-3 S=1.7                              335
+
+K (1410)-                          ( 1.5 + 1.4 ) × 10-3                                    326
+                                   - 1.0
+
+K 0(1430)-                 <5             × 10-4CL=95%                                     317
+
+K 2(1430)-                 <3             × 10-3CL=95%                                     315
+
+ -                         < 9.9          × 10-5CL=95%                                     797
+
+ - 0                       [g ] ( 1.39 ± 0.07 ) × 10-3                                     778
+
+ - 0 0                     [g ] ( 1.9 ± 0.4 ) × 10-4                                       746
+
+ K -                       [g ] ( 1.55 ± 0.08 ) × 10-4                                     720
+
+ K (892)-                          ( 1.38 ± 0.15 ) × 10-4                                  511
+
+ K - 0                     [g ] ( 4.8 ± 1.2 ) × 10-5                                       665
+
+ K - 0 (non-K (892))       < 3.5          × 10-5CL=90%                                     -
+
+ K 0 -                     [g ] ( 9.4 ± 1.5 ) × 10-5                                       661
+
+ K 0 - 0                   < 5.0          × 10-5CL=90%                                     590
+
+ K - K 0                   < 9.0          × 10-6CL=90%                                     430
+
+ + - -  0 neutrals         <3             × 10-3CL=90%                                     744
+
+ - + -  (ex.K 0)           [g ] ( 2.20 ± 0.13 ) × 10-4                                     744
+
+ - + -  (ex.K 0,f1(1285)) ( 9.9 ± 1.6 ) × 10-5                                             -
+
+ a1(1260)-    - 0          < 3.9          × 10-4CL=90%                                     -
+
+  -                        < 7.4          × 10-6CL=90%                                     637
+
+  - 0                      < 2.0          × 10-4CL=95%                                     559
+
+  K -                      < 3.0          × 10-6CL=90%                                     382
+
+(958)-                     < 4.0          × 10-6CL=90%                                     620
+
+(958)- 0                   < 1.2          × 10-5CL=90%                                     591
+
+(958)K -                   < 2.4          × 10-6CL=90%                                     495
+
+ -                                 ( 3.4 ± 0.6 ) × 10-5                                    585
+
+ K -                       [g ] ( 4.4 ± 1.6 ) × 10-5                                       445
+
+f1(1285)-                          ( 3.9 ± 0.5 ) × 10-4 S=1.9                              408
+
+f1(1285)-                          ( 1.18 ± 0.07 ) × 10-4 S=1.3                            -
+
+ - + - 
+
+https://pdg.lbl.gov        Page 7  Created: 5/31/2024 10:12
+         Citation: S. Navas et al. (Particle Data Group), Phys. Rev. D 110, 030001 (2024)
+
+f1(1285)-                [g ] ( 5.2 ± 0.4 ) × 10-5                                         -
+
+      3- 2+ 
+(1300)-   ( )-                   × 10-4CL=90%
+                         < 1.0                                                             -
+
+(3)- 
+(1300)-                          × 10-4CL=90%
+                         < 1.9                                                             -
+
+(( )S-wave )-  
+(3)- 
+h-   0 neutrals 
+                                 ( 2.40 ± 0.08 ) %                                         708
+
+h-                               ( 1.99 ± 0.06 ) %                                         708
+
+     -                   [g ] ( 1.95 ± 0.06 ) %                                            708
+
+     K -                 [g ] ( 4.1 ± 0.9 ) × 10-4                                         610
+
+h-  0                    [g ] ( 4.1 ± 0.4 ) × 10-3                                         684
+
+h-  20                           ( 1.4 ± 0.5 ) × 10-4                                      644
+
+     -  20               [g ] ( 7.2 ± 1.6 ) × 10-5                                         644
+
+h- 2                     < 5.4   × 10-7CL=90%                                              250
+
+2h- h+                           ( 1.20 ± 0.22 ) × 10-4                                    641
+
+2- +   (ex.K 0)          [g ] ( 8.4 ± 0.6 ) × 10-5                                         641
+
+             Lepton Family number (LF ), Lepton number (L),
+                   or Baryon number (B) violating modes
+
+         L means lepton number violation (e.g.  -  e+ - -). Following
+
+         common usage, LF means lepton family violation and not lepton number
+         violation (e.g.  -  e- + -). B means baryon number violation.
+
+e-                   LF  < 3.3   × 10-8CL=90%                                              888
+                         < 2.5
+e-                   LF  < 4.2   × 10-4CL=90%                                              888
+                         < 5.8
+µ-                   LF  < 8.0   × 10-8CL=90%                                              885
+                         < 1.1
+µ-                   LF  < 2.6   × 10-4CL=90%                                              885
+                         < 2.3
+e- 0                 LF  < 9.2   × 10-8CL=90%                                              883
+                         < 6.5
+µ- 0                 LF  < 2.2   × 10-7CL=90%                                              880
+                         < 1.7
+e- K 0S              LF  < 2.4   × 10-8CL=90%                                              819
+                         < 3.9
+µ- K 0S              LF  < 1.9   × 10-8CL=90%                                              815
+                         < 2.9
+e-                   LF  < 1.7   × 10-8CL=90%                                              804
+                         < 4.3
+µ-                   LF  < 1.6   × 10-8CL=90%                                              800
+                         < 1.3
+e- 0                 LF  < 3.2   × 10-8CL=90%                                              719
+
+µ- 0                 LF          × 10-8CL=90%                                              715
+
+e-                   LF          × 10-8CL=90%                                              716
+
+µ-                   LF          × 10-8CL=90%                                              711
+
+e- K (892)0          LF          × 10-8CL=90%                                              665
+
+µ- K (892)0          LF          × 10-8CL=90%                                              659
+
+e- K (892)0          LF          × 10-8CL=90%                                              665
+
+µ- K (892)0          LF          × 10-8CL=90%                                              659
+
+e- (958)             LF          × 10-7CL=90%                                              630
+
+µ- (958)             LF          × 10-7CL=90%                                              625
+
+e- f0(980)  e- + - LF            × 10-8CL=90%                                              -
+
+https://pdg.lbl.gov      Page 8  Created: 5/31/2024 10:12
+            Citation: S. Navas et al. (Particle Data Group), Phys. Rev. D 110, 030001 (2024)
+
+µ- f0(980)  µ- + - LF     < 3.4   × 10-8CL=90%                                                -
+                          < 2.0
+e-                   LF   < 2.3   × 10-8CL=90%                                                596
+                          < 2.7
+µ-                   LF   < 2.7   × 10-8CL=90%                                                590
+                          < 1.7
+e- e+ e-             LF   < 1.8   × 10-8CL=90%                                                888
+                          < 1.5
+e- µ+ µ-             LF   < 2.1   × 10-8CL=90%                                                882
+                          < 2.3
+e+ µ- µ-             LF   < 2.0   × 10-8CL=90%                                                882
+                          < 2.1
+µ- e+ e-             LF   < 3.9   × 10-8CL=90%                                                885
+                          < 3.7
+µ+ e- e-             LF   < 3.1   × 10-8CL=90%                                                885
+                          < 3.2
+µ- µ+ µ-             LF   < 7.1   × 10-8CL=90%                                                873
+
+e- + -               LF   < 3.4   × 10-8CL=90%                                                877
+                          < 3.3
+e+ - -               L    < 8.6   × 10-8CL=90%                                                877
+                          < 4.5
+µ- + -               LF   < 4.8   × 10-8CL=90%                                                866
+                          < 8.0
+µ+ - -               L            × 10-8CL=90%                                                866
+                          < 4.4
+e- + K-              LF   < 4.7   × 10-8CL=90%                                                813
+                          < 6.5
+e- - K+              LF   < 1.4   × 10-8CL=90%                                                813
+                          < 3.5
+e+ - K-              L    < 6.0   × 10-8CL=90%                                                813
+                          < 2.4
+e-K0 K0              LF   < 2.2   × 10-8CL=90%                                                736
+     SS                   < 3.0
+e- K + K -                < 3.0   × 10-8CL=90%
+                     LF   < 2.0                                                               739
+                          < 1.8
+e+ K - K -           L    < 4.0   × 10-8CL=90%                                                739
+                          < 1.8
+µ- + K -             LF   < 3.5   × 10-8CL=90%                                                800
+                          < 1.5
+µ- - K +             LF   < 3.3   × 10-8CL=90%                                                800
+                          < 8.9
+µ+ - K -             L    < 2.7   × 10-8CL=90%                                                800
+                          < 7.2
+µ- K 0 K 0           LF   < 1.4   × 10-8CL=90%                                                696
+      SS
+µ- K + K -                        × 10-8CL=90%
+                     LF                                                                       699
+
+µ+ K - K -           L            × 10-8CL=90%                                                699
+
+e- 0 0               LF           × 10-6CL=90%                                                878
+
+µ- 0 0               LF           × 10-5CL=90%                                                867
+
+e-                   LF           × 10-5CL=90%                                                699
+
+µ-                   LF           × 10-5CL=90%                                                653
+
+e- 0                 LF           × 10-5CL=90%                                                798
+
+µ- 0                 LF           × 10-5CL=90%                                                784
+
+p e- e-              L,B          × 10-8CL=90%                                                641
+
+p e+ e-              L,B          × 10-8CL=90%                                                641
+
+p e+ µ-              L,B          × 10-8CL=90%                                                635
+
+p e- µ+              L,B          × 10-8CL=90%                                                635
+
+p µ- µ-              L,B          × 10-8CL=90%                                                618
+
+p µ+ µ-              L,B          × 10-8CL=90%                                                618
+
+p                    L,B          × 10-6CL=90%                                                641
+
+p 0                  L,B          × 10-5CL=90%                                                632
+
+p 20                 L,B          × 10-5CL=90%                                                604
+
+p                    L,B          × 10-6CL=90%                                                475
+
+p0                   L,B          × 10-5CL=90%                                                360
+
+-                    L,B          × 10-8CL=90%                                                525
+
+-                    L,B          × 10-7CL=90%                                                525
+
+https://pdg.lbl.gov       Page 9  Created: 5/31/2024 10:12
+         Citation: S. Navas et al. (Particle Data Group), Phys. Rev. D 110, 030001 (2024)
+
+e- light boson        LF                    <9              × 10-4CL=95%                   -
+µ- light boson
+                      LF                    <6              × 10-4CL=95%                   -
+
+Heavy Charged Lepton Searches
+
+         L± - charged lepton                     Decay to  W .
+             Mass m > 100.8 GeV, CL = 95% [h]
+
+         L± - stable charged heavy lepton
+             Mass m > 102.6 GeV, CL = 95%
+
+ Neutrino Properties
+
+See the note on "Neutrino properties listings" in the Particle Listings.
+              Mass m < 0.8 eV, CL = 90% (tritium decay)
+              Mean life/mass,  /m > 300 s/eV, CL = 90% (reactor)
+              Mean life/mass,  /m > 7 × 109 s/eV (solar)
+              Mean life/mass,  /m > 15.4 s/eV, CL = 90% (accelerator)
+              Magnetic moment µ < 0.064 × 10-10 µB , CL = 90% (solar
+                   + radiochemical)
+
+Number of Neutrino Types
+
+            Number N = 2.996 ± 0.007 (Standard Model fits to LEP-SLC
+                 data)
+
+            Number N = 2.92 ± 0.05 (S = 1.2) (Direct measurement of
+                 invisible Z width)
+
+Neutrino Mixing
+
+The following values are obtained through data analyses based on
+
+the 3-neutrino mixing scheme described in the review "Neutrino
+
+Masses,  Mixing, and  Oscillations."
+
+         sin2(12)     = 0.307 ± 0.013
+         m2           (7.53 ± 0.18) × 10-5 eV2
+                   =
+               21
+         sin2(23)     = 0.553 + 0.016 (S = 1.1)
+                                                 (Inverted order)
+                                   - 0.024
+         sin2(23)     = 0.558 + 0.015
+                                            (Normal order)
+                                   - 0.021
+         m2           (-2.529 ± 0.029) × 10-3 eV2 (Inverted order)
+                   =
+               32
+         m2        =  (2.455 ± 0.028) × 10-3 eV2 (Normal order)
+
+               32
+
+https://pdg.lbl.gov       Page 10                Created: 5/31/2024 10:12
+Citation: S. Navas et al. (Particle Data Group), Phys. Rev. D 110, 030001 (2024)
+
+sin2(13) = (2.19 ± 0.07) × 10-2 (S = 1.2)
+
+, CP violating phase = 1.19 ± 0.22  rad (S = 1.2)
+
+m2 - m2              21  < 1.1 × 10-4 eV2, CL = 99.7%
+21
+m2 - m2                  = (-0.12 ± 0.25) × 10-3 eV2
+32                   32
+
+                         NOTES
+
+[a] This is the best limit for the mode e-   .
+
+[b] See the review on "Muon Decay Parameters" for definitions and details.
+
+[c] Pµ is the longitudinal polarization of the muon from pion decay. For
+    V -A coupling, Pµ = 1 and  =  = 3/4.
+
+[d] This only includes events with energy of e > 45 MeV and energy of
+     > 40 MeV. Since the e- e µ and e- e µ  modes cannot be clearly
+    separated, we regard the latter mode as a subset of the former.
+
+[e] See the relevant Particle Listings for the energy limits used in this mea-
+    surement.
+
+[f ] A test of additive vs. multiplicative lepton family number conservation.
+
+[g ] Basis mode for the  .
+[h] L± mass limit depends on decay assumptions; see the Full Listings.
+
+https://pdg.lbl.gov      Page 11  Created: 5/31/2024 10:12
+

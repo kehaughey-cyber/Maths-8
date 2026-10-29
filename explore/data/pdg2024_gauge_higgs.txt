@@ -1,0 +1,472 @@
+   Citation: S. Navas et al. (Particle Data Group), Phys. Rev. D 110, 030001 (2024)
+
+          GAUGE AND HIGGS BOSONS
+
+ (photon)                                 I (JPC ) = 0,1(1 - -)
+
+          Mass m < 1 × 10-18 eV           (mixed charge)
+          Charge q < 1 × 10-46 e          (single charge)
+          Charge q < 1 × 10-35 e
+
+          Mean life  = Stable
+
+g (gluon)                                 I (JP ) = 0(1-)
+
+               Mass m = 0 [a]
+               SU(3) color octet
+
+graviton                                  J =2
+          Mass m < 1.76 × 10-23 eV
+
+W                                         J =1
+
+          Charge = ±1 e
+          Mass m = 80.3692 ± 0.0133 GeV [b]
+
+          W Z mass ratio = 0.88136 ± 0.00015
+
+          mZ - mW = 10.818 ± 0.013 GeV
+          mW + - mW - = - 0.029 ± 0.028 GeV
+          Full width  = 2.085 ± 0.042 GeV
+
+            N± = 15.70 ± 0.35
+            NK± = 2.20 ± 0.19
+            Np = 0.92 ± 0.14
+            Ncharged = 19.39 ± 0.08
+
+   W - modes are charge conjugates of the modes below.
+
+W + DECAY MODES                   Fraction (i /)           Confidence level              p
+                                                                                     (MeV/c)
++                                 [c] (10.86± 0.09) %
+e+                                                                                          -
+µ+                                        (10.71± 0.16) %
++                                                                                      40185
+hadrons                                   (10.63± 0.15) %                              40185
++                                                                                      40165
+                                          (11.38± 0.21) %
+                                                                                            -
+                                          (67.41± 0.27) %
+                                                                                       40184
+                                  <7              × 10-6         95%
+
+https://pdg.lbl.gov               Page 1          Created: 5/31/2024 10:12
+           Citation: S. Navas et al. (Particle Data Group), Phys. Rev. D 110, 030001 (2024)
+
+D+s                                 <6           × 10-4     95%                              40160
+cX
+                                           (33.3 ± 2.6 ) %                                       -
+   cs                                                                                            -
+                                           (31 + 13 ) %                                          -
+invisible                                          - 11
++ + -                                                                                        40184
+                                    [d] ( 1.4 ± 2.9 ) %
+
+                                    < 1.01       × 10-6     95%
+
+Z                                          J =1
+
+           Charge = 0
+           Mass m = 91.1880 ± 0.0020 GeV [e]
+
+           Full width  = 2.4955 ± 0.0023 GeV
+            + - = 83.984 ± 0.086 MeV [c]
+            invisible = 499.2 ± 1.5 MeV [f ]
+
+            hadrons = 1744.4 ± 2.0 MeV
+            µ+ µ- / e+ e- = 1.0001 ± 0.0024
+             +  - / e+ e- = 1.0020 ± 0.0032 [g]
+
+   Average charged multiplicity
+         Ncharged = 20.76 ± 0.16 (S = 2.1)
+
+   Couplings to quarks and leptons
+
+           g    =  - 0.03783  ±   0.00041
+
+             V
+           gu
+                =  0.266  ±  0.034
+             V
+           g d = - 0.38 + 0.04
+           V              - 0.05
+           g
+                =  - 0.50123  ±   0.00026
+             A
+           g u = 0.519 + 0.028
+           A         - 0.033
+           g d = - 0.527 + 0.040
+           A              - 0.028
+           g  = 0.5008 ± 0.0008
+
+           g e = 0.53 ± 0.09
+
+           g µ = 0.502 ± 0.017
+
+   Asymmetry parameters [h]
+
+           Ae = 0.1515 ± 0.0019
+           Aµ = 0.142 ± 0.015
+           A = 0.143 ± 0.004
+           As = 0.90 ± 0.09
+           Ac = 0.670 ± 0.027
+           Ab = 0.923 ± 0.020
+
+   Charge asymmetry (%) at Z pole
+       AFB (0) = 1.71 ± 0.10
+       AFB (0u) = 4 ± 7
+
+https://pdg.lbl.gov               Page 2         Created: 5/31/2024 10:12
+Citation: S. Navas et al. (Particle Data Group), Phys. Rev. D 110, 030001 (2024)
+
+AFB (0s) = 9.8 ± 1.1
+AFB (0c) = 7.07 ± 0.35
+AFB (0b) = 9.92 ± 0.16
+
+Z DECAY MODES           Fraction (i /)           Scale factor/                        p
+                                             Confidence level                     (MeV/c)
+e+ e-
+µ+ µ-                   ( 3.3632± 0.0042) %                                         45594
++-                                                                                  45594
++ -                     ( 3.3662± 0.0066) %                                         45559
++ - + -
+invisible               ( 3.3696± 0.0083) %                                              -
+hadrons
+                     [c] ( 3.3658± 0.0023) %                                        45594
+   ( uu +cc )/2      [i] ( 4.55 ± 0.17 ) × 10-6
+   ( dd +ss +bb )/3                                                                      -
+                        (20.000 ± 0.055 ) %                                              -
+   cc                                                                                    -
+                        (69.911 ± 0.056 ) %                                              -
+   bb                                                                                    -
+                        (11.6 ± 0.6 ) %                                                  -
+   bbbb                                                                                  -
+                        (15.6 ± 0.4 ) %                                                  -
+   ggg
+0                       (12.03 ± 0.21 ) %                                           45594
+                                                                                    45592
+0                       (15.12 ± 0.05 ) %                                           45591
+                        ( 3.6 ± 1.3 ) × 10-4                                        45591
+ (958)                                                                              45589
+                            < 1.1           %         CL=95%                        45588
+                            < 2.01          × 10-5    CL=95%                        45594
+0 0                         < 5.1           × 10-5    CL=95%                        45594
+                            < 4.0           × 10-6    CL=95%                        45594
+± W                         < 3.9           × 10-6    CL=95%                        10176
+± W                         < 4.2           × 10-5    CL=95%                        10151
+                            <7              × 10-7    CL=95%
+                            < 1.46          × 10-5    CL=95%                             -
+                            < 1.52          × 10-5    CL=95%
+                            < 2.2           × 10-6    CL=95%                        45541
+                        [j] < 7             × 10-5    CL=95%
+                        [j] < 8.3           × 10-5    CL=95%                             -
+
+J /(1S ) X                ( 3.51    + 0.23  ) × 10-3     S=1.1                      45519
+                                    - 0.25            CL=95%                        45489
+J /(1S )                < 1.2       ± 0.29   × 10-6
+(2S ) X                   ( 1.60            ) × 10-3  CL=95%                             -
+                                    ± 0.7             CL=95%                             -
+   (2S )                < 2.4       ± 0.5    × 10-6                                      -
+J /(1S ) J /(1S )       < 2.2                × 10-6   CL=90%
+c 1 (1P ) X                                 ) × 10-3                                     -
+c 2 (1P ) X               ( 2.9              × 10-3
+(1S) X +(2S) X          < 3.2               ) × 10-4                                45103
+
+    +(3S) X               ( 1.0                                                          -
+   (1S) X
+   (1S)                 < 4.4               × 10-5    CL=95%                        45043
+   (2S) X               < 1.1               × 10-6    CL=95%
+   (2S)                 < 1.39              × 10-4    CL=95%
+                        < 1.3               × 10-6    CL=95%
+
+https://pdg.lbl.gov  Page 3                 Created: 5/31/2024 10:12
+        Citation: S. Navas et al. (Particle Data Group), Phys. Rev. D 110, 030001 (2024)
+
+(3S) X                                < 9.4             × 10-5   CL=95%                       -
+                                      < 2.4             × 10-6   CL=95%
+(3S)                                  < 1.5             × 10-6   CL=95%                   45006
+                                      < 2.2             × 10-3   CL=95%
+(1, 2, 3S)(1, 2, 3S)                                                                          -
+D0                                      (20.7 ± 2.0    )%
+(D0 / D0) X                             (12.2 ± 1.7                                       45575
+D±X                              [j] (11.4 ± 1.3       )%
+D(2010)± X                              ( 3.6 ± 0.8                                           -
+Ds1(2536)± X                            ( 5.8 ± 2.2    )%                                     -
+DsJ (2573)± X                        searched for      ) × 10-3                               -
+D(2629)± X                       [k] ( 6.08 ± 0.13     ) × 10-3                               -
+B+ X                             [k] ( 1.59 ± 0.13                                            -
+B0 X                                                   )%                                     -
+                                     searched for      )%                                     -
+  s                                                                                           -
+                                        ( 1.54 ± 0.33  )%                                     -
+B+c X                                    seen                                                 -
++c X                                     seen                                                 -
+0X                               [k] ( 1.38 ± 0.22                                            -
+                                 [l] < 3.2                                                    -
+   c                             [l] < 5.2                                                    -
+                                 [l] < 5.6
+b X                              [l] < 7.3                                                45594
+                                 [n] < 6.8
+b -baryon X                      [n] < 5.5             )%                                 45594
+                                 [n] < 3.1              × 10-3
+anomalous  + hadrons             [j] < 2.62             × 10-4   CL=95%                   45559
+e+ e-                            [j] < 5.0              × 10-4   CL=95%
+µ+ µ-                            [j] < 6.5              × 10-4   CL=95%                       -
++-                                    < 1.8             × 10-6   CL=95%                       -
++ -                                   < 1.8             × 10-6   CL=95%
+                                                        × 10-6   CL=95%                   45594
+qq                                                      × 10-7   CL=95%
+                                                        × 10-6   CL=95%                   45594
+                                                        × 10-6   CL=95%
+                                                        × 10-6   CL=95%                   45577
+e± µ                        LF                          × 10-6   CL=95%
+                                                                 CL=95%                   45577
+e±                          LF
+                                                                                          45589
+µ±                          LF
+                                                                                          45589
+pe                          L,B
+
+pµ                          L,B
+
+H                                          J =0
+
+was H0
+
+             Mass m = 125.20 ± 0.11 GeV (S = 1.4)
+
+             Full  width    =  3.7 + 1.9   MeV  (assumes equal
+
+                                    - 1.4
+
+                   on-shell and off-shell effective couplings)
+
+        H Signal Strengths in Different Channels
+
+            Combined Final States = 1.03 ± 0.04
+            W W  = 1.00 ± 0.08
+            Z Z  = 1.02 ± 0.08
+              = 1.10 ± 0.06
+            c c Final State < 14, CL = 95%
+
+https://pdg.lbl.gov              Page 4                Created: 5/31/2024 10:12
+Citation: S. Navas et al. (Particle Data Group), Phys. Rev. D 110, 030001 (2024)
+
+b b = 0.99 ± 0.12
+µ+ µ- = 1.21 ± 0.35
+ +  - = 0.91 ± 0.09
+
+Z  = 2.2 ± 0.7
+  Final State = 1.5 ± 0.5
+
+Fermion coupling (F ) = 0.94 ± 0.05
+Gauge boson coupling (V ) = 1.023 ± 0.026
+t t H Production = 1.10 ± 0.18
+
+H H Production Cross Section in p p Collisions < 2.4, CL = 95%
+
+t H production = 6 ± 4 
+H Production Cross Section in p p Collisions at s = 13 TeV =
+
+    56.8 ± 3.4 pb
+
+H DECAY MODES        Fraction (i /)                                       p
+                                              Confidence level (MeV/c)
+W W
+Z Z                          (25.7 ± 2.5 ) %                     -
+                                                                 -
+bb                           ( 2.80± 0.30) %
+e+ e-                        ( 2.50± 0.20) × 10-3             62600
+µ+ µ-
+                             (53 ± 8 ) %                         -
++-
+                     < 3.0             × 10-4      95% 62600
+Z
+Z (770)                      ( 2.6 ± 1.3 ) × 10-4             62600
+Z (1020)
+Z J/                         ( 6.0 + 0.8 ) %                                      62575
+Z (2S)                               - 0.7                                        29392
+J/ 
+J/ J/                        ( 3.4 ± 1.1 ) × 10-3
+(2S ) 
+(2S ) J /                      < 1.21  %           95% 29384
+(2S ) (2S )                    < 3.6   × 10-3
+(1S)                           < 1.9   × 10-3      95% 29378
+(1S) (1S)                      < 6.6   × 10-3
+(2S)                           < 2.0   × 10-4      95% 29267
+(3S)                           < 3.8   × 10-4
+(nS) (mS)                      < 1.05  × 10-3      95% 29214
+(770)                          < 2.1   × 10-3
+(782)                          < 3.0   × 10-3      95% 62561
+K (892)                        < 2.5   × 10-4
+(1020)                         < 1.7   × 10-3      95% 62523
+eµ                             < 4.2   × 10-4
+                               < 3.4   × 10-4      95% 62546
+                               < 3.5   × 10-4
+                               < 1.04  × 10-3      95% 62507
+                               < 5.5   × 10-4
+                               < 2.2   × 10-4      95% 62491
+                               <5      × 10-4
+                     LF < 4.4          × 10-5      95% 62242
+
+                                                   95% 61881
+
+                                                   95% 62199
+
+                                                   95% 62172
+
+                                                   95%                            -
+
+                                                   95% 62597
+
+                                                   95% 62597
+
+                                                   95% 62597
+
+                                                   95% 62596
+
+                                                   95% 62600
+
+https://pdg.lbl.gov  Page 5            Created: 5/31/2024 10:12
+            Citation: S. Navas et al. (Particle Data Group), Phys. Rev. D 110, 030001 (2024)
+
+e                    LF < 2.0          × 10-3    95%                                          62587
+µ                    LF < 1.5
+invisible                              × 10-3    95%                                          62587
+ invisible                     < 10.7
+                               < 2.9   %         95%                                              -
+                                                                                                  -
+                                       %         95%
+
+Neutral Higgs Bosons, Searches for
+
+       Mass limits for heavy neutral Higgs bosons (H02, A0) in the MSSM
+            m > 1121 GeV, CL = 95% (tan = 10)
+            m > 1475 GeV, CL = 95% (tan = 20)
+            m > 1677 GeV, CL = 95% (tan = 30)
+            m > 1826 GeV, CL = 95% (tan = 40)
+            m > 1950 GeV, CL = 95% (tan = 50)
+            m > 2062 GeV, CL = 95% (tan = 60)
+
+Charged Higgs Bosons (H± and H±±),
+Searches for
+
+       Mass limits for mH+ < m(top) in the MSSM
+            m > 155 GeV, CL = 95%
+
+       Mass limits for mH+ > m(top) in the MSSM
+            m > 181 GeV, CL = 95% (tan = 10)
+            m > 249 GeV, CL = 95% (tan = 20)
+            m > 390 GeV, CL = 95% (tan = 30)
+            m > 894 GeV, CL = 95% (tan = 40)
+            m > 1017 GeV, CL = 95% (tan = 50)
+            m > 1103 GeV, CL = 95% (tan = 60)
+
+New Heavy Bosons
+(W , Z , leptoquarks, etc.),
+
+Searches for
+
+Additional W Bosons                     (p p direct search)
+    W  with standard couplings         (electroweak fit)
+       Mass m > 6000 GeV, CL = 95%
+    WR (Right-handed W Boson)
+       Mass m > 715 GeV, CL = 90%
+
+https://pdg.lbl.gov  Page 6            Created: 5/31/2024 10:12
+Citation: S. Navas et al. (Particle Data Group), Phys. Rev. D 110, 030001 (2024)
+
+Additional Z Bosons
+
+                                 (p p direct search)
+
+Z SM with standard couplings
+   Mass m > 5150 GeV, CL = 95%
+
+ZLR of SU(2)L×SU(2)R ×U(1) (with gL = gR )
+
+Mass m > 630 GeV, CL = 95% (p p direct search)
+
+Mass m > 1162 GeV, CL = 95% (electroweak fit)
+
+Z of SO(10)  SU(5)×U(1) (with g=e/cosW )
+
+Mass m > 4800 GeV, CL = 95% (p p direct search)
+
+Z of E6  SO(10)×U(1) (with g=e/cosW )
+
+Mass m > 4560 GeV, CL = 95% (p p direct search)
+
+Z of E6  SU(3)×SU(2)×U(1)×U(1) (with g=e/cosW )
+   Mass m > 3.900 × 103 GeV, CL = 95% (p p direct search)
+
+Scalar Leptoquarks
+
+    m > 1800 GeV, CL = 95% (1st gen., pair prod., B(e q)=1)
+    m > 1755 GeV, CL = 95% (1st gen., single prod., B(e q)=1)
+    m > 1700 GeV, CL = 95% (2nd gen., pair prod., B(µ q)=1)
+    m > 660 GeV, CL = 95% (2nd gen., single prod., B(µ q)=1)
+    m > 1460 GeV, CL = 95% (3rd gen., pair prod., B( b)=1)
+    m > 1280 GeV, CL = 95% (3rd gen., single prod., B( b)=1)
+
+       (See the Particle Listings for assumptions on leptoquark quan-
+    tum numbers and branching fractions.)
+
+Diquarks                         (E6 diquark)
+    Mass m > 7200 GeV, CL = 95%
+
+Axigluon
+    Mass m > 6600 GeV, CL = 95%
+
+Axions (A0) and Other
+Very Light Bosons, Searches for
+
+  See the review on "Axions and other similar particles."
+  The best limit for the half-life of neutrinoless double beta decay with
+  Majoron emission is > 7.2 × 1024 years (CL = 90%).
+
+https://pdg.lbl.gov  Page 7      Created: 5/31/2024 10:12
+Citation: S. Navas et al. (Particle Data Group), Phys. Rev. D 110, 030001 (2024)
+
+                              NOTES
+
+[a] Theoretical value. A mass as large as a few MeV may not be precluded.
+
+[b] This value does not include the AALTONEN 22 measurement by CDF.
+    See the W mass section in the listings for details.
+
+[c]  indicates each type of lepton (e, µ, and  ), not sum over them.
+
+[d] This represents the width for the decay of the W boson into a charged
+    particle with momentum below detectability, p< 200 MeV.
+
+[e] The Z -boson mass listed here corresponds to a Breit-Wigner resonance
+    parameter. It lies approximately 34 MeV above the real part of the posi-
+    tion of the pole (in the energy-squared plane) in the Z -boson propagator.
+
+[f ] This partial width takes into account Z decays into   and any other
+    possible undetected modes.
+
+[g ] This ratio has not been corrected for the  mass.
+
+[h] Here A    2      g  V  g  A  /  (  g  2  +g  2  )  .
+                                          V      A
+
+[i ] Here  indicates e or µ.
+
+[j] The value is for the sum of the charge states or particle/antiparticle
+   states indicated.
+
+[k] This value is updated using the product of (i) the Z  b b
+    fraction from this listing and (ii) the b-hadron fraction in an
+    unbiased sample of weakly decaying b-hadrons produced in Z -
+    decays provided by the Heavy Flavor Averaging Group (HFLAV,
+    http://www.slac.stanford.edu/xorg/hflav/osc/PDG 2009/#FRACZ).
+
+[l] See the Z Particle Listings for the  energy range used in this measure-
+   ment.
+
+[n] For m  = (60 ± 5) GeV.
+
+https://pdg.lbl.gov                          Page 8       Created: 5/31/2024 10:12
+

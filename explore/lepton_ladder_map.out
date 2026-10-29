@@ -1,0 +1,74 @@
+INPUTS: hbar 1.054571817e-34  c 299792458.0  G 6.6743e-11  alpha 0.0072973525693
+masses (kg): e 9.1093837015e-31  mu 1.883531627e-28  tau 3.16754e-27  p 1.67262192369e-27  n 1.67492749804e-27
+phi 1.61803398874989484820458683437  ln phi 0.481211825059603447497758913424  ln 12 2.48490664978800031022970947984  ln 2 0.693147180559945309417232121458
+
+PART A  each particle at its own Compton cut (BC cycles = 1 by construction) and positions on the ladders
+  name          mass kg                m/m_e       lambda_C m   cycles   mass dec   mass p12    len dec    len p12
+  e     9.109383701e-31                  1.0  3.861592677e-13      1.0    7.00945    6.49516    22.3783    20.7363
+  mu    1.883531627e-28  206.768282983825522  1.867594305e-15      1.0    9.32493    8.64075    20.0628    18.5907
+  p     1.672621924e-27  1836.15267344000132  2.103089102e-16      1.0    10.2734    9.51959    19.1143    17.7119
+  n     1.674927498e-27  1838.68366173245886  2.100194154e-16      1.0     10.274    9.52014    19.1137    17.7113
+  tau       3.16754e-27  3477.22755325194598  1.110537812e-16      1.0    10.5507    9.77656     18.837    17.4549
+  mass ladder anchor: 0.05 eV neutrino (rough); length ladder anchor: Planck length
+
+PART B  successive mass steps in mass order (ratio, ln, log base 10, 12, phi, 2) and distance of log_phi / log_12 to the nearest integer
+  e->mu      ratio    206.768282983825522  ln  5.33159876039  log10  2.315483921  log12   2.14559318  logphi  11.07952565  (logphi - nearest int)  0.0795257  (log12 - nearest int)   0.145593  log2  7.691871092
+  mu->p      ratio    8.88024336683994529  ln   2.1838289628  log10  0.948424868  log12 0.8788374255  logphi  4.538186406  (logphi - nearest int)  -0.461814  (log12 - nearest int)  -0.121163  log2  3.150599215
+  p->n       ratio    1.00137841930525078  ln 0.00137747015748  log10 0.0005982276884  log12 0.0005543347705  logphi 0.002862502719  (logphi - nearest int)  0.0028625  (log12 - nearest int) 0.000554335  log2 0.001987269365
+  n->tau     ratio     1.8911505146978929  ln 0.637185381801  log10 0.2767260953  log12 0.2564222611  logphi  1.324126608  (logphi - nearest int)   0.324127  (log12 - nearest int)   0.256422  log2 0.9192641905
+  lepton chain:
+  e->mu      ratio    206.768282983825522  ln  5.33159876039  log10  2.315483921  log12   2.14559318  logphi  11.07952565  (logphi - nearest int)  0.0795257  (log12 - nearest int)   0.145593  log2  7.691871092
+  mu->tau    ratio    16.8170258178521151  ln  2.82239181476  log10  1.225749191  log12  1.135814021  logphi  5.865175517  (logphi - nearest int)  -0.134824  (log12 - nearest int)   0.135814  log2  4.071850675
+  e->tau     ratio    3477.22755325194598  ln  8.15399057515  log10  3.541233112  log12  3.281407201  logphi  16.94470117  (logphi - nearest int) -0.0552988  (log12 - nearest int)   0.281407  log2  11.76372177
+  other:
+  e->p       ratio    1836.15267344000132  ln  7.51542772319  log10  3.263908789  log12  3.024430605  logphi  15.61771206  (logphi - nearest int)  -0.382288  (log12 - nearest int)  0.0244306  log2  10.84247031
+  mu->p      ratio    8.88024336683994529  ln   2.1838289628  log10  0.948424868  log12 0.8788374255  logphi  4.538186406  (logphi - nearest int)  -0.461814  (log12 - nearest int)  -0.121163  log2  3.150599215
+  p->tau     ratio    1.89375731307648743  ln 0.638562851959  log10  0.277324323  log12 0.2569765959  logphi  1.326989111  (logphi - nearest int)   0.326989  (log12 - nearest int)   0.256977  log2 0.9212514598
+  p->n       ratio    1.00137841930525078  ln 0.00137747015748  log10 0.0005982276884  log12 0.0005543347705  logphi 0.002862502719  (logphi - nearest int)  0.0028625  (log12 - nearest int) 0.000554335  log2 0.001987269365
+
+PART C  the electromagnetic triple for each lepton: r_l = alpha lambda_l (inner), lambda_l, a_l = lambda_l/alpha (outer). Step between neighbours is 1/alpha by definition.
+   1/alpha = 137.035999083695801114154891488  ln = 4.9202436583451902091003612224  log12 = 1.9800517088901349904287967664  logphi = 10.2246939956967250282081091227  log2 = 7.09841112585997709008925539729
+  r_e       2.81794032449e-15 m   len dec  20.241422  len p12  18.756277  cycles of binding alpha/2 at this R: 0.00364867628465
+  lam_e     3.86159267724e-13 m   len dec  22.378257  len p12  20.736328  cycles of binding alpha/2 at this R: 0.00364867628465
+  a_e        5.2917721058e-11 m   len dec  24.515091  len p12   22.71638  cycles of binding alpha/2 at this R: 0.00364867628465
+  r_mu      1.36284940989e-17 m   len dec  17.925938  len p12  16.610683  cycles of binding alpha/2 at this R: 0.00364867628465
+  lam_mu    1.86759430485e-15 m   len dec  20.062773  len p12  18.590735  cycles of binding alpha/2 at this R: 0.00364867628465
+  a_mu      2.55927651448e-13 m   len dec  22.199607  len p12  20.570787  cycles of binding alpha/2 at this R: 0.00364867628465
+  r_tau      8.1039859524e-19 m   len dec  16.700189  len p12  15.474869  cycles of binding alpha/2 at this R: 0.00364867628465
+  lam_tau   1.11053781155e-16 m   len dec  18.837023  len p12  17.454921  cycles of binding alpha/2 at this R: 0.00364867628465
+  a_tau     1.52183658526e-14 m   len dec  20.973858  len p12  19.434973  cycles of binding alpha/2 at this R: 0.00364867628465
+
+PART D  all lepton lengths from Part C merged and sorted ascending, raw successive ratios (no pairing imposed)
+  item                    R m     step from previous        ln step   log12 step  logphi step
+  r_tau      8.1039859524e-19
+  r_mu      1.36284940989e-17    16.8170258178521151    2.822391815     1.135814    5.8651755
+  lam_tau   1.11053781155e-16    8.14864653048372117    2.097851844   0.84423769    4.3595185
+  lam_mu    1.86759430485e-15    16.8170258178521151    2.822391815     1.135814    5.8651755
+  r_e       2.81794032449e-15    1.50886106108176864    0.411355102   0.16554147   0.85483166
+  a_tau     1.52183658526e-14    5.40052808085696056    1.686496742   0.67869622    3.5046868
+  a_mu      2.55927651448e-13    16.8170258178521151    2.822391815     1.135814    5.8651755
+  lam_e     3.86159267724e-13    1.50886106108176864    0.411355102   0.16554147   0.85483166
+  a_e        5.2917721058e-11    137.035999083695801    4.920243658    1.9800517    10.224694
+
+PART E  hadron step, atomic scale of hydrogen with real proton, raw
+  a0 (infinite-mass) = 5.29177210580255358300375403491e-11  a0 (reduced mass, hydrogen) = 5.29465409496519140823832701439e-11  ratio 1.00054461702148466593736950589
+  lambda_p = 2.10308910206698895408755070332e-16   lambda_e/lambda_p = 1836.15267344000132411153105932  (= m_p/m_e)
+  a0 / lambda_p = 251619.016075049616982404591589  = (m_p/m_e)/alpha = 251619.016075049616982404591589
+  m_p/m_e = 1836.15267344000132411153105932  ln 7.51542772319162177399423359037  log12 3.02443060540435195989021484946  logphi 15.6177120590516500571186759828  log2 10.8424703064079859394731467214
+  muon-atom Bohr radius (mu-p, reduced mass) = 2.84747543074569810565287232729e-13  m
+
+PART F  Koide quantity Q = (m_e+m_mu+m_tau)/(sqrt m_e + sqrt m_mu + sqrt m_tau)^2 with the inputs above (floor C2.2 touches Koide); 2/3 for comparison
+  Q = 0.666660490512091992755650020363   Q - 2/3 = -0.00000617615457467391101664630369694   (tau mass uncertainty 0.21e-27/3.16754e-27 = 6.63e-5 relative)
+
+PART G  reference: powers of phi (Lucas-type) next to the mass ratios, to read the nearest-integer residuals above without a lookup
+  phi^5   =     11.0901699437495
+  phi^8   =     46.9787137637478
+  phi^10  =     122.991869381244
+  phi^11  =     199.005024998741
+  phi^12  =     321.996894379985
+  phi^13  =     521.001919378725
+  phi^14  =      842.99881375871
+  phi^15  =     1364.00073313744
+  phi^16  =     2206.99954689615
+  phi^17  =     3571.00028003358
+  phi^18  =     5777.99982692973

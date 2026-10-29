@@ -1,0 +1,2940 @@
+
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+
+<title>CCCBDB Experimental diatomic data</title> 
+<meta charset="UTF-8">
+<link rel="stylesheet" type="text/css" href="cccbdbx.css">
+<link rel="stylesheet" type="text/css" href="pulldown.css">
+<style id="antiClickjack">body{display:none !important;}</style>
+<script type="text/javascript">
+   if (self === top) {
+       var antiClickjack = document.getElementById("antiClickjack");
+       antiClickjack.parentNode.removeChild(antiClickjack);
+   } else {
+       top.location = self.location;
+   }
+</script>
+<script async type="text/javascript" id="_fed_an_ua_tag" src="https://cccbdb.nist.gov/js/federated-analytics.all.min.js?agency=NIST&subagency=cccbdb&pua=UA-37115410-45&yt=true%20HTTP/1.1"></script> </head>
+
+<body>
+ <table class="noborder">
+<tr>
+<td rowspan=2 class="noborder"> <A HREF="introx.asp"> <IMG SRC="gifs/cccbdb_logosmall.gif" alt="return to home page" title="Computational Chemistry Comparison and Benchmark Database" width="42" height="60"> </A>
+</td>
+<td class="noborder"><span class="title"><b>C</b>omputational <b>C</b>hemistry <b>C</b>omparison and <b>B</b>enchmark <b>D</b>ata<b>B</b>ase</span>
+Release 22 (May 2022) Standard Reference Database 101 
+<a href="https://www.nist.gov">National Institute of Standards and Technology</a>
+</td>
+</tr>
+<tr>
+
+<td class="noborder">
+
+<div class="pdmenu">
+
+<ul> <li class="homeclass pdheading">
+<a Href="introx.asp">Home</a> 
+<ul> <li class=homesubclass>
+<a Href="alldata1x.asp">All data for one species</a> 
+<li class=homesubclass>
+<a Href="geometriesx.asp">Geometry</a> 
+<ul> <li class=homesub2class>Experimental<ul> <li class=homesub3class>
+<a Href="expgeom1x.asp">Experimental Geometries</a> 
+<li class=homesub3class>
+<a Href="listbondexpx.asp">Same bond/angle many molecules</a> 
+<li class=homesub3class>
+<a Href="expbondlengths1x.asp">Internal Coordinates by type</a> 
+<li class=homesub3class>
+<a Href="expangle1x.asp">Bond angles</a> 
+</ul> <li class=homesub2class>Calculated<ul> <li class=homesub3class>
+<a Href="geom1x.asp">Calculated geometry</a> 
+<li class=homesub3class>
+<a Href="rotcalc1x.asp">Rotational constant</a> 
+<li class=homesub3class>
+<a Href="calcmomint1x.asp">Moments of inertia</a> 
+<li class=homesub3class>
+<a Href="momint1x.asp">Products of moments of inertia</a> 
+<li class=homesub3class>
+<a Href="bsebond1x.asp">BSE Bond lengths</a> 
+<li class=homesub3class>
+<a Href="justgeomx.asp">Show me a  calculated geometry</a> 
+</ul> <li class=homesub2class>Comparisons<ul> <li class=homesub3class>
+<a Href="compgeom1x.asp">Bonds, angles</a> 
+<li class=homesub3class>
+<a Href="rotcomp1x.asp">Rotational Constants</a> 
+<li class=homesub3class>
+<a Href="compmomint1x.asp">Products of moments of inertia</a> 
+<li class=homesub3class>
+<a Href="comppg1x.asp">Point group</a> 
+</ul> <li class=homesub2class>Bad Calculations<ul> <li class=homesub3class>
+<a Href="badcalcgeomx.asp">Bad moment of inertia</a> 
+</ul> <li class=homesub2class>Tutorials and Explanations<ul> <li class=homesub3class>
+<a Href="anglesx.asp">Angle formulas</a> 
+</ul> </ul> <li class=homesubclass>
+<a Href="vibrationsx.asp">Vibrations</a> 
+<ul> <li class=homesub2class>Experimental<ul> <li class=homesub3class>
+<a Href="expvibs1x.asp">Vibrational frequencies</a> 
+</ul> <li class=homesub2class>Calculated<ul> <li class=homesub3class>
+<a Href="vibs1x.asp">Frequencies</a> 
+</ul> <li class=homesub2class>
+<a Href="vibscalejustx.asp">Scale factors</a> 
+</ul> <li class=homesubclass>
+<a Href="reactionsx.asp">Reactions</a> 
+<li class=homesubclass>
+<a Href="entropiesx.asp">Entropies</a> 
+<li class=homesubclass>
+<a Href="ionsx.asp">Ions</a> 
+<ul> <li class=homesub2class>
+<a Href="ionlistx.asp">List Ions</a> 
+<li class=homesub2class>
+<a Href="energy1x.asp">Energy</a> 
+<ul> <li class=homesub3class>
+<a Href="ie1x.asp">Calculated Ionization Energy</a> 
+<li class=homesub3class>
+<a Href="compie1x.asp">Compare Ionzation energy</a> 
+</ul> <li class=homesub2class>Electron Affinity<ul> <li class=homesub3class>
+<a Href="elecaff1x.asp">Calculated Electron affinity</a> 
+<li class=homesub3class>
+<a Href="compea1x.asp">Compare Electron affinity</a> 
+</ul> <li class=homesub2class>Proton Affinity<ul> <li class=homesub3class>
+<a Href="pa1x.asp">Calculated Proton affinity</a> 
+<li class=homesub3class>
+<a Href="comppa1x.asp">Compare Proton affinity</a> 
+</ul> <li class=homesub2class>
+<a Href="ionpgdiffx.asp">Ionization changes point group</a> 
+</ul> </ul> <li class="experclass pdheading">
+<a Href="expdatax.asp">Experimental</a> 
+<ul> <li class=expersubclass>
+<a Href="exp1x.asp">One molecule all properties</a> 
+<li class=expersubclass>
+<a Href="xpx.asp">One property a few molecules</a> 
+<ul> <li class=expersub2class>
+<a Href="xp1x.asp?prop=1">Enthalpy of formation</a> 
+<li class=expersub2class>
+<a Href="xp1x.asp?prop=2">Entropy</a> 
+<li class=expersub2class>
+<a Href="xp1x.asp?prop=3">Integrated Heat Capacity</a> 
+<li class=expersub2class>
+<a Href="xp1x.asp?prop=4">Heat Capacity</a> 
+<li class=expersub2class>
+<a Href="xp1x.asp?prop=5">Rotational Constants</a> 
+<li class=expersub2class>
+<a Href="xp1x.asp?prop=6">Vibrational Frequencies</a> 
+<li class=expersub2class>
+<a Href="xp1x.asp?prop=7">Dipole moment</a> 
+<li class=expersub2class>
+<a Href="xp1x.asp?prop=8">Ionization Energy</a> 
+<li class=expersub2class>
+<a Href="xp1x.asp?prop=9">Polarizability</a> 
+<li class=expersub2class>
+<a Href="xp1x.asp?prop=10">Quadrupole</a> 
+<li class=expersub2class>
+<a Href="exppg1x.asp">Point Groups</a> 
+</ul> <li class=expersubclass>Geometry<ul> <li class=expersub2class>
+<a Href="expgeom1x.asp">Experimental Geometries</a> 
+<li class=expersub2class>
+<a Href="expbondlengths1x.asp">Internal Coordinates by type</a> 
+<li class=expersub2class>
+<a Href="expangle1x.asp">Bond angles</a> 
+<li class=expersub2class>
+<a Href="exprot1x.asp">Rotational Constants</a> 
+<li class=expersub2class>
+<a Href="exppg1x.asp">Point Groups</a> 
+<li class=expersub2class>
+<a Href="diatomicexpbondx.asp">Diatomic bond lengths</a> 
+</ul> <li class=expersubclass>Vibrations<ul> <li class=expersub2class>
+<a Href="expvibs1x.asp">Vibrational frequencies</a> 
+<li class=expersub2class>
+<a Href="expdiatomicsx.asp">Diatomic</a> 
+<li class=expersub2class>
+<a Href="exptriatomicsx.asp">Triatomics</a> 
+</ul> <li class=expersubclass>
+<a Href="energy1x.asp">Energy</a> 
+<ul> <li class=expersub2class>
+<a Href="ea1x.asp">Atomization Energy</a> 
+<li class=expersub2class>
+<a Href="exprotbarx.asp">Internal Rotation</a> 
+</ul> <li class=expersubclass>Electrostatics<ul> <li class=expersub2class>
+<a Href="diplistx.asp">Dipole</a> 
+<li class=expersub2class>
+<a Href="quadlistx.asp">Quadrupole</a> 
+<li class=expersub2class>
+<a Href="pollistx.asp">Polarizability</a> 
+</ul> <li class=expersubclass>Reference Data<ul> <li class=expersub2class>
+<a Href="refstatex.asp">Reference states</a> 
+<li class=expersub2class>
+<a Href="elecspinx.asp">Spin Splittings</a> 
+<li class=expersub2class>
+<a Href="goodlistx.asp">Molecules with good enthalpy</a> 
+<li class=expersub2class>
+<a Href="hf0kx.asp">Enthalpy at 0 Kelvin</a> 
+</ul> </ul> <li class="calcclass pdheading">Calculated<ul> <li class=calcsubclass>
+<a Href="energy1x.asp">Energy</a> 
+<ul> <li class=calcsub2class>Optimized<ul> <li class=calcsub3class>
+<a Href="energy1x.asp">Energy</a> 
+<li class=calcsub3class>
+<a Href="energy1_298x.asp">Energy 298K</a> 
+<li class=calcsub3class>
+<a Href="confmin1x.asp">Minimum conformation</a> 
+<li class=calcsub3class>
+<a Href="dimer_bond1x.asp">Hydrogen bonds</a> 
+<li class=calcsub3class>
+<a Href="dimer_cp_energy1x.asp">H bond with counterpoise</a> 
+</ul> <li class=calcsub2class>Reaction<ul> <li class=calcsub3class>
+<a Href="spec1x.asp">Reaction Energy 0K</a> 
+<li class=calcsub3class>
+<a Href="spec1_298x.asp">Reaction Energy 298K</a> 
+</ul> <li class=calcsub2class>Internal Rotation<ul> <li class=calcsub3class>
+<a Href="rotbar1x.asp">Barriers to internal rotation</a> 
+<li class=calcsub3class>
+<a Href="rotdip1x.asp">Rotational barrier and dipole</a> 
+<li class=calcsub3class>
+<a Href="rbc1x.asp">Rotational Barrier 2 molecules</a> 
+</ul> <li class=calcsub2class>Orbital<ul> <li class=calcsub3class>
+<a Href="gap1x.asp">HOMO LUMO gap</a> 
+<li class=calcsub3class>
+<a Href="homo1x.asp">HOMO</a> 
+<li class=calcsub3class>
+<a Href="orbitalenergy1x.asp">Orbital Energies</a> 
+</ul> <li class=calcsub2class>
+<a Href="nure1x.asp">Nuclear repulsion energy</a> 
+<li class=calcsub2class>Correlation<ul> <li class=calcsub3class>
+<a Href="coreenergy1x.asp">Full vs Frozen core energies</a> 
+<li class=calcsub3class>
+<a Href="correlation1x.asp">Partial correlation energies</a> 
+</ul> <li class=calcsub2class>Ion<ul> <li class=calcsub3class>
+<a Href="ie1x.asp">Calculated Ionization Energy</a> 
+<li class=calcsub3class>
+<a Href="vertie1x.asp">Vertical ionization Energy</a> 
+<li class=calcsub3class>
+<a Href="elecaff1x.asp">Calculated Electron affinity</a> 
+<li class=calcsub3class>
+<a Href="pa1x.asp">Calculated Proton affinity</a> 
+<li class=calcsub3class>
+<a Href="bondcharge1x.asp">Atom charge differences</a> 
+</ul> <li class=calcsub2class>Excited State<ul> <li class=calcsub3class>
+<a Href="stgap1x.asp">Singlet triplet gap</a> 
+<li class=calcsub3class>
+<a Href="calcES1x.asp">Electronic state</a> 
+<li class=calcsub3class>
+<a Href="ts1x.asp">Transition state</a> 
+</ul> <li class=calcsub2class>Basis Set Extrapolation<ul> <li class=calcsub3class>
+<a Href="bseenergy1x.asp">BSE energy</a> 
+<li class=calcsub3class>
+<a Href="bsebond1x.asp">BSE Bond lengths</a> 
+</ul> </ul> <li class=calcsubclass>Geometry<ul> <li class=calcsub2class>
+<a Href="geom1x.asp">Calculated geometry</a> 
+<ul> <li class=calcsub3class>
+<a Href="bondorder1x.asp">AIM bond orders</a> 
+<li class=calcsub3class>
+<a Href="calcbondcomp1x.asp">One type of bond</a> 
+</ul> <li class=calcsub2class>Rotation<ul> <li class=calcsub3class>
+<a Href="rotcalc1x.asp">Rotational constant</a> 
+<li class=calcsub3class>
+<a Href="momint1x.asp">Products of moments of inertia</a> 
+<li class=calcsub3class>
+<a Href="mieigen1x.asp">Moments of inertia</a> 
+<li class=calcsub3class>
+<a Href="inertialdefect1x.asp">Inertial defects</a> 
+<li class=calcsub3class>
+<a Href="calc2moment1x.asp">Second moments</a> 
+</ul> <li class=calcsub2class>
+<a Href="pg1x.asp">Point group</a> 
+<li class=calcsub2class>
+<a Href="elecstate1x.asp">State symmetry</a> 
+<li class=calcsub2class>
+<a Href="r2_1x.asp">&lt;r2&gt;</a> 
+<ul> <li class=calcsub3class>
+<a Href="r2comp1x.asp">Sorted by r2</a> 
+</ul> <li class=calcsub2class>
+<a Href="zmatx.asp">Z-matrix</a> 
+<li class=calcsub2class>Bad Calculations<ul> <li class=calcsub3class>
+<a Href="badcalcgeomx.asp">Bad moment of inertia</a> 
+<li class=calcsub3class>
+<a Href="badbondlengths1x.asp">Bad Calculated Bond Lengths</a> 
+<li class=calcsub3class>
+<a Href="diffpgx.asp">Bad point group</a> 
+<li class=calcsub3class>
+<a Href="badbondsmostx.asp">Worst molecules</a> 
+</ul> </ul> <li class=calcsubclass>Vibrations<ul> <li class=calcsub2class>
+<a Href="vibs1x.asp">Frequencies</a> 
+<ul> <li class=calcsub3class>
+<a Href="anivib1x.asp">Animated vibrations</a> 
+<li class=calcsub3class>
+<a Href="anharm1x.asp">Anharmonic</a> 
+</ul> <li class=calcsub2class>
+<a Href="zpe1x.asp">Zero point energy (ZPE)</a> 
+<li class=calcsub2class>Scale Factors<ul> <li class=calcsub3class>
+<a Href="vibscalejustx.asp">Scale factors</a> 
+<li class=calcsub3class>
+<a Href="vibscalex.asp">Scale factor uncertainty</a> 
+<li class=calcsub3class>
+<a Href="vsfcalc1x.asp">Calculate a scale factor</a> 
+<li class=calcsub3class>
+<a Href="vibnotesx.asp">Why scale vibrations</a> 
+<li class=calcsub3class>
+<a Href="vsfx.asp">Set scaling factors</a> 
+</ul> <li class=calcsub2class>Bad Calculations<ul> <li class=calcsub3class>
+<a Href="badvibpred1x.asp">Bad Vib. HF vs MP2</a> 
+<li class=calcsub3class>
+<a Href="badvib1x.asp">Bad vib. Calc. vs exp.</a> 
+<li class=calcsub3class>
+<a Href="biganharm1x.asp">Big anharmonicity</a> 
+</ul> </ul> <li class=calcsubclass>Electrostatics<ul> <li class=calcsub2class>Charges<ul> <li class=calcsub3class>
+<a Href="mulliken1x.asp">Mulliken</a> 
+<li class=calcsub3class>
+<a Href="chelpg1x.asp">CHELP</a> 
+<li class=calcsub3class>
+<a Href="aimcharge1x.asp">Aim</a> 
+<li class=calcsub3class>
+<a Href="esp1x.asp">ESP</a> 
+</ul> <li class=calcsub2class>Dipole<ul> <li class=calcsub3class>
+<a Href="dipole1x.asp">Dipole</a> 
+<li class=calcsub3class>
+<a Href="dipoleangle1x.asp">Dipole angle</a> 
+<li class=calcsub3class>
+<a Href="diprecalcx.asp">Dipole calculation types</a> 
+</ul> <li class=calcsub2class>
+<a Href="quadrupole1x.asp">Quadrupole</a> 
+<li class=calcsub2class>
+<a Href="polcalc1x.asp">Polarizability</a> 
+<li class=calcsub2class>
+<a Href="spin1x.asp">Spin</a> 
+<ul> <li class=calcsub3class>
+<a Href="spindensity1x.asp">Spin density</a> 
+</ul> </ul> <li class=calcsubclass>
+<a Href="sanyt1x.asp">Entropy and Heat Capacity</a> 
+<ul> <li class=calcsub2class>
+<a Href="entropy1x.asp">Entropy</a> 
+<li class=calcsub2class>
+<a Href="re1x.asp">Reaction entropy</a> 
+<li class=calcsub2class>
+<a Href="cp1x.asp">Heat Capacity</a> 
+</ul> <li class=calcsubclass>Reaction<ul> <li class=calcsub2class>
+<a Href="spec1x.asp">Reaction Energy 0K</a> 
+<li class=calcsub2class>
+<a Href="spec1_298x.asp">Reaction Energy 298K</a> 
+<li class=calcsub2class>
+<a Href="isodesmicx.asp">Isodesmic reactions</a> 
+<li class=calcsub2class>Transition State<ul> <li class=calcsub3class>
+<a Href="ts1x.asp">Transition state</a> 
+<li class=calcsub3class>
+<a Href="tsvib1x.asp">Transition state frequencies</a> 
+<li class=calcsub3class>
+<a Href="tsgeom1x.asp">Transition state geometries</a> 
+<li class=calcsub3class>
+<a Href="irc1x.asp">IRC</a> 
+</ul> </ul> <li class=calcsubclass>Lookup by property<ul> <li class=calcsub2class>
+<a Href="viblookup1x.asp">By frequency</a> 
+</ul> </ul> <li class="compclass pdheading">Comparisons<ul> <li class=compsubclass>Geometry<ul> <li class=compsub2class>
+<a Href="compgeom1x.asp">Bonds, angles</a> 
+<ul> <li class=compsub3class>
+<a Href="geomcalc1x.asp">Bond, angle, or dihedral</a> 
+<li class=compsub3class>
+<a Href="compufpgx.asp">DFT grid size on point group</a> 
+<li class=compsub3class>
+<a Href="compufb1x.asp">DFT grid on bond length</a> 
+<li class=compsub3class>
+<a Href="corebond1x.asp">Core correlation - bond length</a> 
+<li class=compsub3class>
+<a Href="listbondexpx.asp">Same bond/angle many molecules</a> 
+<li class=compsub3class>
+<a Href="isoelectronic1x.asp">Isoelectronic diatomics</a> 
+<li class=compsub3class>
+<a Href="angleiso1x.asp">Isoelectronic triatomic angles</a> 
+<li class=compsub3class>
+<a Href="bondlengthmodel1x.asp">Average bond lengths</a> 
+</ul> <li class=compsub2class>Rotation<ul> <li class=compsub3class>
+<a Href="rotcomp1x.asp">Rotational Constants</a> 
+<li class=compsub3class>
+<a Href="compmomint1x.asp">Products of moments of inertia</a> 
+</ul> <li class=compsub2class>
+<a Href="comppg1x.asp">Point group</a> 
+</ul> <li class=compsubclass>Vibrations<ul> <li class=compsub2class>
+<a Href="compvibs1x.asp">Vibrations</a> 
+<ul> <li class=compsub3class>
+<a Href="comp2vib1x.asp">2 calculations</a> 
+<li class=compsub3class>
+<a Href="vibdiff1x.asp">Frequency differences</a> 
+</ul> <li class=compsub2class>
+<a Href="comp1vib1x.asp">One frequency</a> 
+<li class=compsub2class>
+<a Href="compzpe1x.asp">Zero point energy</a> 
+<li class=compsub2class>Intensity<ul> <li class=compsub3class>
+<a Href="comp1int1x.asp">Intensity for one mode</a> 
+<li class=compsub3class>
+<a Href="compint1x.asp">Vibrational intensities</a> 
+<li class=compsub3class>
+<a Href="comp1redmass1x.asp">Reduced mass comparison</a> 
+</ul> <li class=compsub2class>
+<a Href="companhvibs1x.asp">Anharmonic</a> 
+<ul> <li class=compsub3class>
+<a Href="comptriatomic1x.asp">Triatomic</a> 
+</ul> <li class=compsub2class>
+<a Href="vibscalejustx.asp">Scale factors</a> 
+</ul> <li class=compsubclass>
+<a Href="energy1x.asp">Energy</a> 
+<ul> <li class=compsub2class>Reaction<ul> <li class=compsub3class>
+<a Href="spec1x.asp">Reaction Energy 0K</a> 
+<li class=compsub3class>
+<a Href="spec1_298x.asp">Reaction Energy 298K</a> 
+<li class=compsub3class>
+<a Href="atomize1x.asp">Atomization 0K</a> 
+<li class=compsub3class>
+<a Href="atomize298_1x.asp">Atomization 298K</a> 
+</ul> <li class=compsub2class>
+<a Href="specomp1x.asp">Single point vs optimized</a> 
+<li class=compsub2class>
+<a Href="compufex.asp">DFT grid size on energy</a> 
+<li class=compsub2class>
+<a Href="se298ax.asp">Semiempirical enthalpy</a> 
+<li class=compsub2class>
+<a Href="comprotbarx.asp">Internal rotation</a> 
+<li class=compsub2class>Similar molecules<ul> <li class=compsub3class>
+<a Href="confenergy1x.asp">Conformation</a> 
+<li class=compsub3class>
+<a Href="isoset1x.asp">Sets of isomers</a> 
+<li class=compsub3class>
+<a Href="tauto1x.asp">Sets of tautomers</a> 
+<li class=compsub3class>
+<a Href="isocountx.asp">Isomers</a> 
+</ul> </ul> <li class=compsubclass>Entropy<ul> <li class=compsub2class>
+<a Href="entropy1x.asp">Entropy</a> 
+<li class=compsub2class>
+<a Href="compcpx.asp">Heat capacity</a> 
+<li class=compsub2class>
+<a Href="entropyhist1x.asp">Entropy of several molecules</a> 
+<li class=compsub2class>
+<a Href="compihc1x.asp">Integrated heat capacity</a> 
+<li class=compsub2class>
+<a Href="re1x.asp">Reaction entropy</a> 
+</ul> <li class=compsubclass>Electrostatics<ul> <li class=compsub2class>
+<a Href="compdipole1x.asp">Dipole</a> 
+<li class=compsub2class>
+<a Href="polcomp1x.asp">Polarizability</a> 
+<ul> <li class=compsub3class>
+<a Href="polcalccomp1x.asp">Several molecules</a> 
+</ul> <li class=compsub2class>
+<a Href="compquad1x.asp">Quadrupole</a> 
+</ul> <li class=compsubclass>Ion<ul> <li class=compsub2class>
+<a Href="compie1x.asp">Compare Ionzation energy</a> 
+<ul> <li class=compsub3class>
+<a Href="koopman1x.asp">Koopman ionization energy</a> 
+<li class=compsub3class>
+<a Href="koopmany1x.asp">Koopman IE for a few molecules</a> 
+</ul> <li class=compsub2class>
+<a Href="compea1x.asp">Compare Electron affinity</a> 
+<li class=compsub2class>
+<a Href="comppa1x.asp">Compare Proton affinity</a> 
+<li class=compsub2class>
+<a Href="protonationsitex.asp">Protonation Site</a> 
+</ul> </ul> <li class="resclass pdheading">Resources<ul> <li class=ressubclass>Info on Results<ul> <li class=ressub2class>Calculations Done<ul> <li class=ressub3class>
+<a Href="calcdonex.asp">Method and basis set</a> 
+<li class=ressub3class>
+<a Href="moleculedonex.asp">List molecules</a> 
+<li class=ressub3class>
+<a Href="onecalc1x.asp">One molecule</a> 
+<li class=ressub3class>
+<a Href="conformers1x.asp">Multiple conformers, states</a> 
+<li class=ressub3class>
+<a Href="conformerlistx.asp">Multiple conformers, states</a> 
+</ul> <li class=ressub2class>
+<a Href="nbfx.asp">Basis functions used</a> 
+<li class=ressub2class>
+<a Href="outputx.asp">I/O files</a> 
+<ul> <li class=ressub3class>
+<a Href="gaufiles1x.asp">Input/output files</a> 
+<li class=ressub3class>
+<a Href="mdlmol1x.asp">MOL file</a> 
+<li class=ressub3class>
+<a Href="zmatx.asp">Z-matrix</a> 
+<li class=ressub3class>
+<a Href="wfn1x.asp">wfn files</a> 
+</ul> </ul> <li class=ressubclass>
+<a Href="glossaryx.asp">Glossary</a> 
+<li class=ressubclass>Conversion Forms<ul> <li class=ressub2class>
+<a Href="convertmomintx.asp">B to I, I to B</a> 
+<li class=ressub2class>
+<a Href="anglesx.asp">Angle formulas</a> 
+<li class=ressub2class>
+<a Href="ihccalc1x.asp">Integrated heat Capacity</a> 
+<li class=ressub2class>
+<a Href="enthcalcx.asp">Calculating Enthalpy</a> 
+</ul> <li class=ressubclass>Links<ul> <li class=ressub2class>NIST Links<ul> <li class=ressub3class>
+<a Href="http://webbook.nist.gov/chemistry">NIST webbook</a> 
+<li class=ressub3class>
+<a Href="bibliox.asp">bibliographic data</a> 
+<li class=ressub3class>
+<a Href="http://catalog.data.gov/dataset/nist-computational-chemistry-comparison-and-benchmark-database-srd-101">CCCBDB Experimental data</a> 
+</ul> <li class=ressub2class>External links<ul> <li class=ressub3class>
+<a Href="https://www.basissetexchange.org/">Basis Set Exchange</a> 
+<li class=ressub3class>
+<a Href="http://www.ccl.net/chemistry">Computational Chemistry List</a> 
+<li class=ressub3class>
+<a Href="http://www.gaussian.com/g_whitepap/thermo.htm">Thermochemistry in Gaussian</a> 
+<li class=ressub3class>
+<a Href="http://t1.chem.umn.edu/misc/database_group/database_therm_bh/">Minnesota Database Collection</a> 
+<li class=ressub3class>
+<a Href="http://www.begdb.com">Benchmark Energy and Geometry</a> 
+<li class=ressub3class>
+<a Href="http://symmetry.jacobs-university.de">Point Groups</a> 
+</ul> </ul> <li class=ressubclass>Thermochemistry<ul> <li class=ressub2class>
+<a Href="thermox.asp">Thermochemistry</a> 
+<li class=ressub2class>
+<a Href="goodlistx.asp">Molecules with good enthalpy</a> 
+<li class=ressub2class>
+<a Href="binary1x.asp">A &rarr; B + C</a> 
+<li class=ressub2class>
+<a Href="refstatex.asp">Reference states</a> 
+</ul> <li class=ressubclass>Tutorials<ul> <li class=ressub2class>Vibrations<ul> <li class=ressub3class>
+<a Href="vibnotesx.asp">Why scale vibrations</a> 
+<li class=ressub3class>
+<a Href="zpenotesx.asp">Zero-point energies</a> 
+</ul> <li class=ressub2class>Entropy<ul> <li class=ressub3class>
+<a Href="methylrotorx.asp">Methyl rotor entropy</a> 
+<li class=ressub3class>
+<a Href="configx.asp">Entropy and conformations</a> 
+</ul> <li class=ressub2class>
+<a Href="energy1x.asp">Energy</a> 
+<ul> <li class=ressub3class>
+<a Href="enthformationx.asp">Getting enthalpy of formation</a> 
+<li class=ressub3class>
+<a Href="adiabaticx.asp">Vertical vs adiabatic IE</a> 
+<li class=ressub3class>
+<a Href="nato_asi_1/index.htm">Thermo from calculations</a> 
+</ul> <li class=ressub2class>Electrostatics<ul> <li class=ressub3class>
+<a Href="elecmomsymx.asp">Dipole parts  by point group</a> 
+<li class=ressub3class>
+<a Href="quadrupolex.asp">Quadrupoles</a> 
+</ul> <li class=ressub2class>Geometry<ul> <li class=ressub3class>
+<a Href="anglesx.asp">Angle formulas</a> 
+</ul> <li class=ressub2class>Cost<ul> <li class=ressub3class>
+<a Href="costirikurax.asp">Cost Comparison</a> 
+<li class=ressub3class>
+<a Href="timingsx.asp">Timings Comparison</a> 
+</ul> </ul> <li class=ressubclass>Bad Calculations<ul> <li class=ressub2class>Geometry<ul> <li class=ressub3class>
+<a Href="badcalcgeomx.asp">Bad moment of inertia</a> 
+<li class=ressub3class>
+<a Href="badbondlengths1x.asp">Bad Calculated Bond Lengths</a> 
+<li class=ressub3class>
+<a Href="diffpgx.asp">Bad point group</a> 
+<li class=ressub3class>
+<a Href="badbondsmostx.asp">Worst molecules</a> 
+</ul> <li class=ressub2class>Vibrations<ul> <li class=ressub3class>
+<a Href="badvib1x.asp">Bad vib. Calc. vs exp.</a> 
+<li class=ressub3class>
+<a Href="badvibpred1x.asp">Bad Vib. HF vs MP2</a> 
+<li class=ressub3class>
+<a Href="vsfratiox.asp">Bad scale factors</a> 
+</ul> <li class=ressub2class>
+<a Href="cis1x.asp">Low excited states</a> 
+<li class=ressub2class>
+<a Href="odditiesx.asp">Oddities</a> 
+<ul> <li class=ressub3class>
+<a Href="nacnx.asp">NaCN Is not linear</a> 
+</ul> </ul> </ul> <li class="faqclass pdheading">FAQ Help<ul> <li class=faqsubclass>Units<ul> <li class=faqsub2class>Choose Units<ul> <li class=faqsub3class>
+<a Href="unitsx.asp">Energy</a> 
+<li class=faqsub3class>
+<a Href="bondunitsx.asp">Bond length</a> 
+<li class=faqsub3class>
+<a Href="rotunitsx.asp">Rotational Constant</a> 
+<li class=faqsub3class>
+<a Href="momintunitsx.asp">Moment of Inertia</a> 
+<li class=faqsub3class>
+<a Href="dipunitsx.asp">Dipole and Quadrupole</a> 
+<li class=faqsub3class>
+<a Href="punitsx.asp">Polarizability</a> 
+</ul> <li class=faqsub2class>Explanations<ul> <li class=faqsub3class>
+<a Href="hartreex.asp">Hartree</a> 
+<li class=faqsub3class>
+<a Href="wavenumberx.asp">cm-1</a> 
+<li class=faqsub3class>
+<a Href="debyex.asp">Debye</a> 
+</ul> </ul> <li class=faqsubclass>
+<a Href="creditsx.asp">Credits</a> 
+<li class=faqsubclass>Just show me<ul> <li class=faqsub2class>
+<a Href="justgeomx.asp">Show me a  calculated geometry</a> 
+</ul> <li class=faqsubclass>
+<a Href="summaryx.asp">Summary</a> 
+<li class=faqsubclass>
+<a Href="usingx.asp">Using</a> 
+<ul> <li class=faqsub2class>
+<a Href="oldinterfacex.asp">older interface</a> 
+<li class=faqsub2class>
+<a Href="selectbasis1x.asp">Limit Basis sets</a> 
+<li class=faqsub2class>
+<a Href="mboptionsx.asp">Method options</a> 
+</ul> <li class=faqsubclass>
+<a Href="listx.asp">List</a> 
+<ul> <li class=faqsub2class>
+<a Href="newlistx.asp">Recent molecules</a> 
+<ul> <li class=faqsub3class>
+<a Href="listsomex.asp">Choose a few</a> 
+</ul> <li class=faqsub2class>Molecules<ul> <li class=faqsub3class>
+<a Href="listallnumx.asp">Number of atoms</a> 
+<li class=faqsub3class>
+<a Href="listallx.asp">By heavy atoms</a> 
+<li class=faqsub3class>
+<a Href="diatomics1x.asp">Diatomics</a> 
+<li class=faqsub3class>
+<a Href="inchix.asp">InChI</a> 
+<li class=faqsub3class>
+<a Href="deuteratedx.asp">Deuterated</a> 
+<li class=faqsub3class>
+<a Href="dimerlistx.asp">Dimers</a> 
+</ul> <li class=faqsub2class>Geometry<ul> <li class=faqsub3class>
+<a Href="pglistx.asp">Point group</a> 
+<li class=faqsub3class>
+<a Href="bypg1x.asp">Point group count</a> 
+<li class=faqsub3class>
+<a Href="listbondtypesx.asp">Bonds types</a> 
+<li class=faqsub3class>
+<a Href="isodesmicx.asp">Isodesmic reactions</a> 
+<li class=faqsub3class>
+<a Href="diffpgx.asp">Bad point group</a> 
+<li class=faqsub3class>
+<a Href="conformerlistx.asp">Multiple conformers, states</a> 
+</ul> <li class=faqsub2class>Vibrations<ul> <li class=faqsub3class>
+<a Href="biganharm1x.asp">Big anharmonicity</a> 
+</ul> <li class=faqsub2class>
+<a Href="energy1x.asp">Energy</a> 
+<ul> <li class=faqsub3class>
+<a Href="hf0kx.asp">Enthalpy at 0 Kelvin</a> 
+</ul> <li class=faqsub2class>Similar molecules<ul> <li class=faqsub3class>
+<a Href="similarx.asp">Similar</a> 
+<li class=faqsub3class>
+<a Href="isocountx.asp">Isomers</a> 
+<li class=faqsub3class>
+<a Href="cistransx.asp">Cis/trans</a> 
+<li class=faqsub3class>
+<a Href="tautomersx.asp">Tautomers</a> 
+<li class=faqsub3class>
+<a Href="conformerlistx.asp">Multiple conformers, states</a> 
+</ul> <li class=faqsub2class>Ions, Dipoles, etc.<ul> <li class=faqsub3class>
+<a Href="ionlistx.asp">List Ions</a> 
+<li class=faqsub3class>
+<a Href="ionpgdiffx.asp">Ionization changes point group</a> 
+<li class=faqsub3class>
+<a Href="diplistx.asp">Dipole</a> 
+<li class=faqsub3class>
+<a Href="quadlistx.asp">Quadrupole</a> 
+<li class=faqsub3class>
+<a Href="pollistx.asp">Polarizability</a> 
+<li class=faqsub3class>
+<a Href="palistx.asp">Proton Affinities</a> 
+</ul> </ul> <li class=faqsubclass>
+<a Href="cccbdbindexx.asp">Index of CCCBDB</a> 
+<li class=faqsubclass>Feedback<ul> <li class=faqsub2class>
+<a Href="errorformx.asp">Error form</a> 
+<li class=faqsub2class>
+<a Href="wantsx.asp">Wants</a> 
+
+</ul></ul></ul>
+</div>
+
+</td>
+</tr>
+<tr>
+
+
+</tr>
+<tr>
+<td colspan=2 class="noborder">
+You are here: <b>Experimental &gt; Vibrations &gt; Diatomic</b>
+</td>
+</tr>
+</table>
+
+
+<h1>Experimental Diatomic Data</H1>
+Values in cm<sup>-1</sup> <a href="wavenumberx.asp">What is a cm<sup>-1</sup>?</a>
+<table border="1">
+<tr>
+<th>Species</th>
+<th>name</th>
+<th>&omega;<sub>e</sub></th>
+<th>&omega;<sub>e</sub>x<sub>e</sub></th>
+<th>&omega;<sub>e</sub>y<sub>e</sub></th>
+<th>B<sub>e</sub></th>
+<th>D<sub>e</sub></th>
+<th>&alpha;<sub>e</sub></th>
+<th>reference</th>
+<tr>
+
+
+<tr>
+<td>H<sub>2</sub></td>
+<td>Hydrogen diatomic</td>
+<td class=num>4401.213</td>
+<td class=num>121.336</td>
+<td class=num>0.8129</td>
+<td class=num>60.853</td>
+<td class=num></td>
+<td class=num>3.0622</td>
+<td class=num>2007Iri:389</td>
+</tr>
+
+<tr>
+<td>H<sub>2</sub><sup>+</sup></td>
+<td>Hydrogen cation</td>
+<td class=num>2321.7</td>
+<td class=num>66.2</td>
+<td class=num>0.6</td>
+<td class=num>30.21</td>
+<td class=num></td>
+<td class=num>1.685</td>
+<td class=num>2007Iri:389</td>
+</tr>
+
+<tr>
+<td>D<sub>2</sub></td>
+<td>Deuterium diatomic</td>
+<td class=num>3115.5</td>
+<td class=num>61.82</td>
+<td class=num>0.562</td>
+<td class=num>30.4436</td>
+<td class=num></td>
+<td class=num>1.0786</td>
+<td class=num>2007Iri:389</td>
+</tr>
+
+<tr>
+<td>HD</td>
+<td>Deuterium hydride</td>
+<td class=num>3813.15</td>
+<td class=num>91.65</td>
+<td class=num>0.723</td>
+<td class=num>45.655</td>
+<td class=num></td>
+<td class=num>1.986</td>
+<td class=num>2007Iri:389</td>
+</tr>
+
+<tr>
+<td>HeH<sup>+</sup></td>
+<td>Helium hydride cation</td>
+<td class=num></td>
+<td class=num></td>
+<td class=num></td>
+<td class=num></td>
+<td class=num></td>
+<td class=num></td>
+<td class=num>2014Per/Hod:101101</td>
+</tr>
+
+<tr>
+<td>He<sub>2</sub><sup>+</sup></td>
+<td>helium diatomic cation</td>
+<td class=num>1698.5</td>
+<td class=num>35.3</td>
+<td class=num></td>
+<td class=num>7.211</td>
+<td class=num></td>
+<td class=num>0.224</td>
+<td class=num>2007Iri:389</td>
+</tr>
+
+<tr>
+<td>LiH</td>
+<td>Lithium Hydride</td>
+<td class=num>1405.498</td>
+<td class=num>23.1679</td>
+<td class=num>0.170928</td>
+<td class=num>7.513731</td>
+<td class=num></td>
+<td class=num>0.2163911</td>
+<td class=num>2007Iri:389</td>
+</tr>
+
+<tr>
+<td>Li<sub>2</sub></td>
+<td>Lithium diatomic</td>
+<td class=num>351.4066</td>
+<td class=num>2.58324</td>
+<td class=num>-0.005832</td>
+<td class=num>0.6725297</td>
+<td class=num></td>
+<td class=num>0.0070461</td>
+<td class=num>2007Iri:389</td>
+</tr>
+
+<tr>
+<td>Li<sub>2</sub><sup>+</sup></td>
+<td>lithium diatomic cation</td>
+<td class=num>262.2</td>
+<td class=num>1.7</td>
+<td class=num></td>
+<td class=num></td>
+<td class=num>10464</td>
+<td class=num></td>
+<td class=num>1984Ber/Gol:201-204</td>
+</tr>
+
+<tr>
+<td>BeH</td>
+<td>beryllium monohydride</td>
+<td class=num>2061.235</td>
+<td class=num>37.32666</td>
+<td class=num>0.084</td>
+<td class=num>10.31992</td>
+<td class=num></td>
+<td class=num>0.3084176</td>
+<td class=num>2007Iri:389</td>
+</tr>
+
+<tr>
+<td>BH</td>
+<td>Boron monohydride</td>
+<td class=num>2366.729</td>
+<td class=num>49.33983</td>
+<td class=num>0.36227</td>
+<td class=num>12.02575</td>
+<td class=num></td>
+<td class=num>0.421565</td>
+<td class=num>2007Iri:389</td>
+</tr>
+
+<tr>
+<td>BH<sup>+</sup></td>
+<td>boron monohydride cation</td>
+<td class=num></td>
+<td class=num></td>
+<td class=num></td>
+<td class=num>12.6177</td>
+<td class=num></td>
+<td class=num>0.4928</td>
+<td class=num>1982RamSar:1331</td>
+</tr>
+
+<tr>
+<td>B<sub>2</sub></td>
+<td>Boron diatomic</td>
+<td class=num>1059.68</td>
+<td class=num>15.66</td>
+<td class=num>1.489</td>
+<td class=num>1.2211</td>
+<td class=num></td>
+<td class=num>0.02102</td>
+<td class=num>2007Iri:389</td>
+</tr>
+
+<tr>
+<td>CH</td>
+<td>Methylidyne</td>
+<td class=num>2860.751</td>
+<td class=num>64.4387</td>
+<td class=num>0.3634</td>
+<td class=num>14.45988</td>
+<td class=num></td>
+<td class=num>0.53654</td>
+<td class=num>2007Iri:389</td>
+</tr>
+
+<tr>
+<td>C<sub>2</sub><sup>-</sup></td>
+<td>carbon diatomic anion</td>
+<td class=num>1781.189</td>
+<td class=num>11.6717</td>
+<td class=num>0.009981</td>
+<td class=num>1.74666</td>
+<td class=num></td>
+<td class=num>0.01651</td>
+<td class=num>2007Iri:389</td>
+</tr>
+
+<tr>
+<td>C<sub>2</sub></td>
+<td>Carbon diatomic</td>
+<td class=num>1855.066</td>
+<td class=num>13.6007</td>
+<td class=num>-0.116</td>
+<td class=num>1.820053</td>
+<td class=num></td>
+<td class=num>0.0179143</td>
+<td class=num>2007Iri:389</td>
+</tr>
+
+<tr>
+<td>NH</td>
+<td>Imidogen</td>
+<td class=num>3282.721</td>
+<td class=num>79.0415</td>
+<td class=num>0.3668</td>
+<td class=num>16.66792</td>
+<td class=num></td>
+<td class=num>0.650379</td>
+<td class=num>2007Iri:389</td>
+</tr>
+
+<tr>
+<td>BN</td>
+<td>boron nitride</td>
+<td class=num>1514.6</td>
+<td class=num>12.3</td>
+<td class=num></td>
+<td class=num>1.666</td>
+<td class=num></td>
+<td class=num>0.025</td>
+<td class=num>2007Iri:389</td>
+</tr>
+
+<tr>
+<td>CN</td>
+<td>Cyano radical</td>
+<td class=num>2068.648</td>
+<td class=num>13.0971</td>
+<td class=num>-0.0124</td>
+<td class=num>1.899783</td>
+<td class=num></td>
+<td class=num>0.017372</td>
+<td class=num>2007Iri:389</td>
+</tr>
+
+<tr>
+<td>CN<sup>+</sup></td>
+<td>Cyano cation</td>
+<td class=num>2033.05</td>
+<td class=num>16.14</td>
+<td class=num></td>
+<td class=num>1.8964</td>
+<td class=num></td>
+<td class=num>0.0188</td>
+<td class=num>2007Iri:389</td>
+</tr>
+
+<tr>
+<td>N<sub>2</sub></td>
+<td>Nitrogen diatomic</td>
+<td class=num>2358.57</td>
+<td class=num>14.324</td>
+<td class=num>-0.00226</td>
+<td class=num>1.998241</td>
+<td class=num></td>
+<td class=num>0.017318</td>
+<td class=num>2007Iri:389</td>
+</tr>
+
+<tr>
+<td>N<sub>2</sub><sup>+</sup></td>
+<td>diatomic nitrogen cation</td>
+<td class=num>2207.011</td>
+<td class=num>16.0616</td>
+<td class=num>-0.04289</td>
+<td class=num>1.93176</td>
+<td class=num></td>
+<td class=num>0.01881</td>
+<td class=num>2007Iri:389</td>
+</tr>
+
+<tr>
+<td>NH<sub>3</sub>NH<sub>3</sub></td>
+<td>Ammonia Dimer</td>
+<td class=num>567.9</td>
+<td class=num>1.97</td>
+<td class=num></td>
+<td class=num>0.18476</td>
+<td class=num>7.8E-08</td>
+<td class=num>0.00082</td>
+<td class=num>webbook</td>
+</tr>
+
+<tr>
+<td>OH</td>
+<td>Hydroxyl radical</td>
+<td class=num>3737.761</td>
+<td class=num>84.8813</td>
+<td class=num>0.5409</td>
+<td class=num>18.9108</td>
+<td class=num></td>
+<td class=num>0.7242</td>
+<td class=num>2007Iri:389</td>
+</tr>
+
+<tr>
+<td>OH<sup>+</sup></td>
+<td>hydoxyl cation</td>
+<td class=num>3113.37</td>
+<td class=num>78.52</td>
+<td class=num></td>
+<td class=num>16.7943</td>
+<td class=num></td>
+<td class=num>0.7494</td>
+<td class=num>2007Iri:389</td>
+</tr>
+
+<tr>
+<td>DO</td>
+<td>Hydroxyl-d</td>
+<td class=num>2720.24</td>
+<td class=num>44.055</td>
+<td class=num></td>
+<td class=num>10.0209</td>
+<td class=num></td>
+<td class=num>0.2757</td>
+<td class=num>2007Iri:389</td>
+</tr>
+
+<tr>
+<td>LiO</td>
+<td>lithium oxide</td>
+<td class=num>814.62</td>
+<td class=num>7.78</td>
+<td class=num></td>
+<td class=num>1.212829</td>
+<td class=num></td>
+<td class=num>1.789898E-02</td>
+<td class=num>2007Iri:389</td>
+</tr>
+
+<tr>
+<td>BeO</td>
+<td>beryllium oxide</td>
+<td class=num>1457.09</td>
+<td class=num>11.311</td>
+<td class=num>0.0143</td>
+<td class=num>1.5847</td>
+<td class=num></td>
+<td class=num>0.01784</td>
+<td class=num>2007Iri:389</td>
+</tr>
+
+<tr>
+<td>BO</td>
+<td>boron monoxide</td>
+<td class=num>1885.286</td>
+<td class=num>11.694</td>
+<td class=num>-0.00952</td>
+<td class=num>1.78111</td>
+<td class=num></td>
+<td class=num>0.016516</td>
+<td class=num>2007Iri:389</td>
+</tr>
+
+<tr>
+<td>CO</td>
+<td>Carbon monoxide</td>
+<td class=num>2169.756</td>
+<td class=num>13.28803</td>
+<td class=num>0.0104109</td>
+<td class=num>1.931602</td>
+<td class=num></td>
+<td class=num>1.750513E-02</td>
+<td class=num>2007Iri:389</td>
+</tr>
+
+<tr>
+<td>CO<sup>+</sup></td>
+<td>carbon monoxide cation</td>
+<td class=num>2214.127</td>
+<td class=num>15.094</td>
+<td class=num>-0.0117</td>
+<td class=num>1.976941</td>
+<td class=num></td>
+<td class=num>0.018943</td>
+<td class=num>2007Iri:389</td>
+</tr>
+
+<tr>
+<td>NO<sup>-</sup></td>
+<td>nitric oxide anion</td>
+<td class=num>1363</td>
+<td class=num>8</td>
+<td class=num></td>
+<td class=num>1.427</td>
+<td class=num></td>
+<td class=num></td>
+<td class=num>webbook</td>
+</tr>
+
+<tr>
+<td>NO</td>
+<td>Nitric oxide</td>
+<td class=num>1904.135</td>
+<td class=num>14.08836</td>
+<td class=num>0.0100467</td>
+<td class=num>1.704888</td>
+<td class=num></td>
+<td class=num>1.754158E-02</td>
+<td class=num>2007Iri:389</td>
+</tr>
+
+<tr>
+<td>NO<sup>+</sup></td>
+<td>nitric oxide cation</td>
+<td class=num>2376.721</td>
+<td class=num>16.2553</td>
+<td class=num>-0.01562</td>
+<td class=num>1.997195</td>
+<td class=num></td>
+<td class=num>0.0187904</td>
+<td class=num>2007Iri:389</td>
+</tr>
+
+<tr>
+<td>O<sub>2</sub><sup>-</sup></td>
+<td>oxygen diatomic anion</td>
+<td class=num>1090</td>
+<td class=num>8.1</td>
+<td class=num></td>
+<td class=num></td>
+<td class=num></td>
+<td class=num></td>
+<td class=num>webbook</td>
+</tr>
+
+<tr>
+<td>O<sub>2</sub></td>
+<td>Oxygen diatomic</td>
+<td class=num>1580.161</td>
+<td class=num>11.95127</td>
+<td class=num>0.0458489</td>
+<td class=num>1.44562</td>
+<td class=num></td>
+<td class=num>0.0159305</td>
+<td class=num>2007Iri:389</td>
+</tr>
+
+<tr>
+<td>O<sub>2</sub><sup>+</sup></td>
+<td>diatomic oxygen cation</td>
+<td class=num>1905.892</td>
+<td class=num>16.489</td>
+<td class=num>0.02057</td>
+<td class=num>1.689824</td>
+<td class=num></td>
+<td class=num>0.019363</td>
+<td class=num>2007Iri:389</td>
+</tr>
+
+<tr>
+<td>HF</td>
+<td>Hydrogen fluoride</td>
+<td class=num>4138.385</td>
+<td class=num>89.94319</td>
+<td class=num>0.924488</td>
+<td class=num>20.95371</td>
+<td class=num></td>
+<td class=num>0.7933704</td>
+<td class=num>2007Iri:389</td>
+</tr>
+
+<tr>
+<td>LiF</td>
+<td>lithium fluoride</td>
+<td class=num>910.5727</td>
+<td class=num>8.207956</td>
+<td class=num>0.569166</td>
+<td class=num>1.345257</td>
+<td class=num></td>
+<td class=num>2.028749E-02</td>
+<td class=num>2007Iri:389</td>
+</tr>
+
+<tr>
+<td>BF</td>
+<td>Boron monofluoride</td>
+<td class=num>1402.159</td>
+<td class=num>11.82106</td>
+<td class=num>0.051595</td>
+<td class=num>1.516744</td>
+<td class=num></td>
+<td class=num>1.904848E-02</td>
+<td class=num>2007Iri:389</td>
+</tr>
+
+<tr>
+<td>CF</td>
+<td>Fluoromethylidyne</td>
+<td class=num>1307.93</td>
+<td class=num>11.08</td>
+<td class=num>0.093</td>
+<td class=num>1.41626</td>
+<td class=num></td>
+<td class=num>0.01844</td>
+<td class=num>2007Iri:389</td>
+</tr>
+
+<tr>
+<td>NF</td>
+<td>nitrogen fluoride</td>
+<td class=num>1141.37</td>
+<td class=num>8.99</td>
+<td class=num></td>
+<td class=num>1.205679</td>
+<td class=num></td>
+<td class=num>0.014889</td>
+<td class=num>2007Iri:389</td>
+</tr>
+
+<tr>
+<td>FO</td>
+<td>Oxygen monofluoride</td>
+<td class=num>1053.014</td>
+<td class=num>9.919395</td>
+<td class=num>-6.095684E-02</td>
+<td class=num>1.058708</td>
+<td class=num></td>
+<td class=num>1.329513E-02</td>
+<td class=num>2007Iri:389</td>
+</tr>
+
+<tr>
+<td>F<sub>2</sub></td>
+<td>Fluorine diatomic</td>
+<td class=num>916.929</td>
+<td class=num>11.3221</td>
+<td class=num>-0.10572</td>
+<td class=num>0.889294</td>
+<td class=num></td>
+<td class=num>0.0125952</td>
+<td class=num>2007Iri:389</td>
+</tr>
+
+<tr>
+<td>F<sub>2</sub><sup>+</sup></td>
+<td>flourine diatomic cation</td>
+<td class=num>1073.3</td>
+<td class=num>9.13</td>
+<td class=num></td>
+<td class=num>1.015</td>
+<td class=num></td>
+<td class=num>0.01</td>
+<td class=num>webbook</td>
+</tr>
+
+<tr>
+<td>NeH<sup>+</sup></td>
+<td>neon hydrogen cation</td>
+<td class=num>2903.751</td>
+<td class=num>113.3581</td>
+<td class=num>0.253</td>
+<td class=num>17.33805</td>
+<td class=num>0.0026855</td>
+<td class=num></td>
+<td class=num>1985Ram/Ber:451-457</td>
+</tr>
+
+<tr>
+<td>Ne<sub>2</sub><sup>+</sup></td>
+<td>Neon diatomic cation</td>
+<td class=num>587.8</td>
+<td class=num>7.71</td>
+<td class=num></td>
+<td class=num>0.5849</td>
+<td class=num></td>
+<td class=num></td>
+<td class=num>2002Car/Gam:3662</td>
+</tr>
+
+<tr>
+<td>NaH</td>
+<td>sodium hydride</td>
+<td class=num>1171.968</td>
+<td class=num>19.703</td>
+<td class=num>0.175</td>
+<td class=num>4.90327</td>
+<td class=num></td>
+<td class=num>0.137</td>
+<td class=num>2007Iri:389</td>
+</tr>
+
+<tr>
+<td>NaLi</td>
+<td>lithium sodium</td>
+<td class=num>256.5412</td>
+<td class=num>1.622712</td>
+<td class=num>-4.946511E-03</td>
+<td class=num>0.375862</td>
+<td class=num></td>
+<td class=num>3.146547E-03</td>
+<td class=num>2007Iri:389</td>
+</tr>
+
+<tr>
+<td>NaF</td>
+<td>sodium fluoride</td>
+<td class=num>535.658</td>
+<td class=num>3.57523</td>
+<td class=num>0.018453</td>
+<td class=num>0.4369015</td>
+<td class=num></td>
+<td class=num>4.559178E-03</td>
+<td class=num>2007Iri:389</td>
+</tr>
+
+<tr>
+<td>Na<sub>2</sub></td>
+<td>Sodium diatomic</td>
+<td class=num>159.0855</td>
+<td class=num>0.7086557</td>
+<td class=num>-4.632416E-03</td>
+<td class=num>0.1547354</td>
+<td class=num></td>
+<td class=num>8.63753E-04</td>
+<td class=num>2007Iri:389</td>
+</tr>
+
+<tr>
+<td>Na<sub>2</sub><sup>+</sup></td>
+<td>sodium diatomic cation</td>
+<td class=num>120.68</td>
+<td class=num>0.418</td>
+<td class=num></td>
+<td class=num>0.11295</td>
+<td class=num></td>
+<td class=num>0.00055</td>
+<td class=num>1989Bor/Lab:21</td>
+</tr>
+
+<tr>
+<td>MgH</td>
+<td>magnesium monohydride</td>
+<td class=num>1492.776</td>
+<td class=num>29.84682</td>
+<td class=num>-0.30481</td>
+<td class=num>5.825523</td>
+<td class=num></td>
+<td class=num>0.1772981</td>
+<td class=num>2007Iri:389</td>
+</tr>
+
+<tr>
+<td>MgH<sup>+</sup></td>
+<td>magnesium monohydride cation</td>
+<td class=num>1699.1</td>
+<td class=num>31.935</td>
+<td class=num>-0.1882</td>
+<td class=num>6.387</td>
+<td class=num></td>
+<td class=num>0.18194</td>
+<td class=num>2007Iri:389</td>
+</tr>
+
+<tr>
+<td>MgO</td>
+<td>magnesium oxide</td>
+<td class=num>785.2183</td>
+<td class=num>5.1327</td>
+<td class=num>0.01649</td>
+<td class=num>0.5748414</td>
+<td class=num></td>
+<td class=num>0.0053223</td>
+<td class=num>2007Iri:389</td>
+</tr>
+
+<tr>
+<td>Mg<sub>2</sub></td>
+<td>Magnesium diatomic</td>
+<td class=num>51.121</td>
+<td class=num>1.645</td>
+<td class=num>0.01624</td>
+<td class=num>0.09287</td>
+<td class=num></td>
+<td class=num>0.003776</td>
+<td class=num>2007Iri:389</td>
+</tr>
+
+<tr>
+<td>AlH</td>
+<td>aluminum monohydride</td>
+<td class=num>1682.375</td>
+<td class=num>29.05098</td>
+<td class=num>0.247615</td>
+<td class=num>6.393784</td>
+<td class=num></td>
+<td class=num>0.1870527</td>
+<td class=num>2007Iri:389</td>
+</tr>
+
+<tr>
+<td>LiAl</td>
+<td>Lithium Aluminum</td>
+<td class=num>318.3</td>
+<td class=num>4.06</td>
+<td class=num></td>
+<td class=num></td>
+<td class=num></td>
+<td class=num></td>
+<td class=num>1994Bro/PIl:93-98</td>
+</tr>
+
+<tr>
+<td>AlC</td>
+<td>Aluminum carbide</td>
+<td class=num>654.836</td>
+<td class=num>4.2933</td>
+<td class=num></td>
+<td class=num>0.531006</td>
+<td class=num>1.408E-06</td>
+<td class=num>0.005147</td>
+<td class=num>1993Bra:2790</td>
+</tr>
+
+<tr>
+<td>AlO</td>
+<td>Aluminum monoxide</td>
+<td class=num>979.4852</td>
+<td class=num>7.0121</td>
+<td class=num>-0.00206</td>
+<td class=num>0.6413856</td>
+<td class=num></td>
+<td class=num>0.0057796</td>
+<td class=num>2007Iri:389</td>
+</tr>
+
+<tr>
+<td>AlF</td>
+<td>Aluminum monofluoride</td>
+<td class=num>802.3245</td>
+<td class=num>4.849915</td>
+<td class=num>0.0195738</td>
+<td class=num>0.5524802</td>
+<td class=num></td>
+<td class=num>4.984261E-03</td>
+<td class=num>2007Iri:389</td>
+</tr>
+
+<tr>
+<td>Al<sub>2</sub></td>
+<td>Aluminum diatomic</td>
+<td class=num>285.8</td>
+<td class=num>0.9</td>
+<td class=num></td>
+<td class=num>0.17127</td>
+<td class=num></td>
+<td class=num>0.0008</td>
+<td class=num>2007Iri:389</td>
+</tr>
+
+<tr>
+<td>SiH</td>
+<td>Silylidyne</td>
+<td class=num>2042.523</td>
+<td class=num>36.0552</td>
+<td class=num>0.1254</td>
+<td class=num>7.503898</td>
+<td class=num></td>
+<td class=num>0.21814</td>
+<td class=num>2007Iri:389</td>
+</tr>
+
+<tr>
+<td>SiH<sup>+</sup></td>
+<td>silicon monohydride cation</td>
+<td class=num>2157.17</td>
+<td class=num>34.24</td>
+<td class=num></td>
+<td class=num>7.6603</td>
+<td class=num></td>
+<td class=num>0.2096</td>
+<td class=num>2007Iri:389</td>
+</tr>
+
+<tr>
+<td>SiC</td>
+<td>silicon monocarbide</td>
+<td class=num>964.6</td>
+<td class=num>5.6</td>
+<td class=num></td>
+<td class=num></td>
+<td class=num></td>
+<td class=num></td>
+<td class=num>1991Ebb/Dra:2292</td>
+</tr>
+
+<tr>
+<td>SiN</td>
+<td>Silicon nitride</td>
+<td class=num>1151.284</td>
+<td class=num>6.455</td>
+<td class=num>-0.0069</td>
+<td class=num>0.730927</td>
+<td class=num></td>
+<td class=num>0.005685</td>
+<td class=num>2007Iri:389</td>
+</tr>
+
+<tr>
+<td>SiO</td>
+<td>Silicon monoxide</td>
+<td class=num>1241.544</td>
+<td class=num>5.97437</td>
+<td class=num>6.090213E-03</td>
+<td class=num>0.726752</td>
+<td class=num></td>
+<td class=num>5.03784E-03</td>
+<td class=num>2007Iri:389</td>
+</tr>
+
+<tr>
+<td>SiF</td>
+<td>silicon monofluoride</td>
+<td class=num>857.3251</td>
+<td class=num>4.83419</td>
+<td class=num>0.019807</td>
+<td class=num>0.5812573</td>
+<td class=num></td>
+<td class=num>5.03859E-03</td>
+<td class=num>2007Iri:389</td>
+</tr>
+
+<tr>
+<td>Si<sub>2</sub></td>
+<td>Silicon diatomic</td>
+<td class=num>510.98</td>
+<td class=num>2.02</td>
+<td class=num></td>
+<td class=num>0.239</td>
+<td class=num></td>
+<td class=num>0.00135</td>
+<td class=num>2007Iri:389</td>
+</tr>
+
+<tr>
+<td>PH</td>
+<td>phosphorus monohydride</td>
+<td class=num>2363.773</td>
+<td class=num>43.9074</td>
+<td class=num>0.1059</td>
+<td class=num>8.53904</td>
+<td class=num></td>
+<td class=num>0.253387</td>
+<td class=num>2007Iri:389</td>
+</tr>
+
+<tr>
+<td>CP</td>
+<td>Carbon monophosphide</td>
+<td class=num>1239.799</td>
+<td class=num>6.833769</td>
+<td class=num>-0.0013769</td>
+<td class=num>0.7988678</td>
+<td class=num></td>
+<td class=num>5.96933E-03</td>
+<td class=num>2007Iri:389</td>
+</tr>
+
+<tr>
+<td>PN</td>
+<td>Phosphorus mononitride</td>
+<td class=num>1336.948</td>
+<td class=num>6.8958</td>
+<td class=num>-0.00605</td>
+<td class=num>0.7864844</td>
+<td class=num></td>
+<td class=num>0.0055337</td>
+<td class=num>2007Iri:389</td>
+</tr>
+
+<tr>
+<td>PO</td>
+<td>Phosphorus monoxide</td>
+<td class=num>1233.34</td>
+<td class=num>6.56</td>
+<td class=num></td>
+<td class=num>0.7332237</td>
+<td class=num></td>
+<td class=num>5.466162E-03</td>
+<td class=num>2007Iri:389</td>
+</tr>
+
+<tr>
+<td>PF</td>
+<td>phosphorus monofluoride</td>
+<td class=num>846.75</td>
+<td class=num>4.489</td>
+<td class=num>0.019</td>
+<td class=num>0.5667427</td>
+<td class=num></td>
+<td class=num>0.00456</td>
+<td class=num>2007Iri:389</td>
+</tr>
+
+<tr>
+<td>PF<sup>+</sup></td>
+<td>phosphorus monofluoride cation</td>
+<td class=num>1053.25</td>
+<td class=num>5.05</td>
+<td class=num></td>
+<td class=num>0.636</td>
+<td class=num></td>
+<td class=num>0.0048</td>
+<td class=num>2007Iri:389</td>
+</tr>
+
+<tr>
+<td>SiP</td>
+<td>Silicon monophosphide</td>
+<td class=num>615.7</td>
+<td class=num>2.34</td>
+<td class=num></td>
+<td class=num></td>
+<td class=num></td>
+<td class=num></td>
+<td class=num>2002Jak/Nak:6513</td>
+</tr>
+
+<tr>
+<td>P<sub>2</sub></td>
+<td>Phosphorus diatomic</td>
+<td class=num>780.77</td>
+<td class=num>2.835</td>
+<td class=num>-0.00462</td>
+<td class=num>0.30362</td>
+<td class=num></td>
+<td class=num>0.00149</td>
+<td class=num>2007Iri:389</td>
+</tr>
+
+<tr>
+<td>P<sub>2</sub><sup>+</sup></td>
+<td>phosphorus diatomic cation</td>
+<td class=num>672.2</td>
+<td class=num>2.74</td>
+<td class=num></td>
+<td class=num>0.276</td>
+<td class=num></td>
+<td class=num>0.00151</td>
+<td class=num>2007Iri:389</td>
+</tr>
+
+<tr>
+<td>HS<sup>-</sup></td>
+<td>mercapto anion</td>
+<td class=num>2645.634</td>
+<td class=num>52.155</td>
+<td class=num></td>
+<td class=num>9.562</td>
+<td class=num>0.0005012</td>
+<td class=num>0.29676</td>
+<td class=num>1998Civ/Wal:8369</td>
+</tr>
+
+<tr>
+<td>HS</td>
+<td>Mercapto radical</td>
+<td class=num>2696.248</td>
+<td class=num>48.742</td>
+<td class=num>0.1124</td>
+<td class=num>9.600247</td>
+<td class=num></td>
+<td class=num>0.2799</td>
+<td class=num>2007Iri:389</td>
+</tr>
+
+<tr>
+<td>LiS</td>
+<td>Lithium monosulfide</td>
+<td class=num>580</td>
+<td class=num></td>
+<td class=num></td>
+<td class=num>0.6340409</td>
+<td class=num>3.028729E-06</td>
+<td class=num>6.790568E-03</td>
+<td class=num>2001Bre/Ziu:249</td>
+</tr>
+
+<tr>
+<td>BeS</td>
+<td>beryllium sulfide</td>
+<td class=num>997.94</td>
+<td class=num>6.137</td>
+<td class=num></td>
+<td class=num>0.79059</td>
+<td class=num></td>
+<td class=num>0.00664</td>
+<td class=num>2007Iri:389</td>
+</tr>
+
+<tr>
+<td>BS</td>
+<td>boron sulfide</td>
+<td class=num>1179.91</td>
+<td class=num>6.25</td>
+<td class=num>-0.0083</td>
+<td class=num>0.79478</td>
+<td class=num></td>
+<td class=num>0.00578</td>
+<td class=num>2007Iri:389</td>
+</tr>
+
+<tr>
+<td>CS</td>
+<td>carbon monosulfide</td>
+<td class=num>1285.155</td>
+<td class=num>6.502605</td>
+<td class=num>0.0038873</td>
+<td class=num>0.8200436</td>
+<td class=num></td>
+<td class=num>5.918345E-03</td>
+<td class=num>2007Iri:389</td>
+</tr>
+
+<tr>
+<td>NS</td>
+<td>Mononitrogen monosulfide</td>
+<td class=num>1218.7</td>
+<td class=num>7.28</td>
+<td class=num></td>
+<td class=num>0.772379</td>
+<td class=num></td>
+<td class=num>6.284114E-03</td>
+<td class=num>2007Iri:389</td>
+</tr>
+
+<tr>
+<td>SO</td>
+<td>Sulfur monoxide</td>
+<td class=num>1150.791</td>
+<td class=num>6.4096</td>
+<td class=num>0.01306</td>
+<td class=num>0.7208221</td>
+<td class=num></td>
+<td class=num>5.750797E-03</td>
+<td class=num>2007Iri:389</td>
+</tr>
+
+<tr>
+<td>SF</td>
+<td>Monosulfur monofluoride</td>
+<td class=num>837.6418</td>
+<td class=num>4.46953</td>
+<td class=num></td>
+<td class=num>0.555173</td>
+<td class=num></td>
+<td class=num>0.004459</td>
+<td class=num>2007Iri:389</td>
+</tr>
+
+<tr>
+<td>NaS</td>
+<td>Sodium sulfide</td>
+<td class=num></td>
+<td class=num></td>
+<td class=num></td>
+<td class=num>0.2035</td>
+<td class=num></td>
+<td class=num></td>
+<td class=num>2012Kha/Hoc:145</td>
+</tr>
+
+<tr>
+<td>MgS</td>
+<td>magnesium sulfide</td>
+<td class=num>528.74</td>
+<td class=num>2.704</td>
+<td class=num></td>
+<td class=num>0.26797</td>
+<td class=num></td>
+<td class=num>0.00176</td>
+<td class=num>2007Iri:389</td>
+</tr>
+
+<tr>
+<td>AlS</td>
+<td>Aluminum sulfide</td>
+<td class=num>617.1169</td>
+<td class=num>3.331</td>
+<td class=num>-0.00924</td>
+<td class=num>0.2800368</td>
+<td class=num></td>
+<td class=num>1.78225E-03</td>
+<td class=num>2007Iri:389</td>
+</tr>
+
+<tr>
+<td>SiS</td>
+<td>silicon monosulfide</td>
+<td class=num>749.6456</td>
+<td class=num>2.586232</td>
+<td class=num>1.048392E-03</td>
+<td class=num>0.3035279</td>
+<td class=num></td>
+<td class=num>1.47313E-03</td>
+<td class=num>2007Iri:389</td>
+</tr>
+
+<tr>
+<td>PS</td>
+<td>phosphorus sulfide</td>
+<td class=num></td>
+<td class=num></td>
+<td class=num></td>
+<td class=num>0.2967318</td>
+<td class=num>1.929528E-07</td>
+<td class=num></td>
+<td class=num>1999Kle/Kli:137-145</td>
+</tr>
+
+<tr>
+<td>S<sub>2</sub></td>
+<td>Sulfur diatomic</td>
+<td class=num>725.7102</td>
+<td class=num>2.8582</td>
+<td class=num></td>
+<td class=num>0.2953952</td>
+<td class=num></td>
+<td class=num>1.59754E-03</td>
+<td class=num>2007Iri:389</td>
+</tr>
+
+<tr>
+<td>DCl</td>
+<td>Hydrochloric acid-d</td>
+<td class=num>2145.133</td>
+<td class=num>27.15926</td>
+<td class=num>7.993137E-02</td>
+<td class=num>5.448784</td>
+<td class=num></td>
+<td class=num>0.1132345</td>
+<td class=num>2007Iri:389</td>
+</tr>
+
+<tr>
+<td>HCl</td>
+<td>Hydrogen chloride</td>
+<td class=num>2990.925</td>
+<td class=num>52.79996</td>
+<td class=num>0.21803</td>
+<td class=num>10.5933</td>
+<td class=num></td>
+<td class=num>0.3069985</td>
+<td class=num>2007Iri:389</td>
+</tr>
+
+<tr>
+<td>HCl<sup>+</sup></td>
+<td>hydrogen chloride cation</td>
+<td class=num>2673.69</td>
+<td class=num>52.537</td>
+<td class=num></td>
+<td class=num>9.95661</td>
+<td class=num></td>
+<td class=num>0.32716</td>
+<td class=num>2007Iri:389</td>
+</tr>
+
+<tr>
+<td>LiCl</td>
+<td>lithium chloride</td>
+<td class=num>642.9545</td>
+<td class=num>4.47253</td>
+<td class=num>0.020118</td>
+<td class=num>0.7065225</td>
+<td class=num></td>
+<td class=num>8.01019E-03</td>
+<td class=num>2007Iri:389</td>
+</tr>
+
+<tr>
+<td>BCl</td>
+<td>boron monochloride</td>
+<td class=num>840.2947</td>
+<td class=num>5.4917</td>
+<td class=num>0.02995</td>
+<td class=num>0.6842822</td>
+<td class=num></td>
+<td class=num>6.81236E-03</td>
+<td class=num>2007Iri:389</td>
+</tr>
+
+<tr>
+<td>CCl</td>
+<td>carbon monochloride</td>
+<td class=num>876.8975</td>
+<td class=num>5.44698</td>
+<td class=num>0.02607</td>
+<td class=num>0.697137</td>
+<td class=num></td>
+<td class=num>6.85277E-03</td>
+<td class=num>2007Iri:389</td>
+</tr>
+
+<tr>
+<td>CCl<sup>+</sup></td>
+<td>carbon monochloride cation</td>
+<td class=num>1175</td>
+<td class=num>5</td>
+<td class=num></td>
+<td class=num></td>
+<td class=num></td>
+<td class=num></td>
+<td class=num>webbook</td>
+</tr>
+
+<tr>
+<td>NCl</td>
+<td>nitrogen monochloride</td>
+<td class=num>827.9576</td>
+<td class=num>5.30015</td>
+<td class=num>-0.0048</td>
+<td class=num>0.6497674</td>
+<td class=num></td>
+<td class=num>6.41432E-03</td>
+<td class=num>2007Iri:389</td>
+</tr>
+
+<tr>
+<td>ClO</td>
+<td>Monochlorine monoxide</td>
+<td class=num>853.6427</td>
+<td class=num>5.518278</td>
+<td class=num>-0.01256</td>
+<td class=num>0.623458</td>
+<td class=num></td>
+<td class=num>5.935713E-03</td>
+<td class=num>2007Iri:389</td>
+</tr>
+
+<tr>
+<td>ClF</td>
+<td>Chlorine monofluoride</td>
+<td class=num>783.4534</td>
+<td class=num>4.9487</td>
+<td class=num>-0.0176</td>
+<td class=num>0.5164805</td>
+<td class=num></td>
+<td class=num>0.0043385</td>
+<td class=num>2007Iri:389</td>
+</tr>
+
+<tr>
+<td>NaCl</td>
+<td>Sodium Chloride</td>
+<td class=num>364.6842</td>
+<td class=num>1.776085</td>
+<td class=num>0.0059369</td>
+<td class=num>0.218063</td>
+<td class=num></td>
+<td class=num>1.624788E-03</td>
+<td class=num>2007Iri:389</td>
+</tr>
+
+<tr>
+<td>AlCl</td>
+<td>Aluminum monochloride</td>
+<td class=num>481.7747</td>
+<td class=num>2.101811</td>
+<td class=num>0.0066384</td>
+<td class=num>0.2439301</td>
+<td class=num></td>
+<td class=num>1.611082E-03</td>
+<td class=num>2007Iri:389</td>
+</tr>
+
+<tr>
+<td>SiCl</td>
+<td>Clorosilylidyne</td>
+<td class=num>535.59</td>
+<td class=num>2.1757</td>
+<td class=num>0.00604</td>
+<td class=num>0.256103</td>
+<td class=num></td>
+<td class=num>0.0015817</td>
+<td class=num>2007Iri:389</td>
+</tr>
+
+<tr>
+<td>PCl</td>
+<td>phosphorus chloride</td>
+<td class=num>551.384</td>
+<td class=num>2.22594</td>
+<td class=num></td>
+<td class=num>0.252874</td>
+<td class=num>2.124E-07</td>
+<td class=num>1.51188E-03</td>
+<td class=num>1985Kan/Yam:4945</td>
+</tr>
+
+<tr>
+<td>Cl<sub>2</sub></td>
+<td>Chlorine diatomic</td>
+<td class=num>559.751</td>
+<td class=num>2.69427</td>
+<td class=num>-0.0033253</td>
+<td class=num>0.24415</td>
+<td class=num></td>
+<td class=num>0.001516</td>
+<td class=num>2007Iri:389</td>
+</tr>
+
+<tr>
+<td>Cl<sub>2</sub><sup>+</sup></td>
+<td>chlorine diatomic cation</td>
+<td class=num>645.61</td>
+<td class=num>3.015</td>
+<td class=num>0.007</td>
+<td class=num>0.2695</td>
+<td class=num></td>
+<td class=num>0.00164</td>
+<td class=num>2007Iri:389</td>
+</tr>
+
+<tr>
+<td>Ar<sub>2</sub></td>
+<td>Argon diatomic</td>
+<td class=num>29.75706</td>
+<td class=num>2.20388</td>
+<td class=num>-0.0209</td>
+<td class=num>0.05975</td>
+<td class=num>1.13E-06</td>
+<td class=num>0.00375</td>
+<td class=num>derived from 1976Col/Dou:1741</td>
+</tr>
+
+<tr>
+<td>KF</td>
+<td>Potassium Fluoride</td>
+<td class=num>428</td>
+<td class=num>2.4</td>
+<td class=num></td>
+<td class=num></td>
+<td class=num></td>
+<td class=num></td>
+<td class=num></td>
+</tr>
+
+<tr>
+<td>KCl</td>
+<td>Potassium Chloride</td>
+<td class=num>281</td>
+<td class=num>1.3</td>
+<td class=num></td>
+<td class=num>0.1286348</td>
+<td class=num>1.0874</td>
+<td class=num>0.0007899</td>
+<td class=num>webbook</td>
+</tr>
+
+<tr>
+<td>K<sub>2</sub></td>
+<td>Potassium diatomic</td>
+<td class=num>92.021</td>
+<td class=num>0.2829</td>
+<td class=num>-0.002055</td>
+<td class=num>0.056743</td>
+<td class=num>8.63E-08</td>
+<td class=num>0.000165</td>
+<td class=num>webbook</td>
+</tr>
+
+<tr>
+<td>CaC</td>
+<td>Calcium monocarbide</td>
+<td class=num></td>
+<td class=num></td>
+<td class=num></td>
+<td class=num>0.3448357</td>
+<td class=num>7.047442E-07</td>
+<td class=num></td>
+<td class=num>2002Hal/App:L67</td>
+</tr>
+
+<tr>
+<td>CaS</td>
+<td>Calcium sulfide</td>
+<td class=num>462.273</td>
+<td class=num>1.7926</td>
+<td class=num></td>
+<td class=num>0.176683</td>
+<td class=num></td>
+<td class=num>0.0008393</td>
+<td class=num>2002Mel/Cox:8271</td>
+</tr>
+
+<tr>
+<td>Ca<sub>2</sub></td>
+<td>Calcium diatomic</td>
+<td class=num>64.928</td>
+<td class=num>1.0651</td>
+<td class=num>0.00259</td>
+<td class=num>0.046113</td>
+<td class=num>9.52E-08</td>
+<td class=num>0.0007028</td>
+<td class=num>webbook</td>
+</tr>
+
+<tr>
+<td>ScH</td>
+<td>Scandium monohydride</td>
+<td class=num></td>
+<td class=num></td>
+<td class=num></td>
+<td class=num>5.425432</td>
+<td class=num></td>
+<td class=num>0.124802</td>
+<td class=num>1996Ram/Ber:2668</td>
+</tr>
+
+<tr>
+<td>ScO</td>
+<td>Scandium monoxide</td>
+<td class=num>964.9</td>
+<td class=num>4.2</td>
+<td class=num></td>
+<td class=num>0.51343</td>
+<td class=num>5.85E-07</td>
+<td class=num>0.0033</td>
+<td class=num>webbook</td>
+</tr>
+
+<tr>
+<td>ScF</td>
+<td>Scandium monofluoride</td>
+<td class=num>735.6</td>
+<td class=num>3.8</td>
+<td class=num></td>
+<td class=num>0.395</td>
+<td class=num></td>
+<td class=num>0.00266</td>
+<td class=num>webbook</td>
+</tr>
+
+<tr>
+<td>TiH</td>
+<td>Titanium monohydride</td>
+<td class=num></td>
+<td class=num></td>
+<td class=num></td>
+<td class=num>5.36206</td>
+<td class=num>2.6092E-04</td>
+<td class=num></td>
+<td class=num>1996Lau/Lin:6418</td>
+</tr>
+
+<tr>
+<td>TiO</td>
+<td>Titanium monoxide</td>
+<td class=num>1009.02</td>
+<td class=num>4.498</td>
+<td class=num>-0.0107</td>
+<td class=num>0.53541</td>
+<td class=num>6.03E-07</td>
+<td class=num>0.00301</td>
+<td class=num>webbook</td>
+</tr>
+
+<tr>
+<td>VO</td>
+<td>Vanadium monoxide</td>
+<td class=num>1011.3</td>
+<td class=num>4.86</td>
+<td class=num></td>
+<td class=num>0.54825</td>
+<td class=num>0.0000006</td>
+<td class=num>0.00352</td>
+<td class=num>webbook</td>
+</tr>
+
+<tr>
+<td>CrH</td>
+<td>Chromium hydride</td>
+<td class=num>1595</td>
+<td class=num>30.49238</td>
+<td class=num></td>
+<td class=num>5.950823</td>
+<td class=num>0.000347</td>
+<td class=num></td>
+<td class=num>2006Har/Bro:1143</td>
+</tr>
+
+<tr>
+<td>CuF</td>
+<td>Copper monofluoride</td>
+<td class=num>622.65</td>
+<td class=num>3.95</td>
+<td class=num></td>
+<td class=num>0.3794029</td>
+<td class=num>5.63E-07</td>
+<td class=num>0.0032298</td>
+<td class=num>1979HUB/HER</td>
+</tr>
+
+<tr>
+<td>ZnH<sup>+</sup></td>
+<td>Zinc, protonated</td>
+<td class=num>1916</td>
+<td class=num>39</td>
+<td class=num>-0.2</td>
+<td class=num>7.407</td>
+<td class=num>0.00048</td>
+<td class=num>0.238</td>
+<td class=num>webbook</td>
+</tr>
+
+<tr>
+<td>ZnF</td>
+<td>Zinc monofluoride</td>
+<td class=num>620</td>
+<td class=num>2</td>
+<td class=num></td>
+<td class=num></td>
+<td class=num></td>
+<td class=num></td>
+<td class=num>2001Mor/Klo:313</td>
+</tr>
+
+<tr>
+<td>ZnS</td>
+<td>Zinc sulfide</td>
+<td class=num>459</td>
+<td class=num>2.09</td>
+<td class=num></td>
+<td class=num>0.0038372</td>
+<td class=num>1.279952E-07</td>
+<td class=num>1.085484E-03</td>
+<td class=num>2009Zac/Ziu:213</td>
+</tr>
+
+<tr>
+<td>ZnCl</td>
+<td>Zinc monochloride</td>
+<td class=num>390.5</td>
+<td class=num>1.5</td>
+<td class=num></td>
+<td class=num></td>
+<td class=num></td>
+<td class=num></td>
+<td class=num>webbook</td>
+</tr>
+
+<tr>
+<td>GaH</td>
+<td>Gallium monohydride</td>
+<td class=num>1604.52</td>
+<td class=num>28.77</td>
+<td class=num>0.36</td>
+<td class=num>6.137</td>
+<td class=num>0.000342</td>
+<td class=num>0.181</td>
+<td class=num>webbook</td>
+</tr>
+
+<tr>
+<td>GaO</td>
+<td>Gallium monoxide</td>
+<td class=num>767.5</td>
+<td class=num>6.24</td>
+<td class=num></td>
+<td class=num>0.4271</td>
+<td class=num>3.7E-07</td>
+<td class=num></td>
+<td class=num>webbook</td>
+</tr>
+
+<tr>
+<td>GaF</td>
+<td>Gallium monofluoride</td>
+<td class=num>622.2</td>
+<td class=num>3.2</td>
+<td class=num></td>
+<td class=num>0.3595161</td>
+<td class=num>0.0000005</td>
+<td class=num>0.0028642</td>
+<td class=num>webbook</td>
+</tr>
+
+<tr>
+<td>GaCl</td>
+<td>Gallium monochloride</td>
+<td class=num>365.3</td>
+<td class=num>1.2</td>
+<td class=num></td>
+<td class=num>0.1499045</td>
+<td class=num>1.01E-07</td>
+<td class=num>0.0007936</td>
+<td class=num>webbook</td>
+</tr>
+
+<tr>
+<td>GeH</td>
+<td>germylidene</td>
+<td class=num>1833.77</td>
+<td class=num>37</td>
+<td class=num></td>
+<td class=num>6.725</td>
+<td class=num>0.000326</td>
+<td class=num>0.1916</td>
+<td class=num>webbook</td>
+</tr>
+
+<tr>
+<td>GeH<sup>+</sup></td>
+<td>Germaniun monohyrdide cation</td>
+<td class=num>2015.2</td>
+<td class=num>33.1</td>
+<td class=num></td>
+<td class=num></td>
+<td class=num></td>
+<td class=num></td>
+<td class=num>1984Tsu/Yam:498</td>
+</tr>
+
+<tr>
+<td>GeO</td>
+<td>Germanium monoxide</td>
+<td class=num>985.5</td>
+<td class=num>4.29</td>
+<td class=num></td>
+<td class=num>0.4856962</td>
+<td class=num>4.72E-07</td>
+<td class=num>0.0030756</td>
+<td class=num>webbook</td>
+</tr>
+
+<tr>
+<td>GeF</td>
+<td>Germanium monofluoride</td>
+<td class=num>665.67</td>
+<td class=num>3.15</td>
+<td class=num></td>
+<td class=num>0.36578</td>
+<td class=num>4.47</td>
+<td class=num>0.002675</td>
+<td class=num>webbook</td>
+</tr>
+
+<tr>
+<td>GeF<sup>+</sup></td>
+<td>Germanium monofluoride cation</td>
+<td class=num>815.6</td>
+<td class=num>3.223</td>
+<td class=num></td>
+<td class=num>0.40212</td>
+<td class=num></td>
+<td class=num>0.002506</td>
+<td class=num>1990Aki/Tan:335</td>
+</tr>
+
+<tr>
+<td>GeS</td>
+<td>Germanium monosulfide</td>
+<td class=num>579.2035</td>
+<td class=num>1.687161</td>
+<td class=num>5.46407E-04</td>
+<td class=num>0.1897855</td>
+<td class=num>8.150555E-08</td>
+<td class=num>7.685932E-04</td>
+<td class=num>2001She/Kri:25</td>
+</tr>
+
+<tr>
+<td>GeCl</td>
+<td>Germanium monochloride</td>
+<td class=num>405.79</td>
+<td class=num>1.569</td>
+<td class=num></td>
+<td class=num>0.1516787</td>
+<td class=num></td>
+<td class=num>7.538549E-04</td>
+<td class=num>2008Tan/Hon:369</td>
+</tr>
+
+<tr>
+<td>GeCl<sup>+</sup></td>
+<td>Germanium monochloride cation</td>
+<td class=num>523.5</td>
+<td class=num>2.78</td>
+<td class=num></td>
+<td class=num></td>
+<td class=num></td>
+<td class=num></td>
+<td class=num>1981Tsu/Miz:318-321</td>
+</tr>
+
+<tr>
+<td>AsN</td>
+<td>Arsenic mononitride</td>
+<td class=num>1068.54</td>
+<td class=num>5.41</td>
+<td class=num>0.04</td>
+<td class=num>0.54551</td>
+<td class=num>5.3E-07</td>
+<td class=num>0.003366</td>
+<td class=num>webbook</td>
+</tr>
+
+<tr>
+<td>AsO</td>
+<td>Arsenic monoxide</td>
+<td class=num>967.08</td>
+<td class=num>4.85</td>
+<td class=num>-0.0015</td>
+<td class=num>0.48482</td>
+<td class=num>4.9E-07</td>
+<td class=num>0.003299</td>
+<td class=num>webbook</td>
+</tr>
+
+<tr>
+<td>AsP</td>
+<td>Arsenic monophosphide</td>
+<td class=num>604.02</td>
+<td class=num>1.98</td>
+<td class=num></td>
+<td class=num>0.1925</td>
+<td class=num>7.8E-08</td>
+<td class=num>0.0008</td>
+<td class=num>webbook</td>
+</tr>
+
+<tr>
+<td>AsCl</td>
+<td>Arsenic monochloride</td>
+<td class=num>443</td>
+<td class=num>2</td>
+<td class=num></td>
+<td class=num></td>
+<td class=num></td>
+<td class=num></td>
+<td class=num>webbook</td>
+</tr>
+
+<tr>
+<td>GaAs</td>
+<td>Gallium arsenide</td>
+<td class=num>215</td>
+<td class=num>3</td>
+<td class=num></td>
+<td class=num></td>
+<td class=num></td>
+<td class=num></td>
+<td class=num>1990Lem/Bis:121</td>
+</tr>
+
+<tr>
+<td>CSe</td>
+<td>Carbon monoselenide</td>
+<td class=num>1035.36</td>
+<td class=num>4.86</td>
+<td class=num></td>
+<td class=num>0.575</td>
+<td class=num>7.1E-07</td>
+<td class=num>0.00379</td>
+<td class=num>webbook</td>
+</tr>
+
+<tr>
+<td>NSe</td>
+<td>Nitrogen monoselenide</td>
+<td class=num>956.81</td>
+<td class=num>5.64</td>
+<td class=num></td>
+<td class=num>0.5182</td>
+<td class=num>6.5E-07</td>
+<td class=num>0.004</td>
+<td class=num>webbook</td>
+</tr>
+
+<tr>
+<td>SeO</td>
+<td>Selenium monoxide</td>
+<td class=num>914.69</td>
+<td class=num>4.52</td>
+<td class=num></td>
+<td class=num>0.4655</td>
+<td class=num>0.0000005</td>
+<td class=num>0.00323</td>
+<td class=num>webbook</td>
+</tr>
+
+<tr>
+<td>SeF</td>
+<td>Selenium monofluoride</td>
+<td class=num>688.8</td>
+<td class=num>1.84</td>
+<td class=num></td>
+<td class=num></td>
+<td class=num></td>
+<td class=num></td>
+<td class=num>1985Tho/Car:4544</td>
+</tr>
+
+<tr>
+<td>SiSe</td>
+<td>Silicon Monoselenide</td>
+<td class=num>580</td>
+<td class=num>1.78</td>
+<td class=num></td>
+<td class=num>0.1920117</td>
+<td class=num>8.42E-08</td>
+<td class=num>0.0007767</td>
+<td class=num>webbook</td>
+</tr>
+
+<tr>
+<td>SeS<sup>-</sup></td>
+<td>selenium monosulfide anion</td>
+<td class=num>468.9</td>
+<td class=num>1.66</td>
+<td class=num></td>
+<td class=num></td>
+<td class=num></td>
+<td class=num></td>
+<td class=num>webbook</td>
+</tr>
+
+<tr>
+<td>SeO<sub>3</sub></td>
+<td>selenium trioxide</td>
+<td class=num></td>
+<td class=num></td>
+<td class=num></td>
+<td class=num>0.2466</td>
+<td class=num>3.9E-08</td>
+<td class=num></td>
+<td class=num>1978Bra/Edw:158</td>
+</tr>
+
+<tr>
+<td>GeSe</td>
+<td>Germanium monoselenide</td>
+<td class=num>408.7</td>
+<td class=num>1.36</td>
+<td class=num></td>
+<td class=num>9.634051E-02</td>
+<td class=num>2.2071E-08</td>
+<td class=num>2.8904E-04</td>
+<td class=num>webbook</td>
+</tr>
+
+<tr>
+<td>AsSe</td>
+<td>Arsenic monoselenide</td>
+<td class=num>281</td>
+<td class=num>0.5</td>
+<td class=num></td>
+<td class=num></td>
+<td class=num></td>
+<td class=num></td>
+<td class=num>webbook</td>
+</tr>
+
+<tr>
+<td>HBr<sup>+</sup></td>
+<td>hydrogen bromide cation</td>
+<td class=num>2441.52</td>
+<td class=num>47.4</td>
+<td class=num></td>
+<td class=num>8.0721</td>
+<td class=num>0.000348</td>
+<td class=num>0.2363</td>
+<td class=num>webbook</td>
+</tr>
+
+<tr>
+<td>BBr</td>
+<td>Boron monobromide</td>
+<td class=num>684.31</td>
+<td class=num>3.52</td>
+<td class=num></td>
+<td class=num>0.4894</td>
+<td class=num>0.000001</td>
+<td class=num>0.0035</td>
+<td class=num>webbook</td>
+</tr>
+
+<tr>
+<td>CBr</td>
+<td>Carbon monobromide</td>
+<td class=num>727.9894</td>
+<td class=num>3.9518</td>
+<td class=num>0.00904</td>
+<td class=num>0.491221</td>
+<td class=num>8.31E-07</td>
+<td class=num>4.15328E-03</td>
+<td class=num>1997Mar/Sea:413</td>
+</tr>
+
+<tr>
+<td>NBr</td>
+<td>nitrogen monobromide</td>
+<td class=num>691.75</td>
+<td class=num>4.71</td>
+<td class=num></td>
+<td class=num>0.444</td>
+<td class=num></td>
+<td class=num>0.004</td>
+<td class=num>1992Ser/Win:247</td>
+</tr>
+
+<tr>
+<td>BrO</td>
+<td>Bromine monoxide</td>
+<td class=num>726</td>
+<td class=num>4.92</td>
+<td class=num></td>
+<td class=num>0.4296066</td>
+<td class=num>5.921963E-07</td>
+<td class=num></td>
+<td class=num>NISTDiatomic</td>
+</tr>
+
+<tr>
+<td>BrF</td>
+<td>Bromine monofluoride</td>
+<td class=num>669.679</td>
+<td class=num>3.863</td>
+<td class=num></td>
+<td class=num>0.3558494</td>
+<td class=num></td>
+<td class=num></td>
+<td class=num>NISTDiatomic</td>
+</tr>
+
+<tr>
+<td>AlBr</td>
+<td>Aluminum monobromide</td>
+<td class=num>378</td>
+<td class=num>1.28</td>
+<td class=num></td>
+<td class=num>0.1591971</td>
+<td class=num>1.1285E-07</td>
+<td class=num>8.6044E-04</td>
+<td class=num>webbook</td>
+</tr>
+
+<tr>
+<td>SiBr</td>
+<td>Silicon monobromide</td>
+<td class=num>424.14</td>
+<td class=num>1.41</td>
+<td class=num></td>
+<td class=num>0.1671</td>
+<td class=num>1.2E-07</td>
+<td class=num>0.0008</td>
+<td class=num>1981Bos/LeB:787</td>
+</tr>
+
+<tr>
+<td>SiBr<sup>+</sup></td>
+<td>Silicon monobromide cation</td>
+<td class=num>535.7</td>
+<td class=num>1.73</td>
+<td class=num></td>
+<td class=num>0.1858737</td>
+<td class=num>-8.951293E-05</td>
+<td class=num>7.9499E-04</td>
+<td class=num>1995Ish/Oka:317</td>
+</tr>
+
+<tr>
+<td>PBr</td>
+<td>Phosphorus monobromide</td>
+<td class=num>458.35</td>
+<td class=num>1.6</td>
+<td class=num></td>
+<td class=num>0.16067</td>
+<td class=num></td>
+<td class=num>0.00069</td>
+<td class=num>1979Col:1051</td>
+</tr>
+
+<tr>
+<td>BrCl</td>
+<td>Bromine monochloride</td>
+<td class=num>444.322</td>
+<td class=num>1.856</td>
+<td class=num></td>
+<td class=num>0.1524731</td>
+<td class=num></td>
+<td class=num></td>
+<td class=num>NISTDiatomic</td>
+</tr>
+
+<tr>
+<td>CaBr</td>
+<td>Calcium monobromide</td>
+<td class=num>285.3</td>
+<td class=num>0.86</td>
+<td class=num></td>
+<td class=num></td>
+<td class=num></td>
+<td class=num></td>
+<td class=num>webbook</td>
+</tr>
+
+<tr>
+<td>KBr</td>
+<td>Potassium Bromide</td>
+<td class=num>213</td>
+<td class=num>0.8</td>
+<td class=num></td>
+<td class=num>8.122109E-02</td>
+<td class=num>4.4619E-08</td>
+<td class=num>4.0481E-04</td>
+<td class=num>webbook</td>
+</tr>
+
+<tr>
+<td>GaBr</td>
+<td>Gallium monobromide</td>
+<td class=num>266.661</td>
+<td class=num>0.658</td>
+<td class=num></td>
+<td class=num>8.279343E-02</td>
+<td class=num>3.192475E-08</td>
+<td class=num>3.278268E-04</td>
+<td class=num>NISTDiatomics</td>
+</tr>
+
+<tr>
+<td>SeBr</td>
+<td>Selenium monobromide</td>
+<td class=num>317</td>
+<td class=num>0.7</td>
+<td class=num></td>
+<td class=num></td>
+<td class=num></td>
+<td class=num></td>
+<td class=num>1971Old/Rob:907-912</td>
+</tr>
+
+<tr>
+<td>KrH<sup>+</sup></td>
+<td>Protonated Krypton</td>
+<td class=num>2489.497</td>
+<td class=num>48.32927</td>
+<td class=num></td>
+<td class=num>8.346252</td>
+<td class=num>-3.74504E-04</td>
+<td class=num>-0.2654275</td>
+<td class=num>2019Gru/Pir:1719–1731</td>
+</tr>
+
+<tr>
+<td>SbH</td>
+<td>Antimony monohydride</td>
+<td class=num>1921.835</td>
+<td class=num></td>
+<td class=num></td>
+<td class=num>5.683094</td>
+<td class=num>2.06289E-04</td>
+<td class=num></td>
+<td class=num>2005Yu/Fu:257-265</td>
+</tr>
+
+<tr>
+<td>SbN</td>
+<td>Antimony nitride</td>
+<td class=num>864.8</td>
+<td class=num>4.75</td>
+<td class=num></td>
+<td class=num>0.3988</td>
+<td class=num>5.7E-07</td>
+<td class=num>0.0026</td>
+<td class=num>1978Jen/Dau:30</td>
+</tr>
+
+<tr>
+<td>SbF</td>
+<td>Antimony monofluoride</td>
+<td class=num>605</td>
+<td class=num>2.6</td>
+<td class=num></td>
+<td class=num>0.2792</td>
+<td class=num>2.3E-07</td>
+<td class=num>0.002</td>
+<td class=num>webbook</td>
+</tr>
+
+<tr>
+<td>SbCl</td>
+<td>Antimony monochloride</td>
+<td class=num>374.7</td>
+<td class=num>0.6</td>
+<td class=num></td>
+<td class=num></td>
+<td class=num></td>
+<td class=num></td>
+<td class=num>webbook</td>
+</tr>
+
+<tr>
+<td>TeH</td>
+<td>Telluryl radical</td>
+<td class=num></td>
+<td class=num></td>
+<td class=num></td>
+<td class=num>6.14735</td>
+<td class=num></td>
+<td class=num>0.16527</td>
+<td class=num>1989Fin/Set:19-28</td>
+</tr>
+
+<tr>
+<td>TeO</td>
+<td>Tellurium monoxide</td>
+<td class=num>797.11</td>
+<td class=num>4</td>
+<td class=num></td>
+<td class=num>0.3554</td>
+<td class=num>2.7E-07</td>
+<td class=num>0.00237</td>
+<td class=num>webbook</td>
+</tr>
+
+<tr>
+<td>Te<sub>2</sub></td>
+<td>Tellurium diatomic</td>
+<td class=num>247.07</td>
+<td class=num>0.5148</td>
+<td class=num>-0.00055</td>
+<td class=num>0.039681</td>
+<td class=num></td>
+<td class=num>0.000106</td>
+<td class=num>webbook</td>
+</tr>
+
+<tr>
+<td>HI</td>
+<td>Hydrogen iodide</td>
+<td class=num>2309.014</td>
+<td class=num>39.6435</td>
+<td class=num>-0.02</td>
+<td class=num>6.426365</td>
+<td class=num>0.0002069</td>
+<td class=num>0.16886</td>
+<td class=num>webbook</td>
+</tr>
+
+<tr>
+<td>HI<sup>+</sup></td>
+<td>Hydrogen iodide cation</td>
+<td class=num>2195.243</td>
+<td class=num>39.597</td>
+<td class=num></td>
+<td class=num>6.330697</td>
+<td class=num>0.0002086</td>
+<td class=num>0.175393</td>
+<td class=num>1995Cha/Ho:8725-8735</td>
+</tr>
+
+<tr>
+<td>LiI</td>
+<td>Lithium Iodide</td>
+<td class=num>498.1</td>
+<td class=num>3.3</td>
+<td class=num>0.08</td>
+<td class=num>0.5130686</td>
+<td class=num>1.448E-06</td>
+<td class=num>-5.099861E-03</td>
+<td class=num>Webbook</td>
+</tr>
+
+<tr>
+<td>IO</td>
+<td>Iodine monoxide</td>
+<td class=num>681.4</td>
+<td class=num>4.2</td>
+<td class=num></td>
+<td class=num>0.340202</td>
+<td class=num>3.002077E-07</td>
+<td class=num></td>
+<td class=num>NISTDiatomics</td>
+</tr>
+
+<tr>
+<td>IF</td>
+<td>Iodine monofluoride</td>
+<td class=num>610.24</td>
+<td class=num>3.123</td>
+<td class=num>-0.00347</td>
+<td class=num>0.27971</td>
+<td class=num>2.37E-07</td>
+<td class=num>0.001873</td>
+<td class=num>webbook</td>
+</tr>
+
+<tr>
+<td>NaI</td>
+<td>Sodium Iodide</td>
+<td class=num>258</td>
+<td class=num>1</td>
+<td class=num></td>
+<td class=num>0.1178056</td>
+<td class=num>9.734E-08</td>
+<td class=num>0.0006477</td>
+<td class=num>webbook</td>
+</tr>
+
+<tr>
+<td>AlI</td>
+<td>Aluminum monoiodide</td>
+<td class=num>316.25</td>
+<td class=num>0.981</td>
+<td class=num></td>
+<td class=num>0.1176999</td>
+<td class=num>6.521178E-08</td>
+<td class=num>5.585864E-04</td>
+<td class=num>1972Wys/Gor:2130-2136</td>
+</tr>
+
+<tr>
+<td>ICl</td>
+<td>Iodine monochloride</td>
+<td class=num>384.29</td>
+<td class=num>1.501</td>
+<td class=num></td>
+<td class=num>0.1141587</td>
+<td class=num>4.03E-08</td>
+<td class=num>0.0005354</td>
+<td class=num>webbook</td>
+</tr>
+
+<tr>
+<td>KI</td>
+<td>Potassium Iodide</td>
+<td class=num>186.53</td>
+<td class=num>0.574</td>
+<td class=num></td>
+<td class=num>6.087473E-02</td>
+<td class=num>2.5934E-08</td>
+<td class=num>2.6776E-04</td>
+<td class=num>webbook</td>
+</tr>
+
+<tr>
+<td>IBr</td>
+<td>Iodine monobromide</td>
+<td class=num>268.64</td>
+<td class=num>0.814</td>
+<td class=num></td>
+<td class=num>0.0568325</td>
+<td class=num>1.02E-08</td>
+<td class=num>0.0001969</td>
+<td class=num>webbook</td>
+</tr>
+
+<tr>
+<td>I<sub>2</sub></td>
+<td>Iodine diatomic</td>
+<td class=num>214.502</td>
+<td class=num>0.6147</td>
+<td class=num></td>
+<td class=num>0.037372</td>
+<td class=num>4.25E-09</td>
+<td class=num>0.0001138</td>
+<td class=num>webbook</td>
+</tr>
+
+<tr>
+<td>XeH<sup>+</sup></td>
+<td>Xenon, protonated</td>
+<td class=num>2270.18</td>
+<td class=num>41.32866</td>
+<td class=num></td>
+<td class=num>6.561929</td>
+<td class=num>-0.1867243</td>
+<td class=num></td>
+<td class=num>2019Gru/Pir:1719–1731</td>
+</tr>
+
+</table>
+<script>(function(){function c(){var b=a.contentDocument||(a.contentWindow&&a.contentWindow.document);if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a522ae19f9d2bc84',t:'MTc5MzI4MjE0OQ=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>
+
