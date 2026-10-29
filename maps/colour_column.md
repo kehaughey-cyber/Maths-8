@@ -21,3 +21,10 @@ The closeness above is not a shared ratio. B ~ a_v A and r ~ r0 A^(1/3) give cyc
 The carbon value is a crossing of a rising curve. What is constant across nuclei is B/A (about 8 MeV) times r0 (about 1.2 fm) / hbar c, about 0.05 cycles per nucleon, i.e. saturation.
 
 sha256: *colour_column.py 573348aae7f912c7f0dbe65fb5a07a4da8ac46e3e4b8af2c5cbc16cda779b598; *colour_column.out 65dc4ea10524470767ca5c3aa3ba0d5d70d371e34ef0284d47d65718312c267a.
+
+## Nucleon row (append-only addition; script `explore/nucleon_row.py`, output `explore/nucleon_row.out`)
+The nucleon is the same-size object inside every nucleus (12C = 6 p + 6 n; 12N of them in the gram). Source: r_p = 0.84075(64) fm, 2022 CODATA (`explore/data/codata2022_proton_radius.txt`, from physics.nist.gov, page text not saved as HTML). lambda_p = hbar/(m_p c) = 2.10308910272e-16 m.
+- cycles r_p m_p c^2/(hbar c) = r_p/lambda_p = 3.99769082 +- 0.00304 (CODATA 2022); 4.000781512 +- 0.00903 with the 2018 value 0.8414(19) fm (recalled). 4 is within 0.76 sigma (2022) and 0.09 sigma (2018). Observed, not derived.
+- momentum scale hbar c/r_p = 234.70 MeV, Q^2 = 0.05509 GeV^2, inside the region where alpha_g1 is measured and near-flat (within ~0.5% of pi by Deur's slope).
+- C_F alpha_g1(0) = 4.188790205; nucleon cycles / that = 0.95437838. A comparison (4.6% apart), not a match.
+sha256: *nucleon_row.py cc24ad78d8438992ab529ec2052a959868532c0139c901f94b458e767633bcbb; *nucleon_row.out 130fc6961ffa80481f2d622af92fb5730a638be7d2c01ef589b20033de2f6da5; codata2022_proton_radius.txt 419aedf72d051a6b37b6ef1c9d9c9be5a358788792999083d7fdae77a3107e16.

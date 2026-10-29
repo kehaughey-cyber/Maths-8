@@ -1,0 +1,7 @@
+proton Compton length hbar/(m_p c) = 2.10308910272e-16 m
+CODATA 2022              r_p = 8.4075e-16 +- 6.4e-19 m ; cycles r_p m_p c^2/(hbar c) = r_p/lambda_p = 3.99769082 +- 0.00304 ; minus 4 = -0.00230918 (-0.759 sigma)
+                         momentum scale hbar c/r_p = 234.70352 MeV, Q^2 = 0.0550857 GeV^2 ; C_F alpha_g1(0) = 4.188790205 ; ratio cycles/(C_F alpha_g1) = 0.95437838
+CODATA 2018 (recalled)   r_p = 8.414e-16 +- 1.9e-18 m ; cycles r_p m_p c^2/(hbar c) = r_p/lambda_p = 4.000781512 +- 0.00903 ; minus 4 = 0.000781512 (0.0865 sigma)
+                         momentum scale hbar c/r_p = 234.5222 MeV, Q^2 = 0.0550007 GeV^2 ; C_F alpha_g1(0) = 4.188790205 ; ratio cycles/(C_F alpha_g1) = 0.95511623
+alpha_g1 at that Q^2: not tabulated here; Deur: slope near 0 gives ~1% decrease per 0.1 GeV^2, so within ~0.5% of pi at Q^2 = 0.055 GeV^2.
+the 4 is an observation, not derived; the 4.7% difference between 4.0 and C_F pi = 4.19 is a comparison, not a match.
