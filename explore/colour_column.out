@@ -1,0 +1,17 @@
+INPUTS  alpha_g1(0) = pi =  3.14159265359 ;  alpha_V(0) = 0.42 +- 0.03 ;  alpha_s(m_Z^2) = 0.1180 +- 0.0009 ;  C_F = 4/3
+12C nucleus: R = r_ch = 2.4702e-15 m, E = B = 92161735.2 eV, cycles R E/(hbar c) = 1.15370902565
+momentum scale hbar c / r_ch = 79.882997 MeV ; Q^2 = 0.00638129 GeV^2  (inside the near-flat region of alpha_g1: slope bound ~1% per 0.1 GeV^2)
+
+COLOUR CYCLES  C_F alpha  (the strong analogue of alpha Q^2, pair-binding cycles at any R, if the coupling is the frozen one)
+  alpha_g1(0)          alpha =    3.1415927 exact, eq 4.4  C_F alpha =  4.188790205   nucleus cycles / (C_F alpha) = 0.2754277415
+  alpha_V(0) central   alpha =         0.42 +-0.03         C_F alpha =         0.56   nucleus cycles / (C_F alpha) = 2.060194689
+  alpha_V(0) low       alpha =         0.39                C_F alpha =         0.52   nucleus cycles / (C_F alpha) = 2.218671203
+  alpha_V(0) high      alpha =         0.45                C_F alpha =          0.6   nucleus cycles / (C_F alpha) = 1.922848376
+
+FOR COMPARISON (four_languages_ladder.out, same quantity E/E_C = cycles/(coupling cycles)):
+  H atom 0.5 ; C valence 0.27479962 ; Compton rungs 137.036 (= 1/alpha) ; 12C nucleus vs EM alpha Q^2 (Q = 6) 4.3916575
+  12C nucleus vs C_F alpha_g1(0): 0.2754277415  (ratio to C valence 0.27479962: 1.0022857 )
+  12C nucleus vs C_F alpha_V(0) = 0.56 : 2.060194689
+
+READING  the 0.2754 vs 0.2748 closeness was noticed after the numbers were computed; it uses three free choices (the rung, C_F, the g1 scheme). With the V scheme the same ratio is 2.06. One data point, scheme dependent: noted, not claimed.
+         alpha_s(m_Z) = 0.1180 would give C_F alpha =  0.15733333 at 91.19 GeV (hbar c / 91.19 GeV =  2.16396e-18 m): not a nuclear-size quantity; shown for the range of the coupling (factor 26.6237 from m_Z to Q=0 in the g1 scheme).

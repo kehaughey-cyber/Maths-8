@@ -1,0 +1,54 @@
+LANGUAGE 1  ENERGY AND SIZE   cycles = R E/(hbar c)
+  rung                               R m      p12           E eV  log12 E         cycles
+  tau (Compton)              1.11049e-16  17.4549     1.77693e+9    8.571            1.0
+  muon (Compton)             1.86759e-15  18.5907   1.0565838e+8   7.4352            1.0
+  electron (Compton)         3.86159e-13  20.7363      510998.95   5.2896            1.0
+  proton (Compton)           2.10309e-16  17.7119   9.3827209e+8    8.314            1.0
+  12C nucleus (r_ch, B)       2.4702e-15  18.7033     92161735.0   7.3802    1.153709026
+  H atom (a0, Ry)            5.29177e-11  22.7164      13.605693   1.0505 0.003648676286
+  C valence (n=2)            1.16334e-10  23.0334      11.260779  0.97441 0.006638794288
+  C-C bond (diamond)         1.54448e-10  23.1474      3.6855343  0.52494 0.002884675947
+  the gram                    0.00408081  30.0248  5.6095886e+32   30.346 1.160087212e+37
+
+LANGUAGE 2  MASS   m (eV), m/m_e, log12(m/m_P), gravitational coupling (m/m_P)^2, Compton length in p12, Schwarzschild radius 2Gm/c^2 in p12
+  rung                               m eV         m/m_e  log12 m/mP     (m/mP)^2 lambda p12   r_s p12
+  tau (Compton)                1.77693e+9     3477.3653    -17.4549   2.1183e-38    17.4549   -17.176
+  muon (Compton)             1.0565838e+8     206.76828    -18.5907  7.48953e-41    18.5907  -18.3118
+  electron (Compton)            510998.95           1.0    -20.7363  1.75181e-45    20.7363  -20.4574
+  proton (Compton)           9.3827209e+8     1836.1527    -17.7119  5.90615e-39    17.7119   -17.433
+  12C nucleus (r_ch, B)     1.1174863e+10     21868.662    -16.7149  8.37782e-37    16.7149   -16.436
+  H atom (a0, Ry)            9.3878309e+8     1837.1527    -17.7117  5.91258e-39    17.7117  -17.4327
+  C valence (n=2)           1.1177929e+10     21874.662    -16.7148  8.38242e-37    16.7148  -16.4359
+  C-C bond (diamond)        1.1177929e+10     21874.662    -16.7148  8.38242e-37    16.7148  -16.4359
+  the gram                  5.6095886e+32 1.0977691e+27     4.32018    2.1111e+9   -4.32018   4.59912
+
+LANGUAGE 3  CHARGE   Q felt (units of e); Coulomb cycles alpha Q^2 (= R E_C/hbar c at any R); E_C at the rung R; row E / E_C
+  rung                             Q     alpha Q^2         E_C eV        E/E_C
+  tau (Compton)                    1  0.0072973526     12966885.0      137.036
+  muon (Compton)                   1  0.0072973526      771026.42      137.036
+  electron (Compton)               1  0.0072973526      3728.9395      137.036
+  proton (Compton)                 1  0.0072973526      6846902.2      137.036
+  12C nucleus (r_ch, B)            6    0.26270469     20985638.0    4.3916575
+  H atom (a0, Ry)                  1  0.0072973526      27.211386          0.5
+  C valence (n=2)            1.81951   0.024158674      40.978146   0.27479962
+  C-C bond (diamond)               0             -              -            -   (R = bond length, E = Ec/2; mass = atom share; Q felt 0 (neutral))
+  the gram                         0             -              -            -   (R = equal-volume sphere, E = M c^2; charge content below)
+  gram, charge content: positive charge 3.011070381e+23 e = 48242.66608 C; all charges |Q| = 12 N e = 96485.33216 C (Faraday constant 96485.33212 C/mol, since 12N = 1 mol); net 0
+  gram, unscreened: alpha Q^2 with Q = 6N = 6.6161774e+44; Coulomb energy of the positive charge alone at R_sph = 3.1992451e+40 eV = 57031725.0 x M c^2
+
+LANGUAGE 4  INFORMATION   bits per object = 2 pi cycles / ln 2; count in the gram; total bits
+  rung                             cycles           nats    bits/object  count in gram     total bits
+  tau (Compton)                       1.0    6.283185307    9.064720284              -              -
+  muon (Compton)                      1.0    6.283185307    9.064720284              -              -
+  electron (Compton)                  1.0    6.283185307    9.064720284     3.0111e+23  2.7294511e+24
+  proton (Compton)                    1.0    6.283185307    9.064720284     3.0111e+23  2.7294511e+24
+  12C nucleus (r_ch, B)       1.153709026    7.248967599    10.45804961     5.0185e+22  5.2483206e+23
+  H atom (a0, Ry)          0.003648676286  0.02292530923  0.03307422994              -              -
+  C valence (n=2)          0.006638794288  0.04171277473  0.06017881324     5.0185e+22   3.020044e+21
+  C-C bond (diamond)       0.002884675947  0.01812495353  0.02614878057     1.0037e+23  2.6245273e+21
+  the gram                 1.160087212e+37 7.289042926e+37 1.051586608e+38              1  1.0515866e+38
+  other counts for the same gram: thermodynamic entropy 2.0708965e+22 bits; atoms 5.0184506e+22 (log2 75.4097 bits to label one); Bekenstein-Compton 1.0515866e+38 bits
+
+CROSS-CHECK  one gram, same cycle count in each language: cycles(R E) vs (R/lambda_C)(m/m_P-style) forms
+  cycles via energy-size: 1.16008721205e+37; via R/lambda_C(gram): 1.16008721242e+37 (same number: lambda_C = hbar/(M c))
+  gravitational: (M/m_P)^2 = 2.1111003e+9; gram R_sph / r_s = 2.7475891e+27
