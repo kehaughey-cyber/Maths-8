@@ -1,0 +1,40 @@
+GEOMETRY  cube side 0.0065782287 m; face 0.43273093 cm^2; sphere projected area pi R^2 0.52316908 cm^2
+
+(1) MUONS  PDG 2020 Cosmic Rays review (explore/data/pdg2020_cosmic_rays.txt lines 308-311):
+    vertical integral intensity E>1 GeV/c at sea level ~ 70 m^-2 s^-1 sr^-1 = 0.0070 cm^-2 s^-1 sr^-1; recent measurements favour 10-15% lower; angular law cos^2(theta); "~1 cm^-2 min^-1 for horizontal detectors"
+    PDG 70             (pi/2) I A face: 0.00475813 s^-1 = 0.285488 /min = 411.102 /day
+    PDG 70 minus 10%   (pi/2) I A face: 0.00428231 s^-1 = 0.256939 /min = 369.992 /day
+    PDG 70 minus 15%   (pi/2) I A face: 0.00404441 s^-1 = 0.242664 /min = 349.437 /day
+    PDG "1 cm^-2 min^-1" (all energies, horizontal) x face: 0.00721218 s^-1 = 0.432731 /min = 623.133 /day
+    ratio of that to the E>1 GeV cos^2 integral (PDG 70): 1.51576  -> the rate depends on the energy threshold at the factor 1.5 level, and on a flux normalization at 10-15%
+    the cos^2 integral itself: 2 pi I int cos^3 sin d theta = (pi/2) I exactly; a different exponent n gives 2 pi I/(n+2): n=2 -> pi/2 = 1.5708, n=2.0 vs 1.8 changes it by 0.05263
+    range carried for the gram: 0.2427 - 0.4327 per minute (a factor 1.78 )
+
+(2) u, d MASSES  PDG 2024 (pdg2024_quarks.txt): mu = 2.16 +- 0.07 MeV, md = 4.70 +- 0.07 MeV (90% CL), mu/md = 0.462 +- 0.020, (mu+md)/2 = 3.49 +- 0.07 MeV; all MSbar at 2 GeV
+    valence 18u+18d at PDG central: 123.48 MeV = 1.10468 % of the atom rest energy
+    PDG linear extremes (+-0.07 each, fully correlated): 120.96 - 126.0 MeV = 1.08213 - 1.12722 %
+    PDG (mu+md)/2 = 3.49 +- 0.07 -> 36 x that = 125.64 MeV; consistent with 18(mu+md)
+    lattice cross-check: FLAG m_ud = 3.364(41) MeV (Nf=2+1, via arXiv:2003.11703 as quoted in a search result, secondary) with PDG mu/md=0.462 ->
+      mu = 2.12608  md = 4.60192 MeV; sum 18(mu+md) = 121.104 MeV = 1.08342 % ; difference from PDG central -0.01924
+    scale dependence (ILLUSTRATIVE, one-loop, inputs not from a saved file): m(mu) ~ alpha_s(mu)^(4/9) for nf=3; with alpha_s(1,2,3 GeV) = 0.47, 0.30, 0.25 (rough):
+      mu_scale 1 GeV: factor 1.2208 -> 18(mu+md) = 150.748 MeV = 1.3486 %
+      mu_scale 2 GeV: factor 1.0 -> 18(mu+md) = 123.48 MeV = 1.1047 %
+      mu_scale 3 GeV: factor 0.92216 -> 18(mu+md) = 113.869 MeV = 1.0187 %
+    the quark mass sum is a convention-dependent number; the reading "1.1% of the atom is bare quark mass" is good to about 2-3% of itself (statistical) and moves about 20% with the scale convention; the other ~99% is the proton/neutron mass that is not the bare quark masses
+
+(3) NEUTRINOS THROUGH THE GRAM  (Borexino Phase-II Table II, explore/data/borexino_2018_arxiv1707.09279.txt lines 958-965; fluxes inferred assuming MSW-LMA, cm^-2 s^-1)
+    species  flux cm^-2 s^-1    crossings/s E used MeV   sigma(nu_e e) cm^2   interactions/s      per day  note
+    pp             6.1e+10     3.1913e+10      0.265          1.12188e-45       2.0606e-11    1.7804e-6  measured (6.1 +-0.5 +0.3/-0.5)e10; SSM HZ 5.98e10, LZ 6.03e10
+    7Be            4.99e+9      2.6106e+9      0.862          5.94484e-45       8.9323e-12    7.7175e-7  measured (4.99 +-0.11 +0.06/-0.08)e9; SSM HZ 4.93e9, LZ 4.50e9
+    pep            1.27e+8      6.6442e+7       1.44          1.11719e-44       4.2722e-13    3.6912e-8  measured (HZ) (1.27 +-0.19 +0.08/-0.12)e8; SSM 1.44e8, 1.46e8
+    CNO             7.9e+8       4.133e+8        1.0          7.17077e-45       1.7057e-12    1.4738e-7  upper limit <7.9e8 (95% CL) in that paper; SSM HZ 4.88e8, LZ 3.51e8. Energy 1 MeV is a placeholder
+    pp+7Be+pep crossings through the gram per second: 3.459e+10 ; elastic nu_e-e interactions per second on the 6N electrons (tree level, nu_e only, mean/line energy used for pp, spectrum not integrated; oscillated mu/tau flavour omitted, which lowers it): 2.9966e-11 = 2.589e-6 per day
+    pp 0.265 MeV = mean of the pp spectrum (endpoint 0.42 MeV), recalled, not from a saved file; 7Be 0.862 MeV and pep 1.44 MeV are line energies; sin^2 theta_W recalled; so the interaction counts are order-of-magnitude, the crossing counts are flux x area only
+    14C antineutrinos made inside the gram (modern 14C, 0.226 Bq/g): 0.226 per second for 1 g of natural carbon, a fraction 6.534e-12 of the pp+7Be+pep crossings per second
+    crossings per atom of the gram per second (pp): 6.3592e-13 ; the 12C nucleus area pi r_ch^2 = 1.917e-25 cm^2 -> geometric nuclear crossings/s per gram 5.8683e+8 (only a geometric figure; the weak cross section is ~1e-20 of it)
+    not included (no sourced file): 8B, hep, CNO measured value, geo-antineutrinos, reactor, atmospheric, relic
+
+(4) DERIVED RATIOS  None of the ratios in the map is derived from the floor. Which are arithmetic on inputs:
+    exact identities of the dictionary: cycles = R E/(hbar c); cycles/(alpha/2) for the valence rung = Z_eff; 2 pi nats per cycle.
+    ratios of two sourced numbers, nothing else: B/Mc^2, r_ch/lambda_tau, a0/lambda_e = 1/alpha = 137.035999, level step ratios.
+    no ratio here follows from 2I/E8/12/30; 1/alpha, the lepton mass ratios and the nuclear 1.15 cycles are inputs to this map, not outputs of the floor.

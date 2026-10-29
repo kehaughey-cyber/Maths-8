@@ -1,0 +1,1305 @@
+arXiv:1707.09279v3 [hep-ex] 20 Dec 2019      Simultaneous Precision Spectroscopy of pp, 7Be, and pep Solar Neutrinos with
+
+                                                                                         Borexino Phase-II
+
+                                              M. Agostini,1 K. Altenmu¨ller,1 S. Appel,1 V. Atroshchenko,2 Z. Bagdasarian,3 D. Basilico,4 G. Bellini,4
+                                         J. Benziger,5 G. Bonfini,6 D. Bravo+,4 B. Caccianiga,4 F. Calaprice,7 A. Caminata,8 L. Cappelli,6 S. Caprioli,4
+
+                                                M. Carlini,6 P. Cavalcante++,9 F. Cavanna,8 A. Chepurnov,10 K. Choi,11 L. Collica,4 D. D'Angelo,4
+                                                S. Davini,8 A. Derbin,12 X.F. Ding,13, 6 A. Di Ludovico,7 L. Di Noto,8 I. Drachnev,12 K. Fomenko,14
+                                         A. Formozov,14, 4, 10 D. Franco,15 F. Gabriele,6 C. Galbiati,7, 13 M. Gschwender,16 C. Ghiano,6 M. Giammarchi,4
+                                           A. Goretti++,7 M. Gromov,10, 14 D. Guffanti,13, 6 T. Houdy,15 E. Hungerford,17 Aldo Ianni,6 Andrea Ianni,7
+                                            A. Jany,18 D. Jeschke,1 S. Kumaran,3, 19 V. Kobychev,20 G. Korga,17 T. Lachenmaier,16 M. Laubenstein,6
+                                             E. Litvinovich,2, 21 P. Lombardi,4 L. Ludhova,3, 19 G. Lukyanchenko,2 L. Lukyanchenko,2 I. Machulin,2, 21
+
+                                                  G. Manuzio,8 S. Marcocci,13 J. Maricic,11 J. Martyn,22 E. Meroni,4 M. Meyer,23 L. Miramonti,4
+                                               M. Misiaszek,18 V. Muratova,12 B. Neumair,1 M. Nieslony,22 L. Oberauer,1 V. Orekhov,2 F. Ortica,24
+                                         M. Pallavicini,8 L. Papp,1 O¨ . Penek,3, 19 L. Pietrofaccia,7 N. Pilipenko,12 A. Pocar,25 A. Porcelli,22 G. Raikov,2
+                                          G. Ranucci,4 A. Razeto,6 A. Re,4 M. Redchuk,3, 19 A. Romani,24 N. Rossi+,6 S. Rottenanger,16 S. Sch¨onert,1
+                                         D. Semenov,12 M. Skorokhvatov,2, 21 O. Smirnov,14 A. Sotnikov,14 L.F.F. Stokes,6 Y. Suvorov,6, 2 R. Tartaglia,6
+                                            G. Testera,8 J. Thurn,23 E. Unzhakov,12 F. Villante,6, 26 A. Vishneva,14 R.B. Vogelaar,9 F. von Feilitzsch,1
+                                                S. Weinz,22 M. Wojcik,18 M. Wurm,22 O. Zaimidoroga,14 S. Zavatarelli,8 K. Zuber,23 and G. Zuzel18
+
+                                                                                                 (Borexino Collaboration)
+
+                                                                    (This work is dedicated to the memory of Simone Marcocci, a young
+
+                                                                        brilliant scientist, a valuable collaborator and our great friend.)
+
+                                             1Physik-Department and Excellence Cluster Universe, Technische Universita¨t Mu¨nchen, 85748 Garching, Germany
+                                                                          2National Research Centre Kurchatov Institute, 123182 Moscow, Russia
+
+                                                                       3Institut fu¨r Kernphysik, Forschungszentrum Ju¨lich, 52425 Ju¨lich, Germany
+                                                                     4Dipartimento di Fisica, Universit`a degli Studi and INFN, 20133 Milano, Italy
+                                                                5Chemical Engineering Department, Princeton University, Princeton, NJ 08544, USA
+
+                                                                          6INFN Laboratori Nazionali del Gran Sasso, 67010 Assergi (AQ), Italy
+                                                                          7Physics Department, Princeton University, Princeton, NJ 08544, USA
+                                                                    8Dipartimento di Fisica, Universita` degli Studi and INFN, 16146 Genova, Italy
+                                                     9Physics Department, Virginia Polytechnic Institute and State University, Blacksburg, VA 24061, USA
+                                                     10Lomonosov Moscow State University Skobeltsyn Institute of Nuclear Physics, 119234 Moscow, Russia
+                                                             11Department of Physics and Astronomy, University of Hawaii, Honolulu, HI 96822, USA
+                                                          12St. Petersburg Nuclear Physics Institute NRC Kurchatov Institute, 188350 Gatchina, Russia
+
+                                                                                      13Gran Sasso Science Institute, 67100 L'Aquila, Italy
+                                                                                14Joint Institute for Nuclear Research, 141980 Dubna, Russia
+                                                                15AstroParticule et Cosmologie, Universit´e Paris Diderot, CNRS/IN2P3, CEA/IRFU,
+
+                                                                       Observatoire de Paris, Sorbonne Paris Cit´e, 75205 Paris Cedex 13, France
+                                                        16Kepler Center for Astro and Particle Physics, Universita¨t Tu¨bingen, 72076 Tu¨bingen, Germany
+
+                                                                       17Department of Physics, University of Houston, Houston, TX 77204, USA
+                                                               18M. Smoluchowski Institute of Physics, Jagiellonian University, 30348 Krakow, Poland
+
+                                                                                      19RWTH Aachen University, 52062 Aachen, Germany
+                                                                                  20Kiev Institute for Nuclear Research, 03680 Kiev, Ukraine
+                                              21National Research Nuclear University MEPhI (Moscow Engineering Physics Institute), 115409 Moscow, Russia
+                                          22Institute of Physics and Excellence Cluster PRISMA, Johannes Gutenberg-Universita¨t Mainz, 55099 Mainz, Germany
+                                                                 23Department of Physics, Technische Universita¨t Dresden, 01062 Dresden, Germany
+                                                   24Dipartimento di Chimica, Biologia e Biotecnologie, Universita` degli Studi e INFN, 06123 Perugia, Italy
+
+                                         + Present address: Universidad Autnoma de Madrid, Ciudad       (FNAL), Batavia, IL 60510, USA
+                                         Universitaria de Cantoblanco, 28049 Madrid, Spain              + Present address: Dipartimento di Fisica, Sapienza Universita`
+                                         ++ Present address: INFN Laboratori Nazionali del Gran Sasso,
+                                         67010 Assergi (AQ), Italy                                      di Roma e INFN, 00185 Roma, Italy
+                                          Also at: MTA-Wigner Research Centre for Physics, Depart-       Present address: Dipartimento di Fisica, Universit`a degli Studi
+                                         ment of Space Physics and Space Technology, 1121 Budapest,
+                                         Hungary                                                        Federico II e INFN, 80126 Napoli, Italy
+                                          Present address: Fermi National Accelerato Laboratory          Corresponding author: spokeperson-borex@lngs.infn.it
+                                                                                                                                       2
+
+                     25Amherst Center for Fundamental Interactions and Physics
+
+               Department, University of Massachusetts, Amherst, MA 01003, USA
+26Dipartimento di Scienze Fisiche e Chimiche, Universita` dell'Aquila, 67100 L'Aquila, Italy
+
+                                            (Dated: December 23, 2019)
+
+We present the simultaneous measurement of the interaction rates Rpp, RBe, Rpep of pp, 7Be, and
+
+pep solar neutrinos performed with a global fit to the Borexino data in an extended energy range (0.19
+
+- 2.93) MeV with particular attention to details of the analysis methods. This result was obtained by
+
+analyzing 1291.51 days of Borexino Phase-II data, collected after an extensive scintillator purifica-
+
+tion  campaign.   Using        counts  per   day  (cpd)/100 ton  as  unit,  we  find  Rpp          =  134  ±  10  (stat)  +6   (sys),
+                                                                                                                          -10
+
+RBe   =  48.3  ±  1.1  (stat)  +0.4  (sys);  and  Rpep HZ =  2.43 ± 0.36 (stat )-0.22 +0.15 (sys)  assuming       the  interaction
+                               -0.7
+
+rate RCNO of CNO-cycle solar neutrinos according to the prediction of the high metallicity Stan-
+dard Solar Model, and Rpep LZ = 2.65 ± 0.36 (stat )-0.24 +0.15 (sys) according to that of the low metallicity
+
+model.
+
+An upper limit RCNO < 8.1 cpd/ 100 ton (95% C.L.) is obtained by setting in the fit a constraint
+
+on the ratio Rpp/Rpep (47.7 ± 0.8 cpd/100 ton or 47.5 ± 0.8 cpd/100 ton according to the high or
+
+low metallicity hypothesis).
+
+                       I. INTRODUCTION                       solar neutrino spectrum can cross-check the SSM predic-
+                                                             tions. In particular, the experimental determination of
+   Solar neutrinos produced in electron flavour (e) in       the fluxes  of 7Be, 8B or CNO neutrinos, which are the
+fusion reactions occurring in the Sun provide a unique       most sensitive ones to the solar metallicity (the abun-
+and direct way to study the interior of our star. The        dance of the elements heavier than He in the Sun), can
+main contribution to the solar luminosity (99%) comes        help to settle the question of high (HZ) versus low (LZ)
+from reactions belonging to the pp chain, while the CNO      metallicity [3].
+cycle is expected to play a sub-dominant role [1].
+                                                                The Borexino experiment has recently reported a com-
+   The solar neutrino () spectrum, as predicted by the       prehensive measurement of the solar neutrino spectrum
+Standard Solar Model (SSM) [2, 3], is dominated by the       from the whole pp nuclear fusion chain in the energy
+low-energy neutrinos produced in the primary pp reac-        range of (0.19 - 16) MeV. These results are presented
+tion (E < 0.42 MeV) and it extends up to 18.8 MeV            in [10] together with their physical implications. They
+(maximum energy of the hep s). It also features two          include the updated values of the neutrino survival prob-
+mono-energetic lines from 7Be s (E = 0.384 MeV and           ability Pee as a function of the neutrino energy, the first
+0.862 MeV) and one mono-energetic line from pep s            direct measurement of the ratio R between the 3He + 4He
+(E = 1.44 MeV). Neutrinos from the CNO cycle are ex-         (pp-II) and the 3He + 3He (pp-I) branches of the pp chain
+pected to have a continuous energy spectrum extending        obtained by combining our results on the 7Be and pp s,
+up to 1.74 MeV. The spectrum of 8B s is also continuous      and finally a preference for the HZ-metallicity choice in
+and it ends up at about 16.5 MeV.                            the SSM.
+
+   The 50-year-long experimental effort to study solar          In this paper we present the details of the analysis
+neutrinos [4, 5] has been extremely rewarding both in        of the data belonging to the lowest part of the energy
+terms of solar physics, by confirming the SSM predic-        spectrum which extends from 0.19 to 2.93 MeV. This Low
+tions [3], and in terms of particle physics, by giving       Energy Region (LER) is used to extract the interaction
+a substantial contribution to the discovery of neutrino      rates Rpp, RBe, Rpep, as well as to set the limit on RCNO.
+flavour oscillations [6], [7]. The present-day precision     The analysis of the data from the so-called High Energy
+spectroscopy of solar neutrinos aims at studying the de-     Region (HER) from 3.2 to 16 MeV, where our sensitivity
+tails of their energy spectrum by disentangling the contri-  to 8B s is maximized and from 11 to 20 MeV energy
+butions from the different reactions (pp chain s, namely     region, in which the first Borexino limit on hep s is set,
+pp, 7Be, pep, 8B, and hep s, and CNO cycle s).               is discussed in [11].
+
+   On the one hand, if the SSM predictions of solar fluxes      While our previous measurements of the pp [12],
+ are assumed, measuring the solar neutrino interac-          7Be [5], pep [13], and 8B [14] s were obtained separately
+tion rates R for different reactions helps to pin down       by analyzing data in restricted energy ranges, the results
+the electron-flavour neutrino survival probability Pee for   of [10] provide a unified analysis over the interval cover-
+different energies (that is the probability that es do       ing the LER and HER. The experience from the previous
+not undergo flavor oscillations while travelling from their  analyses in different energy intervals, each of them hav-
+Sun production point to the detector). Consequently, it      ing specific difficulties, was fundamental in the process
+probes the predictions of the MSW-LMA model [8] and          of building up the comprehensive understanding of our
+can set constraints on possible deviations, e.g. due to      data and of the detector response across the combined
+non-standard interactions (NSI) [9].                         energy interval as a whole. In addition, other important
+                                                             elements of the measurement are: an accurate calibra-
+   On the other hand, if the neutrino oscillation parame-    tion campaign [15] in the energy interval ranging from
+ters are assumed, the study of specific components of the
+                                                                                                                                     3
+
+0.15 to 9 MeV carried out by deploying several radioac-         factor 4.6 and 2.3 (see this work).
+tive sources inside the detector, a detailed Monte Carlo
+(MC) simulation fine-tuned to reproduce the calibration            The expected solar s interaction rate in Borexino
+data simultaneously at low and at high energies [16], and       ranges from few to 100 cpd/100 ton depending on the
+the use of data-processing and data-selection as well as        neutrino component. Together with the lack of direc-
+background-rejection tools common to the whole energy           tionality information from the scintillation light, this low
+range.                                                          rate demands a high detector radio-purity, a deep under-
+                                                                standing of the backgrounds, and an accurate modelling
+   The unified analysis approach in the LER, described          of the detector response.
+in this work, together with a larger exposure and a re-
+duction of the most relevant backgrounds in the Phase-II           The position and pulse-shape of each event are recon-
+lead to a significant improvement of the accuracy of our        structed by exploiting the number of detected photons
+previous Phase-I results about the RBe (from 4.8% to            and their detection times. The information about the
+2.7%) and Rpep (from 21.6% to 17.4/16.3%, depending             event energy is carried by the number of detected pho-
+on the HZ/LZ-SSM assumption, respectively). For Rpp             toelectrons or just the number of hit PMTs, as in our
+the improvement is smaller, from the precision of 11.4%         energy range the PMTs mainly work in a single pho-
+to 10.6%.                                                       toelectron regime. In detail, we define different energy
+                                                                estimators: Np which is the total number of hit PMTs
+   II. THE BOREXINO DETECTOR AND THE                            in the event or Npdt1(2) , the number of hit PMTs happen-
+                         DATA SELECTION                         ing within a fixed time interval of 230 (400) ns; Nh the
+                                                                number of detected hits, including multiple hits on the
+   The Borexino experiment is located at the Laboratori         same PMT and, finally Npe, the total charge collected
+Nazionali del Gran Sasso in Italy. The core of the detec-       by each PMT anode, that is the number of photoelec-
+tor [17] is 278 ton of ultra-pure organic liquid scintillator,  trons, p.e. As it will be detailed in section Sec. V C,
+namely PC (pseudocumene, 1,2,4-trimethylbenzene) as a           the energy is not reconstructed meaning that, during the
+solvent and 1.5 g/l of fluor PPO (2,5-diphenyloxazole) as       analysis procedure, we do not convert the values of the
+a solute, contained in a 125 µm-thick nylon Inner Ves-          energy estimator into the event energy. On the contrary,
+sel (IV) of 4.25 m radius, surrounded by nominally 2212         we build the prediction of the measured variables trans-
+8-inch ETL 9351 photomultipliers (PMTs). Since the              forming the theoretical event energy into the correspond-
+beginning of the data taking, we observed a slow PMT            ing value of a given energy estimator. As a reference,
+failure rate over time. As a reference, the number of           at 1 MeV, the energy and position reconstruction resolu-
+working channels was 1769 at the beginning of the data-         tions are  50 keV and  10 cm, respectively. The trigger
+taking period considered in this work while it was 1383         threshold is Np > 20 in a 100 ns time window, which cor-
+at its end.                                                     responds to 50 keV.
+
+   Neutrinos of any flavour interact by elastic scattering      To account for the variation in the number of work-
+with electrons, whose recoil produces scintillation light
+(500 photoelectrons/MeV/2000 PMTs). The density of              ing channels as a function of time, in the analysis and
+target electrons in the scintillator is (3.307±0.003)×1031/
+100 ton. A non-scintillating buffer fills the space between     simulation procedures, all the energy estimators are nor-
+the IV and a Stainless-Steel Sphere (SSS) of 6.85 m ra-
+dius, which supports the PMTs. The buffer liquid is             malised to a fixed number Ntot of PMTs (typically Ntot =
+further divided in two regions by another nylon vessel of                                                                 Nm
+radius 5.5 m which prevents radon emanating from the            2000  PMTs)   [18]  through    the  relation  Np,h,pe  =             ·
+SSS and the PMTs to enter the core of the detector. The                                                                      p,h,pe
+entire detector is enclosed in a cylindrical tank filled with                       Nm
+ultra-pure water and instrumented with 208 PMTs, act-           Ntot/N  (t),  with             being  the  measured  value  of  the
+ing as an active Cherenkov muon veto and as a passive                                  p,h,pe
+shield against external s and neutrons.
+                                                                energy estimator and N (t) is the time-dependent num-
+   The present analysis is based on the data collected be-
+tween December 14th, 2011 to May 21st, 2016, which cor-         ber of working PMTs.
+responds to an exposure of 1291.51 days × 71.3 t ( 1.6
+times the exposure used in [5]). This period belongs to            Events in the entire LER are selected using the same
+the so-called Borexino Phase-II, which started after an         cuts described in [12]: we remove internal (external)
+extensive purification campaign of the scintillator with        muons [19] and we apply a 300 (2) ms veto to sup-
+6 cycles of closed-loop water extraction, which has sig-        press cosmogenic backgrounds. The total dead-time in-
+nificantly reduced the radioactive contaminants: 238U           troduced by these vetoes is 1.5%. We remove 214Bi -
+< 9.4 × 10-20 g/g (95% C.L.), 232Th < 5.7 × 10-19 g/g           214Po fast coincidences from the 238U chain and unphys-
+(95% C.L.), 85Kr and 210Bi reduced respectively by a            ical noise events. The fraction of good events removed
+                                                                by these cuts, estimated using MC simulations [16] and
+                                                                calibration data [15], is 0.1%. Background from sources
+                                                                external to the scintillator (nylon vessel, SSS, and PMTs)
+                                                                is reduced with a fiducial volume (FV) cut, which selects
+                                                                the innermost region of the scintillator (71.3 ton), con-
+                                                                tained within the radius R <2.8 m and the vertical coor-
+                                                                dinate -1.8 < z< 2.2 m.
+                                                                                                                                    4
+
+                III. BACKGROUND                                         0 14C 210Po           11C
+                                                                        1                 400 Npdt1 600
+    The residual background, after the application of the                                                                      102
+                                                                                                                               101
+described selection cuts, is mainly due to radioactive iso-             2
+topes contaminating the scintillator itself, such as 14C                                                    800 1000 100
+(- decay, Q = 0.156 MeV,  = 8270 years), 210Po (               log TFC  3
+
+decay, E = 5.3 MeV,  = 200 days, originating a scin-                    4
+tillation light signal quenched by a factor 10), 85Kr
+(- decay, Q = 0.687 MeV,  = 15.4 years), and 210Bi                      5
+
+(- decay, Q = 1.16 MeV,  = 7.23 days), a relatively                     6
+short lived daughter of 210Pb (- decay, Q = 0.063 MeV,
+
+ = 32.2 years). The lowest energy region (below                         70
+
+0.3 MeV), which is most sensitive to pp s, contains an                        200
+
+additional background due to the pile-up of uncorrelated
+events (mostly 14C, external background primarly due
+
+to radioactive contaminants of the SSS and PMTs, and           FIG. 1. Distribution of log(LTFC) as a function of the Npdt1
+210Po [12, 16]). The energy region sensitive to pep and        energy estimator. The plot is built using the entire set of
+
+CNO s (between 1.1 and 1.7 MeV) is also affected by            data surviving the selection cuts described in Sec. II. The re-
+the cosmogenic isotope 11C (+ decay, Q = 0.960 MeV,            gions dominated by the abundant internal background of 14C
+                                                               and 210Po are indicated by the corresponding labels. The
+ = 29.4 min) and by residual external background,
+mainly as s from the decay of 208Tl (2.614 MeV), 214Bi         green-dashed horizontal line represents the LTFC-threshold,
+(< 1.764 MeV), and 40K (1.460 MeV).                            above/below which the events are assigned to the TFC-
+
+   The 11C isotope is continuously produced in the liquid      tagged/subtracted energy spectrum. It is clearly visible that
+scintillator by muons through spallation on 12C. In order      the majority of the events of the 11C energy decay spectrum
+
+to limit its effect on the sensitivity to pep s, we exploit    lies above this threshold.
+
+the so-called Three-Fold Coincidence (TFC) method and
+e+/e- pulse-shape discrimination [13, 18].
+
+    The TFC takes advantage of the fact that 11C is often
+
+produced together with one or even a burst of neutrons.                 104                                 MC
+
+The principle of the method is thus to tag events cor-                                                      Data
+
+related in space and time with a muon and a neutron.                    103
+
+We have improved the TFC technique already employed
+
+by us [13] by implementing a new algorithm, which eval-        Counts   102
+uates the likelihood LTFC that an event is a 11C can-
+
+didate, considering relevant observables such as the dis-
+
+tance in space and time from the parent muon, the dis-                  10
+
+tance from the neutron, the neutron multiplicity, and
+
+muon dE/dx. Based on this probability, the data-set is                     1
+
+divided in two samples: one depleted (TFC-subtracted),                     4  4.2    4.4  4.6  4.8       5  5.2   5.4  5.6
+obtained removing the 11C tagged events, and one en-
+riched (TFC-tagged) in 11C. These two sets are sepa-                                           PS-LPR
+
+rately fitted in the multivariate scheme (see later). The      FIG. 2. Comparison of the distributions of the PS-LPR pa-
+new TFC algorithm has (92 ± 4)% 11C-tagging efficiency,        rameter for 214Bi events extracted from data (blue, continuous
+
+while preserving (64.28 ± 0.01)% of the total exposure in      line) and generated using MC (black, dashed line). The MC
+                                                               sample of 214Bi was generated using the same spatial distri-
+the TFC-subtracted spectrum. Figure 1 shows the distri-        bution of the 214Bi events of the data. The simulation also
+
+bution of log(LTFC) of the present data set as a function      takes into account the proper values of the working channels
+         N dt1
+of  the         energy  estimator  and  it  demonstrates  how  N (t).
+            p
+11C decays can be identified by cutting the events on the
+
+basis of the value of LTFC.
+
+    A. Pulse shape discrimination of +/-events                 the time detection of the scintillation light is different
+                                                               for + and - events for two reasons: i ) for + events,
+   The residual amount of 11C in the TFC-subtracted            in 50% of the cases, the e+ annihilation is delayed by
+spectrum can be disentangled from the neutrino signal
+through variables with +/- pulse-shape discrimina-             ortho-positronium formation, which survives in the liq-
+tion capability [13, 18]. We build these variables con-
+sidering that the Probability Density Function (PDF) of        uid scintillator with a mean time   3 ns [20]; ii ) the
+                                                               topology e+ energy deposit is not point-like, due to the
+
+                                                               two back-to-back 511 keV annihilation s. These two fea-
+                                                               tures originate a pattern of the energy deposit of + with
+                                                                                                                            5
+
+                                  e- MC                         optical photons on the PMTs. For all events, the algo-
+
+        103                       e+  strict  11  sample        rithm uses the scintillation light emission PDF of point-
+                                                                like - events. For this reason the distribution of the
+                                               C
+                                                                maximum likelihood value shows some discrimination ca-
+Counts  102
+                                                                pability for different types of particles, if they originate
+                                                                photon time patterns distinct from that of -.
+
+        10                                                         The study of the performances of the PS-LPR variable
+                                                                demands, from one side, the identification of samples of
+             1                                                  true - and + events and, from another side, it requires
+
+                                                                to properly account for the variable number of working
+
+                                                                channels that influences its value.
+
+        4.4     4.6  4.8    5     5.2             5.4              A pure, high-statistics - sample can only be obtained
+
+                          PS-LPR                                from a limited time period of the water-extraction phase
+
+FIG. 3. Comparison of the distributions of the PS-LPR vari-     of the scintillator purification campaign. During this
+able for MC generated e- events (black, dashed line) and        time, a temporary 222Rn contamination entered the de-
+for e+ events selected from the data (green, continuous line).
+The latter events are a high-purity 11C sample, obtained with   tector. Using the space-and-time correlation of the fast
+                                                                coinciding 214Bi(-)-214Po () decays, we have tagged
+the optimized TFC method, using very strict cuts on the en-     about 104 214Bi events. The ability of the MC to re-
+
+ergy and on the time correlation with the neutron and muon      produce the PS-LPR parameter of these events and the
+                                                                comparison to data is shown in Fig. 2. The agreement
+tracks.
+                                                                between data and simulation demonstrates that the MC
+        7.0
+                                                                can accurately construct the PDF of this parameter for
+        6.5 11C 104
+        6.0 103                                                 the entire set of data thus accounting for the variable
+        5.5
+                                                                number of working channels.
+
+                                                                Our best + sample is obtained from the TFC tagged
+
+                                                                events with hard cuts on the energy and on the time
+
+PS- PR                                                          correlation with the neutron and muon tracks. These
+
+                                                                events are selected from the whole data set and thus they
+
+        5.0                                            102      naturally follow the live-channels distribution. The dis-
+
+        4.5                                                     crimination capability of PS-LPR is demonstrated com-
+        4.0 14C 210Po 101 -like band
+                                                                paring them with a MC sample of pure electrons with
+
+                                                                a flat energy distribution in the energy interval of the
+                                                                11C events, while also following the realistic live chan-
+
+        3.50    200 400 600 800 1000 100                        nel distribution over the whole data set. The PS-LPR for
+                     Npdt1                                      these MC generated electrons was used as - sample in a
+
+                                                                further analysis (analytical multivariate fit) described in
+
+                                                                Sec. IV). Figure 3 shows the distribution of the PS-LPR
+
+FIG. 4. Distribution of PS-LPR pulse-shape discriminator as     parameter for the MC generated electrons compared with
+a function of Npdt1 energy estimator. The plot is built using   that of + events obtained from 11C data. The difference
+the entire set of data surviving the selection cuts described
+                                                                between the two distributions at high values of PS-LPR
+in Sec. II. The comparison with Fig. 3 allows to identify the
+range of values belonging to the --like band indicated by       is the key element allowing the discrimination between
+                                                                - and +. Note that we do not need to build a posi-
+the arrow.
+                                                                tion reconstruction algorithm based on the time profile
+                                                                of the scintillation light of + events. Figure 4 shows
+
+a larger time and spatial spread than the corresponding         the PS-LPR pulse-shape discriminator as a function of
+one generated by -. Based on this fact, a pulse-shape           N dt1
+                                                                       energy  estimator  for  events  selected  with  the  cuts
+(PS) discrimination algorithm has been constructed us-             p
+
+ing the neural network of a Boosted Decision Tree (BDT)         described in Sec. II and used in the present analysis.
+
+and used for previous analysis as detailed in [18]. In the         It is interesting to note that the comparison between
+                                                                the BDT and PS-LPR parameters, using the samples of
+present analysis, we have introduced a novel discrimina-        true - and + events, shows that they have similar dis-
+tion parameter, called PS-LPR, defined as the maximum
+value of the likelihood function LPR used in the position       crimination power and they similarly help in reducing the
+reconstruction (PR), divided by the value of the energy
+estimator. The latter normalisation removes the LPR             systematic uncertainty of the pep s result. However, the
+energy-dependence, since it is calculated as the summa-         use of PS-LPR offers some advantages like its simplicity,
+                                                                the fact that it can be calculated without the training
+tion over the collected hits [18]. The PR-algorithm is
+                                                                procedure necessary for BDT (that suffers the limited
+based on the expected distribution of the arrival times of      size of the available - training sample), and finally, the
+
+                                                                possibility to easily reproduce it through the MC.
+                                                                                                                6
+
+                   IV. MULTIVARIATE FIT                      L3D(|k) defined as
+
+   The most powerful signatures for the detection of so-     L3D(k|) = LTsuFbC (k|) · LTtaFgC (k|).             (1)
+lar neutrinos in Borexino are the shapes of the energy
+spectra from electrons that underwent elastic scattering     The symbol  indicates the set of the arguments with
+interactions with neutrinos. However, the recognition of
+these shapes is somewhat obstacled by the contribution       respect to which the function is maximised and k gener-
+of various types of background events. In addition, the      ically indicates the set of the experimental data used to
+spectral details are also masked through the finite en-      evaluate the likelihood. The two factors in Eq. 1 are
+ergy resolution of the detector and eventually distorted     the likelihood functions related to TFC-subtracted and
+by non-linear effects linking the energy deposit in the      TFC-tagged energy spectra, respectively.
+scintillator and the observed energy estimator.
+                                                                LTsuFbC (k|) is the standard Poisson binned likelihood
+   Signal and background can be disentangled through an      function:
+accurate fit. In order to enhance our sensitivity to the
+neutrino signal, we have adopted in the entire LER the       TFC                 NE,R,P jlm kjlm () -jlm()
+multivariate fit approach already exploited in [13]. We      Lsub (k|) =                        e            ,  (2)
+maximize a binned likelihood function containing the in-                         j,l,m=0 kjlm!
+formation from the TFC-tagged and TFC-subtracted en-
+ergy spectra. Additional information from the PS-LPR         where k in this case is the ensemble of the data entries
+parameter and the radial distributions of the events in
+the optimized energy regions are included in the fit. The    kj,l,m in the energy bin j, position bin l, and pulse shape
+radial information is important to accurately measure the
+background rates due to external s produced by the con-      parameter bin m; j,l,m() are the expected number of
+tamination of the PMTs and the supporting SSS. The           entries in the same bins, and NE,R,P are the total num-
+pulse shape parameter PS-LPR helps in the separation of      ber of energy, radial, and pulse shape parameter bins.
+the residual 11C(e+) background from the e--like com-        LTtaFgC (k|) is constructed in a similar way but it does
+ponents, and this is relevant for the determination of Rpep  not include the pulse shape variable:
+and RCNO.
+                                                             TFC                 NE,R j,l kj,l () -j,l()
+   Several ingredients are necessary to perform the fit.     Ltag (k|) =                        e         .     (3)
+The first one is a background model, that is a list of                           j,l=0 kj,l!
+possible radioactive contaminants that we assume give a
+contribution to the measured signal. The second one is       and k represents in this case the set of data entries kj,l
+the detector response function, i.e. a full model of the     in the energy and radial bins j, l integrated with respect
+distributions of all the physical variables that we mea-     to the pulse shape parameter. The signal of 11C in the
+sure. The knowledge of the detector response function        TFC-tagged spectrum is relatively strong compared to
+allows the prediction of the probability density functions   the other spectral components and the fit procedure ex-
+of all the quantities entering the fit procedure.            tracts it very efficiently thanks to its spectral shape. This
+                                                             is the reason driving the choice of using the two dimen-
+   As done in previous Borexino analyses, we have            sional (2D) likelihood function of Eq. 3 for the TFC-
+adopted two complementary methods to build the de-           tagged spectrum instead of a complete function of Eq.
+tector response function: an analytical approach and a       2 that, for the TFC-tagged spectrum, only increases the
+MC based procedure. The only free parameters of the fit      computation time without bringing additional informa-
+in the MC approach are the interaction rates of neutrino     tion.
+and background species, while in the analytical method
+(see later), in addition, some of the parameters related to     Both the TFC-subtracted and TFC-tagged spectra are
+the response function and to the energy scale are also free  fitted keeping the rates of the majority of the components
+and determined by the fit procedure. These two methods       in common, except 11C itself, 6He and 10C (which have
+share the same background model.                             cosmogenic origin), and 210Po, that is not distributed
+                                                             homogeneoulsy through the detector volume.
+   Fitting tools based on the use of Graphical Process-
+ing Units (GPU) have been developed and used with the           Constraints on the values of the multivariate fit pa-
+analytical fit method. They decrease the computation         rameters are implemented (if not specified otherwise) as
+time by about 3 orders of magnitude compared with the        multiplicative Gaussian terms in the likelihood function.
+standard CPU based algorithms previously used [21].
+                                                                The likelihood function of Eq. 2 and Eq. 3 are exactly
+           A. Multivariate Likelihood Function               the ones which are maximized using our most recent ver-
+                                                             sion of the MC-based fit procedure (see Sec. V A). Pre-
+   The TFC-subtracted and TFC-tagged data-sets are fit-      cisely, we generate with the MC every signal and back-
+ted simultaneously by maximising a likelihood function       ground component and we build and properly normalize
+                                                             3D (or 2D) histograms of the simulated number of events
+                                                             as a function of the energy estimator, PS-LPR parameter,
+                                                             and radius (or of the energy estimator and radius only).
+                                                             The quantities jlm and jl of Eq. 2 and Eq. 3 represent
+the sum of the bin content of the histograms, each one                                                                                         7
+
+weighted by the rate of the specific component ().                       The results of the MC-based fit, which is either per-
+                                                                      formed using L3D(k|) or L(k|), are consistent, confirm-
+Earlier versions of the MC fit and the present analyt-                ing that no systematic uncertainty is introduced when
+                                                                      using the approximated likelihood function.
+ical fit maximize an approximated version of the likeli-
+                                                                            V. DETECTOR RESPONSE FUNCTION
+hood L3D(k|), as already described in [18]. This func-
+                                                                                       A. The Monte Carlo method
+tion, called L(k|), is written as a product of four factors
+                                                                         The MC code developed for Borexino [16] is a cus-
+coming from the TFC-subtracted and TFC-tagged en-                     tomised Geant4-based simulation package [22], which can
+                                                                      simulate all processes following the interaction of a par-
+ergy  spectra  (  LT F C   and    LT F C )  and  from  the  PS-LPR    ticle in the detector (energy loss including ionisation
+                                                                      quenching in the scintillator; scintillation and Cherenkov
+                    E,sub           E,tag                             light production; optical photon propagation and inter-
+(LP ) and radial (LR) distributions of events in the 11C-             action in the scintillator modelling absorption and re-
+                                                                      emission, Rayleigh scattering, interaction of the optical
+energy-range of the TFC-subtracted spectrum:                          photons with the surface of the materials; photon detec-
+                                                                      tion on the PMTs, and response of the electronics chain)
+L(k|) = LTEF,sCub(k|)·LTEF,taCg(k|)·LP (k|)·LR(k|). (4)               including all known characteristics of the apparatus (ge-
+                                                                      ometry, properties of the materials, variable number of
+   The first two terms, LTEF,sCub(k|) and LTEF,taCg(k|), are          the working channels over the duration of the experiment
+                                                                      as in the real data) and their evolution in time. The code
+Poisson likelihoods (like Eq. 2 and 3) with k being the               thus produces a fully simulated detector response func-
+data entries kj in the energy bin j integrated with respect           tion because it provides a simulated version of all the
+to the other variables.                                               measured physical variables.
+
+   The other two terms in Eq. 4 have been built con-                     All the MC input parameters have been chosen or op-
+sidering that in the framework of the analytical ap-                  timised using samples of data independent from the ones
+proach, there is no model able to produce precise                     used in the present analysis (laboratory measurements
+multi-dimensional PDFs. Thus we have projected the                    and Borexino calibrations with radioactive sources [15])
+events, from the optimized energy intervals of the TFC-               and the simulation of the variables relevant for the
+subtracted spectrum and integrated over energy ranges                 present analysis has reached sub-percent precision [16].
+larger than the binning of the energy spectrum, into 1D
+histograms of the pulse-shape and radial distributions.                  Once the MC input parameters have been tuned, the
+LP (k|) and LR(k|) of Eq. 4 are then built fitting these              PDFs of all the needed variables related to each of the 
+1D distributions using PDFs obtained either from the                  and background components are built simulating events
+data (high purity 11C sample for + pulse shape) or                    according to the specific energy spectrum. In order to
+based on the MC simulation (- pulse shape, radial dis-                properly reproduce the spatial dependence of the energy
+tributions). In the calculation of the corresponding likeli-          response, events are simulated in the detector following
+hoods, we introduce a correlation between the number of               their expected spatial distribution: while the  and most
+counts in different histograms, as events that are in the             of background events are expected to be uniformly dis-
+energy spectrum will also be entries in the projections.              tributed in the detector, 210Po decays are simulated ac-
+To handle this issue, we normalise the functions to the to-           cording to their actual spatial and time distribution ob-
+tal number of entries N in the projected data histograms.             tained from experimental data. Note that data events
+Consequently, we define the likelihood of the PS-LPR pa-              due to the  decay of 210Po are efficiently identified by
+rameter as we did in [18] for the previously used PS-BDT              tagging 210Po with a pulse-shape discrimination method
+parameter:                                                            based on Multilayer Perceptron (MLP) algorithm [23] (a
+                                                                      particular class of neural network algorithms). Similarly,
+        LP (k|) =          NP a 1D km ()e-am()         ,    (5)       s from external background are generated on the SSS
+                                                                      and PMTs surfaces so that the radial distribution of the
+                                        m                             interactions inside the scintillator volume shows a clear
+                                                                      decrease from the outer region of the detector towards
+                           m=1           km!                          the center.
+
+where the scaling parameter a enforces the normalisation                 Events generated according to the theoretical signal
+and is set such                                                       and background energy spectra are then processed as real
+                                                                      data. As already anticipated, for every species, 3D or
+                                  NP1D                                2D histograms are built for the energy estimators, the
+                                                                      reconstructed radius, and the PS-LPR variable. When
+                  N = a m(),                                (6)
+
+                                  m=1
+
+where N is the total number of entries in the projected
+
+histogram and a is a scaling factor. Here, km is the actual
+
+number of entries of bin m of the 1D projection of the
+
+PS-LPR  distribution       in  a  fixed  energy  interval,  N 1D  is
+
+                                                               P
+
+the total number of bins of this histogram, and m()
+
+represents the expected content in bin m. LR(k|) is
+
+defined in a way similar to LP (k|).
+                                                                                                                           8
+
+properly binned and normalized, these histograms repre-        distributions of the energy estimators. Effects like the
+sent the PDFs to be used in the fit and they provide the       ionisation quenching in the scintillator, the contribution
+values jlm() in Eq. 2 and jl() in Eq. 3. In the MC             of the Cherenkov light, the spatial dependence of the re-
+approach there are no free fit parameters other than the       constructed energy and its resolution are accounted for
+interaction rates of all species. The goodness of the fit si-  through some parameters, part of which are fixed, while
+multaneously demonstrates the accuracy of the MC sim-          others are free to vary in the final fit.
+ulation, as well as the stability of the detector response
+over the period of five years.                                    We describe here the present model for Np which
+                                                               is derived from [18], with several improvements to ex-
+   In the wide energy range covered by this analysis, there    tend the energy range of the fit to the entire LER. The
+is a huge difference between the number of measured            same model describes the variables Npdt1(2) . All used en-
+counts per bin in the lower and in the higher energy re-       ergy estimators are obtained after normalising the corre-
+gions. In the construction of the 3D PDFs, the need            sponding measured values to a reference configuration of
+to simulate large numbers of events becomes really im-         Ntot = 2000 channels (defined in Sec. II).
+portant, since they are scattered over a larger number
+of bins. To mitigate the consequences due to low popu-            As energy response function for the entire LER, we
+lated bins and to have a good approximation to a 2, we         use the scaled Poisson function f (Np) (and similarly
+have replaced the energy estimator and the radius R with       f (Npdt1(2) )) already introduced for analyzing events in the
+some transformed variables. We choose to use R3 instead        lowest region of the energy spectrum and detailed in [24]
+of R, thus using bins of 5 m3 each and still achieving a       and in [25]
+very effective separation of the external background from
+the bulk components. Similarly, we introduced a trans-                        f (Np) = m exp (Nps) -m                      (10)
+formed variable Nh based on the Nh energy estimator:                                         (Nps)!
+this change of variable is equivalent to adopting a vari-
+able binning size that scales with energy proportionally       The two free parameters of this function, m and s, are
+to the width of the Nh distribution obtained simulating
+mono-energetic electrons. This approach allows to re-          fixed using the expressions for the mean value N¯p(E) and
+duce the statistical fluctuations without losing any phys-               2
+ical information. As a by-product, this efficient binning      variance       developed  in  the  context  of  our  model  and
+significantly reduced the computing time needed to per-                    p
+form a single fit, speeding up the analysis of the MC
+pseudo-experiments used to estimate the statistical and        described below:
+systematic uncertainties of the measurement described in
+Section VI.                                                                                  N¯p2(E)
+                                                                                 m= 2                                      (11)
+   The multivariate analysis was not applied on the whole                                         p
+energy range: the radial information was considered only
+for Nh > 290 to exclude from the analysis the spatial          and
+distribution of 210Po, while the PS-LPR was used where
+11C is present (409 < Nh < 645). The shape of the                                        s= ¯  2                           (12)
+probability density function of the PS-LPR variable for
++ was obtained from an empirical parametrisation of                                              p
+the distribution generated by the MC, with an additional
+small shift to compensate differences between the MC                                         Np(E)
+simulation outcome and a sample of strictly selected 11C
+events.                                                           In order to obtain N¯p(E) we first consider that the
+                                                               mean number of photoelectrons N¯pe(E) for each event
+  B. The analytical model of the energy response               of energy E takes its main contribution from the scintil-
+                                  function                     lation photons with a sub-dominant correction from the
+                                                               Cherenkov light, and it can be written as follows
+   In the analytical approach, we introduce a PDF for
+the energy estimator under consideration and analyti-                N¯pe(E) = Y0pe · [Q(E) · E + fCh · FCh(E)] (13)
+cal expressions for its mean value and variance. This
+PDF describes the detector's energy response function          where Y0pe is the photoelectron yield expressed in pho-
+to mono-energetic events and, in brief, it is mainly influ-    toelectrons/MeV for events in the detector center; the
+enced by the number of scintillation and Cherenkov pho-        quenching term, Q(E), accounts for non-linearity of the
+tons and effects due to the non-uniformity of the light        scintillator response; FCh(E), an analytical parametrisa-
+collection. As already anticipated, we then transform          tion of Cherenkov light dependence on energy valid for
+the energy spectra of each species into the corresponding      electrons, provides the smooth transition between linear
+                                                               dependency at the energies above 1-2 MeV and zero con-
+                                                               tribution for electrons below the Cherenkov threshold E0
+                                                               = 0.165 MeV; fCh is a parameter allowing to adjust the
+                                                               relative weight of the scintillation and Cherenkov light.
+                                                               Table I reports details of the analytical expressions.
+
+                                                                  Similarly to that described in [18], N¯p(E), is linked to
+                                                               N¯pe(E) through
+
+                                                                    N¯p(E) = Ntot 1 - e-µ (1 + ptµ) (1 - gC µ) (14)
+                                                                                                                    9
+
+Parameter  Fix./Free  Meaning/Approach to fixing                                                       Value
+     Y0pe
+      gC   free       Photoelectron yield [p.e./MeV] for events in the detector center and  551 ± 1
+      pt   fixed                                     with Ntot=2000 PMTs                     0.101
+     fCh
+                      Fit Npdt1(2) vs true Npe of MC with Eq. 14 using MC mono-energetic
+   FCh(E)              electron samples at 4 energies, simulated along the whole data-set.
+
+    Q(E)              Fraction of a single photoelectron charge spectrum below the
+
+      v1   fixed electronics threshold; fixed from the earlier calibration measurements                0.12
+      vT0
+      vN              and calculations.
+      vTq
+      vT              Relative weight of the scintillation and Cherenkov light; fixed by
+      d
+           fixed      performing many analytical fits on data with it as a free/fixed                  1.0
+
+                                  parameter.
+
+                                                                                            C0 = 1.415;
+
+                                                              2          3                  C1 = -3.397;
+
+           fixed      FCh(E) = (C0 + C1 · x + C2 · x + C3 · x )(1 + C4 · E) (7)             C2 = 1.107;
+
+                      x = ln (1 + E/E0);                                                    C3 = 0.072;
+                       E0 = 0.165 MeV                                                       C4 = 1.337
+
+                      Quenching term summarising the effects related to non-linearity of
+                      the scintillator response according to Birk's quenching model [18]:
+
+                      Q(E, kB) =                          1E     dE         ,          (8)     kB[cm/MeV] =
+                                                                                            0.0109; A1 = 0.972;
+                                                          E 0 1 + kBdE /dx
+                                                                                                 A2 = 0.201;
+           fixed      where kB is the Birk's constant, and Q(E) can be parametrised as:
+                                                                                                A3 = 0.0105;
+                                       A1 + A2 ln E + A3 ln E2                                   A4 = 0.195;
+                      Q(E, kB) = 1 + A4 ln E + A5 ln E2 ; (9)                                    A5 = 0.014
+
+                      fixed from the fit of Npe vs E with MC simulation of  calibration
+                                                               data.
+
+                          Relative variance of the probability that a PMT triggers for events
+           fixed uniformly distributed in the detector volume, calculated using 0.16
+
+                         dedicated MC studies. It has some energy dependence and then we
+                                           are using a value averaged over the LER.
+
+           free       Spatial non-uniformity of the number of triggered PMTs.               0.50 ± 0.37
+
+                              Scintillator intrinsic resolution parameter for s (caused by  11.5 ± 1.0
+           free -electrons) that also effectively takes into account other contributions
+
+                                                            at low energies.
+
+           fixed Non-uniformity of the light collection, calculated from MC events 7.0
+                                                    uniformly distributed in FV.
+
+           free 210 Spatial non-uniformity resolution, corresponding to the width of        4.73 ± 0.21
+                                                                 Po- peak.
+
+           fixed      PMT dark noise contribution                                           0.23 Npdt1 , 0.4 Npdt2
+
+TABLE I. Summary of the parameters used in the analytical model of the energy response function. In case of the free
+
+parameters, the values given in the table are obtained with the multivariate analytical fit of the data discussed in this paper
+and reported in section VII. Only statistical errors are shown here. Energy is expressed in MeV; vT0 , vT (vTq ) must be multiplied
+by 10-6 (10-4).
+
+where µ = N¯pe(E) , gC is a geometric correction fac-         The second ingredient of the analytical model is the
+                   Ntot
+                                                          variance  2    of the Np  energy estimator.  It is described
+tor, calculated for the given fiducial volume, and pt is
+the fraction of a single photoelectron signal below the               p
+
+electronics threshold. These expressions extend the ones  by the following expression which extends the model al-
+
+previously used in [18] with the introduction of the fCh  ready described in [18] in particular with the modifica-
+and pt parameters.                                        tion of the term linear with N¯p(E) and the addition of a
+
+                                                          quadratic one
+        2  =    feq  [1   -  (1  +  v1)  p1]  N¯p(E)     +     0  N¯p3(E)    +                                                                                     10
+
+      p                                                      vT                                 C. Handling of the energy variables in the fit
+
+                     + vTq µ p0 p1   2                                                         We perform the fit of the energy spectra with the ex-
+                                                                                            perimental data binned as a function of the energy es-
+                                         N¯ 2  (E  )  +  vN  N¯p  (E   )  +    2     (15)   timators instead of trasforming that distributions into
+                                                                                            the energy scale. Among the reasons driving this choice
+                                            p                                d              we remark that the analytical approach does not assume
+                                                                                            a priori knowledge of the precise energy transformation
+where v1 is the relative variance of the PMT triggering                                     rules and the energy scale is automatically adjusted while
+                                                                                            fitting the experimental data. The use of the transformed
+probability for events uniformly distributed in the detec-                                  experimental spectra would significantly slow down the
+                                                                                            fitting procedure, as the data reprocessing will be needed
+tor volume, p1 = 1 - e-µ is the probability of having a                                     each time the energy scale parameters are changed in the
+signal at any PMT, p0 = e-µ is the probability of absence                                   fit. In addition, the presence of the contributions from
+                     v0                                                                     14C and 210Po with very high statistics makes the fit
+of   the   signal,        accounts       for  the     spatial   non-uniformity              sensitive to tiny details of the energy response function
+                       T                                                                    (response to the monoenergetic event with a fixed en-
+of the number of triggered PMTs, vTq accounts for the                                       ergy distributed uniformly in the detector's volume). The
+non-uniformity of the light collection, vN is the intrinsic                                 shape of the energy response for the detected number of
+                                                                                            p.e. (or the number of the triggered PMTs) in the sub-
+resolution parameter of the scintillator for s that effec-                                  MeV energy region is defined mainly by the statistical
+                                                                                            factor, with small additional smearing due to the non-
+tively includes other contributions at low energies, and                                    uniformity of the amount of the collected light through-
+                                                                                            out the detector. The study performed using MC model
+the last term d describes the effects of the dark noise of                                  showed that the shape of the charge response can be ap-
+the PMTs. The channel equalization factor feq is the ra-                                    proximated by the generalized gamma function, and the
+tio between Ntot and the actual number of working PMTs                                      shape of the Np response can be approximated by the
+and it changes during the data taking period.                                               scaled Poisson function. But the energy response func-
+                                                                                            tion in the energy scale does not allow a simple descrip-
+    In summary, the cubic term takes into account the vari-                                 tion with an analytical function, and thus complex cal-
+                                                                                            culations would be necessary if the transformed energy
+ance of the number of the triggered PMTs for the events                                     is used. In the MC approach the transformation to the
+                                                                                            energy scale is in principle feasible, because the energy
+with fixed collected charge in the IV. The quadratic term                                   scale and energy response in this approach are fixed from
+                                                                                            the calibrations, but it was not applied to keep internal
+takes into account the variance of the light collection                                     consistency with the analytical approach.
+
+function over the detector, and is generally weaker com-                                       Moreover, the amount of light emitted for a given en-
+                                                                                            ergy deposit in the scintillator differs for the electrons,
+pared to the cubic term (and was neglected in previous                                      s and  particles and then the energy scale calibrated
+                                                                                            for electrons is not valid for s and s. The experimental
+analyses with more uniform PMTs distribution).                                              spectrum contains contributions from all these types of
+                                                                                            particle and the event-by-event identification of the type
+    Formula 15 was derived analytically and verified                                        of interaction is not possible while the different contribu-
+                                                                                            tions are statistically identified using the fit procedure.
+against the MC simulations. For  particles we are using                                     The binning of the data in the physical energy scale (as
+                                                                                            shown in the figures reporting the fit results) is performed
+a simplified form with only the first and cubic term of                                     only after the fit is completed.
+
+relation 15 since we need to model a single energy point                                                    VI. SENSITIVITY STUDIES
+(210Po). It is thus not necessary to follow the energy
+                                                                                               Sensitivity studies have been performed by generat-
+dependence of the variance. The coefficient of the cubic                                    ing many pseudo-experiments with the MC and fitting
+                                                                                            this simulated data using the same response functions
+term  is   called    v    and    it  corresponds         to  the  width      of      the    adopted for fitting the real experimental data, using both
+                                                                                            analytical and MC procedures. The simulated data of the
+                       T                                                                    pseudo-experiments are obtained from a random sam-
+210Po- peak. As anticipated, we use the previous rela-                                      pling of PDFs produced with the full Borexino MC, in-
+
+tions also for describing the mean value and variance of
+the estimators Npdt1(2) .
+
+    Most of the above listed parameters are tuned using
+
+data independent from the ones used in the solar neutrino
+
+fit, calibrations or MC and are fixed in the fit (Q(E), fCh,
+                vTq                                               pe,  vT ,  v0
+pt,  gC ,  v1,       ),  while   other   parameters         (Y                    ,  vN  )
+                                                                               T
+
+are left free to vary in the fit, together with the neutrino
+
+and background interaction rates. The two parameters
+
+pt, gC could be in principle free fit parameters, however
+they are fixed because the fit results have a low sensitivity
+
+to them.
+
+    In summary, the model has one free parameter describ-
+
+ing the yield and three free parameters describing the
+
+energy resolution. Leaving the above listed parameters
+
+free gives the analytical fit the freedom to account for
+
+unexpected effects or unforeseen variations of the detec-
+
+tor response in time. Table I reports all the parameters,
+
+free or fixed, appearing in the analytical fit with a short
+
+explanation about how they are obtained. In case of pa-
+
+rameters kept free in the fit, we report in the table the
+
+values obtained fitting the present data set as described
+
+in this paper. The corresponding values of the  interac-
+
+tion rates and background are reported in section VII.
+cluding solar neutrino interaction rates as predicted by                                                                              11
+the HZ/LZ-SSM and with the rates of the different back-
+ground components compatible with the final results pre-                                   VII. RESULTS
+sented in this work. As an example, Fig. 5 shows the
+distribution of the results of the MC fit of 6700 pseudo-         The interaction rates Rpp, RBe, Rpep are obtained from
+experiments each one with the same exposure as the real        the fit together with the decay rates of 85Kr, 210Po, 210Bi,
+data. In this particular example, by construction, the         11C internal backgrounds, and the external backgrounds
+fit model perfectly matches the simulated data. The 1D         rates (208Tl, 214Bi, and 40K  rays).
+distributions of the fit results, i.e. the rates R of differ-
+ent solar neutrino and background species, are Gaussian           In the MC approach, the MC-based pile-up spec-
+and do not show any significant biases with respect to         trum [16] is included in the fit with a constraint
+the rates used as simulation inputs. The widths of these       of (137.5 ± 2.8 cpd/100 ton) on the 14C-14C contribu-
+distributions show the expected statistical precision of       tion based on an independent measurement of the 14C
+the measurement of the corresponding component. The            rate [12]. In the analytical approach, pile-up is taken
+shapes of the analogous 2D distributions visualize the         into account with the convolution of each spectral com-
+correlations among the different components. In partic-        ponent with the solicited-trigger spectrum [12]. Alter-
+ular, we underline that since the energy spectrum of the       natively, the analytical fit uses a synthetic pile-up spec-
+CNO neutrinos is quite similar to that of the 210Bi in-        trum [12] built directly from data. The differences be-
+ternal contamination and the fit procedure cannot dis-         tween these methods are quoted in the systematic error
+entangle them, the sensitivity studies for all the pp-cycle    (see Table IV).
+neutrino and background components are performed by
+constraining the CNO rate. These results are depicted             In order to break the degeneracy between the 210Bi
+in the left portion of Fig. 5 with RCNO generated and          and the CNO  spectral shapes, we constrain the CNO
+constrained assuming, as an example, the HZ-SSM. The            interaction rate to the HZ-SSM predictions, including
+same constraint on RCNO is used in fitting the real data,      MSW-LMA oscillations (4.92 ± 0.56 cpd/100 ton) [3, 26]
+as it will be reported below. Some additional signifi-         as anticipated in Sec. VI. The analysis is repeated con-
+cant correlations are present among some of the various        straining the CNO  rate to the LZ-SSM predictions (3.52
+species, as the figure is showing. This is one of the rea-     ± 0.37 cpd/100 ton) and in case of difference, the two re-
+sons why the best accuracy in the determination of the         sults are quoted separately. The contribution of 8B s is
+interaction rates of solar neutrinos is obtained by fitting    small and its rate was constrained to the value obtained
+the entire energy spectrum, as in the present analysis,        from the HER analysis [11].
+thus best using all the available information about de-
+tails of the entire spectral shapes, instead of choosing          The interaction rates of solar neutrinos and the decay
+partial energy regions.                                        rates of background species, obtained by averaging the
+                                                               results of the analytical and MC approaches, are sum-
+   The top right inset in Fig. 5 demonstrates the sen-         marised in Tables II and III, respectively.
+sitivity of the present data set to CNO neutrinos. In
+this case, no constraint on RCNO is applied, but, to de-          An example of the multivariate fit (with the MC ap-
+crease the effect of the degeneracy of the spectral shapes,    proach) is shown in Fig. 7 (TFC-subtracted and TFC-
+a constraint on the ratio between Rpp and Rpep, as ex-         tagged energy spectra) and in Fig. 8 (radial distribution
+pected from the SSM, is applied. It is interesting to note     and PS-LPR pulse-shape distribution). The details of the
+the strong anti-correlation between the 210Bi and CNO          fit at low energies (between  230 and 830 keV) can be
+components which is originated by the above discussed          appreciated in Fig. 9. In this example, obtained with
+similarities of their energy spectra.                          the analytical fit procedure, the pile-up is not present as
+                                                               a separate fit component, since it is taken into account
+   Finally, Fig. 6 is obtained removing all the constraints    with the convolution method mentioned above.
+on the CNO and pep components and clearly shows that
+the strong correlations (and anti-correlations) among             To recognise the pep  contribution to the measured
+RCNO, Rpep, and the 210Bi decay rate significantly limit       electron-recoil spectrum, the TFC-subtracted spectrum,
+the possibility to determine all the three species at the      zoomed into the highest energy region (between 800
+same time.                                                     and 2700 keV), is shown after applying stringent selec-
+                                                               tion cuts on the radial distribution (R < 2.4 m) and on
+   Similar MC studies have been performed to quantify          the pulse-shape variable distribution (PS-LPR <4.8) (see
+the systematic uncertainty associated to the fit models,       Fig. 10): the CNO and pep neutrino interactions are
+by generating MC data with a response function modified        clearly visible between 1250 and 1500 keV, and the spec-
+with respect to the one used in the fit (see next section).    trum is consistent with the Compton-like shoulder ex-
+Finally, pseudo-experiments MC data have been used to          pected from the pep line.
+obtain the distribution of the likelihood functions and
+thus evaluate the p-values of our results.                        An extensive study of the systematic errors has been
+                                                               performed and the results are summarised in Table IV.
+
+                                                                  Differences between the results of the analytical and
+                                                               the MC fits are quoted as systematic errors. Further
+                                                               systematic uncertainties associated with the fitting pro-
+                                                               cedure were studied by performing the fit in many differ-
+                                                               ent configurations by generating simulated data using a
+                                                               family of response functions whose parameters has been
+                                                                                                                                                               12
+
+                           100 150 200    RCNO constrained                                                        0 10 20 30       Rpp /Rpep
+                                    (pp)  to HZ-SSM                                                                         210Bi  constrained
+
+                                                                                                                                   234
+
+                                          2        2.5                             Rate (cpd/100 ton)         4                    (pep)
+
+         2.5                              11                                                           (pep)
+
+11                                          C (sub)                                                           3
+
+C (sub)                2 2 -5 0 5 10 15
+
+                                                     0 5 10 15                                                                                          (CNO)
+                                                                                                       (CNO)  10
+                                                               85Kr
+
+                       10                                                                                     5
+
+Rate (cpd/100 ton)                                                                                            0
+     (7Be) 210Bi 85Kr
+                       5                                                                                      -5
+
+                                                                                                                  0 10 20 30 2 3 4 -5 0 5 10 15
+                                                                     10 15 20                                     210Bi            (pep)
+                       0
+
+                       20                                                   210Bi                                 Rate (cpd/100 ton)
+
+                       15
+
+                       10                                                          45 50
+
+                                                                                                       (7Be)
+
+                       50
+
+                       45
+
+(pep)                  4                                                                                          1234
+                       3                                                                                                    (pep)
+                       2
+                       1                                                                                                                   5678
+                       8                                                                                                                        Ext. s
+                       7
+Ext.  s                6
+                       5
+
+                           100 150 200 11 2        2.50  5 10 10 15 20             45 50                          1234             5678
+                           (pp)                          85Kr        210Bi             (7Be)                            (pep)
+                                          C (sub)
+
+                                                               Rate (cpd/100 ton)
+
+FIG. 5. The figure shows the distributions of the interaction rates (cpd/100 ton) of solar  and of the background species as
+they result from the MC fit of pseudo-experiments simulated with the same exposure as the experimental data discussed in
+this paper. The fit is performed in the entire LER region and, as in the real data analysis, penalty terms are added in the
+likelihood to constrain the values of the 14C and pileup rates within the measured ones. It is interesting to note the correlation
+between the pp and 85Kr rates, physically driven by the fact that a not negligible portion of the 85Kr spectrum lies in the
+energy region around about 200 keV where we are sensitive to the pp s signal. In the left plot, 6700 pseudo-experiments have
+been generated assuming the RCNO according to HZ-SSM and fitted imposing a constraint on RCNO to the same value. The
+same MC PDFs have been used to simulate and fit data, so these plots show only uncertainties due to statistical fluctuations
+and the effects of the correlations among the various components. The top right inset represents the results of the fit of 10000
+pseudo-experiments fitted with the MC method while keeping the RCNO free but constraining the Rpp/Rpep ratio to (47.7 ±
+0.8) (HZ-SSM [3], [26]). Constraining Rpp/Rpep to the LZ-SSM prediction, 47.5 ± 0.8, gives consistent results. The study
+included all the background and neutrino species: here we only show those components that mostly influence the sensitivity to
+CNO neutrinos.
+                                                                                                                                                          13
+
+                            Borexino experimental results                             B16(GS98)-HZ                            B16(AGSS09)-LZ
+
+Solar                            Rate                   Flux                               Rate         Flux                       Rate         Flux
+                            [cpd/100 ton]            [cm-2 s-1 ]                      [cpd/100 ton]  [cm-2 s-1 ]              [cpd/100 ton]  [cm-2 s-1 ]
+
+pp                            134 ± 10 -10 +6         (6.1 ± 0.5 -0.5 +0.3) × 1010    131.1 ± 1.4    5.98 (1 ± 0.006) × 1010  132.2 ± 1.4    6.03 (1 ± 0.005) × 1010
+7Be                          48.3 ± 1.1 -0.7 +0.4    (4.99 ± 0.11 -0.08 +0.06) × 109  47.9 ± 2.8      4.93 (1 ± 0.06) × 109   43.7 ± 2.5      4.50 (1 ± 0.06) × 109
+pep (HZ)                    2.43 ± 0.36 -0.22 +0.15  (1.27 ± 0.19 -0.12 +0.08) × 108  2.74 ± 0.04    1.44 (1 ± 0.009) × 108   2.78 ± 0.04    1.46 (1 ± 0.009) × 108
+pep (LZ)                    2.65 ± 0.36 -0.24 +0.15  (1.39 ± 0.19 -0.13 +0.08) × 108  2.74 ± 0.04    1.44 (1 ± 0.009) × 108   2.78 ± 0.04    1.46 (1 ± 0.009) × 108
+CNO                                                   < 7.9 × 108 (95% C.L.)          4.92 ± 0.55     4.88 (1 ± 0.11) × 108   3.52 ± 0.37     3.51 (1 ± 0.10) × 108
+                            < 8.1 (95% C.L.)
+
+TABLE II. Borexino Phase-II results on pp, 7Be (862 +384 keV), pep, and CNO solar s: interaction rates and fluxes inferred
+assuming the MSW-LMA oscillation parameters [26]. The first error is the statistical derived by profiling the likelihood under
+Wilks' approximation. The interval extracted is consistent with the expectation from the MC sensitivity study. The second
+error is the systematic uncertainty. Different contributions to the systematic error are detailed in Table IV. The result on pep
+s depends on whether we assume HZ-SSM or LZ-SSM metallicity for CNO s. The remaining columns show the theoretical
+interaction rates and fluxes predicted by the Standard Solar Model under the high and low metallicity assumptions [3].
+
+                            1.5 2                                                                             Background           Rate
+                                 11                                                                                           [cpd/100 ton]
+                                                                                                              14C [Bq/100 t]
+                                 Csub                                                                         85Kr             40.0 ± 2.0
+                                                                                                              210Bi             6.8 ± 1.8
+Rate (cpd/100 t)  210Bi                           0 20 40                                                     11 C             17.5 ± 1.9
+                                                                                                              210Po            26.8 ± 0.2
+                         40 210Bi                                                                             Ext. 40K        260.0 ± 3.0
+                                                                                                              Ext. 214Bi        1.0 ± 0.6
+                         20                                                                                   Ext. 208Tl        1.9 ± 0.3
+                                                                                                                                3.3 ± 0.1
+                          0
+                  (pep)                                               05                           TABLE III. Best estimates for the total rates of the back-
+                                                                                                   ground species included in the fit with statistical and system-
+                          5 (pep)                                                                  atic uncertainties added in quadrature. These numbers are
+                                                                                                   obtained by averaging the results of the fits with the HZ and
+                         0                                                                         LZ hypothesis.
+
+                  (CNO)  20                                               0 20                                                pp             7Be          pep
+
+                          0                0 20 40   05                   (CNO)                    Source of uncertainty      -% +% -% +% -% +%
+                                             210Bi    (pep)
+                               1.5 2                                      0 20                     Fit method (analytical/MC) -1.2 1.2 -0.2 0.2 -4.0 4.0
+
+                                       11                                                          Choice of energy estimator -2.5 2.5 -0.1 0.1 -2.4 2.4
+
+                                    Csub
+
+                                                     Rate (cpd/100 t)                              Pile-up modeling           -2.5 0.5 0 0 0 0
+
+                                                                                                   Fit range and binning      -3.0 3.0 -0.1 0.1 1.0 1.0
+
+FIG. 6. This figure shows the results of the fit of MC sim-                                        Fit models (see text)      -4.5 0.5 -1.0 0.2 -6.8 2.8
+ulated experiments obtained in the same conditions of Fig.
+5 but, this time, removing all the constraints on RCNO and                                         Inclusion of 85Kr constraint -2.2 2.2 0 0.4 -3.2 0
+Rpep. We only show here the correlation between pep, CNO,
+11C and 210Bi, but the study included all the spectral compo-                                      Live Time                  -0.05 0.05 -0.05 0.05 -0.05 0.05
+nents. The significant correlations among these species forbid
+to measure at the same time RCNO and Rpep and to deter-                                            Scintillator density       -0.05 0.05 -0.05 0.05 -0.05 0.05
+mine the 210Bi decay rate. As described in the text, we have
+constrained the CNO rate to get the pep one and set a con-                                         Fiducial volume            -1.1 0.6 -1.1 0.6 -1.1 0.6
+straint on the ratio Rpp/Rpep to obtain a limit on the CNO
+flux.                                                                                              Total systematics (%)      -7.1 4.7 -1.5 0.8 -9.0 5.6
+
+varied within calibration accuracy with respect to the                                             TABLE IV. Relevant sources of systematic uncertainty and
+nominal response function and by varying the energy es-                                            their contributions to the measured neutrino interaction rates.
+timator, the number and width of the bins, as well as the                                          More details are in the text.
+fit range).
+                                                                                                   bles of pseudo-experiments were generated from a family
+   Systematic uncertainties related to the fit models were                                         of PDFs based on the full MC simulations and fitted us-
+evaluated using the method described in Sec. VI. Ensem-                                            ing both the MC and analytical methods. PDFs includ-
+                                                                                                   ing deformations due to possible inaccuracies in the mod-
+                                                                                                   eling of the detector response (energy scale, uniformity
+                                                                                                                                                                                                       14
+
+                                  100                                Nh      700 800 900                                               100                                Nh   700 800 900
+                                10                                                                                                   10
+Counts / ( day x 100 ton x N )         200 300 400 500 600                   210Po      11           Counts / ( day x 100 ton x N )         200 300 400 500 600                210Po  11
+                                  1                                          210Bi                                                     1                                       210Bi
+   h                          10-1         pp                                14C         C              h                          10-1         pp                             14C     C
+                              10-2                 7Be                       85Kr       pile-up                                    10-2                 7Be                    85Kr   10C
+                                                                                                                                                                               6He    pile-up
+                                                         CNO pep                        ext bkg                                                               CNO pep
+                                                                                                                                                                                      ext bkg
+
+                                                                             Total fit: p-value=0.7
+
+                                                                                                                                                                               Total fit: p-value=0.7
+
+                                                                                              8B                                                                                      8B
+
+                              10-3                                                                                                 10-3
+
+                                                500   1000           1500    2000       2500                                                       500     1000  1500          2000   2500
+
+                                 4                             Energy (keV)                                                           4                    Energy (keV)
+                                 2                                                                                                    2
+Residuals                        0                                                                   Residuals                        0
+                                -2                                                                                                   -2
+                                -4                    1000           1500    2000       2500                                         -4                    1000  1500          2000   2500
+                                                               Energy (keV)                                                                                      Energy (keV)
+                                                 500                                                                                                  500
+
+FIG. 7. Multivariate fit results (an example obtained with the MC method) for the TFC-subtracted (left) and the TFC-tagged
+(right) energy spectra, with residuals. The sum of the individual components from the fit (black lines) is superimposed on
+the data (grey points). The analysis has been performed using Nh as energy estimator and the transformation to keV-energy
+scale was perfomed only for the plotting purposes. The residuals are calculated in every bin as the difference between the data
+counts and the fit result, divided by the square root of the data counts.
+
+of the energy response, shape of PS-LPR) and uncertain-                                              is determined with a total uncertainty of 2.7 %, which
+ties in the theoretical energy spectra (210Bi) were consid-                                          represents a factor of 1.8 improvement with respect to
+                                                                                                     our previous result [5] and is two times smaller than the
+ered. The magnitude of the deformation was chosen to                                                 theoretical uncertainty.
+
+be within the range allowed by the available calibration                                                The present value of Rpp is consistent with our previous
+                                                                                                     result and the uncertainty is reduced by about 7.9 %.
+data.
+                                                                                                        The correlation between the CNO and pep  is bro-
+   In an additional systematic study, the fit was repeated                                           ken by constraining the RCNO in the fit. The values of
+taking into account the upper limit on the 85Kr decay                                                RBe and Rpp are not affected by the hypothesis on CNO
+                                                                                                     s within our sensitivity. However, Rpep depends on it,
+rate following the procedure described in [18], which ex-                                            being 0.22 cpd/100 ton higher if the LZ hypothesis is as-
+ploits the 85Kr - 85mRb delayed coincidences (85Kr rate                                              sumed (see Table II).
+
+< 7.5 cpd/100 ton at 95% C.L.).                                                                         The 2 profile obtained by marginalising the pep rate
+                                                                                                     is shown in Fig. 11 (left) for both the HZ and LZ assump-
+                              The last three lines of Table IV list the uncertainties                tions on CNO  rate. Both curves are symmetric and
+                                                                                                     allow us to establish, for the first time, that the absence
+associated with the determination of the exposure. The                                               of the pep reaction in the Sun is rejected at more than
+                                                                                                     5 .
+one about the fiducial volume is one of the dominant.
+                                                                                                        As anticipated, the similarity between the e- recoil
+Its value is the same as quoted in [5] and it is estimated                                           spectrum induced by the CNO neutrinos and the 210Bi
+                                                                                                     spectrum makes it impossible to disentangle the two con-
+using calibration sources of known positions.                                                        tributions with the spectral fit without an external con-
+                                                                                                     straint on the 210Bi rate. For this reason, we can only
+   Fully consistent results are obtained when adopting a                                             provide an upper limit on the CNO neutrinos interaction
+larger fiducial volume (R < 3.02 m, |z| < 1.67 m). This                                              rate RCNO. In order to do so, we need further to break
+                                                                                                     the correlation between the CNO and pep contributions.
+FV contains more external background (critical for the                                               In Phase-I, this was achieved by fixing the pep  rate to
+                                                                                                     the theoretical value [13]. In the current analysis, where
+pep s) which is, however, properly disentangled by the                                               pp s are included in the extended energy range of the fit,
+                                                                                                     we place an indirect constraint on pep s by exploiting
+multivariate fit thanks to its energy shape and radial dis-                                          the theoretically well known pp and pep flux ratio. The
+                                                                                                     interaction rate ratio Rpp/Rpep, is constrained to (47.7
+tribution. The previously published Borexino results re-
+garding pp s [12] and 7Be s [5] were obtained in this
+
+enlarged fiducial volume.
+
+                              Finally, the analytical fit performed on a restricted en-
+
+ergy range (not sensitive to pp neutrinos) using the Npe
+energy estimator gives consistent results (within 2 ) for
+
+RBe and Rpep.
+   The 7Be solar  flux listed in Table II is the sum
+
+of the two mono-energetic lines at 384 and 862 keV.
+
+It corresponds to a rate for the 862 keV line of
+
+46.3                            ±        +0.4         cpd/100  ton,  fully  compatible  with  the
+
+                                    1.1-0.7
+Borexino Phase-I measurement [5]. The 7Be solar  flux
+                                                                                                                                                                                                                                              15
+
+Counts /(day x 100 ton x 0.01) Counts /(day x 100 ton x 0.4 m)          Uniform component                                                                               400           500        600       Nh  700        800           900
+                                                                        External component
+                                                              10-1      Best Fit - 2/NDF = 47.8/69                             Counts / (day × 100 ton × 10 Nh)  0.16                                                          210Bi
+
+                                                                                                                                                                 0.14              7Be                                         11
+                                                                                                                                                                                             CNO
+                                                                                                                                                                 0.12                                 pep                       C
+
+                                                                                                                                                                   0.1                                                         Ext. Bkg.
+
+                                                              10-2                                                                                               0.08
+
+                                                              10-3                                                                                               0.06
+
+                                                                   0    0.5       1         1.5      2      2.5     3                                            0.04
+                                                                                            R (m)
+                                                                                                                                                                 0.02   1000       1250          1500 1750 2000               2250      2500
+                                                                                                                                                                                                     Energy (keV)
+                                                                                                 Electrons                                                           0
+                                                                10-1                             Positrons
+                                                                                                 Best Fit - 2/NDF = 85.1/107                                      1.8
+                                                                                                                                                                  1.6
+                                                                10-2                                                           Residuals                          1.4
+                                                                                                                                                                  1.2
+                                                                                                                                                                        Residuals  68% 95% 99.5%
+                                                                                                                                                                     1
+                                                                                                                                                                  0.8     1000
+                                                                                                                                                                  0.6
+                                                                                                                                                                  0.4
+                                                                                                                                                                  0.2
+
+                                                                                                                                                                                   1250          1500 1750          2000      2250      2500
+                                                                                                                                                                                                     Energy (keV)
+
+                                                                10-3                                        5.1 5.2 5.3        FIG. 10. TFC-subtracted energy spectrum zoomed between
+
+                                                                        4.5 4.6 4.7 4.8 4.9 5                                  800 keV and 2700 keV after applying stringent selection cuts
+                                                                                                    PS-LPR
+                                                                                                                               on the radial distribution (R < 2.4 m) and on the pulse-shape
+
+FIG. 8. An example of the multivariate fit showing the radial                                                                  variable distribution (PS-LPR < 4.8) to better see features due
+(top) and the PS-LPR (bottom) distributions of the events                                                                      to pep s interactions. The residuals (bottom plot) are the
+(black crosses) from the TFC-subtracted spectrum, in the en-
+ergy intervals Nh > 290 and 409 < Nh < 645, respectively.                                                                      ratio between the data and the fit model.
+
+                                                                                                                                   70                                      CNO fixed to LZ-SSM
+
+                                                                                                                                   60                                      CNO fixed to HZ-SSM
+
+                                                                                                                                   50
+
+                                                                                                                               2   40
+
+                                                                                                                                   30
+
+                                                                                                                                   20
+
+                                                                                               dt2                                 10
+
+                                                                   100       150       200  Np      250        300        350                                    00          1             2               3        4          5              6
+
+Counts / ( day × 100 ton × Ndt2 p )  102                                                                    14C     210Bi                                                                     Rpep (cpd/100 ton)
+                                                                                                            210Po   85Kr
+                                                                                                                                   30
+
+                                                                      pp 7Be                                                       25                                        pp/pep ratio fixed to HZ-SSM
+                                                              10
+
+                                                                                            CNO pep                                20
+
+                                                                1                                                               2  15
+
+                                                                                                                                   10
+
+                                     10-1                                                                                                                        5
+
+                                     10-2                                                                                                                        00     2          4          6       8        10         12        14        16
+
+                                                                                                                                                                                              RCNO (cpd/100 ton)
+
+                                     10-3                                                                                      FIG. 11. 2 profile for the pep (top plot) and CNO (bottom
+                                                                                                                               plot)  interaction rates.
+                                                                        300       400       500     600     700     800
+                                                                                       Energy (keV)
+
+Residuals                                                       4
+
+                                                                2                                                              ± 0.8) (HZ) [3], [26]. Constraining Rpp/Rpep to the LZ
+                                                                                                                               hypothesis value 47.5 ± 0.8 gives identical results.
+                                                                0
+                                                                                                                                  We carried out a sensitivity study by performing the
+                                                              -2                                                               analysis on thousands of data-sets simulated with the MC
+                                                              -4                                                               sensitivity tool: this study shows that under the current
+                                                                        300       400       500     600     700     800        experimental conditions the total expected uncertainty
+                                                                                       Energy (keV)                            (statistical plus systematical) is 3.4 cpd/100 ton. With
+                                                                                                                               this error, we expect the median 95% C.L. upper limit for
+FIG. 9. Results of the fit for TFC-subtracted energy spectrum                                                                  RCNO to be  9 cpd/100 ton and 10 cpd/100 ton, for low
+zoomed in to the lowest energy region (an example obtained
+with the analytical method) and residuals. The residual are
+calculated as in Fig. 7.
+and high metallicity, respectively. On data, we obtain the                                                                               16
+upper limit on RCNO = 8.1 cpd/100 ton (95 % C.L.) (see
+Table II), which is slightly stronger than the median limit       that of Borexino Phase-I and currently is providing the
+expected from the MC based sensitivity study. The 2               tightest bound on this component.
+profile for the CNO rate is shown in Fig. 11 (bottom).
+This result, using a weaker hypothesis on pep , confirms             Several analysis methods and details here reported and
+the current best limit on the flux of CNO s previously            discussed have a general interest which is going beyond
+obtained with Borexino Phase-I data [13].                         the understanding of the Borexino results: as example
+                                                                  the 11C suppression, the multivariate fit, the analytical
+                      VIII. CONCLUSIONS                           model of the energy response, the full MC description
+                                                                  of the detector and the fitting procedures can be easily
+   In summary, we have reported the details of the ana-           adapted to large volume liquid scintillator based detec-
+lyis and the results of the first simultaneous measurement        tors similar to Borexino [27], [28].
+of the pp, 7Be, and pep components of the solar neu-
+trino spectrum providing a comprehensive investigation                            IX. ACKNOWLEDGEMENT
+of the main pp chain in the Sun [10]. These results are in
+agreement with and improve the precision of our previ-               The Borexino program is made possible by funding
+ous measurements. In particular, RBe is measured with             from INFN (Italy), NSF (USA), BMBF, DFG, HGF,
+an unprecedented precision of 2.7%. The absence of pep            and MPG (Germany), RFBR (Grants 16-02-01026 A,
+neutrinos is rejected for the first time at more than 5 .         19-02-0097A, 16-29-13014 ofim, 17-02-00305 A)(Russia),
+These data, together with our measurement about 8B                RSF (grant 17-12-01009) (Russia), and NCN (Grant
+flux in the HER [11], provide a unique measurement of             No. UMO 2013/10/E/ST2/00180-Grant No. UMO
+the interaction rates and thus of the fluxes of the differ-       2017/26/M/ST2/00915) (Poland). We acknowledge the
+ent components of the solar neutrinos from the pp chain           computing services of Bologna INFN-CNAF data centre
+with a single detector and a unified analysis approach.           and LNGS Computing and Network Service (Italy), of
+                                                                  Julich Supercomputing Centre at FZJ (Germany), and of
+   The upper limit on RCNO has the same significance as           ACK Cyfronet AGH Cracow (Poland). We acknowledge
+                                                                  also the generous hospitality and support of the Labora-
+                                                                  tori Nazionali del Gran Sasso (Italy).
+
+[1] W. A. Fowler, The Astrophysical Journal 127, 551               [9] A. Friedland, C. Lunardini, and C. Pen~a-Garay, Physics
+    (1958); A. W. G. Cameron, Annual Review of Nuclear                  Letters B 594, 347 (2004); S. Davidson, C. Pen~a-Garay,
+    Science 8, 299 (1958).                                              N. Rius, and A. Santamaria, Journal of High Energy
+                                                                        Physics 03 (2003); P. C. de Holanda and A. Y. Smirnov,
+[2] J. Bahcall, http : / / www . sns . ias . edu / ~jnb / SNdata        Physical Review D 49, 113002 (2004); A. Palazzo and
+    (2005).                                                             J. W. F. Valle, ibid. 80, 091301 (2009).
+
+[3] N. Vinyoles, A. M. Serenelli, F. L. Villante, S. Basu,        [10] M. Agostini et al. (Borexino Collaboration), Nature , 505
+    J. Bergstro¨m, M. C. Gonzalez-Garcia, M. Maltoni,                   (2018).
+    C. Pen~a-Garay, and N. Song, The Astrophysical Journal
+    835, 202 (2017).                                              [11] M. Agostini et al. (Borexino Collaboration), https://
+                                                                        arxiv.org/hep-ex/1709.00756 (2017).
+[4] P. Anselmann et al. (GALLEX Collaboration), Physics
+    Letters B 285, 376 (1992); L. M. Krauss, Nature 357,          [12] G. Bellini et al. (Borexino Collaboration), Nature 512,
+    437 (1992); J. N. Abdurashitov et al., Physics Letters B            383 (2014).
+    328, 234 (1994); B. T. Cleveland et al., The Astrophys-
+    ical Journal 496, 505 (1998); Y. Fukuda et al., Physi-        [13] G. Bellini et al. (Borexino Collaboration), Physical Re-
+    cal Review Letters 77, 1683 (1996); Y. Abe et al. (Su-              view Letters 108, 051302 (2012).
+    perKamiokande collaboration), Physical Review D 83,
+    052010 (2011); Q. R. Ahmad et al. (SNO collaboration),        [14] G. Bellini et al. (Borexino Collaboration), Physical Re-
+    Physical Review Letters 87, 071301 (2001).                          view D 82, 033006 (2010).
+
+[5] G. Bellini et al. (Borexino Collaboration), Physical Re-      [15] H. Back et al. (Borexino Collaboration), Journal of In-
+    view Letters 107, 141302 (2011).                                    strumentation 7, P10018 (2012).
+
+[6] T. Kajita and A. B. McDonald, "The Nobel Prize in             [16] M. Agostini et al. (Borexino Collaboration), Astroparti-
+    Physics 2015," http://www.nobelprize.org/nobel_                     cle Physics 97, 136 (2018).
+    prizes/physics/laureates/2015 (2015).
+                                                                  [17] G. Alimonti et al. (Borexino Collaboration), Nuclear In-
+[7] R. D. Jr. and M. Koshiba, "The Nobel Prize in Physics               struments and Methods A 600, 568 (2009).
+    2002," http : / / www . nobelprize . org / nobel _ prizes /
+    physics/laureates/2002 (2002).                                [18] G. Bellini et al. (Borexino Collaboration), Physical Re-
+                                                                        view D 89, 112007 (2014).
+[8] L. Wolfenstein, Physical Review D 17, 2369 (1978); S. P.
+    Mikheev and A. Y. Smirnov, Soviet Journal of Nuclear          [19] G. Bellini et al. (Borexino Collaboration), Journal of In-
+    Physics 42, 913 (1985).                                             strumentation 6, P05005 (2011).
+
+                                                                  [20] D. Franco, G. Consolati, and D. Trezzi, Physical Review
+                                                                        C 83, 015504 (2011).
+
+                                                                  [21] X. F. Ding et al. (Borexino Collaboration), https://
+                                                                        arxiv.org/abs/1805.11125 (2018).
+[22] S. Agostinelli et al., Nuclear Instruments and Methods A                                                                         17
+      506, 250 (2003).
+                                                                     Neutrino Physics and Astrophysics: Valday, Russia,
+[23] M. Agostini et al. (Borexino Collaboration), Astroparti-        February 1-8, 2015, Phys. Part. Nucl. 47, 995 (2016).
+      cle Physics 92, 21 (2017).                               [26] I. Esteban, M. C. Gonzalez-Garcia, M. Maltoni,
+                                                                     I. Martinez-Soler, and T. Schwetz, Journal of High En-
+[24] M. Agostini et al. (Borexino), Phys. Rev. Lett. 115,            ergy Physics 01 (2017).
+      231802 (2015).                                           [27] E. Ciuffoli, J. Evslin, and X. Zhang, Phys. Rev. D 88,
+                                                                     033017 (2013).
+[25] O. Yu. Smirnov et al. (Borexino), Proceedings, 2nd In-    [28] C. Kraus, Progress in Particle and Nuclear Physics 57,
+      ternational Workshop on Prospects of Particle Physics:         150 (2006).
+
