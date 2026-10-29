@@ -1,0 +1,96 @@
+NUBASE2020 line for 14C: 014 0060   14C      3019.893      0.004                                 5.70  ky 0.03   0+            01          1936 B-=100
+INPUTS
+  12C: AME2020 mass excess 0.0 keV (= 0 by definition), B/A 7680.1446 keV
+  14C - 14N mass excess difference (AME2020): 156.47645 keV  = Q(beta-) of 14C (nuclear Q from atomic masses)
+  14C half-life (NUBASE2020): 5.7 +- 0.03 ky; 12C abundance 98.94(6)%, 13C 1.06(6)% (NUBASE2020 IS field)
+  12C rms charge radius 2.4702e-15 +- 2.2e-18 m (IAEA / Angeli-Marinova via search result); diamond a 3.56683e-10 m (Straumanis-Aka via search result)
+  diamond S(298.15) = 2.3782  Cp = 6.1149  J/(mol K) (NIST WebBook, DeSorbo 1953)
+  muon vertical intensity (E>1 GeV, sea level) 0.007 cm^-2 s^-1 sr^-1, cos^2 law (Cosmic ray recipes, via search result); 14C modern activity 0.226 Bq/g C
+  PeriodicTableJSON C ionization energies (kJ/mol): [1086.5, 2352.6, 4620.5, 6222.7, 37831, 47277]
+
+THE GRAM: 1 g of 12C (atomic mass 12 u exactly) -> N = M/(12 u) = 5.0184506350676e+22 atoms  (= 1/12 mol with N_A exact)
+  natural carbon (M = 12.011 u from PeriodicTableJSON): N_nat = 5.01385460168273e+22  ; 1 g of natural carbon holds 4.9607077429e+22 12C and 5.31468587778e+20 13C
+  per atom: 6 protons, 6 neutrons, 6 electrons; valence quarks 18 u + 18 d
+  per gram: protons 3.01107038104e+23  neutrons 3.01107038104e+23  electrons 3.01107038104e+23  u quarks 9.03321114312e+23  d quarks 9.03321114312e+23  (total valence quarks 1.80664222862e+24 )
+
+PART 1  INFORMATION
+  diamond volume of the gram (8 atoms per cell, a = 3.56683e-10 ) V = 2.846602994e-7 m^3; density 3512.9591 kg/m^3; cube side 0.0065782287 m; equal-volume sphere radius 0.0040808074 m
+  gram rest energy M c^2 = 89875517873681.8 J = 5.60958860380445e+32 eV
+  Bekenstein-Compton count for the whole gram: cycles = R E/(hbar c) = 1.16008721205e+37  -> nats 7.28904292583e+37  bits 1.05158660819e+38   (log10 of bits 38.021845 )
+  thermodynamic entropy of the gram at 298.15 K (diamond): S = 0.1981833333 J/K = 1.4354360401e+22 nats = 2.07089645657e+22 bits;  per atom 0.28603171 nats
+  Landauer energy to erase those bits at 298.15 K: T S = 59.08836083 J ;  kT ln2 = 2.853274515e-21 J per bit
+  counting the atoms: log2 N = 75.40966 bits;  Bekenstein bits / thermodynamic bits = 5.0779294e+15  (gap in decades 15.7057 )
+  Compton wavelength of the whole gram hbar/(M c) = 3.51767294e-40 m; Planck mass 2.176434342e-8 kg; M/m_P = 45946.71113 ;  that wavelength / l_P = 2.176434342e-5  (log12 -4.3201774 )
+
+PART 2  ENERGY  (per atom in eV, per gram in J, fraction of the gram rest energy)
+  item                                                                  eV per atom       J per gram  fraction of M c^2  log10 eV  log12 eV
+  atom rest energy 12 u c^2                                         11177929229.006  8.987551787e+13                1.0   10.0484    9.3111
+  nuclear rest energy (12 u - 6 m_e) c^2                            11174863235.306  8.985086592e+13         0.99972571   10.0482   9.31099
+  6 protons + 6 neutrons rest (free nucleons)                       11267025052.085  9.059188788e+13        1.007970691   10.0518   9.31429
+  nuclear binding energy B (AME2020 B/A x 12)                            92161735.2  7.410213027e+11      0.00824497394   7.96455   7.38018
+  valence quark masses 18 u + 18 d (MSbar 2 GeV, PDG 2024)              123480000.0  9.928340679e+11      0.01104676881    8.0916    7.4979
+  6 electrons rest energy                                            3065993.699977  2.465195171e+10    0.0002742899545   6.48657   6.01064
+  sum of all six ionization energies                                1030.1078717333      8282525.013      9.21555192e-8   3.01288   2.79182
+  cohesion Ec = Hfg(C atom, 0 K)                                     7.371068588954      59266.66676     6.59430601e-10   0.86753  0.803878
+  thermal: kT at 298.15 K                                         0.025692579121086      206.5797525    2.298509732e-12  -1.59019  -1.47352
+  check: atom rest = nuclear rest + 6 m_e c^2 (electron binding <1 keV ignored): -2.13587828e-17 eV residual
+  nuclear rest = 6 m_p + 6 m_n - B: -81.57952149 eV residual (m_e binding of AME atomic masses ~ electron binding ignored)
+  of the rest energy of one atom: electrons 0.0002742899545  valence quark masses 0.01104676881  nuclear binding 0.00824497394  remainder (nucleon mass not from bare quark masses, net of binding) 0.9886789412
+  one proton: 2 u + 1 d bare 9020000.0 eV = 0.00961342 of m_p c^2;  one neutron: 1 u + 2 d bare 11560000.0 eV = 0.0123036 of m_n c^2
+  quark-mass uncertainties (PDG 90% CL): u +-0.07 MeV, d +-0.07 MeV -> sum +- 2520000.0 eV per atom if linear
+  hydrogen-like check: C5+ ionization energy is the sixth IE = 489.9915772 eV vs Z^2 Ry = 489.8049524 eV; ratio 1.000381
+  ionization energies (eV): 11.260779 24.382981 47.888108 64.493741 392.09069 489.99158
+
+PART 3  SIZES  (m, and position in powers of 12 above the Planck length)
+  item                                                                   size m  decades above l_P  p12 above l_P
+  Planck length                                                    1.616255e-35                0.0            0.0
+  1 g Compton wavelength hbar/(Mc)                                3.5176729e-40         -4.6622544     -4.3201774
+  tau Compton wavelength                                          1.1104938e-16          18.837006      17.454905
+  12C rms charge radius                                              2.4702e-15          20.184222      18.703274
+  muon Compton wavelength                                         1.8675943e-15          20.062773      18.590735
+  1s radius of the hydrogenic muon in C (nonrel., point nucleus)  4.2654609e-14          21.421456       19.84973
+  electron Compton wavelength                                     3.8615927e-13          22.378257      20.736328
+  C5+ 1s radius a0/6                                              8.8196202e-12           23.73694      21.995323
+  diamond C-C bond a sqrt3/4                                      1.5444827e-10          24.980273      23.147431
+  diamond cubic a                                                   3.56683e-10          25.343773       23.48426
+  Wigner-Seitz radius of the gram lattice                         1.1063424e-10           24.83538      23.013168
+  cube side of the gram                                            0.0065782287          32.609599      30.216981
+  equal-volume sphere radius of the gram                           0.0040808074          32.402236      30.024833
+  ratios: R_sph / C-C bond = 26421839.54  ; C-C bond / r_ch = 62524.60106  ; r_ch / lambda_tau = 22.24415779  ; lambda_e / r_ch = 156.3271264
+
+PART 4  LEVELS: cycles = R E/(hbar c) for one object, count in the gram, total cycles in the gram
+  level                                             cycles / object   /(alpha/2)        count     total cycles log10 total
+  nucleus: R = r_ch, E = B (total binding)              1.153709026   316.199338  5.01845e+22  5.789831792e+22   22.762666
+  nucleus: R = r_ch, E = nuclear rest energy            139.8903845  38340.03721  5.01845e+22   7.02032989e+24   24.846358
+  per nucleon: R = r_ch, E = B/12                      0.0961424188  26.34994483  6.02214e+23  5.789831792e+22   22.762666
+  C5+ (1s electron): R = a0/6, E = IE6                0.02190039899  6.002286113  5.01845e+22  1.099060712e+21   21.041022
+  valence electron: R = n^2 a0/Z_eff, E = IE1        0.006638794288  1.819507616  5.01845e+22  3.331646141e+20   20.522659
+  diamond bond: R = C-C, E = Ec/2                    0.002884675947  0.790608901  1.00369e+23  2.895320768e+20   20.461697
+  cohesion: R = r_ws, E = Ec                         0.004132696644  1.132656427  5.01845e+22   2.07397341e+20   20.316803
+  thermal: R = a, E = kT (298.15 K)                  4.644122248e-5 0.01272823864  5.01845e+22  2.330629825e+18   18.367473
+  the gram: R = sphere radius, E = M c^2            1.160087212e+37 3.179474203e+39            1  1.160087212e+37   37.064491
+
+PART 5  LEPTONS in and through the gram
+  electrons held: 3.01107038104e+23  ; electron rest-mass fraction of the gram: 0.0002742899545  ; their binding (sum IE) per atom 1030.1079 eV
+  14C: lambda = ln2/T_half = 3.853422583e-12 s^-1  (T_half 5.7 ky);  modern activity 0.226 Bq/g -> 14C atoms per gram of carbon 5.8649161e+10  ; 14C/C atom ratio 1.169742e-12
+  each 14C decay emits one electron and one antineutrino: Q = 156476.45 eV; leptons made per second per gram of modern carbon: electrons 0.226  antineutrinos 0.226  ; per year 7132017.6 of each
+  power if every decay deposited Q (upper bound; the antineutrino leaves with part of it): 5.6658858e-15 W
+  Q / (electron rest energy) = 0.30621677
+  cosmic-ray muons (sea level): horizontal face of the cube 0.43273093 cm^2; rate through it = (pi/2) I_v A = 0.004758125 s^-1 = 0.2854875 per minute = 411.102 per day (cos^2 law, E > 1 GeV)
+  hydrogenic muon     on a point 12C nucleus (Z = 6, reduced mass): 1s radius 4.3057908e-14 m = 17.43094 nuclear radii; E_1s = (Z alpha)^2 mu c^2/2 = 100327.53 eV (nonrelativistic, no finite-size effect: for the muon and tau this is not a measured level)
+  hydrogenic tau      on a point 12C nucleus (Z = 6, reduced mass): 1s radius 2.9395934e-15 m = 1.1900224 nuclear radii; E_1s = (Z alpha)^2 mu c^2/2 = 1469554.8 eV (nonrelativistic, no finite-size effect: for the muon and tau this is not a measured level)
+  hydrogenic electron on a point 12C nucleus (Z = 6, reduced mass): 1s radius 8.8200235e-12 m = 3570.5706 nuclear radii; E_1s = (Z alpha)^2 mu c^2/2 = 489.78256 eV (nonrelativistic, no finite-size effect: for the muon and tau this is not a measured level)
+  neutrinos through the gram: not sourced here (solar, atmospheric and 14C-antineutrino fluxes), no number given
+
+PART 6  RAW STEP RATIOS along the per-atom energy ladder (descending)
+  from                                                           to                                                ratio    log10    log12
+  6 protons + 6 neutrons rest (free nucleons)                    atom rest energy 12 u c^2                     1.0079707 0.0034479 0.00319493
+  atom rest energy 12 u c^2                                      nuclear rest energy (12 u - 6 m_e) c^2        1.0002744 0.000119139 0.000110398
+  nuclear rest energy (12 u - 6 m_e) c^2                         valence quark masses 18 u + 18 d (MSbar 2 GeV, PDG 2024)      90.499378  1.95665  1.81308
+  valence quark masses 18 u + 18 d (MSbar 2 GeV, PDG 2024)       nuclear binding energy B (AME2020 B/A x 12)      1.3398185 0.127046 0.117724
+  nuclear binding energy B (AME2020 B/A x 12)                    6 electrons rest energy                       30.059336  1.47798  1.36954
+  6 electrons rest energy                                        sum of all six ionization energies            2976.3812  3.47369  3.21882
+  sum of all six ionization energies                             cohesion Ec = Hfg(C atom, 0 K)                139.75014  2.14535  1.98794
+  cohesion Ec = Hfg(C atom, 0 K)                                 thermal: kT at 298.15 K                       286.89485  2.45772   2.2774
+  span first to last: 4.3853227e+11  log10 11.642002  log12 10.787809
+  gram total energy / Landauer-erasure energy of its entropy: 1.5210359e+12  ; gram rest energy / nuclear binding of the gram: 121.28601
