@@ -1,0 +1,21 @@
+INPUTS (eV): IE1 5.391493  IE2 75.639476  IE3 122.453846   (Wikipedia kJ/mol 520.2, 7298.1, 11815.0 / 96.485332)
+IE3/(9 Ry) = 1.000021  (hydrogenic Li2+)
+
+bcc a = 350.93 pm (Arblaster 2018), nearest-neighbour distance nn = a sqrt3/2 = 3.039143e-10 m
+
+row                                                                 R (m)         cycles cycles/(a/2)   R dec>lP   R p12>lP
+Li2+ 1s  (IE3, R=a0/3)                                       1.763924e-11 1.09462620e-02     3.000064    24.0380    22.2743
+Li+  1s  (IE2, R=a0/Zeff, Zeff=2.3578)                       2.244333e-11 8.60298678e-03     2.357838    24.1426    22.3712
+Li   2s  (IE1, R=4a0/Zeff, Zeff=1.2590)                      1.681268e-10 4.59366711e-03     1.258996    25.0171    23.1816
+solid @ nn: cohesive energy 1.66 eV                          3.039143e-10 2.55665864e-03     0.700709    25.2742    23.4198
+solid @ nn: work function 2.9 eV (CRC)                       3.039143e-10 4.46645184e-03     1.224129    25.2742    23.4198
+solid @ nn: Fermi energy 4.74 eV (free-electron)             3.039143e-10 7.30033853e-03     2.000818    25.2742    23.4198
+solid @ nn: heat of vaporization 136 kJ/mol                  3.039143e-10 2.17091226e-03     0.594986    25.2742    23.4198
+solid @ nn: heat of fusion 3.00 kJ/mol                       3.039143e-10 4.78877704e-05     0.013125    25.2742    23.4198
+solid @ nn: kT at melting point 453.65 K                     3.039143e-10 6.02085907e-05     0.016501    25.2742    23.4198
+solid @ nn: kT at 300 K                                      3.039143e-10 3.98161076e-05     0.010912    25.2742    23.4198
+
+Z_eff*alpha/2 check for the three ionic/valence rungs: [0.0109460289, 0.0086029868, 0.0045936671]
+nn / R(2s) = 1.807649 ;  nn / a0 = 5.743148 ;  nn/lambda_e = 787.0180
+Li-core capacities: shell n holds 2n^2 states; Li = 1s^2 2s^1: 2 + 1 of 8; spin-1/2 doublet = 2 states
+IE ratios: IE2/IE1 = 14.029412  IE3/IE1 = 22.712418  IE3/IE2 = 1.618915

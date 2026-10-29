@@ -1,0 +1,19 @@
+# Map — periodic-table sample through the BC dictionary (2026-10-28)
+
+Data: `PeriodicTableJSON.json` (Bowserinator/Periodic-Table-JSON, github raw; 340,343 bytes; sha256 05e478cb1192c5bbfad8d9600fd3b4c7902c0966ad5d0408bfcc4d5092424c0d), downloaded with the human's permission into the session scratchpad, not stored in the repo. 119 entries; 104 have ionization energies. Its lithium values match the hand-built `lithium_map` run exactly. The values trace to Wikipedia and are not independently checked against NIST.
+Runs: `py -3 -I -u explore/ptable_sample.py <json> > explore/ptable_sample.out`; `py -3 -I -u explore/ptable_solids.py <json> > explore/ptable_solids.out`. Full tables: the two .out files.
+Sample (39 elements, 10 classes): alkali H Li Na K Cs; alkaline earth Be Mg Ca Ba; transition Fe Cu Ag W Au; post-transition Al Sn Pb Bi; metalloid B Si Ge; nonmetal C N O S; halogen F Cl Br I; noble He Ne Ar Kr Xe; lanthanide La Ce Gd Lu; actinide U.
+Translation: ionization stage k with E_k (eV) from kJ/mol/96.485332; the removed electron is taken from the outermost occupied shell n (shell-level assumption); Z_eff = n√(E/Ry); R = n²a₀/Z_eff; cycles = R·E/ħc = Z_eff·α/2 (an identity, so the ionic and valence rungs are Z_eff in units of α/2); extent X = R/ƛ_e in electron-Compton cycles. Solid rungs: Wigner–Seitz radius from density and mass, kT at the melting and boiling points as cohesion proxies.
+
+## What the vectors show
+1. **The whole table is one thin slice.** Over all 104 elements the valence extent X₁ runs from 101.9 Compton cycles (He) to 1782.9 (Fr), log₁₂ X from 1.861 to 3.013, i.e. 1.243 decades of the 60.9-decade length ladder (2%). The valence rung is Z_eff,₁·α/2 with Z_eff,₁ from 0.9997 (H) to 5.333 (Rn). Hydrogen sits at X = 137.08.
+2. **Ratios of successive rungs are nearly constant down a column.** Alkali Z₂/Z₁: Li 1.873, Na 2.022, K 2.025, Cs 2.032. Alkaline earth Z₂/Z₁: Be 1.398, Mg 1.402, Ca 1.394, Ba 1.385, and the first core removal Z₃/Z₂ rises 1.454 → 1.609. Standard screening physics; the dictionary displays it as a column-invariant rung structure.
+3. **Z_eff,₁ is monotone with Z inside alkali, alkaline earth, metalloid, halogen and noble-gas samples and not inside the transition, post-transition, nonmetal and lanthanide samples**: the dips are the known first-ionization anomalies (N→O 2.067 → 2.001; Pb→Bi 4.430 → 4.391; Fe→Cu 3.049 → 3.014), where the shell-level removal rule hides subshell structure.
+4. **Classes separate in the solid rungs.** Boiling-point rung at the Wigner–Seitz radius, in units of α/2: alkali 0.029–0.034; alkaline earth 0.029–0.063; transition 0.047–0.116; post-transition 0.045–0.064; metalloid 0.064–0.071; lanthanide 0.078–0.093; actinide 0.090 (U); molecular nonmetals 0.009–0.016. kT_b/IE₁ runs 0.0024 (Br) to 0.067 (W).
+5. **The solid cell barely moves while the valence shell grows.** r_ws spans 1.25e-10 to 3.01e-10 m (0.38 decades) across the metals; r_ws/R_val falls from 1.03 (Li) to 0.31 (U).
+
+## What it does not show
+- The ionic/valence rungs are an identity (cycles = Z_eff·α/2), so they add a common unit and no information. Everything above is standard shell and bonding physics re-expressed. Nothing here distinguishes the framework from it, and the floor has no counterpart for these numbers yet.
+- The only cross-type content is items 4–5 (cohesion proxies against ionization), which have no floor reading.
+- Caveats: shell-level removal order; sample not weighted; melting/boiling kT is a crude cohesion proxy; no work function, cohesive energy or radii vectors in the file used for the solid rung.
+sha256: *ptable_sample.py 8e7446ffe494a4b6975a1867ec61ecd222603fb1cc105f09f45b2463f8d56c93; *ptable_sample.out 699ca09988f86a4e5444fbd9d72036b18a96c01dfedfe7f8fdd6b2c44403bc31; *ptable_solids.py d9f0f5734c02889a59d53d126c4a6e27894400ebfd41c3e9a61c064a3cf8220b; *ptable_solids.out 9325ba570e0c49e89f394ce112a7bc412b622c2e369de814358d779b3277648c.

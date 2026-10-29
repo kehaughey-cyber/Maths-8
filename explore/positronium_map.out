@@ -1,0 +1,40 @@
+INPUTS: alpha 0.0072973525693  m_e 9.1093837015e-31  hbar 1.054571817e-34  G 6.6743e-11  H0(s^-1) 2.1842852410855020107e-18  neutrino 0.05 eV (rough)
+lengths: lam_e 3.8615926772428335827e-13  lam_Ps 1.9307963386214167914e-13  r_e 2.8179403244868057285e-15  a_Ps 1.0583544211605107166e-10
+
+PART A  Greek: BC cycles for each positronium row (form = alpha^k x q)
+  row                                                                      cycles         radits          ticks           bits  form
+  Ps rest @ own Compton cut                                                   1.0           12.0           30.0    9.064720284  alpha^0 x 1
+  Ps rest @ a_Ps                                            548.14399633478320446    6577.727956    16444.31989    4968.772002  alpha^-1 x 4
+  binding E_b = alpha^2 m c^2/4 @ a_Ps                           0.00364867628465  0.04378411542   0.1094602885  0.03307422993  alpha^1 x 1/2
+  1S-2S (3/4 of E_b) @ a_Ps                                    0.0027365072134875  0.03283808656   0.0820952164  0.02480567244  alpha^1 x 3/8
+  hyperfine (7/12) alpha^4 m c^2 (leading) @ a_Ps        4.5335956018512993025e-7 5.440314722e-6 1.360078681e-5 4.109577601e-6  alpha^3 x 7/6
+  annihilation photon 511 keV @ lambda/(2pi)                                  1.0           12.0           30.0    9.064720284  alpha^0 x 1
+  gravity pair G m_e^2/(hbar c) = (m_e/m_P)^2   1.7518093950948945146e-45  (cycles carried by the 1/R potential)
+
+PART B  rates in electron-Compton-rate units (omega_e = m_e c^2/hbar = 7.7634407110501095136e+20 rad/s) and persistence
+  para (2 gamma) = alpha^5/2                 rate/omega_e =  1.03465759992e-11  tau =   0.1244941967 ns   persistence =  9.665033148e+10 electron-Compton cycles   coef of alpha^k: 0.5 (k=5), 68.518 (k=6)
+  ortho leading 2(pi^2-9)/(9pi) alpha^6      rate/omega_e =  9.28862264827e-15  tau =    138.6738073 ns   persistence =  1.076585881e+14 electron-Compton cycles   coef of alpha^k: 0.00044887423 (k=5), 0.061511928 (k=6)
+  ortho measured 142.05 ns                   rate/omega_e =  9.06785404723e-15  tau =         142.05 ns   persistence =  1.102796753e+14 electron-Compton cycles   coef of alpha^k: 0.00043820555 (k=5), 0.060049935 (k=6)
+  |psi(0)|^2 = 1/(pi a_Ps^3) = 2.6850769860458687768e+29  m^-3 ; hydrogen 1/(pi a0^3)/8 = 2.6850769860458687768e+29
+  Gamma = c * 4 pi r_e^2 * |psi(0)|^2 = 8032502933.2007098438  s^-1 ;  alpha^5 omega_e/2 = 8032502933.2007098438  s^-1
+
+PART C  positions on the scale ladders (decades above the anchor, powers of 12 above the anchor)
+  item                                        value    decades        p12   ladder
+  lambda_Ps                           1.9307963e-13    22.0772    20.4574   length: Planck length -> Hubble radius (60.93 decades, 56.46 p12)
+  r_e = alpha lambda_e (inner)        2.8179403e-15    20.2414    18.7563   length: Planck length -> Hubble radius (60.93 decades, 56.46 p12)
+  lambda_e                            3.8615927e-13    22.3783    20.7363   length: Planck length -> Hubble radius (60.93 decades, 56.46 p12)
+  a_Ps (outer)                        1.0583544e-10    24.8161    22.9953   length: Planck length -> Hubble radius (60.93 decades, 56.46 p12)
+  electron mass                       9.1093837e-31    7.00945    6.49516   mass: 0.05 eV neutrino -> Hubble-sphere mass
+  Ps mass 2 m_e                       1.8218767e-30    7.31048     6.7741   mass: 0.05 eV neutrino -> Hubble-sphere mass
+  p-Ps lifetime                        1.244942e-10    33.3635    30.9155   time: Planck time -> Hubble time (1/H0 = 4.57816e+17 s,  60.929 decades)
+  o-Ps lifetime (measured)                1.4205e-7    36.4208    33.7485   time: Planck time -> Hubble time (1/H0 = 4.57816e+17 s,  60.929 decades)
+  electron Compton time hbar/(m c^2)  1.2880887e-21    22.3783    20.7363   time: Planck time -> Hubble time (1/H0 = 4.57816e+17 s,  60.929 decades)
+  Ps cycles across a_Ps                     548.144    2.73889    2.53794   information: 1 cycle -> Hubble sphere (3.6055617e+121 cycles, 121.557 decades)
+  Ps cycles / Hubble cycles = 1.5202735158701981943e-119   decades below the horizon count: 118.81807827011645751
+
+PART D  counts and checks used by the floor-vocabulary reading
+  signed defect (12-2d) for d=5 and its C-mirror d=7: 2 -2  sum = 0
+  two registered bits -> 4 spin states = 1 + 3 = 4 ;  12-shell irreps 1+3+3+5 = 12
+  a_Ps / lambda_Ps = 548.14399633478320446   (= 4/alpha = 548.14399633478320446 )
+  flat-ball count 1+3r(r+1) at r = a_Ps/lambda_Ps (ASSUMES one hop = one Compton length) = 903030.95414260481886
+  1/alpha = 137.03599908369580111  log12 = 1.9800517088901349904  ; 2/alpha log12 = 2.2589946545412648336  ; 4/alpha log12 = 2.5379376001923946768
