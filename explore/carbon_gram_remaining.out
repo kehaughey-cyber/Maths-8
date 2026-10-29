@@ -1,0 +1,57 @@
+=== A. HEAT CONTENT AND PHONONS (diamond)
+  Debye temperature solved from the measured value, not fitted to anything else:
+    from Cp(298.16 K) = 6.1149 J/(mol K) [DeSorbo 1953, NIST WebBook], taking Cp = Cv:  Theta_D = 1861.0444 K
+    from S(298.15 K) = 2.3782 J/(mol K) [DeSorbo 1953]:                                  Theta_D = 1864.7455 K
+    the two differ by 0.1989 % : the Debye model is not exact for diamond (one optical branch at 1332.7 cm^-1); both are model-defined numbers
+  [Cp] k Theta_D = 0.1603724 eV; heat content U(298.15)-U(0) per gram = 43.636776 J (per mol 523.64131); fraction of M c^2 = 4.85525e-13; zero-point (9/8) k Theta per atom = 0.18041895 eV, per gram 1450.6485 J
+      cycles of one phonon quantum at the lattice constant: a k Theta/(hbar c) = 0.00028988489 ; at the C-C bond: 0.00012552384
+  [S] k Theta_D = 0.16069133 eV; heat content U(298.15)-U(0) per gram = 43.422055 J (per mol 521.06466); fraction of M c^2 = 4.83136e-13; zero-point (9/8) k Theta per atom = 0.18077775 eV, per gram 1453.5334 J
+      cycles of one phonon quantum at the lattice constant: a k Theta/(hbar c) = 0.00029046138 ; at the C-C bond: 0.00012577347
+  Raman zone-centre optical phonon 1332.7 +- 0.2 cm^-1 (0 K) = 0.16523374 eV (secondary source); cycles at the C-C bond: 0.00012932882 ; Raman energy / k Theta_D(Cp): 1.03031 ; Raman energy / kT(298.15 K): 6.43119
+  modes in the gram: 3 N = 1.505535191e+23 ; cycles of one Debye quantum at the C-C bond: 0.000125524 ; Debye thermal energy per mode at 298.15 K: 0.00180905 eV
+  hbar c / k Theta_D (Cp) wavelength-scale of the cutoff phonon: 1.2304298e-6 m =  26.7625 p12
+
+=== B. GRAPHITE vs DIAMOND (graphite density, in-plane bond and interlayer are search-result quotations; entropies from the saved NIST page)
+  diamond: V 2.846603e-7 m^3, R_sph 0.0040808074 m, p12 30.02483 , BC cycles 1.1600872e+37 , bits 1.0515866e+38
+  graphite (2.267 g/cm^3): V 4.411116e-7 m^3, R_sph 0.0047222969 m, p12 30.08359 , BC cycles 1.3424491e+37 , bits 1.2168926e+38 ; radius ratio g/d 1.1571967
+  graphite-like entropy Takahashi-Westrum 1970 (amorphous label): 5.833 J/(mol K) -> per gram 5.079278e+22 bits ; ratio to diamond 2.4527 ; BC bits / thermodynamic bits 2.3958e+15 (decades 15.3795)
+  graphite-like entropy Lutcov et al. 1970: 6.201 J/(mol K) -> per gram 5.3997262e+22 bits ; ratio to diamond 2.60743 ; BC bits / thermodynamic bits 2.25362e+15 (decades 15.3529)
+  diamond: thermodynamic bits 2.0708965e+22 ; decades gap 15.7057
+  bond cycles: diamond C-C 1.54448e-10 m with E = Ec/2 = 3.68553 eV (2 bonds per atom, 4 neighbours) -> 0.0028846759 ; graphite in-plane C-C 1.42e-10 with E = Ec/1.5 = 4.91405 eV (3 neighbours, 1.5 bonds per atom) -> 0.0035362346
+  (Ec is the 0 K atomic enthalpy of formation, one number for both: the difference between graphite and diamond cohesion, ~2 kJ/mol, is below the printed digits and is not applied)
+  graphite interlayer 3.35e-10 m -> 23.459 p12; in-plane/interlayer = 0.423881
+
+=== C. POLYATOMIC GEOMETRY (CCCBDB experimental geometries, no uncertainties on most; atomization energies from the saved 0 K enthalpies)
+  molecule         formula      D0 eV edges   mean edge length m mean edge E eV  cycles (R_mean, E/edge)  /(alpha/2)  D0/atom/Ry   note
+  carbon monoxide  CO      11.108424     1            1.128e-10        11.1084             0.0063500199     1.74036     0.40823   one C-O edge (triple bond counted once)
+  methane          CH4     17.016058     4            1.087e-10        4.25401             0.0023433763    0.642254     0.25013   4 C-H edges
+  carbon dioxide   CO2     16.561067     2            1.162e-10        8.28053             0.0048761602     1.33642     0.40574   2 C=O edges
+  acetylene        C2H2    16.856448     3        1.1096667e-10        5.61882             0.0031597366    0.865995     0.30973   1 C-C, 2 C-H edges
+  ethylene         C2H4    23.064646     5           1.1366e-10        4.61293             0.0026570392     0.72822     0.28254   1 C-C, 4 C-H edges
+  ethane           C2H6    28.883147     7        1.1545714e-10        4.12616              0.002414242    0.661676     0.26536   1 C-C, 6 C-H edges
+  benzene          C6H6    56.617932    12           1.2405e-10        4.71816             0.0029660813     0.81292     0.34678   6 C-C (Kekule averaged), 6 C-H edges
+  Edge energy is D0 divided by the number of structural edges; it is not a measured bond energy. Whole-molecule cycles with R = mean edge length are shown only to put the polyatomics on the same axis as the diatomics.
+
+=== D. NUCLEAR MATTER RADIUS from the charge radius (arithmetic with PDG 2024 inputs)
+  inputs: r_ch(12C) = 2.4702 fm (secondary), r_p = 0.8409 fm (PDG 2024), <r_n^2> = -0.1155(17) fm^2 (PDG 2024), Darwin-Foldy 3/4 (hbar/m_p c)^2 = 0.0331724 fm^2
+  point-proton r_pp^2 = r_ch^2 - r_p^2 - (N/Z)<r_n^2> - DF = 5.4771029 fm^2 -> r_pp = 2.3403211 fm
+  with N = Z and isospin symmetry (Coulomb and the spin-orbit term for 12C neglected) the point-matter radius equals r_pp:  2.34032 fm  (ratio to r_ch 0.947422 )
+  nucleus cycles B r/(hbar c) with r_ch                  : 1.153709026 ; p12 of the radius 18.7033
+  nucleus cycles B r/(hbar c) with r_pp (matter, point)  : 1.093048974 ; p12 of the radius 18.6815
+  nuclear matter radius shifts the nucleus cycles by -5.258 % (the comparison with the nucleon r_p/lambda_p = 3.9977 and the A^(4/3) growth is unchanged in kind)
+
+=== E. NEUTRINOS through the gram: 8B, hep, geo, relic (atmospheric: no number extracted, see sources note)
+  gram projected area pi R^2 = 0.52316908 cm^2
+  8B solar, SNO three-phase NC total     flux    5.25e+6 cm^-2 s^-1 ; crossings per second    2.7466e+6 ; per day   2.3731e+11   (5.25 +-0.16 +0.11/-0.13)e6, measured
+  hep solar, SSM B16-GS98                flux     7980.0 cm^-2 s^-1 ; crossings per second       4174.9 ; per day    3.6071e+8   not observed; SSM +-30%
+  hep solar, SSM B16-AGSS09              flux     8250.0 cm^-2 s^-1 ; crossings per second       4316.1 ; per day    3.7291e+8   not observed
+  geo nu_e-bar, 238U                     flux     2.8e+6 cm^-2 s^-1 ; crossings per second    1.4649e+6 ; per day   1.2657e+11   Borexino 1909.02257, first column of first table; heading lost in pdftotext
+  geo nu_e-bar, 232Th                    flux     2.5e+6 cm^-2 s^-1 ; crossings per second    1.3079e+6 ; per day     1.13e+11   same, Th
+  geo total (U + Th as listed) = 5.3e+6 cm^-2 s^-1 ; crossings 2.7728e+6 s^-1 (40K is not included in that table row; reactor not included)
+  solar so far (pp+7Be+pep from carbon_gram_refinements.out): 3.459e10 s^-1; adding 8B 2.7466e+6  hep 4174.9
+  CMB photon density n_gamma = 410.72685 cm^-3 (T = 2.7255 K); relic density per neutrino or antineutrino of one flavour 3/22 n_gamma = 56.0082 cm^-3; per flavour (nu + nubar) 112.016 ; all species 336.049 cm^-3
+  T_nu = 1.94537 K, k T_nu = 0.000167639 eV ; mean momentum 3.151 k T_nu = 0.00052823 eV/c (mean of the F-D spectrum; recalled coefficient)
+  if every species had m = 0.0503021 eV (the oscillation minima, masses unmeasured): v/c = 0.010501 ; flux n v = 1.05794e+11 cm^-2 s^-1 ; crossings of the gram 5.53481e+10 s^-1  (isotropic, no gravitational clustering, no Earth motion)
+  if every species had m = 0.0086776 eV (the oscillation minima, masses unmeasured): v/c = 0.060873 ; flux n v = 6.13264e+11 cm^-2 s^-1 ; crossings of the gram 3.20841e+11 s^-1  (isotropic, no gravitational clustering, no Earth motion)
+  atmospheric neutrinos: the PDG neutrino review (sec 14.6.2) gives the flux only as a figure; no integral number was extracted, none is quoted here.
+  all of these are crossings; interaction rates are many orders smaller and are not computed (low-energy relic cross sections are not sourced).

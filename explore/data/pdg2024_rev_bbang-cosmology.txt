@@ -1,0 +1,1740 @@
+1  22. Big-Bang Cosmology
+
+   22. Big-Bang Cosmology
+
+Revised August 2023 by K.A. Olive (Minnesota U.) and J.A. Peacock (Edinburgh U.).
+
+22.1 Introduction to the standard big-bang model
+
+    The observed expansion of the Universe [1-3] is a natural (almost inevitable) result of any
+homogeneous and isotropic cosmological model based on general relativity. However, by itself,
+the Hubble expansion does not provide sufficient evidence for what we generally refer to as the
+Big-Bang model of cosmology. While general relativity is in principle capable of describing the
+cosmology of any given distribution of matter, it is extremely fortunate that our Universe appears
+to be homogeneous and isotropic on large scales. Together, homogeneity and isotropy allow us to
+extend the Copernican Principle to the Cosmological Principle, stating that all spatial positions in
+the Universe are essentially equivalent.
+
+    The formulation of the Big-Bang model began in the 1940s with the work of George Gamow and
+his collaborators, Ralph Alpher and Robert Herman. In order to account for the possibility that
+the abundances of the elements had a cosmological origin, they proposed that the early Universe
+was once very hot and dense (enough so as to allow for the nucleosynthetic processing of hydrogen),
+and has subsequently expanded and cooled to its present state [4, 5]. In 1948, Alpher and Herman
+predicted that a direct consequence of this model is the presence of a relic background radiation
+with a temperature of order a few kelvin [6, 7]. Of course this radiation was observed 16 years later
+as the cosmic microwave background (CMB) [8]. Indeed, it was the observation of this radiation
+that singled out the Big-Bang model as the prime candidate to describe our Universe. Subsequent
+work on Big-Bang nucleosynthesis further confirmed the necessity of our hot and dense past. See
+Sec. 22.3.7 for a brief discussion of BBN, and Sec. 24 of this Review for a detailed discussion of
+BBN. These relativistic cosmological models face severe problems with their initial conditions, to
+which the best modern solution is inflationary cosmology, discussed in Sec. 22.3.5 and in - Sec. 23
+of this Review. If correct, these ideas would strictly render the term `Big Bang' redundant, since
+it was first coined by Hoyle to represent a criticism of the lack of understanding of the initial
+conditions.
+
+22.1.1 The Robertson-Walker Universe
+    The observed homogeneity and isotropy enable us to describe the overall geometry and evolution
+
+of the Universe in terms of two cosmological parameters accounting for the spatial curvature and
+the overall expansion (or contraction) of the Universe. These two quantities appear in the most
+general expression for a space-time metric that has a (3D) maximally symmetric subspace of a 4D
+space-time, known as the Robertson-Walker metric:
+
+   ds2 = dt2 - R2(t)  dr2     22  2  2                                     (22.1)
+                              2 + r (d + sin  d ) .
+                      1 - kr
+
+Note that we adopt c = 1 throughout. By rescaling the radial coordinate, we can choose the
+curvature constant k to take only the discrete values +1, -1, or 0 corresponding to closed, open,
+or spatially flat geometries. In this case, it is often more convenient to re-express the metric as
+
+   ds2 = dt2 - R2(t) d2 + Sk2() (d2 + sin2  d2) ,                          (22.2)
+
+where the function Sk() is (sin , , sinh ) for k = (+1, 0, -1). The coordinate r [in Eq. (22.1)] and
+the `angle'  [in Eq. (22.2)] are both dimensionless; the dimensions are carried by the cosmological
+scale factor, R(t), which determines proper distances in terms of the comoving coordinates. A
+
+   S. Navas et al. (Particle Data Group), Phys. Rev. D 110, 030001 (2024)
+                                    31st May, 2024 10:12am
+2                    22. Big-Bang Cosmology
+
+common alternative is to define a dimensionless scale factor, a(t) = R(t)/R0, where R0  R(t0)
+is R at the present epoch. It is also sometimes convenient to define a dimensionless or conformal
+time coordinate, , by d = dt/R(t). Along constant spatial sections, the proper time is defined by
+the time coordinate, t. Similarly, for dt = d = d = 0, the proper distance is given by R(t). For
+standard texts on cosmological models see e.g., Refs. [9-16].
+
+22.1.2 The redshift
+
+   The cosmological redshift is a direct consequence of the Hubble expansion, determined by R(t).
+
+A local observer detecting light from a distant emitter sees a redshift in frequency. We can define
+
+the redshift as             z  1 - 2 v12,
+                                     2
+                                                                                 (22.3)
+
+where 1 is the frequency of the emitted light, 2 is the observed frequency, and v12 is the relative
+velocity between the emitter and the observer. While the definition, z = (1 - 2)/2 is valid in
+general, relating the redshift to a simple relative velocity is only correct on small scales (i.e., less
+
+than cosmological scales) such that the expansion velocity is non-relativistic. For light signals, we
+can use the metric given by Eq. (22.1) and ds2 = 0 to write
+
+                            R      R R2 - R1
+                     v12 = R r = t = =                ,                          (22.4)
+                            R      R        R1
+
+where r(t) is the radial coordinate (temporal) separation between the emitter and observer.
+Noting that physical distance, D, is Rr or t, Eq. (22.4) gives us Hubble's law, v = HD. In
+addition, we obtain a simple relation between the redshift and the scale factor:
+
+                                                     1 + z = 1 = R2 .            (22.5)
+                                                                2 R1
+
+This result does not depend on the non-relativistic approximation.
+22.1.3 The Friedmann equations of motion
+
+    The cosmological equations of motion are derived from Einstein's equations:
+
+                     Rµ - 21 gµ R = 8GNTµ + gµ .                                 (22.6)
+
+Gliner [17] and Zeldovich [18] pioneered the modern view, in which the  term is set on the rhs
+and interpreted as an effective energy-momentum tensor Tµ for the vacuum of gµ/8GN. It is
+common to assume that the matter content of the Universe is a perfect fluid, for which
+
+                     Tµ = -pgµ + (p + ) uµu ,                                    (22.7)
+
+where gµ is the space-time metric described by Eq. (22.1), p is the isotropic pressure,  is the energy
+density and u = (1, 0, 0, 0) is the velocity vector for the isotropic fluid in co-moving coordinates.
+With the perfect fluid source, Einstein's equations lead to the Friedmann equations:
+
+                     H2     R 2 8 GN  k                                          (22.8)
+                            R = 3 - R2 + 3 ,
+
+and                  R¨  4GN
+
+                            =-  3           ( + 3p),                             (22.9)
+                     R3
+
+                            31st May, 2024
+3                                  22. Big-Bang Cosmology
+
+where H(t) is the Hubble parameter and  is the cosmological constant. The first of these is
+
+sometimes  called  the  Friedmann  equation.  Energy  conservation  via  T µ    =  0,  leads  to  a  third  useful
+
+                                                                            ;µ
+
+equation [which can also be derived from Eq. (22.8) and Eq. (22.9)]:
+
+                                    = -3H ( + p) .                                                   (22.10)
+
+Equation (22.10) can also be simply derived as a consequence of the first law of thermodynamics.
+    Equation (22.8) has a simple classical mechanical analog if we neglect (for the moment) the
+
+cosmological term . By interpreting -k/R2 Newtonianly as a `total energy', then we see that the
+evolution of the Universe is governed by a competition between the potential energy, 8GN/3, and
+the kinetic term (R /R)2. For  = 0, it is clear that the Universe must be expanding or contracting
+(except at the turning point prior to collapse in a closed Universe). The ultimate fate of the
+Universe is determined by the curvature constant k. For k = +1, the Universe will recollapse in a
+finite time, whereas for k = 0, -1, the Universe will expand indefinitely. These simple conclusions
+can be altered when  = 0 or more generally with some component with ( + 3p) < 0.
+
+22.1.4 Definition of cosmological parameters
+
+   In addition to the Hubble parameter, it is useful to define several other measurable cosmological
+
+parameters. The Friedmann equation can be used to define a critical density such that k = 0 when
+
+ = 0:                    3H2 c  = 1.88 × 10-26 h2 kg m-3
+                               8 GN
+                                                                                                     (22.11)
+
+                                   = 1.05 × 10-5 h2 GeV cm-3,
+
+where the scaled Hubble parameter, h, is defined by
+
+                                          H  100 h km s-1 Mpc-1                                      (22.12)
+                                    H-1 = 9.778 h-1 Gyr
+
+                                             = 2998 h-1 Mpc.
+
+   The cosmological density parameter tot is defined as the energy density relative to the critical
+
+density:
+
+                                              tot = /c.                                              (22.13)
+
+Note that one can now rewrite the Friedmann equation as
+
+                                   k/R2 = H2(tot - 1) .                                              (22.14)
+
+From Eq. (22.14), one can see that when tot > 1, k = +1 and the Universe is closed, when
+tot < 1, k = -1 and the Universe is open, and when tot = 1, k = 0, and the Universe is spatially
+flat.
+
+    It is often necessary to distinguish different contributions to the density. It is therefore conve-
+
+nient to define present-day density parameters for pressureless matter (m) and relativistic particles
+(r), plus the quantity  = /3H2. In more general models, we may wish to drop the assump-
+tion that the vacuum energy density is constant, and we therefore denote the present-day density
+
+parameter of the vacuum by v. The Friedmann equation then becomes
+
+                                   k/R02 = H02(m + r + v - 1),                                       (22.15)
+
+where the subscript 0 indicates present-day values. Thus, it is the sum of the densities in matter,
+
+relativistic particles, and vacuum that determines the overall sign of the curvature. Note that the
+quantity -k/R02H02 is sometimes referred to as K. This usage is unfortunate: it encourages one
+to think of curvature as a contribution to the energy density of the Universe, which is not correct.
+
+                                              31st May, 2024
+4                              22. Big-Bang Cosmology
+
+22.1.5 Standard Model solutions
+    Much of the history of the Universe in the standard Big-Bang model can be easily described by
+
+assuming that either matter or radiation dominates the total energy density. During inflation and
+again today the expansion rate for the Universe is accelerating, and we should allow for domination
+by a cosmological constant or some other form of dark energy. In the following, we shall delineate
+the solutions to the Friedmann equation when a single component dominates the energy density.
+Each component is distinguished by an equation of state parameter w = p/. We concentrate on
+solutions that expand at early times, although the Friedmann equation also permits a time-reversed
+contracting solution.
+
+22.1.5.1 Solutions for a general equation of state
+
+    Let us first assume a general equation of state parameter for a single component, w, which is
+constant. In this case, Eq. (22.10) can be written as  = -3(1 + w)R /R and is easily integrated
+
+to yield
+
+                                 R-3(1+w).             (22.16)
+
+Note that at early times when R is small, the less singular curvature term k/R2 in the Friedmann
+equation can be neglected so long as w > -1/3. Curvature domination occurs at rather late times
+(if a cosmological constant term does not dominate sooner). For w = -1, one can insert this result
+into the Friedmann equation Eq. (22.8), and if one neglects the curvature and cosmological constant
+terms, it is easy to integrate the equation to obtain
+
+                               R(t)  t2/[3(1+w)].      (22.17)
+
+22.1.5.2 A Radiation-dominated Universe
+
+    In the early hot and dense Universe, it is appropriate to assume an equation of state corre-
+
+sponding to a gas of radiation (or relativistic particles) for which w = 1/3. In this case, Eq. (22.16)
+becomes   R-4. The `extra' factor of 1/R is due to the cosmological redshift; not only is the
+number density of particles in the radiation background decreasing as R-3 since volume scales
+as R3, but in addition each particle's energy is decreasing as E    R-1. Similarly, one can
+
+substitute w = 1/3 into Eq. (22.17) to obtain
+
+                               R(t)  t1/2; H = 1/2t.   (22.18)
+
+22.1.5.3 A Matter-dominated Universe
+    At relatively late times, non-relativistic matter eventually dominates the energy density over
+
+radiation [see Eq. (22.3.8)]. A pressureless gas (w = 0) leads to the expected dependence   R-3
+from Eq. (22.16) and, if k = 0, we obtain
+
+                               R(t)  t2/3; H = 2/3t.   (22.19)
+
+22.1.5.4 A Universe dominated by vacuum energy
+
+   If there is a dominant source of vacuum energy, V0, it would act as a cosmological constant with
+
+ = 8GNV0 and equation of state w = -1. In this case, the solution to the Friedmann equation
+
+when curvature is neglected is particularly simple and leads to an exponential expansion of the
+
+Universe:                                 
+                               R(t)  e /3 t.
+                                                       (22.20)
+
+More generally we could write                     
+                               a(t) = sinh2/3( 3t/2),
+                                                       (22.21)
+
+                               31st May, 2024
+5               22. Big-Bang Cosmology
+
+which describes a flat Universe containing both matter and vacuum energy, with a(t) being the
+
+scale factor normalized to unity when both components are equal.
+
+   A key parameter is the equation of state of the vacuum, w  p/; this need not be the w = -1
+
+of , and may not even be constant [19-21]. There is much interest in the more general possibility
+
+of a dynamically evolving vacuum energy, for which the name `dark energy' has become commonly
+
+used. A variety of techniques exist whereby the vacuum density as a function of time may be
+
+measured, usually expressed as the value of w as a function of epoch [22, 23]. The best current
+
+measurement for the equation of state (assumed constant, but without assuming zero curvature)
+
+is w = -1.028 ± 0.031 [24]. Unless stated otherwise, we will assume that the vacuum energy is a
+
+cosmological constant with w = -1 exactly.
+
+   The presence of vacuum energy can dramatically alter the fate of the Universe. For example, if
+
+ < 0, the Universe will eventually recollapse independent of the sign of k. For large values of  > 0
+
+(larger than the Einstein static value needed to halt any cosmological expansion or contraction),
+
+even a closed Universe will expand forever. One way to quantify this is the deceleration parameter,
+
+q0, defined as
+
+                RR¨ 1                       (1 + 3w)
+                q0 = -  2 = m + r +                                       v.  (22.22)
+                R0 2                        2
+
+This equation shows us that w < -1/3 for the vacuum may lead to an accelerating expansion. To
+the continuing astonishment of cosmologists, such an effect has been observed: one piece of direct
+evidence is the supernova Hubble diagram [25-30] (see Fig. 22.1 below). Current data indicate
+that vacuum energy is indeed the largest contributor to the cosmological density budget, with
+v = 0.685 ± 0.007 and m = 0.315 ± 0.007 if k = 0 is assumed [24].
+
+    The existence of this constituent is without doubt the greatest puzzle raised by the current
+cosmological model; the final section of this review discusses some of the ways in which the vacuum-
+energy problem is being addressed. For more details, see Dark Energy - Sec. 28 of this Review.
+
+22.2 Introduction to observational cosmology
+
+22.2.1 Fluxes, luminosities, and distances
+    The key quantities for observational cosmology can be deduced quite directly from the metric.
+    (1) The proper transverse size of an object seen by us to subtend an angle d is its comoving
+
+size d Sk() times the scale factor at the time of emission:
+
+                d = d R0Sk()/(1 + z).                                         (22.23)
+
+    (2) The apparent flux density of an object is deduced by allowing its photons to flow through
+a sphere of current radius R0Sk(); but photon energies and arrival rates are redshifted, and the
+bandwidth d is reduced. The observed photons at frequency 0 were emitted at frequency 0(1+z),
+so the flux density is the luminosity at this frequency, divided by the total area, divided by 1 + z:
+
+                                              S (0) = 2 2 L ([1 + z]0) .      (22.24)
+                                                          4R0Sk()(1 + z)
+
+These relations lead to the following common definitions:
+
+                angular-diameter distance DA = (1 + z)-1R0Sk();               (22.25)
+                        luminosity distance DL = (1 + z) R0Sk() .
+
+                31st May, 2024
+6  22. Big-Bang Cosmology
+
+Figure 22.1: The type Ia supernova Hubble diagram, based on 1650 publicly available supernova
+distance estimates [28-30]. The first panel shows that for z 1 the large-scale Hubble flow is
+indeed linear and uniform; the second panel shows an expanded scale, with the linear trend divided
+out, and with the redshift range extended to show how the Hubble law becomes nonlinear (r = 0
+is assumed). Larger points with errors show median values in redshift bins. Comparison with the
+prediction of Friedmann models favors a vacuum-dominated Universe.
+
+    These distance-redshift relations are expressed in terms of observables by using the equation of
+
+                                                                           31st May, 2024
+7                                      22. Big-Bang Cosmology
+
+a null radial geodesic (R(t)d = dt) plus the Friedmann equation:
+
+                         R0 d = 1 dz = 1 [ (1 - m - v - r)(1 + z)2
+                               H (z )        H0
+
+                                                      + v(1 + z)3+3w + m(1 + z)3                               (22.26)
+
+                                                      + r(1 + z)4 -1/2 dz.
+
+The main scale for the distance here is the Hubble length, 1/H0. The flux density is the product of
+the specific intensity I and the solid angle d subtended by the source: S = I d. Combining
+the angular size and flux-density relations thus gives the relativistic version of surface-brightness
+conservation:
+
+                                             I (0) =  B([1 + z]0)                                              (22.27)
+                                                                    3,
+                                                           (1 + z)
+
+where B is surface brightness (luminosity emitted into unit solid angle per unit area of source).
+We can integrate over 0 to obtain the corresponding total or bolometric formula:
+
+                                             Itot =        Btot                                                (22.28)
+                                                                 4.
+                                                           (1 + z)
+
+This cosmology-independent form expresses Liouville's Theorem: photon phase-space density is
+conserved along rays.
+
+22.2.2 Distance data and geometrical tests of cosmology
+
+   In order to confront these theoretical predictions with data, we have to bridge the divide between
+
+two extremes. Nearby objects may have their distances measured quite easily, but their radial
+
+velocities are dominated by deviations from the ideal Hubble flow, which typically have a magnitude
+
+of several hundred  km s-1.    On      the   other  hand,  objects      at  redshifts  z  >  0.01  will  have  observed
+                                                                                          
+                                                                        <
+recessional  velocities  that  differ  from  their  ideal  values   by      10%,  but  absolute    distances   are  much
+
+harder to supply in this case. The traditional solution to this problem is the construction of the
+
+distance ladder: an interlocking set of methods for obtaining relative distances between various
+
+classes of object, which begins with absolute distances at the 10 to 100 pc level, and terminates
+
+with galaxies at significant redshifts. This is discussed in the article on Cosmological Parameters -
+
+Sec. 25 of this Review.
+
+   One of the key developments in this area has been the use of type Ia supernovae (SNe), which
+
+now allow measurement of relative distances with 5% precision. In combination with improved
+
+Cepheid data from the HST plus improved measurements of the distance to the LMC (or alterna-
+
+tively a direct geometrical distance to the maser galaxy NGC4258), SNe results extend the distance
+
+ladder to the point where deviations from uniform expansion are negligible, leading to the best ex-
+isting Cepheid-based value for H0: (73.0±1.0) km s-1Mpc-1 [31]. Better still, the analysis of high-z
+
+SNe has allowed a simple and direct test of cosmological geometry to be carried out: as shown in
+
+Fig. 22.1 and Fig. 22.2, supernova data and measurements of CMB anisotropies strongly favor a
+
+k = 0 model dominated by vacuum energy. It is worth noting that there is some tension (4.2)
+between the Cepheid and CMB determinations of H0 (the latter is (67.4 ± 0.5) km s-1Mpc-1 [24]).
+
+While it is remarkable that the two very different methods give such similar results, the formal
+
+disagreement shows that either there are unidentified systematic errors or that some new post-CDM
+
+physics is required; there is no current consensus in the community on these alternatives. We do
+
+note that a recent analysis of SNe Ia with a calibration of the tip of the red-giant branch gives a
+
+                                             31st May, 2024
+8                                        22. Big-Bang Cosmology
+
+result close to that of the CMB: (69.8 ± 0.6 (stat.) ± 1.6 (sys.)) km s-1Mpc-1 [32, 33]. See Cosmo-
+logical Parameters - Sec. 25 of this Review for a more comprehensive review of Hubble parameter
+determinations.
+
+Figure 22.2: Likelihood-based probability densities over the plane  (i.e., v assuming w = -1)
+versus m. The colored locus derives from Planck [34] and shows that the CMB alone requires a
+flat Universe v +m 1 if the Hubble constant is not too high. The SNe Ia results [35] very nearly
+constrain the orthogonal combination v - m, and the intersection of these constraints directly
+favors a flat model with m 0.3, as does the measurement of the baryon acoustic oscillation
+lengthscale (for which a joint constraint is shown on this plot). The CMB alone is capable of
+
+breaking the degeneracy with H0 by using the measurements of gravitational lensing that can be
+made with modern high-resolution CMB data.
+
+22.2.3 Age of the Universe
+    The most striking conclusion of relativistic cosmology is that the Universe has not existed
+
+forever. The dynamical result for the age of the Universe may be written as
+
+                                             dz
+
+                          H0t0 =    0 (1 + z)H(z)                                                           (22.29)
+                                 =
+                                                                 dz
+
+                                    0 (1 + z) [(1 + z)2(1 + mz) - z(2 + z)v]1/2 ,
+
+where we have neglected r and chosen w = -1.                   Over      the  range  of  interest  (0.1  <  m  <  1,
+                                                                                                               
+     <
+|v|     1),  this  exact  answer    may  be  approximated  to    a  few  per  cent  accuracy  by
+
+                                    H0t0     2   (0.7m  +  0.3   -   0.3v)-0.3.                             (22.30)
+                                             3
+
+                                                 31st May, 2024
+9          22. Big-Bang Cosmology
+
+For the special case that m + v = 1, the integral in Eq. (22.29) can be expressed analytically as
+
+                                                
+           2    1 + v
+           H0t0 =  ln                                 (m < 1).  (22.31)
+           3 v                    1 - v
+
+    The most accurate means of obtaining ages for astronomical objects is based on the natural
+clocks provided by radioactive decay. The use of these clocks is complicated by a lack of knowledge of
+the initial conditions of the decay. In the Solar System, chemical fractionation of different elements
+helps pin down a precise age for the pre-Solar nebula of 4.6 Gyr, but for stars it is necessary to
+attempt an a priori calculation of the relative abundances of nuclei that result from supernova
+explosions. In this way, a lower limit for the age of stars in the local part of the Milky Way of
+about 11 Gyr is obtained [36, 37].
+
+    The other major means of obtaining cosmological age estimates is based on the theory of
+stellar evolution. In principle, the main-sequence turnoff point in the color-magnitude diagram of a
+globular cluster should yield a reliable age. But these have been controversial, owing to theoretical
+uncertainties in the evolution model - as well as observational uncertainties in the distance, dust
+extinction, and metallicity of clusters. The present consensus favors ages for the oldest clusters of
+about 13 Gyr [38].
+
+    These methods are all consistent with the age deduced from studies of structure formation,
+using the microwave background and large-scale structure: t0 = (13.80 ± 0.02) Gyr [24], where the
+extra accuracy comes at the price of assuming the simple 6-parameter CDM model to be true.
+
+22.2.4 Horizon, isotropy, flatness problems
+    For photons, the radial equation of motion is just c dt = R d. How far can a photon get in a
+
+given time? The answer is clearly
+
+            =   t2 dt                              ,            (22.32)
+
+                t1 R(t)
+
+i.e., just the interval of conformal time. We can replace dt by dR/R , which the Friedmann equation
+
+says is  dR/ R2 at early times. Thus, this integral converges if R2   as t1  0, otherwise
+it diverges. Provided the equation of state is such that  changes faster than R-2, light signals
+
+can only propagate a finite distance between the Big Bang and the present; there is then said to
+
+be a particle horizon. Such a horizon therefore exists in conventional Big-Bang models, which are
+
+dominated by radiation (  R-4) at early times.
+
+   At late times, the integral for the horizon is largely determined by the matter-dominated phase,
+
+for which  DH = R0 H  R0 t(z) dt
+
+           0 R(t)                                6000 -1        (22.33)
+                                                 h Mpc (z 1).
+                                                  mz
+
+The horizon at the time of formation of the microwave background (`last scattering': z 1100)
+was thus of order 100 M pc in size, subtending an angle of about 1. Why then are the large number
+of causally disconnected regions we see on the microwave sky all at the same temperature? The
+Universe is very nearly isotropic and homogeneous, even though the initial conditions appear not
+to permit such a state to be constructed.
+
+    A related problem is that the  = 1 Universe is unstable:
+
+                                            -1                  (22.34)
+           (a) - 1 = 1 -  + va2 + ma-1 + ra-2 ,
+
+where  with no subscript is the total density parameter, and a(t) = R(t)/R0. This requires (t)
+to be unity to arbitrary precision as the initial time tends to zero; a Universe of non-zero curvature
+today requires very finely tuned initial conditions.
+
+              31st May, 2024
+10                                   22. Big-Bang Cosmology
+
+22.3 The Hot Thermal Universe
+
+22.3.1 Thermodynamics of the early Universe
+    As alluded to above, we expect that much of the early Universe can be described by a radiation-
+
+dominated equation of state. In addition, through much of the radiation-dominated period, thermal
+equilibrium is established by the rapid rate of particle interactions relative to the expansion rate
+of the Universe (see Sec. 22.3.3 below). In equilibrium, it is straightforward to compute the ther-
+modynamic quantities, , p, and the entropy density, s. In general, the energy density for a given
+particle type i can be written as
+
+                                             i = Ei dnqi ,                                                  (22.35)
+
+with the density of states given by
+
+                            dnqi = 22 gi (exp[(Eqi - µi)/Ti] ± 1)-1 qi2 dqi,                                (22.36)
+
+where  gi  counts  the  number  of  degrees  of  freedom  for  particle  type  i,  E2     =  m2    +  qi2,  µi  is  the
+
+                                                                                      qi        i
+
+chemical potential, and the ± corresponds to either Fermi or Bose statistics. Similarly, we can
+
+define the pressure of a perfect gas as
+
+                                                   1  q2                                                    (22.37)
+                                             pi = 3   i E dnq i i .
+
+The number density of species i is simply
+
+                                                 ni = dnqi ,                                                (22.38)
+
+and the entropy density is
+
+                                         si = i + pi - µini .                                               (22.39)
+                                                       Ti
+
+    In the Standard Model, a chemical potential is often associated with baryon number, and since
+the net baryon density relative to the photon density is known to be very small (of order 10-9), we
+can neglect any such chemical potential when computing total thermodynamic quantities.
+
+    For photons, we can compute all of the thermodynamic quantities rather easily. Taking gi = 2
+for the 2 photon polarization states, we have (in units where = kB = 1)
+
+                         2  = T 4,          1         s = 4 ,        n = 2 2(3) T 3,                        (22.40)
+                               15    p = 3 ,                 3T
+
+with 2(3)/2 0.2436. Note that Eq. (22.10) can be converted into an equation for entropy
+conservation. Recognizing that p = sT , Eq. (22.10) becomes
+
+                                             d(sR3)/dt = 0.                                                 (22.41)
+
+For radiation, this corresponds to the relationship between expansion and cooling, T  R-1 in an
+adiabatically expanding Universe. Note also that both s and n scale as T 3.
+
+22.3.2 Radiation content of the Early Universe
+    At the very high temperatures associated with the early Universe, massive particles are pair
+
+produced, and are part of the thermal bath. If for a given particle species i we have T mi,
+then we can neglect the mass in Eq. (22.35) to Eq. (22.39), and the thermodynamic quantities are
+
+                                             31st May, 2024
+11     22. Big-Bang Cosmology
+
+easily computed as in Eq. (22.40). In general, we can approximate the energy density (at high
+temperatures) by including only those particles with mi T . In this case, we have
+
+     = g 7 2 B + gF T 4  2 N (T ) T 4,  (22.42)
+       8F  30  30
+    B
+
+where gB(F) is the number of degrees of freedom of each boson (fermion) and the sum runs over all
+boson and fermion states with m T . The factor of 7/8 is due to the difference between the Fermi
+
+and Bose integrals. Eq. (22.42) defines the effective number of degrees of freedom, N (T ), by taking
+
+into account new particle degrees of freedom as the temperature is raised. This quantity, calculated
+
+from high temperature lattice QCD, is plotted in Fig. 22.3 [39]. Near the QCD transition, there
+is a slight difference between the coefficient of T 4 for  and the coefficient of T 3 for the entropy
+density s = (22/45)Ns(T )T 3 [40], as seen in the figure.
+
+Figure 22.3: The effective numbers of relativistic degrees of freedom as a function of temperature.
+The sharp drop corresponds to the quark-hadron transition. The bottom panel shows the relative
+ratio between the number of degrees of freedom characterizing the energy density and the entropy.
+
+    The value of N (T ) at any given temperature depends on the particle physics model. In the
+standard SU(3) × SU(2) × U(1) model, we can specify N (T ) up to temperatures of O(100) GeV.
+The change in N (ignoring mass effects) can be seen in the table below.
+
+                                                                           31st May, 2024
+12                               22. Big-Bang Cosmology
+
+               Temperature        New Particles                             4N (T )
+
+               T < me             's + 's                                      29
+               me < T < mµ        e±                                           43
+               mµ < T < m         µ±                                           57
+               m < T < Tc                                                      69
+               Tc < T < mstrange  's                                          205
+               ms < T < mcharm    's + u, u¯, d, d¯ + gluons                  247
+               mc < T < m                                                     289
+               m < T < mbottom    s, s¯                                       303
+               mb < T < mW,Z                                                  345
+               mW,Z < T < mHiggs  c, c¯                                       381
+               mH < T < mtop      ±                                           385
+               mt < T             b, ¯b                                       427
+                                  W±, Z
+                                  H0
+                                  t, t¯
+
+Tc corresponds to the confinement-deconfinement transition between quarks and hadrons.
+    At higher temperatures, N (T ) will be model-dependent. For example, in the minimal SU(5)
+
+model, one needs to add 24 states to N (T ) for the charged and colored X and Y gauge bosons,
+another 24 from the adjoint Higgs, and another six scalar degrees of freedom (in addition to the
+four associated with the complex Higgs doublet already counted in the longitudinal components of
+W ± and Z, and in H) from the 5 of Higgs. Hence for T > mX in minimal SU(5), N (T ) = 160.75.
+In a supersymmetric model this would at least double.
+
+    In the radiation-dominated epoch, Eq. (22.10) can be integrated (neglecting the T -dependence
+of N ), giving us a relationship between the age of the Universe and its temperature:
+
+                                                            90  1/2                        (22.43)
+                                             t = 323GNN (T )
+This can be expressed more conveniently in the form                 T -2 .
+
+                                 t TMeV 2 = 2.4[N (T )]-1/2,                               (22.44)
+
+where t is measured in seconds and TMeV in units of MeV.
+
+22.3.3 Neutrinos and equilibrium
+
+    Due to the expansion of the Universe, certain rates may be too slow to either establish or
+
+maintain equilibrium. Quantitatively, for each particle i, a minimal condition for equilibrium
+
+requires that the interaction rate  i involving that type of particle should be larger than the
+
+expansion rate of the Universe:
+
+                                   i > H.                                                  (22.45)
+
+Recalling that the age of the Universe is determined by H-1, this condition is equivalent to requiring
+
+that on average, at least one interaction has occurred over the lifetime of the Universe.
+
+    A good example for a process that goes in and out of equilibrium is the weak interaction of
+
+neutrinos. On dimensional grounds, one can estimate the thermally averaged scattering cross-
+
+section:
+
+                                  v  O(10-2)T 2/mW 4                                       (22.46)
+
+for T  <  mW.  Recalling that the number density of leptons is n  T 3,      we can compare the weak
+       
+
+interaction rate, wk  n v , with the expansion rate and so obtain
+
+               H=                8GN 1/2           83 2 1/2                                (22.47)
+                                                =      N (T ) T /MP
+
+                                    3              90
+
+                                                   1.66N (T )1/2T 2/MP,
+
+                                  31st May, 2024
+13                                       22. Big-Bang Cosmology
+
+where the Planck mass MP = GN-1/2 = 1.22 × 1019 GeV.                                                    (22.48)
+    Neutrinos will be in equilibrium when wk > H or
+
+                                            T > (500 mW 4 /MP)1/3  1 MeV.
+
+However, this condition assumes T mW; for higher temperatures, we should write v 
+
+O(10-2)/T 2, so that   10-2T . Thus, in the very early stages of expansion, at temperatures
+T   >  10-2MP/   N , equilibrium will not have been established.
+    
+
+    Having attained a quasi-equilibrium stage, the Universe then cools further to the point where
+
+the interaction and expansion timescales match once again. The temperature at which these rates
+
+are equal is commonly referred to as the neutrino decoupling or freeze-out temperature and is
+
+defined by wk(Td) = H(Td). For T < Td, neutrinos drop out of equilibrium. The Universe
+
+becomes transparent to neutrinos and their momenta simply redshift with the cosmic expansion.
+
+The effective neutrino temperature will simply fall with T  1/R.
+
+    Soon  after  decoupling,  e±  pairs  in  the  thermal  background  begin  to  annihilate  (when  T  <  me).
+                                                                                                        
+
+Because the neutrinos are decoupled, the energy released due to annihilation heats up the photon
+
+background relative to the neutrinos. The change in the photon temperature can be easily computed
+
+from entropy conservation. The neutrino entropy must be conserved separately from the entropy
+
+of interacting particles. A straightforward computation yields
+
+                                         T = (4/11)1/3 T 1.9 K.                                         (22.49)
+
+The total entropy density is therefore given by the contribution from photons and three flavors of
+
+neutrinos:            4 2                         3 3 4 2
+                 s=
+                                  21                                   21  T3 = 7.04 n.                 (22.50)
+                      3 30    2 + (T /T) T =                      2+
+                                  4                        3 30
+                                                                       11
+
+Similarly, the total relativistic energy density is given by
+
+                                         2        21              44
+                                  r = 2 + (T /T) T                    1.68 .                            (22.51)
+                                         30       4
+
+In practice, a small correction is needed to this, since neutrinos are not totally decoupled at e±
+annihilation: the effective number of massless neutrino species is 3.044, rather than 3 [41].
+
+    This expression ignores neutrino rest masses, but current oscillation data require at least one
+neutrino eigenstate to have a mass exceeding 0.06 eV. In this minimal case, h2 = 6 × 10-4,
+so the neutrino contribution to the matter budget would be negligibly small (which is our normal
+assumption). However, a nearly degenerate pattern of mass eigenstates could allow larger densities,
+since oscillation experiments only measure differences in m2 values. Note that a 0.06-eV neutrino
+has T = m at z 357, so the above expression for the total present relativistic density is really
+only an extrapolation. However, neutrinos are almost certainly relativistic at all epochs where the
+radiation content of the Universe is dynamically significant. Combining Planck data with data
+from large-scale structure surveys such as DES [42] provides an upper limit to the sum of neutrino
+masses, m < 0.13 eV, and may provide the first measurement of a neutrino mass (as opposed to a
+difference of neutrino mass2 from oscillation data) from future surveys. See Neutrinos in Cosmology
+- Sec. 26 of this Review for a detailed discussion of neutrinos in cosmology.
+
+22.3.4 Field theory and phase transitions
+    It is very likely that the Universe has undergone one or more phase transitions during the
+
+course of its evolution [43-46]. Our current vacuum state is described by SU(3)c× U(1)em, which
+in the Standard Model is a remnant of an unbroken SU(3)c× SU(2)L× U(1)Y gauge symmetry.
+
+                                                  31st May, 2024
+14                22. Big-Bang Cosmology
+
+Symmetry breaking occurs when a non-singlet gauge field (the Higgs field in the Standard Model)
+picks up a non-vanishing vacuum expectation value, determined by a scalar potential. For example,
+a simple (non-gauged) potential describing symmetry breaking is V () = 14 4 - 12 µ22 + V (0).
+
+                                                                   
+The resulting expectation value is simply  = µ/ .
+
+    In the early Universe, finite temperature radiative corrections typically add terms to the po-
+tential of the form 2T 2. Thus, at very high temperatures, the symmetry is restored and  = 0.
+As the Universe cools, depending on the details of the potential, symmetry breaking will occur
+via a first-order phase transition in which the field tunnels through a potential barrier, or via a
+second-order transition in which the field evolves smoothly from one state to another (as would be
+the case for the above example potential).
+
+    The evolution of scalar fields can have a profound impact on the early Universe. The equation
+of motion for a scalar field  can be derived from the energy-momentum tensor:
+
+                                      Tµ = µ  - 1 gµ  - gµ V ().  (22.52)
+                                                            2
+
+By associating  = T00 and p = R-2(t)Tii we have
+
+                   = 1 2 + 1 R-2(t)()2 + V () ;                   (22.53)
+                       22
+
+                  p = 1 2 - 1 R-2(t)()2 - V () ,
+                       26
+
+and from Eq. (22.10) we can write the equation of motion as follows (by considering a homogeneous
+region, we can ignore the gradient terms):
+
+                                         ¨ + 3H = -V /.           (22.54)
+
+22.3.5 Inflation
+
+    In Sec. 22.2.4, we discussed some of the problems associated with the standard Big-Bang model.
+
+However, during a phase transition, our assumptions of an adiabatically expanding Universe are
+
+generally not valid. If, for example, a phase transition occurred in the early Universe such that
+
+the field evolved slowly from the symmetric state to the global minimum, the Universe may have
+
+been dominated by the vacuum energy density associated with the potential near  0. During
+
+this period of slow evolution, the energy density due to radiation will fall below the vacuum energy
+
+density,  V (0). When this happens, the expansion rate will be dominated by the constant
+
+V(0), and we obtain the exponentially expanding solution given in Eq. (22.20). When the field
+
+evolves towards the global minimum it will begin to oscillate about that minimum, energy will be
+
+released during its decay, and a hot thermal Universe will be restored. If released fast enough,
+
+it will produce radiation at a temperature N TR4  <  V   (0).  In this reheating process, entropy has
+                                                  
+
+been created and the final value of R T is greater than the initial value of R T . Thus, we see that,
+
+during a phase transition, the relation R T  constant need not hold true. This is the basis of the
+
+inflationary Universe scenario [47-49].
+
+    If, during the phase transition, the value of R T changed by a factor of O(1029), the cosmological
+
+problems discussed above would be solved. The observed isotropy would be generated by the
+
+immense expansion; one small causal region could get blown up, and thus our entire visible Universe
+
+would have been in thermal contact some time in the past. In addition, the density parameter 
+
+would have been driven to 1 (with exponential precision). Density perturbations will be stretched
+
+by the expansion,   R(t). Thus it will appear that  H-1 or that the perturbations have left
+
+the horizon, where in fact the size of the causally connected region is now no longer simply H-1.
+
+                                         31st May, 2024
+15  22. Big-Bang Cosmology
+
+However, not only does inflation offer an explanation for large scale perturbations, it also offers a
+source for the perturbations themselves through quantum fluctuations.
+
+    Problems with early models of inflation based on either a first-order [50] or second-order [51,52]
+phase transition of a Grand Unified Theory led to models invoking a completely new scalar field:
+the inflaton, . The potential of this field, V (), needs to have a very low gradient and curvature
+in order to match observed metric fluctuations. For a more thorough discussion of the problems of
+early models and a host of current models being studied see the review on inflation - Sec. 23 of this
+Review. In most current inflation models, reheated bubbles typically do not percolate, so inflation is
+`eternal' and continues with exponential expansion in the region outside the bubbles. These causally
+disconnected bubble Universes constitute a `multiverse', where low-energy physics can vary between
+different bubbles. This has led to a controversial `anthropic' approach to cosmology [53-55], where
+observer selection within the multiverse can be introduced as a means of understanding e.g. why
+the observed level of vacuum energy is so low (because larger values suppress growth of structure).
+
+22.3.6 Baryogenesis
+
+    The Universe appears to be populated exclusively with matter rather than antimatter [56, 57].
+Indeed antimatter is only detected in accelerators or in cosmic rays. However, the presence of
+antimatter in the latter is understood to be the result of collisions of primary particles in the
+interstellar medium. There is in fact strong evidence against primary forms of antimatter in the
+Universe. Furthermore, the density of baryons compared to the density of photons is extremely
+small,   10-9.
+
+    The production of a net baryon asymmetry requires baryon number violating interactions, C
+and CP violation, and a departure from thermal equilibrium [58]. The first two of these ingredients
+are expected to be contained in Grand Unified Theories (GUTs) as well as in the non-perturbative
+sector of the Standard Model; the third can be realized in an expanding Universe where, as we have
+seen, interactions come in and out of equilibrium.
+
+    There are several interesting and viable mechanisms for the production of the baryon asymmetry.
+While we cannot review any of them here in any detail, we mention some of the important scenarios.
+In all cases, all three ingredients listed above are incorporated. One of the first mechanisms was
+based on the out of equilibrium decay of a massive particle such as a superheavy GUT gauge or Higgs
+boson [59, 60]. A novel mechanism involving the decay of flat directions in supersymmetric models
+is known as the Affleck-Dine scenario [61]. There is also the possibility of generating the baryon
+asymmetry at the electroweak scale using the non-perturbative interactions of sphalerons [62].
+Because these interactions conserve the sum of baryon and lepton number, B + L, it is possible
+to first generate a lepton asymmetry (e.g., by the out-of-equilibrium decay of a superheavy right-
+handed neutrino), which is converted to a baryon asymmetry at the electroweak scale [63]. This
+mechanism is known as lepto-baryogenesis, or simply leptogenesis.
+
+22.3.7 Nucleosynthesis
+
+    An essential element of the standard cosmological model is Big-Bang nucleosynthesis (BBN),
+the theory that predicts the abundances of the light element isotopes D, 3He, 4He, and 7Li. Nucle-
+osynthesis takes place at a temperature scale of order 1 MeV. The nuclear processes lead primarily
+to 4He, with a primordial mass fraction of about 25%. Lesser amounts of the other light elements
+are produced: about 10-5 of D and 3He and about 10-10 of 7Li by number relative to H. The
+abundances of the light elements depend almost solely on one key parameter, the baryon-to-photon
+ratio, . The nucleosynthesis predictions can be compared with observational determinations of the
+abundances of the light elements. Consistency between theory and observations, driven primarily
+
+                                                                           31st May, 2024
+16            22. Big-Bang Cosmology
+
+by recent D/H measurements [64, 65], leads to a range of [66]                     (22.55)
+                                            5.8 × 10-10 <  < 6.3 × 10-10.
+
+The value of  is related to the baryon density as follows:
+
+              b = 3.66 × 107 h-2,                                                 (22.56)
+
+or 1010 = 274bh2. The Planck result [24] for bh2 of 0.0224 ± 0.0002 translates into a value of
+ = 6.12±0.04. This result can be used to `predict' the light element abundances, which can in turn
+be compared with observation [67]. The resulting D/H abundance is in excellent agreement with
+that found in quasar absorption systems. It is in reasonable agreement with the helium abundance
+observed in extragalactic HII regions (once systematic uncertainties are accounted for). The BBN
+predicted Li abundance is systematically higher than the Li abundance observed in the atmospheres
+of halo dwarf stars [68], but there is mounting evidence that effects of stellar depletion cannot be
+ignored so that the stellar abundances of Li may not correspond to the primordial abundance [69].
+See BBN - Sec. 24 of this Review for a detailed discussion of BBN, in addition to references [66,70-74].
+
+22.3.8 The transition to a matter-dominated Universe
+    In the Standard Model, the temperature (or redshift) at which the Universe undergoes a tran-
+
+sition from a radiation-dominated to a matter-dominated Universe is determined by the amount
+of dark matter. Assuming three nearly massless neutrinos, the energy density in radiation at
+temperatures T 1 MeV, is given by
+
+              2  21         4 T 4/3 4.
+              r = 30 2 + 4  11                                                    (22.57)
+
+In the absence of non-baryonic dark matter, the matter density can be written as
+
+                 m = mN n,                                                        (22.58)
+
+where mN is the nucleon mass. Recalling that n  T 3 [cf. Eq. (22.40)], we can solve for the
+temperature or redshift at the matter-radiation equality when r = m:
+
+              Teq = 0.22 mN  or (1 + zeq) = 0.22  mN ,                            (22.59)
+                                                                         T0
+
+where T0 is the present temperature of the microwave background. For  = 6.1 × 10-10, this
+corresponds to a temperature Teq 0.13 eV or (1 + zeq) 550. A transition this late would be
+problematic for structure formation (see Sec. 22.4.5).
+
+    The redshift of matter domination can be pushed back significantly if non-baryonic dark matter
+is present. If instead of Eq. (22.58), we write
+
+                                T3                                                (22.60)
+              m = mc T0 ,
+
+we find that
+
+              Teq = 0.9 3 mc or (1 + zeq) = 2.4 × 104mh2.                         (22.61)
+                            T0
+
+                 31st May, 2024
+17                                        22. Big-Bang Cosmology
+
+22.4 The Universe at late times
+
+22.4.1 The CMB
+
+    One form of the infamous Olbers' paradox says that, in Euclidean space, surface brightness is
+
+independent of distance. Every line of sight will terminate on matter that is hot enough to be
+
+ionized  and  so  scatter  photons:    T  >  103 K,  and  the  sky  should   therefore   shine    as  brightly   as  the
+                                          
+
+surface of the Sun. The reason the night sky is dark is entirely due to the expansion, which cools the
+
+radiation temperature to 2.73 K. This gives a Planck function peaking at around 1 mm to produce
+
+the CMB.
+
+    The CMB spectrum is a very accurate match to a Planck function [75]; see also CMB - Sec. 29
+
+of this Review. The COBE estimate of the temperature is [76]
+
+                                            T = (2.7255 ± 0.0006) K.                                           (22.62)
+
+The lack of any distortion of the Planck spectrum is a strong physical constraint. It is very
+difficult to account for in any expanding Universe other than one that passes through a hot stage.
+Alternative schemes for generating the radiation, such as thermalization of starlight by dust grains,
+inevitably generate a superposition of temperatures. What is required in addition to thermal
+equilibrium is that T  1/R, so that radiation from different parts of space arrive at an observer
+with the same apparent temperature.
+
+    Although it is common to speak of the CMB as originating at `recombination', a more accu-
+rate terminology is the era of `last scattering'. In practice, this takes place at z 1100, almost
+independently of the main cosmological parameters, at which time the fractional ionization is very
+small. This occurred when the age of the Universe was about 370,000 years. But the CMB photons
+themselves were not generated at this point, and were the result of thermalization at z  107. See
+CMB - Sec. 29 of this Review for a full discussion of the CMB.
+
+22.4.2 Matter in the Universe
+
+    One of the main tasks of cosmology is to measure the density of the Universe, and how this is
+
+divided    between  dark   matter  and    baryons.  The   baryons   consist  partly  of  stars,   with  0.002  <     <
+                                                                                                                     
+
+0.003 [77] but mainly inhabit the intergalactic medium (IGM). One powerful way in which this can
+
+be studied is via the absorption of light from distant luminous objects such as quasars. Even very
+
+small amounts of neutral hydrogen can absorb rest-frame UV photons (the Gunn-Peterson effect),
+
+and should suppress the continuum by a factor exp(- ), where
+
+                                             4.62 -1      nHI(z)/m-3
+                                    10 h                                     ,                                 (22.63)
+                                                      (1 + z) 1 + mz
+
+and  this  expression  applies  while  the  Universe  is  matter  dominated  (z  >   1   in  the  m   =  0.3  v   =  0.7
+                                                                                 
+
+model). At z < 6, the dominant effect on quasar spectra is a `forest' of narrow absorption lines,
+
+which produce a mean  = 1 in the Ly forest at about z = 3, and so we have HI 10-6.7h-1.
+
+This is such a small number that the IGM must be very highly ionized at these redshifts, apart
+
+from a few high-density clumps. But at z > 6 there is good evidence for a `reionization' era at
+
+which the general IGM is not so strongly ionized [78]. As discussed below, this ionized IGM at low
+
+z is also detectable via the secondary Compton scattering of CMB photons.
+
+    The Ly forest is of great importance in pinning down the abundance of deuterium. Because
+
+electrons in deuterium differ in reduced mass by about 1 part in 4000 compared to hydrogen, each
+
+absorption system in the Ly forest is accompanied by an offset deuterium line. By careful selection
+
+of systems with an optimal HI column density, a measurement of the D/H ratio can be made. This
+
+has now been done with high accuracy in 10 quasars, with consistent results [64]. Combining these
+
+                                             31st May, 2024
+18        22. Big-Bang Cosmology
+
+determinations with the theory of primordial nucleosynthesis yields a baryon density of bh2 =
+0.021-0.023 (95% confidence) in excellent agreement with the Planck result. For more details, see
+BBN - Sec. 24 of this Review.
+
+    Ionized IGM can also be detected in emission when it is densely clumped, via bremsstrahlung
+radiation. This generates the spectacular X-ray emission from rich clusters of galaxies. Studies
+of this phenomenon allow us to achieve an accounting of the total baryonic material in clusters.
+Within the central 1 Mpc, the masses in stars, X-ray emitting gas, and total dark matter can
+be determined with reasonable accuracy (perhaps 20% rms), and this allows a minimum baryon
+fraction to be determined [79, 80]:
+
+          Mbaryons >                           -3/2
+                   0.009 + (0.066 ± 0.003) h .           (22.64)
+          Mtotal
+
+Because clusters are the largest collapsed structures, it is reasonable to take this as applying to
+the Universe as a whole. This equation implies a minimum baryon fraction of perhaps 12% (for
+reasonable h), which is too high for m = 1 if we take bh2 0.02 from nucleosynthesis. This is
+therefore one of the more robust arguments in favor of m 0.3; for more details, see Cosmological
+Parameters - Sec. 25 of this Review. This argument is also consistent with the inference on m
+that can be made from Fig. 22.2.
+
+    This method is much more robust than the older classical technique for weighing the Universe:
+`L × M/L'. The overall light density of the Universe is reasonably well determined from redshift
+surveys of galaxies, so that a good determination of mass M and luminosity L for a single object
+suffices to determine m - but only if the mass-to-light ratio were universal.
+
+22.4.3 Gravitational lensing
+    A robust method for determining masses in cosmology is to use gravitational light deflection.
+
+Most systems can be treated as a geometrically thin gravitational lens, where the light bending
+is assumed to take place only at a single distance. Simple geometry then determines a mapping
+between the coordinates in the intrinsic source plane (S) and the observed image plane (I):
+
+                  (DLI) = DS (I - S),                    (22.65)
+                                DLS
+
+where the angles I, S, and  are in general two-dimensional vectors on the sky. The distances DLS
+etc. are given by an extension of the usual distance-redshift formula:
+
+                  DLS = R0Sk(S - L) .                    (22.66)
+                                 1 + zS
+
+This is the angular-diameter distance for objects on the source plane as perceived by an observer
+on the lens.
+
+    Solutions of this equation divide into weak lensing, where the mapping between source plane
+and image plane is one-to-one, and strong lensing, in which multiple imaging is possible. For
+circularly-symmetric lenses, an on-axis source is multiply imaged into a `caustic' ring, whose radius
+is the Einstein radius:
+
+    E =            DLS 1/2                               (22.67)
+       =  4GM
+
+                  DLDS
+
+          M           1/2   DLDS/DLS     -1/2
+                                Gpc
+          1011.09M                             arcsec .
+
+                      31st May, 2024
+19  22. Big-Bang Cosmology
+
+The observation of `arcs' (segments of near-perfect Einstein rings) in rich clusters of galaxies has
+thus given very accurate masses for the central parts of clusters - generally in good agreement with
+other indicators, such as analysis of X-ray emission from the cluster IGM [81, 82].
+
+    Gravitational lensing has also developed into a particularly promising probe of cosmological
+structure on 10-Mpc to 100-Mpc scales. Weak image distortions manifest themselves as an ad-
+ditional ellipticity of galaxy images (`shear'), which can be observed by averaging many images
+together (the corresponding flux amplification is less readily detected). The result is a `cosmic
+shear' field of order 1% ellipticity, coherent over scales of around 30 arcmin, which is directly re-
+lated to the cosmic mass field. For this reason, weak lensing is seen as potentially the cleanest
+probe of matter fluctuations, next to the CMB. Already, impressive results have been obtained in
+measuring cosmological parameters, based on survey data from only  103 deg2 [83, 84]. A par-
+ticular strength of lensing is its ability to measure the amplitude of mass fluctuations; this can be
+deduced from the amplitude of CMB fluctuations, but only with low precision on account of the
+poorly-known optical depth due to Compton scattering after reionization. However, the effect of
+weak lensing on the CMB map itself can be detected via the induced non-Gaussian signal, and this
+gives the CMB greater internal power [85]. The main difficulty of principle with lensing is that part
+of the signal is generated by small-scale density fluctuations; thus a model is required for nonlinear
+evolution, including astrophysical effects that separate baryons and dark matter. In this respect,
+the CMB is a cleaner probe of the primordial fluctuations.
+
+22.4.4 Density fluctuations
+    The overall properties of the Universe are very close to being homogeneous; and yet telescopes
+
+reveal a wealth of detail on scales varying from single galaxies to large-scale structures of size
+exceeding 100 Mpc. The existence of these structures must be telling us something important
+about the initial conditions of the Big Bang, and about the physical processes that have operated
+subsequently. This motivates the study of the density perturbation field, defined as
+
+    (x)   (x) -     .       (22.68)
+
+          
+
+A critical feature of the  field is that it inhabits a Universe that is isotropic and homogeneous in its
+large-scale properties. This suggests that the statistical properties of  should also be statistically
+homogeneous - i.e., it is a stationary random process.
+
+    It is often convenient to describe  as a Fourier superposition:
+
+    (x) = ke-ik·x.          (22.69)
+
+We avoid difficulties with an infinite Universe by applying periodic boundary conditions in a cube
+of some large volume V . The cross-terms vanish when we compute the variance in the field, which
+is just a sum over modes of the power spectrum:
+
+    2 = |k|2  P (k).        (22.70)
+
+Note that the statistical nature of the fluctuations must be isotropic, so we write P (k) rather than
+P (k). The . . . average here is a volume average. Cosmological density fields are an example of an
+ergodic process, in which the average over a large volume tends to the same answer as the average
+over a statistical ensemble.
+
+    The statistical properties of discrete objects sampled from the density field are often described
+in terms of N -point correlation functions, which represent the excess probability over random
+for finding one particle in each of N boxes in a given configuration. For the 2-point case, the
+
+    31st May, 2024
+20                 22. Big-Bang Cosmology
+
+correlation function is readily shown to be identical to the autocorrelation function of the  field:
+(r) = (x)(x + r) .
+
+    The power spectrum and correlation function are Fourier conjugates, and thus are equivalent
+descriptions of the density field (similarly, k-space equivalents exist for the higher-order correla-
+tions). It is convenient to take the limit V   and use k-space integrals, defining a dimensionless
+power spectrum, which measures the contribution to the fractional variance in density per unit
+logarithmic range of scale, as 2(k) = d 2 /d ln k = V k3P (k)/22:
+
+            (r) =  2(k) sin kr d ln k;  2(k) = 2 k3  (r) sin kr r2 dr.  (22.71)
+                             kr                   0        kr
+
+    For many years, an adequate approximation to observational data on galaxies was  = (r/r0)-,
+with  1.8 and r0 5 h-1 Mpc. Modern surveys are now able to probe into the large-scale linear
+
+regime where unaltered traces of the curved post-recombination spectrum can be detected [86-88].
+
+22.4.5 Formation of cosmological structure
+    The simplest model for the generation of cosmological structure is gravitational instability acting
+
+on some low-amplitude initial fluctuations (for the origin of which a theory such as inflation is
+required). If the perturbations are adiabatic (i.e., fractionally perturb number densities of photons
+and matter equally), the linear growth law for matter fluctuations is simple:
+
+                          a2(t)  (radiation domination; r = 1);         (22.72)
+                                 (matter domination; m = 1) .
+
+                          a(t)
+
+For low-density Universes, the growth is slower:
+
+                                 d ln /d ln a m(a),                     (22.73)
+
+where the parameter  is close to 0.55 independent of the vacuum density [89, 90].
+    The alternative perturbation mode is isocurvature: only the equation of state changes, and the
+
+total density is initially unperturbed. These modes perturb the total entropy density, and thus
+induce additional large-scale CMB anisotropies [91]. Although the character of perturbations in
+the simplest inflationary theories are purely adiabatic, correlated adiabatic and isocurvature modes
+are predicted in many models; the simplest example is the curvaton, which is a scalar field that
+decays to yield a perturbed radiation density. If the matter content already exists at this time,
+the overall perturbation field will have a significant isocurvature component. Such a prediction
+is inconsistent with current CMB data [92], and most analyses of CMB and large-scale structure
+(LSS) data assume the adiabatic case to hold exactly.
+
+    Linear evolution preserves the shape of the power spectrum. However, a variety of processes
+mean that growth actually depends on the matter content.
+
+    1. Pressure opposes gravity effectively for wavelengths below the horizon length while the Uni-
+
+    verse is radiation dominated. The comoving horizon size at zeq is therefore an important
+
+    scale:                              
+
+                                 2( 2 - 1)           16.0               (22.74)
+                   DH(zeq) = (mzeq)1/2H0 = mh2 Mpc .
+
+    2. At early times, dark matter particles will undergo free streaming at the speed of light, and
+       so erase all scales up to the horizon - a process that only ceases when the particles go
+       nonrelativistic. For light massive neutrinos, this happens at zeq; all structure up to the
+       horizon-scale power-spectrum break is in fact erased. Hot(cold) dark matter models are thus
+       sometimes dubbed large(small)-scale damping models.
+
+                                 31st May, 2024
+21                                        22. Big-Bang Cosmology
+
+    3. A further important scale arises where photon diffusion can erase perturbations in the matter
+       - radiation fluid; this process is named Silk damping.
+
+Figure 22.4: A plot of transfer functions for various models. For adiabatic models, Tk  1
+at small k, whereas the opposite is true for isocurvature models. For dark-matter models, the
+characteristic wavenumber scales proportional to mh2. The scaling for baryonic models does not
+obey this exactly; the plotted cases correspond to m = 1, h = 0.5.
+
+    The overall effect is encapsulated in the transfer function, which gives the ratio of the late-time
+amplitude of a mode to its initial value (see Fig. 22.4). The overall power spectrum is thus the
+primordial scalar-mode power law, times the square of the transfer function:
+
+                                                   P (k)  kns Tk2.                                           (22.75)
+
+The most generic power-law index is ns = 1: the `Zeldovich' or `scale-invariant' spectrum. Inflation-
+
+ary  models  tend  to  predict  a  small  `tilt:'  |ns  - 1|  <  0.05  [12, 13].  On  the  assumption  that  the  dark
+                                                              
+
+matter is cold, the power spectrum then depends on five parameters: ns, h, b, c ( m - b),
+
+and an overall amplitude. The latter is often specified as 8, the linear-theory fractional rms in
+density when a spherical filter of radius 8 h-1 Mpc is applied in linear theory. This scale can be
+
+probed directly via weak gravitational lensing, and also via its effect on the abundance of rich
+
+galaxy clusters. The normalization derived from samples of X-ray clusters has been given variously
+
+as [93, 94]
+
+                       8 = [0.746 ± 0.012(stat.) ± 0.022(sys.)](m/0.3)-0.47;                                 (22.76)
+
+                                                   31st May, 2024
+22  22. Big-Bang Cosmology
+
+    8 = [0.81 ± 0.03](m/0.3)-0.17.                                (22.77)
+
+The higher figure is well consistent with Planck, whereas the lower is rather similar to the normal-
+ization inferred from weak lensing [95]:
+
+    8 [0.790+-00..001148](m/0.3)-0.5.                             (22.78)
+
+This figure is in 1.9 tension with the Planck values of (8, m) = (0.811 ± 0.006, 0.315 ± 0.007).
+If real, such a discrepancy could indicate interesting new physics; but the current evidence is not
+strong enough to make such a claim. However, it is worth noting that the CMB requires an almost
+perfect degeneracy, mh3 = constant for flat models, so that raising h as far as allowed by the CMB
+would require a lower density, which would reduce the tension with the amplitude of the lensing
+measurements.
+
+    A direct measure of mass inhomogeneity is valuable, since the galaxies inevitably are biased
+with respect to the mass. This means that the fractional fluctuations in galaxy number, n/n, may
+differ from the mass fluctuations, /. It is commonly assumed that the two fields obey some
+proportionality on large scales where the fluctuations are small, n/n = b/, but even this is not
+guaranteed [96].
+
+    The main shape of the transfer function is a break around the horizon scale at zeq, which depends
+just on mh when wavenumbers are measured in observable units (h Mpc-1). For reasonable baryon
+content, weak oscillations in the transfer function are also expected, and these BAOs (baryon
+acoustic oscillations) have been clearly detected [97, 98]. As well as directly measuring the baryon
+fraction, the scale of the oscillations directly measures the acoustic horizon at decoupling; this can
+be used as an additional standard ruler for cosmological tests, and the BAO signature has become
+one of the most important applications of large galaxy surveys. Overall, current power-spectrum
+data [86-88] favor mh 0.20 and a baryon fraction of about 0.15 for ns 1 (see Fig. 22.5).
+
+    In principle, accurate data over a wide range of k could determine both mh and n, but in
+practice there is a strong degeneracy between these. In order to constrain ns itself, it is necessary
+to examine data on anisotropies in the CMB.
+
+22.4.6 CMB anisotropies
+    The CMB has a clear dipole anisotropy, of magnitude 1.23 × 10-3. This is interpreted as being
+
+due to the Earth's motion, which is equivalent to a peculiar velocity for the Milky Way of
+
+    vMW 600 km s-1 towards ( , b) (270, 30).                      (22.79)
+
+A continuing challenge in cosmology is to demonstrate that this dipole is indeed kinematic, as
+
+opposed to representing a violation of large-scale isotropy. Galaxy surveys have attempted to
+
+identify the accelerating superclusters responsible for the motion [99], but there are also claims
+
+that the observed matter distribution contains an intrinsic dipole, which would be incompatible
+
+with the standard interpretation [100], but see also Ref. [101].
+
+    All higher-order multipole moments of the CMB are however much smaller than the dipole (of
+order 10-5), and interpreted as signatures of density fluctuations at last scattering ( 1100). To
+
+analyze these, the sky is expanded in spherical harmonics as explained in the review on the CMB
+
+- Sec. 29 of this Review. The dimensionless power per ln k or `bandpower' for the CMB is defined
+
+as
+
+    T 2( ) = ( + 1) C .                                           (22.80)
+                   2
+
+This function encodes information from the three distinct mechanisms that cause CMB anisotropies:
+
+    31st May, 2024
+23  22. Big-Bang Cosmology
+
+Figure 22.5: The galaxy power spectrum from the SDSS BOSS survey [88]. The solid points
+with error bars show the power estimate. The solid line shows a standard CDM model with
+bh2 0.02 and mh 0.2. The inset amplifies the region where BAO features are visible. The
+fact that these perturb the power by  20% rather than order unity is direct evidence that the
+matter content of the Universe is dominated by collisionless dark matter.
+
+    · (1) Gravitational (Sachs - Wolfe) perturbations. Photons from high-density regions at last
+       scattering have to climb out of potential wells, and are thus redshifted.
+
+    · (2) Intrinsic (adiabatic) perturbations. In high-density regions, the coupling of matter and
+       radiation can compress the radiation also, giving a higher temperature.
+
+    · (3) Velocity (Doppler) perturbations. The plasma has a non-zero velocity at recombination,
+       which leads to Doppler shifts in frequency and hence shifts in brightness temperature.
+
+Because the potential fluctuations obey Poisson's equation, 2/a2 = 4G¯, and the comoving
+velocity field satisfies the continuity equation  · u = -, the resulting different powers of k ensure
+that the Sachs-Wolfe effect dominates on large scales and adiabatic effects on small scales.
+
+    The relation between angle and comoving distance on the last-scattering sphere requires the
+
+                                                                           31st May, 2024
+24                             22. Big-Bang Cosmology
+
+comoving angular-diameter distance to the last-scattering sphere; because of its high redshift, this
+is effectively identical to the horizon size at the present epoch, DH:
+
+                        2                  (v = 0);              (22.81)
+             DH = mH0                      (flat : m + v = 1) .
+
+             DH                2
+
+                               0.4
+                               m H0
+
+These relations show how the CMB is strongly sensitive to curvature: the horizon length at last
+scattering is  1/ m, so that this subtends an angle that is virtually independent of m for a flat
+model. Observations of a peak in the CMB power spectrum at relatively large scales ( 221) are
+thus strongly inconsistent with zero- models with low density: current CMB + BAO + lensing
+data require m + v = 0.999 ± 0.004 (95%) [24]. (See e.g., Fig. 22.2).
+
+    In addition to curvature, the CMB encodes information about several other key cosmological
+parameters. Within the compass of simple adiabatic CDM models, there are nine of these:
+
+                               c, b, tot, h, , ns, nt, r, Q.     (22.82)
+
+The symbol  denotes the physical density, h2: the transfer function depends only on the densities
+
+of CDM (c) and baryons (b). Transcribing the power spectrum at last scattering into an angular
+
+power spectrum brings in the total density parameter (tot  m +v = c +b +v) and h: there
+
+is a near-exact geometrical degeneracy [102] between these that keeps the angular-diameter distance
+
+to last scattering invariant, so that models with substantial spatial curvature and large vacuum
+
+energy cannot be ruled out without prior knowledge of the Hubble parameter. Alternatively, the
+
+CMB alone cannot measure the Hubble parameter without taking into account the line-of-sight
+
+information from CMB lensing.
+
+    A further possible degeneracy involves the tensor contribution to the CMB anisotropies. These
+
+are important at large scales (up to the horizon scales); for smaller scales, only scalar fluctuations
+
+(density perturbations) are important. Each of these components is characterized by a spectral
+
+index, n, and a ratio between the power spectra of tensors and scalars (r). See Cosmological
+
+Parameters - Sec. 25 of this Review for a technical definition of the r parameter. Finally, the overall
+
+amplitude of the spectrum must be specified (Q), together with the optical depth to Compton
+
+scattering owing to recent reionization ( ). Adding a large tensor contribution reduces the contrast
+
+between low and the peak at 221 (because the tensor spectrum has no acoustic component).
+
+The previous relative height of the peak can be recovered by increasing ns to increase the small-scale
+
+power in the scalar component; this in turn over-predicts the power at  1000, but this effect can
+
+be counteracted by raising the baryon density [103]. This approximate 3-way degeneracy is broken
+
+as we increase the range of multipoles sampled.
+
+    The reason the tensor component is introduced, and why it is so important, is that it is the
+
+only non-generic prediction of inflation. Slow-roll models of inflation involve two dimensionless
+
+parameters:
+
+                               MP2 V 2  ;          MP2 V ,       (22.83)
+                                                       8 V
+                               16 V
+
+where V is the inflaton potential, and dashes denote derivatives with respect to the inflation field.
+In terms of these, the tensor-to-scalar ratio is r 16 , and the spectral indices are ns = 1 - 6 + 2
+and nt = -2 . The natural expectation of inflation is that the quasi-exponential phase ends once
+the magnitudes of the slow-roll parameters become of order unity, so that both ns = 1 and a
+significant tensor component are expected. These predictions can be avoided in some models, but
+it is undeniable that observation of such features would be a great triumph for inflation. Cosmology
+
+                                     31st May, 2024
+25  22. Big-Bang Cosmology
+
+therefore stands at a fascinating point, given that the most recent CMB data reject the zero-tensor
+ns = 1 model at more than 8: ns = 0.965 ± 0.004 [24]. This rejection is strong enough that it is
+also able to break the tensor degeneracy, so that no model with ns = 1 is acceptable, whatever the
+value of r.
+
+    The current limit on r is < 0.036 at 95% confidence [104,105]. In conjunction with the measured
+value of ns, this upper limit sits close to the prediction of a linear potential (i.e. || | |). Any
+further reduction in the limit on r will force  to be negative - i.e. a convex potential at the point
+where LSS scales were generated (sometimes called a `hilltop'), in contrast to simple early models
+such as V () = m22 or 4, which are now excluded. Examples of models that are currently in
+excellent agreement with the Planck results are the Starobinsky model of R + R2 gravity [106],
+or the Higgs-inflation model where the Higgs field is non-minimally coupled [107]. Assuming 55 e-
+foldings of inflation, these models predict ns = 0.965 and r = 0.0035. Assuming that no systematic
+error in the CMB data can be identified, cosmology has thus passed a critical hurdle in rejecting
+scale-invariant fluctuations. The years ahead will be devoted to the task of searching for the tensor
+fluctuations - for which the main tool will be the polarization of the CMB [14].
+
+22.4.6.1 CMB foregrounds
+    As the quality of CMB data improves, there is a growing interest in effects that arise along
+
+the line of sight. The CMB temperature is perturbed by dark-matter structures and by Compton
+scattering from ionized gas. In the former case, we have the integrated Sachs-Wolfe effect, which
+is sensitive to the time derivative of the gravitational potential. In the linear regime, this is
+damped when the Universe becomes -dominated, and this is an independent way of detecting
+ [108]. The potential also causes gravitational lensing of the CMB: structures at z 1-2 displace
+features on the CMB sky by about 2 arcmin over coherent degree-scale patches. Detection of
+these distortions allows a map to be made of overdensity projected from z = 0 to 1100 [85]. This
+is a very powerful calibration for direct studies of gravitational lensing using galaxies. Finally,
+Comptonization affects the CMB in two ways: the thermal Sunyaev-Zeldovich effect measures the
+blurring of photon energies by hot gas; and the kinetic Sunyaev-Zeldovich effect is sensitive to the
+bulk velocity of the gas. Both these effects start to dominate over the intrinsic CMB fluctuations
+at multipoles 2000 [109].
+
+22.4.7 Probing dark energy and the nature of gravity
+    The most radical element of our current cosmological model is the dark energy that accelerates
+
+the expansion. The energy density of this component is approximately (2.2 meV)4 (for w = -1,
+v = 0.68, h = 0.67), or roughly 10-123M 4P, and such an unnaturally small number is hard to
+understand. Various quantum effects (most simply, zero-point energy) should make contributions
+to the vacuum energy density. These may be truncated by new physics at high energy, but this
+presumably occurs at > 1 TeV scales, not meV; thus the apparent energy scale of the vacuum is
+at least 1015 times smaller than its natural value. A classic review of this situation is given by
+Weinberg [53], which lists extreme escape routes - especially the multiverse viewpoint, according
+to which low values of  are rare, but high values suppress the formation of structure and observers.
+It is certainly impressive that Weinberg used such reasoning to predict the value of  before any
+data strongly indicated a non-zero value.
+
+    But it may be that the phenomenon of dark energy is entirely illusory. The necessity for
+this constituent arises from using the Friedmann equation to describe the evolution of the cosmic
+expansion; if this equation is incorrect, it would require the replacement of Einstein's relativistic
+theory of gravity with some new alternative. A frontier of current cosmological research is to
+distinguish these possibilities [110, 111]. We also note that it has been suggested that dark energy
+might be an illusion even within general relativity, owing to an incorrect treatment of averaging in
+
+                                                                           31st May, 2024
+26  22. Big-Bang Cosmology
+
+an inhomogeneous Universe [112, 113]. Most would argue that a standard Newtonian treatment of
+such issues should be adequate inside the cosmological horizon, but debate on this issue continues.
+
+    Dark energy can differ from a classical cosmological constant in being a dynamical phenomenon
+[114, 115], e.g., a rolling scalar field (sometimes dubbed `quintessence'). Empirically, this means
+that it is endowed with two thermodynamic properties that astronomers can try to measure: the
+bulk equation of state, and the sound speed. If the sound speed is close to the speed of light, the
+effect of this property is confined to very large scales, and mainly manifests itself in the large-angle
+multipoles of the CMB anisotropies [116]. The equation of state parameter governs the rate of
+change of the vacuum density: d ln v/d ln a = -3(1 + w), so it can be accessed via the evolving
+expansion rate, H(a). This can be measured most cleanly by using the inbuilt natural ruler of
+large-scale structure: the BAO horizon scale [117]:
+
+    DBAO 147.0 (mh2/0.1424)-0.253(bh2/0.0224)-0.128 Mpc.  (22.84)
+
+Observing the equivalent acoustic scale at last scattering in the CMB yields the precise geometrical
+degeneracy mh3 = 0.09633 ± 0.00029 [24].
+
+    H(a) is measured by radial clustering, since dr/dz = c/H; clustering in the plane of the sky
+measures the integral of this. The expansion rate is also measured by the growth of density
+fluctuations, where the pressure-free growth equation for the density perturbation is ¨ + 2H(a) =
+4G0 . Thus, both the scale and amplitude of density fluctuations are sensitive to w(a) - but
+only weakly. These observables typically change by only  0.2% for a 1% change in w. Current
+constraints [24] place a constant w to within 5-10% of -1, depending on the data combination
+chosen. A substantial improvement in this precision will require us to limit systematics in data to
+a few parts in 1000.
+
+    Testing whether theories of gravity require revision can also be done using data on cosmological
+inhomogeneities. Two separate issues arise, concerning the metric perturbation potentials  and
+, which affect respectively the time and space parts of the metric. In Einstein gravity, these po-
+tentials are both equal to the Newtonian gravitational potential, which satisfies Poisson's equation:
+2/a2 = 4G¯. Empirically, modifications of gravity require us to explore a change with scale
+and with time of the `slip' (/) and the effective G on the rhs of the Poisson equation. The
+former aspect can only be probed via gravitational lensing, whereas the latter can be addressed
+on 10-100 Mpc scales via the growth of clustering. Various schemes for parameterizing modified
+gravity exist, but a practical approach is to assume that the growth rate can be tied to the density
+parameter: d ln /d ln a = m(a) [89, 90]. The parameter  is close to 0.55 for standard relativis-
+tic gravity, but can differ by around 0.1 from this value in many non-standard models. Clearly
+this parameterization is incomplete, since it explicitly rejects the possibility of early dark energy
+(m(a)  1 as a  0), but it is a convenient way of capturing the power of various experiments.
+Current data are consistent with standard CDM [118], and exclude variations in slip or effective
+G of larger than a few times 10%.
+
+    Current planning envisages a set of satellite probes that, a decade hence, will have pursued
+these fundamental tests via gravitational lensing measurements over thousands of square degrees,
+> 108 redshifts, and photometry of > 1000 supernovae (Euclid in Europe, Roman Space Telescope
+in the USA) [22, 23]. These experiments will measure both w and the perturbation growth rate
+to an accuracy of around 1%. The outcome will be either a validation of the standard relativistic
+vacuum-dominated Big Bang cosmology at a level of precision far beyond anything attempted
+to date, or the opening of entirely new directions in cosmological models. For a more complete
+discussion of dark energy and future probes see Dark Energy - Sec. 28 of this Review.
+
+    31st May, 2024
+27  22. Big-Bang Cosmology
+
+References
+   [1] V.M. Slipher, Pop. Astr. 23, 21 (1915).
+   [2] K. Lundmark, Mon. Not. R. Astron. Soc 84, 747 (1924).
+   [3] E. Hubble and M. L. Humason, Astrophys. J. 74, 43 (1931).
+   [4] G. Gamow, Phys. Rev. 70, 572 (1946).
+   [5] R. A. Alpher, H. Bethe and G. Gamow, Phys. Rev. 73, 803 (1948).
+   [6] R.A. Alpher and R.C. Herman, Phys. Rev. 74, 1737 (1948).
+   [7] R.A. Alpher and R.C. Herman, Phys. Rev. 75, 1089 (1949).
+   [8] A. A. Penzias and R. W. Wilson, Astrophys. J. 142, 419 (1965).
+   [9] P.J.E. Peebles, Principles of Physical Cosmology, Princeton University Press (1993) .
+
+ [10] G. Börner, The Early Universe: Facts and Fiction, Springer-Verlag (1988).
+ [11] E.W. Kolb and M.S. Turner, The Early Universe, Addison-Wesley (1990).
+ [12] J.A. Peacock, Cosmological Physics, Cambridge Univ. Press (1999).
+ [13] A.R. Liddle and D. Lyth, Cosmological Inflation and Large-Scale Structure, Cambridge Uni-
+
+       versity Press (2000).
+ [14] S. Dodelson, Modern Cosmology, Academic Press (2003).
+ [15] V. Mukhanov, Physical Foundations of Cosmology, Cambridge University Press (2005).
+ [16] S. Weinberg, Cosmology, Oxford Press (2008).
+ [17] E.B. Gliner, Sov. Phys. JETP 22, 378 (1966).
+ [18] Ya. B. Zeldovich, Sov. Phys. Usp. 11, 381 (1968), [Usp. Fiz. Nauk95,209(1968)].
+ [19] P.M. Garnavich et al., Astrophys. J. 507, 74 (1998), [arXiv:astro-ph/9806396].
+ [20] S. Perlmutter, M. S. Turner and M. J. White, Phys. Rev. Lett. 83, 670 (1999), [arXiv:astro-
+
+       ph/9901052].
+ [21] I. Maor et al., Phys. Rev. D65, 123003 (2002), [arXiv:astro-ph/0112526].
+ [22] A. Albrecht et al. (2006), [arXiv:astro-ph/0609591].
+ [23] J. A. Peacock et al. (2006), [arXiv:astro-ph/0610906].
+ [24] N. Aghanim et al. (Planck), Astron. Astrophys. 641, A6 (2020), [arXiv:1807.06209].
+ [25] A.G. Riess et al., Astrophys. J. 116, 1009 (1998), [arXiv:astro-ph/9805201].
+ [26] S. Perlmutter et al. (Supernova Cosmology Project), Astrophys. J. 517, 565 (1999),
+
+       [arXiv:astro-ph/9812133].
+ [27] A. G. Riess, Publ. Astron. Soc. Pac. 112, 1284 (2000), [arXiv:astro-ph/0005229].
+ [28] J. L. Tonry et al. (Supernova Search Team), Astrophys. J. 594, 1 (2003), [arXiv:astro-
+
+       ph/0305008].
+ [29] N. Suzuki et al., Astrophys. J. 746, 85 (2012), [arXiv:1105.3470].
+ [30] D. M. Scolnic et al., Astrophys. J. 859, 101 (2018), [arXiv:1710.00845].
+ [31] A. G. Riess et al., Astrophys. J. Lett. 934, 1, L7 (2022), [arXiv:2112.04510].
+ [32] W. L. Freedman et al., Astrophys. J. 882, 34 (2019), [arXiv:1907.05922].
+ [33] W. L. Freedman, Astrophys. J. 919, 1, 16 (2021), [arXiv:2106.15656].
+ [34] Planck Collab. 2015 Results XIII, Astron. & Astrophys. 594, A13 (2016), [arXiv:1502.10589].
+ [35] P. Astier et al., Astron. & Astrophys. 447, 31 (2006), [arXiv:astro-ph/0510447].
+
+                                                                           31st May, 2024
+28  22. Big-Bang Cosmology
+
+[36] J. A. Johnson and M. Bolte, Astrophys. J. 554, 888 (2001), [arXiv:astro-ph/0103299].
+[37] R. Cayrel et al., Nature 409, 691 (2001), [arXiv:astro-ph/0104357].
+[38] D. A. Vandenberg et al., Astrophys. J. 775, 134 (2013), [arXiv:1308.2257].
+[39] S. Borsanyi et al., Nature 539, 7627, 69 (2016), [arXiv:1606.07494].
+[40] M. Srednicki, R. Watkins and K. A. Olive, Nucl. Phys. B310, 693 (1988), [,247(1988)].
+[41] J. J. Bennett et al., JCAP 04, 073 (2021), [arXiv:2012.02726].
+[42] T. M. C. Abbott et al. (DES), Phys. Rev. D 105, 2, 023520 (2022), [arXiv:2105.13549].
+[43] A. D. Linde, Phys. Rev. D14, 3345 (1976).
+[44] A. Linde, Rept. on Prog. in Phys. 42, 389 (1979).
+[45] C.E. Vayonakis, Surv. High Energy Physics 5, 87 (1986).
+[46] S.A. Bonometto and A. Masiero, Nuovo Cimento 9N5, 1 (1986).
+[47] A. Linde, Particle Physics And Inflationary Cosmology, Harwood (1990).
+[48] K. A. Olive, Phys. Rept. 190, 307 (1990).
+[49] D. H. Lyth and A. Riotto, Phys. Rept. 314, 1 (1999), [hep-ph/9807278].
+[50] A. H. Guth, Phys. Rev. D23, 347 (1981), [Adv. Ser. Astrophys. Cosmol.3,139(1987)].
+[51] A. D. Linde, Phys. Lett. 108B, 389 (1982), [Adv. Ser. Astrophys. Cosmol.3,149(1987)].
+[52] A. Albrecht and P. J. Steinhardt, Phys. Rev. Lett. 48, 1220 (1982), [Adv. Ser. Astrophys.
+
+      Cosmol.3,158(1987)].
+[53] S. Weinberg, Rev. Mod. Phys. 61, 1 (1989).
+[54] L. Susskind 247-266 (2003), [hep-th/0302219].
+[55] B. Carr, Universe or multiverse? C.U.P. (2007).
+[56] G. Steigman, Ann. Rev. Astron. Astrophys. 14, 339 (1976).
+[57] A. G. Cohen, A. De Rujula and S. L. Glashow, Astrophys. J. 495, 539 (1998), [arXiv:astro-
+
+      ph/9707087].
+[58] A. D. Sakharov, Pisma Zh. Eksp. Teor. Fiz. 5, 32 (1967), [Usp. Fiz. Nauk161,no.5,61(1991)].
+[59] S. Weinberg, Phys. Rev. Lett. 42, 850 (1979).
+[60] D. Toussaint et al., Phys. Rev. D19, 1036 (1979).
+[61] I. Affleck and M. Dine, Nucl. Phys. B249, 361 (1985).
+[62] V. A. Kuzmin, V. A. Rubakov and M. E. Shaposhnikov, Phys. Lett. 155B, 36 (1985).
+[63] M. Fukugita and T. Yanagida, Phys. Lett. B174, 45 (1986).
+[64] S. Riemer-Sorensen and S. Jenssen, Universe 3, 44 (2017), [arXiv:1502.10589].
+[65] R. J. Cooke, M. Pettini and C. C. Steidel, Astrophys. J. 855, 2, 102 (2018),
+
+      [arXiv:1710.11129].
+[66] T.-H. Yeh et al., JCAP 10, 046 (2022), [arXiv:2207.13133].
+[67] R. H. Cyburt, B. D. Fields and K. A. Olive, Phys. Lett. B567, 227 (2003), [arXiv:astro-
+
+      ph/0302431].
+[68] R. H. Cyburt, B. D. Fields and K. A. Olive, JCAP 0811, 012 (2008), [arXiv:0808.2818].
+[69] B. D. Fields and K. A. Olive, JCAP 10, 078 (2022), [arXiv:2204.03167].
+[70] K. A. Olive, G. Steigman and T. P. Walker, Phys. Rept. 333, 389 (2000), [arXiv:astro-
+
+      ph/9905320].
+
+                                                                         31st May, 2024
+29  22. Big-Bang Cosmology
+
+ [71] F. Iocco et al., Phys. Rept. 472, 1 (2009), [arXiv:0809.0631].
+ [72] R. H. Cyburt et al., Rev. Mod. Phys. 88, 015004 (2016), [arXiv:1505.01076].
+ [73] C. Pitrou et al., Phys. Rept. 754, 1 (2018), [arXiv:1801.08023].
+ [74] B. D. Fields et al., JCAP 03, 010 (2020), [Erratum: JCAP 11, E02 (2020)],
+
+       [arXiv:1912.01132].
+ [75] D. J. Fixsen et al., Astrophys. J. 473, 576 (1996), [arXiv:astro-ph/9605054].
+ [76] J. C. Mather et al., Astrophys. J. 512, 511 (1999), [arXiv:astro-ph/9810373].
+ [77] S. Cole et al. (2dFGRS), Mon. Not. Roy. Astron. Soc. 326, 255 (2001), [arXiv:astro-
+
+       ph/0012429].
+ [78] J. Schroeder, A. Mesinger and Z. Haiman, Mon. Not. R. Astron. Soc 428, 3058 (2013),
+
+       [arXiv:1204.2838].
+ [79] S. D. M. White et al., Nature 366, 429 (1993).
+ [80] S. W. Allen, R. W. Schmidt and A. C. Fabian, Mon. Not. Roy. Astron. Soc. 334, L11 (2002),
+
+       [arXiv:astro-ph/0205007].
+ [81] S. W. Allen, Mon. Not. Roy. Astron. Soc. 296, 392 (1998), [arXiv:astro-ph/9710217].
+ [82] G. P. Smith et al., Mon. Not. Roy. Astron. Soc. 456, 1, L74 (2016), [arXiv:1511.01919].
+ [83] H. Hildebrandt et al., Astron. Astrophys. 633, A69 (2020), [arXiv:1812.06076].
+ [84] A. Amon et al., arXiv e-prints (2021), [arXiv:2105.13543].
+ [85] Planck Collab. 2015 Results XV, Astron. & Astrophys. 594, A15 (2016), [arXiv:1502.01591].
+ [86] S. Cole et al. (2dFGRS), Mon. Not. Roy. Astron. Soc. 362, 505 (2005), [arXiv:astro-
+
+       ph/0501174].
+ [87] W. J. Percival et al., Astrophys. J. 657, 645 (2007), [arXiv:astro-ph/0608636].
+ [88] L. Anderson et al., Mon. Not. Roy. Astron. Soc. 427, 4, 3435 (2013), [arXiv:1203.6594].
+ [89] E. Linder, Phys. Rev. D72, 43529 (2005), [arXiv:astro-ph/0507263].
+ [90] D. Polarski and R. Gannouji, Phys. Lett. B660, 439 (2008), [arXiv:0710.1510].
+ [91] G. Efstathiou and J. R. Bond, Mon. Not. Roy. Astron. Soc. 218, 1, 103 (1986).
+ [92] C. Gordon and A. Lewis, Phys. Rev. D67, 123513 (2003), [arXiv:astro-ph/0212248].
+ [93] A. Vikhlinin et al., Astrophys. J. 692, 1060 (2009), [arXiv:0812.2720].
+ [94] A. Mantz et al., Mon. Not. Roy. Astron. Soc. 446, 2205 (2015), [arXiv:1407.4516].
+ [95] T. M. C. Abbott et al. (Kilo-Degree Survey, DES) (2023), [arXiv:2305.17173].
+ [96] A. Dekel and O. Lahav, Astrophys. J. 520, 24 (1999), [arXiv:astro-ph/9806193].
+ [97] W. J. Percival et al., Mon. Not. Roy. Astron. Soc. 381, 1053 (2007), [arXiv:0705.3323].
+ [98] W. J. Percival et al. (SDSS), Mon. Not. Roy. Astron. Soc. 401, 2148 (2010), [arXiv:0907.1660].
+ [99] G. Lavaux et al., Astrophys. J. 709, 483 (2010), [arXiv:0810.3658].
+[100] N. J. Secrest et al., Astrophys. J. 908, L51 (2021), [arXiv:2009.14826].
+[101] J. Darling, Astrophys. J. Lett. 931, 2, L14 (2022), [arXiv:2205.06880].
+[102] G. Efstathiou and J. R. Bond, Mon. Not. Roy. Astron. Soc. 304, 75 (1999), [arXiv:astro-
+
+       ph/9807103].
+[103] G. Efstathiou et al. (2dFGRS), Mon. Not. Roy. Astron. Soc. 330, L29 (2002), [arXiv:astro-
+
+       ph/0109152].
+
+                                                                           31st May, 2024
+30  22. Big-Bang Cosmology
+
+[104] M. Tristram et al., Astron. Astrophys. 647, A128 (2021), [arXiv:2010.01139].
+[105] P. A. R. Ade et al. (BICEP/Keck), Phys. Rev. Lett. 127, 15, 151301 (2021),
+
+       [arXiv:2110.00483].
+[106] A. A. Starobinsky, Phys. Lett. B91, 99 (1980), [,771(1980)].
+[107] F. Bezrukov and M. Shaposhnikov, JHEP 07, 089 (2009), [arXiv:0904.1537].
+[108] Planck Collab. 2015 Results XXI, Astron. & Astrophys. 594, A21 (2016), [arXiv:1502.01595].
+[109] Planck Collab. 2015 Results XXII, Astron. & Astrophys. 594, A22 (2016), [arXiv:1502.01596].
+[110] W. Hu and I. Sawicki, Phys. Rev. D76, 4043 (2007), [arXiv:0708.1190].
+[111] B. Jain and P. Zhang, Phys. Rev. D78, 3503 (2008), [arXiv:0709.2375].
+[112] D. L. Wiltshire, Phys. Rev. Lett. 99, 251101 (2007), [arXiv:0709.0732].
+[113] T. Buchert, Gen. Rel. Grav. 40, 467 (2008), [arXiv:0707.2153].
+[114] I. Zlatev, L.-M. Wang and P. J. Steinhardt, Phys. Rev. Lett. 82, 896 (1999), [arXiv:astro-
+
+       ph/9807002].
+[115] C. Armendariz-Picon, V. Mukhanov, and P.J. Steinhardt, Phys. Rev. D63, 3510 (2001),
+
+       [arXiv:astro-ph/0006373].
+[116] S. DeDeo, R.R. Caldwell, and P.J. Steinhardt, Phys. Rev. D67, 3509 (2003), [arXiv:astro-
+
+       ph/0301284].
+[117] É. Aubourg et al., Phys. Rev. D92, 123516 (2015), [arXiv:1411.1074].
+[118] S. F. Daniel et al., Phys. Rev. D81, 123508 (2010), [arXiv:1002.1962].
+
+    31st May, 2024
+

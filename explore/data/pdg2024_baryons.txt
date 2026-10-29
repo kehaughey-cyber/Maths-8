@@ -1,0 +1,4263 @@
+   Citation: S. Navas et al. (Particle Data Group), Phys. Rev. D 110, 030001 (2024)
+
+                       N BARYONS
+                     (S = 0, I = 1/2)
+
+                     p, N+ = uud; n, N0 = udd
+
+p                               I (JP ) = 1 ( 1 +)
+
+                                               22
+
+        Mass m = 1.007276466621 ± 0.000000000053 u
+
+        Mass m = 938.27208816 ± 0.00000029 MeV [a]
+
+        mp - mp /mp < 7 × 10-10, CL = 90% [b]
+        mqp /( mqp ) = 1.000000000003 ± 0.000000000016
+               p     p
+
+        qp + qp /e < 7 × 10-10, CL = 90% [b]
+
+        qp + qe /e < 1 × 10-21 [c]
+
+        Magnetic moment µ = 2.7928473446 ± 0.0000000008 µN
+        (µp + µp) µp = (0.002 ± 0.004) × 10-6
+        Electric dipole moment d < 0.021 × 10-23 e cm
+
+        Electric polarizability  = (11.2 ± 0.4) × 10-4 fm3
+
+        Magnetic polarizability  = (2.5 ± 0.4) × 10-4 fm3 (S = 1.2)
+
+        Charge radius, µ p Lamb shift = 0.84087 ± 0.00039 fm [d]
+
+        Charge radius = 0.8409 ± 0.0004 fm [d]
+
+        Magnetic radius = 0.851 ± 0.026 fm [e]
+
+        Mean life  > 9 × 1029 years, CL = 90% (p  invisible mode)
+
+   See the "Note on Nucleon Decay" in our 1994 edition (Phys. Rev. D50,
+   1173) for a short review.
+
+   The "partial mean life" limits tabulated here are the limits on  /Bi , where
+    is the total mean life and Bi is the branching fraction for the mode in
+   question. For N decays, p and n indicate proton and neutron partial
+   lifetimes.
+
+p DECAY MODES           Partial mean life                                   p
+                        (1030 years)            Confidence level (MeV/c)
+
+N  e+                   Antilepton + meson                    90%                    459
+N  µ+ 
+N                                    > 5300 (n), > 24000 (p)  90%                    453
+p  e+                                > 3500 (n), > 16000 (p)
+p  µ+                                > 1100 (n), > 390 (p)    90%                    459
+n                                    > 10000
+N  e+                                > 4700                   90%                    309
+N  µ+                                > 158
+N                                    > 217 (n), > 720 (p)     90%                    297
+                                     > 228 (n), > 570 (p)
+                                     > 19 (n), > 162 (p)      90%                    310
+
+                                                              90%                    149
+
+                                                              90%                    113
+
+                                                              90%                    149
+
+https://pdg.lbl.gov     Page 1      Created: 10/3/2024 18:48
+      Citation: S. Navas et al. (Particle Data Group), Phys. Rev. D 110, 030001 (2024)
+
+p  e+                                    > 1600                90%                      143
+p  µ+                                    > 2800
+                                         > 108                 90%                      105
+                                         > 17 (n), > 1000 (p)
+n                                        > 26 (n), > 4500 (p)  90%                      144
+N  e+K                                   > 86 (n), > 5900 (p)
+                                         > 260                 90%                      339
+                                         > 84
+N  µ+ K                                  > 78 (n), > 51 (p)    90%                      329
+
+N  K                     Antilepton + mesons                   90%                      339
+
+n  K0                                    > 82                  90%                      338
+                                         > 147
+        S                                > 52
+p  e+ K (892)0                           > 133
+                                         > 101                 90%                      45
+                                         > 74
+N   K (892)                              > 18                  90%                      45
+
+p  e+ + -                   Lepton + meson                     90%                      448
+p  e+ 0 0
+n  e+ - 0                                > 65                  90%                      449
+p  µ+ + -                                > 49
+p  µ+ 0 0                                > 62                  90%                      449
+n  µ+ - 0                                >7
+n  e+ K0 -                               > 32                  90%                      425
+                                         > 57
+                                                               90%                      427
+                           Lepton + mesons
+                                                               90%                      427
+                                         > 30
+                                         > 29                  90%                      319
+                                         > 17
+n  e- +                                  > 34                  90%                      459
+n  µ- +                                  > 75
+n  e- +                                  > 245                 90%                      453
+n  µ- +
+n  e-K+                 Antilepton + photon(s)                 90%                      150
+n  µ- K +
+                                         > 670                 90%                      115
+                                         > 478
+                                         > 550                 90%                      340
+                                         > 100
+                                         > 219                 90%                      330
+
+p  e- + +            Antilepton + single massless              90%                      448
+n  e- + 0
+p  µ- + +                                > 790                 90%                      449
+n  µ- + 0                                > 410
+p  e- + K+                                                     90%                      425
+p  µ- + K +
+                                                               90%                      427
+
+                                                               90%                      320
+
+                                                               90%                      279
+
+p  e+                                                          90%                      469
+p  µ+ 
+n                                                              90%                      463
+p  e+
+n                                                              90%                      470
+
+                                                               90%                      469
+
+                                                               90%                      470
+
+p  e+X                                                         90%                      -
+p  µ+ X
+                                                               90%                      -
+
+https://pdg.lbl.gov  Page 2  Created: 10/3/2024 18:48
+     Citation: S. Navas et al. (Particle Data Group), Phys. Rev. D 110, 030001 (2024)
+
+p  e+ e+ e-          Three (or more) leptons              90%                          469
+p  e+ µ+ µ-
+p  e+                                > 34000              90%                          457
+n  e+ e-                             > 9200
+n  µ+ e-                             > 170                90%                          469
+n  µ+ µ-                             > 257
+p  µ+ e+ e-                          > 83                 90%                          470
+p  µ- e+ e+                          > 79
+p  µ+ µ+ µ-                          > 23000              90%                          464
+p  µ+                                > 19000
+p  e- µ+ µ+                          > 10000              90%                          458
+n                                    > 220
+   3                                 > 11000              90%                          463
+                                     > 5 × 10-4
+                                                          90%                          463
+
+                                                          90%                          439
+
+                                                          90%                          463
+
+                                                          90%                          457
+
+                                                          90%                          470
+
+N  e+ anything       Inclusive modes                      90%                          -
+N  µ+ anything
+N  e+ 0 anything              > 0.6 (n, p)                90%                          -
+                              > 12 (n, p)
+                              > 0.6 (n, p)                90%                          -
+
+                     B = 2 dinucleon modes
+
+     The following are lifetime limits per iron nucleus.
+
+pp   + +             > 72.2                               90%                          -
+pn   + 0             > 170
+nn   + -             > 0.7                                90%                          -
+nn   0 0             > 404
+pp   K+K+            > 170                                90%                          -
+pp   e+ e+           > 5.8
+pp   e+ µ+           > 3.6                                90%                          -
+pp   µ+ µ+           > 1.7
+pn   e+              > 260                                90%                          -
+pn   µ+              > 200
+pn    +              > 29                                 90%                          -
+nn                   > 1.4
+     invisible                                            90%                          -
+
+                                                          90%                          -
+
+                                                          90%                          -
+
+                                                          90%                          -
+
+                                                          90%                          -
+
+                                                          90%                          -
+
+n n  e e             > 1.4                                90%                          -
+
+n n  µ µ             > 1.4                                90%                          -
+
+p n  invisible       > 0.06                               90%                          -
+
+p p  invisible       > 0.11                               90%                          -
+
+                     p DECAY MODES
+
+p DECAY MODES        Partial mean life                                                p
+                     (years)                              Confidence level (MeV/c)
+
+p  e-                > 7 × 105                            90%                          469
+p  µ-                > 5 × 104
+p  e- 0              > 4 × 105                            90%                          463
+
+                                                          90%                          459
+
+https://pdg.lbl.gov  Page 3                               Created: 10/3/2024 18:48
+   Citation: S. Navas et al. (Particle Data Group), Phys. Rev. D 110, 030001 (2024)
+
+p  µ- 0                         > 5 × 104           90%                              453
+p  e-                           > 2 × 104
+p  µ-                           > 8 × 103           90%                              309
+p  e- K 0
+p                               > 900               90%                              297
+p          S                    > 4 × 103
+p                               > 9 × 103           90%                              337
+p  µ- K 0                       > 7 × 103
+p                               > 2 × 104           90%                              326
+p          S                    > 2 × 104
+                                                    90%                              337
+   e- K 0                       > 200
+                                                    90%                              326
+           L
+                                                    90%                              469
+   µ- K 0
+                                                    90%                              463
+           L
+                                                    90%                              143
+   e-  
+   µ-  
+   e- 
+
+n                               I (JP ) = 1 ( 1 +)
+
+                                               22
+
+   Mass m = 1.0086649160 ± 0.0000000005 u
+   Mass m = 939.5654205 ± 0.0000005 MeV [a]
+   (mn - mn )/ mn = (9 ± 5) × 10-5
+
+   mn - mp = 1.2933324 ± 0.0000005 MeV
+
+                     = 0.00138844919(45) u
+
+   Mean life  = 878.4 ± 0.5 s (S = 1.8)
+       c = 2.6335 × 108 km
+
+   Magnetic moment µ = -1.9130427 ± 0.0000005 µN
+   Electric dipole moment d < 0.18 × 10-25 e cm, CL = 90%
+
+   Mean-square charge radius    r2  = -0.1155 ± 0.0017 fm2
+
+                                 n
+
+   Magnetic radius   r 2 = 0.864 + 0.009 fm
+                     M              - 0.008
+
+   Electric polarizability  = (11.8 ± 1.1) × 10-4 fm3
+   Magnetic polarizability  = (3.7 ± 1.2) × 10-4 fm3
+   Charge q = (-0.2 ± 0.8) × 10-21 e
+   Mean n n-oscillation time > 8.6 × 107 s, CL = 90% (free n)
+   Mean n n-oscillation time > 4.7 × 108 s, CL = 90% [f ] (bound n)
+   Mean n n-oscillation time > 448 s, CL = 90% [g]
+
+   p e- e decay parameters [h]
+
+     gA / gV = -1.2754 ± 0.0013 (S = 2.7)
+   A = -0.11958 ± 0.00021 (S = 1.2)
+
+   B = 0.9807 ± 0.0030
+
+   C = -0.2377 ± 0.0026
+
+   a = -0.1049 ± 0.0013 (S = 1.8)
+   AV = (180.017 ± 0.026) [i]
+   D = (-1.2 ± 2.0) × 10-4 [j]
+   R = 0.004 ± 0.013 [j]
+
+   Fierz interference term b = 0.017 ± 0.020
+
+https://pdg.lbl.gov  Page 4                 Created: 10/3/2024 18:48
+       Citation: S. Navas et al. (Particle Data Group), Phys. Rev. D 110, 030001 (2024)
+
+n DECAY MODES                 Fraction (i /) Confidence level                                p
+                                                                                         (MeV/c)
+p e- e                                100     %
+   pe-e                                                                                           1
+   hydrogen-atom e            [k] ( 9.2± 0.7) × 10-3                                              1
+                                                                                              1.19
+                              < 2.7           × 10-3      95%
+
+       Charge conservation (Q) violating mode
+
+p e e                      Q  <8              × 10-27     68%                            1
+
+N(1440) 1/2+                          I (JP ) = 1 ( 1 +)
+
+                                                     22
+
+       Re(pole position) = 1360 to 1380 ( 1370) MeV
+       -2Im(pole position) = 180 to 205 ( 190) MeV
+       Breit-Wigner mass = 1410 to 1470 ( 1440) MeV
+       Breit-Wigner full width = 250 to 450 ( 350) MeV
+
+N(1440) DECAY MODES           Fraction (i /)                                             p (MeV/c)
+
+N                             55-75 %                                                            398
+N                             <1 %                                                                   
+N                             17-50 %
+                              6-27 %                                                             347
+   (1232) , P-wave            11-23 %                                                            147
+   N                          0.035-0.048 %
+p  , helicity=1/2             0.02-0.04 %                                                         -
+n  , helicity=1/2
+                                                                                                 414
+                                                                                                 413
+
+N(1520) 3/2-                          I (JP ) = 1 ( 3 -)
+
+                                                     22
+
+       Re(pole position) = 1505 to 1515 ( 1510) MeV
+       -2Im(pole position) = 105 to 120 ( 110) MeV
+       Breit-Wigner mass = 1510 to 1520 ( 1515) MeV
+       Breit-Wigner full width = 100 to 120 ( 110) MeV
+
+N(1520) DECAY MODES           Fraction (i /)                                             p (MeV/c)
+
+N                             55-65 %                                                            453
+N                             0.07-0.09 %                                                        142
+N                             25-35 %                                                            410
+                              22-34 %                                                            225
+   (1232)                     15-23 %                                                            225
+      (1232) , S-wave         7-11 %                                                             225
+      (1232) , D-wave         10-16 %
+                              10-16 %                                                                
+   N                                                                                                 
+      N  , S=3/2 , S-wave
+                              Page 5          Created: 10/3/2024 18:48
+https://pdg.lbl.gov
+   Citation: S. Navas et al. (Particle Data Group), Phys. Rev. D 110, 030001 (2024)
+
+   N  , S=1/2 , D-wave     0.2-0.4 %                                                 
+
+N                          <10 %                                                     -
+
+p                          0.31-0.52 %                                               467
+
+p  , helicity=1/2          0.01-0.02 %                                               467
+
+p  , helicity=3/2          0.30-0.50 %                                               467
+
+n                          0.30-0.53 %                                               466
+
+n  , helicity=1/2          0.04-0.10 %                                               466
+
+n  , helicity=3/2          0.25-0.45 %                                               466
+
+N(1535) 1/2-                       I (JP ) = 1 ( 1 -)
+
+                                                  22
+
+   Re(pole position) = 1500 to 1520 ( 1510) MeV
+   -2Im(pole position) = 80 to 130 ( 110) MeV
+   Breit-Wigner mass = 1515 to 1545 ( 1530) MeV
+   Breit-Wigner full width = 125 to 175 ( 150) MeV
+
+N(1535) DECAY MODES        Fraction (i /)                                            p (MeV/c)
+
+N                          32-52 %                                                           464
+N                          30-55 %                                                           176
+N                          4-31 %                                                            422
+                           1-4 %                                                             240
+   (1232) , D-wave         2-17 %
+   N                       2-16 %                                                                
+                           <1 %                                                                  
+      N  , S=1/2 , S-wave  2-10 %                                                                
+      N  , S=3/2 , D-wave  5-12 %
+   N                       0.15-0.30 %                                                        -
+N (1440)                   0.01-0.25 %
+p  , helicity=1/2                                                                                
+n  , helicity=1/2                                                                            477
+                                                                                             477
+
+N(1650) 1/2-                       I (JP ) = 1 ( 1 -)
+
+                                                  22
+
+   Re(pole position) = 1650 to 1680 ( 1665) MeV
+   -2Im(pole position) = 100 to 170 ( 135) MeV
+   Breit-Wigner mass = 1635 to 1665 ( 1650) MeV
+   Breit-Wigner full width = 100 to 150 ( 125) MeV
+
+N(1650) DECAY MODES        Fraction (i /)                                            p (MeV/c)
+
+N                          50-70 %                                                           547
+N                          15-35 %                                                           348
+K                          5-15 %                                                            169
+N                          20-58 %                                                           514
+                           6-18 %                                                            345
+   (1232) , D-wave
+                           Page 6          Created: 10/3/2024 18:48
+https://pdg.lbl.gov
+           Citation: S. Navas et al. (Particle Data Group), Phys. Rev. D 110, 030001 (2024)
+
+N                          12-22 %                                                           
+
+N  , S=1/2, S-wave         <4 %                                                              
+
+N  , S=3/2, D-wave         12-18 %                                                           
+
+N                          2-18 %                                                            -
+
+N (1440)                   6-26 %                                                            150
+
+p  , helicity=1/2          0.04-0.20 %                                                       558
+
+n  , helicity=1/2          0.003-0.17 %                                                      557
+
+N(1675) 5/2-                       I (JP ) = 1 ( 5 -)
+
+                                                  22
+
+           Re(pole position) = 1650 to 1660 ( 1655) MeV
+           -2Im(pole position) = 120 to 150 ( 135) MeV
+           Breit-Wigner mass = 1665 to 1680 ( 1675) MeV
+           Breit-Wigner full width = 130 to 160 ( 145) MeV
+
+N(1675) DECAY MODES        Fraction (i /)                                                    p (MeV/c)
+
+N                          38-42 %                                                                   564
+N                          <1%                                                                       376
+K                          <0.04 %                                                                   216
+N                          25-45 %                                                                   532
+                           23-37 %                                                                   366
+   (1232) , D-wave         0.1-0.9 %
+   N                       <0.2 %                                                                        
+                           0.1-0.7 %                                                                     
+      N  , S=1/2           3-7 %                                                                         
+      N  , S=3/2 , D-wave  0-0.02 %
+   N                       0-0.01 %                                                                   -
+p                          0-0.01 %
+   p  , helicity=1/2       0-0.15 %                                                                  575
+   p  , helicity=3/2       0-0.05 %                                                                  575
+n                          0-0.10 %                                                                  575
+   n  , helicity=1/2                                                                                 574
+   n  , helicity=3/2                                                                                 574
+                                                                                                     574
+
+N(1680) 5/2+                       I (JP ) = 1 ( 5 +)
+
+                                                  22
+
+           Re(pole position) = 1660 to 1680 ( 1670) MeV
+           -2Im(pole position) = 110 to 135 ( 120) MeV
+           Breit-Wigner mass = 1680 to 1690 ( 1685) MeV
+           Breit-Wigner full width = 115 to 130 ( 120) MeV
+
+N(1680) DECAY MODES        Fraction (i /)                                                    p (MeV/c)
+                           60-70 %                                                                   571
+N
+https://pdg.lbl.gov        Page 7          Created: 10/3/2024 18:48
+   Citation: S. Navas et al. (Particle Data Group), Phys. Rev. D 110, 030001 (2024)
+
+N                       <1 %                                                         386
+
+N                       28-53 %                                                      539
+
+(1232)                  11-23 %                                                      374
+
+   (1232) , P-wave      4-10 %                                                       374
+
+   (1232) , F-wave      1-13 %                                                       374
+
+N                       8-11 %                                                       
+
+   N  , S=3/2 , P-wave  6-8 %                                                        
+
+   N  , S=3/2 , F-wave  2-3 %                                                        
+
+N                       9-19 %                                                       -
+
+p                       0.21-0.32 %                                                  581
+
+p  , helicity=1/2       0.001-0.011 %                                                581
+
+p  , helicity=3/2       0.20-0.32 %                                                  581
+
+n                       0.021-0.046 %                                                581
+
+n  , helicity=1/2       0.004-0.029 %                                                581
+
+n  , helicity=3/2       0.01-0.024 %                                                 581
+
+N(1700) 3/2-                    I (JP ) = 1 ( 3 -)
+
+                                               22
+
+   Re(pole position) = 1650 to 1750 ( 1700) MeV
+   -2Im(pole position) = 100 to 300 ( 200) MeV
+   Breit-Wigner mass = 1650 to 1800 ( 1720) MeV
+   Breit-Wigner full width = 100 to 300 ( 200) MeV
+
+N(1700) DECAY MODES     Fraction (i /)                                               p (MeV/c)
+
+N                       7-17 %                                                               594
+N                       1-2 %                                                                422
+N                       10-34 %
+K                       1-2 %                                                                    
+N                       >89 %                                                                283
+                        55-85 %                                                              564
+   (1232)               50-80 %                                                              402
+      (1232) , S-wave   4-14 %                                                               402
+      (1232) , D-wave   32-44 %                                                              402
+                        2-14 %
+   N  , S=3/2, S-wave   3-11 %                                                                 74
+   N                    <4 %
+N (1440)                0.01-0.05 %                                                           -
+N (1520)                0.0-0.024 %
+p                       0.002-0.026 %                                                        225
+   p  , helicity=1/2    0.01-0.13 %                                                          145
+   p  , helicity=3/2    0.0-0.09 %                                                           604
+n                       0.01-0.05 %                                                          604
+   n  , helicity=1/2                                                                         604
+   n  , helicity=3/2                                                                         603
+                                                                                             603
+                                                                                             603
+
+https://pdg.lbl.gov     Page 8          Created: 10/3/2024 18:48
+Citation: S. Navas et al. (Particle Data Group), Phys. Rev. D 110, 030001 (2024)
+
+N(1710) 1/2+                      I (JP ) = 1 ( 1 +)
+
+                                                 22
+
+Re(pole position) = 1650 to 1750 ( 1700) MeV
+-2Im(pole position) = 80 to 160 ( 120) MeV
+Breit-Wigner mass = 1680 to 1740 ( 1710) MeV
+Breit-Wigner full width = 80 to 200 ( 140) MeV
+
+N(1710) DECAY MODES       Fraction (i /)                                          p (MeV/c)
+
+N                         5-20 %                                                          588
+N                         10-50 %                                                         412
+N                         1-5 %
+K                         5-25 %                                                              
+K                         seen                                                            269
+N                         14-48 %                                                         138
+                          3-9 %                                                           557
+   (1232) , P-wave        11-23 %                                                         394
+   N  , S=1/2, P-wave     <16 %
+   N                      9-21 %                                                              
+N (1535)                  0.002-0.08 %
+p  , helicity=1/2         0.0-0.02%                                                        -
+n  , helicity=1/2
+                                                                                          113
+                                                                                          598
+                                                                                          597
+
+N(1720) 3/2+                      I (JP ) = 1 ( 3 +)
+
+                                                 22
+
+Re(pole position) = 1660 to 1710 ( 1680) MeV
+-2Im(pole position) = 150 to 300 ( 200) MeV
+Breit-Wigner mass = 1680 to 1750 ( 1720) MeV
+Breit-Wigner full width = 150 to 400 ( 250) MeV
+
+N(1720) DECAY MODES       Fraction (i /)                                          p (MeV/c)
+
+N                         8-14 %                                                          594
+N                         1-5 %                                                           422
+N                         12-40 %
+K                         4-19 %                                                              
+N                         >50 %                                                           283
+                          47-89 %                                                         564
+   (1232)                 47-77 %                                                         402
+      (1232) , P-wave     <12 %                                                           402
+      (1232) , F-wave     1-2 %                                                           402
+      N  , S=1/2, P-wave  2-14 %
+                                                                                            74
+   N
+                                                                                           -
+
+https://pdg.lbl.gov       Page 9          Created: 10/3/2024 18:48
+           Citation: S. Navas et al. (Particle Data Group), Phys. Rev. D 110, 030001 (2024)
+
+N (1440)               <2 %                                                                  225
+
+N(1520) , S-wave       1-5 %                                                                 145
+
+p                      0.05-0.25 %                                                           604
+
+p  , helicity=1/2      0.05-0.15 %                                                           604
+
+p  , helicity=3/2      0.002-0.16 %                                                          604
+
+n                      0.0-0.016 %                                                           603
+
+n  , helicity=1/2      0.0-0.01 %                                                            603
+
+n  , helicity=3/2      0.0-0.015 %                                                           603
+
+N(1875) 3/2-                    I (JP ) = 1 ( 3 -)
+
+                                               22
+
+was N(2080)
+
+           Re(pole position) = 1850 to 1950 ( 1900) MeV
+           -2Im(pole position) = 100 to 220 ( 160) MeV
+           Breit-Wigner mass = 1850 to 1920 ( 1875) MeV
+           Breit-Wigner full width = 120 to 250 ( 200) MeV
+
+N(1875) DECAY MODES    Fraction (i /)                                                        p (MeV/c)
+
+N                      3-11 %                                                                        695
+N                      3-16 %                                                                        559
+N                      15-25 %                                                                       371
+K                      1-2 %                                                                         454
+K                      0.3-1.1 %                                                                     384
+N                      >56 %                                                                         670
+                       4-44 %                                                                        520
+   (1232)              2-21 %                                                                        520
+      (1232) , S-wave  2-23 %                                                                        520
+      (1232) , D-wave  36-56 %                                                                       379
+                       16-60 %
+   N  , S=3/2, S-wave  2-8 %                                                                          -
+   N                   <2 %
+N (1440)               <0.2 %                                                                        365
+N (1520)               0.001-0.025 %                                                                 301
+ K (892)               0.001-0.021 %
+p                      <0.003 %                                                                          
+   p  , helicity=1/2   <0.040 %                                                                      703
+   p  , helicity=3/2   <0.007 %                                                                      703
+n                      <0.033 %                                                                      703
+   n  , helicity=1/2                                                                                 702
+   n  , helicity=3/2                                                                                 702
+                                                                                                     702
+
+https://pdg.lbl.gov    Page 10         Created: 10/3/2024 18:48
+Citation: S. Navas et al. (Particle Data Group), Phys. Rev. D 110, 030001 (2024)
+
+N(1880) 1/2+                    I (JP ) = 1 ( 1 +)
+
+                                               22
+
+Re(pole position) = 1820 to 1900 ( 1860) MeV
+-2Im(pole position) = 180 to 280 ( 230) MeV
+Breit-Wigner mass = 1830 to 1930 ( 1880) MeV
+Breit-Wigner full width = 200 to 400 ( 300) MeV
+
+N(1880) DECAY MODES    Fraction (i /)                                             p (MeV/c)
+
+N                      3-31 %                                                             698
+N                      1-55 %                                                             563
+N                      12-28 %                                                            377
+K                      1-3 %                                                              459
+K                      10-24 %                                                            389
+N                      >32 %                                                              673
+                       5-42 %                                                             524
+   (1232)              19-45 %                                                            385
+   N  , S=1/2, P-wave  8-40 %                                                             539
+   N                   4-12 %                                                             293
+N (1535)               1-5 %
+N a0(980)              0.5-1.1 %                                                              
+ K (892)               seen                                                                   
+p  , helicity=1/2      0.002-0.63 %                                                       706
+n  , helicity=1/2                                                                         705
+
+N(1895) 1/2-                    I (JP ) = 1 ( 1 -)
+
+                                               22
+
+was N(2090)
+
+Re(pole position) = 1890 to 1930 ( 1910) MeV
+-2Im(pole position) = 80 to 140 ( 110) MeV
+Breit-Wigner mass = 1870 to 1920 ( 1895) MeV
+Breit-Wigner full width = 80 to 200 ( 120) MeV
+
+N(1895) DECAY MODES    Fraction (i /)                                             p (MeV/c)
+
+N                      2-18 %                                                             707
+N                      15-45 %                                                            575
+N                      10-40 %
+N                      16-40 %                                                                
+K                      3-23 %                                                             395
+K                      6-20 %                                                             473
+N                      17-74 %                                                            405
+                       3-11 %                                                             683
+   (1232) , D-wave                                                                        535
+
+https://pdg.lbl.gov    Page 11         Created: 10/3/2024 18:48
+           Citation: S. Navas et al. (Particle Data Group), Phys. Rev. D 110, 030001 (2024)
+
+N                      14-50 %                                                               403
+
+N  , S=1/2, S-wave     <18 %                                                                 403
+
+N  , S=3/2, D-wave     14-32 %                                                               403
+
+N                      <13 %                                                                 -
+
+N (1440)               2-12 %                                                                382
+
+ K (892)               4-9 %                                                                 
+
+p  , helicity=1/2      0.01-0.06 %                                                           715
+
+n  , helicity=1/2      0.003-0.05 %                                                          715
+
+N(1900) 3/2+                    I (JP ) = 1 ( 3 +)
+
+                                               22
+
+           Re(pole position) = 1900 to 1940 ( 1920) MeV
+           -2Im(pole position) = 90 to 160 ( 130) MeV
+           Breit-Wigner mass = 1890 to 1950 ( 1920) MeV
+           Breit-Wigner full width = 100 to 320 ( 200) MeV
+
+N(1900) DECAY MODES    Fraction (i /)                                                        p (MeV/c)
+
+N                      1-20 %                                                                        723
+N                      2-14 %                                                                        595
+N                      4-8 %                                                                         151
+N                      7-13 %                                                                        424
+K                      2-20 %                                                                        495
+                       3-7 %                                                                         431
+K                      >56 %                                                                         699
+N                      30-70 %                                                                       553
+                       9-25 %                                                                        553
+   (1232)              21-45 %                                                                       553
+      (1232) , P-wave  25-40 %                                                                       432
+      (1232) , F-wave  1-7 %
+                       7-23 %                                                                         -
+   N  , S=1/2          4-10 %
+   N                   < 0.2 %                                                                       341
+N (1520)               0.001-0.025 %                                                                 328
+N (1535)               0.001-0.021 %
+ K (892)               <0.003 %                                                                          
+p                      <0.040 %                                                                      731
+   p  , helicity=1/2   <0.007 %                                                                      731
+   p  , helicity=3/2   <0.033 %                                                                      731
+n                                                                                                    730
+   n  , helicity=1/2                                                                                 730
+   n  , helicity=3/2                                                                                 730
+
+https://pdg.lbl.gov    Page 12         Created: 10/3/2024 18:48
+Citation: S. Navas et al. (Particle Data Group), Phys. Rev. D 110, 030001 (2024)
+
+N(2060) 5/2-                        I (JP ) = 1 ( 5 -)
+
+                                                   22
+
+was N(2200)
+
+Re(pole position) = 2020 to 2130 ( 2070) MeV
+-2Im(pole position) = 350 to 430 ( 400) MeV
+Breit-Wigner mass = 2030 to 2200 ( 2100) MeV
+Breit-Wigner full width = 300 to 450 ( 400) MeV
+
+N(2060) DECAY MODES        Fraction (i /)                                         p (MeV/c)
+
+N                          7-12 %                                                         834
+N                          2-38 %                                                         729
+N                          1-7 %                                                          600
+K                          10-20 %                                                        644
+K                          1-5 %                                                          593
+N                          12-52 %                                                        814
+                           4-10 %                                                         680
+   (1232) , D-wave         5-33 %                                                         605
+   N                       <10 %                                                          605
+                           5-23 %                                                         605
+      N  , S=1/2, P-wave   3-9 %
+      N  , S=3/2 , D-wave  4-14 %                                                          -
+   N                       9-21 %
+N (1440)                   8-22 %                                                         544
+N(1520) , P-wave           0.3-1.3 %                                                      490
+N(1680) , S-wave           0.03-0.19 %                                                    353
+ K (892)                   0.02-0.08 %                                                    307
+p                          0.01-0.10 %                                                    840
+   p  , helicity=1/2       0.003-0.07 %                                                   840
+   p  , helicity=3/2       0.001-0.02 %                                                   840
+n                          0.002-0.05 %                                                   840
+   n  , helicity=1/2                                                                      840
+   n  , helicity=3/2                                                                      840
+
+N(2100) 1/2+                        I (JP ) = 1 ( 1 +)
+
+                                                   22
+
+Re(pole position) = 2050 to 2150 ( 2100) MeV
+-2Im(pole position) = 240 to 340 ( 300) MeV
+Breit-Wigner mass = 2050 to 2150 ( 2100) MeV
+Breit-Wigner full width = 200 to 320 ( 260) MeV
+
+N(2100) DECAY MODES        Fraction (i /)                                         p (MeV/c)
+                           8-32 %
+N                          5-45 %                                                         834
+N                                                                                         729
+
+https://pdg.lbl.gov        Page 13         Created: 10/3/2024 18:48
+           Citation: S. Navas et al. (Particle Data Group), Phys. Rev. D 110, 030001 (2024)
+
+N                       5-11 %                                                               451
+
+N                       10-25 %                                                              600
+
+K                       <1.0 %                                                               644
+
+N                       >55 %                                                                814
+
+(1232) , P-wave         6-14 %                                                               680
+
+N  , S=1/2, P-wave      35-70                                                                605
+
+N                       14-35 %                                                              -
+
+N (1535)                26-34 %                                                              478
+
+ K (892)                3-11 %                                                               307
+
+p  , helicity=1/2       0.001-0.13 %                                                         840
+
+n  , helicity=1/2       0.004-0.09 %                                                         840
+
+N(2120) 3/2-                     I (JP ) = 1 ( 3 -)
+
+                                                22
+
+           Re(pole position) = 2050 to 2150 ( 2100) MeV
+           -2Im(pole position) = 200 to 360 ( 280) MeV
+           Breit-Wigner mass = 2060 to 2160 ( 2120) MeV
+           Breit-Wigner full width = 260 to 360 ( 300) MeV
+
+N(2120) DECAY MODES     Fraction (i /)                                                       p (MeV/c)
+
+N                       5-15 %                                                                       846
+N                       1-5 %                                                                        743
+N                       2-6 %                                                                        474
+N                       4-20 %                                                                       617
+K                       6-11 %                                                                       660
+N                       >27 %                                                                        827
+                        >23 %                                                                        693
+   (1232)               15-70 %                                                                      693
+      (1232) , S-wave   8-45 %                                                                       693
+      (1232) , D-wave   <3%                                                                          622
+                        4-15 %
+   N  , S=3/2 , S-wave  7-23 %                                                                        -
+   N                    < 0.2 %
+N (1535)                0.16-2.1 %                                                                   494
+ K (892)                0.07-0.80 %                                                                  339
+p                       0.09-1.3 %                                                                   852
+   p  , helicity=1/2    0.04-0.72 %                                                                  852
+   p  , helicity=3/2    0.04-0.60 %                                                                  852
+n                       0.001-0.12 %                                                                 852
+   n  , helicity=1/2                                                                                 852
+   n  , helicity=3/2                                                                                 852
+
+https://pdg.lbl.gov     Page 14         Created: 10/3/2024 18:48
+Citation: S. Navas et al. (Particle Data Group), Phys. Rev. D 110, 030001 (2024)
+
+N(2190) 7/2-                    I (JP ) = 1 ( 7 -)
+
+                                               22
+
+Re(pole position) = 1950 to 2150 ( 2050) MeV
+-2Im(pole position) = 300 to 500 ( 400) MeV
+Breit-Wigner mass = 2140 to 2220 ( 2180) MeV
+Breit-Wigner full width = 300 to 500 ( 400) MeV
+
+N(2190) DECAY MODES    Fraction (i /)                                             p (MeV/c)
+
+N                      10-20 %                                                            882
+N                      1-5 %                                                              785
+N                      8-20 %                                                             667
+K                      0.2-0.8 %                                                          705
+N                      22-51 %                                                            864
+                       19-31 %                                                            734
+   (1232) , D-wave     <11 %                                                              672
+   N  , S=3/2, D-wave  3-9 %
+   N                   0.2-0.8 %                                                           -
+ K (892)               <0.08 %
+p                      <0.06 %                                                            423
+   p  , helicity=1/2   <0.02 %                                                            888
+   p  , helicity=3/2   <0.04 %                                                            888
+n                      <0.01 %                                                            888
+   n  , helicity=1/2   <0.03 %                                                            888
+   n  , helicity=3/2                                                                      888
+                                                                                          888
+
+N(2220) 9/2+                    I (JP ) = 1 ( 9 +)
+
+                                               22
+
+Re(pole position) = 2130 to 2200 ( 2150) MeV
+-2Im(pole position) = 360 to 480 ( 400) MeV
+Breit-Wigner mass = 2200 to 2300 ( 2250) MeV
+Breit-Wigner full width = 350 to 500 ( 400) MeV
+
+N(2220) DECAY MODES    Fraction (i /)                                             p (MeV/c)
+                       15-30 %                                                            924
+N
+
+N(2250) 9/2-                    I (JP ) = 1 ( 9 -)
+
+                                               22
+
+Re(pole position) = 2100 to 2200 ( 2150) MeV
+-2Im(pole position) = 350 to 500 ( 420) MeV
+Breit-Wigner mass = 2250 to 2320 ( 2280) MeV
+Breit-Wigner full width = 300 to 600 ( 500) MeV
+
+https://pdg.lbl.gov    Page 15         Created: 10/3/2024 18:48
+Citation: S. Navas et al. (Particle Data Group), Phys. Rev. D 110, 030001 (2024)
+
+N(2250) DECAY MODES   Fraction (i /)                                              p (MeV/c)
+
+N                     5-15 %                                                              941
+N                     <5 %                                                                852
+K                     1-3 %                                                               777
+
+N(2600) 11/2-                  I (JP ) = 1 ( 11 -)
+
+                                              22
+
+Breit-Wigner mass = 2550 to 2750 ( 2600) MeV
+Breit-Wigner full width = 500 to 800 ( 650) MeV
+
+N(2600) DECAY MODES   Fraction (i /)                                              p (MeV/c)
+                      3-8 %                                                              1126
+N
+
+            BARYONS                       - = ddd
+          (S = 0, I = 3/2)
+
+++ = u u u, + = uud, 0 = udd,
+
+(1232) 3/2+                    I (JP ) = 3 ( 3 +)
+
+                                              22
+
+Re(pole position) = 1209 to 1211 ( 1210) MeV
+-2Im(pole position) = 98 to 102 ( 100) MeV
+Breit-Wigner mass (mixed charges) = 1230 to 1234 ( 1232)
+
+    MeV
+Breit-Wigner full width (mixed charges) = 114 to 120 ( 117)
+
+    MeV
+
+(1232) DECAY MODES    Fraction (i /)                                              p (MeV/c)
+
+N                     99.4     %                                                          229
+N                                                                                         259
+                      0.55-0.65 %                                                         259
+   N  , helicity=1/2                                                                      259
+   N  , helicity=3/2  0.11-0.13 %                                                         259
+p e+ e-
+                      0.44-0.52 %
+                      ( 4.2± 0.7) × 10-5
+
+https://pdg.lbl.gov   Page 16         Created: 10/3/2024 18:48
+Citation: S. Navas et al. (Particle Data Group), Phys. Rev. D 110, 030001 (2024)
+
+(1600) 3/2+                        I (JP ) = 3 ( 3 +)
+
+                                                  22
+
+Re(pole position) = 1470 to 1590 ( 1520) MeV
+-2Im(pole position) = 150 to 320 ( 280) MeV
+Breit-Wigner mass = 1500 to 1640 ( 1570) MeV
+Breit-Wigner full width = 200 to 300 ( 250) MeV
+
+(1600) DECAY MODES        Fraction (i /)                                          p (MeV/c)
+
+N                         8-24%                                                           492
+N                         58-84 %                                                         454
+                          58-82 %                                                         276
+   (1232)                 72-82%                                                          276
+      (1232) , P-wave     <2%                                                             276
+      (1232) , F-wave     17-27%
+                          0.001-0.035 %                                                       
+N (1440)                  0.0-0.02 %                                                      505
+N                         0.001-0.015 %                                                   505
+                                                                                          505
+   N  , helicity=1/2
+   N  , helicity=3/2
+
+(1620) 1/2-                        I (JP ) = 3 ( 1 -)
+
+                                                  22
+
+Re(pole position) = 1590 to 1610 ( 1600) MeV
+-2Im(pole position) = 80 to 140 ( 110) MeV
+Breit-Wigner mass = 1590 to 1630 ( 1610) MeV
+Breit-Wigner full width = 110 to 150 ( 130) MeV
+
+(1620) DECAY MODES        Fraction (i /)                                          p (MeV/c)
+
+N                         25-35 %                                                         520
+N                         >67 %                                                           484
+                          44-72 %                                                         311
+   (1232) , D-wave        23-32%
+   N                      23-32%                                                              
+                          <0.04%                                                              
+      N  , S=1/2, S-wave  <9 %                                                                
+      N  , S=3/2, D-wave  0.03-0.10 %                                                       98
+N (1440)                                                                                  532
+N  , helicity=1/2
+
+(1700) 3/2-                        I (JP ) = 3 ( 3 -)
+
+                                                  22
+
+Re(pole position) = 1640 to 1690 ( 1665) MeV
+-2Im(pole position) = 200 to 300 ( 250) MeV
+Breit-Wigner mass = 1690 to 1730 ( 1710) MeV
+Breit-Wigner full width = 220 to 380 ( 300) MeV
+
+https://pdg.lbl.gov       Page 17         Created: 10/3/2024 18:48
+Citation: S. Navas et al. (Particle Data Group), Phys. Rev. D 110, 030001 (2024)
+
+(1700) DECAY MODES        Fraction (i /)                                          p (MeV/c)
+
+N                         10-20 %                                                         588
+N                         >31 %                                                           557
+                          9-70 %                                                          394
+   (1232)                 5-54 %                                                          394
+      (1232) , S-wave     4-16 %                                                          394
+      (1232) , D-wave     22-32%
+                          1-5 %                                                               
+   N  , S=3/2, S-wave     0.5-1.5 %                                                       133
+N(1520) , P-wave          3-7 %                                                           113
+N (1535)                  0.22-0.60 %
+(1232)                    0.12-0.30 %                                                         
+N                         0.10-0.30 %                                                     598
+                                                                                          598
+   N  , helicity=1/2                                                                      598
+   N  , helicity=3/2
+
+(1900) 1/2-                        I (JP ) = 3 ( 1 -)
+
+                                                  22
+
+Re(pole position) = 1830 to 1900 ( 1865) MeV
+-2Im(pole position) = 180 to 300 ( 240) MeV
+Breit-Wigner mass = 1840 to 1920 ( 1860) MeV
+Breit-Wigner full width = 180 to 320 ( 250) MeV
+
+(1900) DECAY MODES        Fraction (i /)                                          p (MeV/c)
+
+N                         4-12%                                                           685
+K                         seen                                                            367
+N                         > 52%                                                           660
+                          30-70%                                                          509
+   (1232) , D-wave        22-60 %                                                         360
+   N                      11-35%                                                          360
+                          11-25%                                                          360
+      N  , S=1/2, S-wave  3-32%                                                           353
+      N  , S=3/2, D-wave  2-10%                                                           288
+N (1440)                  < 2%                                                            251
+N (1520)                  0.06-0.43 %                                                     693
+(1232) 
+N  , helicity=1/2
+
+(1905) 5/2+                        I (JP ) = 3 ( 5 +)
+
+                                                  22
+
+Re(pole position) = 1750 to 1800 ( 1770) MeV
+-2Im(pole position) = 260 to 340 ( 300) MeV
+Breit-Wigner mass = 1855 to 1910 ( 1880) MeV
+Breit-Wigner full width = 270 to 400 ( 330) MeV
+
+https://pdg.lbl.gov       Page 18         Created: 10/3/2024 18:48
+Citation: S. Navas et al. (Particle Data Group), Phys. Rev. D 110, 030001 (2024)
+
+(1905) DECAY MODES     Fraction (i /)                                             p (MeV/c)
+
+N                      9-15%                                                              698
+N                      >65%                                                               673
+                       >48%                                                               524
+   (1232)              8-43%                                                              524
+      (1232) , P-wave  40-58%                                                             524
+      (1232) , F-wave  17-35%                                                             385
+                       <1%                                                                293
+   N  , S=3/2, P-wave  5-15%                                                              133
+N (1535)               2-6%                                                               282
+N(1680) , P-wave       0.012-0.036 %                                                      706
+(1232)                 0.002-0.006 %                                                      706
+N                      0.01-0.03 %                                                        706
+
+   N  , helicity=1/2
+   N  , helicity=3/2
+
+(1910) 1/2+                     I (JP ) = 3 ( 1 +)
+
+                                               22
+
+Re(pole position) = 1800 to 1900 ( 1850) MeV
+-2Im(pole position) = 200 to 500 ( 350) MeV
+Breit-Wigner mass = 1850 to 1950 ( 1900) MeV
+Breit-Wigner full width = 200 to 400 ( 300) MeV
+
+(1910) DECAY MODES     Fraction (i /)                                             p (MeV/c)
+
+N                      10-30%                                                             710
+K                      4-14%                                                              410
+(1232)                 34-66%                                                             539
+N (1440)               3-45%                                                              386
+(1232)                 5-13%                                                              310
+N  , helicity=1/2      0.0-0.02 %                                                         718
+
+(1920) 3/2+                     I (JP ) = 3 ( 3 +)
+
+                                               22
+
+Re(pole position) = 1850 to 1950 ( 1900) MeV
+-2Im(pole position) = 200 to 400 ( 300) MeV
+Breit-Wigner mass = 1870 to 1970 ( 1920) MeV
+Breit-Wigner full width = 240 to 360 ( 300) MeV
+
+(1920) DECAY MODES     Fraction (i /)                                             p (MeV/c)
+
+N                      5-20 %                                                             723
+K                      2-6 %                                                              431
+N                      >46 %                                                              699
+                       >46 %                                                              553
+   (1232) 
+                       Page 19         Created: 10/3/2024 18:48
+https://pdg.lbl.gov
+           Citation: S. Navas et al. (Particle Data Group), Phys. Rev. D 110, 030001 (2024)
+
+   (1232) , P-wave    2-28 %                                                                 553
+
+   (1232) , F-wave    44-72 %                                                                553
+
+N(1440) , P-wave      4-86 %                                                                 403
+
+N(1520) , S-wave      <5 %                                                                   341
+
+N (1535)              <2 %                                                                   328
+
+N a0(980)             seen                                                                   41
+
+(1232)                5-17 %                                                                 336
+
+N                     0.01-0.84 %                                                            731
+
+N  , helicity=1/2     0.0-0.42 %                                                             731
+
+N  , helicity=3/2     0.01-0.42 %                                                            731
+
+(1930) 5/2-                    I (JP ) = 3 ( 5 -)
+
+                                              22
+
+           Re(pole position) = 1820 to 1880 ( 1850) MeV
+           -2Im(pole position) = 300 to 450 ( 320) MeV
+           Breit-Wigner mass = 1900 to 2000 ( 1950) MeV
+           Breit-Wigner full width = 200 to 400 ( 300) MeV
+
+(1930) DECAY MODES    Fraction (i /)                                                         p (MeV/c)
+
+N                     5-15 %                                                                         742
+N                     0.0-0.01 %                                                                     749
+                      0.0-0.005 %                                                                    749
+   N  , helicity=1/2  0.0-0.004 %                                                                    749
+   N  , helicity=3/2
+
+(1950) 7/2+                    I (JP ) = 3 ( 7 +)
+
+                                              22
+
+           Re(pole position) = 1870 to 1890 ( 1880) MeV
+           -2Im(pole position) = 220 to 260 ( 240) MeV
+           Breit-Wigner mass = 1915 to 1950 ( 1930) MeV
+           Breit-Wigner full width = 235 to 335 ( 285) MeV
+
+(1950) DECAY MODES    Fraction (i /)                                                         p (MeV/c)
+
+N                     35-45 %                                                                        729
+K                     0.3-0.5 %                                                                      441
+N                     37-77 %                                                                        706
+                      1-9 %                                                                          560
+   (1232) , F-wave    3-9 %                                                                          191
+N(1680) , P-wave      < 0.6 %                                                                        349
+(1232)                0.06-0.14 %                                                                    737
+N                     0.03-0.05 %                                                                    737
+                      0.04-0.09 %                                                                    737
+   N  , helicity=1/2
+   N  , helicity=3/2
+
+https://pdg.lbl.gov   Page 20         Created: 10/3/2024 18:48
+  Citation: S. Navas et al. (Particle Data Group), Phys. Rev. D 110, 030001 (2024)
+
+(2200) 7/2-                   I (JP ) = 3 ( 7 -)
+
+                                             22
+
+  Re(pole position) = 2050 to 2150 ( 2100) MeV
+  -2Im(pole position) = 260 to 420 ( 340) MeV
+  Breit-Wigner mass = 2150 to 2250 ( 2200) MeV
+  Breit-Wigner full width = 200 to 500 ( 350) MeV
+
+(2200) DECAY MODES   Fraction (i /)                                                 p (MeV/c)
+
+N                    2-8 %                                                                  894
+K                    1-7 %                                                                  672
+N                    >45 %                                                                  876
+                     >45 %                                                                  747
+                     >40 %                                                                  747
+        , D-wave     5-25 %                                                                 747
+        , G-wave     seen                                                                   614
+
+     , D-wave
+
+(2420) 11/2+                  I (JP ) = 3 ( 11 +)
+
+                                             22
+
+  Re(pole position) = 2300 to 2500 ( 2400) MeV
+  -2Im(pole position) = 350 to 550 ( 450) MeV
+  Breit-Wigner mass = 2300 to 2600 ( 2450) MeV
+  Breit-Wigner full width = 300 to 700 ( 500) MeV
+
+(2420) DECAY MODES   Fraction (i /)                                                 p (MeV/c)
+                     5-10 %                                                                1040
+N
+
+                        BARYONS
+                     (S = -1, I = 0)
+
+                                 0 = uds
+
+                              I (JP )  =  0( 1 +)
+
+                                             2
+
+  Mass m = 1115.683 ± 0.006 MeV
+  (m - m) m = (-0.1 ± 1.1) × 10-5 (S = 1.6)
+  Mean life  = (2.617 ± 0.010) × 10-10 s (S = 1.5)
+  (  -  ) /   = (0.9 ± 3.2) × 10-3
+
+      c = 7.845 cm
+
+  Magnetic moment µ = -0.613 ± 0.004 µN
+  Electric dipole moment d < 1.5 × 10-16 e cm, CL = 95%
+
+https://pdg.lbl.gov  Page 21              Created: 10/3/2024 18:48
+           Citation: S. Navas et al. (Particle Data Group), Phys. Rev. D 110, 030001 (2024)
+
+        Decay parameters
+
+           p -          - = 0.747 ± 0.009 (S = 2.5)
+
+           p +          + = -0.757 ± 0.004
+
+           0 FOR   n 0 = -0.692 ± 0.017
+
+            FOR   n  = -0.16 ± 0.11
+           p -          - = (-6.5 ± 3.5)
+
+           "                 - = 0.76 [l]
+
+           "                 - = (8 ± 4) [l]
+
+           0 / + in   n 0,   p + = 0.913 ± 0.030
+           R = GE /GM in   p -,   p + = 0.96 ± 0.14
+            = E - M in   p -,   p + = 37 ± 13
+                                                                                             degrees
+
+           n 0          0 = 0.75 ± 0.05
+
+           p e- e       gA/gV = -0.718 ± 0.015 [h]
+
+ DECAY MODES                                 Fraction (i /) Confidence level                     p
+                                                                                             (MeV/c)
+p -                                             (64.1 ± 0.5 ) %
+n 0                                                                                               101
+n                                               (35.9 ± 0.5 ) %                                   104
+p-                                              ( 8.3 ± 0.7 ) × 10-4                              162
+p e- e                                   [n] ( 8.5 ± 1.4 ) × 10-4                                 101
+p µ- µ                                          ( 8.34± 0.14) × 10-4                              163
+                                                ( 1.51± 0.19) × 10-4                              131
+
+           Lepton (L) and/or Baryon (B) number violating decay modes
+
++ e-                      L,B            <6          × 10-7   90%                            549
++ µ-                                                 × 10-7
+- e+                      L,B            <6          × 10-7   90%                            544
+- µ+                                                 × 10-7
+K + e-                    L,B            <4          × 10-6   90%                            549
+
+                          L,B            <6                   90%                            544
+
+                          L,B            <2                   90%                            449
+
+K + µ-                    L,B            <3          × 10-6   90%                            441
+K - e+                                               × 10-6
+                          L,B            <2                   90%                            449
+
+K - µ+                    L,B            <3          × 10-6   90%                            441
+K0                                                   × 10-5
+                          L,B            <2                   90%                            447
+   S                                                 × 10-7
+                          B              <9                   90%                            101
+p +
+
+invisible                                < 7.4       × 10-5   90%                            -
+
+(1405) 1/2-                              I (JP )  =  0( 1 -)
+
+                                                        2
+
+           Mass  m   =  1405.1 + 1.3     MeV
+
+                                  - 1.0
+
+           Full width  = 50.5 ± 2.0 MeV
+
+                Below K N threshold
+
+https://pdg.lbl.gov            Page 22               Created: 10/3/2024 18:48
+Citation: S. Navas et al. (Particle Data Group), Phys. Rev. D 110, 030001 (2024)
+
+(1405) DECAY MODES        Fraction (i /)                                          p (MeV/c)
+                          100 %                                                           155
+
+                                                                                  p (MeV/c)
+(1520) 3/2-                        I (JP )  =  0( 3 -)                                    242
+                                                                                          268
+                                                  2                                       259
+                                                                                          168
+Mass m = 1518 to 1520 ( 1519) MeV [o]                                                     350
+Full width  = 15 to 17 ( 16) MeV [o]
+                                                                                  p (MeV/c)
+(1520) DECAY MODES        Fraction (i /)                                                  343
+                                                                                          338
+NK                        (45 ± 1 ) %
+                          (42 ± 1 ) %                                                      -
+                          (10 ± 1 ) %
+                          ( 0.9 ± 0.1 ) %                                                 158
+                          ( 0.85± 0.15) %
+                                                                                  p (MeV/c)
+(1600) 1/2+                        I (JP )  =  0( 1 +)                                    418
+                                                                                          398
+                                                  2                                         88
+                                                                                          235
+Mass m = 1570 to 1630 ( 1600) MeV                                                             
+Full width  = 150 to 250 ( 200) MeV
+                                                                                           -
+(1600) DECAY MODES        Fraction (i /)
+
+NK                        15-30 %
+                          10-60 %
+                          (19± 4) %
+ (1385)                   ( 9± 4) %
+
+(1670) 1/2-                        I (JP )  =  0( 1 -)
+
+                                                  2
+
+Mass m = 1670 to 1678 ( 1674) MeV
+Full width  = 25 to 35 ( 30) MeV
+
+(1670) DECAY MODES        Fraction (i /)
+
+NK                        20-30 %
+                          25-55 %
+                          10-25 %
+ (1385) , D-wave          ( 6.0± 2.0) %
+N K (892), S=3/2, D-wave  ( 5 ±4 ) %
+                          (20 ± 8 ) %
+
+https://pdg.lbl.gov       Page 23              Created: 10/3/2024 18:48
+Citation: S. Navas et al. (Particle Data Group), Phys. Rev. D 110, 030001 (2024)
+
+(1690) 3/2-                   I (JP )  =  0( 3 -)
+
+                                             2
+
+Mass m = 1685 to 1695 ( 1690) MeV
+Full width  = 60 to 80 ( 70) MeV
+
+(1690) DECAY MODES   Fraction (i /)                                               p (MeV/c)
+
+NK                   20-30 %                                                              433
+                     20-40 %                                                              410
+                     (5.0± 2.0) %
+                      25 %                                                                 -
+                      20 %
+ (1385) , S-wave     (9 ± 5 ) %                                                           419
+ (1385) , D-wave     (3.0± 2.0) %                                                         358
+                                                                                          251
+                                                                                          251
+
+(1800) 1/2-                   I (JP )  =  0( 1 -)
+
+                                             2
+
+Mass m = 1750 to 1850 ( 1800) MeV
+Full width  = 150 to 250 ( 200) MeV
+
+(1800) DECAY MODES   Fraction (i /)                                               p (MeV/c)
+
+NK                   25-40 %                                                              528
+                      seen                                                                494
+                     (15 ± 4) %
+ (1385)               seen                                                                 -
+                     0.01 to 0.10
+N K (892)             seen                                                                349
+                                                                                          326
+
+                                                                                              
+
+(1810) 1/2+                   I (JP )  =  0( 1 +)
+
+                                             2
+
+Mass m = 1740 to 1840 ( 1790) MeV
+Full width  = 50 to 170 ( 110) MeV
+
+(1810) DECAY MODES   Fraction (i /)                                               p (MeV/c)
+
+NK                   0.05 to 0.35                                                         520
+                     (16 ± 5) %                                                           487
+ (1385)              (40 ± 15) %                                                          340
+N K (892)            30-60 %
+                                                                                              
+
+https://pdg.lbl.gov  Page 24              Created: 10/3/2024 18:48
+Citation: S. Navas et al. (Particle Data Group), Phys. Rev. D 110, 030001 (2024)
+
+(1820) 5/2+                        I (JP )  =  0( 5 +)
+
+                                                  2
+
+Mass m = 1815 to 1825 ( 1820) MeV
+Full width  = 70 to 90 ( 80) MeV
+
+(1820) DECAY MODES        Fraction (i /)                                          p (MeV/c)
+
+NK                        55-65 %                                                         545
+                          8-14 %                                                          509
+ (1385)                   5-10 %                                                          366
+N K (892), S=3/2, P-wave  (3.0± 1.0) %
+                                                                                              
+
+(1830) 5/2-                        I (JP )  =  0( 5 -)
+
+                                                  2
+
+Mass m = 1820 to 1830 ( 1825) MeV
+Full width  = 60 to 120 ( 90) MeV
+
+(1830) DECAY MODES        Fraction (i /)                                       p
+                                                        Scale factor (MeV/c)
+NK                        0.04 to 0.08
+                          35-75 %                                                 549
+ (1385)                   >15 %
+                          (40 ± 15) %                                             512
+    (1385) , D-wave
+                                                                                  370
+
+                                                        3.2                       370
+
+(1890) 3/2+                        I (JP )  =  0( 3 +)
+
+                                                  2
+
+Mass m = 1870 to 1910 ( 1890) MeV
+Full width  = 80 to 160 ( 120) MeV
+
+(1890) DECAY MODES        Fraction (i /)                                          p (MeV/c)
+
+NK                        0.24 to 0.36                                                    599
+                          3-10 %                                                          560
+ (1385)                    seen                                                           423
+                          (6.0 ± 3.0) %                                                   423
+    (1385) , P-wave       (4.0 ± 2.0) %                                                   423
+    (1385) , F-wave        seen                                                           236
+N K (892)
+
+https://pdg.lbl.gov       Page 25              Created: 10/3/2024 18:48
+Citation: S. Navas et al. (Particle Data Group), Phys. Rev. D 110, 030001 (2024)
+
+(2100) 7/2-                            I (JP )  =  0( 7 -)
+
+                                                      2
+
+Mass m = 2090 to 2110 ( 2100) MeV
+Full width  = 100 to 250 ( 200) MeV
+
+(2100) DECAY MODES            Fraction (i /)                                      p (MeV/c)
+
+NK                    D-wave  25-35 %                                                     751
+                              5%                                                          705
+                              <3 %                                                        617
+                              <3 %                                                        491
+                              <8 %                                                        443
+K                             (1.0± 1.0) %                                                584
+                              10-20 %                                                     515
+                              (4.0± 2.0) %                                                515
+ (1385) , G-wave
+N K (892)
+
+   N K (892), S=3/2,
+
+(2110) 5/2+                            I (JP )  =  0( 5 +)
+
+                                                      2
+
+Mass m = 2050 to 2130 ( 2090) MeV
+Full width  = 200 to 300 ( 250) MeV
+
+(2110) DECAY MODES            Fraction (i /)                                      p (MeV/c)
+
+NK                            5-25 %                                                      744
+                              10-40 %                                                     698
+                               seen                                                       432
+  , S=3/2 , P-wave            (5.0± 2.0) %                                                432
+ (1385)                        seen                                                       576
+N K (892)                     10-60 %                                                     505
+
+(2350) 9/2+                            I (JP )  =  0( 9 +)
+
+                                                      2
+
+Mass m = 2340 to 2370 ( 2350) MeV
+Full width  = 100 to 250 ( 150) MeV
+
+(2350) DECAY MODES            Fraction (i /)                                      p (MeV/c)
+
+NK                             12 %                                                       915
+                               10 %                                                       867
+
+https://pdg.lbl.gov           Page 26              Created: 10/3/2024 18:48
+        Citation: S. Navas et al. (Particle Data Group), Phys. Rev. D 110, 030001 (2024)
+
+                           BARYONS
+                         (S = -1, I = 1)
+
+                      + = uus,  0 = uds,  - = dds
+
++                                      I (JP )  =  1( 1 +)
+
+                                                      2
+
+        Mass m = 1189.37 ± 0.07 MeV (S = 2.2)
+        Mean life  = (0.8018 ± 0.0026) × 10-10 s
+
+            c = 2.404 cm
+
+        ( + -  - ) /  + = - 0.0006 ± 0.0012
+        Magnetic moment µ = 2.458 ± 0.010 µN (S = 2.1)
+        (µ+ + µ -) µ+ = 0.014 ± 0.015
+          +  n +  /  -  n -  < 0.043
+
+        Decay parameters
+
+        p 0          0 = -0.982 ± 0.014
+
+        p 0          0 = 0.99 ± 0.04
+
+        (0 + 0) / (0 - 0) = 0.00 ± 0.04
+        p 0          0 = (36 ± 34)
+
+        "                 0 = 0.16 [l]
+
+        "                 0 = (187 ± 6) [l]
+
+        n +          + = (4.89 ± 0.26) × 10-2
+
+        "            + = (167 ± 20) (S = 1.1)
+
+        - FOR  -  n - = (-5.7 ± 0.5) × 10-2
+        - / 0 = (-5.7 ± 0.6) × 10-2
+        (+ + -) / (+ - -) = (-8 ± 6) × 10-2
+                          + = - 0.97 [l]
+        "
+
+        "                 + = (- 73 + 133) [l]
+                                        - 10
+        p             = -0.69 ± 0.05
+
+ + DECAY MODES                Fraction (i /)           Scale factor/                          p
+                                                   Confidence level                       (MeV/c)
+p 0
+n +                                  (51.47± 0.30) %        S=2.4                              189
+p                                                                                              185
+n+                                   (48.43± 0.30) %                                           225
+ e+ e                                ( 1.04± 0.06) × 10-3                                      185
+                              [n] ( 4.5 ± 0.5 ) × 10-4
+                                     ( 2.3 ± 0.4 ) × 10-5                                        71
+
+                     S = Q (SQ) violating modes or
+
+             S = 1 weak neutral current (S1 ) modes
+
+n e+ e                    SQ  <5                   × 10-6 CL=90%                          224
+
+https://pdg.lbl.gov           Page 27              Created: 10/3/2024 18:48
+         Citation: S. Navas et al. (Particle Data Group), Phys. Rev. D 110, 030001 (2024)
+
+n µ+ µ               SQ  < 3.0                  × 10-5 CL=90%                              202
+p e+ e-
+p µ+ µ-              S1  <7                     × 10-6                                     225
+
+                     S1  ( 2.4 + 1.7 ) × 10-8                                              121
+                                  - 1.3
+
+0                                 I (JP )  =  1( 1 +)
+
+                                                 2
+
+         Mass m = 1192.642 ± 0.024 MeV
+
+         m- - m0 = 4.807 ± 0.035 MeV           (S = 1.1)
+         m0 - m = 76.959 ± 0.023 MeV
+         Mean life  = (7.4 ± 0.7) × 10-20 s
+
+             c = 2.22 × 10-11 m
+
+         Transition magnetic moment µ  = 1.61 ± 0.08 µN
+
+ 0 DECAY MODES               Fraction (i /)           Confidence level                         p
+                                                                     90%                   (MeV/c)
+                                100 %
+                             < 3%                                                                 74
+e+ e-                    [p] 5 × 10-3                                                             74
+                                                                                                  74
+
+-                                 I (JP )  =  1( 1 +)
+
+                                                 2
+
+         Mass m = 1197.449 ± 0.029 MeV (S = 1.1)
+
+         m- - m+ = 8.08 ± 0.08 MeV (S = 1.9)
+         m- - m = 81.766 ± 0.029 MeV (S = 1.1)
+         Mean life  = (1.479 ± 0.011) × 10-10 s (S = 1.3)
+
+             c = 4.434 cm
+
+         Magnetic moment µ = -1.160 ± 0.025 µN (S = 1.7)
+          - charge radius = 0.78 ± 0.10 fm
+
+   Decay parameters
+
+         n -         - = -0.068 ± 0.008
+          "          - = (10 ± 15)
+          "
+          "                - = 0.98 [l]
+                           - = (249 + 12) [l]
+         n e- e
+                                               - 120
+
+                     gA/gV = 0.340 ± 0.017 [h]
+
+         "           f2(0) f1(0) = 0.97 ± 0.14
+
+          "          D = 0.11 ± 0.10                  (S = 1.5)
+         e- e        gV /gA = 0.01 ± 0.10 [h]
+                     gWM /gA = 2.4 ± 1.7 [h]
+           "
+
+https://pdg.lbl.gov      Page 28               Created: 10/3/2024 18:48
+Citation: S. Navas et al. (Particle Data Group), Phys. Rev. D 110, 030001 (2024)
+
+ - DECAY MODES                     Fraction (i /) Confidence level                    p
+                                                                                  (MeV/c)
+n -                                (99.848± 0.005) %
+n-                                                                                     193
+n e- e                          [n] ( 4.6 ± 0.6 ) × 10-4                               193
+n µ- µ                                                                                 230
+e- e                               ( 1.017± 0.034) × 10-3                              210
++X
+                                   ( 4.5 ± 0.4 ) × 10-4                                  79
+p e- e-
+                                   ( 5.73 ± 0.27 ) × 10-5                                -
+
+                                   < 1.2            × 10-4  90%
+
+                Lepton number (L) violating modes
+
+                     L             < 6.7            × 10-5  90%                   231
+
+ (1385) 3/2+                       I (JP )     =  1( 3 +)
+
+                                                     2
+
+ (1385)+mass m = 1382.83 ± 0.34 MeV (S = 1.9)
+ (1385)0 mass m = 1383.7 ± 1.0 MeV (S = 1.4)
+ (1385)-mass m = 1387.2 ± 0.5 MeV (S = 2.2)
+ (1385)+full width  = 36.2 ± 0.7 MeV
+ (1385)0 full width  = 36 ± 5 MeV
+ (1385)-full width  = 39.4 ± 2.1 MeV (S = 1.7)
+
+      Below K N threshold
+
+ (1385) DECAY MODES                Fraction (i /) Confidence level                    p
+                                                                                  (MeV/c)
+                                   (87.0 ± 1.5 ) %
+                                                                                       208
+                                   (11.7 ± 1.5 ) %                                     129
+
++                                  ( 1.25+ 0.13) %                                     241
+-                                          - 0.12
+                                                                                       180
+                                   ( 7.0 ± 1.7 ) × 10-3                                173
+
+                                   < 2.4            × 10-4  90%
+
+ (1660) 1/2+                       I (JP )     =  1( 1 +)
+
+                                                     2
+
+Re(pole position) = 1585 ± 20 MeV
+
+- 2Im(pole           position)  =  290 + 140   MeV
+
+                                         - 40
+
+Mass m = 1640 to 1680 ( 1660) MeV
+
+Full width  = 100 to 300 ( 200) MeV
+
+ (1660) DECAY MODES                Fraction (i /)                                 p (MeV/c)
+
+NK                                 0.05 to 0.15 ( 010)                                    405
+                                   (35 ± 12 ) %                                           440
+                                   (37 ± 10 ) %                                           387
+
+https://pdg.lbl.gov     Page 29                     Created: 10/3/2024 18:48
+         Citation: S. Navas et al. (Particle Data Group), Phys. Rev. D 110, 030001 (2024)
+
+                     (20 ± 8 ) %                                                           -
+(1405) 
+                     ( 4.0 ± 2.0) %                                                        199
+
+ (1670) 3/2-                  I (JP )  =  1( 3 -)
+
+                                             2
+
+         Mass m = 1665 to 1685 ( 1675) MeV
+         Full width  = 40 to 100 ( 70) MeV
+
+ (1670) DECAY MODES  Fraction (i /)                                                        p (MeV/c)
+
+NK                   0.06 to 0.12                                                                  419
+                     5-15 %                                                                        452
+                     30-60 %                                                                       398
+                     (7.0 ± 3.0) %
+                                                                                                    -
+
+ (1750) 1/2-                  I (JP )  =  1( 1 -)
+
+                                             2
+
+         Mass m = 1700 to 1800 ( 1750) MeV
+         Full width  = 100 to 200 ( 150) MeV
+
+ (1750) DECAY MODES  Fraction (i /)                                                        p (MeV/c)
+
+NK                   0.06 to 0.12                                                                  486
+                                                                                                   507
+                     (14 ± 5 ) %                                                                   456
+
+ (1385) , D-wave     (16 ± 4 ) %                                                                     98
+(1520)                                                                                             305
+N K (892), S=1/2     15-55 %                                                                       175
+
+                     <1                   %                                                            
+
+                     ( 2.0 ± 1.0) %
+
+                     ( 8 ±4 ) %
+
+ (1775) 5/2-                  I (JP )  =  1( 5 -)
+
+                                             2
+
+         Mass m = 1770 to 1780 ( 1775) MeV
+         Full width  = 105 to 135 ( 120) MeV
+
+ (1775) DECAY MODES  Fraction (i /)                                                        p (MeV/c)
+
+NK                   37-43%                                                                        508
+                     14-20%                                                                        525
+                     2-5%                                                                          475
+ (1385)              8-12%                                                                         327
+(1520) , P-wave      17-23%                                                                        202
+
+https://pdg.lbl.gov  Page 30              Created: 10/3/2024 18:48
+Citation: S. Navas et al. (Particle Data Group), Phys. Rev. D 110, 030001 (2024)
+
+ (1910) 3/2-                           I (JP )  =  1( 3 -)
+
+                                                      2
+
+was  (1940)
+
+Mass m = 1870 to 1950 ( 1910) MeV
+Full width  = 150 to 300 ( 220) MeV
+
+ (1910) DECAY MODES           Fraction (i /)                                      p (MeV/c)
+
+NK                            0.01 to 0.05 ( 0.02)                                        615
+                              ( 6 ± 4 )%                                                  619
+                              (86 ± 21 ) %                                                574
+ (1385)                        seen                                                       439
+(1520)                         seen                                                       329
+(1232) K                      ( 3.0 ± 1.0) %                                              377
+N K (892)                      seen                                                       274
+                              ( 1.0 ± 1.0) %                                              274
+   N K (892), S=1/2 , D-wave
+
+ (1915) 5/2+                           I (JP )  =  1( 5 +)
+
+                                                      2
+
+Mass m = 1900 to 1935 ( 1915) MeV
+Full width  = 80 to 160 ( 120) MeV
+
+ (1915) DECAY MODES           Fraction (i /)                                      p (MeV/c)
+
+NK                            0.05 to 0.15                                                618
+                              ( 6.0 ± 2.0) %                                              623
+                              (10.0 ± 2.0) %                                              577
+                              ( 2.0 ± 2.0) %                                              443
+    (1385) , P-wave           ( 4.0 ± 2.0) %                                              443
+    (1385) , F-wave           ( 8.0 ± 2.0) %                                              334
+(1520) , D-wave               ( 5.0 ± 3.0) %                                              282
+N K (892), S=1/2, F-wave      ( 5.0 ± 2.0) %                                              282
+N K (892), S=3/2, F-wave      (16 ± 5 ) %                                                 383
+ K , P-wave                   ( 5.0 ± 3.0) %                                              383
+ K , F-wave
+
+ (2030) 7/2+                           I (JP )  =  1( 7 +)
+
+                                                      2
+
+Mass m = 2025 to 2040 ( 2030) MeV
+Full width  = 150 to 200 ( 180) MeV
+
+ (2030) DECAY MODES           Fraction (i /)                                      p (MeV/c)
+                              17-23 %                                                     702
+NK
+https://pdg.lbl.gov           Page 31              Created: 10/3/2024 18:48
+         Citation: S. Navas et al. (Particle Data Group), Phys. Rev. D 110, 030001 (2024)
+
+                          17-23 %                                                          700
+
+                          5-10 %                                                           657
+
+K                         <2 %                                                             422
+
+ (1385)                   5-15 %                                                           532
+
+ (1385) , F-wave          ( 1.0± 1.0) %                                                    532
+
+(1520)                    10-20 %                                                          431
+
+(1232) K                  10-20 %                                                          498
+
+(1232)K , F-wave          (15 ± 5 ) %                                                      498
+
+(1232)K , H-wave          ( 1.0± 1.0) %                                                    498
+
+N K (892), S=3/2, F-wave  (14 ± 8 ) %                                                      439
+
+                         BARYONS
+                      (S = -2, I = 1/2)
+
+                           0 = us s,  - = ds s
+
+0                                  I (JP ) = 1 ( 1 +)
+
+                                                  22
+
+   P is not yet measured; + is the quark model prediction.
+
+          Mass m = 1314.86 ± 0.20 MeV
+          m - - m 0 = 6.85 ± 0.21 MeV
+          Mean life  = (2.90 ± 0.09) × 10-10 s
+
+              c = 8.71 cm
+          Magnetic moment µ = -1.250 ± 0.014 µN
+
+   Decay parameters
+
+          0            = -0.349 ± 0.009
+
+           FOR  0   0 = 0.379 ± 0.004
+
+          "            = (0.3 ± 0.6)
+
+           ANGLE FOR  0   0 with tan = / = -0.3 ± 0.6
+
+             degrees
+
+          CP ( 0) = (  0 +  0 )/2 = 0.0 ± 0.4 degrees
+          ACP FOR  0   0,  0   0 = (- 5 ± 7) × 10-3
+                       = 0.85 [l]
+          "
+
+          "            = (218 + 12) [l]
+                                   - 19
+
+                       = -0.70 ± 0.07
+
+           e+ e-  = -0.8 ± 0.2
+
+          0            = -0.69 ± 0.06
+
+          + e- e      g1(0)/f1(0) = 1.22 ± 0.05
+          + e- e      f2(0)/f1(0) = 2.0 ± 0.9
+
+https://pdg.lbl.gov       Page 32        Created: 10/3/2024 18:48
+   Citation: S. Navas et al. (Particle Data Group), Phys. Rev. D 110, 030001 (2024)
+
+ 0 DECAY MODES       Fraction (i /) Confidence level                                     p
+                                                                                     (MeV/c)
+0                       (99.524± 0.012) %
+                        ( 1.17 ± 0.07 ) × 10-3                                            135
+                        ( 7.6 ± 0.6 ) × 10-6                                              184
+   e+ e-                ( 3.33 ± 0.10 ) × 10-3                                            184
+0                       ( 2.52 ± 0.08 ) × 10-4                                            117
++ e- e                  ( 2.33 ± 0.35 ) × 10-6                                            120
+ + µ- µ
+                                                                                            64
+ - e+ e
+ - µ+ µ              S = Q (SQ) violating modes or
+p -
+p e- e               S = 2 forbidden (S2 ) modes
+p µ- µ
+                     SQ < 1.6              × 10-4           90%                      112
+
+                     SQ < 9                × 10-4           90%                      49
+
+                     S2 < 8                × 10-6           90%                      299
+
+                     S2 < 1.3              × 10-3                                    323
+
+                     S2 < 1.3              × 10-3                                    309
+
+-                             I (JP ) = 1 ( 1 +)
+
+                                             22
+
+   P is not yet measured; + is the quark model prediction.
+
+   Mass m = 1321.71 ± 0.07 MeV
+   (m - - m + ) / m - = (- 3 ± 9) × 10-5
+   Mean life  = (1.639 ± 0.015) × 10-10 s
+
+       c = 4.91 cm
+
+   (  - -   + ) /   - = - 0.01 ± 0.07
+   Magnetic moment µ = -0.6507 ± 0.0025 µN
+   (µ - + µ + ) / µ - = + 0.01 ± 0.05
+
+   Decay parameters
+
+   -                  = -0.390 ± 0.007 (S = 2.0)
+
+   ( +) for  +   + = 0.371 ± 0.007
+
+   ( + ) / ( - ) for  -   -,  +   + = (6 ± 14) ×
+
+      10-3
+
+   [( -)-() - ( +)+()] / [ sum ] = (0 ± 7) × 10-4
+
+   "                  = (-1.2 ± 1.0) (S = 1.4)
+
+    ANGLE FOR  +   + (tan = /) = (-1.2 ± 1.2)
+
+   CP = (-+ +)/2 = (-0.3 ± 0.8)
+                      = 0.89 [l]
+   "
+
+   "                  = (175.9 ± 1.5) [l]
+
+    e- e gA/gV = - 0.25 ± 0.05 [h]
+
+https://pdg.lbl.gov  Page 33      Created: 10/3/2024 18:48
+Citation: S. Navas et al. (Particle Data Group), Phys. Rev. D 110, 030001 (2024)
+
+ - DECAY MODES                      Fraction (i /) Confidence level                   p
+                                                                                  (MeV/c)
+-                                   (99.887± 0.035) %
+-                                   ( 1.27 ± 0.23 ) × 10-4                             140
+e- e                                ( 5.63 ± 0.31 ) × 10-4                             118
+ µ- µ                                                                                  190
+ 0 e- e                             ( 3.5 + 3.5 ) × 10-4
+ 0 µ- µ                                       - 2.2                                    163
+ 0 e- e
+                                    ( 8.7 ± 1.7 ) × 10-5                               123
+n -                                                                                      70
+n e- e                              <8               × 10-4  90%                           7
+n µ- µ
+p - -                               < 2.59           × 10-4  90%
+p - e- e
+p - µ- µ             S = 2 forbidden (S2 ) modes
+p µ- µ-
+                        S2 < 1.9                     × 10-5  90%                  304
+
+                        S2 < 3.2                     × 10-3  90%                  327
+
+                        S2 < 1.5                     %       90%                  314
+
+                        S2 < 4                       × 10-4  90%                  223
+                        S2 < 4
+                        S2 < 4                       × 10-4  90%                  305
+
+                                                     × 10-4  90%                  251
+
+                        L           <4               × 10-8  90%                  272
+
+ (1530) 3/2+                        I (JP ) = 1 ( 3 +)
+
+                                                   22
+
+          (1530)0 mass m = 1531.80 ± 0.32 MeV               (S = 1.3)
+
+          (1530)- mass m = 1535.0 ± 0.6 MeV                Confidence level
+                                                                          90%
+          (1530)0 full width  = 9.1 ± 0.5 MeV
+                                    9.9 + 1.7
+          (1530)- full  width    =              MeV
+                                         - 1.9
+
+ (1530) DECAY MODES                 Fraction (i /)                                    p
+                                                                                  (MeV/c)
+                                    100 %
+                                    <3.7 %                                             158
+                                                                                       202
+
+ (1690)                             I (JP )     =  1 (??)
+
+                                                   2
+
+         Mass m = 1690 ± 10 MeV [o]
+         Full width  = 20 ± 15 MeV
+
+ (1690) DECAY MODES                 Fraction (i /)                                p (MeV/c)
+
+K                                   seen                                                  240
+K                                   seen                                                    70
+                                    seen
+- + -                               possibly seen                                         311
+                                                                                          213
+
+https://pdg.lbl.gov     Page 34                      Created: 10/3/2024 18:48
+Citation: S. Navas et al. (Particle Data Group), Phys. Rev. D 110, 030001 (2024)
+
+ (1820) 3/2-                              I (JP ) = 1 ( 3 -)
+
+                                                         22
+
+         Mass m = 1823 ± 5 MeV [o]
+
+         Full  width    =  24 + 15   MeV  [o]
+
+                               - 10
+
+ (1820) DECAY MODES                  Fraction (i /)                               p (MeV/c)
+
+K                                    large                                                402
+K                                    small                                                324
+                                     small                                                421
+ (1530)                              small                                                237
+
+ (1950)                                   I (JP )  =  1 (??)
+
+                                                      2
+
+         Mass m = 1950 ± 15 MeV [o]
+         Full width  = 60 ± 20 MeV [o]
+
+ (1950) DECAY MODES                  Fraction (i /)                               p (MeV/c)
+
+K                                    seen                                                 522
+K                                    possibly seen                                        460
+                                     seen                                                 519
+
+ (2030)                                   I (JP )  =  1(      5 ?)
+
+                                                      2       2
+
+         Mass m = 2025 ± 5 MeV [o]
+
+         Full  width    =      + 15  MeV  [o]
+
+                           20 - 5
+
+ (2030) DECAY MODES                  Fraction (i /)                               p (MeV/c)
+
+K                                     20 %                                                585
+K                                     80 %                                                529
+                                     small                                                574
+ (1530)                              small                                                416
+K                                    small                                                499
+K                                    small                                                428
+
+https://pdg.lbl.gov        Page 35                    Created: 10/3/2024 18:48
+     Citation: S. Navas et al. (Particle Data Group), Phys. Rev. D 110, 030001 (2024)
+
+                           BARYONS
+                          (S = -3, I = 0)
+
+                                   - = sss
+
+-                                      I (JP )  =   0( 3 +)
+
+                                                       2
+
+     JP  =  3+  is   the  quark-model  prediction;  and  J   =  3/2  is  fairly        well
+
+            2
+
+     established.
+
+         Mass m = 1672.45 ± 0.29 MeV
+         (m- - m+ ) / m- = (- 1 ± 8) × 10-5
+         Mean life  = (0.821 ± 0.011) × 10-10 s
+
+             c = 2.461 cm
+
+         ( - -  + ) /  - = 0.00 ± 0.05
+         Magnetic moment µ = -2.02 ± 0.05 µN
+
+     Decay parameters
+
+         (-) -() FOR -   K - = 0.0115 ± 0.0015
+         K-
+                           = 0.0154 ± 0.0020
+
+          K -,  K + ( + )/( - ) = -0.02 ± 0.13
+
+         0 -               = 0.09 ± 0.14
+
+         - 0               = 0.05 ± 0.21
+
+- DECAY MODES             Fraction (i /)                        Scale factor/              p
+                                                            Confidence level           (MeV/c)
+
+K-                                     (67.7 ± 0.7 ) %               S=1.5                  211
+0 -                                    (24.3 ± 0.7 ) %                                      294
+- 0                                    ( 8.55± 0.33) %                                      289
+
+- + -                                  ( 3.7 + 0.7 ) × 10-4                                 189
+                                               - 0.6
+    (1530)0 -                                                                                 17
+ 0 e- e                                <7           × 10-5      CL=90%                      319
+-                                                               CL=90%                      314
+                                       ( 5.6 ± 2.8 ) × 10-3
+
+                                       < 4.6        × 10-4
+
+                     S = 2 forbidden (S2 ) modes
+
+-                         S2 < 2.9                  × 10-6 CL=90%                      449
+
+https://pdg.lbl.gov       Page 36                   Created: 10/3/2024 18:48
+Citation: S. Navas et al. (Particle Data Group), Phys. Rev. D 110, 030001 (2024)
+
+ (2012)-                                    I (JP ) = 0(?-)
+
+Mass m = 2012.4 ± 0.9 MeV
+
+Full      width        =  6.4 + 3.0   MeV
+
+                               - 2.6
+
+Branching fractions are given relative to the one DEFINED AS 1.
+
+(2012)- DECAY MODES                      Fraction (i /)                                  p
+                                                             Confidence level (MeV/c)
+0K-                                        DEFINED AS 1
+-K0                                         0.83± 0.21                            403
+0 0 K-                                   <0.30
+0 - K0                                   <0.21                                    392
+- 0 K0                                   <0.7
+- + K-                                   <0.08                        90%         245
+
+                                                                      90%         230
+
+                                                                      90%         226
+
+                                                                      90%         224
+
+ (2250)-                                    I (JP ) = 0(??)
+
+Mass m = 2252 ± 9 MeV
+Full width  = 55 ± 18 MeV
+
+(2250)- DECAY MODES                      Fraction (i /)                           p (MeV/c)
+
+- + K-                                   seen                                             532
+    (1530)0 K -                          seen                                             437
+
+          CHARMED BARYONS
+                  (C = +1)
+
++c = u d c,             ++ c = u u c,        +c = u d c,     0     =  d d c,
+
+                      +c = u s c,  0                0           c
+
+                                      c  =  d s c,     c  =  ssc
+
++c I (JP ) = 0( 21 +)
+
+Mass m = 2286.46 ± 0.14 MeV
+Mean life  = (202.6 ± 1.0) × 10-15 s
+
+    c = 60.75 µm
+
+Decay asymmetry parameters
+
++                       = -0.755 ± 0.006
+
+ FOR +c   + = -0.76 ± 0.07
+
+https://pdg.lbl.gov       Page 37                         Created: 10/3/2024 18:48
+Citation: S. Navas et al. (Particle Data Group), Phys. Rev. D 110, 030001 (2024)
+
++ 0                         = -0.484 ± 0.027
+
+ FOR +c   +  = -0.99 ± 0.06
+ FOR +c   +  = -0.46 ± 0.07
+ FOR +c   0 + = -0.466 ± 0.018
+ FOR +c   (1385)+ 0 = -0.92 ± 0.09
+ FOR +c   (1385)0 + = -0.79 ± 0.11
+ + 
+                            = -0.875 ± 0.033
+
+ FOR +c                        pK0     =  0.2   ±  0.5
+
+                                    S
+ FOR +c   K + = -0.58 ± 0.05
+ FOR +c   0 K + = -0.54 ± 0.20
+ FOR +c  (1405)+ = 0.58 ± 0.28
+ FOR +c  (1520)+ = 0.93 ± 0.09
+ FOR +c  (1600)+ = 0.2 ± 0.5
+ FOR +c  (1670)+ = 0.82 ± 0.08
+ FOR +c  (1690)+ = 0.958 ± 0.034
+ FOR +c  (2000)+ = -0.57 ± 0.19
+ FOR +c  (1232)++ K - = 0.55 ± 0.04
+ FOR +c  (1600)++ K - = -0.50 ± 0.18
+ FOR +c  (1700)++ K - = 0.22 ± 0.08
+ FOR +c  K 0(700)0 p = -0.1 ± 0.7
+ FOR +c  K 0(1430)0 p = 0.34 ± 0.14
+( + )/( - ) in +c   +, -c   - = 0.020 ± 0.016
+( + )/( - ) in +c   0 +, -c   0 - = - 0.02 ±
+
+0.05
+
+( + )/(-) in +c   e+ e , -c  e- e = 0.00 ± 0.04
+( + )/( - ) in +c   K +, -c   K - = -0.02 ± 0.11
+( + )/( - ) in +c   0 K +, -c   0 K - = 0.1 ± 0.4
+
+ACP ( X ) in c   X , c   X = (2 ± 7)%
+ACP ( K +) in c   K +, c   K - = 0.021 ± 0.026
+ACP ( 0 K +) in c   0 K +, c   0 K - = 0.03 ± 0.05
+                                    +     pK+ K-)                      +    p + -) =
+ACP                  =  AC  P  (    c                   -  AC  P  (    c  
+
+(0.3 ± 1.1)%
+
+Branching fractions marked with a footnote, e.g. [a], have been corrected
+
+for decay modes not observed in the experiments. For example, the sub-
+mode fraction +  p K (892)0 seen in +  p K - + has been
+                        c                               c
+multiplied up to include K (892)0  K 0 0 decays.
+
+https://pdg.lbl.gov                    Page 38             Created: 10/3/2024 18:48
+          Citation: S. Navas et al. (Particle Data Group), Phys. Rev. D 110, 030001 (2024)
+
++ DECAY MODES           Fraction (i /)           Scale factor/ p
+ c                                           Confidence level (MeV/c)
+
+pK0           Hadronic modes with a p or n: S = -1 final states
+
+     S                  ( 1.59± 0.07) %                         S=1.1                       873
+
+p K- +                  ( 6.24± 0.28) %                         S=1.4                       823
+
+p K 0(700)0             ( 1.9 ± 0.6 ) × 10-3                                                715
+
+p K (892)0              [q] ( 1.39± 0.07) %                                                 685
+
+p K 0(1430)             ( 9.2 ± 1.8 ) × 10-3                                                
+(1232)++ K -
+(1600)++ K -            ( 1.76± 0.09) %                                                     710
+
+                        ( 2.8 ± 1.0 ) × 10-3                                                -
+
+(1700)++ K -            ( 2.4 ± 0.6 ) × 10-3                                                -
+(1405)0 +
+                        ( 4.8 ± 1.9 ) × 10-3                                                -
+
+(1520) +                [q] ( 1.16± 0.16) × 10-3                                            628
+(1600) +
+                        ( 3.2 ± 1.2 ) × 10-3                                                571
+
+(1670) +                ( 7.4 ± 2.1 ) × 10-4                                                516
+(1690) +
+                        ( 7.4 ± 2.2 ) × 10-4                                                504
+
+   (2000) +             ( 6.0 ± 0.7 ) × 10-3                                                234
+   p K - + nonresonant
+p K0 0                  ( 3.5 ± 0.4 ) %                                                     823
+
+     S                  ( 1.96± 0.12) %                                                     823
+
+nK0 +                   ( 1.82± 0.25) %                                                     821
+
+     S                  ( 1.90± 0.12) %                                                     756
+
+nK- + +                 ( 8.8 ± 0.6 ) × 10-3 S=1.1                                          568
+pK0
+p K0 + -                ( 1.59± 0.11) %                         S=1.1                       754
+
+     S                  ( 4.43± 0.28) %                         S=1.5                       759
+
+p K- + 0                [q] ( 1.4 ± 0.5 ) %                                                 580
+   p K (892)- +
+
+p (K - +)nonresonant 0  ( 4.6 ± 0.8 ) %                                                     759
+
+(1232)K (892)                    seen                                                       419
+
+p K - 2+ -              ( 1.4 ± 0.9 ) × 10-3                                                671
+p K - + 20
+                        (10 ± 5 ) × 10-3                                                    678
+
+              Hadronic modes with a p or n: S = 0 final states
+
+p 0                     <8              × 10-5 CL=90%                                       945
+n +
+                        ( 6.6 ± 1.3 ) × 10-4                                                944
+
+p                       ( 1.57± 0.12) × 10-3                                                856
+
+p                       ( 4.8 ± 0.9 ) × 10-4                                                639
+p (782)0
+p + -                   ( 1.11± 0.21) × 10-3                                                751
+
+                        ( 4.59± 0.25) × 10-3                                                927
+
+   p f0(980)            [q] ( 3.4 ± 2.3 ) × 10-3                                            614
+n+ 0
+n+ - +                  ( 6.4 ± 0.9 ) × 10-3                                                927
+p 2+ 2-
+pK+K-                   ( 4.5 ± 0.8 ) × 10-3                                                895
+
+                        ( 2.2 ± 1.4 ) × 10-3                                                852
+
+                        ( 1.06± 0.05) × 10-3                                                616
+
+https://pdg.lbl.gov     Page 39         Created: 10/3/2024 18:48
+      Citation: S. Navas et al. (Particle Data Group), Phys. Rev. D 110, 030001 (2024)
+
+   p                         [q] ( 1.06± 0.14) × 10-3                                   590
+   p K + K - non-
+pK0 K0                       ( 5.2 ± 1.1 ) × 10-4                                       616
+
+     SS                      ( 2.35± 0.18) × 10-4                                       610
+
+p  0                         (10 ± 4 ) × 10-5                                           460
+p K + K - 0 nonresonant
+                             < 6.3    × 10-5 CL=90%                                     494
+
+      Hadronic modes with a hyperon: S = -1 final states
+
++                            ( 1.29± 0.05) %           S=1.1                            864
+(1670)+, (1670)   
+                             ( 3.5 ± 0.5 ) × 10-3                                       -
+
++ 0                          ( 7.02± 0.35) %           S=1.1                            844
+    +
+    (1385)+ 0,               ( 4.0 ± 0.5 ) %                                            636
+    (1385)0 +,
+                +  +         ( 5.0 ± 0.7 ) × 10-3                                       -
+                0  0
+                             ( 5.6 ± 0.8 ) × 10-3                                       -
+
+ - 2+                        ( 3.61± 0.26) %           S=1.4                            807
+    (1385)+ + - ,  +         ( 1.0 ± 0.5 ) %
+       +                                                                                688
+    (1385)- 2+ ,  - 
+                             ( 7.6 ± 1.4 ) × 10-3                                       688
+
+-
+ + 0
+                             ( 1.4 ± 0.6 ) %                                            524
+
+ (1385)+ 0 ,  +   +          ( 5 ± 4 ) × 10-3                                           363
+
+    - 2+ nonresonant         < 1.1    %                CL=90%                           807
+ - 0 2+ total
+                             ( 2.2 ± 0.8 ) %                                            757
+   + 
+       (1385)+               [q] ( 1.84± 0.11) %       S=1.1                            691
+
+   +                         [q] ( 9.1 ± 2.0 ) × 10-3                                   570
+    - 0 2+ , no  or 
+K+K0                         [q] ( 1.5 ± 0.5 ) %                                        517
+
+                             <8       × 10-3 CL=90%                                     757
+
+                             ( 5.6 ± 1.1 ) × 10-3 S=1.9                                 443
+
+    (1690)0 K + ,  0     K0  ( 1.6 ± 0.5 ) × 10-3                                       286
+0 +
+0 +                          ( 1.27± 0.06) %           S=1.1                            825
++ 0
++                            ( 7.5 ± 0.8 ) × 10-3                                       635
++ 
++ + -                        ( 1.24± 0.09) %                                            827
+
+    + 0                      ( 3.2 ± 0.5 ) × 10-3                                       713
+ - 2+
+0 + 0                        ( 4.1 ± 0.8 ) × 10-3                                       391
++ 0 0
+ 0 - 2+                      ( 4.47± 0.22) %           S=1.2                            804
++
+ - 0 2+                      < 1.7    %                CL=95%                           575
++K+K-
+                             ( 1.86± 0.18) %                                            799
+
+                             ( 3.5 ± 0.4 ) %                                            803
+
+                             ( 1.54± 0.14) %                                            806
+
+                             ( 1.10± 0.30) %                                            763
+
+                             ( 1.69± 0.20) %                                            569
+
+                             ( 2.1 ± 0.4 ) %                                            762
+
+                             ( 3.59± 0.35) × 10-3 S=1.1                                 349
+
++                            [q] ( 3.9 ± 0.5 ) × 10-3 S=1.1                             295
+ (1690)0 K + ,  0 
+                             ( 1.01± 0.25) × 10-3                                       286
+    +K-
+
+https://pdg.lbl.gov          Page 40  Created: 10/3/2024 18:48
+                 Citation: S. Navas et al. (Particle Data Group), Phys. Rev. D 110, 030001 (2024)
+
+    + K + K - nonresonant       <8               × 10-4 CL=90%                                     349
+0K+
+- K+ +                          ( 5.5 ± 0.7 ) × 10-3                                               653
+ (1530)0 K +
+                                ( 6.2 ± 0.5 ) × 10-3 S=1.1                                         565
+
+                                ( 4.3 ± 0.9 ) × 10-3 S=1.1                                         473
+
+                    Hadronic modes with a hyperon: S = 0 final states
+
+K+                              ( 6.42± 0.31) × 10-4                                               781
+
+K+ + -                          <5               × 10-4 CL=90%                                     637
+0K+
+                                ( 3.70± 0.31) × 10-4                                               735
+
++K0                             ( 4.7 ± 1.4 ) × 10-4                                               736
+
+         S                      < 2.5            × 10-4 CL=90%                                     574
+
+0 K+ + -                        ( 2.00± 0.26) × 10-3                                               670
++ K+ -
+                                [q] ( 3.5 ± 1.0 ) × 10-3                                           470
+    + K (892)0
+
++ K+ - 0                        < 1.1            × 10-3 CL=90%                                     581
+- K+ +                          < 1.2
+                                                 × 10-3 CL=90%                                     664
+
+                       Doubly Cabibbo-suppressed modes
+
+p K+ -                          ( 1.11± 0.17) × 10-4                                               823
+
+                           Semileptonic modes
+
+ e+ e                           ( 3.56± 0.13) %                                                    871
+
+ + - e+ e                       < 3.9            × 10-4 CL=90%                                     843
+
+p K - e+ e                      ( 8.8 ± 1.8 ) × 10-4                                               874
+
+p  K  0    -  e  +  e           < 3.3            × 10-4 CL=90%                                     821
+      S
+(1520)e+ e                      ( 1.0 ± 0.5 ) × 10-3
+                                                                                                   639
+
+(1405)0 e+ e ,         0   pK-  ( 4.2 ± 1.9 ) × 10-4                                               -
+
+ µ+ µ                           ( 3.48± 0.17) %                                                    867
+
+e+ anything                     Inclusive modes
+
+                                ( 4.06± 0.13) %                                                    -
+
+p anything                      (50 ± 16 ) %                                                       -
+
+n anything                      (32.6 ± 1.6 ) %                                                    -
+
+ anything                       (38.2 + 2.9 ) %                                                    -
+                                         - 2.4
+
+K  0  anything                  ( 9.9 ± 0.7 ) %                                                    -
+   S
+
+3prongs                         (24 ± 8 ) %                                                        -
+
+                       C = 1 weak neutral current (C1 ) modes, or
+
+                 Lepton Family number (LF ), or Lepton number (L), or
+
+                       Baryon number (B) violating modes
+
+p e+ e-                    C1   < 5.5            × 10-6 CL=90%                                     951
+                                < 7.7
+p µ+ µ- non-resonant       C1   < 9.9            × 10-8 CL=90%                                     937
+                                < 1.9
+p e+ µ-                    LF                    × 10-6 CL=90%                                     947
+
+p e- µ+                    LF                    × 10-5 CL=90%                                     947
+
+https://pdg.lbl.gov             Page 41          Created: 10/3/2024 18:48
+          Citation: S. Navas et al. (Particle Data Group), Phys. Rev. D 110, 030001 (2024)
+
+p 2e+                      L,B        < 2.7           × 10-6 CL=90%                         951
+p 2µ+
+p e+ µ+                    L,B        < 9.4           × 10-6 CL=90%                         937
+ - µ+ µ+
++                          L,B        < 1.6           × 10-5 CL=90%                         947
+p D
+                           L          < 7.0           × 10-4 CL=90%                         812
+
+                              Radiative modes         × 10-4 CL=90%
+
+                                      < 2.5                                                 834
+
+                                Exotic modes          × 10-5 CL=90%
+
+                                [r ] < 8.0                                                  -
+
+c (2595)+                                 I (JP )  =  0( 1 -)
+
+                                                         2
+
+The spin-parity follows from the fact that c (2455) decays, with
+little available phase space, are dominant. This assumes that JP =
+1/2+ for the c (2455).
+
+         Mass m = 2592.25 ± 0.28 MeV
+         m - m+ = 305.79 ± 0.24 MeV
+
+                               c
+
+         Full width  = 2.6 ± 0.6 MeV
+
+      +c   and its submode c (2455)  -- the latter just barely -- are the
+      only strong decays allowed to an excited + having this mass; and the
+
+                                                                 c
+      submode seems to dominate.
+
+c (2595)+ DECAY MODES              Fraction (i /)                                           p (MeV/c)
+
++c + -                          [s] --                                                              117
+   c (2455)++ -                    24 ± 7 %                                                            3
+   c (2455)0 +                     24 ± 7 %                                                            3
+   +c + - 3-body                   18 ± 10 %
+                                                                                                    117
++c 0                            [t] not seen                                                        258
++c                                 not seen                                                         288
+
+c (2625)+                                 I (JP )  =  0( 3 -)
+
+                                                         2
+
+JP        has  not   been  measured;  3-  is  the  quark-model  prediction.
+
+                                      2
+
+          Mass m = 2628.00 ± 0.15 MeV
+          m - m+ = 341.54 ± 0.05 MeV
+
+                          c
+
+          Full width  < 0.52 MeV, CL = 90%
+
+https://pdg.lbl.gov             Page 42               Created: 10/3/2024 18:48
+Citation: S. Navas et al. (Particle Data Group), Phys. Rev. D 110, 030001 (2024)
+
++   and its submode  (2455)  are the only strong decays allowed to
+ c
+
+an excited + having this mass.
+                c
+
+c (2625)+ DECAY MODES                    Fraction (i /)                                    p
+                                                               Confidence level (MeV/c)
++c + -
+   c (2455)++ -                          [u] 66.67        %                       184
+   c (2455)0 +
+   +c + - 3-body                              ( 3.42± 0.27) %                     103
+
++c 0                                          ( 3.46± 0.31) %                     103
++c 
+                                              large                               184
+
+                                         [t] < 60         %        90%            293
+
+                                         < 35             %        90%            319
+
+c (2860)+                                     I (JP )  =  0( 3 +)
+
+                                                             2
+
+Mass       m         =  2856.1 + 2.3     MeV
+
+                                  - 6.0
+                                 + 12
+Full       width          =              MeV
+                             68 - 22
+
+c (2860)+ DECAY MODES                    Fraction (i /)                           p (MeV/c)
+                                         seen                                             259
+D0 p
+
+c (2880)+                                     I (JP )  =  0( 5 +)
+
+                                                             2
+
+Mass m = 2881.63 ± 0.24 MeV
+
+m - m+ = 595.17 ± 0.28 MeVc
+
+Full       width          =       + 0.8  MeV
+
+                             5.6 - 0.6
+
+c (2880)+ DECAY MODES                    Fraction (i /)                           p (MeV/c)
+
++c + -                                   seen                                             471
+   c (2455)0 ,++ ±                       seen                                             376
+   c (2520)0 ,++ ±                       seen                                             317
+                                         seen                                             316
+pD0
+
+c (2940)+                                     I (JP )  =  0( 3 -)
+
+                                                             2
+
+JP = 3/2- is favored, but is not certain
+
+Mass       m         =  2939.6 + 1.3     MeV
+
+                                  - 1.5
+                             20 + 6
+Full       width          =          MeV
+                                 -5
+
+https://pdg.lbl.gov          Page 43                      Created: 10/3/2024 18:48
+Citation: S. Navas et al. (Particle Data Group), Phys. Rev. D 110, 030001 (2024)
+
+c (2940)+ DECAY MODES                    Fraction (i /)                           p (MeV/c)
+                                         seen
+pD0                                      seen                                             420
+c (2455)0 ,++ ±
+                                                                                           -
+
+c (2455)                                     I (JP )   =   1( 1 +)
+
+                                                              2
+
+    c (2455)++mass m = 2453.97 ± 0.14 MeV
+    c (2455)+                          2452.65 + 0.22
+                       mass      m  =                      MeV
+                                                   - 0.16
+    c (2455)0 mass m = 2453.75 ± 0.14 MeV
+
+          mc (2455) c ++ - m+ = 167.510 ± 0.017 MeV
+                       + - m + = 166.19 + 0.16 MeV
+          m  c (2455)                             - 0.08
+
+                                    c
+          m0 - m+ = 167.290 ± 0.017 MeV
+             c 2455          c
+          mc (2455)++ - mc (2455)0 = 0.220 ± 0.013 MeV
+                                            0 = - 1.10 + 0.16 MeV
+          m  c (2455)  + -m      c (2455)                   - 0.08
+
+    c (2455)++full           width       =         + 0.09   MeV     (S = 1.1)
+
+                                            1.89 - 0.18
+    c (2455)+ full width  = 2.3 ± 0.4 MeV
+    c (2455)0                                      + 0.11
+                       full  width       =                  MeV     (S = 1.2)
+                                            1.83 - 0.19
+
++c  is the only strong decay allowed to a c having this mass.
+
+c (2455) DECAY MODES                     Fraction (i /)                           p (MeV/c)
+                                          100 %                                             94
++c 
+
+c (2520)                                     I (JP )   =   1( 3 +)
+
+                                                              2
+
+JP  has   not        been  measured;     3+   is  the   quark-model  prediction.
+
+                                         2
+
+    c (2520)++mass m = 2518.41 ± 0.22 MeV                           (S = 1.3)
+    c (2520)+                          2517.4 + 0.7                 (S = 1.2)
+                       mass      m  =                   MeV
+                                                 - 0.5
+    c (2520)0 mass m = 2518.48 ± 0.21 MeV
+
+          mc (2520) c ++ - m+ = 231.95 ± 0.18 MeV (S = 1.8)
+          mc (2520)+ - m+ = 230.9 + c - 00..75 MeV
+          mc (2520) c 0 - m+ = 232.02 ± 0.15 MeV (S = 1.4)
+          mc (2520)++ - mc (2520)0 = 0.01 ± 0.15 MeV
+    c (2520)++                                14.78 + 0.30
+                           full  width     =                   MeV
+                                                       - 0.40
+    c (2520)+                                 17.2 + 4.0
+                           full  width     =                MeV
+                                                     - 2.2
+    c (2520)0                                 15.3 + 0.4
+                           full  width     =                MeV
+                                                     - 0.5
+
+https://pdg.lbl.gov              Page 44                    Created: 10/3/2024 18:48
+       Citation: S. Navas et al. (Particle Data Group), Phys. Rev. D 110, 030001 (2024)
+
+   +  is the only strong decay allowed to a c having this mass.
+    c
+
+c (2520) DECAY MODES                        Fraction (i /)                               p (MeV/c)
+                                             100 %                                               179
++c 
+
+c (2800)                                       I (JP ) = 1(??)
+
+       c (2800)++          mass     m  =  2801 + 4     MeV
+
+                                                 -6
+       c (2800)+                         2792 + 14
+                        mass     m  =                MeV
+                                                -5
+       c (2800)0                       2806 + 5
+                        mass     m  =              MeV      (S = 1.3)
+                                              -7
+                                                      +4
+
+          mc (2800)++ - m+ = 514 - 6 MeV
+                                       c
+
+                                                + 14 MeV
+
+                                                  -5
+          mc (2800)+ - m+ = 505 c
+          mc (2800)0 - m+ = 519 + c - 57 MeV (S = 1.3)
+       c (2800)++                                  + 22
+                           full  width      =            MeV
+                                               75 - 17
+       c (2800)+                             60 + 60
+                        full  width       =             MeV
+                                                 - 40
+       c (2800)0                                 + 22
+                        full  width      =             MeV
+                                             72 - 15
+
+c (2800) DECAY MODES                        Fraction (i /)                               p (MeV/c)
+                                            seen                                                 443
++c 
+
++                                              I (JP ) = 1 ( 1 +)
+c                                                          22
+
+   JP  has  not      been  measured;      1+   is  the   quark-model   prediction.
+
+                                          2
+
+       Mass m = 2467.71 ± 0.23 MeV (S = 1.3)
+       Mean life  = (453 ± 5) × 10-15 s
+
+           c = 135.8 µm
+
+   Branching fractions marked with a footnote, e.g. [a], have been corrected
+
+   for decay modes not observed in the experiments. For example, the sub-
+   mode fraction  +   + K (892)0 seen in  +   + K - + has
+                     c                                      c
+   been multiplied up to include K (892)0  K 0 0 decays.
+
+ + DECAY MODES                              Fraction (i /)          Scale factor/ p
+  c                                                             Confidence level (MeV/c)
+
+                     Cabibbo-favored (S = -2) decays
+
+p 2K 0S                                      (2.5± 1.3) × 10-3                           766
+K0 +
+                                                       --                                852
+    (1385)+ K 0
+https://pdg.lbl.gov                    [q] (2.9± 2.0) %                                  746
+
+                                    Page 45                 Created: 10/3/2024 18:48
+    Citation: S. Navas et al. (Particle Data Group), Phys. Rev. D 110, 030001 (2024)
+
+ K - 2+                               (9 ± 4 ) × 10-3                                 787
+    K (892)0 +
+    (1385)+ K - +               [q] < 5            × 10-3           CL=90%            608
+
++ K- +                          [q] < 6            × 10-3           CL=90%            678
+    + K (892)0
+                                      (2.7± 1.2) %                                    810
+ 0 K - 2+
+0 +                             [q] (2.3± 1.1) %                                      658
+ - 2+                                  (8 ± 5 ) × 10-3
+                                                                                      735
+    (1530)0 +
+    (1620)0 +                         (1.6± 0.8) %                                    876
+    (1690)0 +
+0 + 0                                 (2.9± 1.3) %                                    851
+ 0 - 2+
+ 0 e+ e                         [q] < 2.9          × 10-3           CL=90%            749
+- K+ +
+                                          seen                                        -
+
+                                          seen                                        644
+
+                                      (6.7± 3.5) %                                    856
+
+                                      (5.0± 2.6) %                                    818
+
+                                      (7 ± 4 ) %                                      884
+                                      (2.0± 1.5) × 10-3
+                                                                                      399
+
+p K- +                     Cabibbo-suppressed decays                S=1.5             944
+   p K (892)0
+                                                 (6.2± 3.0) × 10-3                    828
++ + -                                    [q] (3.3± 1.7) × 10-3
+ - 2+
++K+K-                                 (1.4± 0.8) %                                    922
+
+   +                                  (5.1± 3.4) × 10-3                               918
+    (1690)0 K + ,  0 
+                                      (4.3± 2.5) × 10-3                               579
+       +K-
+p (1020)                        [q] < 3.2          × 10-3           CL=90%            549
+
+                                      < 1.3        × 10-3           CL=90%            501
+
+                                      (1.2± 0.6) × 10-4                               751
+
+0                                         I (JP ) = 1 ( 1 +)
+ c                                                 22
+
+    JP  has  not     been  measured;  1+  is  the  quark-model      prediction.
+
+                                      2
+
+        Mass m = 2470.44 ± 0.28 MeV (S = 1.2)
+
+          m 0 - m + = 2.72 ± 0.23 MeV (S = 1.1)cc
+
+        Mean life  = (150.4 ± 2.8) × 10-15 s (S = 1.4)
+
+             c = 45.1 µm
+
+    Decay asymmetry parameters
+
+        - +                 = -0.64 ± 0.05
+
+          FOR        0           + - = 0.61 ± 0.05
+
+                        c        K (892)0 = 0.15 ± 0.22
+                     0
+          FOR              
+                        c
+                     0           + K (892)- = -0.52 ± 0.30
+          FOR              
+                        c
+
+https://pdg.lbl.gov             Page 46             Created: 10/3/2024 18:48
+         Citation: S. Navas et al. (Particle Data Group), Phys. Rev. D 110, 030001 (2024)
+
+ 0 DECAY MODES                        Fraction (i /)                              p
+  c                                                   Confidence level (MeV/c)
+
+p K- K- +                  Cabibbo-favored decays
+
+                                      (4.9 ± 1.0 ) × 10-3                                  676
+
+p K - K (892)0, K 0  K - + (2.0 ±0.6 ) × 10-3                                              413
+
+   p K - K - + (no   K 0)             (3.0 ± 0.8 ) × 10-3                                  676
+K0                                    (3.2 ± 0.6 ) × 10-3
+                                                                                           906
+     S                                (1.45± 0.28) %
+                                      (2.6 ± 0.6 ) × 10-3                                  856
+K- +
+ K (892)0                              seen                                                717
+K0 + -
+K- + + -                               seen                                                786
+0K0                                   (5.4 ± 1.4 ) × 10-4
+                                      (1.8 ± 0.4 ) × 10-3                                  703
+        S
+                                                                                           864
++K-
+                                                                                           868
+
+ 0 K (892)0                           (9.9 ± 1.9 ) × 10-3                                  658
+ + K (892)-                           (4.9 ± 1.3 ) × 10-3
+                                                                                           661
+
+- +                                   (1.43± 0.27) %                                       875
+- + + -
+                                      (4.8 ± 2.3 ) %                                       816
+    0 ,   K + K -                     (5.2 ± 1.2 ) × 10-4
+    0 K + K - nonresonant             (5.6 ± 1.2 ) × 10-4                                    -
+- K +                                 (4.2 ± 0.9 ) × 10-3
+                                                                                           444
+
+                                                                                           522
+
+ - e+ e                               (1.05± 0.20) %                                       882
+ - µ+ µ
+0                                     (1.01± 0.21) %                                       878
+
+                                      < 1.7        × 10-4       90%                        885
+
+                           Cabibbo-suppressed decays
+
++c -                                  (5.5 ± 1.1 ) × 10-3                                  115
+-K+
+                                      (3.9 ± 1.1 ) × 10-4                                  789
+
+ K + K - (no )                        (4.1 ± 1.3 ) × 10-4                                  648
+
+                                      (4.9 ± 1.3 ) × 10-4                                  621
+
+ c+                                       I (JP ) = 1 ( 1 +)
+
+                                                         22
+
+      JP  has  not   been  measured;  1+  is  the  quark-model  prediction.
+
+                                      2
+
+          Mass m = 2578.2 ± 0.5 MeV (S = 1.1)
+             m c+ - m c+ = 110.5 ± 0.4 MeV
+             m + - m c  c0 = - 0.5 ± 0.6 MeV
+
+https://pdg.lbl.gov        Page 47                    Created: 10/3/2024 18:48
+    Citation: S. Navas et al. (Particle Data Group), Phys. Rev. D 110, 030001 (2024)
+
+    The  +- + mass difference is too small for any strong decay to occur.
+            cc
+
+ c+ DECAY MODES                       Fraction (i /)                                  p (MeV/c)
+                                      seen                                                    108
+ +c 
+
+ 0                                        I (JP ) = 1 ( 1 +)
+c                                                  22
+
+    JP  has  not     been  measured;  1+  is  the  quark-model  prediction.
+
+                                      2
+
+        Mass m = 2578.7 ± 0.5 MeV
+
+          m 0 - m 0 = 108.3 ± 0.4 MeVcc
+
+    The  0 -  0 mass difference is too small for any strong decay to occur.
+          c          c
+
+ 0 DECAY MODES                        Fraction (i /)                                  p (MeV/c)
+  c                                   seen                                                    106
+
+0
+
+   c
+
+c (2645)                                  I (JP ) = 1 ( 3 +)
+
+                                                         22
+
+    JP  has  not     been  measured;  3+  is  the  quark-model  prediction.
+
+                                      2
+
+        c (2645)+ mass m = 2645.10 ± 0.30 MeV (S = 1.2)
+        c (2645)0 mass m = 2646.16 ± 0.25 MeV (S = 1.3)
+
+           mc (2645)+ - m 0 = 174.67 ± 0.09 MeV
+
+                                               c
+
+           mc (2645) c 0 - m + = 178.45 ± 0.10 MeV
+           mc (2645)+ - mc (2645)0 = - 1.06 ± 0.27 MeV (S = 1.1)
+        c (2645)+ full width  = 2.14 ± 0.19 MeV (S = 1.1)
+        c (2645)0 full width  = 2.35 ± 0.22 MeV
+
+    c  is the only strong decay allowed to a c resonance having this mass.
+
+c (2645) DECAY MODES                  Fraction (i /)                                  p (MeV/c)
+                                      seen
+0 +                                   seen                                                    102
+                                                                                              106
+   c
+
+ +c -
+
+https://pdg.lbl.gov           Page 48                 Created: 10/3/2024 18:48
+Citation: S. Navas et al. (Particle Data Group), Phys. Rev. D 110, 030001 (2024)
+
+c (2790)                                  I (JP ) = 1 ( 1 -)
+
+                                                         22
+
+JP  has   not        been  measured;  1-  is  the  quark-model  prediction.
+
+                                      2
+
+    c (2790)+ mass = 2791.9 ± 0.5 MeV                 MeV
+    c (2790)0 mass = 2793.9 ± 0.5 MeV
+    mc (2790)+ - m c0 = 213.20 ± 0.22 MeV
+    mc (2790) c 0 - m + = 215.70 ± 0.22 MeV
+
+       mc (2790)+ - mc (2790)0 = - 2.0 ± 0.7
+    c (2790)+ width = 8.9 ± 1.0 MeV
+    c (2790)0 width = 10.0 ± 1.1 MeV
+
+c (2790) DECAY MODES                  Fraction (i /)                              p (MeV/c)
+                                      seen
+                                      seen                                                159
+                                                                                            98
+   c
+
++c K -
+
+c (2815)                                  I (JP ) = 1 ( 3 -)
+
+                                                         22
+
+JP  has   not        been  measured;  3-  is  the  quark-model  prediction.
+
+                                      2
+
+    c (2815)+ mass m = 2816.51 ± 0.25 MeV (S = 1.2)
+    c (2815)0 mass m = 2819.79 ± 0.30 MeV (S = 1.1)
+
+       mc (2815) c + - m + = 348.80 ± 0.10 MeV
+       mc (2815)0 - m 0 = 349.35 ± 0.11 MeV
+
+                                          c
+
+       mc (2815)+ - mc (2815)0 = - 3.27 ± 0.27 MeV
+    c (2815)+ full width  = 2.43 ± 0.26 MeV
+    c (2815)0 full width  = 2.54 ± 0.25 MeV
+
+The c   modes are consistent with being entirely via c (2645) .
+
+c (2815) DECAY MODES                  Fraction (i /)                              p (MeV/c)
+
+                                      seen                                                188
+                                      seen                                                102
+   c                                  seen                                                325
+
+c (2645)
+0
+
+   c
+
+https://pdg.lbl.gov        Page 49                    Created: 10/3/2024 18:48
+Citation: S. Navas et al. (Particle Data Group), Phys. Rev. D 110, 030001 (2024)
+
+c (2970)                                 I (JP ) = 1 ( 1 +)
+
+                                                        22
+
+was c (2980)
+
+c (2970)+ m = 2964.3 ± 1.5 MeV (S = 3.9)
+c (2970)0 m = 2967.1 ± 1.7 MeV (S = 6.7)
+
+              mc (2970) c + - m + = 496.6 ± 1.5 MeV (S = 3.7)
+              m (2970)0 - m 0 = 496.7 ± 1.8 MeV (S = 5.3)
+                c               c
+
+              mc (2970)+ - mc (2970)0 = - 2.8 ± 1.9 MeV (S = 4.8)
+c (2970)+                          20.9 + 2.4
+                       width    =                MeV  (S = 1.2)
+                                          - 3.5
+
+c (2970) DECAY  MODES              Fraction (i /)                                 p (MeV/c)
+
++c K                               seen                                                   223
+   c (2455)K                       seen                                                   122
+                                   not seen                                               410
++c K                               seen                                                   410
++c K -                             seen                                                   381
+c 2                                seen
+                                   seen                                                    -
+    
+                                                                                          274
+      c
+
+   c (2645)
+
+c (3055)                                 I (JP ) = ?(??)
+
+Mass m = 3055.9 ± 0.4 MeV
+Full width  = 7.8 ± 1.9 MeV
+
+c (3055) DECAY MODES               Fraction (i /)                                 p (MeV/c)
+
+ ++ K -                            seen                                                    -
+D+                                 seen
+                                                                                          316
+
+c (3080)                                 I (JP )  =   1 (??)
+
+                                                      2
+
+c (3080)+ m = 3077.2 ± 0.4 MeV
+c (3080)0 m = 3079.9 ± 1.4 MeV (S = 1.3)
+c (3080)+ width  = 3.6 ± 1.1 MeV (S = 1.5)
+c (3080)0 width  = 5.6 ± 2.2 MeV
+
+c (3080) DECAY MODES               Fraction (i /)                                 p (MeV/c)
+
++c K                               seen                                                   415
+   c (2455)K                       seen                                                   342
+                                   seen                                                   342
+c (2455)++ K -
+                                Page 50               Created: 10/3/2024 18:48
+https://pdg.lbl.gov
+       Citation: S. Navas et al. (Particle Data Group), Phys. Rev. D 110, 030001 (2024)
+
+c (2520)++ K -                        seen                                               239
+
+c (2455)K + c (2520)K                 seen                                               -
+
++c K                                  not seen                                           536
+
++c K + - not seen 144
+D+
+                                      seen                                               362
+
+ 0c I (JP ) = 0( 21 +)
+
+       JP  has  not  been  measured;  1+  is  the  quark-model  prediction.
+
+                                      2
+
+           Mass m = 2695.2 ± 1.7 MeV (S = 1.3)
+           Mean life  = (273 ± 12) × 10-15 s
+
+               c = 82 µm
+
+       No absolute branching fractions have been measured. The following are
+       branching ratios relative to - +.
+
+0 DECAY MODES                         Fraction (i /)                              p
+  c                                                   Confidence level (MeV/c)
+
+           Cabibbo-favored (S = -3) decays -- relative to - +
+
+- +                                    DEFINED AS 1                                      821
+- + 0                                   1.80± 0.33
+                                      >1.3                                               797
+   - +                                  0.31± 0.05
+- - 2+                                  1.98± 0.15              90%                      532
+- e+ e                                  1.94± 0.21
+- µ+ µ                                                                                   753
+
+                                                                                         829
+
+                                                                                         824
+
+0K0                                   1.64± 0.29                                         950
+
+0 K- +                                  1.20± 0.18                                       901
+    0 K 0, K 0  K - +                   0.68± 0.16                                       764
+   (2012)- +, (2012)-                   0.12± 0.05
+       0K-                                                                                 -
+                                        2.12± 0.28
+- K0 +                                  0.12± 0.06                                       895
+   (2012)- +, (2012)- 
+       -K0                              0.63± 0.09                                         -
+                                        0.21± 0.06
+ - K - 2+                                                                                830
+    (1530)0 K - +,  0                   0.34± 0.11                                       757
+       - +                              seen
+    - K 0 +                           <0.32                                              653
+                                        1.72± 0.35
+p K- K- +                                                                                864
++ K- K- +
+K0K0                                                            90%                      689
+
+                                                                                         837
+
+           Singly Cabibbo-suppressed modes -- relative to - +
+
+- +                                     0.25± 0.06                                       -
+- K +                                 <0.29
+                                                                90%                      -
+
+https://pdg.lbl.gov        Page 51                    Created: 10/3/2024 18:48
+     Citation: S. Navas et al. (Particle Data Group), Phys. Rev. D 110, 030001 (2024)
+
+     Doubly Cabibbo-suppressed modes -- relative to - +
+
+-K+                                    <0.07                      90%                  -
+
+c (2770)0                                  I (JP )   =  0( 3 +)
+
+                                                           2
+
+     JP  has   not   been  measured;   3+  is  the   quark-model  prediction.
+
+                                       2
+
+         Mass m = 2765.9 ± 2.0 MeV (S = 1.2)
+                                       70.7 + 0.8
+           m   c  (2770)0  -  m0  =                  MeV
+                                              - 0.9
+                              c
+
+     The c (2770)0-0 mass difference is too small for any strong decay to
+                              c
+
+     occur.
+
+c (2770)0 DECAY MODES                  Fraction (i /)                                  p (MeV/c)
+                                       presumably 100%                                           70
+0 
+
+   c
+
+c (3000)0                                  I (JP ) = ?(??)
+
+         Mass m = 3000.46 ± 0.25 MeV
+                           3.8 + 1.6
+         Full  width    =              MeV
+                                - 0.4
+
+c (3000)0 DECAY MODES                  Fraction (i /)                                  p (MeV/c)
+                                       seen                                                    182
+ +c K -
+
+c (3050)0                                  I (JP ) = ?(??)
+
+         Mass m = 3050.17 ± 0.19 MeV
+         Full width  < 1.8 MeV, CL = 95%
+
+c (3050)0 DECAY MODES                  Fraction (i /)                                  p (MeV/c)
+                                       seen                                                    278
+ +c K -
+
+c (3065)0                                  I (JP ) = ?(??)
+
+         Mass m = 3065.58 ± 0.21 MeV
+                                + 0.7
+         Full  width    =              MeV     (S = 1.7)
+                           3.4 - 0.8
+
+c (3065)0 DECAY MODES                  Fraction (i /)                                  p (MeV/c)
+                                       seen                                                    303
+ +c K -
+
+https://pdg.lbl.gov           Page 52                   Created: 10/3/2024 18:48
+Citation: S. Navas et al. (Particle Data Group), Phys. Rev. D 110, 030001 (2024)
+
+c (3090)0                                     I (JP ) = ?(??)
+
+Mass m = 3090.15 ± 0.26 MeV
+
+Full       width          =       + 0.8  MeV
+
+                             8.5 - 1.7
+
+c (3090)0 DECAY MODES                       Fraction (i /)                        p (MeV/c)
+                                            seen                                          340
+ +c K -
+
+c (3120)0                                     I (JP ) = ?(??)
+
+Mass       m         =  3118.98 + 0.27      MeV
+
+                                    - 0.35
+
+Full width  < 2.5 MeV, CL = 95%
+
+c (3120)0 DECAY MODES                       Fraction (i /)                        p (MeV/c)
+                                            seen                                          379
+ +c K -
+
+c (3185)0                                     I (JP ) = ?(??)
+
+Mass       m         =  3185 + 7.6    MeV
+
+                               - 1.9
+                             50 + 12
+Full       width          =              MeV
+                                 - 21
+
+c (3185)0 DECAY MODES                       Fraction (i /)                        p (MeV/c)
+                                            seen                                          460
+ +c K -
+
+c (3327)0                                     I (JP ) = ?(??)
+
+Mass       m         =  3327.1 + 1.2     MeV
+
+                                  - 1.8
+                             20 + 14
+Full       width          =              MeV
+                                 -5
+
+c (3327)0 DECAY MODES                       Fraction (i /)                        p (MeV/c)
+                                            seen                                          610
+ +c K -
+
+https://pdg.lbl.gov          Page 53                        Created: 10/3/2024 18:48
+         Citation: S. Navas et al. (Particle Data Group), Phys. Rev. D 110, 030001 (2024)
+
+         DOUBLY CHARMED BARYONS
+                       (C = +2)
+
+                     cc++ = u c c,  +cc = d c c, +cc = s c c
+
+ cc++                                           I (JP ) = ?(??)
+
+         Mass m = 3621.6 ± 0.4 MeV
+         Mean life  = (256 ± 27) × 10-15 s
+
+ ++ cc DECAY MODES                          Fraction (i /)                                     p
+                                              DEFINED AS 1         Confidence level (MeV/c)
++c K - + +                                     0.0022± 0.0006
+ +c +,  +c  p K - +                            0.0031± 0.0009                                    880
+ + c +,  + c   +c ,  +c 
+                                            <0.017                                           -
+    p K- +                                                                                   -
+D+ p K- +
+                                                                             90%           562
+
+                     BOTTOM BARYONS
+                            (B = -1)
+
+         0    =      u d b,  0     =  u d b,     +b  =  u u b,   -b  =  ddb
+
+           b         0          b      -b                -b
+
+                        b  =  u s b,        =   d s b,       =  ssb
+
+0b I (JP ) = 0( 21 +)
+
+I (JP )  not  yet  measured;       0( 1 +)  is  the  quark  model    prediction.
+                                                                     = 1.2)
+                                      2
+         Mass m = 5619.60 ± 0.17 MeV
+
+         m0 - mB0 = 339.2 ± 1.4 MeV
+
+               b
+
+         m0 - mB+ = 339.72 ± 0.28 MeV
+
+               b
+
+         Mean life  = (1.471 ± 0.009) × 10-12 s
+
+              c = 441.0 µm
+
+         ACP (b  p -) = -0.025 ± 0.029 (S
+         ACP (b  p K -) = -0.025 ± 0.022
+         ACP (b  D p K -) = 0.12 ± 0.09
+         ACP (p K - / -) = 0.014 ± 0.024
+         ACP (b  p K 0 -) = 0.22 ± 0.13
+
+https://pdg.lbl.gov                Page 54                   Created: 10/3/2024 18:48
+          Citation: S. Navas et al. (Particle Data Group), Phys. Rev. D 110, 030001 (2024)
+
+          ACP (J/ p - / K -) = (5.7 ± 2.7) × 10-2
+          ACP (b   K + -) = - 0.53 ± 0.25
+          ACP (b   K + K -) = - 0.28 ± 0.12
+                        0       p K - µ+ µ-) = (- 4 ± 5) × 10-2
+            AC  P  (    b  
+
+            AC  P  (    0       p - + -) = (1.1 ± 2.6) × 10-2
+                        b
+                        0       (p - + -)LBM )                     × 10-2
+            AC  P  (    b                         =   (4  ±    4)
+
+            AC  P  (    0       p a1(1260)-) = (-1 ± 4) × 10-2
+                        b
+                        0       N(1520)0 (770)0) = (2 ± 5) × 10-2
+            AC  P  (    b  
+
+            AC  P  (    0       (1232)++ - -) = (0.1 ± 3.3) × 10-2
+                        b
+                        0       p K - + -) = (3.2 ± 1.3) × 10-2
+            AC  P  (    b  
+
+            AC  P  (    0       (p K - + -)LBM )  =   (3.5   ±     1.6)  × 10-2
+                        b
+                        0       N(1520)0 K (892)0) = (5.5 ± 2.5) × 10-2
+            AC  P  (    b  
+
+            AC  P  (    0       (1520)(770)0) = (1 ± 6) × 10-2
+                        b
+                        0       (1232)++ K - -) = (4.4 ± 2.7) × 10-2
+            AC  P  (    b  
+
+            AC  P  (    0       p K1(1410)-) = (5 ± 4) × 10-2
+                        b
+                        0       p K - K + -) = (-7 ± 5) × 10-2
+            AC  P  (    b  
+
+            AC  P  (    0       p K - K + K -) = (0.2 ± 1.9) × 10-2
+                        b
+                        0       (1520)(1020)) = (4 ± 6) × 10-2
+            AC  P  (    b  
+
+            AC  P  (    0       (p K -)highmass (1020)) = (- 0.7 ± 3.4) ×                      10-2
+                        b
+                        0       (p K - K + K -)LBM )                       10-2
+            AC  P  (    b                             =  (2.7  ±   2.4) ×
+
+          AF B(µ µ) in b   µ+ µ- = - 0.39 ± 0.04
+          (AF B(µ µ)) in b   µ+ µ- = -0.05 ± 0.09
+          AhF B(p ) in b   (p ) µ+ µ- = -0.30 ± 0.05
+          Ah                     µ+ µ- = 0.25 ± 0.04
+                in    b    
+            FB
+
+The branching fractions B(b -baryon   -  anything) and B(0 
+                                                                                            b
+
++ -  anything) are not pure measurements because the underlying
+ c
+
+measured products of these with B(b  b -baryon) were used to determine
+B(b  b -baryon), as described in the note "Production and Decay of
+b-Flavored Hadrons."
+
+For inclusive branching fractions, e.g., b  c anything, the values
+usually are multiplicities, not branching fractions. They can be greater
+than one.
+
+0 DECAY MODES                   Fraction (i /)                     Scale factor/                   p
+ b                                                             Confidence level                (MeV/c)
+
+J/(1S) × B(b               0 )  ( 5.8 ± 0.8 ) × 10-5                                               1740
+                                                                                                   2370
+p D0 -                       b  ( 6.2 ± 0.6 ) × 10-4                                               2332
+                                ( 2.7 ± 0.4 ) × 10-4                                               2277
+p D+ - -                        ( 5.2 ± 1.0 ) × 10-4                                               2269
+p D(2010)+ - -                  ( 4.5 ± 0.8 ) × 10-5
+p D0 K -                                                                                           1755
+
+p J/ -                          ( 2.6 + 0.5 ) × 10-5                                                  -
+                                        - 0.4
+p - J/, J/  µ+ µ-
+                                ( 1.6 ± 0.8 ) × 10-6
+
+https://pdg.lbl.gov             Page 55                  Created: 10/3/2024 18:48
+          Citation: S. Navas et al. (Particle Data Group), Phys. Rev. D 110, 030001 (2024)
+
+p J/ K -                     ( 3.2 + 0.6 ) × 10-4                                           1589
+                                     - 0.5                                                  1670
+
+p c (1S) K -                 ( 1.06± 0.26) × 10-4                                              -
+   Pcc (4312)+ K -,
+       p c (1S)      P+cc    < 2.5    × 10-5            CL=95%                                 -
+   Pcc (4380)+ K -,  P+cc 
+       p J/                  [v ] ( 2.7 ± 1.4 ) × 10-5  CL=90%                                 -
+                                                           S=1.2
+Pc (4450)+ K -, Pc           [v ] ( 1.3 ± 0.4 ) × 10-5     S=1.2                            1242
+                                                           S=1.1                            1462
+p J/                                                                                        1198
+                                                                                            1427
+c1(1P)p K -                  ( 7.6 + 1.5 ) × 10-5                                           1410
+                                     - 1.3                                                  1063
+
+c1(1P)p -                    ( 5.0 + 1.3 ) × 10-6                                            837
+                                     - 1.1                                                   721
+                                                                                            1320
+c2(1P)p K -                  ( 7.7 + 1.6 ) × 10-5                                           2693
+c2(1P)p -                            - 1.4                                                  2639
+p J/(1S)+ - K -                                                                             2342
+                             ( 4.8 ± 1.9 ) × 10-6                                           2314
+                                                                                            2153
+p (2S) K -                   ( 6.6 + 1.3 ) × 10-5                                           1886
+                                     - 1.1                                                  1833
+c1(3872)p K -                                                                               2323
+c 1 (3872) (1520)            ( 6.6 + 1.2 ) × 10-5                                           2210
+                                     - 1.0
+                                                                                            2193
+                             ( 3.5 ± 1.3 ) × 10-5
+                             ( 2.0 ± 0.9 ) × 10-5                                           2265
+
+(2S)p -                      ( 7.5 + 1.6 ) × 10-6                                           2265
+                                     - 1.4
+                                                                                            2184
+p K0 -                       ( 1.3 ± 0.4 ) × 10-5                                           1805
+
+pK0K-                        < 3.5    × 10-6                                                   -
++c -
+                             ( 4.9 ± 0.4 ) × 10-3
+
++c K -                       ( 3.56± 0.28) × 10-4
+
++c a1(1260)-                  seen
++c D-                        ( 4.6 ± 0.6 ) × 10-4
+
++c D-s                       ( 1.10± 0.10) %
++c + - -                     ( 7.6 ± 1.1 ) × 10-3
+c (2595)+ - ,                ( 3.4 ± 1.4 ) × 10-4
+
+c (2595)+  +c + -
+c (2625)+ - ,                ( 3.3 ± 1.3 ) × 10-4
+
+c (2625)+  +c + -
+c (2455)0 + - ,      0       ( 5.7 ± 2.2 ) × 10-4
+                           
+                        c
++c -
+c (2455)++ - - ,  ++ c       ( 3.2 ± 1.5 ) × 10-4
+
++c +
++c K + K - -                 ( 1.02± 0.11) × 10-3
++c p p -                     ( 2.63± 0.27) × 10-4
+c (2455)0 p p,  0            ( 2.3 ± 0.5 ) × 10-5
+
++c -               c
+
+https://pdg.lbl.gov          Page 56  Created: 10/3/2024 18:48
+Citation: S. Navas et al. (Particle Data Group), Phys. Rev. D 110, 030001 (2024)
+
+   c (2520)0 p p , c (2520)0   ( 3.1 ± 0.7 ) × 10-5                                  -
+       +c -
+                               [x] (10.9 ± 2.2 ) %                                   -
++c -  anything
+   +c -                        ( 6.2 + 1.4 ) %                                    2345
+                                       - 1.3
++c  -                                                                             1933
+   +c + - -                    ( 1.9 ± 0.5 ) %                                    2335
+   c (2595)+ - 
+                               ( 5.6 ± 3.1 ) %                                    2212
+   c (2625)+ - 
+p h-                           ( 7.9 + 4.0 ) × 10-3                               2195
+                                       - 3.5
+   p -                                                                            2730
+   pK-                         ( 1.3 + 0.6 ) %                                    2730
+   p D-s                               - 0.5                                      2709
+p µ- µ                                                                            2364
+ µ+ µ-                         [y ] < 2.3      × 10-5  CL=90%                     2730
+p - µ+ µ-                                              CL=90%                     2695
+p K - e+ e-                    ( 4.6 ± 0.8 ) × 10-6                               2720
+                                                                                  2708
+p K - µ+ µ-                    ( 5.5 ± 1.0 ) × 10-6                               2685
+
+                               ( 1.25± 0.13) × 10-5                               2699
+                                                                                  2670
+                               ( 4.1 ± 1.0 ) × 10-4
+                                                                                  2611
+ (958)                         ( 1.08± 0.28) × 10-6                               2692
++ -                                                                               2660
+K+ -                           ( 6.9 ± 2.5 ) × 10-8                               2605
+K+K-                                                                              2599
+                               ( 3.1 ± 0.6 ) × 10-7                               2715
+p - + -                                                                           2612
+p K- K+ -                      ( 2.6 + 0.5 ) × 10-7                               2675
+p K- + -                               - 0.4                                      2524
+pK-K+K-
+                               ( 7.1 ± 1.7 ) × 10-6
+
+                               ( 9 + 7 ) × 10-6
+                                       -5
+
+                               < 3.1           × 10-6
+
+                               ( 4.6 ± 1.9 ) × 10-6
+
+                               ( 5.6 ± 1.2 ) × 10-6
+
+                               ( 1.60± 0.21) × 10-5
+
+                               ( 9.8 ± 2.6 ) × 10-6
+
+                               ( 2.08± 0.21) × 10-5
+
+                               ( 4.0 ± 0.6 ) × 10-6
+
+                               ( 5.0 ± 0.5 ) × 10-5
+
+                               ( 1.25± 0.13) × 10-5
+
+b(5912)0                       JP = 1-
+
+                                         2
+
+Mass m = 5912.19 ± 0.17 MeV
+Full width  < 0.25 MeV, CL = 90%
+
+b(5912)0 DECAY MODES           Fraction (i /)                                     p (MeV/c)
+                               seen                                                         86
+0 + -
+
+  b
+
+https://pdg.lbl.gov   Page 57                  Created: 10/3/2024 18:48
+Citation: S. Navas et al. (Particle Data Group), Phys. Rev. D 110, 030001 (2024)
+
+b(5920)0                       JP = 3-
+
+                                         2
+
+Mass m = 5920.09 ± 0.17 MeV
+Full width  < 0.19 MeV, CL = 90%
+
+b(5920)0 DECAY MODES  Fraction (i /)                                              p (MeV/c)
+                      seen                                                                108
+0 + -
+
+  b
+
+b(6070)0                       JP = 1+
+
+                                         2
+
+Quantum numbers based on quark model expectations.
+
+    Mass m = 6072.3 ± 2.9 MeV
+    Full width  = 72 ± 11 MeV
+
+b(6070)0 DECAY MODES  Fraction (i /)                                              p (MeV/c)
+                      seen                                                                343
+0 + -
+
+  b
+
+b(6146)0                       JP = 3+
+
+                                         2
+
+Mass m = 6146.2 ± 0.4 MeV
+mb(6146)0 - m0 = 526.55 ± 0.34 MeV
+
+                                 b
+
+Full width  = 2.9 ± 1.3 MeV
+
+b(6146)0 DECAY MODES  Fraction (i /)                                              p (MeV/c)
+                      seen                                                                427
+0 + -
+
+  b
+
+b(6152)0                       JP = 5+
+
+                                         2
+
+Mass m = 6152.5 ± 0.4 MeV
+mb(6152)0 - m0 = 532.89 ± 0.28 MeV
+
+                                 b
+
+mb(6152)0 - mb(6146)0 = 6.34 ± 0.32 MeV
+Full width  = 2.1 ± 0.9 MeV
+
+b(6152)0 DECAY MODES  Fraction (i /)                                              p (MeV/c)
+                      seen                                                                434
+0 + -
+
+  b
+
+https://pdg.lbl.gov   Page 58               Created: 10/3/2024 18:48
+   Citation: S. Navas et al. (Particle Data Group), Phys. Rev. D 110, 030001 (2024)
+
+b                                I (JP )  =  1( 1 +)
+
+                                                2
+                                 I, J, P need confirmation.
+
+   Mass m( +b ) = 5810.56 ± 0.25 MeV
+   Mass m( -b ) = 5815.64 ± 0.27 MeV
+   m+ - m- = - 5.06 ± 0.18 MeV
+          b          b
+   ( +b ) = 5.0 ± 0.5 MeV
+   ( -b ) = 5.3 ± 0.5 MeV
+
+b DECAY MODES              Fraction (i /)                                            p (MeV/c)
+                           dominant                                                          133
+0 
+
+  b
+
+ b I (JP ) = 1( 23 +)
+
+                                                I, J, P need confirmation.
+
+   Mass m( + b ) = 5830.32 ± 0.27 MeV
+   Mass m( - b ) = 5834.74 ± 0.30 MeV
+   m+ - m- = - 4.37 ± 0.33 MeV (S = 1.6)
+          b          b
+   m+ - m+ = 19.73 ± 0.18
+          b          b
+   m- - m- = 19.09 ± 0.22
+          b          b
+   ( + b ) = 9.4 ± 0.5 MeV
+   ( - b ) = 10.4 ± 0.8 MeV (S = 1.3)
+   m - mb = 21.2 ± 2.0 MeV
+          b
+
+  DECAY MODES              Fraction (i /)                                            p (MeV/c)
+  b                        dominant                                                          159
+
+0 
+
+  b
+
+b(6097)+                         JP = ??
+
+   Mass m = 6095.8 ± 1.7 MeV
+   Full width  = 31 ± 6 MeV
+
+b(6097)+ DECAY MODES       Fraction (i /)                                            p (MeV/c)
+                           seen
+b + × B(b  b(6097)+)                                                                          -
+
+b(6097)-                         JP = ??
+
+   Mass m = 6098.0 ± 1.8 MeV
+   Full width  = 29 ± 4 MeV
+
+https://pdg.lbl.gov     Page 59              Created: 10/3/2024 18:48
+        Citation: S. Navas et al. (Particle Data Group), Phys. Rev. D 110, 030001 (2024)
+
+b(6097)- DECAY MODES               Fraction (i /)                                         p (MeV/c)
+                                   seen
+b - × B(b  b(6097)-)                                                                               -
+
+-                                      I (JP ) = 1 ( 1 +)
+   b                                      22
+                                       I, J, P need confirmation.
+
+        m( -b ) = 5797.0 ± 0.6 MeV (S = 1.7)
+        m- - m0 = 177.46 ± 0.31 MeV (S = 1.3)
+             b       b
+        m - - m 0 = 5.9 ± 0.6 MeV
+             b       b
+                                                   -12 s
+        Mean life  - = (1.572 ± 0.040) × 10
+
+                                b
+
+ -b DECAY MODES                    Fraction (i /) Confidence level                            p
+                                                                                          (MeV/c)
+J/  - × B(b   -b )                 (1.02+ 0.26) × 10-5
+                                          - 0.21                                              1782
+
+J/  K - × B(b   -b )               (2.5 ± 0.4 ) × 10-6                                        1631
+p K - K - × B(b   -b )             (3.7 ± 0.8 ) × 10-8                                        2731
+pK-K-                                                                                         2731
+                                    seen                                                      2783
+
+p K- -           -b )/B(b           seen                                                         99
+                                   (7.0 ± 0.9 ) × 10-4                                        2367
+0 - ×   B(b                   0 )                                                             2707
+                                    seen                                                      2702
+  b                             b  (2.6 ± 2.3 ) × 10-7                                        2673
+0 -                                                                                           2629
+c                                                                                             2599
+ (1385)K -                                                                                    2553
+
+(1405)K -                          (1.9 ± 1.2 ) × 10-7                                           -
+
+(1520)K -                          (7.6 ± 3.2 ) × 10-7
+
+(1670)K -                          (4.5 ± 2.3 ) × 10-7
+
+ (1775)K -                         (2.2 ± 1.5 ) × 10-7
+
+ (1915)K -                         (2.6 ± 2.5 ) × 10-7
+
+-                                  < 1.3  × 10-4                   95%
+
+0                                      I (JP ) = 1 ( 1 +)
+   b                                      22
+                                       I, J, P need confirmation.
+
+        m( 0b) = 5791.9 ± 0.5 MeV
+        m 0 - m0 = 172.5 ± 0.4 MeV
+             b       b
+        Mean life  0 = (1.480 ± 0.030) × 10-12 s
+                           b
+
+ 0 DECAY MODES                     Fraction (i /) Confidence level                            p
+  b                                                                                       (MeV/c)
+
+p D0 K - × B(b       0)            (1.7 ± 0.5 ) × 10-6                                        2374
+                                                                                              2783
+                        b
+p K 0 - × B(b   0b)/B(b                   × 10-6
+                                   < 1.6                           90%
+
+   B0)
+
+https://pdg.lbl.gov           Page 60              Created: 10/3/2024 18:48
+       Citation: S. Navas et al. (Particle Data Group), Phys. Rev. D 110, 030001 (2024)
+
+p K 0 K - × B(b   0b)/B(b    < 1.1                 × 10-6  90% 2730
+    B0)                      < 1.7                 × 10-6
+                             <8                    × 10-7  90% 2781
+ + - × B(b   0b)/B(b         <3                    × 10-7
+    0 )                                                    90% 2751
+
+       b                                                   90% 2698
+
+ K - + × B(b   0b)/B(b                                                  1868
+    0 )                                                                 1785
+                                                                        2416
+       b                                                                2766
+
+ K + K - × B(b   0b)/B(b                                                2704
+    0 )
+                                                                        2620
+       b
+
+J/                            seen
+J/  0                         seen
++c K - × B(b                 (6 ± 4
+               0)            (1.9 ± 0.4  ) × 10-7
+                                         ) × 10-6
+                  b
+p K - + - × B(b 
+ 0b)/B(b       0 )
+
+                 b
+p K - K - + × B(b            (1.70± 0.30) × 10-6
+
+ 0b)/B(b       0 )
+
+                 b
+p K - K + K - × B(b          (1.7 ± 0.9 ) × 10-7
+
+ 0b)/B(b       0 )
+
+                 b
+
+ b(5935)-                             JP = 1+
+
+                                                2
+
+       Mass m = 5935.1 ± 0.5 MeV
+       Full width  = 0.03 ± 0.032 MeV
+
+  (5935)- DECAY MODES        Fraction (i /)                                              p (MeV/c)
+  b                          (11.8± 1.8) %                                                         31
+
+0 - ×  B(b  
+
+   b                   0)
+ b(5935)-)/B(b 
+                          b
+
+b(5945)0                              JP = 3+
+
+                                                2
+
+       Mass m = 5952.3 ± 0.6 MeV
+       Full width  = 0.87 ± 0.08 MeV
+
+b (5945)0 DECAY MODES        Fraction (i /)                                              p (MeV/c)
+                             seen                                                                  78
+ -b +
+
+b(5955)-                              JP = 3+
+
+                                                2
+
+       Mass m = 5955.7 ± 0.5 MeV
+       Full width  = 1.43 ± 0.11 MeV
+
+https://pdg.lbl.gov          Page 61               Created: 10/3/2024 18:48
+         Citation: S. Navas et al. (Particle Data Group), Phys. Rev. D 110, 030001 (2024)
+
+b (5955)- DECAY MODES        Fraction (i /)                                                p (MeV/c)
+                             (20.7± 3.5) %                                                           84
+0 - ×    B(b  
+
+   b                   0)
+ b(5955)-)/B(b 
+                          b
+
+b(6087)0                              I (JP ) = 1 ( 3 -)
+
+                                                     22
+
+                                      J, P need confirmation.
+
+         Mass m = 6087.2 ± 0.5 MeV
+
+         Full width  = 2.4 ± 0.5 MeV
+
+b (6087)0 DECAY MODES        Fraction (i /)                                                p (MeV/c)
+                             seen
+0 + -                                                                                               -
+
+   b
+
+b(6095)0                              I (JP ) = 1 ( 3 -)
+
+                                                     22
+
+                                      J, P need confirmation.
+
+         Mass m = 6095.3 ± 0.5 MeV
+
+         Full width  = 0.50 ± 0.35 MeV
+
+b (6095)0 DECAY MODES        Fraction (i /)                                                p (MeV/c)
+                             seen
+0 + -                                                                                               -
+
+   b
+
+b(6100)-                              JP = 3-
+
+                                                2
+
+                                      J, P need confirmation.
+
+         Mass m = 6099.8 ± 0.6 MeV
+
+         Full width  = 0.94 ± 0.31 MeV
+
+b (6100)- DECAY MODES        Fraction (i /)                                                p (MeV/c)
+                             seen                                                                  128
+ -b + -
+
+b(6227)-                              JP = ??
+
+         Mass m = 6227.9 ± 0.9 MeV
+         Full width  = 19.9 ± 2.6 MeV
+
+b (6227)- DECAY MODES        Fraction (i /)                              p
+                             (3.20± 0.35) × 10-3  Scale factor (MeV/c)
+0 K - ×  B(b  
+                                                                          336
+  b
+                     0 )
+b(6227))/B(b 
+                       b
+
+https://pdg.lbl.gov          Page 62           Created: 10/3/2024 18:48
+       Citation: S. Navas et al. (Particle Data Group), Phys. Rev. D 110, 030001 (2024)
+
+0 - ×  B(b                            (2.8 ± 1.1 ) %                        1.8          398
+
+   b                    0)
+
+b(6227))/B(b               b
+
+b(6227)0                                   JP = ??
+
+       Mass m = 6226.8 ± 1.6 MeV
+
+       Full    width       =  19 + 5  MeV
+
+                                  -4
+
+b (6227)0 DECAY MODES                 Fraction (i /)                                     p (MeV/c)
+                                      (4.5± 0.9) %                                               398
+ -b + × B(b 
+    b(6227)0)/B(b   -b )
+
+b(6327)0                                   JP = ??
+
+       Mass m = 6327.28 ± 0.35 MeV
+       Full width  < 2.56 MeV, CL = 95%
+
+b (6327)0 DECAY MODES                 Fraction (i /)                                     p (MeV/c)
+                                      seen                                                       298
+0 K - +
+
+  b
+
+b(6333)0                                   JP = ??
+
+       Mass m = 6332.69 ± 0.28 MeV
+       Full width  < 1.92 MeV, CL = 95%
+
+b (6333)0 DECAY MODES                 Fraction (i /)                                     p (MeV/c)
+                                      seen                                                       309
+0 K - +
+
+  b
+
+ -b I (JP ) = 0( 21 +)
+
+                                                I, J, P need confirmation.
+
+       Mass m = 6045.8 ± 0.8 MeV
+
+       m- - m0 = 426.4 ± 2.2 MeVb
+            b
+       m- - m - = 248.5 ± 0.6 MeV
+            b           b
+                              (1.64 + 0.18) × 10-12
+       Mean    life     =                            s
+                                      - 0.17
+        (-b )/ ( -b ) mean life ratio = 1.11 ± 0.16
+
+https://pdg.lbl.gov           Page 63                   Created: 10/3/2024 18:48
+       Citation: S. Navas et al. (Particle Data Group), Phys. Rev. D 110, 030001 (2024)
+
+-b DECAY MODES        Fraction (i /)             Scale factor/ p
+                                             Confidence level (MeV/c)
+
+J/ - ×B(b  b)         (1.4+ 0.5) × 10-6         S=1.6                                    1805
+                           - 0.4
+                                             CL=90%                                      2865
+p K - K - ×B(b  b)    < 2.3          × 10-9  CL=90%                                      2943
+                                             CL=90%                                      2915
+p - - ×B(b  b)        < 1.5          × 10-8                                              2420
+
+p K - - ×B(b  b)      <7             × 10-9                                                 -
+
+0 -c                           seen                                                      2473
+
+  0 -, 0  p K- K- +cc          seen
+
+c+ K- -                        seen
+
+b(6316)-                       I (JP ) = ?(??)
+                               I, J, P need confirmation.
+
+         Mass m = 6315.6 ± 0.6 MeV
+
+         Full width  < 4.2 MeV, CL = 95%
+
+b(6316)- DECAY MODES  Fraction (i /)                                                     p (MeV/c)
+                      seen                                                                       168
+0 K-
+
+   b
+
+b(6330)-                       I (JP ) = ?(??)
+                               I, J, P need confirmation.
+
+         Mass m = 6330.3 ± 0.6 MeV
+
+         Full width  < 4.7 MeV, CL = 95%
+
+b(6330)- DECAY MODES  Fraction (i /)                                                     p (MeV/c)
+                      seen                                                                       206
+0 K-
+
+   b
+
+b(6340)-                       I (JP ) = ?(??)
+                               I, J, P need confirmation.
+
+         Mass m = 6339.7 ± 0.6 MeV
+
+         Full width  < 1.8 MeV, CL = 95%
+
+b(6340)- DECAY MODES  Fraction (i /)                                                     p (MeV/c)
+                      seen                                                                       227
+0 K-
+
+   b
+
+b(6350)-                       I (JP ) = ?(??)
+                               I, J, P need confirmation.
+
+         Mass m = 6349.8 ± 0.6 MeV
+
+         Full width  < 3.2 MeV, CL = 95%
+
+https://pdg.lbl.gov   Page 64             Created: 10/3/2024 18:48
+Citation: S. Navas et al. (Particle Data Group), Phys. Rev. D 110, 030001 (2024)
+
+b(6350)- DECAY MODES            Fraction (i /)                                    p (MeV/c)
+                                seen                                                      248
+0 K-
+
+   b
+
+b-baryon ADMIXTURE (b, b, b)
+
+These branching fractions are actually an average over weakly decaying b-
+baryons weighted by their production rates at the LHC, LEP, and Tevatron,
+branching ratios, and detection efficiencies. They scale with the b-baryon
+production fraction B(b  b -baryon).
+
+The branching fractions B(b -baryon   -  anything) and B(0 
+                                                                                            b
+
++c -  anything) are not pure measurements because the underlying
+measured products of these with B(b  b -baryon) were used to determine
+B(b  b -baryon), as described in the note "Production and Decay of
+b-Flavored Hadrons."
+
+For inclusive branching fractions, e.g., B  D± anything, the values
+usually are multiplicities, not branching fractions. They can be greater
+than one.
+
+b-baryon ADMIXTURE DECAY MODES  Fraction (i /)                                p
+(b ,b ,b )                                              Scale factor (MeV/c)
+                                ( 5.8+ 2.3) %
+p µ-  anything                         - 2.0                                                   -
+
+p   anything                    ( 5.6± 1.2) %                                                  -
+p anything                      (70 ± 22 ) %
+ -  anything                    ( 3.8± 0.6) %                                                  -
+ +  anything                    ( 3.2± 0.8) %
+ anything                       (39 ± 7 ) %                                                    -
+ - -  anything                  ( 4.6± 1.4) × 10-3
+                                                                                               -
+
+                                                                                               -
+
+                                                        1.2                                    -
+
+                     EXOTIC BARYONS
+
+Pccs (4338)0                       I (JP )  =  0( 1 -)
+
+                                                  2
+
+Mass m = 4338.2 ± 0.8 MeV
+Full width  = 7.0 ± 1.8 MeV
+
+Pccs (4338)0 DECAY MODES        Fraction (i /)                                    p (MeV/c)
+                                seen
+J/                                                                                         -
+
+https://pdg.lbl.gov       Page 65               Created: 10/3/2024 18:48
+Citation: S. Navas et al. (Particle Data Group), Phys. Rev. D 110, 030001 (2024)
+
+                              NOTES
+
+[a] The masses of the p and n are most precisely known in u (unified atomic
+   mass units). The conversion factor to MeV, 1 u = 931.494061(21) MeV,
+   is less well known than are the masses in u.
+
+[b] The mp-mp /mp and qp + qp /e are not independent, and both use
+    the more precise measurement of qp/mp /(qp/mp).
+
+[c] The limit is from neutrality-of-matter experiments; it assumes qn = qp +
+    qe . See also the charge of the neutron.
+
+[d] The µ p and e p values for the charge radius are much too different to
+    average them. The disagreement is not yet understood.
+
+[e] There is a lot of disagreement about the value of the proton magnetic
+    charge radius. See the Listings.
+
+[f ] There is some controversy about whether nuclear physics and model
+    dependence complicate the analysis for bound neutrons (from which the
+    best limit comes). The first limit here is from reactor experiments with
+    free neutrons.
+
+[g ] Lee and Yang in 1956 proposed the existence of a mirror world in an
+
+    attempt to restore global parity symmetry--thus a search for oscillations
+
+    between the two worlds. Oscillations between the worlds would be max-
+    imal when the magnetic fields B and B were equal. The limit for any
+    B in the range 0 to 12.5 µT is >12 s (95% CL).
+
+[h] The parameters gA, gV , and gWM for semileptonic modes are defined by
+    Bf [(gV + gA5) + i (gWM /mBi )  q ]Bi , and AV is defined by
+    gA/gV = gA/gV eiAV . See the "Note on Baryon Decay Parameters"
+    in the neutron Particle Listings.
+
+[i ] Time-reversal invariance requires this to be 0 or 180.
+
+[j] This coefficient is zero if time invariance is not violated.
+
+[k] This limit is for  energies between 0.4 and 782 keV.
+
+[l] The decay parameters  and  are calculated from  and  using
+
+ = 1-2 cos ,                        tan  =  -1  1-2 sin .
+                                              
+
+See the "Note on Baryon Decay Parameters" in the neutron Particle List-
+ings.
+
+[n] See the Listings for the pion momentum range used in this measurement.
+
+[o] Our estimate. See the Particle Listings for details.
+
+[p] A theoretical value using QED.
+
+[q] This branching fraction includes all the decay modes of the final-state
+    resonance.
+
+[r ] Here D stands for a dark photon.
+
+https://pdg.lbl.gov  Page 66                    Created: 10/3/2024 18:48
+         Citation: S. Navas et al. (Particle Data Group), Phys. Rev. D 110, 030001 (2024)
+
+[s] See AALTONEN 11H, Fig. 8, for the calculated ratio of +c 0 0 and
+   +c + - partial widths as a function of the c (2595)+ - +c mass
+   difference. At our value of the mass difference, the ratio is about 4.
+
+[t] A test that the isospin is indeed 0, so that the particle is indeed a +c .
+
+[u] Assuming isospin conservation, so that the other third is +c 0 0.
+
+[v ] P+c is a pentaquark-charmonium state.
+
+[x] Not  a  pure  measurement.  See  note  at  head  of  0    Decay  Modes.
+
+                                                           b
+
+[y ] Here h- means - or K -.
+
+https://pdg.lbl.gov  Page 67                         Created: 10/3/2024 18:48
+

@@ -1,0 +1,836 @@
+                                         Solar neutrinos
+
+                                         Shaomin Chen,a and Xun-Jie Xub
+                                         aDepartment of Engineering Physics, Tsinghua University, Beijing 100084, China
+                                         bInstitute of High Energy Physics, Chinese Academy of Sciences, Beijing 100049, China
+
+                                         © 20xx Elsevier Ltd. All rights reserved.
+
+                                         Contents
+
+                                         Objectives                                                                                                                             1
+
+                                         1 Introduction                                                                                                                         2
+
+                                         2 Standard solar model and solar neutrinos                                                                                             2
+
+                                         2.1 Thermonuclear reactions in the Sun                                                                                                 2
+
+arXiv:2501.09971v1 [hep-ph] 17 Jan 2025  2.2 Solar neutrino fluxes and spectra                                                                                                  3
+
+                                         3 Solar neutrino detection: principles and methodologies                                                                               5
+
+                                         3.1 Radiochemical experiments                                                                                                          5
+
+                                         3.2 Cherenkov experiments                                                                                                              5
+
+                                         3.3 Liquid scintillator experiments                                                                                                    6
+
+                                         3.4 The solar neutrino problem                                                                                                         7
+
+                                         4 Solar neutrino oscillation                                                                                                           7
+
+                                         4.1 The general formalism for neutrino oscillation                                                                                     7
+
+                                         4.2 The survival probability of solar electron neutrinos                                                                               7
+
+                                         5 Experimental achievements and progress                                                                                               9
+
+                                         5.1 Measurements of solar neutrino fluxes                                                                                              9
+
+                                         5.1.1 8B neutrinos                                                                                                                     9
+
+                                         5.1.2 7Be neutrinos                                                                                                                    9
+
+                                         5.1.3 pp neutrinos                                                                                                                     9
+
+                                         5.1.4 pep neutrinos                                                                                                                    9
+
+                                         5.1.5 CNO neutrinos                                                                                                                    10
+
+                                         5.1.6 hep neutrinos                                                                                                                    10
+
+                                         5.2 Solar neutrino oscillation parameters                                                                                              10
+
+                                         5.3 Terrestrial matter effects                                                                                                         10
+
+                                         5.4 Solar activity and seasonal effect                                                                                                 11
+
+                                         6 Beyond the standard framework                                                                                                        11
+
+                                         6.1 Sterile neutrinos                                                                                                                  11
+
+                                         6.2 Non-standard interactions                                                                                                          11
+
+                                         6.3 Other new physics scenarios                                                                                                        11
+
+                                         7 Summary and outlook                                                                                                                  11
+
+                                         Acknowledgments                                                                                                                        12
+
+                                         References                                                                                                                             12
+
+                                         Abstract
+
+                                         Solar neutrinos, generated abundantly by thermonuclear reactions in the solar interior, offer a unique tool for studying astrophysics
+                                         and particle physics. The observation of solar neutrinos has led to the discovery of neutrino oscillation, a topic currently under
+                                         active research, and it has been recognized by two Nobel Prizes. In this pedagogical introduction to solar neutrino physics, we will
+                                         guide readers through several key questions: How are solar neutrinos produced? How are they detected? What is the solar neutrino
+                                         problem, and how is it resolved by neutrino oscillation? This article also presents a brief overview of the theory of solar neutrino
+                                         oscillation, the experimental achievements, new physics relevant to solar neutrinos, and the prospects in this field.
+
+                                         Keywords: Solar neutrinos, Neutrino oscillation, MSW effect, Neutrino detection, Solar neutrino problem
+
+                                         Objectives
+
+                                         · Section 2 introduces the standard solar model, explains how neutrinos are produced in the Sun via thermonuclear reactions (pp chain
+                                              and CNO cycles), and summarizes the predicted fluxes and energy spectra of solar neutrinos.
+
+                                         · Section 3 introduces the detection of solar neutrinos, the history of solar neutrino experiments, and the well-known solar neutrino
+                                              problem.
+
+                                         · Section 4 introduces the standard theory of solar neutrino oscillation including the MSW effect and the day-night difference.
+
+                                                                                                                                                                                1
+2 Solar neutrinos
+
+· Section 5 reports on experimental achievements and progress in measuring the expected solar neutrino components from all the fusion
+     processes.
+
+· Section 6 discusses a few new physics effects relevant to solar neutrinos and how they can be probed by solar neutrino experiments.
+· Section 7 summarizes the key facts about solar neutrinos and presents the outlook.
+
+1 Introduction
+
+Solar neutrinos represent one of the most enduring and exciting fields of research in astrophysics and particle physics. From the astrophysical
+perspective, they offer a unique tool that enables us to gain direct insights into the solar interior. From the perspective of particle physics,
+the Sun serves as an intense source of neutrinos, allowing us to explore their fundamental properties and deepen our understanding of the
+underlying theories that govern these elusive particles.
+
+    Pioneered by Raymond Davis Jr. in the 1960s, the first solar neutrino experiment observed a deficit of solar neutrinos compared to
+theoretical predictions, providing the first hint of neutrino oscillation, which, among various other explanations for the deficit at that time,
+was ultimately confirmed as the only resolution of the solar neutrino problem by subsequent experiments.
+
+    The confirmation of neutrino oscillation has a profound impact on particle physics, as it implies that neutrinos--contrary to predictions
+made by the Standard Model (SM)--have nonzero masses. This discovery opens new avenues for exploring new physics beyond the SM.
+Thus, the study of solar neutrinos stands as one of the most successful examples demonstrating how new observations into the sky can lead
+to groundbreaking discoveries in fundamental physics.
+
+    In this article, we aim at presenting an pedagogical introduction to solar neutrino physics. In Secs. 2 and 3, we will guide readers
+through a few questions including how neutrinos are produced from the Sun, how they are detected, why there was the deficit and how
+it was resolved by neutrino oscillation. We further present a brief yet self-contained formalism to facilitate quick understanding of the
+calculation of solar neutrino oscillation (Sec. 4), and an overview of experimental achievements and progress (Sec. 5). We also briefly
+comment on open issues and new physics beyond the established framework. For a more comprehensive review, we refer to Ref. [1].
+
+2 Standard solar model and solar neutrinos
+
+The Sun is a powerful source of neutrinos which are abundantly produced by the thermonuclear reactions inside. The production of solar
+neutrinos is predicted by the Standard Solar Model (SSM), a theoretical framework crucial for understanding the structure and behavior of
+the Sun. Table 1 lists a few well-known quantities of the solar profile. Among them, some are determined by observations (e.g. luminosity,
+radius, mass, surface temperature) while others are predictions of the SSM, including solar neutrino fluxes.
+
+Table 1 A basic profile of the Sun. Some quantities are determined by observations,
+while others are predicted by the SSM.
+
+Parameter (observed) Value            Parameter (predicted) Value
+
+Luminosity           3.828 × 1026 W   Central temperature  1.54 × 107 K
+Radius               6.961 × 107 km   Central density      149 g cm-3
+Mass                 1.988 × 1030 kg  Central pressure     2.3 × 1016 Pa
+Surface temperature  5.78 × 103 K     Neutrino fluxes
+                                                           see Tab. 2
+
+    The SSM is constructed upon principles of hydrostatic equilibrium, energy transport mechanisms, and the nuclear reactions that power
+the Sun's energy output. By integrating these principles with observational constraints such as solar radius, luminosity, age, elemental
+composition, and radiative opacity, detailed predictions can be made about the internal solar structure, including density, temperature,
+pressure, and neutrino fluxes.
+
+    Including modern knowledge of neutrinos, the SSM is rather successful in predicting and correlating various observables of the Sun.
+Historically, the SSM had a long-standing problem: the observed solar neutrino flux was significantly lower than the prediction. This
+problem, known as the solar neutrino missing problem, was eventually resolved by neutrino oscillations. In what follows, we will explain
+how solar neutrinos are produced in the Sun.
+
+2.1 Thermonuclear reactions in the Sun
+
+The solar core is mainly made up of hydrogen (about 74% by mass), helium (about 24%), and small amounts (less than 2%) of heavier
+elements like oxygen, carbon, neon, and iron. At the core of the Sun, the density reaches around 150 grams per cubic centimeter, with
+temperatures soaring to about 15 million Kelvin. These extreme conditions allow the penetration of the Coulomb barrier between ions
+through the quantum tunneling effect, enabling thermonuclear reactions that convert hydrogen into helium through the proton-proton (pp)
+                                                                                                                                 Solar neutrinos 3
+
+Fig. 1 The pp chain (left) and the CNO cycle (right). In the pp chain, solar neutrinos are produced via five nuclear reactions and referred
+to as pp, pep, hep, 7Be, 8B neutrinos. In the CNO cycle, solar neutrinos are produced from the decays of 13N, 15O, and 17F.
+
+chain and the carbon-nitrogen-oxygen (CNO) cycle. In the Sun, the pp chain is responsible for 99% of the total solar energy production,
+while the remaining  1% is produced by the CNO cycle1.
+
+    As is shown in Fig. 1, the pp chain starts with proton-proton fusion (p + p  2H + e+ + e) or, at a much lower rate, proton-electron-
+proton fusion (p + e+ + p  2H + e), which is possible due to the Coulomb potential of protons capturing an electron. Both processes
+produce electron neutrinos (e), but e produced from the latter is monochromatic and more energetic. After the initial step of fusion,
+subsequent nuclear reactions proceed, eventually ending up with four possible sub-chains, denoted by pp-I to pp-IV in Fig. 1. Except for
+pp-I, each of these sub-chains contains a reaction that can produce neutrinos. Solar neutrinos produced from these reactions in the pp chain
+are usually referred to as pp, pep, hep, 7Be, and 8B neutrinos.
+
+    The CNO cycle, as the name suggests, involves carbon, nitrogen, and oxygen participating a cycle of nuclear reactions--see the right
+panel of Fig. 1. Strictly speaking, it is not just one completely closed cycle. Instead, it contains multiple cycles coupled together, allowing
+some of the nuclear elements to leave the dominant cycle and join another cycle involving heavier elements. For instance, when 15N is
+produced by Cycle-I in Fig. 1 via 15O  15N + e+ + e and then captures a proton, 99% will be converted to 12C + 4He while around 1%
+will be converted to 16O + . So 15N at this stage has a small probability of joining Cycle-II in Fig. 1. The same situation can also occur
+for 17O, which may leave Cycle-II and join Cycle-III. Nevertheless, those cycles involving heavier nuclear elements are less important to
+the production of solar energy and neutrinos. If we only consider Cycle-I and Cycle-II, there are three reactions producing neutrinos, from
+13N  13C + e+ + e, 15O  15N + e+ + e, and 17F  17O + e+ + e. The corresponding neutrinos are referred to as 13N, 15O, and 17F
+neutrinos, respectively.
+
+    Note that in the pp chain, no stable elements heavier than 4He can be produced. Although some elements such as 7Li, 7Be, and 8B are
+produced, they decay rapidly, implying that the pp chain burns hydrogen only into helium. In the CNO cycle, heavy elements like carbon
+and nitrogen remain almost unchanged after a complete cycle of reactions, implying that they participate in the reactions as catalysts. The
+net effect of the CNO cycle is also to burn hydrogen into helium. Since both series of reactions only produce 4He, the abundance of elements
+heavier than 4He--known as the metallicity (in astrophysics, "metals" refers to elements heavier than 4He)--remains rather stable in the
+Sun. These "metals" not only play the role of catalysts in thermonuclear reactions, but also affect the opacity of the Sun. Therefore, the
+metallicity of the Sun is one of the key parameters of the SSM.
+
+2.2 Solar neutrino fluxes and spectra
+By evaluating the thermonuclear reaction rates in the Sun, one can calculate solar neutrino fluxes. Starting from John N. Bahcall's pioneering
+work [2], the calculation of solar neutrino fluxes has been continuously revised and improved, not only because the quality and quantity of
+input data for the SSM have increased, but also due to the increasing computational power that allows for more sophisticated simulations
+(e.g., switching from 1D to 3D, using non-local thermodynamic equilibrium, etc.) to be incorporated into the SSM.
+
+    Table 2 presents solar neutrino fluxes obtained by the Bahcall-Serenelli-Basu (BSB) calculation [3] and the Barcelona-2016 (B16)
+calculation [4] based on different SSM data sets including data sets named GS98, AGS05, AGSS09. These data sets are named by the
+initials of the authors conducting the calculations and the years of the publications. In general, solar neutrino fluxes computed by different
+groups based on different SSM data sets differ from each other. The differences for pp are small, only at the percent level or less, as can be
+seen from Tab 2. But for 8B and CNO neutrinos, the differences are significantly larger.
+
+1Despite its sub-dominance in solar energy production, the CNO cycle plays a more significant role in massive stars. For stars with masses above 1.3 times the solar mass,
+the CNO cycle dominates the energy production.
+4 Solar neutrinos
+
+              Table 2 Calculated solar neutrino fluxes at the Earth.
+
+              Flux [cm-2s-1] BSB05-GS98 BSB05-AGS05 B16-GS98                                                                               B16-AGSS09
+
+                   pp /1010   5.99(1 ± 0.009)         6.06(1 ± 0.007)                                                     5.98(1 ± 0.006)  6.03(1 ± 0.005)
+                   pep /108                                                                                               1.44(1 ± 0.01)   1.46(1 ± 0.009)
+                   hep /103   1.42(1 ± 0.015)         1.45(1 ± 0.011)                                                     7.98(1 ± 0.30)   8.25(1 ± 0.30)
+                   7 Be /109                                                                                              4.93(1 ± 0.06)   4.50(1 ± 0.06)
+                   8 B /106   7.93(1 ± 0.155)         8.25(1 ± 0.155)                                                     5.46(1 ± 0.12)   4.50(1 ± 0.12)
+                   13 N /108                                                                                              2.78(1 ± 0.15)   2.04(1 ± 0.14)
+                   15 O /108  4.84(1 ± 0.105)         4.34(1 ± 0.093)                                                     2.05(1 ± 0.17)   1.44(1 ± 0.16)
+                   17 F /106   5.69(1+0.173 -0.147 )   4.51(1+0.127 -0.113 )                                              5.29(1 ± 0.20)   3.26(1 ± 0.18)
+                               3.05(1+0.366 -0.268 )   2.00(1+0.145 -0.127 )
+                               2.31(1+0.374 -0.272 )   1.44(1+0.165 -0.142 )
+                               5.83(1+0.724 -0.420 )   3.25(1+0.166 -0.142 )
+
+                                                                                                                    20.0
+
+                                                                                                                                                                                                                           pp
+10 17.5 11 pep
+
+          pp 7Be hep
+109 7Be pep 15.0 7Be 8B
+Flux [cm-2s-1MeV-1]
+         13N                                                                       neutrino production rate [a.u.]  12.5                                          13N
+
+107                                                                                                                                                               15O
+
+     15O e13N 8B 10.0 17F
+                                  e15O
+105                                                                                                                 7.5
+
+         17F                      e17F hep 5.0
+
+103
+
+                                                                                                                    2.5
+
+10 10 1 -1                   100                          1                                                         0.0
+                                                      10                                                            0.00  0.05  0.10       0.15  0.20       0.25  0.30
+                   E [MeV]
+                                                                                                                                           r/R
+
+Fig. 2 Left: The energy spectra of solar neutrino fluxes. Note that monochromatic spectra are in units of cm-2s-1. Right: The production
+rates of solar neutrinos as a function of the radius r.
+
+    The most important factor behind these differences is solar metallicity. Currently, there are two competing classes of solar models:
+high-metallicity and low-metallicity models. High-metallicity models (such as GS98) predict higher 8B and CNO neutrino fluxes than
+low-metallicity models (such as AGS05 and AGSS09), not only because the abundance of the catalysts mentioned above is higher but also
+due to higher radiative opacity caused by the heavy elements. The opacity inhibits heat transfer via radiation and thus increases the core
+temperature, which in turn raises the nuclear reaction rates and the corresponding neutrino fluxes.
+
+    The two classes of models have their respective problems, so which one can more accurately predict the solar neutrino fluxes is still
+unresolved. Recent calculations of solar neutrino fluxes usually consider both of them. Generally speaking, high-metallicity models are in
+better agreement with helioseismological observations2, while low-metallicity models are favored by more advanced simulations but are in
+tension with helioseismological data. This unresolved issue is known as the solar metallicity problem. We do not intend to expand further
+in this pedagogical article and refer interested readers to recent reviews [1, 5].
+
+    The shapes of solar neutrino energy spectra are mainly determined by the kinematics of corresponding reaction processes and are
+almost independent of solar models. Unlike the total fluxes, which are affected by the uncertainties of solar models, the spectral shapes are
+invulnerable to potential variations in the core profile (e.g. variations in temperature and density). This is because the energy released by
+a nuclear reaction is much higher than the kinetic energy of the initial-state particles in the reaction. The former is typically above MeV,
+while the latter is around the core temperature (keV). Therefore, the spectral shapes in Bahcall's calculation [6] are still widely used in
+modern solar neutrino calculations. Figure 2 (left panel) shows the solar neutrino energy spectra obtained using Bahcall's spectral shapes
+and the total flux data of B16-GS98 in Tab. 2. Also shown is the radial distribution of neutrino production in the Sun as a function of the
+radial distance r divided by the solar radius R.
+
+    As is shown in Fig. 2, some of the solar neutrino energy spectra (such as pep, 7Be, etc.) are monochromatic. This is because the final
+states of these reactions only contain two particles. When the total energy of the initial states is fixed (which is approximately the case as all
+initial particles are non-relativistic), the two-body kinematics dedicates that the neutrinos are monochromatic. For 7Be neutrinos produced
+from 7Be + e-  7Li + e, the 7Li nucleus may be in the ground state or an excited state, causing two monochromatic lines at 0.861 MeV
+(with a branching ratio of 90%) and 0.383 MeV (10%). In addition to the reactions in the pp chain, some reactions in the CNO cycle are
+accompanied by electron-capture processes, which also produce monochromatic neutrinos. For example, 13N  13C + e+ + e implies that
+13N + e-  13C + e is also possible, though at a much lower reaction rate. These fluxes are denoted by e13N, e15O, and e17F in Fig. 2.
+
+2Helioseismology studies the interior of the Sun based on vibrations of the solar surface, similar to seismology for the Earth.
+                                                                                                                                 Solar neutrinos 5
+
+3 Solar neutrino detection: principles and methodologies
+
+The first solar neutrino experiment was conducted by Davis at Homestake in the 1960s, using the radiochemical method to detect solar neu-
+trinos. Since then, many experiments have been carried out based on diverse detection technologies, including radiochemical, Cherenkov,
+and liquid-scintillator detectors.
+
+    In the design of a solar neutrino experiment, two crucial factors must be considered.
+    First, the selection of experimental sites is critical. Solar neutrinos are at the same energy scale as various radioactive decays of unstable
+nuclear isotopes, which could be continuously produced by cosmic rays interacting with the detector if it is not well shielded. These
+radioactive decays of cosmogenic unstable isotopes could mimic solar neutrino events, creating a troublesome background for detection.
+To tackle this problem, solar neutrino experiments are usually conducted deep underground to minimize such interference.
+    Second, the choice of reaction processes and detection techniques is also important. Neutrino capture processes may benefit from low
+reaction thresholds, but so far, have only been successfully applied to radiochemical detectors, which can not provide real-time measure-
+ments. Neutrino-electron scattering is currently the most important detection process for Cherenkov detectors. These detectors feature
+real-time measurements but need relatively high detection thresholds due to fewer Cherenkov photons emitted when the electron energy
+decreases. Liquid-scintillator detectors can have lower thresholds but usually lose directionality.
+
+3.1 Radiochemical experiments
+
+Radiochemical experiments are based on neutrino-capture processes: e + AZ X  AZ+1Y + e-, where a solar neutrino e is captured by a
+nucleus AZ X (here A and Z denote the numbers of nucleons and protons in the nucleus X), resulting in the formation of a daughter nucleus
+AZ+1Y and the emission of an electron. To identify the process in the experiment, the daughter nuclide needs to be radioactive, which means
+it is unstable and decays with a sufficiently long lifetime. After the target material being exposed to solar neutrinos for a certain period,
+the produced daughter isotope is extracted via chemical methods. Then the number of these radioactive particles can be counted using
+proportional counters when they decay. Therefore, the lifetime of the daughter isotope needs to be reasonably long such that it does not
+decay instantly during the exposure step, and meanwhile can decay effectively during the second step after being chemically extracted. Note
+that such experiments cannot perform real-time measurements due to the two-step procedure mentioned above. They merely count rates of
+the neutrino-capture reactions over a designed period.
+
+    The first solar neutrino experiment, Davis's Homestake experiment, is based on this detection principle. The experiment utilized 615
+tons of liquid perchloroethylene C2Cl4 which both 35Cl (76%) and 37Cl (24%) atoms but only the latter is responsible for neutrino capture:
+e + 37Cl  37Ar + e-. This reaction has an energy threshold of 814 keV. The daughter nucleus 37Ar has a half-life of 35 days. As depicted
+in Fig. 2, this experiment ought to be capable of detecting the line-spectrum neutrinos from both the pep reaction and the high energy 7Be
+decay, as well as the continuous-spectrum neutrinos from 8B decay and the hep reaction. However, since the 37Cl ground state prefers to
+transit to the 37Ar excited states at an energy level of about 5 MeV above it, the Homestake experiment only detected the last two solar
+neutrinos, among which the 8B neutrinos were predominant.
+
+    Another neutrino capture process, e + 71Ga  71Ge + e-, has also been utilized by radiochemical experiments such as GALLEX/GNO
+and SAGE. The energy threshold of this process is 233 keV, lower than the end-point of 420 keV for the pp reaction, enabling them to access
+solar neutrinos from all sources. The daughter nucleus 71Ge has a half-life of 11.4 days, also reasonably long for chemical extraction.
+
+    In addition, other possible nuclear isotopes have also received attention, including 98Mo, 203Tl, 7Li, 81Br, and 127I. The chemical or
+geochemical experiments based on 98Mo and 203Tl are sensitive to solar neutrino fluxes averaged over millions of years. If the SSM is
+correct, the average fluxes should be the same as the contemporary ones, providing a test to the SSM. For those based on 7Li, 81Br, and 127I,
+they are also similar to the detector based on 37Cl but with different energy thresholds, which are 862, 470, and 789 keV, respectively.
+
+    It is worth mentioning that experiments based on the neutrino capture reactions can provide direct measurements of the neutrino energy
+spectrum if the energy of the final-state electron Ee can be measured. The neutrino energy can be determined via simple kinematics:
+E = Mp - Md + Ee, where Mp and Md are the masses of parent and daughter nuclei, respectively. If the daughter nucleus can provide
+a detectable delay signal correlating with the prompt electron signal in space and time, then they can be detected without traditional
+radiochemical means and the background can also be significantly suppressed. A few isotopes including 176Yb, 160Gd, and 82Se have
+been proposed for solar neutrino detection with real-time signatures for discriminating solar neutrino signals from the potential radioactive
+background [7].
+
+3.2 Cherenkov experiments
+
+Cherenkov detectors for solar neutrino detection use water (H2O) or heavy water (D2O) as the target material.
+    In water-based Cherenkov detectors (such as Kamiokande and Super-Kamiokande), solar neutrinos are detected via elastic electron
+
+scattering,  + e-   + e-, where the flavor index  can be any of e, µ, and . The final-state e- emits Cherenkov light in the detector if
+its velocity is higher than the speed of light in the medium. This makes both the angle and energy of the electron detectable. It is noteworthy
+that the cross section of elastic e + e- scattering is significantly larger than that of µ + e- or  + e-.
+
+    Due to the lightness of the electron, the angle between the final-state electron and incoming neutrino is generally small (for instance, a 6
+MeV electron generated by a 10 MeV neutrino has the angle  14), implying that the motion of the recoil electron is rather forward. This
+characteristic is exploited to determine the direction of incoming solar neutrinos (see Fig. 3), effectively differentiating them from back-
+ground sources such as environmental radiation and cosmogenic background. One of the advantages of water-based Cherenkov detectors
+6 Solar neutrinos
+
+Fig. 3 Angular distribution of recoil electron in the SNO+ experiment, with the kinetic energy in 5-15 MeV. Below 5 MeV, natural
+radioactivity causes significant backgrounds.
+
+is that they can be easily scaled up with real-time measurements and comparatively low cost on the target material (pure water). Therefore,
+water-based Cherenkov detectors typically have very high fiducial masses, ranging from kiloton to sub-megaton scales.
+
+    Heavy-water-based Cherenkov detectors can detect neutrinos via e + D2O  2p + e- and  + D2O   + p + n, in addition to elastic
+neutrino-electron scattering. The neutral-current processes  + D2O   + p + n render heavy-water-based experiments more sensitive
+to all neutrino flavors. Historically, it played a crucial role in resolving the solar neutrino problem, as solar neutrinos that have changed
+flavors can be equally detected by this process.
+
+    Since water (and heavy water) contains a large number of oxygen nuclei, the interactions between atmospheric neutrinos and oxygen
+nuclei, via (¯) + 16O  (¯) + n + 15O or (¯) + 16O  (¯) + p + 15N, engender an unavoidable background for studying solar neu-
+trinos. The subsequent de-excitation of the produced causes a gamma-ray background, which is indistinguishable from electron signals in
+Cherenkov detectors. Since this background is typically accompanied by the production of neutrons, neutron-tagging is important to the
+reduction of this background. The Super-Kamiokande experiment has developed a technique to dissolve gadolinium chemical compounds
+in water, notably enhancing neutron detection efficiency. This advancement will potentially improve the rare signal search for hep neutrinos
+and solar antineutrinos.
+
+3.3 Liquid scintillator experiments
+Liquid scintillator (LS) experiments also employ elastic neutrino-electron scattering as the primary detection process for solar neutrinos,
+but have much improved energy resolution compared to water- or heavy-water-based Cherenkov experiments. In LS, neutrino-electron
+scattering is detected via the ionization energy deposited by the recoil electron. Since the electron deposits most of its kinetic energy in the
+form of ionization instead of Cherenkov radiation, the light yield in LS is much higher than that in water.
+
+    LS is usually composed of organic solvent doped with fluorophores. The ionization caused by a charged particle excites the aromatic
+solvent molecules, which then transfer their excited energy to fluorophore molecules. Due to a phenomenon called the Stokes shift, the
+fluorophore emits photons with significantly larger wavelengths than the solvent's photon spectrum when it undergoes de-excitation, falling
+into the sensitive range for photon sensors or phototubes. As a result, LS can precisely measure the electron kinetic energy deposited in
+ionization by converting it to optical photons. This enhanced capability is particularly important for detecting solar neutrinos, which have
+energies on the MeV scale.
+
+    As a unpolarized medium, LS is easier to purify than water, making it more suitable for detecting pp, pep, 7Be, and CNO neutrinos.
+The Borexino experiment is a successful example of utilizing LS to detect solar neutrinos including these low-energy components. LS is
+relatively cost-effective and can be scaled up as real-time detectors.
+
+    Recently, techniques for directional reconstruction utilizing the faint Cherenkov light emitted by electrons in liquid scintillators have
+been developed. One method involves extending the florescent decay time to give prominence to the Cherenkov light. This method has
+been successfully demonstrated in the SNO+ experiment. The other method utilizes a correlated and integrated directionality approach. By
+analyzing the detected phototube hit pattern in relation to the known position of the Sun and integrating it over large statistics of events,
+it is possible to generate a distribution of the angle between the hit phototubes and the interaction position of a solar neutrino with the
+matter. Electrons scattered by solar neutrinos create a distinct signature in the angular distribution compared to the isotropic radioactive
+background unrelated to the Sun. This signature allows for the separation and measurement of the solar neutrino signal. This technique has
+been effectively employed in the Borexino experiment, significantly enhancing its sensitivity in measuring the pep, 7Be, and CNO fluxes,
+especially in discovering CNO neutrinos.
+                                                                                                                                 Solar neutrinos 7
+
+3.4 The solar neutrino problem
+
+The first measurement of solar neutrinos came out in 1968 [8] from the Homestake experiment led by Davis. The result was that the solar
+neutrino flux was less than 3 SNU (Solar Neutrino Unit. One SNU corresponds to one capture per second per 1036 target nuclei). This result
+was significantly lower than the theoretical values calculated by John Bahcall [2] (the theoretical values are 21, 11, 7.7, 4.4, and 11 SNU
+for five models considered by Bahcall in this paper). Further data taking at the Homestake experiment led to a more precise measurement:
+2.56 ± 0.16 ± 0.16 SNU [9], which was only one-third of Bahcall's refined prediction [10]. Other neutrino experiments based on 71Ga and
+water targets also found deficits, though they varied from half to two-thirds. The discrepancy is known as the solar neutrino problem [11].
+
+    For a decade or more after the Homestake experiment published the first result, the most common explanation for the problem was that
+something was incorrect with the solar model. Theories endeavored to amend solar models by incorporating additional effects into the Sun,
+such as magnetic fields, rapid rotation, and atypical metal abundances. However, as helioseismology was established, it became evident that
+there was little wrong with the solar model. Thus, the solution to the solar neutrino problem must lie in some new physics of elementary
+particles.
+
+    Although nowadays we know the fundamental cause of the solar neutrino problem is neutrino oscillation, it is nevertheless worth
+mentioning a few historical attempts to address this problem. In an article titled "What cooks with solar neutrinos?" [12], Fowler proposed
+two explanations involving experimental nuclear physics, and changing theoretical solar structure and evolution. Cisneros followed a
+discussion with Werntz and investigated an extreme assumption that a neutrino could alter its helicity state when passing through the strong
+magnetic field inside the Sun and change to an antineutrino [13]. Bahall, Cabibbo, and Yahil raised the question of whether neutrinos were
+stable particles and discussed the consequence of neutrinos having finite masses [14]. Freedman et al. suggested using a mass-spectrometric
+assay of the induced tiny concentration of 1.6 × 107 205Pb in old thallium minerals to examine the dominant low-energy component in solar
+neutrino flux [15]. Bahcall et al. proposed to use 71Ga to trap lower-energy solar neutrinos [16]. Haxton and Cowan proposed studying
+long-lived isotopes produced by solar neutrinos in the Earth's crust to probe secular variations in the rate of energy production in the
+sun's core [17]. Faulkner and Gilliland hypothesized an idea, assuming that a small mass fraction of weakly interacting massive particles
+(WIMPs) lurked in the core of the sun and served as very efficient energy conductors, which could change the core temperature and affect
+solar neutrino production [18].
+
+    Eventually, neutrino oscillation turned out to be right answer to the solar neutrino problem. The theory of neutrino oscillation will be
+introduced in the next section.
+
+4 Solar neutrino oscillation
+
+The idea of neutrino oscillation was first proposed by Pontecorvo in the 1950s with the original consideration on    oscillation and later
+developed to incorporate flavor mixing and the matter effect. The modern theory of neutrino oscillation is formulated for the purpose of
+computing flavor transitions among three neutrino flavors (e, µ, ), applicable to neutrino oscillation in various circumstances including
+the Sun. In this section, we briefly review the modern theory of neutrino oscillation and a few well-known phenomena in solar neutrino
+oscillation.
+
+4.1 The general formalism for neutrino oscillation
+
+If neutrinos have masses, their mass eigenstates (i with i = 1, 2, 3, · · · ) are not necessarily in alignment with their flavor eigenstates (
+
+with  = e, µ, , · · · ) participating in weak interactions. The two sets of eigenstates may differ by a unitary transformation,  = i Uii,
+
+where U is the so-called PMNS matrix.
+
+Neurino oscillation refers to the phenomenon that neutrinos in a specific flavor eigenstate, which is a quantum superposition of mass
+
+eigenstates, may change to another flavor eigenstate during propagation, due to the different dispersion relations of mass eigenstates. Quan-
+
+titatively, the evolution of neutrino flavors in the three-neutrino framework of neutrino oscillation is governed by the following equation:
+
+                                         2                                              
+d  e   1  m1                                                                   Ve       e 
+i  µ  =  U                                          m22       U +                  0   µ  ,             (1)
+dL    2E                                                   2                            
+                                                         m3                        0  
+
+                                                                                                                                 
+where L denotes the propagation distance, E is the neutrino energy, m1,2,3 are the masses of 1,2,3, and Ve = 2GF ne is an effective potential
+
+with GF the Fermi constant and ne the electron number density of the medium.
+
+The effective potential Ve accounts for the matter effect, also known as the Mikheyev-Smirnov-Wolfenstein (MSW) effect [19-21], on
+
+neutrino oscillation. It is caused by coherent forward scattering of neutrinos with medium particles. In principle, both electrons and nuclei
+
+contribute to the effective potential but the contribution of the latter is flavor independent because it is caused by flavor-blind neutral-current
+
+interactions. Such a flavor-independent contribution does not affect oscillation and can be neglected.
+
+4.2 The survival probability of solar electron neutrinos
+
+Eq. (1) can be straightforwardly applied to solar neutrino oscillation. Both the solar and terrestrial matter effects can be readily taken
+into account by including L-dependent contributions to Ve. In practice, we are mainly concerned with the survival probability, Pee 
+8 Solar neutrinos
+
+                                         0.6 Vacuum solution
+                                         0.5
+
+                                         0.4
+
+                                    Pee  0.3
+                                                                                                                    in matter with 12 1
+
+                                         0.2
+
+                                         0.1           standard solution (day)                     standard solution (night)
+                                         0.0 -1
+                                                                                     100                                        101
+                                          10
+
+                                                                                     E [MeV]
+
+Fig. 4 The probability of a solar neutrino retaining its original flavor (e) after arriving at the Earth, known as the survival probability.
+The survival probability approaches the vacuum solution (about 0.57) in the low-energy limit, and decreases to lower values at high
+energies due to the matter effect. The matter effect includes contributions not only from the solar medium but also from the terrestrial
+matter, as is indicated by the difference between solid and dashed lines.
+
+|e(L)|e(0)|2, which is the probability of an electron neutrino produced at the source (denoted by |e(0)) after traveling through the
+distance L still retaining the original flavor (i.e. in the state |e(L)).
+
+    Under certain approximations, one can compute Pee analytically without numerically solving Eq. (1). Assuming that the evolution
+is adiabatic (which means Ve varies sufficiently slowly in the Sun compared to the oscillation wavelength) and 3 is not involved in the
+oscillation (e mainly consists of 1 and 2), Pee is given by
+
+                                                                      Pee  1 + 1 cos 212m cos 212, (2)
+                                                                             22
+
+with
+
+                                                            m                 cos 212 - 12                           2Ve0 E
+                                                  cos 212                                                , 12  2 ,                                                               (3)
+                                                                                                                       m21
+                                                                      (cos 212 - 12)2 + sin2 212
+
+where  12  is   an  angle   quantifying  the  composition         of  e   (e    cos  12 1  +  sin  122),  m221         m22   -  m21,  and  V0   denotes  the  value  of  Ve  at  the
+
+                                                                                                                                             e
+
+solar  center.  Taking  specific    values    of  V0   and  m221,     12      E/(3  MeV).  Note    that  Pee  is  energy     dependent.     Figure   4  shows  the   variation   of
+
+                                                    e
+
+Pee as a function of E.
+
+    There are two interesting limits of the survival probability. At low energies (E  3 MeV), 12 in Eq. (3) can be neglected, leading to
+m12  12 and Pee  (1 + cos2 212)/2  0.57. This is known as the vacuum limit since Pee in this limit is almost unaffected by the MSW
+effect. At high energies (E  3 MeV), Eq. (3) gives cos 2m12  -1 and m12  90, implying that the neutrino coming out of the Sun would
+be almost purely 2. In this high-energy limit, the survival probability is given by Pee  (1 - cos 212)/2  sin2 12  0.3, corresponding to
+
+the gray dashed curve in Fig. 4. The transition from the high-energy to the low-energy limits, occurring at around a few MeV, is referred to
+
+as the upturn in the literature.
+
+When solar neutrinos arrive at a detector on the Earth at night, the neutrinos have also traversed a significant length of terrestrial matter.
+
+This causes the survival probability in the high-energy limit to be slightly higher than that without the earth matter effect. Hence it is fair
+
+to say that "the Sun at night is brighter than that in the day" if the brightness refers to the luminosity of e. More specifically, the day-night
+
+difference of Pee can be estimated by
+
+                                                                      (day) (night) 1 cos 2m12 sin2 212                   ,
+                                                       Pee  Pee - Pee  2                                                                                                         (4)
+                                                                                         2  - 2 cos 212 + 1
+
+where      is  similar  to  12  in  Eq.  (3)  except   that  V0   is  replaced  by  the  average  value  of  Ve  in  the  Earth.  In  Fig.  4,  the  small  difference   between
+
+                                                               e
+
+the orange dashed and blue solid lines represents this correction due to the Earth matter effect.
+                                                                                                                                 Solar neutrinos 9
+
+5 Experimental achievements and progress
+
+Since the first solar neutrino experiment, many experiments have made important progress, advancing our understanding of the Sun and
+neutrinos. In this section, we briefly review the achievements of measuring solar neutrino fluxes.
+
+5.1 Measurements of solar neutrino fluxes
+According to the standard solar model, solar neutrinos contains 8B, 7Be, pep, pp, CNO, and hep neutrino components. Almost all these
+components have been observed except for the hep neutrinos. Below we briefly review the measurement of each component.
+
+5.1.1 8B neutrinos
+Solar 8B neutrinos are produced from the decay of 8B, which is a product of the pp-chain reactions, as is shown Fig. 1. The maximum
+energy of 8B neutrinos is around 15 MeV. From Fig. 2 one can see that 8B neutrinos have the highest flux in the energy range from 3 to 15
+MeV, which makes 8B neutrinos the most successfully measured component.
+
+    Currently, the Super-Kamiokande experiment provides the most precise flux measurement of 8B neutrinos using neutrino-electron
+scattering. Assuming all 8B neutrinos are in the e state, the measure flux is (2.336 ± 0.011 ± 0.043) × 106 cm-2s-1, which significantly
+deviates from the SSM prediction. According to the survival probability in Fig. 4, this deficit is expected from neutrino oscillation.
+
+    Note that the above measurement is sensitive to neutrino oscillation parameters. It is possible to measure the 8B neutrino flux without
+being affected by neutrino oscillation. This is achieved by the SNO experiment using heavy water as the target material. As mentioned
+in Sec. 3, heavy water allows the pure NC process  + D2O   + p + n to be exploited for neutrino detection. This process is flavor-
+independent so the result is invulnerable to the uncertainties of oscillation parameters. In addition, the CC process e + D2O  2p + e- also
+offer a e-only measurement of the flux. From 1999 to 2006, the SNO experiment underwent three phases, using distinct neutron detection
+methods to improve the flux measurement via the NC process and the e flux measurement via the CC process. A combination of all three
+phases of data gives the final result (5.25 ± 0.16+0.11 -0.13) × 106 cm-2s-1, with an uncertainty of around 3.8%. JUNO, an upcoming 20-kiloton
+liquid scintillator experiment, will explore the feasibility of using isotope 13C with a natural abundance of 1.1% to detect solar neutrinos,
+and may provide another model-independent flux measurement.
+
+5.1.2 7Be neutrinos
+7Be neutrinos are produced via the electron capture process 7Be + e-  7Li + e. The energy spectrum contains two monochromatic lines,
+one at 0.861 MeV (90%) and the other at 0.383 MeV (10%).
+
+    The experimental study of sub-MeV solar neutrinos is challenging. It requires both a clean environment with extremely low radioactivity
+and an excellent detector with high energy resolution. The Borexino experiment was designed to detect the 0.862 MeV line in a real-time
+detector with a low natural radioactive background and high energy resolution. So far, only the Borexino experiment has successfully
+measured the 7Be flux. The result is (7Be) = (4.99 ± 0.11+0.06 -0.08) × 109cm-2s-1, in agreement with the expected value given in Table 2.
+
+    The Borexino experiment employed neutrino-electron scattering as the detection process. This actually only allows the electron energy
+instead of the neutrino energy to be measured. In the sub-MeV energy range, the electron recoil spectrum of 7Be neutrinos overlaps
+with those of other solar neutrino components. So one has to perform a spectral fit to extract the 7Be component, assuming the standard
+oscillation with known oscillation parameters. Note that the energy of 7Be neutrinos lies in the transition phase between vacuum oscillation
+and matter effect--see Fig. 4. Since this part is known to be sensitive to new physics effects, it would be desirable that future solar neutrino
+experiments can measure the neutrino energy directly (i.e. serving as a neutrino energy spectroscopy).
+
+5.1.3 pp neutrinos
+The fundamental thermonuclear reaction producing solar energy is the proton-proton reaction p + p  2H + e+ + e, with a maximum
+neutrino energy of 0.42 MeV.
+
+    The pp neutrino flux constitutes 91% of the total solar neutrino flux, making it the dominant component. However, it also has the
+lowest energy, which makes its detection particularly challenging, similar to the situation of 7Be neutrinos. The Borexino experiment
+has, thanks to the excellent performance of its liquid scintillator and the low background, successfully measured the flux of pp neutrinos:
+(pp) = (6.1 ± 0.5+0.3 -0.5) × 1010 cm-2s-1, which is consistent with the SSM predictions in Table 2. The measurement of pp neutrinos at
+Borexino is achieved by collecting neutrino-electron scattering data with a very low detection threshold down to 0.165 MeV. Due to the
+overlapping with the other solar neutrinos, the measurement of the pp-neutrinos is obtained via a spectral fit. So far, the precision of pp
+neutrino measurement still cannot discriminate the solar models listed in Table 2.
+
+5.1.4 pep neutrinos
+In proton-proton fusion, there is a small probability (0.24%) that an electron is captured by a proton before the fusion, leading to the
+pep process: p + e- + p  2H + e. The two-particle final state makes the neutrino energy monoenergetic, with the neutrino energy at
+1.44 MeV. This energy lies in the transition phase from vacuum oscillation to matter effect and, therefore, is important for testing various
+oscillation models. The first evidence of the pep solar neutrinos was directly detected by the Borexino experiment. Even though it has a
+monoenergetic feature, extracting the pep neutrino component from the electron energy spectrum is complicated since its energy distribution
+overlaps with the one for the CNO neutrinos. In addition to assuming the Mikheyev-Smirnov-Wolfenstein large mixing angle solution to
+10 Solar neutrinos
+
+solar neutrino oscillations, one has to fix the shape of the CNO neutrinos, which depends on whether High-Z SSM or Low-Z SSM metallicity
+is used for the CNO neutrinos. Consequently, the flux is determined with the two models: (pep) = (1.27 ± 0.19+0.08 -0.12) × 108cm-2s-1 for
+High-Z SSM metallicity, (pep) = (1.39 ± 0.19+0.08 -0.13) × 108cm-2s-1 for Low-Z SSM metallicity, respectively. Both results are consistent
+with the expected value in Table 2.
+
+5.1.5 CNO neutrinos
+The sub-dominant CNO cycle involves fusion facilitated by the presence of carbon, nitrogen, and oxygen. The rates of these processes
+are dependent on temperature. The CNO cycle is comprised of two sub-cycles, CN and NO. At the relatively low temperature of the solar
+core, sub-cycle CN is the primary process, accounting for about 99% and producing neutrinos from the beta decays of 15O and 13N. The
+fusion facilitated by carbon, nitrogen, and oxygen provides valuable information regarding the metallicity of the Sun's core, specifically, its
+abundance of elements heavier than helium. The solar metallicity in standard solar models leads to significantly different predictions for the
+CNO neutrino flux. A precise measurement serves as a crucial test to these models. The measurement was challenging due to the energy
+lying in the range of a few MeV, where radioactive and cosmogenic backgrounds are dominant. Thanks to the successful development of a
+technique for correlated and integrated directionality for sub-MeV solar neutrinos, Borexino ultimately discovered the CNO neutrinos and
+measured the flux to be (CNO) = (6.7+1.2 -0.8) × 108cm-2s-1. This measurement aligns with the expected value, as provided in Table 2. It
+is consistent with high metallicity standard solar models. When combined with the flux measurements on 8B and 7Be, the low metallicity
+SSM is disfavored, offering direct experimental access to the study of the primary mechanism for the conversion of hydrogen into helium
+in the Universe.
+
+5.1.6 hep neutrinos
+The last and most difficult process through which neutrinos are produced in the Sun is the fusion of protons and helium nuclei: 3He +
+p  4He + e+ + e. This process is known as the hep-branch of proton-proton fusion. The neutrinos created by this process are called hep
+neutrinos. They have the highest energy (18.77 MeV) among all the solar neutrinos. Due to their small quantity and the end-point energy
+slightly above the 8B neutrinos, the search for hep neutrinos is somewhat tricky. It is now the only one that solar neutrino experiments have
+
+not yet detected. Attempts have been made in both the Super-Kamiokande and the SNO experiments, but no evidence has been found. The
+current strict limit is from the SNO experiment: (hep) < 2.3 × 104cm-2s-1 @90% C.L.. Based on a comparison to the expected value
+
+provided in Table 2, it is evident that significant improvements are necessary to detect them. Discovering the hep neutrinos would greatly
+
+impact astroparticle physics, particularly in our comprehension of stellar evolution and the physics of massive neutrinos, as this process in
+
+the Sun's fusion core drives a much higher neutrino production than any other reaction.
+
+5.2 Solar neutrino oscillation parameters
+
+Two types of solutions exist for the observed neutrino missing problem. Either the solar neutrino oscillates in vacuum during its journey to
+
+the Earth, or it has already been converted within the Sun due to matter effects.
+
+    In the vacuum oscillation solution, as previously mentioned, considering the observable 8B neutrino ratio relative to the expected from
+
+the SSM, which is about 0.45, one can use the vacuum oscillation formula to estimate the neutrino mass-square difference regions of around
+
+10-10 eV2. However, assuming CPT invariant, this value is inconsistent with the observation of the KamLAND experiment using ¯e's from
+
+commercial nuclear reactors in a similar energy range but with a shorter distance, about 180 km, so short that the oscillation can be treated
+
+in  vacuum.  From   a  study  of  the  energy  spectrum,  the  KamLAND       experiment    yields         2  =  0.325+0.062 -0.054 ,  and  m221  =  (7.54+0.19 -0.18 )  ×  10-5eV2.
+
+                                                                                                     sin12
+
+Consequently, the solution using neutrino oscillation in vacuum can be excluded to explain the deficit observed in measuring the high-energy
+
+8B neutrino flux.
+
+    The other appealing solution is a conversion in matter via the MSW effect. In this scenario, electron neutrinos scattering off electrons in
+
+the high-density Sun interior can cause the almost complete conversion of e's to µ's and 's. The Super-Kamiokande and the SNO exper-
+
+iments  use  solar  neutrino  data  to  provide  a  combined   fit  to  the  three-flavor  neutrino  oscillation  parameters,         which  are         2  =  0.305       ±  0.014,
+
+                                                                                                                                                    sin12
+and m221 = (6.10+1.04 -0.75) × 10-5eV2. These results can be compared with those from the KamLAND experiment. Both results are consistent,
+
+though solar experiments have a larger error in the mass-square difference due to the lack of data covering a few MeV regions, where solar
+
+neutrinos undergo a transition from vacuum oscillation to matter effect. It is expected that the JUNO experiment will significantly improve
+
+the precision using reactor antineutrinos.
+
+5.3 Terrestrial matter effects
+
+The cleanest and most direct test for terrestrial matter effects on neutrino oscillations lies in the comparison of the daytime and the nighttime
+solar neutrino interaction rates. In this comparison, the solar zenith angle, defined as the angle between the vector from the solar position to
+the solar neutrino event position and the vertical detector (z) axis, governs the size and length of the terrestrial matter density through which
+the neutrinos pass and, thereby, the oscillation probability and the observed interaction rate. An increase in the nighttime interaction rates
+implies a regeneration of electron-flavor neutrinos. A day/night asymmetry parameter is defined as
+
+                                                                                 day - night
+                                                                     AD/N = 2 day night .
+
+                                                                                  +
+
+The expected asymmetry also depends on the oscillation parameters and the energy range within which the flux is measured. With current
+oscillation parameters, the day/night asymmetry is anticipated to be at a few percent level in the MeV and above region. In contrast, no
+                                                                                                                               Solar neutrinos 11
+
+asymmetry is expected in the keV region. The SNO experiment employs the 8B neutrino events from the ES, CC, and NC channels to
+measure the day/night asymmetry, consistent with zero. Although the Borexino experiment utilizes the 7Be neutrino events to measure the
+asymmetry, its result is also consistent with zero. By contrast, the Super-Kaomiokande experiment uses the large dataset of 8B neutrino
+events to determine the day/night asymmetry parameter, giving ASK D/N = -0.0286 ± 0.0085 ± 0.0032, which deviates from zero by 3.2,
+providing evidence for the existence of earth matter effects on solar neutrino oscillation, namely the terrestrial matter effects. It is expected
+that the successor of the Super-Kamiokande experiment, the Hyper-Kamiokande experiment, will be capable of increasing the sensitivity
+up to 5 and will eventually discover the terrestrial matter effects.
+
+5.4 Solar activity and seasonal effect
+Owing to the high-energy characteristic of the 8B neutrino events, experiments can offer a real-time clean and highly statistical flux mea-
+surement for studying the potential correlation between the annual sunspot activity and the 8B neutrino flux. The measurement reveals a
+constant solar neutrino flux emitted by the Sun, at least for 8B neutrinos. It implies that the periodic activities of the Sun, such as the rotation
+within the Sun or the fluctuation of the sunspot numbers, have no impact on the thermonuclear reactions at the core of the Sun. The seasonal
+variation of 8B flux is also utilized to examine the law of the inverse square of the distance between the Sun and the Earth, and no deviation
+is observed.
+
+6 Beyond the standard framework
+
+When the solar neutrino problem appeared, many hypotheses were proposed to resolve the problem. After tremendous experimental efforts,
+the standard framework of neutrino oscillation has been established and accepted insofar as the only successful resolution. Nevertheless,
+new physics beyond the standard framework might lurk in solar neutrinos and could be revealed by precision measurements of solar neutrino
+fluxes. Below, we briefly mention a few of such possibilities.
+
+6.1 Sterile neutrinos
+Sterile neutrinos, as suggested by the name, are neutrino-like particles possessing two features: (i) they do not participate in SM gauge
+interactions, and (ii) they have mass mixing with the SM neutrinos. By contrast, the SM neutrinos in this context are often referred
+to as active neutrinos. In the presence of light sterile neutrinos, solar neutrino oscillation may contain new oscillation modes, and the
+corresponding phenomenology has been widely discussed in the literature. In particular, it has been shown that sterile neutrinos could
+modify the vacuum-matter transition (known as the up-turn) of the survival probability in Fig. 4, causing a significant dip on the curve at a
+few MeV. Therefore, precision measurements of the solar neutrino spectrum in this energy range are crucial to sterile neutrino searches.
+
+6.2 Non-standard interactions
+In addition to the weak interactions predicted by the SM, many models proposed for massive neutrinos also suggest the existence of new
+neutrino interactions. A large collection of them can be parametrized in the framework called Non-Standard Interactions (NSIs). NSIs are
+four-fermion effective interactions similar to the Fermi interactions but with more general flavor structures.
+
+    NSIs have two effects on solar neutrinos: (i) they can affect neutrino propagation in the solar medium, and (ii) they may modify the
+cross section of neutrino scattering at detection. The first effect was already considered by Wolfenstein in his seminal paper on the MSW
+effect, where it was suggested that even if neutrinos were massless, neutrino oscillation could still be induced by flavor off-diagonal NSIs.
+The second effect directly alters event rates in detectors. Therefore, when the relevant oscillation parameters are well determined, precision
+measurements of solar neutrino event rates can be used to set stringent constraints on NSI parameters.
+
+6.3 Other new physics scenarios
+In addition, many other new physics scenarios, such as neutrino magnetic moments, spin-flavor precession, neutrino decay, light mediators,
+and WIMPs, could potentially influence solar neutrino observations. Interested readers are referred to Ref. [1] for a more comprehensive
+review of this subject.
+
+7 Summary and outlook
+
+The study of solar neutrinos began with the unexpected deficit in observations known as the solar neutrino problem. This issue prompted
+numerous hypotheses and tests, ultimately culminating in the groundbreaking discovery of neutrino oscillation. After more than half a
+century of research, the major solar neutrino fluxes have been accurately measured and are in good agreement with predictions from the
+standard solar model combined with the interpretation of neutrino oscillation.
+
+    However, solar neutrino physics is far from approaching the end. The standard solar models still face unresolved challenges, such as the
+metallicity problem, and there may be new physics lurking within the properties of neutrinos. With the advent of new experiments, solar
+neutrino research is entering an exciting new era.
+12 Solar neutrinos
+
+    Precision measurements of solar neutrino energy spectrum, fluxes, and neutrino-mixing parameters will provide deeper insights not
+only into solar physics itself but also into particle physics. This field continues to serve as a unique probe for new physics. In the
+foreseeable future, next-generation experiments such as Hyper-Kamiokande, DUNE, and JUNO are anticipated to significantly enhance
+current measurements and present exciting opportunities for groundbreaking discoveries. As history has demonstrated, new observations of
+our nearest star may lead to profound advancements in our understanding of the fundamental laws of nature.
+
+Acknowledgments
+
+This work is supported in part by the National Natural Science Foundation of China under grant No. 12141501 and No. 12127808,
+and also by the CAS Project for Young Scientists in Basic Research (YSBR-099).
+
+References
+
+ [1] Xun-Jie Xu, Zhe Wang, Shaomin Chen, Solar neutrino physics, Prog. Part. Nucl. Phys. 131 (2023) 104043, doi:10.1016/j.ppnp.2023.104043,
+       2209.14832.
+
+ [2] John N. Bahcall, Neta A. Bahcall, G. Shaviv, Present status of the theoretical predictions for the Cl-36 solar neutrino experiment, Phys.
+       Rev. Lett. 20 (1968) 1209-1212, doi:10.1103/PhysRevLett.20.1209.
+
+ [3] John N. Bahcall, Aldo M. Serenelli, Sarbani Basu, 10,000 standard solar models: a Monte Carlo simulation, Astrophys. J. Suppl. 165 (2006)
+       400-431, doi:10.1086/504043, astro-ph/0511337.
+
+ [4] Nu´ ria Vinyoles, Aldo M. Serenelli, Francesco L. Villante, Sarbani Basu, Johannes Bergstro¨ m, M. C. Gonzalez-Garcia, Michele Maltoni,
+       Carlos Pen~ a Garay, Ningqiang Song, A new Generation of Standard Solar Models, Astrophys. J. 835 (2) (2017) 202, doi:10.3847/1538-4357/
+       835/2/202, 1611.09867.
+
+ [5] Gabriel D. Orebi Gann, Kai Zuber, Daniel Bemmerer, Aldo Serenelli, The Future of Solar Neutrinos, Ann. Rev. Nucl. Part. Sci. 71 (2021)
+       491-528, doi:10.1146/annurev-nucl-011921-061243, 2107.08613.
+
+ [6] John N. Bahcall, Neutrino Astrophysics, Cambridge University Press 1989, 1p pp., doi:ISBN0-521-37975-X.
+ [7] R. S. Raghavan, New prospects for real time spectroscopy of low-energy electron neutrinos from the sun, Phys. Rev. Lett. 78 (1997)
+
+       3618-3621, doi:10.1103/PhysRevLett.78.3618.
+ [8] Raymond Davis, Jr., Don S. Harmer, Kenneth C. Hoffman, Search for neutrinos from the sun, Phys. Rev. Lett. 20 (1968) 1205-1209,
+
+       doi:10.1103/PhysRevLett.20.1205.
+ [9] B. T. Cleveland, Timothy Daily, Raymond Davis, Jr., James R. Distel, Kenneth Lande, C. K. Lee, Paul S. Wildenhain, Jack Ullman, Mea-
+
+       surement of the solar electron neutrino flux with the Homestake chlorine detector, Astrophys. J. 496 (1998) 505-526, doi:10.1086/305343.
+[10] John N. Bahcall, Roger K. Ulrich, Solar Models, Neutrino Experiments and Helioseismology, Rev. Mod. Phys. 60 (1988) 297-372, doi:
+
+       10.1103/RevModPhys.60.297.
+[11] John N. Bahcall, R. Davis, Solar Neutrinos - a Scientific Puzzle, Science 191 (1976) 264-267, doi:10.1126/science.191.4224.264.
+[12] William A. Fowler, What Cooks with Solar Neutrinos ?, Nature 238 (1972) 24-26, doi:10.1038/238024a0.
+[13] Arturo Cisneros, Effect of neutrino magnetic moment on solar neutrino observations, Astrophys. Space Sci. 10 (1971) 87-92, doi:10.1007/
+
+       BF00654607.
+[14] John N. Bahcall, N. Cabibbo, A. Yahil, Are neutrinos stable particles?, Phys. Rev. Lett. 28 (1972) 316-318, doi:10.1103/PhysRevLett.28.316.
+[15] M. S. Freedman, C. M. Stevens, E. P. Horwitz, L. H. Fuchs, J. L. Lerner, L. S. Goodman, W. J. Childs, J. Hessler, Solar neutrinos: Proposal
+
+       for a new test, Science 193 (1976) 1117-1118.
+[16] John N. Bahcall, et al., Proposed Solar Neutrino Experiment Using Ga-71, Phys. Rev. Lett. 40 (1978) 1351-1354, doi:10.1103/PhysRevLett.
+
+       40.1351.
+[17] W. C. Haxton, G. A. Cowan, Solar Neutrino Production of Long-Lived Isotopes and Secular Variations in the Sun, Science 210 (1980)
+
+       897-899, doi:10.1126/science.210.4472.897.
+[18] John Faulkner, Ronald L. Gilliland, Weakly interacting, massive particles and the solar neutrino flux, Astrophys. J. 299 (1985) 994-1000,
+
+       doi:10.1086/163766.
+[19] L. Wolfenstein, Neutrino Oscillations in Matter, Phys.Rev. D17 (1978) 2369-2374, doi:10.1103/PhysRevD.17.2369.
+[20] S. P. Mikheev, A. Yu. Smirnov, Resonance Amplification of Oscillations in Matter and Spectroscopy of Solar Neutrinos, Sov. J. Nucl. Phys.
+
+       42 (1985) 913-917, [Yad. Fiz.42,1441(1985)].
+[21] S. P. Mikheev, A. Yu. Smirnov, Resonant amplification of neutrino oscillations in matter and solar neutrino spectroscopy, Nuovo Cim. C9
+
+       (1986) 17-26, doi:10.1007/BF02508049.
+
