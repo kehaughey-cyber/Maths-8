@@ -1,0 +1,20 @@
+LEPTONS (reference): A = sqrt2, delta = 2/9
+  predicted m_mu/m_e = 206.770316, m_tau/m_e = 3477.4728 ; measured 206.768283, 3477.3653 ; Q = 0.666666666667
+
+DOWN-TYPE: A = (sqrt2 + sqrt3)/2 = 1.573132, Q_down = (13 + 2 sqrt6)/24 = 0.745791
+  measured (d, s, b): m_s/m_d = 19.894, m_b/m_d = 890.00, Koide Q = 0.73129
+  floor delta = 0.111111: m_s/m_d = 30.190, m_b/m_d = 1454.24, Q = 0.74579
+  delta fitted to m_s/m_d = 0.101330 rad: then m_b/m_d = 1036.97 (measured 890.00)
+  delta fitted to m_b/m_d: 0.096361 rad -> m_s/m_d = 16.387
+
+UP-TYPE: A_up = sqrt3 = 1.732051 (A^2_up - A^2_down = (7 - 2 sqrt6)/4 = 0.525255), Q_up = 1/3 + 3/6 = 0.833333
+  measured (u, c, t): m_c/m_u = 589.4, m_t/m_u = 79894, Koide Q = 0.84879
+  floor delta = 2/27 = 0.074074: m_c/m_u = 95.3, m_t/m_u = 11584, Q = 0.83333
+  delta fitted to m_c/m_u = 0.084234 rad: then m_t/m_u = 63193 (measured 79894)
+  quark masses are scheme- and scale-mixed (u, d, s at 2 GeV; c, b at their own mass; t direct): treat agreement better than ~30% as not meaningful and disagreement above a factor 2 as a clear miss
+
+NEUTRINOS: delta_nu = 12 deg + 21 eps/10 = 27.447817 deg (eps = 0.12838822 rad); A = sqrt2 assumed (the floor row does not state A for neutrinos)
+  family masses (arbitrary scale): ['0.03688', '0.87802', '5.08510'] ; m_2/m_1 = 23.807, m_3/m_1 = 137.880
+  predicted Delta m^2_21 / Delta m^2_32 = 0.03068 ; measured 0.03067 (7.53e-5 / 2.455e-3, PDG 2024 saved)
+  anchoring the scale on Delta m^2_32: m1 = 3.648e-04 eV, m2 = 8.6856e-03 eV, m3 = 0.05030 eV ; sum = 0.05935 eV (oscillation minimum 0.05898, cosmology bound 0.072 eV at 95%)
+  with delta_nu stated as matched to a measured ratio (floor F17: inversion-then-match) the ratio above is not a test; the sum and the lightest mass are what the family would add.
