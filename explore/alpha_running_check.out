@@ -1,0 +1,14 @@
+1/alpha_Y(m_Z) = 98.3662, 1/alpha_2(m_Z) = 29.5848, sum = 127.9510
+slope of 1/alpha_em above m_Z: d(1/alpha_em)/d ln mu = -0.583568 per e-fold (hypercharge -1.087559, SU(2) +0.503991)
+fermions only (all three generations, sum N_c Q^2 = 8): -(2/(3 pi)) x 8 = -1.697653 per e-fold; W and Higgs change the net slope to the line above
+  at 1 TeV                      1/alpha_Y =   95.762  1/alpha_2 =   30.792  1/alpha_em =  126.553
+  at 1e10 GeV                   1/alpha_Y =   78.232  1/alpha_2 =   38.915  1/alpha_em =  117.147
+  at 1e16 GeV                   1/alpha_Y =   63.207  1/alpha_2 =   45.878  1/alpha_em =  109.085
+  at Planck mass 1.22e19 GeV    1/alpha_Y =   55.477  1/alpha_2 =   49.460  1/alpha_em =  104.938
+e-folds from m_e to the Planck mass: 51.528 (m_e -> m_Z: 12.092, m_Z -> m_P: 39.436)
+  to reach 1/alpha = 1.0000 (alpha = 1 (e = 1 in Gaussian-like units)): total drop needed 136.036 over 51.53 e-folds = 2.640 per e-fold
+  to reach 1/alpha = 12.5664 (alpha = 1/(4 pi) (e = 1 in Heaviside-Lorentz)): total drop needed 124.470 over 51.53 e-folds = 2.416 per e-fold
+  supplied by one-loop SM from m_e to the Planck mass: 32.098 over 51.53 e-folds = 0.623 per e-fold (measured 137.036 -> 127.951 below m_Z, one-loop line above)
+  shortfall factor to reach 1.0000: needed / supplied = 4.238
+  shortfall factor to reach 12.5664: needed / supplied = 3.878
+one-loop Landau pole of alpha_Y: ln(mu/m_Z) = 90.45, mu = 1.740e+41 GeV; there 1/alpha_2 = 75.169, so 1/alpha_em = 75.169 (never reaches 1 or 12.566)

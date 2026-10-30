@@ -1,0 +1,11 @@
+SU(2) zero modes: gauge -22/3 + fermions 4 + Higgs 1/6 = b_2 = -19/6 (= -3.1667)
+SU(2) per KK level: gauge+A5 -7 + doubled fermions 8 + Higgs 1/6 = b_tilde_2 = 7/6 (= 1.1667)
+so above 1/R each KK level screens SU(2) (b_tilde_2 > 0), but the 1/alpha_2 slope is 1.167 vs 13.500 for hypercharge (b_tilde_Y = 27/2)
+
+tower scale with the hypercharge zero at the Planck mass: mu0 = 4.29719e+17 GeV, R/l_P = 28.411
+  at mu0: 1/alpha_Y = 59.117, 1/alpha_2 = 47.773, 1/alpha_em = 106.891
+  at the Planck mass: 1/alpha_Y = 0.0000, 1/alpha_2 = 44.666, 1/alpha_em = 44.666
+  1/alpha_Y reaches zero at 1.2209e+19 GeV (Lambda/mu0 = 28.41 levels); 1/alpha_2 reaches zero at 1.1872e+20 GeV (Lambda/mu0 = 276.28 levels): the SU(2) zero needs 9.7 times as many levels
+  at the SU(2) zero scale 1/alpha_Y is -5.326e+02 (hypercharge long past its pole)
+  per-level SU(2) coefficient needed for 1/alpha_2 = 0 at the Planck mass: b_tilde_2 = 12.036 (SM content gives 1.167); the difference is 16.30 Dirac SU(2) doublets per level (each adds 2/3 x 2 x 1/2 = 2/3)
+  and the sin^2 theta_W it would then imply is undetermined: both couplings infinite there, ratio = (limit), not a number

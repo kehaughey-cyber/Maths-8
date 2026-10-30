@@ -1,0 +1,31 @@
+sum Y^2 per generation = 10/3; fermion b_Y (3 gen) = 20/3; Higgs = 1/6; zero-mode b_Y = 41/6 (= 6.8333); KK-level b_tilde = 27/2 (= 13.5000)
+no tower: 1/alpha_Y = 0 at mu = 1.740e+41 GeV (= 1.425e+22 M_P)
+
+tower starting at mu0 = M_P/N: scale Lambda* where 1/alpha_Y = 0, and 1/alpha_Y at the Planck mass
+N (mu0 = M_P/N)        mu0 (GeV)      Lambda* (GeV)  Lambda*/M_P      1/aY(M_P)   
+12                     1.0174e+18     2.8466e+19     2.3316e+00       34.353      
+30                     4.0696e+17     1.1574e+19     9.4796e-01       -3.346      
+120                    1.0174e+17     2.9650e+18     2.4285e-01       -195.234    
+600                    2.0348e+16     6.0960e+17     4.9931e-02       -1224.831   
+12^3                   7.0653e+15     2.1542e+17     1.7645e-02       -3647.306   
+12^5                   4.9065e+13     1.6196e+15     1.3266e-04       -534567.578 
+12^7                   3.4073e+11     1.2103e+13     9.9132e-07       -76987850.264
+12^9                   2.3662e+09     9.0006e+10     7.3722e-09       -11086261320.427
+12^11                  1.6432e+07     6.6633e+08     5.4577e-11       -1596421641787.473
+12^13                  1.1411e+05     4.9145e+06     4.0254e-13       -229884716429803.531
+1e15 (mu0 = 12 TeV)    1.2209e+04     5.3962e+05     4.4199e-14       -2148591731740488.500
+2.4e15 (mu0 = 5 TeV)   5.0870e+03     2.2709e+05     1.8600e-14       -5156620156177250.000
+
+mu0 needed so that 1/alpha_Y = 0 exactly at the Planck mass (the one free parameter, solved, not chosen):
+  mu0 = 4.297186e+17 GeV  -> R / l_P = M_P/mu0 = 2.841138e+01 ; at that mu0 the check 1/alpha_Y(M_P) = 2.132e-14
+  same with 1/alpha_Y(M_P) = 1 (bare unity in these units): mu0 = 4.369541e+17 GeV, R / l_P = 2.794092e+01
+
+what the chain still needs: alpha_2. With 1/alpha_Y(Lambda) = 0 and sin^2 theta_W(Lambda) = 3/8 (alpha_Y/alpha_2 = 3/5) one gets 1/alpha_2(Lambda) = 0 as well (the ratio of two infinite couplings), which SU(2) cannot do because it is asymptotically free; the pair (alpha_Y, alpha_2) therefore needs a finite floor value or a separate input for alpha_2.
+
+sensitivity of the solved R / l_P (hypercharge zero exactly at the Planck mass) to conventions and inputs:
+  orbifold, one tower (b_tilde = 27/2)                 R / l_P = 28.411
+  circle without orbifold (two towers, b_tilde x 2)    R / l_P = 15.190
+  half the KK content (b_tilde x 1/2)                  R / l_P = 54.559
+  1/alpha_Y(m_Z) shifted by -0.2%: R / l_P = 28.319
+  1/alpha_Y(m_Z) shifted by +0.2%: R / l_P = 28.504
+  named floor numbers for comparison: Coxeter number / tick order 30, |2I| = 120, 600-cell vertices 120 and cells 600, 12^k; the closest to the solved 28.4 is 30 (5.6% away), but the solved value moves by a factor 2 with a counting convention
