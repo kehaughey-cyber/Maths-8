@@ -36,3 +36,6 @@ None. Every ratio in the carbon maps is arithmetic on sourced inputs or a dictio
 Muons: range 0.24–0.43/min, threshold-dependent. u/d: 1.1% ± 0.03% statistical, ±20% by scale convention. Neutrinos: 3.5e10 crossings/s, ~1e-11 interactions/s, one-sided. No result from this file changes an order-of-magnitude statement in `carbon_one_gram.md`.
 
 sha256: *carbon_gram_refinements.py 5a41823f16de7a0ea8953544ad45923b0a2bdad4a4e7e8e359d9ed30e159700b; *carbon_gram_refinements.out 87c77bddec713b1970e42c8640772051d3d93898ec80b99508b28043bfc04b61.
+
+## Correction (2026-10-30, append-only)
+The statement above that no ratio is derived from the floor and that the lepton mass ratios are inputs was too strong. The floor (`floor/field_equations_v3.txt` F15/F16) claims the charged-lepton ratios from the Q = 2/3 amplitude family with a phase δ = 2/9 rad and one priced identification; the arithmetic check is `explore/lepton_delta_check.py` (m_μ/m_e +9.8×10⁻⁶, m_τ/m_e +3.1×10⁻⁵ relative to PDG 2024). The floor also grades sin²θ_W = 1/φ³ as a matched ratio (CONS), not a derivation. See `maps/alpha_mechanism_status.md`, Update 2.

@@ -75,3 +75,6 @@ Held: 6N electrons (3.01e23). Cosmic muons through the cube face (0.4327 cm²): 
 ## Inputs and sources (saved in `explore/data/`)
 PDG 2024 leptons/quarks/gauge-Higgs/QCD review; PDG 2020 Cosmic Rays; AME2020 and NUBASE2020; NIST CCCBDB and WebBook; PeriodicTableJSON; Borexino Phase II (arXiv:1707.09279); Deur–Brodsky–de Téramond 2016 (arXiv:1604.08082); CODATA 2022 r_p; LNHB/DDEP ¹⁴C. Secondary or recalled: ¹²C charge radius 2.4702(22) fm and diamond a = 3.56683 Å (search-result quotations), FLAG m_ud, ⁴He/⁵⁶Fe/²⁰⁸Pb radii, sin²θ_W, pp mean energy.
 Scripts: `explore/{lepton_ladder_map,full_ladder_map,chemical_ladder_map,carbon_one_gram,carbon_gram_refinements,four_languages_ladder,colour_column,nucleon_row}.py` with matching `.out`; hashes in their maps.
+
+## Correction (2026-10-30, append-only)
+The statement above that no ratio is derived from the floor and that the lepton mass ratios are inputs was too strong. The floor (`floor/field_equations_v3.txt` F15/F16) claims the charged-lepton ratios from the Q = 2/3 amplitude family with a phase δ = 2/9 rad and one priced identification; the arithmetic check is `explore/lepton_delta_check.py` (m_μ/m_e +9.8×10⁻⁶, m_τ/m_e +3.1×10⁻⁵ relative to PDG 2024). The floor also grades sin²θ_W = 1/φ³ as a matched ratio (CONS), not a derivation. See `maps/alpha_mechanism_status.md`, Update 2.
