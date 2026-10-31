@@ -16,5 +16,13 @@ Rebuild after changing the data or the source: `py -3 -I -X utf8 -u explore/buil
 - Rung circles are sizes from the maps; their positions relative to the lattice copies carry no claim (see `maps/lattice_physical_map.md`: no common offset in the tower).
 - The Hubble radius is a recalled order of magnitude; formal (F) energy cells are non-relativistic estimates, not data.
 
-## Not yet in the lab
-The E-series (charged histories, the joint action), the 12-cone orbifold sphere, E8, the cosmological scale N, and the periodic-table work are not drawn.
+## Not yet in the lab (to add)
+- The E-series: charged histories and the joint action.
+- The 12-cone orbifold sphere.
+- E8.
+- The cosmological scale N.
+- The periodic-table work (`maps/known_ratios_elements.md`, `maps/size_vs_energy_filled.csv` for other elements).
+
+## Not verified
+- Not run on a phone or in any browser other than the Claude desktop built-in browser pane; touch input (pinch zoom, tap to pick a vertex) has not been tried and the layout has not been checked at phone width.
+- The Spine tab parses `floor/M5_SPINE_10-9-26.md` by its table rows and picked up 49 nodes (builder output: `rungs 21 spine nodes 49`). That count has not been checked against the M5 table by hand, so a node could be missing, merged or split by the parser.
