@@ -1,0 +1,8 @@
+l_P = 1.616255e-35 m
+H0 = 67.4 km/s/Mpc: c/H0 = 1.372497e+26 m = 14.507 Gly; k = log_phi(R/l_P) = 291.5436 (offset from nearest integer -0.4564); (R/l_P)^2 = 7.2111e+121; tick at that order = 4.5782e+17 s
+H0 = 70.0 km/s/Mpc: c/H0 = 1.321518e+26 m = 13.968 Gly; k = log_phi(R/l_P) = 291.4649 (offset from nearest integer +0.4649); (R/l_P)^2 = 6.6854e+121; tick at that order = 4.4081e+17 s
+H0 = 73.0 km/s/Mpc: c/H0 = 1.267209e+26 m = 13.394 Gly; k = log_phi(R/l_P) = 291.3777 (offset from nearest integer +0.3777); (R/l_P)^2 = 6.1472e+121; tick at that order = 4.2270e+17 s
+the value used before: 4.4e26 m = 46.51 Gly; k = 293.9645; (R/l_P)^2 = 7.4111e+122
+ratio 4.4e26 / c/H0(67.4) = 3.2058 ; in tower steps 2.4209
+Spread of k over H0 = 67.4 to 73 : 0.1659 (so the tower position of c/H0 is uncertain by about +-0.08)
+Age scales: 1/H0 = 4.5782e+17 s (H0 = 67.4); age of universe used in the lab: 13.8 Gyr = 4.3549e+17 s

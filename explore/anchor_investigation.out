@@ -1,0 +1,47 @@
+Lattice lengths in units of the edge chord (unit S^3): edge chord = 1.000000; edge arc (36 deg) = 1.016641; S3 radius = 1.618034; antipode distance (pi R) = 5.083204; S3 great circle (2 pi R) = 10.166407
+Anchor: that length at order k=0 equals l_P = 1.616255e-35 m. Rung R read as the same length at order k: k = log_phi(R / l_P) + log_phi(length factor)... shown below as k = log_phi(R/l_P) - log_phi(factor).
+
+k of each rung under each anchor (fractional offset to nearest integer in brackets)
+rung                          edge chord                  edge arc (36 deg)           S3 radius                   antipode distance (pi R)    S3 great circle (2 pi R)    
+tau Compton                   90.1345 [+0.1345]           90.1003 [+0.1003]           89.1345 [+0.1345]           86.7557 [-0.2443]           85.3153 [+0.3153]           
+proton Compton                91.4616 [+0.4616]           91.4273 [+0.4273]           90.4616 [+0.4616]           88.0828 [+0.0828]           86.6424 [-0.3576]           
+nucleon r_p                   94.3413 [+0.3413]           94.3070 [+0.3070]           93.3413 [+0.3413]           90.9624 [-0.0376]           89.5220 [-0.4780]           
+muon Compton                  95.9998 [-0.0002]           95.9655 [-0.0345]           94.9998 [-0.0002]           92.6210 [-0.3790]           91.1805 [+0.1805]           
+12C charge radius             96.5809 [-0.4191]           96.5466 [-0.4534]           95.5809 [-0.4191]           93.2021 [+0.2021]           91.7617 [-0.2383]           
+electron Compton              107.0793 [+0.0793]          107.0450 [+0.0450]          106.0793 [+0.0793]          103.7005 [-0.2995]          102.2601 [+0.2601]          
+C5+ 1s radius                 113.5806 [-0.4194]          113.5463 [-0.4537]          112.5806 [-0.4194]          110.2017 [+0.2017]          108.7613 [-0.2387]          
+Bohr radius                   117.3040 [+0.3040]          117.2697 [+0.2697]          116.3040 [+0.3040]          113.9252 [-0.0748]          112.4848 [+0.4848]          
+diamond C-C                   119.5299 [-0.4701]          119.4956 [+0.4956]          118.5299 [-0.4701]          116.1511 [+0.1511]          114.7106 [-0.2894]          
+diamond a                     121.2692 [+0.2692]          121.2349 [+0.2349]          120.2692 [+0.2692]          117.8904 [-0.1096]          116.4500 [+0.4500]          
+1 g radius                    155.0438 [+0.0438]          155.0095 [+0.0095]          154.0438 [+0.0438]          151.6649 [-0.3351]          150.2245 [+0.2245]          
+Hubble c/H0 (recalled, ~8%)   293.9645 [-0.0355]          293.9302 [-0.0698]          292.9645 [-0.0355]          290.5856 [-0.4144]          289.1452 [+0.1452]          
+
+How many rungs sit within +-0.02 of an integer, per anchor (the 11 rungs without the Hubble radius; expected by chance 11 x 0.04 = 0.44):
+  edge chord                   1  muon Compton -0.0002
+  edge arc (36 deg)            1  1 g radius +0.0095
+  S3 radius                    1  muon Compton -0.0002
+  antipode distance (pi R)     0  
+  S3 great circle (2 pi R)     0  
+  Changing the anchor adds the same constant to every k, so it cannot change how the rungs are spread relative to each other; it only changes which rung, if any, lands on an integer.
+
+Nested structure per order, anchor = edge chord at k=0 (each copy: 120 vertices, 720 edges, 600 cells; diameter 5 edges; 30-tick clock; fold at 15 ticks):
+rung                           order k      copies 0..k    vertices 0..k    order-0 ticks per order-0 edges per
+                                                           (120 each)       tick of order k  edge of order k 
+tau Compton                    90.1345      91             10920            6.870783e+18     6.870783e+18    
+proton Compton                 91.4616      92             11040            1.301211e+19     1.301211e+19    
+nucleon r_p                    94.3413      95             11400            5.201840e+19     5.201840e+19    
+muon Compton                   95.9998      97             11640            1.155507e+20     1.155507e+20    
+12C charge radius              96.5809      98             11760            1.528348e+20     1.528348e+20    
+electron Compton               107.0793     108            12960            2.389222e+22     2.389222e+22    
+C5+ 1s radius                  113.5806     115            13800            5.456825e+23     5.456825e+23    
+Bohr radius                    117.3040     118            14160            3.274095e+24     3.274095e+24    
+diamond C-C                    119.5299     121            14520            9.555934e+24     9.555934e+24    
+diamond a                      121.2692     122            14640            2.206849e+25     2.206849e+25    
+1 g radius                     155.0438     156            18720            2.524854e+32     2.524854e+32    
+Hubble c/H0 (recalled, ~8%)    293.9645     295            35400            2.722343e+61     2.722343e+61    
+  (order-0 ticks per tick of order k = R/l_P because tick = edge/c at every order; it is the same number as order-0 edges per edge of order k.)
+
+Raw counts at the largest rung, edge anchor: k = 293.9645; (R/l_P)^2 = 7.411150e+122; (R/l_P)^3 = 2.017569e+184; phi^(2k) = 7.411150e+122.
+  Orders from the Planck copy to the gram radius: 155.0438; to the Hubble radius: 293.9645.
+
+Ticks of one copy per tick of a larger one (the same clock count at both orders, 30-tick cycle): ratio of tick durations between orders j and k is phi^(k-j); between adjacent orders 1.618034.

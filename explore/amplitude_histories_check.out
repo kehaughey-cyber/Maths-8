@@ -1,0 +1,12 @@
+random exit (m = 1): first-moment ratios per tick: 0.809016994 0.809016994 0.809016994 0.809016994 0.809016994 0.809016994 0.809016994 0.809016994 ; phi/2 = 0.809016994
+T only (m = 0): amplitude on the start history after 10 ticks = 1.0
+after reinjection at tick 30: |M|/size = 1.001732724
+after reinjection at tick 60: |M|/size = 1.001735726
+after reinjection at tick 90: |M|/size = 1.001735731
+after reinjection at tick 120: |M|/size = 1.001735731
+1/(1-(phi/2)^30) = 1.001735731
+eps = 0.128388220 ; sag = eps/(1-q)/(864 phi^2) = 5.685770e-05 rad (floor: 5.686e-5)
+inject k=0, seen k=117: arrival 3.9923e-19 s = 2.6180 ticks of the observer order; faster-than-light check: size-difference light time 1.5249e-19 s
+inject k=0, seen k=291: arrival 9.2272e+17 s = 2.6180 ticks of the observer order; faster-than-light check: size-difference light time 3.5245e+17 s
+inject k=291, seen k=120: arrival 9.2272e+17 s = 1428439211243196983035853334745448448.0000 ticks of the observer order; faster-than-light check: size-difference light time 3.5245e+17 s
+inject k=96, seen k=117: arrival 3.9921e-19 s = 2.6179 ticks of the observer order; faster-than-light check: size-difference light time 1.5248e-19 s

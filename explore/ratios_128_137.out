@@ -1,0 +1,12 @@
+Pairwise size ratios (larger/smaller) in [128,137.5]:
+  Bohr radius / electron Compton = 137.035999
+Tower-step differences log_phi(R_j/R_i) in [128,137.5]:
+Orders (k from l_P, edge anchor) in the range: none of the table is listed unless within range; k values:
+Lattice counts and combinations of them in the range:
+  direct combinations (sums, differences, products, ratios of two counts) in range:
+    vertices + neighbours = 132.0000
+    neighbours - ten-cycles = 132.0000
+Powers of phi and 2pi-type numbers near the range: phi^10 = 122.9919, phi^10+... ; 2^7=128; 4pi*... ; 12^2 - ... = 144; 60*pi/... 
+1/alpha (CODATA 2022) = 137.035999177
+Bohr radius / electron reduced Compton length = 137.035999 (identity: = 1/alpha)
+phi^k closest to 1/alpha: k=10.2247 ; 1/alpha / phi^10 = 1.11419 ; 1/alpha / phi^10 residual

@@ -28,7 +28,8 @@ for r in rows[1:]:
     rungs.append(dict(name=r[0], R=float(r[ix['Size R (m)']]), cls=cls(r[0]), E=E))
 rungs.append(dict(name='Planck length (anchor)', R=1.616255e-35, cls='anchor', E=[], note='The anchor assumption of the lab: the edge at tower copy k = 0 (spine nodes 17/18/33; non-discriminating).'))
 rungs.append(dict(name='proton Compton length', R=2.1030891e-16, cls='hadron', E=[], note='hbar / (m_p c); r_p / this = 3.9977 (CODATA 2022).'))
-rungs.append(dict(name='Hubble radius c/H0 (recalled, ±8%)', R=4.4e26, cls='cosmic', E=[], note='Order of magnitude only; recalled, not a saved source.'))
+rungs.append(dict(name='Hubble radius c/H0 (H0 = 67.4)', R=1.372497e26, cls='cosmic', E=[], note='c/H0 with H0 = 67.4 km/s/Mpc (the value used in explore/positronium_map.py); H0 itself is recalled, not a saved source. Corrected 2026-10-31: the earlier 4.4e26 m was the comoving observable-universe radius, not c/H0.'))
+rungs.append(dict(name='Observable-universe radius (comoving, ~46.5 Gly)', R=4.4e26, cls='cosmic', E=[], note='About 46.5 Gly; recalled, not a saved source. This is the value earlier mislabelled Hubble radius.'))
 spine = []
 raw = open(os.path.join(ROOT, 'floor', 'M5_SPINE_10-9-26.md'), 'rb').read()
 text = raw.decode('utf-16') if (raw[0] in (255, 254)) else raw.decode('utf-8')

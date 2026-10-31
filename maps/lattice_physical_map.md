@@ -36,3 +36,5 @@ Planck length to the Hubble radius: 293.964 tower steps; to the radius of 1 g: 1
 A placement, not a derivation. The anchor is an assumption (non-discriminating); the φ step per scale is the html's; the lattice's internal structure (counts, clocks, fold) is exact mathematics. The map shows that, on this anchor, the known rungs do not fall on one lattice offset, and that the lattice supplies no length beyond ℓ_P φ^k.
 
 sha256: *lattice_physical_map.py f61d384e3d377618400303a818def88fe6caa5598684433e5a797b38cfdbca59; *lattice_physical_map.out 0a424268d43aac012f4648aaf4854503d5dfa5715d49a1953a748655279dca49.
+
+**Correction (2026-10-31, appended):** the "Hubble radius c/H₀" row (4.4e26 m, k = 293.96) is the comoving observable-universe radius, not c/H₀. c/H₀ at H₀ = 67.4 is 1.3725e26 m, k = 291.54, not near an integer. The statements about the Hubble radius being near an integer and known to ~8% are retracted. See `maps/hubble_radius_correction.md`.
