@@ -1,0 +1,35 @@
+LATTICE (cold): vertices 120, edges 720, edge chord 0.618034 (= 1/phi on the unit sphere), edge arc 36.0000 deg (= 36), S^3 radius / chord = 1.618034 (= phi)
+  neighbours per vertex: [12] ; graph diameter 5 ; vertices at graph distance 0..5 from a vertex: [1, 12, 32, 42, 32, 1]
+  w-shells (w: count): 1.0000:1, 0.8090:12, 0.5000:20, 0.3090:12, 0.0000:30, -0.3090:12, -0.5000:20, -0.8090:12, -1.0000:1
+  tick q -> g5 q g6 with g5 of order 5 and g6 of order 6: cycle lengths [30, 30, 30, 30] ; after 15 ticks vertex 0 sits at dot -1.000000 with its start (the fold: -1 = antipode)
+
+ANCHOR (assumption, non-discriminating): edge at scale k = 0 is l_P = 1.616255e-35 m, tick = l_P/c = 5.391246e-44 s, front speed c (the wave advances one edge per tick by construction)
+  at scale k: edge = l_P phi^k; S^3 radius = phi x chord edge; tick = edge/c; 30-tick cycle = 30 ticks; fold = 15 ticks; the antipode is reached after 5 ticks (graph diameter)
+  w-shell heights at scale k in units of the S^3 radius: 1, phi/2 = 0.809017, 1/2, psi/2 = 0.309017, 0 (counts 1, 12, 20, 12, 30, 12, 20, 12, 1)
+
+RUNGS on the tower: k = log_phi(R / l_P) if the rung is read as one lattice edge (subtract 1 to read it as the S^3 radius; same fractional part). Nearest integer scale, offset, and the factor the rung is off from that scale.
+rung                                                 R (m)       k_edge     nearest  offset   factor   tick if edge s 30 ticks s  
+tau Compton length                                   1.1105e-16  90.1345    90        +0.1345 1.0669   3.7042e-25     1.1113e-23  
+proton Compton length                                2.1031e-16  91.4616    91        +0.4616 1.2487   7.0152e-25     2.1045e-23  
+nucleon charge radius r_p (CODATA 2022)              8.4075e-16  94.3413    94        +0.3413 1.1785   2.8044e-24     8.4133e-23  
+muon Compton length                                  1.8676e-15  95.9998    96        -0.0002 0.9999   6.2296e-24     1.8689e-22  
+12C charge radius (IAEA)                             2.4702e-15  96.5809    97        -0.4191 0.8174   8.2397e-24     2.4719e-22  
+electron Compton length                              3.8616e-13  107.0793   107       +0.0793 1.0389   1.2881e-21     3.8643e-20  
+C5+ 1s radius a0/6                                   8.8196e-12  113.5806   114       -0.4194 0.8172   2.9419e-20     8.8257e-19  
+Bohr radius a0                                       5.2918e-11  117.3040   117       +0.3040 1.1575   1.7651e-19     5.2954e-18  
+diamond C-C bond                                     1.5445e-10  119.5299   120       -0.4701 0.7975   5.1518e-19     1.5456e-17  
+diamond lattice constant                             3.5668e-10  121.2692   121       +0.2692 1.1383   1.1898e-18     3.5693e-17  
+radius of 1 g of diamond (sphere)                    4.0808e-03  155.0438   155       +0.0438 1.0213   1.3612e-11     4.0836e-10  
+Hubble radius c/H0 (order of magnitude, recalled)    4.4000e+26  293.9645   294       -0.0355 0.9831   1.4677e+18     4.4030e+19  
+
+Fractional parts of k_edge (raw): 0.135 0.462 0.341 1.000 0.581 0.079 0.581 0.304 0.530 0.269 0.044 0.964
+  mean resultant length of the fractional parts = 0.2616 (1 = identical offsets, 0 = evenly spread); 12 independent uniform values reach 0.2616 or more with probability 0.449 (Monte Carlo, 100000 draws)
+  a different anchor (l_P times s) shifts every k by the same log_phi(s) and leaves this statistic unchanged: it asks only whether the rungs sit at one common offset in the tower.
+  the rungs are not independent (three Compton lengths are masses; a0 = lambda_e/alpha), so the probability overstates the significance of any clustering.
+
+Between neighbouring rungs, raw tower steps: tau Compton length -> proton Compton length: 1.327; proton Compton length -> nucleon charge radius r_p: 2.880; nucleon charge radius r_p -> muon Compton length: 1.659; muon Compton length -> 12C charge radius: 0.581; 12C charge radius -> electron Compton length: 10.498; electron Compton length -> C5+ 1s radius a0/6: 6.501; C5+ 1s radius a0/6 -> Bohr radius a0: 3.723; Bohr radius a0 -> diamond C-C bond: 2.226; diamond C-C bond -> diamond lattice constant: 1.739; diamond lattice constant -> radius of 1 g of diamond: 33.775; radius of 1 g of diamond -> Hubble radius c/H0: 138.921
+Planck length to Hubble radius: 293.964 tower steps; Planck length to the radius of 1 g: 155.044
+
+PRECISION OF THE ONE NEAR-INTEGER ENTRY: muon Compton length k_edge = 95.999805 (offset from 96: -0.000195). Uncertainty on k from G = 6.67430(15)e-11: l_P changes by 1.1e-5 relative, so k by 2.3e-05; from the muon mass (2.2e-8 relative): 4.6e-08.
+  the offset is 8.5 sigma_G from an exact integer. Reading the muon length instead as the unreduced Compton wavelength 2 pi x lambda-bar shifts k by log_phi(2 pi) = 3.8193, so the near-integer position belongs to the reduced length with the Planck length l_P = sqrt(hbar G/c^3) as anchor.
+  chance of landing within +-0.0002 of an integer for one rung: 0.0004; for any of 12 rungs: 0.005; with the five anchors l_P, 2 pi l_P, l_P/sqrt(8 pi), l_P sqrt(4 pi), l_P/(2 pi) tried, about 0.02.

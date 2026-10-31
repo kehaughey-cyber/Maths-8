@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SPINE LAB — the lattice and the scales</title>
+<style>
+  :root{--bg:#12141a;--panel:#1a1d26;--ink:#0a0c11;--gold:#d4a651;--gold-dim:#8a6f3a;--text:#c9cdd8;--muted:#7a8194;--line:#262b38;
+        --M:#8fc98f;--C:#7fb4d9;--F:#e0876a;--radius:6px;}
+  *{box-sizing:border-box;margin:0;padding:0;}
+  html,body{height:100%;overflow:hidden;background:var(--bg);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;color:var(--text);font-size:13px;}
+  .mono{font-family:ui-monospace,"SF Mono",Menlo,Consolas,monospace;}
+  #app{display:flex;flex-direction:column;height:100%;}
+  #topbar{display:flex;align-items:center;gap:12px;padding:7px 12px;background:var(--panel);border-bottom:1px solid var(--line);flex-wrap:wrap;}
+  #brand .name{font-weight:700;letter-spacing:.18em;color:var(--gold);font-size:14px;} #brand .sub{color:var(--muted);font-size:11px;margin-left:8px;}
+  .group{display:flex;align-items:center;gap:5px;} .lbl{color:var(--muted);font-size:11px;text-transform:uppercase;letter-spacing:.08em;}
+  button,select{background:#242938;color:var(--text);border:1px solid #323950;border-radius:var(--radius);padding:4px 9px;cursor:pointer;font-size:12px;}
+  button:hover{border-color:var(--gold-dim);} button.active{background:#3a3323;border-color:var(--gold);color:var(--gold);}
+  .toggle{display:flex;align-items:center;gap:4px;cursor:pointer;color:var(--muted);font-size:12px;user-select:none;} .toggle input{accent-color:var(--gold);}
+  #main{flex:1;display:flex;min-height:0;}
+  #stage{flex:1;position:relative;min-width:0;}
+  canvas{display:block;}
+  #cv{position:absolute;inset:0;width:100%;height:100%;background:var(--ink);touch-action:none;cursor:grab;}
+  #hud{position:absolute;left:10px;top:8px;font-size:12px;line-height:1.55;pointer-events:none;text-shadow:0 0 4px #000;}
+  #hud .big{font-size:18px;color:var(--gold);} #hud .mut{color:var(--muted);}
+  #edgehint{position:absolute;left:10px;bottom:8px;font-size:11px;color:var(--muted);line-height:1.5;pointer-events:none;text-shadow:0 0 4px #000;}
+  #bench{width:370px;flex:0 0 370px;background:var(--panel);border-left:1px solid var(--line);display:flex;flex-direction:column;min-height:0;}
+  #tabs{display:flex;border-bottom:1px solid var(--line);} #tabs button{flex:1;border:none;border-radius:0;background:transparent;padding:8px 4px;color:var(--muted);border-bottom:2px solid transparent;}
+  #tabs button.active{color:var(--gold);border-bottom-color:var(--gold);background:transparent;}
+  #panes{flex:1;overflow:auto;padding:10px 12px;}
+  .pane{display:none;} .pane.show{display:block;}
+  h4{color:var(--gold);font-weight:600;font-size:12px;margin:10px 0 4px;letter-spacing:.06em;text-transform:uppercase;} h4:first-child{margin-top:0;}
+  .row{display:flex;justify-content:space-between;gap:8px;padding:2px 0;border-bottom:1px solid #20242f;} .row .k{color:var(--muted);} .row .v{text-align:right;}
+  .chip{display:inline-block;min-width:16px;text-align:center;border-radius:3px;font-size:10px;padding:0 3px;margin-left:5px;color:#0b0d12;} .chip.M{background:var(--M);} .chip.C{background:var(--C);} .chip.F{background:var(--F);}
+  .rung{display:flex;justify-content:space-between;gap:6px;padding:3px 4px;cursor:pointer;border-radius:4px;} .rung:hover{background:#242938;} .rung.sel{background:#3a3323;}
+  .rung .n{color:var(--text);} .rung .s{color:var(--muted);font-size:11px;white-space:nowrap;}
+  .note{color:var(--muted);font-size:11px;margin:4px 0;line-height:1.45;} .ok{color:#8fc98f;} .warn{color:#e0876a;}
+  table{border-collapse:collapse;width:100%;font-size:11px;} td{padding:3px 4px;border-bottom:1px solid #20242f;vertical-align:top;} tr.node{cursor:pointer;} tr.node:hover{background:#242938;} tr.lab td:first-child{color:var(--gold);}
+  input[type=text]{width:100%;background:#12151c;color:var(--text);border:1px solid #323950;border-radius:var(--radius);padding:5px 8px;margin-bottom:6px;font-size:12px;}
+  #rulerwrap{height:84px;flex:0 0 84px;background:var(--panel);border-top:1px solid var(--line);position:relative;} #rl{position:absolute;inset:0;width:100%;height:100%;cursor:ew-resize;}
+  #status{display:flex;gap:18px;align-items:center;padding:4px 12px;height:26px;flex:0 0 26px;background:var(--panel);border-top:1px solid var(--line);font-size:11px;overflow:hidden;white-space:nowrap;}
+  #status .k{color:var(--muted);margin-right:4px;} #verify{color:#8fc98f;}
+</style>
+</head>
+<body>
+<div id="app">
+  <div id="topbar">
+    <div id="brand"><span class="name">SPINE LAB</span><span class="sub">the lattice and the scales — a visual reference built from the spine</span></div>
+    <div class="group"><span class="lbl">Jump</span>
+      <button data-rung="Planck">Planck</button><button data-rung="nucleon (proton">nucleon</button><button data-rung="12C nucleus">nucleus</button><button data-rung="C valence">atom</button><button data-rung="diamond C-C">bond</button><button data-rung="the gram">gram</button><button data-rung="Hubble">Hubble</button></div>
+    <div class="group"><span class="lbl">Rings</span>
+      <select id="ringMode"><option value="dec">decades</option><option value="p12">powers of 12</option><option value="phi">φ tower</option><option value="none">none</option></select></div>
+    <div class="group">
+      <label class="toggle"><input type="checkbox" id="tLattice" checked> lattice copies</label>
+      <label class="toggle"><input type="checkbox" id="tRungs" checked> rung circles</label>
+      <label class="toggle"><input type="checkbox" id="tTumble" checked> 4D tumble</label>
+    </div>
+  </div>
+  <div id="main">
+    <div id="stage"><canvas id="cv"></canvas><div id="hud" class="mono"></div><div id="edgehint" class="mono"></div></div>
+    <div id="bench">
+      <div id="tabs"><button class="active" data-tab="scale">Scale</button><button data-tab="machine">Machine</button><button data-tab="rungs">Rungs</button><button data-tab="spine">Spine</button></div>
+      <div id="panes">
+        <div class="pane show" id="p-scale"></div>
+        <div class="pane" id="p-machine"></div>
+        <div class="pane" id="p-rungs"></div>
+        <div class="pane" id="p-spine"></div>
+      </div>
+    </div>
+  </div>
+  <div id="rulerwrap"><canvas id="rl"></canvas></div>
+  <div id="status" class="mono"><span id="verify">—</span><span><span class="k">wheel</span>zoom (shift ×5)</span><span><span class="k">drag</span>rotate 3D</span><span><span class="k">shift-drag</span>rotate 4D</span><span><span class="k">ruler</span>click or drag to jump</span><span><span class="k">+ / −</span>zoom</span></div>
+</div>
+<script>
+(()=>{
+"use strict";
+const DATA = /*DATA*/null;
+const PHI=(1+Math.sqrt(5))/2, PSI=PHI-1, CC=299792458, HBARC=1.973269804e-7, LP=1.616255e-35;
+const L10=Math.log(10), LPHI=Math.log(PHI), L12=Math.log(12);
+
+/* ===================== the lattice, cold (same generation as lattice(1).html) ===================== */
+function evenPerms(a){const out=[];const rec=(arr,cur,par)=>{if(!arr.length){if(par===0)out.push(cur.slice());return;}
+  for(let i=0;i<arr.length;i++)rec(arr.slice(0,i).concat(arr.slice(i+1)),cur.concat([arr[i]]),(par+i)%2);};rec(a,[],0);return out;}
+function genVertices(){const V=[];
+  for(let i=0;i<4;i++)for(const s of [1,-1]){const v=[0,0,0,0];v[i]=s;V.push(v);}
+  for(let m=0;m<16;m++)V.push([(m&1?-.5:.5),(m&2?-.5:.5),(m&4?-.5:.5),(m&8?-.5:.5)]);
+  const base=[0,.5,PHI/2,PSI/2];
+  for(const p of evenPerms([0,1,2,3]))for(let m=0;m<8;m++){const v=[0,0,0,0];let bit=0;
+    for(let i=0;i<4;i++){const mag=base[p[i]];if(mag===0)v[i]=0;else{v[i]=(m>>bit&1?-mag:mag);bit++;}}V.push(v);}
+  return V;}
+const dot=(a,b)=>a[0]*b[0]+a[1]*b[1]+a[2]*b[2]+a[3]*b[3];
+function genEdges(V){const E=[];for(let i=0;i<120;i++)for(let j=i+1;j<120;j++)if(Math.abs(dot(V[i],V[j])-PHI/2)<1e-9)E.push([i,j]);return E;}
+const qmul=(a,b)=>[a[0]*b[0]-a[1]*b[1]-a[2]*b[2]-a[3]*b[3],a[0]*b[1]+a[1]*b[0]+a[2]*b[3]-a[3]*b[2],a[0]*b[2]-a[1]*b[3]+a[2]*b[0]+a[3]*b[1],a[0]*b[3]+a[1]*b[2]-a[2]*b[1]+a[3]*b[0]];
+function nearest(V,q){let bi=-1,bd=1e9;for(let i=0;i<120;i++){const d=(V[i][0]-q[0])**2+(V[i][1]-q[1])**2+(V[i][2]-q[2])**2+(V[i][3]-q[3])**2;if(d<bd){bd=d;bi=i;}}return bd<1e-9?bi:-1;}
+const V=genVertices(), E=genEdges(V);
+const G5=V[8], G6=V[73];
+const TICK=V.map(v=>nearest(V,qmul(qmul(G5,v),G6)));
+const clockOf=new Array(120).fill(-1), phaseOf=new Array(120).fill(-1);
+{const seen=new Array(120).fill(false);let c=0;for(let s=0;s<120;s++){if(seen[s])continue;let i=s,ph=0;while(!seen[i]){seen[i]=true;clockOf[i]=c;phaseOf[i]=ph++;i=TICK[i];}c++;}}
+const NCLOCKS=Math.max(...clockOf)+1;
+const okLoops=NCLOCKS===4&&[0,1,2,3].every(c=>clockOf.filter(x=>x===c).length===30);
+const ADJ=Array.from({length:120},()=>[]);E.forEach(([i,j])=>{ADJ[i].push(j);ADJ[j].push(i);});
+const shellVals=[...new Set(V.map(v=>+v[0].toFixed(6)))].sort((a,b)=>b-a);
+const shellOf=V.map(v=>shellVals.findIndex(s=>Math.abs(s-v[0])<1e-6));
+/* the native continuation T (spine D2): directed edge (u,s) -> (s, phi s - u) */
+const DE=[];const deId=new Map();
+for(let u=0;u<120;u++)for(const s of ADJ[u]){deId.set(u*120+s,DE.length);DE.push([u,s]);}
+const TN=new Array(DE.length).fill(-1);let tOK=true;
+for(let id=0;id<DE.length;id++){const[u,s]=DE[id];const t=nearest(V,[PHI*V[s][0]-V[u][0],PHI*V[s][1]-V[u][1],PHI*V[s][2]-V[u][2],PHI*V[s][3]-V[u][3]]);
+  if(t<0||!deId.has(s*120+t)){tOK=false;continue;}TN[id]=deId.get(s*120+t);}
+const tCycle=new Array(DE.length).fill(-1);let nTc=0,tLens=new Set();
+if(tOK){for(let s=0;s<DE.length;s++){if(tCycle[s]>=0)continue;let i=s,n=0;while(tCycle[i]<0){tCycle[i]=nTc;i=TN[i];n++;}tLens.add(n);nTc++;}}
+let t5anti=0,t10id=0;
+if(tOK){for(let id=0;id<DE.length;id++){let x=id;for(let k=0;k<5;k++)x=TN[x];const[u]=DE[id],[a]=DE[x];
+    if(Math.abs(dot(V[a],V[u])+1)<1e-9)t5anti++;let y=x;for(let k=0;k<5;k++)y=TN[y];if(y===id)t10id++;}}
+document.getElementById('verify').textContent='✓ cold: '+V.length+' vertices · '+E.length+' edges · '+(okLoops?'4×30 clocks':'CLOCK FAIL')+' · fold@15 · '+DE.length+' directed edges · '+(tOK?nTc+' T-cycles (len '+[...tLens].join(',')+'), T⁵ antipode '+t5anti+'/'+DE.length+', T¹⁰ id '+t10id+'/'+DE.length:'T FAIL');
+
+/* ===================== view state ===================== */
+const cv=document.getElementById('cv'),ctx=cv.getContext('2d'),rl=document.getElementById('rl'),rctx=rl.getContext('2d');
+let W=0,H=0,DPR=1,RW=0,RH=0;
+const LR_MIN=-36.5, LR_MAX=27.8;                 // log10 of the view radius in metres
+const S={lr:-10.3, anim:null, colorMode:'shell', copies:true, rungsOn:true, tumble:true, ring:'dec',
+         picked:-1, t:0, running:false, wave:null, walker:-1, walkerTrail:[], walkRun:false, selRung:-1, nbIdx:0};
+let R4=[1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1];
+const rotPlane=(i,j,a)=>{const M=[1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1];const c=Math.cos(a),s=Math.sin(a);M[i*4+i]=c;M[j*4+j]=c;M[i*4+j]=-s;M[j*4+i]=s;return M;};
+const mmul=(A,B)=>{const C=new Array(16).fill(0);for(let i=0;i<4;i++)for(let j=0;j<4;j++){let s=0;for(let k=0;k<4;k++)s+=A[i*4+k]*B[k*4+j];C[i*4+j]=s;}return C;};
+const applyM=(M,v)=>[M[0]*v[0]+M[1]*v[1]+M[2]*v[2]+M[3]*v[3],M[4]*v[0]+M[5]*v[1]+M[6]*v[2]+M[7]*v[3],M[8]*v[0]+M[9]*v[1]+M[10]*v[2]+M[11]*v[3],M[12]*v[0]+M[13]*v[1]+M[14]*v[2]+M[15]*v[3]];
+const SHELL_COLORS=['#f7e06a','#f2b24f','#e0876a','#cf6a86','#b35a9e','#8f55ae','#6a4fae','#4a4a9e','#33418a'];
+const CLOCK_COLORS=['#e0876a','#8fc98f','#7fb4d9','#b39ddb'];
+const CLASS_COLORS={anchor:'#f4d47c',lepton:'#e0876a',hadron:'#cf6a86',nuclear:'#d4a017',atomic:'#7fb4d9',molecule:'#8fc98f',lattice:'#6fd0c0',bulk:'#b39ddb',cosmic:'#c9cdd8'};
+const RUNGS=DATA.rungs.slice().sort((a,b)=>a.R-b.R);
+const fmt=(x,d=3)=>{if(x===0)return '0';const e=Math.floor(Math.log10(Math.abs(x)));if(e>=-2&&e<=4)return (+x.toPrecision(d)).toString();return (x/Math.pow(10,e)).toFixed(d-1)+'e'+e;};
+const fmtT=s=>{if(!isFinite(s))return '—';const u=[[1e-45,'×10⁻⁴⁵ s'],[1,'s']];const a=Math.abs(s);const pre=[[1e18,'Gyr'],[3.15576e16,'Gyr'],[3.15576e7,'yr'],[1,'s'],[1e-3,'ms'],[1e-6,'µs'],[1e-9,'ns'],[1e-12,'ps'],[1e-15,'fs'],[1e-18,'as'],[1e-21,'zs'],[1e-24,'ys']];
+  if(a>=3.15576e16)return fmt(s/3.15576e16)+' Gyr';if(a>=3.15576e7)return fmt(s/3.15576e7)+' yr';for(const[v,n]of pre.slice(3)){if(a>=v)return fmt(s/v)+' '+n;}return fmt(s)+' s';};
+const fmtL=m=>fmt(m)+' m';
+function resize(){DPR=window.devicePixelRatio||1;let r=cv.getBoundingClientRect();W=r.width;H=r.height;cv.width=Math.round(W*DPR);cv.height=Math.round(H*DPR);ctx.setTransform(DPR,0,0,DPR,0,0);
+  r=rl.getBoundingClientRect();RW=r.width;RH=r.height;rl.width=Math.round(RW*DPR);rl.height=Math.round(RH*DPR);rctx.setTransform(DPR,0,0,DPR,0,0);}
+window.addEventListener('resize',resize);
+function setLR(v){S.lr=Math.min(LR_MAX,Math.max(LR_MIN,v));}
+function animateTo(target,ms=1100){const a=S.lr,t0=performance.now();target=Math.min(LR_MAX,Math.max(LR_MIN,target));S.anim={a,b:target,t0,ms};}
+
+/* ===================== scene ===================== */
+function geom(){const Rpx=Math.min(W,H)/2*0.9, view=Math.pow(10,S.lr), ppm=Rpx/view; return {Rpx,view,ppm,cx:W/2,cy:H/2};}
+function kappa(g){return Math.log(g.view*0.5/LP)/LPHI-1;}           // continuous tower index whose S3 radius (phi^(k+1) l_P) is half the view radius
+function projectUnit(){const out=[];const CAM4=2.3,CAM3=5;for(let i=0;i<120;i++){const r=applyM(R4,V[i]);const k4=CAM4/(CAM4-r[0]);const x=r[1]*k4,y=r[2]*k4,z=r[3]*k4;const k3=CAM3/(CAM3-z);out.push([x*k3,y*k3,z+0.35*r[0]]);}return out;}
+function drawScene(){
+  ctx.clearRect(0,0,W,H);const g=geom();const{cx,cy,Rpx,ppm}=g;
+  /* rings */
+  if(S.ring!=='none'){ctx.font='10px ui-monospace,Menlo,monospace';ctx.lineWidth=1;
+    const list=[];
+    if(S.ring==='dec'){for(let n=Math.floor(S.lr-3.2);n<=Math.ceil(S.lr+0.2);n++)list.push([Math.pow(10,n),'1e'+n+' m']);}
+    else if(S.ring==='p12'){for(let n=Math.floor((S.lr*L10-Math.log(LP))/L12-3.5);n<=Math.ceil((S.lr*L10-Math.log(LP))/L12+0.3);n++)list.push([LP*Math.pow(12,n),'ℓP·12^'+n]);}
+    else{const k0=Math.floor((S.lr*L10-Math.log(LP))/LPHI);for(let k=k0-9;k<=k0+1;k++)list.push([LP*Math.pow(PHI,k),'ℓP·φ^'+k]);}
+    for(const[m,l]of list){const r=m*ppm;if(r<6||r>Rpx*1.08)continue;ctx.strokeStyle='rgba(122,129,148,0.16)';ctx.beginPath();ctx.arc(cx,cy,r,0,7);ctx.stroke();ctx.fillStyle='rgba(122,129,148,0.55)';ctx.fillText(l,cx+r*0.7071+3,cy-r*0.7071-3);}}
+  /* lattice copies */
+  const kap=kappa(g);const kb=Math.round(kap);
+  if(S.copies){const P=projectUnit();
+    const items=[];for(let j=kb-2;j<=kb+2;j++){const rho=Math.pow(PHI,j+1)*LP*ppm;const wgt=Math.pow(Math.max(0,1-Math.abs(j-kap)/2.6),1.4);if(wgt<=0.01||rho<2||rho>Rpx*8)continue;items.push({j,rho,wgt});}
+    for(const it of items){const sc=it.rho*0.5,A=it.wgt;const base=(it.j===kb);
+      ctx.lineWidth=base?1:0.7;
+      for(const[a,b]of E){let col='127,180,217',al=0.10+0.22*A;
+        if(base&&S.wave){const t1=S.wave.arr[a],t2=S.wave.arr[b];if(t1<=S.wave.t&&t2<=S.wave.t){col='143,201,143';al=0.6;}}
+        ctx.strokeStyle='rgba('+col+','+(al*(base?1:0.7)).toFixed(3)+')';ctx.beginPath();ctx.moveTo(cx+P[a][0]*sc,cy-P[a][1]*sc);ctx.lineTo(cx+P[b][0]*sc,cy-P[b][1]*sc);ctx.stroke();}
+      const order=[...Array(120).keys()].sort((p,q)=>P[p][2]-P[q][2]);
+      for(const i of order){const x=cx+P[i][0]*sc,y=cy-P[i][1]*sc;let r=(1.3+0.9*A)*(sc>40?1.6:1);let col=S.colorMode==='shell'?SHELL_COLORS[shellOf[i]]:S.colorMode==='clock'?CLOCK_COLORS[clockOf[i]]:'#9fb4c9';
+        let al=0.35+0.55*A;
+        if(S.colorMode==='tcycle'&&tOK){const di=deId.get(i*120+ADJ[i][0]);col='hsl('+((tCycle[di]*47)%360)+',60%,62%)';}
+        if(base&&S.wave){const at=S.wave.arr[i];if(at<=S.wave.t){const age=S.wave.t-at;if(age<1){col='#ffe9a8';r+=2.6*(1-age);al=1;}else{col='#8fc98f';al=Math.max(al,0.85);}}else if(S.wave.active)al*=0.5;}
+        if(base&&i===S.picked){col='#f4d47c';r+=3;al=1;}
+        ctx.globalAlpha=Math.min(1,al);ctx.beginPath();ctx.arc(x,y,r,0,7);ctx.fillStyle=col;ctx.fill();ctx.globalAlpha=1;}
+      if(base){ /* tick hands */
+        if(S.t>0){ctx.fillStyle='#f4d47c';for(let orig=0;orig<120;orig++)if(phaseOf[orig]===0){const now=permAccum[orig];ctx.beginPath();ctx.arc(cx+P[now][0]*sc,cy-P[now][1]*sc,2.4,0,7);ctx.fill();}}
+        /* T walker */
+        if(S.walker>=0&&tOK){const tr=S.walkerTrail.concat([S.walker]);ctx.strokeStyle='rgba(244,212,124,0.9)';ctx.lineWidth=1.6;ctx.beginPath();
+          tr.forEach((id,n)=>{const[u,s]=DE[id];const px=cx+P[s][0]*sc,py=cy-P[s][1]*sc;if(n===0)ctx.moveTo(cx+P[u][0]*sc,cy-P[u][1]*sc);ctx.lineTo(px,py);});ctx.stroke();
+          const[u,s]=DE[S.walker];ctx.fillStyle='#fff';ctx.beginPath();ctx.arc(cx+P[s][0]*sc,cy-P[s][1]*sc,4,0,7);ctx.fill();}
+        S._base={P,sc,kb};}}
+  }
+  /* rung circles (true sizes, concentric) */
+  S._rungPx=[];
+  if(S.rungsOn){ctx.font='11px ui-monospace,Menlo,monospace';const diag=Math.hypot(W,H)/2;
+    RUNGS.forEach((rg,idx)=>{const r=rg.R*ppm;if(r<1.5||r>diag*1.05)return;const col=CLASS_COLORS[rg.cls]||'#c9cdd8';S._rungPx.push({idx,r});
+      const sel=(idx===S.selRung);ctx.strokeStyle=col;ctx.globalAlpha=sel?1:0.75;ctx.lineWidth=sel?2.2:1.1;ctx.setLineDash(r<10?[2,2]:[]);ctx.beginPath();ctx.arc(cx,cy,r,0,7);ctx.stroke();ctx.setLineDash([]);ctx.globalAlpha=1;
+      if(r>=14||sel){const ang=((idx*2.399963)%(Math.PI*2))-Math.PI/2;const lx=cx+Math.cos(ang)*r,ly=cy+Math.sin(ang)*r;ctx.fillStyle=col;const tw=ctx.measureText(rg.name).width;
+        const tx=Math.min(W-tw-6,Math.max(4,lx+(Math.cos(ang)>=0?5:-tw-5))),ty=Math.min(H-6,Math.max(12,ly));ctx.fillText(rg.name,tx,ty);}});}
+  /* centre mark */
+  ctx.strokeStyle='rgba(212,166,81,0.4)';ctx.lineWidth=1;ctx.beginPath();ctx.moveTo(cx-6,cy);ctx.lineTo(cx+6,cy);ctx.moveTo(cx,cy-6);ctx.lineTo(cx,cy+6);ctx.stroke();
+  /* HUD */
+  const E_eV=HBARC/g.view, kk=kappa(g);const tickK=Math.pow(PHI,kb)*LP/CC;
+  document.getElementById('hud').innerHTML='<span class="big">view radius '+fmtL(g.view)+'</span><br><span class="mut">ħc/R = </span>'+fmt(E_eV)+' eV &nbsp;<span class="mut">light-crossing </span>'+fmtT(g.view/CC)+'<br><span class="mut">tower copy k = </span>'+kb+' <span class="mut">(S³ radius φ^'+(kb+1)+'·ℓP = '+fmtL(Math.pow(PHI,kb+1)*LP)+', tick '+fmtT(tickK)+')</span><br><span class="mut">p12 above ℓP: </span>'+((S.lr*L10-Math.log(LP))/L12).toFixed(2)+' &nbsp;<span class="mut">log10 m: </span>'+S.lr.toFixed(2);
+  /* nearest rungs off-screen */
+  let up=null,dn=null;for(const rg of RUNGS){if(rg.R>g.view*1.05){if(!up||rg.R<up.R)up=rg;}else if(rg.R<g.view*0.02){if(!dn||rg.R>dn.R)dn=rg;}}
+  document.getElementById('edgehint').innerHTML=(up?'↑ next larger: '+up.name+' ('+fmtL(up.R)+', +'+Math.log10(up.R/g.view).toFixed(2)+' decades)':'')+'<br>'+(dn?'↓ next smaller: '+dn.name+' ('+fmtL(dn.R)+', '+Math.log10(dn.R/g.view).toFixed(2)+' decades)':'');
+}
+let permAccum=[...Array(120).keys()];
+function doTick(){S.t++;permAccum=permAccum.map(i=>TICK[i]);}
+
+/* ===================== ruler (the whole 64 decades) ===================== */
+function lrToX(lr){return 12+(lr-LR_MIN)/(LR_MAX-LR_MIN)*(RW-24);}
+function xToLR(x){return LR_MIN+(x-12)/(RW-24)*(LR_MAX-LR_MIN);}
+function drawRuler(){rctx.clearRect(0,0,RW,RH);const y0=RH-26;
+  rctx.fillStyle='#10131a';rctx.fillRect(0,0,RW,RH);
+  rctx.strokeStyle='#323950';rctx.beginPath();rctx.moveTo(12,y0);rctx.lineTo(RW-12,y0);rctx.stroke();
+  rctx.font='10px ui-monospace,Menlo,monospace';rctx.fillStyle='#7a8194';
+  for(let n=Math.ceil(LR_MIN);n<=Math.floor(LR_MAX);n++){const x=lrToX(n);const major=(n%5===0);rctx.strokeStyle=major?'#4b5470':'#2a3040';rctx.beginPath();rctx.moveTo(x,y0);rctx.lineTo(x,y0+(major?7:4));rctx.stroke();if(major)rctx.fillText('1e'+n,x-9,y0+19);}
+  /* phi tower ticks (every step) above the axis */
+  rctx.strokeStyle='rgba(138,111,58,0.5)';for(let k=0;;k++){const lr=Math.log10(LP*Math.pow(PHI,k));if(lr>LR_MAX)break;const x=lrToX(lr);rctx.beginPath();rctx.moveTo(x,y0);rctx.lineTo(x,y0-3);rctx.stroke();}
+  /* rungs */
+  const lanes=[0,0,0,0];RUNGS.forEach((rg,i)=>{const x=lrToX(Math.log10(rg.R));const col=CLASS_COLORS[rg.cls]||'#c9cdd8';rctx.strokeStyle=col;rctx.beginPath();rctx.moveTo(x,y0-6);rctx.lineTo(x,y0-6-14-(i%4)*11);rctx.stroke();
+    rctx.fillStyle=col;rctx.beginPath();rctx.arc(x,y0-6,2.4,0,7);rctx.fill();if(i===S.selRung){rctx.strokeStyle='#fff';rctx.beginPath();rctx.arc(x,y0-6,4.5,0,7);rctx.stroke();}});
+  /* current view window */
+  const xv=lrToX(S.lr);rctx.strokeStyle='#d4a651';rctx.lineWidth=2;rctx.beginPath();rctx.moveTo(xv,6);rctx.lineTo(xv,y0+8);rctx.stroke();rctx.lineWidth=1;
+  rctx.fillStyle='#d4a651';rctx.fillText('view',xv+4,12);
+  rctx.fillStyle='#7a8194';rctx.fillText('ℓP',lrToX(Math.log10(LP))-4,y0+19);
+}
+
+/* ===================== interaction ===================== */
+let drag=null;
+cv.addEventListener('pointerdown',e=>{cv.setPointerCapture(e.pointerId);drag={x:e.offsetX,y:e.offsetY,b:e.button,shift:e.shiftKey,moved:false};});
+cv.addEventListener('contextmenu',e=>e.preventDefault());
+cv.addEventListener('pointermove',e=>{if(!drag)return;const dx=e.offsetX-drag.x,dy=e.offsetY-drag.y;if(Math.abs(dx)+Math.abs(dy)>3)drag.moved=true;
+  if(drag.shift||drag.b===2){R4=mmul(rotPlane(1,0,dx*0.006),R4);R4=mmul(rotPlane(2,0,dy*0.006),R4);}else{R4=mmul(rotPlane(1,3,dx*0.006),R4);R4=mmul(rotPlane(2,3,-dy*0.006),R4);}
+  drag.x=e.offsetX;drag.y=e.offsetY;});
+window.addEventListener('pointerup',e=>{if(drag&&!drag.moved&&drag.b===0)clickAt(drag.x,drag.y);drag=null;});
+function clickAt(x,y){const g=geom();
+  const rr=Math.hypot(x-g.cx,y-g.cy);let best=-1,bd=7;for(const o of (S._rungPx||[])){const d=Math.abs(o.r-rr);if(d<bd){bd=d;best=o.idx;}}
+  if(best>=0){selectRung(best);return;}
+  if(S._base){const{P,sc}=S._base;let bi=-1,b2=14*14;for(let i=0;i<120;i++){const d=(g.cx+P[i][0]*sc-x)**2+(g.cy-P[i][1]*sc-y)**2;if(d<b2){b2=d;bi=i;}}if(bi>=0){setPick(bi);}}}
+cv.addEventListener('wheel',e=>{e.preventDefault();S.anim=null;setLR(S.lr+e.deltaY*0.0022*(e.shiftKey?5:1));},{passive:false});
+let pinch=null;const tdist=e=>Math.hypot(e.touches[0].clientX-e.touches[1].clientX,e.touches[0].clientY-e.touches[1].clientY);
+cv.addEventListener('touchstart',e=>{if(e.touches.length===2)pinch=tdist(e);},{passive:true});
+cv.addEventListener('touchmove',e=>{if(e.touches.length===2&&pinch){const d=tdist(e);setLR(S.lr-Math.log10(d/pinch));pinch=d;e.preventDefault();}},{passive:false});
+cv.addEventListener('touchend',()=>pinch=null);
+window.addEventListener('keydown',e=>{if(e.target.tagName==='INPUT')return;if(e.key==='+'||e.key==='='){S.anim=null;setLR(S.lr-0.25);}if(e.key==='-'||e.key==='_'){S.anim=null;setLR(S.lr+0.25);}});
+let rdrag=false;rl.addEventListener('pointerdown',e=>{rdrag=true;rl.setPointerCapture(e.pointerId);S.anim=null;setLR(xToLR(e.offsetX));});
+rl.addEventListener('pointermove',e=>{if(rdrag){S.anim=null;setLR(xToLR(e.offsetX));}});rl.addEventListener('pointerup',()=>rdrag=false);
+document.querySelectorAll('[data-rung]').forEach(b=>b.addEventListener('click',()=>{const i=RUNGS.findIndex(r=>r.name.indexOf(b.dataset.rung)>=0);if(i>=0){S.selRung=i;animateTo(Math.log10(RUNGS[i].R)+0.15);renderRungs();renderScale();}}));
+document.getElementById('ringMode').addEventListener('change',e=>S.ring=e.target.value);
+document.getElementById('tLattice').addEventListener('change',e=>S.copies=e.target.checked);
+document.getElementById('tRungs').addEventListener('change',e=>S.rungsOn=e.target.checked);
+document.getElementById('tTumble').addEventListener('change',e=>S.tumble=e.target.checked);
+document.querySelectorAll('#tabs button').forEach(b=>b.addEventListener('click',()=>showTab(b.dataset.tab)));
+function showTab(t){document.querySelectorAll('#tabs button').forEach(b=>b.classList.toggle('active',b.dataset.tab===t));document.querySelectorAll('.pane').forEach(p=>p.classList.toggle('show',p.id==='p-'+t));}
+function setPick(i){S.picked=i;S.nbIdx=0;if(tOK)setWalkerFromPick();renderMachine();showTab('machine');}
+function setWalkerFromPick(){if(S.picked<0)return;const s=ADJ[S.picked][S.nbIdx%ADJ[S.picked].length];S.walker=deId.get(S.picked*120+s);S.walkerTrail=[];}
+function selectRung(i){S.selRung=i;renderRungs();renderScale();showTab('rungs');}
+
+/* ===================== wave (BFS on the base copy, physical time through the tick) ===================== */
+function buildWave(src){const arr=new Float64Array(120).fill(1e9);const q=[src];arr[src]=0;for(let h=0;h<q.length;h++){const cur=q[h],d=arr[cur];for(const j of ADJ[cur])if(arr[j]>d+1){arr[j]=d+1;q.push(j);}}
+  let maxd=0;for(const a of arr)if(a<1e9&&a>maxd)maxd=a;S.wave={arr,t:0,maxd,active:true,kb:S._base?S._base.kb:0};}
+
+/* ===================== panels ===================== */
+function row(k,v){return '<div class="row"><span class="k">'+k+'</span><span class="v">'+v+'</span></div>';}
+function renderScale(){const g=geom();const kb=Math.round(kappa(g));const E_eV=HBARC/g.view;let h='<h4>This view</h4>';
+  h+=row('view radius',fmtL(g.view))+row('ħc / R',fmt(E_eV)+' eV')+row('light-crossing time',fmtT(g.view/CC))+row('log10 m',S.lr.toFixed(3))+row('p12 above ℓP',((S.lr*L10-Math.log(LP))/L12).toFixed(3))+row('tower position log_φ(R/ℓP)',(Math.log(g.view/LP)/LPHI).toFixed(3));
+  h+='<h4>Lattice copy in view</h4>'+row('nearest tower copy k',kb)+row('edge = ℓP φ^k',fmtL(Math.pow(PHI,kb)*LP))+row('S³ radius = φ × edge',fmtL(Math.pow(PHI,kb+1)*LP))+row('tick = edge / c',fmtT(Math.pow(PHI,kb)*LP/CC))+row('30-tick cycle',fmtT(30*Math.pow(PHI,kb)*LP/CC))+row('fold (15 ticks)',fmtT(15*Math.pow(PHI,kb)*LP/CC));
+  h+='<p class="note">Anchor assumption (spine nodes 17/18/33, declared non-discriminating): the edge at tower copy k = 0 is the Planck length, the tick is edge/c, and the wave advances one edge per tick at c by construction. The step φ per copy is the original visualizer\'s choice. Nothing here is fitted.</p>';
+  if(S.selRung>=0){const rg=RUNGS[S.selRung];h+='<h4>Selected rung</h4><div class="rung sel"><span class="n">'+rg.name+'</span><span class="s">'+fmtL(rg.R)+'</span></div>';}
+  document.getElementById('p-scale').innerHTML=h;}
+function renderMachine(){let h='<h4>Tick (spine 64–65)</h4><div class="group"><button id="bTick">advance ▸</button><button id="bRun" class="'+(S.running?'active':'')+'">'+(S.running?'stop':'run')+'</button><span class="mono" id="tc" style="color:var(--gold)">t = '+S.t+(S.t%30===15?' ← FOLD':'')+'</span></div>';
+  h+='<p class="note">q → g₅·q·g₆ with g₅ of order 5 and g₆ of order 6 (the Coxeter element). Four clocks of 30; at t = 15 each vertex is at its antipode (the fold). Gold dots are the four clock hands.</p>';
+  h+='<h4>Colour</h4><div class="group"><button class="cm" data-m="shell">w-shells</button><button class="cm" data-m="clock">4 clocks</button><button class="cm" data-m="tcycle">T-cycles</button></div>';
+  h+='<h4>Native continuation T (spine D2)</h4><p class="note">A directed edge (u,s) goes to (s, φs − u). 1440 histories, each on a ten-cycle; T⁵ sends a vertex to its antipode and T¹⁰ is the identity. Click a vertex (or press the buttons: vertex 0 is used if none is picked), then step its outgoing edge.</p>';
+  h+='<div class="group"><button id="bNb">next outgoing edge</button><button id="bWalk">step T</button><button id="bWalkRun" class="'+(S.walkRun?'active':'')+'">'+(S.walkRun?'stop':'run T')+'</button><button id="bWClear">clear</button></div>';
+  h+=row('picked vertex',S.picked>=0?S.picked+' ('+V[S.picked].map(c=>c.toFixed(3)).join(', ')+')':'click a vertex')+row('walker edge',S.walker>=0?DE[S.walker][0]+' → '+DE[S.walker][1]:'—')+row('trail length','<span id="trailLen">'+S.walkerTrail.length+'</span>');
+  h+='<h4>Wave (physical time)</h4><div class="group"><button id="bInject">inject ▸</button><button id="bWaveClear">clear</button></div><p class="note">Breadth-first from the picked vertex, one edge per tick; the readout converts the front to seconds through the tick of the lattice copy in view.</p><div id="waveOut" class="mono"></div>';
+  document.getElementById('p-machine').innerHTML=h;
+  document.getElementById('bTick').onclick=()=>{doTick();renderMachine();};
+  document.getElementById('bRun').onclick=()=>{S.running=!S.running;renderMachine();};
+  document.querySelectorAll('.cm').forEach(b=>{b.classList.toggle('active',S.colorMode===b.dataset.m);b.onclick=()=>{S.colorMode=b.dataset.m;renderMachine();};});
+  document.getElementById('bNb').onclick=()=>{if(S.picked<0){S.picked=0;S.nbIdx=-1;}S.nbIdx++;if(tOK)setWalkerFromPick();renderMachine();};
+  document.getElementById('bWalk').onclick=stepWalker;document.getElementById('bWalkRun').onclick=()=>{S.walkRun=!S.walkRun;renderMachine();};
+  document.getElementById('bWClear').onclick=()=>{S.walker=-1;S.walkerTrail=[];renderMachine();};
+  document.getElementById('bInject').onclick=()=>{if(S.picked<0){S.picked=0;if(tOK)setWalkerFromPick();renderMachine();}buildWave(S.picked);};
+  document.getElementById('bWaveClear').onclick=()=>{S.wave=null;};}
+function stepWalker(){if(S.walker<0||!tOK)return;S.walkerTrail.push(S.walker);if(S.walkerTrail.length>10)S.walkerTrail.shift();S.walker=TN[S.walker];const tl=document.getElementById('trailLen');if(tl)tl.textContent=S.walkerTrail.length;}
+function renderRungs(){let h='<h4>Rungs by size</h4><div id="rl2"></div><div id="rcard"></div>';document.getElementById('p-rungs').innerHTML=h;
+  const l=document.getElementById('rl2');RUNGS.forEach((rg,i)=>{const d=document.createElement('div');d.className='rung'+(i===S.selRung?' sel':'');d.innerHTML='<span class="n" style="color:'+(CLASS_COLORS[rg.cls]||'#c9cdd8')+'">'+rg.name+'</span><span class="s">'+fmtL(rg.R)+'</span>';d.onclick=()=>{S.selRung=i;animateTo(Math.log10(rg.R)+0.3);renderRungs();renderScale();};l.appendChild(d);});
+  if(S.selRung>=0){const rg=RUNGS[S.selRung];let c='<h4>'+rg.name+'</h4>'+row('size',fmtL(rg.R))+row('class',rg.cls)+row('tower position log_φ(R/ℓP)',(Math.log(rg.R/LP)/LPHI).toFixed(4))+row('p12 above ℓP',((Math.log(rg.R/LP))/L12).toFixed(3));
+    if(rg.E&&rg.E.length){c+='<h4>Energies at this size (eV)</h4>';rg.E.forEach(([lab,val,pv])=>{c+=row(lab,(lab.indexOf('log10')>=0?val.toFixed(2):fmt(val))+(pv?'<span class="chip '+pv+'">'+pv+'</span>':''));});
+      c+='<p class="note">M measured or sourced, C computed, F formal estimate (see maps/size_vs_energy_filled.md notes: formal cells are non-relativistic estimates by construction, not data).</p>';}
+    if(rg.note)c+='<p class="note">'+rg.note+'</p>';document.getElementById('rcard').innerHTML=c;}}
+const LABACT={'06':'the 120 vertices (2I)','09':'12 neighbours: click a vertex','17':'ruler: cycles = R E/ħc, view readout','18':'Planck anchor: edge = ℓP at copy k = 0','33':'tick = edge/c by construction','45':'fold at t = 15 (antipode)','64':'tick q→g5·q·g6','65':'four 30-clocks (colour: 4 clocks)','D2':'T transit on directed edges'};
+function renderSpine(){const nodes=DATA.spine.concat([{id:'D2',claim:'native continuation T(u,s) = (s, φs − u): 1440 histories, 144 ten-cycles, T⁵ antipode, T¹⁰ identity',proof:'maximal chord alignment (M6 spine, section D2)',grade:'DERIVED (M6)'}]);
+  let h='<input type="text" id="sfilter" placeholder="filter the spine (id, claim, grade)"><table id="stbl"></table><p class="note">Nodes in gold are what this lab draws or computes. M5 spine, 00–67, with grades as written there; the lab does not re-certify them.</p>';
+  document.getElementById('p-spine').innerHTML=h;const tb=document.getElementById('stbl');
+  function fill(q){tb.innerHTML='';nodes.filter(n=>!q||(n.id+' '+n.claim+' '+n.proof+' '+n.grade).toLowerCase().includes(q)).forEach(n=>{const tr=document.createElement('tr');const lk=(n.ids||[n.id]).find(k=>LABACT[k]);tr.className='node'+(lk?' lab':'');
+      tr.innerHTML='<td>'+n.id+'</td><td>'+n.claim+(lk?'<br><span style="color:var(--gold)">lab: '+LABACT[lk]+'</span>':'')+'<br><span style="color:var(--muted)">'+n.grade+'</span></td>';
+      tr.onclick=()=>{const id=lk||n.id;if(id==='65'){S.colorMode='clock';showTab('machine');renderMachine();}else if(id==='64'||id==='45'){showTab('machine');renderMachine();}else if(id==='18'||id==='33'||id==='17'){animateTo(-35);showTab('scale');}else if(id==='D2'){S.colorMode='tcycle';showTab('machine');renderMachine();}};tb.appendChild(tr);});}
+  fill('');document.getElementById('sfilter').oninput=e=>fill(e.target.value.toLowerCase());}
+
+/* ===================== main loop ===================== */
+let lastPanel=0,walkTimer=0,runTimer=0;
+function frame(ts){
+  if(S.anim){const a=S.anim,p=Math.min(1,(performance.now()-a.t0)/a.ms);const e=p<0.5?2*p*p:1-Math.pow(-2*p+2,2)/2;S.lr=a.a+(a.b-a.a)*e;if(p>=1)S.anim=null;}
+  if(S.tumble&&!drag){R4=mmul(rotPlane(3,0,0.0022),R4);R4=mmul(rotPlane(1,2,0.0009),R4);}
+  if(S.wave&&S.wave.active){S.wave.t+=0.045;if(S.wave.t>S.wave.maxd+2)S.wave.active=false;
+    const f=Math.floor(Math.min(S.wave.t,S.wave.maxd));const el=document.getElementById('waveOut');if(el){const kbc=Math.round(kappa(geom()));el.innerHTML='front at '+f+' edge'+(f===1?'':'s')+' → '+fmtT(f*Math.pow(PHI,kbc)*LP/CC)+' (copy k = '+kbc+' in view)';}}
+  if(S.running&&ts-runTimer>220){runTimer=ts;doTick();const el=document.getElementById('tc');if(el)el.innerHTML='t = '+S.t+(S.t%30===15?' ← FOLD':'');}
+  if(S.walkRun&&ts-walkTimer>260){walkTimer=ts;stepWalker();}
+  drawScene();drawRuler();
+  if(ts-lastPanel>250){lastPanel=ts;if(document.getElementById('p-scale').classList.contains('show'))renderScale();}
+  requestAnimationFrame(frame);}
+resize();renderScale();renderMachine();renderRungs();renderSpine();requestAnimationFrame(frame);
+})();
+</script>
+</body>
+</html>
