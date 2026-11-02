@@ -1,0 +1,42 @@
+== 1. spectrum of the lattice face-energy operator against the continuum S^3 coexact 1-forms
+ lattice level  mult    k  (k+1)^2  2k(k+2)  lambda/(k+1)^2
+     0.5278640     6    1        4        6        0.131966
+     1.1458980    16    2        9       16        0.127322
+     1.9331897    30    3       16       30        0.120824
+     2.8074176    48    4       25       48        0.112297
+     3.6368399    70    5       36       70        0.101023
+lowest level lambda_1 = 0.5278640450 ; 5 - 2 sqrt 5 = 0.5278640450
+lattice spacing a_eff defined by lambda_1 = 4 a_eff^2 (k = 1): 0.36327 (the 600-cell edge chord is 0.61803, arc 0.62832)
+
+== 2. exact couplings for a chosen far-field exponent p_M (q = step per layer): mu_r/mu = lambda_1 / (2 (cosh(p_M ln q) - 1))
+             q   p_M        mu_r/mu   note
+           phi   2.0     0.52786405   = lambda_1 exactly (cosh(2 ln phi) = 3/2): 0.0e+00
+           phi   3.0     0.21352549   = (3 phi - 4)/4 = 0.21352549 (cosh(3 ln phi) = sqrt 5)
+     sqrt(phi)   2.0     2.23606798   
+     sqrt(phi)   3.0     0.97026823   
+         phi^2   2.0     0.10557281   
+         phi^2   3.0     0.03299150   
+
+== 3. the continuum limit of the per-mode exponent under the isotropic rule mu_r/mu = (a_eff/dt)^2 (dt = ln q, the log-radius spacing): p_M = arccosh(1 + lambda dt^2 / (2 a_eff^2)) / dt
+           q       dt   mu_r/mu  p_M(k=1)  p_E = p_M + 1  p_M(k=2)  p_M(k=3)   [continuum: 2, 3, 4]
+         phi   0.4812    0.5699    1.9299         2.9299    2.7432    3.4260
+   sqrt(phi)   0.2406    2.2796    1.9812         2.9812    2.8883    3.7037
+   phi^(1/4)   0.1203    9.1182    1.9952         2.9952    2.9315    3.7944
+      e^0.05   0.0500   52.7864    1.9992         2.9992    2.9441    3.8216
+series: p_M(k=1) = 2 - dt^2/3 + ...; nature (3He+/H) gives p_E = 2.99993.
+
+== 4. the chain on the solver at mu_r/mu = lambda_1 (q = phi): far-field p_M should be exactly 2 (gamma = 2 ln phi = 0.96242365)
+residual 5.4e-12 ; gamma_c = 1.56036 1.26029 1.09757 1.02192 0.98787 0.96747 0.92188 0.69577 ; p_M(c) = 3.2426 2.6190 2.2808 2.1236 2.0529 2.0105 1.9158 1.4459
+at mu_r/mu = (3 phi - 4)/4: gamma_c = 2.09182 1.70246 1.53517 1.47559 1.45500 1.44712 1.43287 1.24539 ; p_M(c) = 4.3470 3.5378 3.1902 3.0664 3.0236 3.0072 2.9776 2.5880 (far-field target 3)
+
+== 5. volume growth of the refined carrier (points of the n-fold geodesic subdivision of the 600-cell)
+  n  points (formula)  points (built)  ratio to n=1   local exponent ln(V_n/V_{n-1})/ln(n/(n-1))
+  1               120             120         1.000                                             
+  2               840             840         7.000                                       2.8074
+  3              2760            2760        23.000                                       2.9339
+  4              6480               -        54.000                                       2.9668
+  5             12600               -       105.000                                       2.9800
+  6             21720               -       181.000                                       2.9867
+  7             34440               -       287.000                                       2.9905
+  8             51360               -       428.000                                       2.9929
+large-n limit: V_n ~ 100 n^3 (the 600 cells each contribute n^3/6): exponent 3 = the ambient dimension of the carrier; the floor's intrinsic dimension (ball-count growth, node 25) is 2.

@@ -12,6 +12,7 @@ Authored by Claude (Sonnet 5.5); no independent review claimed. A running list o
 | 5 | `explore/E_SERIES_RESPONSE_RESULTS.md` §0 (2026-11-02) | constituent-quark mass from the neutron (326.97 MeV) against from the proton (335.96 MeV), using the textbook relation μ_n = −(2/3)(m_p/m_q)μ_N | 2.7% | the quark relations are from memory; the proton and neutron moments are sourced |
 | 6 | `explore/E_SERIES_READOUTS_ABLATION_RESULTS.md` and `E_SERIES_RESPONSE_RESULTS.md` | R_mag/r_p = 0.6986 against 1/√2 = 0.7071 | 1.2% | noticed, not claimed; below the 1.5% floor of this ledger, kept as a near neighbour |
 | 7 | `explore/SIZE_AND_MULTIPLET_RESULTS.md` §3 (2026-11-02) | far-field exponent of the nested-copy chain at the isotropic coupling with q = √φ steps: p = 2.957 against nature's 3 (hyperfine Z³, measured 2.99993) | 1.4% | near neighbour, below the ledger's range; the step √φ was chosen after the numbers were seen; q for exactly p = 3 is 1.26763, 0.35% below √φ |
+| 8 | `explore/SIZE_EXPONENT_ORIGIN.md` §3 (2026-11-02) | size exponent of the absolute coupling from the nested-copy chain at φ steps under the isotropic rule: p_E = p_M + 1 = 2.930 against nature's 2.99993 | 2.3% | a discretization effect: p_M(k=1) = 2 − Δt²/3 with Δt = ln φ; √φ steps give 2.981 (0.6%), φ^(1/4) 2.995; depends on the isotropic rule (8% from the exact coupling λ₁) and on the +1 argument from units |
 
 ## Not entries (same number, different meaning)
 - Quark-mass uncertainties of ±2% statistical (`maps/carbon_complete_stack.md`): a measurement uncertainty, not a discrepancy.
