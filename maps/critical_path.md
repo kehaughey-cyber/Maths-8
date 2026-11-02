@@ -38,3 +38,34 @@ Scale is the root: if every order has its own tick, "time", "rate" and "energy" 
 
 ## Suggested start
 P1 and P2 together. P2 is mostly exact finite computation, so quickest; it would say whether the walk clock is the inter-order clock, which would fix P1.
+
+---
+
+## Update 2026-11-02 (second, appended; the chain above stands as first written)
+
+### The six are one change read six ways
+The chain P1 to P6 above is a separationist ordering and is superseded as a method (not deleted). The human's position: mass, energy, space and time (and with them the clocks, the scale, the field) are interdependent, of similar substance and similar origin; none can be chased alone. P5 is the substance that changes; P3 and P4 are what that change reads as; the clocks (P2) are how the change shows against itself; scale (P1) is derivative of those changes as measured against the universe. Floor support: the registration event is a change, not a clock (container 02); mass, energy and dimension are readings of the coordinates (`maps/degrees_of_freedom.md`). Juxtaposing with the Standard Model is circular because the SM defines these separately and then sets one against another. The floor's "keep the clocks apart" is read as bookkeeping (name the reading taken), not as a claim that they are different things.
+
+### The earlier attempt, and why the lab exists
+The human has tried this before: map every aspect of matter (the coffee cup is a solid thing with a great deal going on at many levels) and every aspect of the framework, and hold both at once. The repo holds the matter side as `maps/carbon_complete_stack.md`, `maps/four_languages_ladder.md` (energy and size, mass, charge, information), `maps/colour_column.md`, and the "touches of one function" frame in `maps/mass_requirements.md`. By the human's account, it did not work: the model zoomed into one aspect at one scale, broke the aspects apart, and fell into the same dissociative circles. The lab (`lab/`) was built to give something to juxtapose against. The human mentions a percentage frame; my reading, to be confirmed, is that each reading the lab produces is expressed as a percentage of the measured value, so agreement and disagreement are read off one scale.
+
+### The first object
+The smallest joint object is the E-series action (`floor/M6_SPINE_2026-10-19.md` E6: matter, field and links in one action, giving current, feedback, continuity, Gauss and energy transfer) on **two adjacent nested copies**, with link phases on the amplitude layer and a flux term between the copies. This is an instrument to start looking with. It is **not** claimed to be the smallest expression of magnetism. The human's point: having the properties of magnetism is not the same as manifesting its effects, and the expression and the manifestation sit at different scales. So the instrument is extended across more copies as the measurement requires.
+
+### The method: observe, do not predict
+- Do not tell the object what it should be. Run it across several scales and record what comes out; compare with the measured universe afterwards, in the percentage frame.
+- Record raw, unrounded outputs, accepted and failed, with the index, gauge and unit conventions, the run command and sha256/commit (CLAUDE.md, "Transmissible").
+- Readouts taken together from the same run: rate per tick (clocks), frequency (energy), persistence/tightness (mass), flux (field), tick per order (scale), metric (space and time). Cross-reading consistency under one calibration is the check.
+- The lab's declared choices (φ step per copy, radial-hop cost) stay declared and are varied openly, not tuned.
+
+### Not done
+Nothing has been built or run for this object. The percentage frame is not yet defined. What counts as "several scales" (which copies, how many) is not yet decided.
+
+### Correction and addition (2026-11-02, appended): the percentage frame is both, and the coffee-cup test
+The human confirmed the percentage frame and added to it: it is **both** (a) each reading expressed as a percentage of the measured value, and (b) a share of the whole object's aspects that the framework accounts for. The first section above stated only (a) and flagged it as my guess; (b) was missing.
+
+The coffee-cup test, as the human stated it: the cup, the atom and the black hole exist only with all the laws working together. Remove any one (magnetism, gravity, the strong force, the weak force) and the cup ceases to exist. So the frame is not a checklist of separate items to tick. A share of aspects accounted for is meaningful only for the aspects held together, because each is necessary to the existence of the object. Taken singly, an aspect's percentage says little.
+
+Two cautions from the human, adopted as working rules:
+- **Beware false dichotomies.** "Per-reading percentage versus whole-object share", "expression versus manifestation", "one scale versus another" are not alternatives to pick between; take both.
+- **No limiting assumptions; let the universe say what it is and how.** Where this file or the lab fixes something in advance, mark it as a choice and keep it open. Examples I can see in my own text above: two adjacent copies as the object (an instrument, to be extended); the six readouts as the complete list (not established); the φ step and radial-hop cost (declared in the lab).
