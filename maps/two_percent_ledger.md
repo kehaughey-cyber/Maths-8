@@ -1,0 +1,21 @@
+# Ledger: the roughly 2% that keeps turning up (opened 2026-11-02, at the human's request, "keep that for future reference")
+
+Authored by Claude (Sonnet 5.5); no independent review claimed. A running list of places in this repo where a gap or offset of about 2% (1.5% to 3%) appears between a framework number and a measured one, or between two readings of the same quantity. **It is an index, not a claim.** It does not assert a common origin, a hidden constant, or that any entry is a signal; the entries differ in what is being compared, and the first purpose is to stop the pattern being forgotten. Append new entries with the date, the location, the size, the two numbers, and what is being compared. Do not remove entries that later turn out to be unrelated; mark them.
+
+## Entries
+| # | where | what is compared | size | note |
+|---|---|---|---|---|
+| 1 | `floor/M6_SPINE_2026-10-19.md` R4 (line 260) | "explain every approximate 2% discrepancy": the floor itself flags a recurring ~2% it did not explain | ~2% | the floor's own wording; the quantities are not listed there |
+| 2 | `floor/M6_SPINE_2026-10-19.md` C4 (line 168), Origin/core/stencil | "No production replacement/fitted offset/broad two-percent explanation" | ~2% | the numerical-atomic work (Si/MCHF integrator); the sentence says no broad explanation was found |
+| 3 | `maps/alpha_mechanism_status.md` Update 2 (line 38) | 1/φ³ = 0.236068 against the measured sin²θ_W: MS-bar 0.23122 (+2.1%, about 121σ), leptonic effective 0.23153 (+2.0%, about 28σ); on-shell 0.2232 is +5.8% | +2.1%, +2.0% | the three measured values are recalled, not saved; the file grades 1/φ³ as matched by inversion and untestable until a scale and scheme are stated |
+| 4 | `maps/positronium.md` (line 28) | α: exp(2π)/4 = 133.873 against 1/α = 137.036 | 2.36% (file: 2.4%) | recomputed 2026-11-02: 137.035999 / 133.872914 = 1.02363 |
+| 5 | `explore/E_SERIES_RESPONSE_RESULTS.md` §0 (2026-11-02) | constituent-quark mass from the neutron (326.97 MeV) against from the proton (335.96 MeV), using the textbook relation μ_n = −(2/3)(m_p/m_q)μ_N | 2.7% | the quark relations are from memory; the proton and neutron moments are sourced |
+| 6 | `explore/E_SERIES_READOUTS_ABLATION_RESULTS.md` and `E_SERIES_RESPONSE_RESULTS.md` | R_mag/r_p = 0.6986 against 1/√2 = 0.7071 | 1.2% | noticed, not claimed; below the 1.5% floor of this ledger, kept as a near neighbour |
+
+## Not entries (same number, different meaning)
+- Quark-mass uncertainties of ±2% statistical (`maps/carbon_complete_stack.md`): a measurement uncertainty, not a discrepancy.
+- The 0.116% electron-moment offset and the 1e-4 residuals of `HYPERFINE_SERIES_RESULTS.md`: an order of magnitude smaller.
+- The dispersion shortfall of +2.8% at |k| = 0.4 in `LIVE_WEB_RESULTS.md` (line 280): a lattice-dispersion effect that the file itself shows shrinking with packet width; listed here only because it is near 2%.
+
+## What would make this ledger useful
+Entries 1 to 5 compare different things (a numerical-atomic offset, two couplings, a constant, a quark-mass scale). Looking for a single cause would need the same quantity measured two ways. If a future result lands within a percent of an existing entry's size, add it and ask, for each pair, whether the same ratio (about 1.02) appears in both. No such ratio is asserted here.
