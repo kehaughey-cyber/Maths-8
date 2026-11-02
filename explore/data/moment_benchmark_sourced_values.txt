@@ -6,3 +6,8 @@ W https://physics.nist.gov/cgi-bin/cuu/Value?mup   proton magnetic moment mu_p =
 W https://physics.nist.gov/cgi-bin/cuu/Value?mpsme proton-electron mass ratio m_p/m_e = 1836.152 673 426(32)
 S explore/data/iaea_livechart_ground_states.csv  columns jp, magnetic_dipole (nuclear magneton units), unc_md for every listed ground state; n: -1.9130427(5), 1H: 2.792847351(9); 12C has Jpi 0+ and no magnetic dipole entry (extraction 2023-10-18, ENSDF evaluations as cited in the file).
 Derived in the scripts, not sourced: mu_N = mu_B / (m_p/m_e) (nuclear magneton); mu_e/mu_B = mu_e / mu_B.
+
+Added 2026-11-02 (hyperfine and scale items). W = web page answer, page text not saved.
+W https://physics.nist.gov/cgi-bin/cuu/Value?rydhcev  Rydberg constant times hc = 13.605 693 122 990(15) eV (CODATA 2022)
+W https://physics.nist.gov/cgi-bin/cuu/Value?alph      fine-structure constant alpha = 7.297 352 5643(11) x 10^-3 (CODATA 2022)
+W https://en.wikipedia.org/wiki/Hydrogen_line          hydrogen ground-state hyperfine transition 1420.405751768(2) MHz (page cites Hellwig et al., IEEE Trans. Instrum. Meas., 1970; secondary); energy 5.8743261841116(81) ueV as stated on the page

@@ -1,0 +1,11 @@
+proton reduced Compton length 2.1030891005002003e-16 m ; charge radius r_p 8.4075e-16 m = 3.9976908244164995 lambda_p
+R_mag = 2 mu_p/(e c) = 5.873606809879916e-16 m = 2.7928473446431408 lambda_p =  0.6986151424180691 r_p ; 1/(R_mag/lambda_p) = 0.3580575221621274 (the 0.358)
+m_eff = hbar/(c R_mag) = m_p/(mu_p/mu_N) = 335.95537945676136 MeV ; m_p/3 = 312.75736314479826 MeV
+neutron, quark relation mu_n = -(2/3)(m_p/m_q) mu_N (textbook): m_q = 326.9737399429696 MeV ; proton, mu_p = (m_p/m_q) mu_N: m_q = 335.9553786920862 MeV ; they differ by -0.02673461810340161
+hbar c / m_eff = 0.5873606808114726 fm
+position on the phi tower, k = log_phi(L / l_P):
+   proton Compton lambda_p    2.10309e-16 m  k = 91.4616
+   R_mag                      5.87361e-16 m  k = 93.5959
+   proton charge radius r_p   8.40750e-16 m  k = 94.3413
+R_mag / r_p = 0.6986151424180691  (compare 1/sqrt 2 = 0.7071067811865476 : noticed, not claimed)
+lambda_p / R_mag = 0.3580575221621274  =  0.3580575221621274 = 1/(mu_p in nuclear magnetons)
