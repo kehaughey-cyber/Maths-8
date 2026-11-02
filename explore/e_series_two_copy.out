@@ -1,0 +1,67 @@
+== declared parameters: kappa = k = I = I_r = 1, mu = M6 E3 value np.float64(5.642738422007742) (input, not derived); identity identification of histories between copies
+
+== force check against finite differences (random state, rho = phi, kappa_r = 0.7, mu_r = 0.9)
+q a_A : analytic np.float64(-37.68472370631389) fd np.float64(-37.68472379306331)
+q a_B : analytic np.float64(72.00167478958268) fd np.float64(72.00167510745814)
+q b  : analytic np.float64(-7.679916755842993) fd np.float64(-7.679916961933486)
+q Psi_A: analytic np.float64(37.99309235678432) fd np.float64(37.99309229179926)
+q Psi_B: analytic np.float64(127.91331701881714) fd np.float64(127.91331732842082)
+gamma a_A : analytic np.float64(-154.28182075536387) fd np.float64(-154.2818206416996)
+gamma a_B : analytic np.float64(201.6992418153682) fd np.float64(201.6992418703012)
+gamma b  : analytic np.float64(-31.498204843359083) fd np.float64(-31.498205089519615)
+gamma Psi_A: analytic np.float64(-132.4616623282007) fd np.float64(-132.46166236058343)
+gamma Psi_B: analytic np.float64(-101.65308025124506) fd np.float64(-101.65308003706741)
+
+== gauge covariance with independent gauge transformations in each copy (500 steps, rho = phi, kappa_r = 0.7, mu_r = 0.9)
+q : max diff Psi, Psi_dot, a, a_dot, b, b_dot = ['1.13e-14', '8.21e-15', '1.07e-14', '4.51e-14', '1.15e-14', '5.05e-14'] | energy before/after np.float64(5398.598190843886) np.float64(5398.598190843886)
+gamma : max diff Psi, Psi_dot, a, a_dot, b, b_dot = ['9.79e-15', '7.40e-15', '1.33e-14', '5.23e-14', '9.10e-15', '2.00e-14'] | energy before/after np.float64(5491.509593457294) np.float64(5491.509593457294)
+
+== energy order, per-site Gauss in both copies (random data, 2000 steps dt .02 and 4000 steps dt .01)
+q     rho= 1.0000: E0 4576.47679818 | max|dE| dt=.02 2.569e+00 dt=.01 6.424e-01 ratio 4.00 | Gauss drift (A and B, all sites) 4.67e-14
+q     rho= 1.6180: E0 5435.31656297 | max|dE| dt=.02 1.507e+00 dt=.01 3.770e-01 ratio 4.00 | Gauss drift (A and B, all sites) 8.70e-14
+q     rho=12.0000: E0 85043.94742026 | max|dE| dt=.02 8.970e+00 dt=.01 2.241e+00 ratio 4.00 | Gauss drift (A and B, all sites) 1.55e-11
+gamma rho= 1.0000: E0 4462.99741387 | max|dE| dt=.02 2.492e+00 dt=.01 6.237e-01 ratio 4.00 | Gauss drift (A and B, all sites) 4.44e-14
+gamma rho= 1.6180: E0 5420.73352404 | max|dE| dt=.02 1.386e+00 dt=.01 3.465e-01 ratio 4.00 | Gauss drift (A and B, all sites) 8.35e-14
+gamma rho=12.0000: E0 81842.86540908 | max|dE| dt=.02 6.475e+00 dt=.01 1.901e+00 ratio 3.41 | Gauss drift (A and B, all sites) 1.16e-11
+
+== decoupling: kappa_r = mu_r = 0 and rho = 1; copy A with copy B random equals copy A with copy B zero
+max diff of copy A (Psi, a) after 500 steps between the two runs: 0.0 0.0
+
+== listening: neutral pair in copy A (vertex 0 and its antipode), Gauss-prepared with the links; copy B empty; links live; T = 40, dt = 0.02
+columns: rho kappa_r mu_r | t_arrive (B energy > 1e-3 of total) | fraction of total energy in B at t=10,20,30,40 | max fraction | Gauss drift | max|dE|
+-- q
+rho= 1.0000 kr= 0.0 mur= 0.0000 | t_arr   none | 0.0000 0.0000 0.0000 0.0000 | max 0.0000 | gauss 4.4e-15 | dE 3.3e-03
+rho= 1.0000 kr= 0.1 mur= 0.0000 | t_arr   0.58 | 0.0835 0.2670 0.4443 0.4451 | max 0.4535 | gauss 6.7e-15 | dE 3.5e-03
+rho= 1.0000 kr= 1.0 mur= 0.0000 | t_arr   0.06 | 0.3370 0.4277 0.3029 0.3483 | max 0.5894 | gauss 7.3e-15 | dE 6.4e-03
+rho= 1.0000 kr= 0.0 mur= 5.6427 | t_arr   0.26 | 0.0003 0.0010 0.0025 0.0004 | max 0.0040 | gauss 2.9e-15 | dE 3.3e-03
+rho= 1.0000 kr= 1.0 mur= 5.6427 | t_arr   0.06 | 0.3375 0.5971 0.4909 0.4201 | max 0.7551 | gauss 6.4e-15 | dE 6.3e-03
+rho= 1.6180 kr= 0.0 mur= 0.0000 | t_arr   none | 0.0000 0.0000 0.0000 0.0000 | max 0.0000 | gauss 4.4e-15 | dE 3.3e-03
+rho= 1.6180 kr= 0.1 mur= 0.0000 | t_arr   1.20 | 0.0033 0.0067 0.0205 0.0281 | max 0.0282 | gauss 5.1e-15 | dE 4.1e-03
+rho= 1.6180 kr= 1.0 mur= 0.0000 | t_arr   0.10 | 0.1377 0.1248 0.1130 0.2271 | max 0.2888 | gauss 1.3e-14 | dE 6.2e-03
+rho= 1.6180 kr= 0.0 mur= 5.6427 | t_arr   0.36 | 0.0004 0.0013 0.0008 0.0010 | max 0.0023 | gauss 1.0e-14 | dE 3.2e-03
+rho= 1.6180 kr= 1.0 mur= 5.6427 | t_arr   0.10 | 0.0927 0.0744 0.0423 0.0515 | max 0.1281 | gauss 5.3e-15 | dE 6.0e-03
+rho=12.0000 kr= 0.0 mur= 0.0000 | t_arr   none | 0.0000 0.0000 0.0000 0.0000 | max 0.0000 | gauss 4.4e-15 | dE 3.3e-03
+rho=12.0000 kr= 0.1 mur= 0.0000 | t_arr   none | 0.0000 0.0001 0.0001 0.0001 | max 0.0002 | gauss 6.2e-15 | dE 4.0e-03
+rho=12.0000 kr= 1.0 mur= 0.0000 | t_arr  14.04 | 0.0003 0.0006 0.0004 0.0004 | max 0.0010 | gauss 5.3e-15 | dE 6.3e-03
+rho=12.0000 kr= 0.0 mur= 5.6427 | t_arr   none | 0.0000 0.0001 0.0001 0.0001 | max 0.0001 | gauss 1.1e-14 | dE 3.3e-03
+rho=12.0000 kr= 1.0 mur= 5.6427 | t_arr   none | 0.0003 0.0006 0.0004 0.0003 | max 0.0008 | gauss 5.1e-15 | dE 5.8e-03
+-- gamma
+rho= 1.0000 kr= 0.0 mur= 0.0000 | t_arr   none | 0.0000 0.0000 0.0000 0.0000 | max 0.0000 | gauss 4.0e-15 | dE 3.2e-03
+rho= 1.0000 kr= 0.1 mur= 0.0000 | t_arr   0.58 | 0.0889 0.2718 0.4271 0.5198 | max 0.5198 | gauss 2.7e-15 | dE 3.5e-03
+rho= 1.0000 kr= 1.0 mur= 0.0000 | t_arr   0.06 | 0.3175 0.3984 0.3565 0.3897 | max 0.5431 | gauss 8.5e-15 | dE 6.4e-03
+rho= 1.0000 kr= 0.0 mur= 5.6427 | t_arr   0.26 | 0.0008 0.0014 0.0026 0.0007 | max 0.0040 | gauss 6.2e-15 | dE 3.0e-03
+rho= 1.0000 kr= 1.0 mur= 5.6427 | t_arr   0.06 | 0.3771 0.7119 0.3660 0.2261 | max 0.7510 | gauss 2.7e-15 | dE 6.3e-03
+rho= 1.6180 kr= 0.0 mur= 0.0000 | t_arr   none | 0.0000 0.0000 0.0000 0.0000 | max 0.0000 | gauss 4.0e-15 | dE 3.2e-03
+rho= 1.6180 kr= 0.1 mur= 0.0000 | t_arr   1.20 | 0.0058 0.0057 0.0129 0.0137 | max 0.0196 | gauss 4.4e-15 | dE 3.5e-03
+rho= 1.6180 kr= 1.0 mur= 0.0000 | t_arr   0.10 | 0.1613 0.1530 0.2778 0.3020 | max 0.3592 | gauss 8.0e-15 | dE 6.2e-03
+rho= 1.6180 kr= 0.0 mur= 5.6427 | t_arr   0.36 | 0.0004 0.0008 0.0007 0.0010 | max 0.0021 | gauss 2.7e-15 | dE 3.0e-03
+rho= 1.6180 kr= 1.0 mur= 5.6427 | t_arr   0.10 | 0.0806 0.0590 0.0548 0.0635 | max 0.1136 | gauss 3.6e-15 | dE 6.0e-03
+rho=12.0000 kr= 0.0 mur= 0.0000 | t_arr   none | 0.0000 0.0000 0.0000 0.0000 | max 0.0000 | gauss 4.0e-15 | dE 3.2e-03
+rho=12.0000 kr= 0.1 mur= 0.0000 | t_arr   none | 0.0000 0.0000 0.0000 0.0000 | max 0.0001 | gauss 2.9e-15 | dE 3.5e-03
+rho=12.0000 kr= 1.0 mur= 0.0000 | t_arr  31.50 | 0.0006 0.0006 0.0003 0.0007 | max 0.0010 | gauss 2.7e-15 | dE 5.9e-03
+rho=12.0000 kr= 0.0 mur= 5.6427 | t_arr   none | 0.0000 0.0000 0.0001 0.0000 | max 0.0001 | gauss 6.2e-15 | dE 3.2e-03
+rho=12.0000 kr= 1.0 mur= 5.6427 | t_arr   none | 0.0006 0.0005 0.0003 0.0005 | max 0.0009 | gauss 8.9e-15 | dE 5.8e-03
+
+== frozen-link control (links held fixed), q, rho = phi, kappa_r = 1, mu_r = M6 value
+live : max fraction in B 0.1281 | fraction at t=40 0.0515 | Gauss drift 5.33e-15 | max|dE| 6.02e-03
+frozen : max fraction in B 0.1545 | fraction at t=40 0.0950 | Gauss drift 1.18e+01 | max|dE| 6.55e-03
