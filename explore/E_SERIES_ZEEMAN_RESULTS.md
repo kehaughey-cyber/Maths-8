@@ -1,0 +1,24 @@
+# The frequency shift of a ring mode under an imposed link flux, read out of the instrument (2026-11-02)
+
+Authored by Claude (Sonnet 5.5); no independent review claimed. Script `explore/e_series_zeeman.py`, raw output `explore/e_series_zeeman.out`. Follows `NUCLEAR_MAGNETON_RESULTS.md` (its "not done" item). Nothing fitted. Units κ = k = 1; links held fixed, so this reads the matter response alone.
+
+## What was read out
+A link phase α is imposed on every edge of the decagon of cycle 0, oriented along the ring: the cycle sees a_h = +α and its reverse cycle sees −α (the only other histories that use these edges are the 10 of the reverse cycle, cycle 11). The loop flux is Φ = Σ_e a_e = 10α and the field through the ring is B = Φ / Area, with Area = 2.93892626 (5 sin 36° = 2.93892626) the norm of the oriented bivector of the ring. The matter frequencies are read from the 20×20 operator of the cycle, ω = √(κ s²)/ρ with s² = ⟨ψ|M†M|ψ⟩ for the ring eigenstate (checked as an eigenvector: residual 3e-9 for `q`, 1e-15 for `gamma`).
+
+## Results
+- **Zeeman splitting of the two circulation senses.** At α = 0 the counter-circulating modes kq = +1 and kq = 9 are degenerate; the flux splits them. Transport `q`: ω = 2|sin((θ − α)/2)| to 1e-9 at ten values from α = 0 to one flux quantum (for example α = 0.1: 0.522195578 and 0.712327636, splitting 0.190132058; for 1e-4: 1.90211e-4, slope 2 cos 18° = 1.902113). `gamma` follows the same law with θ = 54° and −18° (at α = 0.3 its two levels cross).
+- **The magnetic moment from the energy response.** dω/dα = −0.95105652 at α = 0 (central difference; −cos 18° = −0.95105652), so the moment per quantum μ = |dω/dα| (1/10) Area = 0.2795084969, against 0.2795084968 from current × area (`e_series_readouts.py`): ratio 1.0000000003. For `gamma` 0.2618602471 against 0.2618602471 (0.99999999999). Over tick ratios from 5.4e-4 to 1836 the ratio stays 1.0000000003 and μ/q × ρ = 0.279508. So in the instrument the energy-response definition (−∂E/∂B) and the current × area definition give the same moment, for both transports and every ρ. The splitting per unit field is 2μ (1.902113 × Area / 10 = 0.559017 = 2 × 0.279508): ΔE = 2μB.
+- **Flux quantum.** A flux 2π/10 per link (one flux quantum through the ring, 10α = 2π) maps the spectrum onto itself (largest difference of the sorted 20 values 2.7e-15), and moves each level down by one: ω(kq, α₀ + 2π/10) = ω(kq − 1, α₀) to 1e-15 for kq = 1 to 4. At that flux the kq = 1 mode has ω = 8e-9, a zero mode.
+- **The same flux on every ring.** Each undirected edge belongs to exactly one decagon pair (72 pairs). Imposing α along the forward cycle of every pair gives identical splittings in all 144 cycles (min = max at the 9th digit). The face flux this imposes is nonzero on all 1200 faces with max |F| = 3α, and Σ(1 − cos F) = 3.14, 12.5, 108 for α = 0.05, 0.1, 0.3 (times μ for the field energy). It is not a uniform field, and it is held fixed here by construction; with live links the face energy would act on it.
+
+## What it says about the measured Larmor frequency
+The splitting per unit field scales as geo²/ρ, so with size following the tick the proton order's Larmor frequency over the electron order's is 1/1836.152673426 = 5.446170e-4. If the electron's measured 2μ_e/h = 28.0249514 GHz/T were taken as the one handle (not done here as a calibration), the instrument gives 15.2629 MHz/T for the proton order against the measured 42.5774785 MHz/T: 0.35847, the same ratio as before, whose missing factor is μ_p in nuclear magnetons. The instrument's precession readout therefore carries the same content as its moment readout; it adds no new number but removes the dependence on how the moment is defined.
+
+## Failed run, kept
+`e_series_zeeman_run1_analytic_columns.out` (script `e_series_zeeman_run1.py`): the analytic comparison columns used θ + α, but the operator gives eigenvalue |e^{iθ} − e^{iα}| (θ − α), and for `gamma` θ was not reduced to (−π, π]; the flux-quantum check also compared the wrong neighbouring level. The numerics were unchanged by the fix (only the comparison columns and the check were corrected).
+
+## Not done
+Live links (the flux the matter itself induces on the links, i.e. the susceptibility). Spin Zeeman splitting separately from the orbital ring (the spinor's SU(2) content with k ≠ 1). A driven transition between the two levels (the resonance NMR measures). A calibration. The geometry scaling between copies is applied in the readout only.
+
+sha256: *e_series_zeeman.py 1414e0fff216b012e57808f1f5224a11d5f8c7d57ff4ea11a7e639837f47d0ec; *e_series_zeeman.out d170f3e3f81be11f96beb5873a04a3922adc8e4e520fd4d8a9373adf6589156f; *e_series_zeeman_run1.py 7a50a2ca2baebc7287110f6ea8773079c2074ffe601d29d83feaeada8789a97a; *e_series_zeeman_run1_analytic_columns.out c45375e17c2f959bc194b6b87cdfb74a59f50a779dae72c34c9c1198186679cd.
+Command: `py -3 -I -X utf8 -u explore/e_series_zeeman.py > explore/e_series_zeeman.out`.
