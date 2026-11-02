@@ -1,0 +1,87 @@
+== structure (spine D2 replay, then the new objects)
+vertices 120 edges 720 directed edges 1440 faces 1200
+T-cycles 144 lengths [10]
+T^5 antipode 1440 / 1440
+Qmat homomorphism, max |Q(ab)-Q(a)Q(b)| = 3.1031676915590914e-17
+
+== face Wilson loops
+gamma  g_ij g_jk g_ki (route56_native order) : trace mean np.float64(-0.940456403667957) std np.float64(2.666137183011115e-10) imag max 1.1102230246251565e-16 rot angle 236.0982212427928
+q  q_ij q_jk q_ki (index order, F6) : trace mean np.float64(1.6180339854941213) std np.float64(6.217974801097724e-10) imag max 1.1102230246251565e-16 rot angle 72.00000023654941
+q  q_ki q_jk q_ij (telescoping order) : trace mean np.float64(1.9999999959756425) std np.float64(8.214686417279405e-10) imag max 1.1102230246251565e-16 rot angle 0.006636060005030434
+reference: -(8/5) sin(pi/5) = np.float64(-0.940456403667957)
+
+== T-cycle holonomy of the transport (later step on the left)
+q : traces (value:count) {1.999999987: 144}
+gamma : traces (value:count) {-2.0: 144}
+
+== matter operator at a = 0, per T-cycle blocks (20x20): singular values^2 of d = Psi_T - Omega Psi, kappa = 1
+q : modes 2880 null modes (s^2<1e-10) 288 | nonzero s^2 min np.float64(0.3819660108262284) max np.float64(3.9999999973171008) | distinct nonzero values 5
+   first distinct (value:count): {0.38196601: 576, 1.38196601: 576, 2.61803399: 576, 3.61803399: 576, 4.0: 288}
+gamma : modes 2880 null modes (s^2<1e-10) 0 | nonzero s^2 min np.float64(0.09788696740969265) max np.float64(3.9021130325903126) | distinct nonzero values 5
+   first distinct (value:count): {0.09788697: 576, 0.8244295: 576, 2.0: 576, 3.1755705: 576, 3.90211303: 576}
+
+== force check against finite differences (random state)
+q : da  analytic np.float64(233.67201760614105) fd np.float64(233.67201754354028) | dPsi analytic np.float64(-72.8345869588437) fd np.float64(-72.83458694473666)
+gamma : da  analytic np.float64(219.80351499722934) fd np.float64(219.80351505135332) | dPsi analytic np.float64(-79.61255960943716) fd np.float64(-79.61255960253766)
+
+== energy, Gauss and continuity (random initial data, 2000 steps)
+q     mu= 0.00000: E0 1549.8515814583 | max|dE| dt=.02: 1.947e-01  dt=.01: 4.870e-02 | Gauss drift (s=+1) 4.552e-14  (s=-1) 1.470e+01
+q     mu= 5.64274: E0 1937.9799508402 | max|dE| dt=.02: 1.207e+00  dt=.01: 3.023e-01 | Gauss drift (s=+1) 6.040e-14  (s=-1) 1.718e+01
+   continuity (q): max |rho_dot - s*div j|  s=+1: 1.554e-15   s=-1: 8.194e+00   (j_e = dG/da_e / k);  max|rho_dot| 4.097e+00
+   div(dV/da) max (gauge invariance of V_spec): 7.105e-15
+gamma mu= 0.00000: E0 1580.2114747653 | max|dE| dt=.02: 2.068e-01  dt=.01: 5.171e-02 | Gauss drift (s=+1) 4.574e-14  (s=-1) 1.405e+01
+gamma mu= 5.64274: E0 1909.6014131159 | max|dE| dt=.02: 1.122e+00  dt=.01: 2.806e-01 | Gauss drift (s=+1) 4.441e-14  (s=-1) 1.250e+01
+   continuity (gamma): max |rho_dot - s*div j|  s=+1: 1.332e-15   s=-1: 9.997e+00   (j_e = dG/da_e / k);  max|rho_dot| 4.998e+00
+   div(dV/da) max (gauge invariance of V_spec): 7.105e-15
+
+== gauge covariance: evolve, and evolve the gauge-transformed state; compare after the transform (500 steps)
+q : max diff Psi 1.3917160485579413e-14  Psi_dot 6.59386625590458e-15  a 1.1546319456101628e-14  a_dot 4.6129766673175254e-14
+   energy before/after gauge transform: np.float64(1861.0704616883386) np.float64(1861.0704616883386)
+gamma : max diff Psi 8.337686676869105e-15  Psi_dot 7.514331938470827e-15  a 1.532107773982716e-14  a_dot 3.375077994860476e-14
+   energy before/after gauge transform: np.float64(1903.3117707762508) np.float64(1903.3117707762508)
+
+== neutral pair, Gauss-prepared; live links versus frozen links (T = 40, dt = 0.02)
+q prepared for s=+1: total charge 0.00e+00, Gauss residual at t=0 4.88e-03, initial field energy 0.95266
+  live=True: max|dE| 3.33e-03, Gauss drift (this s) 3.11e-15 (other s) 1.11e+01
+      t=  10: rho(v1)=-0.3269 rho(v2)=+0.3270 Efield=0.0173 max|a|=0.2512
+      t=  20: rho(v1)=+0.2929 rho(v2)=-0.2929 Efield=0.1157 max|a|=1.0047
+      t=  30: rho(v1)=+0.5419 rho(v2)=-0.5422 Efield=0.1775 max|a|=0.6924
+      t=  40: rho(v1)=-0.2302 rho(v2)=+0.2309 Efield=0.0256 max|a|=1.5754
+  live=False: max|dE| 3.56e-03, Gauss drift (this s) 2.46e+01 (other s) 2.46e+01
+      t=  10: rho(v1)=-0.5636 rho(v2)=+0.5636 Efield=0.9527 max|a|=0.0000
+      t=  20: rho(v1)=-9.4596 rho(v2)=+9.4596 Efield=0.9527 max|a|=0.0000
+      t=  30: rho(v1)=+14.6955 rho(v2)=-14.6955 Efield=0.9527 max|a|=0.0000
+      t=  40: rho(v1)=-2.9503 rho(v2)=+2.9503 Efield=0.9527 max|a|=0.0000
+q prepared for s=-1: total charge 0.00e+00, Gauss residual at t=0 4.88e-03, initial field energy 0.95266
+  live=True: max|dE| 9.17e-03, Gauss drift (this s) 2.03e+01 (other s) 1.24e-14
+      t=  10: rho(v1)=-0.2782 rho(v2)=+0.2786 Efield=4.0059 max|a|=3.0811
+      t=  20: rho(v1)=-4.5489 rho(v2)=+4.5494 Efield=2.4849 max|a|=3.7719
+      t=  30: rho(v1)=-3.4105 rho(v2)=+3.4109 Efield=3.0995 max|a|=4.3211
+      t=  40: rho(v1)=-0.1099 rho(v2)=+0.1102 Efield=3.7776 max|a|=5.4903
+  live=False: max|dE| 3.56e-03, Gauss drift (this s) 2.46e+01 (other s) 2.46e+01
+      t=  10: rho(v1)=-0.5636 rho(v2)=+0.5636 Efield=0.9527 max|a|=0.0000
+      t=  20: rho(v1)=-9.4596 rho(v2)=+9.4596 Efield=0.9527 max|a|=0.0000
+      t=  30: rho(v1)=+14.6955 rho(v2)=-14.6955 Efield=0.9527 max|a|=0.0000
+      t=  40: rho(v1)=-2.9503 rho(v2)=+2.9503 Efield=0.9527 max|a|=0.0000
+gamma prepared for s=+1: total charge 0.00e+00, Gauss residual at t=0 4.88e-03, initial field energy 0.95266
+  live=True: max|dE| 3.25e-03, Gauss drift (this s) 2.89e-15 (other s) 6.69e+00
+      t=  10: rho(v1)=-0.0579 rho(v2)=+0.0578 Efield=0.0257 max|a|=0.5941
+      t=  20: rho(v1)=-0.0152 rho(v2)=+0.0152 Efield=0.0125 max|a|=0.9503
+      t=  30: rho(v1)=-1.7939 rho(v2)=+1.7944 Efield=0.2975 max|a|=1.5674
+      t=  40: rho(v1)=-0.1091 rho(v2)=+0.1090 Efield=0.0327 max|a|=2.4265
+  live=False: max|dE| 3.25e-03, Gauss drift (this s) 3.69e+00 (other s) 3.69e+00
+      t=  10: rho(v1)=-0.2977 rho(v2)=+0.2977 Efield=0.9527 max|a|=0.0000
+      t=  20: rho(v1)=-0.0252 rho(v2)=+0.0252 Efield=0.9527 max|a|=0.0000
+      t=  30: rho(v1)=-1.3959 rho(v2)=+1.3959 Efield=0.9527 max|a|=0.0000
+      t=  40: rho(v1)=-0.1036 rho(v2)=+0.1036 Efield=0.9527 max|a|=0.0000
+gamma prepared for s=-1: total charge 0.00e+00, Gauss residual at t=0 4.88e-03, initial field energy 0.95266
+  live=True: max|dE| 3.10e-03, Gauss drift (this s) 8.47e+00 (other s) 1.69e-14
+      t=  10: rho(v1)=-1.4983 rho(v2)=+1.4985 Efield=2.5270 max|a|=4.0847
+      t=  20: rho(v1)=-2.8806 rho(v2)=+2.8805 Efield=1.7964 max|a|=8.3973
+      t=  30: rho(v1)=-1.1317 rho(v2)=+1.1323 Efield=3.3017 max|a|=12.8815
+      t=  40: rho(v1)=-0.6186 rho(v2)=+0.6187 Efield=3.4872 max|a|=16.9056
+  live=False: max|dE| 3.25e-03, Gauss drift (this s) 3.69e+00 (other s) 3.69e+00
+      t=  10: rho(v1)=-0.2977 rho(v2)=+0.2977 Efield=0.9527 max|a|=0.0000
+      t=  20: rho(v1)=-0.0252 rho(v2)=+0.0252 Efield=0.9527 max|a|=0.0000
+      t=  30: rho(v1)=-1.3959 rho(v2)=+1.3959 Efield=0.9527 max|a|=0.0000
+      t=  40: rho(v1)=-0.1036 rho(v2)=+0.1036 Efield=0.9527 max|a|=0.0000
