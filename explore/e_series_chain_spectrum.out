@@ -1,0 +1,30 @@
+face-energy operator S_F^T S_F (720 x 720): zero modes 119 (gradients), lowest nonzero eigenvalues of the lattice and the weight of the ring source on each distinct level:
+  lambda = 0.5278640  multiplicity   6  weight of the ring source 0.833333
+  lambda = 1.1458980  multiplicity  16  weight of the ring source 0.000000
+  lambda = 1.9331897  multiplicity  30  weight of the ring source 1.852953
+  lambda = 2.8074176  multiplicity  48  weight of the ring source 0.000000
+  lambda = 3.5563272  multiplicity  30  weight of the ring source 3.577956
+  lambda = 3.6972244  multiplicity  40  weight of the ring source 0.000000
+  lambda = 4.0000000  multiplicity  36  weight of the ring source 0.000000
+  lambda = 4.7639320  multiplicity  24  weight of the ring source 0.000000
+  lambda = 5.0000000  multiplicity  16  weight of the ring source 0.000000
+  lambda = 6.3819660  multiplicity  24  weight of the ring source 0.000000
+total weight of the ring source on nonzero modes 10.000000000000002 ; on zero modes 1.2234831179975025e-27
+lowest level with nonzero source weight: lambda = 0.527864
+
+far-field rate predicted for mu_r / mu:
+  mu_r/mu =   0.1: gamma_inf = arccosh(1 + lambda/(2 mu_r/mu)) = 1.96551 ; p (q = phi) = 4.0845 ; q for p = 3: 1.92547
+  mu_r/mu =   0.2: gamma_inf = arccosh(1 + lambda/(2 mu_r/mu)) = 1.48449 ; p (q = phi) = 3.0849 ; q for p = 3: 1.64022
+  mu_r/mu =   0.3: gamma_inf = arccosh(1 + lambda/(2 mu_r/mu)) = 1.24458 ; p (q = phi) = 2.5864 ; q for p = 3: 1.51416
+  mu_r/mu =   0.5: gamma_inf = arccosh(1 + lambda/(2 mu_r/mu)) = 0.98694 ; p (q = phi) = 2.0509 ; q for p = 3: 1.38955
+  mu_r/mu =   1.0: gamma_inf = arccosh(1 + lambda/(2 mu_r/mu)) = 0.71144 ; p (q = phi) = 1.4784 ; q for p = 3: 1.26763
+  mu_r/mu =  10.0: gamma_inf = arccosh(1 + lambda/(2 mu_r/mu)) = 0.22925 ; p (q = phi) = 0.4764 ; q for p = 3: 1.07941
+
+scan, K = 8: gamma_c and p (q = phi) at the first layers
+ mu_r/mu   gamma_0      p_0   gamma_1      p_1   gamma_2      p_2   gamma_3      p_3
+    0.20    2.1350   4.4366    1.7404   3.6167    1.5735   3.2700    1.5151   3.1485
+    0.30    1.8782   3.9030    1.5188   3.1562    1.3506   2.8067    1.2848   2.6699
+    0.40    1.7108   3.5552    1.3804   2.8686    1.2137   2.5222    1.1426   2.3744
+    0.50    1.5890   3.3020    1.2828   2.6658    1.1191   2.3256    1.0443   2.1701
+    0.70    1.4177   2.9460    1.1499   2.3896    0.9940   2.0656    0.9148   1.9010
+    1.00    1.2513   2.6003    1.0247   2.1294    0.8813   1.8313    0.7998   1.6620
