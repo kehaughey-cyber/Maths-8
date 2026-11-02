@@ -1,0 +1,20 @@
+rung ratio a0 / lambda_e = 137.03599917759013  = 1/alpha = 137.03599917759013 (by definition; carries no new information)
+lambda_e = 3.8615926743365244e-13 m ; a0 = 5.29177210544568e-11 m
+
+system        Z    I   mu (mu_N) (2I+1)/(2I)      M/m_e  measured hfs/Ry   (A) prediction  A/measured    R_mag/a0
+H             1  0.5   2.7928474      2.0000    1836.15     4.317550e-07     4.312791e-07    0.998898  1.1100e-05
+D             1  1.0   0.8574382      1.5000    3670.48     9.951370e-08     9.938705e-08    0.998727  3.4077e-06
+3He+ (1969)   2  0.5   2.1276253      2.0000    5495.89     2.634063e-06     2.631290e-06    0.998947  8.4557e-06
+3He+ (2022)   2  0.5   2.1276253      2.0000    5495.89     2.634063e-06     2.631290e-06    0.998947  8.4557e-06
+
+(A) check without the reduced-mass factor, hydrogen:  4.319841339523281e-07 against measured 4.3175501100974554e-07
+
+ratios to hydrogen:
+system         measured X/H      (A) X/H  A/measured  (B) mu_X/mu_p  B/measured  what (B) is missing
+D                  0.230487     0.230447    0.999829       0.307012    1.332018  factor needed 0.7507 = (2I+1)/(2I) ratio 0.7500 x Z^3 1 x reduced mass
+3He+ (1969)        6.100827     6.101130    1.000050       0.761812    0.124870  factor needed 8.0083 = (2I+1)/(2I) ratio 1.0000 x Z^3 8 x reduced mass
+3He+ (2022)        6.100827     6.101130    1.000050       0.761812    0.124870  factor needed 8.0083 = (2I+1)/(2I) ratio 1.0000 x Z^3 8 x reduced mass
+
+the two 3He+ values differ by 1.2299995422363281 Hz = 1.4193967689836366e-10 relative; the formula-versus-measured gaps are 1e-4 to 1e-3, set by QED, Breit and nuclear-structure corrections that (A) does not include.
+
+the instrument-calibrated coupling mu_r from hydrogen (e_series_response.out: 1.2531e-4 at rho_B = 1, 1.2098e-6 at rho_B = 1/1836.15) enters (B) only through the common factor, which cancels in X/H.

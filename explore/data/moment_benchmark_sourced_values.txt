@@ -11,3 +11,8 @@ Added 2026-11-02 (hyperfine and scale items). W = web page answer, page text not
 W https://physics.nist.gov/cgi-bin/cuu/Value?rydhcev  Rydberg constant times hc = 13.605 693 122 990(15) eV (CODATA 2022)
 W https://physics.nist.gov/cgi-bin/cuu/Value?alph      fine-structure constant alpha = 7.297 352 5643(11) x 10^-3 (CODATA 2022)
 W https://en.wikipedia.org/wiki/Hydrogen_line          hydrogen ground-state hyperfine transition 1420.405751768(2) MHz (page cites Hellwig et al., IEEE Trans. Instrum. Meas., 1970; secondary); energy 5.8743261841116(81) ueV as stated on the page
+
+Added 2026-11-02 (hyperfine series). W = web search answer (secondary; the papers were not opened).
+W deuterium ground-state hyperfine: 327 384 352.5222(17) Hz, Wineland & Ramsey, Phys. Rev. A 5, 821 (1972), measured with the hydrogen frequency taken as exactly 1 420 405 751.768 Hz (same search also quotes hep-ph/0002158 giving 327 384.352 521 9(17) kHz; a 2025 arXiv in-beam value 327.3843549(28) MHz is 2.4 Hz higher, within its error)
+W 3He+ ground-state hyperfine: 8 665 649 867(10) Hz, Schuessler, Fortson & Dehmelt, Phys. Rev. 187, 5 (1969); Penning-trap value 8 665 649 865.77(26)stat(1)sys Hz, Schneider et al., Nature (2022)
+Recalled, not sourced: m_e/u = 5.485799090e-4 (used only for the 1e-3-level reduced-mass factor)
