@@ -33,7 +33,7 @@ Scale columns: *expressed* is where the property is present in the structure, *m
 ## C. Weak force
 | aspect | expressed → manifest | in repo | status and uncertainty |
 |---|---|---|---|
-| 14C beta decay, 0.226 Bq per gram of natural carbon, half-life 5700(30) y | nucleus → bulk | `carbon_one_gram.md` | S NUBASE2020 (half-life); activity secondary; 0.53% from the 5700 vs 5730 convention |
+| 14C beta decay, 0.226 Bq per gram of natural carbon, half-life 5700(30) y, Q(β−) = 156.4765(37) keV | nucleus → bulk | `carbon_one_gram.md`, `explore/data/carbon_aspect_sourced_values.txt` §1 | S NUBASE2020 and IAEA table (half-life, Q); activity secondary; 0.53% from the 5700 vs 5730 convention |
 | neutrinos through the gram (solar, geo, relic) | cosmic → bulk | `carbon_complete_stack.md` §6 | rates from saved reviews; atmospheric not obtained |
 | neutrino interaction rate in the gram, about 3e-11 per second | – | `carbon_gram_refinements.md` | order of magnitude only |
 | neutrino mass scale (oscillation lower bounds; no absolute mass measured) | – | `full_ladder.md` | S PDG 2024 |
@@ -46,16 +46,16 @@ Scale columns: *expressed* is where the property is present in the structure, *m
 | the six electrons and their ionization energies, sum 1030.1079 eV | atom | `carbon_one_gram.md` | S (NIST ASD CI to CVI saved, PeriodicTableJSON) |
 | bonds and molecules: C–C 3.6855 eV (Ec/2), CH4, C2H6, CO2, C6H6, CO | atom → molecule → lattice | `carbon_gram_remaining.md`, `chemical_ladder.md` | CCCBDB geometries are secondary (page text not saved) |
 | the lattice: a = 3.56683 Å, density 3512.9591 kg/m³, cohesion 7.3711 eV per atom | lattice → bulk | `carbon_one_gram.md` | secondary quotation for a; graphite quantities also secondary |
-| electronic band structure, insulating behaviour of diamond versus conducting graphite | lattice → bulk | – | – |
-| optical response (transparency, refraction) | lattice → bulk | – | – |
+| electronic band structure: diamond gap 5.47 eV, resistivity 1e11–1e18 Ω m; graphite a semimetal | lattice → bulk | `carbon_aspect_sourced_values.txt` §4 | W secondary (Wikipedia; resistivity from Fromentin 2004; gap has no reference shown) |
+| optical response: refractive index 2.417 at 589.3 nm | lattice → bulk | `carbon_aspect_sourced_values.txt` §4 | W secondary; footnote not clearly attached to the value |
 
 ## E. Electromagnetism, magnetic side
 | aspect | expressed → manifest | in repo | status and uncertainty |
 |---|---|---|---|
 | nuclear spin zero for 12C: no nuclear magnetic moment | nucleus | IAEA table (above) | S |
 | ground term 3P, J = 0 for the free atom (2s2 2p2): no net atomic moment in the ground level | atom | `explore/data/nist_asd_CI.txt` | S (level energy uncertainty 1.6e-7 eV) |
-| electron magnetic moment and spin | electron | – | – |
-| collective magnetic response (both diamond and graphite are diamagnetic; graphite strongly and anisotropically) | lattice → bulk | – | R, not sourced; susceptibilities not in the repo |
+| electron magnetic moment μ_e = −9.2847646917(29)e−24 J/T | electron | `carbon_aspect_sourced_values.txt` §2 | W NIST CODATA 2022 |
+| collective magnetic response | lattice → bulk | `carbon_aspect_sourced_values.txt` §3 | W review arXiv cond-mat/0207368: graphite c-axis χ = −(22–50)e−6 emu/g (varies tens of percent between samples); in-plane −5e−7 emu/g usually quoted but +2e−6 reported (misalignment can mimic the sign); diamond −4.9e−7 cm³/g from a secondary table, unverified |
 
 Reading of section E: the gram has many magnetic ingredients present (spins, orbital currents, moments) and its manifest magnetism is weak. This is the expressed-versus-manifest difference the human described: having the properties of magnetism is not the same as manifesting its effects.
 
@@ -71,7 +71,7 @@ Reading of section E: the gram has many magnetic ingredients present (spins, orb
 | entropy of diamond, S = 2.3782 J/(mol K) at 298.15 K | lattice → bulk | `carbon_one_gram.md` | S NIST WebBook (DeSorbo 1953); graphite-like values are a range |
 | heat capacity Cp = 6.1149 J/(mol K); Debye temperature 1861 K (Cp) or 1865 K (S) | phonons → bulk | `carbon_gram_remaining.md` | the two Debye values differ by 0.20%, so they are model-defined |
 | phonons: Raman zone-centre mode 1332.7(2) cm-1 | lattice | `carbon_gram_remaining.md` | secondary |
-| thermal conduction, melting or sublimation, hardness, elastic moduli | lattice → bulk | – | – |
+| thermal conduction ≈2200 W/(m K) natural, 3320 for 12C-enriched at room temperature (Anthony 1990); burns above 700 °C in air, graphitises ≈1700 °C in argon; Mohs 10 | lattice → bulk | `carbon_aspect_sourced_values.txt` §4 | W secondary (Wikipedia, with primary references where shown); bulk and Young's moduli and Debye value not obtained |
 | information counts: atoms (log2 N = 75.41), thermodynamic bits 2.0709e22, Bekenstein–Compton bits 1.0516e38 (gap 15.7 decades) | all | `carbon_complete_stack.md` §3 | gap depends on phase (diamond versus graphite, radius ×1.157) |
 
 ## H. Context of the gram (not modelled; the mature state)
@@ -83,5 +83,6 @@ Reading of section E: the gram has many magnetic ingredients present (spins, orb
 
 ## What this draft shows
 - **Well covered in the repo:** mass budget, nuclear binding and size, charge, atomic and molecular energies, the lattice, entropy and heat, the neutrino and ¹⁴C flows.
-- **Present only as a gap:** the weak column, electronic and optical response, mechanical response, and the magnetic side beyond the free-atom and nuclear spin facts.
+- **Updated 2026-11-02:** the rows for weak decay energy, electron moment, susceptibility, electronic, optical, thermal conduction and thermal limits now carry sourced values (secondary where marked).
+- **Still gaps:** the weak column of the unified table, elastic moduli, and a primary source for the diamond susceptibility and the diamond table values.
 - **Stands out:** every row is a measurement with a scheme or margin attached. Several (strong coupling, quark masses, G) carry uncertainties larger than the gaps one would want to resolve. Those rows can mark where the instrument can say something and where it cannot yet.
