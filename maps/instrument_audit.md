@@ -46,3 +46,6 @@ A search of the `.py` files for "link phase", "continuity", "Verlet", "Berry" re
 
 ## Not confirmed
 `route56_repro.py` and `route56_massgap.py` contain 48/5 or sin(π/5) expressions; I did not confirm they are the frustration-flux energy V_spec = μΣ(1−cos F) with μ = (48/5) sin(π/5) of M6 E3.
+
+## Correction (2026-11-02, appended, at the human's word)
+The audit above left open that the four missing pieces (link phases on the T-history layer; a single action with matter, links and field all moving, M6 E6; flux between adjacent copies; an expressed/manifest split) might exist under other names. The human states why the search did not find them: they were always refused, and they are genuinely owed. They are open work, not hidden code. The sentence "so the E-series pieces could exist under other names" is withdrawn; the build for step 3 starts from owed, not from recovery.
