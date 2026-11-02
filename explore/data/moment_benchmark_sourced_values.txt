@@ -1,0 +1,8 @@
+Sourced values for the magnetic-moment benchmark (explore/carbon_nuclear_moments.py, explore/e_series_readouts.py). Retrieved 2026-11-02. W = web page answer (WebFetch, page text not saved), NIST CODATA 2022 unless stated; S = saved file.
+
+W https://physics.nist.gov/cgi-bin/cuu/Value?mub   Bohr magneton mu_B = 9.274 010 0657(29) x 10^-24 J T^-1
+W https://physics.nist.gov/cgi-bin/cuu/Value?muem  electron magnetic moment mu_e = -9.284 764 6917(29) x 10^-24 J T^-1
+W https://physics.nist.gov/cgi-bin/cuu/Value?mup   proton magnetic moment mu_p = 1.410 606 795 45(60) x 10^-26 J T^-1
+W https://physics.nist.gov/cgi-bin/cuu/Value?mpsme proton-electron mass ratio m_p/m_e = 1836.152 673 426(32)
+S explore/data/iaea_livechart_ground_states.csv  columns jp, magnetic_dipole (nuclear magneton units), unc_md for every listed ground state; n: -1.9130427(5), 1H: 2.792847351(9); 12C has Jpi 0+ and no magnetic dipole entry (extraction 2023-10-18, ENSDF evaluations as cited in the file).
+Derived in the scripts, not sourced: mu_N = mu_B / (m_p/m_e) (nuclear magneton); mu_e/mu_B = mu_e / mu_B.

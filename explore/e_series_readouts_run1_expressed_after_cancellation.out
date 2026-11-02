@@ -1,0 +1,41 @@
+== check: ring states are eigenmodes of the matter operator (q and gamma)
+q : closure residual 6.707262412142256e-09  eigen-equation residual 5.900381678582246e-09  s^2 = np.float64(0.3819660112501051) (2-2cos theta)
+gamma : closure residual 8.95090418262362e-16  eigen-equation residual 7.71185559270127e-16  s^2 = np.float64(0.8244294954150538) (2-2cos theta)
+cycle 0 reversed is cycle 11 ; reverse of that is 0
+
+== expressed / manifest readouts at one instant, transport q, rho = 1, kq = 1
+one ring, charge -                             Q=  +12.3607 sum|rho|=  12.3607 dipole=  0.0000 | current: expressed    3.4549 manifest    3.4549 (1.0000) | flux exp 0.0e+00 man 0.0e+00
+ring + its reverse ring, charges - and + (neutral) Q=   +0.0000 sum|rho|=   0.0000 dipole=  0.0000 | current: expressed    0.0000 manifest    0.0000 (0.0000) | flux exp 0.0e+00 man 0.0e+00
+ring + its reverse ring, both charge -         Q=  +24.7214 sum|rho|=  24.7214 dipole=  0.0000 | current: expressed    0.0000 manifest    0.0000 (0.0000) | flux exp 0.0e+00 man 0.0e+00
+all 144 rings, each decagon pair neutral       Q=   -0.0000 sum|rho|=   0.0000 dipole=  0.0000 | current: expressed    0.0000 manifest    0.0000 (0.0041) | flux exp 0.0e+00 man 0.0e+00
+all 144 rings, random charge signs (seed 7)    Q=  -74.1641 sum|rho|= 341.1548 dipole=  0.0000 | current: expressed    0.0000 manifest    0.0000 (0.0041) | flux exp 0.0e+00 man 0.0e+00
+all 144 rings, same charge sign                Q=+1779.9379 sum|rho|=1779.9379 dipole=  0.0000 | current: expressed    0.0000 manifest    0.0000 (0.0041) | flux exp 0.0e+00 man 0.0e+00
+
+== expressed / manifest readouts at one instant, transport gamma, rho = 1, kq = 1
+one ring, charge -                             Q=  +18.1596 sum|rho|=  18.1596 dipole=  0.0000 | current: expressed    4.7553 manifest    4.7553 (1.0000) | flux exp 0.0e+00 man 0.0e+00
+ring + its reverse ring, charges - and + (neutral) Q=   +0.0000 sum|rho|=   0.0000 dipole=  0.0000 | current: expressed    0.0000 manifest    0.0000 (0.0000) | flux exp 0.0e+00 man 0.0e+00
+ring + its reverse ring, both charge -         Q=  +36.3192 sum|rho|=  36.3192 dipole=  0.0000 | current: expressed    0.0000 manifest    0.0000 (0.0000) | flux exp 0.0e+00 man 0.0e+00
+all 144 rings, each decagon pair neutral       Q=   -0.0000 sum|rho|=   0.0000 dipole=  0.0000 | current: expressed    0.0000 manifest    0.0000 (0.0000) | flux exp 0.0e+00 man 0.0e+00
+all 144 rings, random charge signs (seed 7)    Q= -108.9577 sum|rho|= 501.2055 dipole=  0.0000 | current: expressed    0.0000 manifest    0.0000 (0.0000) | flux exp 0.0e+00 man 0.0e+00
+all 144 rings, same charge sign                Q=+2614.9853 sum|rho|=2614.9853 dipole=  0.0000 | current: expressed    0.0000 manifest    0.0000 (0.0000) | flux exp 0.0e+00 man 0.0e+00
+
+== one ring, charge -, by mode index kq (transport q): moment per charge
+kq=1: omega=0.618034  Q=+12.36068  manifest moment=3.454915  moment/|Q|=0.279508
+kq=2: omega=1.175571  Q=+23.51141  manifest moment=5.590170  moment/|Q|=0.237764
+kq=3: omega=1.618034  Q=+32.36068  manifest moment=5.590170  moment/|Q|=0.172746
+kq=4: omega=1.902113  Q=+38.04226  manifest moment=3.454915  moment/|Q|=0.090818
+kq=5: omega=2.000000  Q=+40.00000  manifest moment=0.000000  moment/|Q|=0.000000
+
+== order dependence: one ring, kq = 1, in a copy whose tick is rho times longer (m = rho^2, omega = s/rho); geometry unscaled and scaled by geo = rho
+         rho          |Q|   moment (geo=1)   moment/|Q| (geo=1)      x rho   moment/|Q| (geo=rho)      / rho
+5.446170e-04  6.73184e-03     3.454915e+00         5.132203e+02   0.279508           1.522251e-04   0.279508
+7.297353e-03  9.02002e-02     3.454915e+00         3.830273e+01   0.279508           2.039672e-03   0.279508
+1.000000e+00  1.23607e+01     3.454915e+00         2.795085e-01   0.279508           2.795085e-01   0.279508
+1.200000e+01  1.48328e+02     3.454915e+00         2.329237e-02   0.279508           3.354102e+00   0.279508
+1.836153e+03  2.26961e+04     3.454915e+00         1.522251e-04   0.279508           5.132203e+02   0.279508
+
+== measured comparison (CODATA 2022, moment_benchmark_sourced_values.txt)
+model, geometry scaled with the tick (size and tick together): moment per charge in an order whose tick is 1/(m_p/m_e) of the electron order, over the electron order: 0.0005446170214888188
+measured |mu_p / mu_e| = 0.0015192703771060505 ; mu_N/mu_B = m_e/m_p = 0.0005446170214888188 ; mu_e/mu_B = 1.001159652181075
+model / measured (proton over electron) = 0.35847274434865295 = 1/(mu_p/mu_N) up to mu_e/mu_B = 0.3580575221621274
+measured mu_p in nuclear magnetons (table value 2.792847351) -> mu_N/mu_p-order factor the instrument does not produce: 2.792847344643141

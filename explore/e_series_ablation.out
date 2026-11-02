@@ -1,0 +1,76 @@
+== A. rungs of one gram of carbon by size (maps/carbon_complete_stack.md §1), and the ratio to the next size up
+ 3.5180e-40 m  bulk     gram Compton wavelength hbar/(Mc)                     next/this =   3.1552e+23
+ 1.1100e-16 m  lepton   tau Compton                                           next/this =       1.8946
+ 2.1030e-16 m  hadron   proton Compton                                        next/this =       3.9976
+ 8.4070e-16 m  hadron   nucleon at r_p, E = m_p c^2                           next/this =        2.222
+ 1.8680e-15 m  lepton   muon Compton                                          next/this =       1.2527
+ 2.3400e-15 m  nuclear  12C nucleus, matter radius (point)                    next/this =       1.0556
+ 2.4700e-15 m  nuclear  12C nucleus, charge radius                            next/this =       156.36
+ 3.8620e-13 m  lepton   electron Compton                                      next/this =       22.838
+ 8.8200e-12 m  atomic   C5+ 1s electron, a0/6, E = IE6                        next/this =            6
+ 5.2920e-11 m  atomic   H atom, a0, Ry                                        next/this =        2.054
+ 1.0870e-10 m  molecule CH4, mean C-H edge, D0/4                              next/this =       1.0175
+ 1.1060e-10 m  lattice  diamond Wigner-Seitz, Ec                              next/this =       1.0199
+ 1.1280e-10 m  molecule CO, r_e, D0                                           next/this =       1.0239
+ 1.1550e-10 m  molecule C2H6, mean edge, D0/7                                 next/this =       1.0061
+ 1.1620e-10 m  molecule CO2, mean C=O edge, D0/2                              next/this =       1.0009
+ 1.1630e-10 m  atomic   C valence, n=2, E = IE1                               next/this =       1.0662
+ 1.2400e-10 m  molecule C6H6, mean edge, D0/12                                next/this =       1.1452
+ 1.4200e-10 m  lattice  graphite in-plane C-C, Ec/1.5                         next/this =       1.0873
+ 1.5440e-10 m  lattice  diamond C-C, Ec/2                                     next/this =            1
+ 1.5440e-10 m  phonon   Debye quantum k Theta_D at C-C                        next/this =            1
+ 1.5440e-10 m  phonon   Raman optical phonon at C-C                           next/this =       2.3102
+ 3.5670e-10 m  thermal  thermal kT (298.15 K) at lattice a                    next/this =   1.1441e+07
+ 4.0810e-03 m  bulk     diamond gram, equal-volume sphere, E = Mc^2           next/this =       1.1571
+ 4.7220e-03 m  bulk     graphite gram, equal-volume sphere, E = Mc^2        
+
+distinct sizes (merged within 3%): 19 | adjacent ratios: 3.155e+23 1.895 3.998 2.222 1.253 1.056 156.4 22.84 6 2.054 1.038 1.03 1.067 1.145 1.087 2.31 1.144e+07 1.157
+excluding the jump to the gram: min 1.03  median 1.574  max 156.4  | log_phi of them: 1.33 2.88 1.66 0.47 0.11 10.50 6.50 3.72 1.50 0.08 0.06 0.14 0.28 0.17 1.74 0.30
+declared base rho = median measured adjacent ratio = 1.5736356270617513
+
+scenario partner cycle 22 (second ring, opposite charge, generic position)
+
+== A (cont.). two-copy exchange at the measured adjacent ratios, kappa_r = 1, mu_r = 0 and mu_r = M6, links live, T = 40
+rho | mu_r = 0: t_arrive(>1e-3), max fraction in B | mu_r = M6: t_arrive, max fraction
+    1.0301 |   0.06, 0.4624  (gauss 1e-14) |   0.06, 0.7228  (gauss 8e-15)
+    1.0377 |   0.06, 0.4651  (gauss 1e-14) |   0.06, 0.7175  (gauss 8e-15)
+    1.0556 |   0.06, 0.4668  (gauss 2e-14) |   0.06, 0.7044  (gauss 1e-14)
+    1.0671 |   0.06, 0.4842  (gauss 1e-14) |   0.06, 0.6957  (gauss 8e-15)
+    1.0873 |   0.06, 0.4634  (gauss 1e-14) |   0.06, 0.6801  (gauss 1e-14)
+    1.1452 |   0.06, 0.4791  (gauss 9e-15) |   0.06, 0.6339  (gauss 1e-14)
+    1.1571 |   0.06, 0.4775  (gauss 1e-14) |   0.06, 0.6243  (gauss 1e-14)
+    1.2527 |   0.06, 0.4885  (gauss 1e-14) |   0.06, 0.5481  (gauss 9e-15)
+    1.8946 |   0.10, 0.3635  (gauss 1e-14) |   0.10, 0.2622  (gauss 1e-14)
+     2.054 |   0.10, 0.3538  (gauss 1e-14) |   0.10, 0.2192  (gauss 1e-14)
+     2.222 |   0.10, 0.3650  (gauss 1e-14) |   0.10, 0.1862  (gauss 1e-14)
+    2.3102 |   0.10, 0.3390  (gauss 1e-14) |   0.10, 0.1650  (gauss 8e-15)
+    3.9976 |   0.18, 0.0751  (gauss 2e-14) |   0.18, 0.0501  (gauss 1e-14)
+         6 |   0.28, 0.0239  (gauss 1e-14) |   0.26, 0.0185  (gauss 1e-14)
+    22.838 |   1.38, 0.0011  (gauss 2e-14) |   1.34, 0.0039  (gauss 1e-14)
+    156.36 |   none, 0.0000  (gauss 1e-14) |   none, 0.0006  (gauss 7e-14)
+
+== B. ablation record: base rho = 1.5736, kappa_r = 1, mu_r = M6, transport q; time means over T = 20 (snapshots every 0.5)
+note: the dipole column is at the 1e-8 rounding scale of the carrier (vertices rounded to 9 decimals): it is zero to numerical precision and its ratios carry no information.
+switch                                                   charge exp A       dipole A  current exp A   moment man A     flux exp A     flux man A   moment man B  frac energy B    gauss drift         dE max
+base                                                            16.43     2.9988e-08         2.7288         1.9295         1.3718        0.29202        0.63295        0.16638     5.7732e-15       0.004349
+links frozen (a, b not updated)                                15.316     3.7353e-08          2.845         2.0117              0              0        0.74519        0.16666         1.1294      0.0035868
+charge coupling off (k = 0)                                    15.316     3.7353e-08          2.845         2.0117              0              0        0.74519        0.17448              0      0.0035868
+face flux energy off in both copies (mu = 0)                   14.711      4.325e-08         1.8839         1.3291         11.455         1.5156        0.77457        0.23218     8.3267e-15      0.0039601
+plaquette flux between copies off (mu_r = 0)                   15.048      1.562e-07         3.5089         2.4811         2.7812        0.76444         1.6375        0.20156     9.1038e-15      0.0045163
+matter coupling between copies off (kappa_r = 0)               24.721     3.8558e-08         6.9551          4.918         1.8846        0.52178              0       0.012595     8.6597e-15     0.00095913
+copies decoupled (kappa_r = mu_r = 0)                          24.721     3.8089e-08         6.9671         4.9265         2.9209        0.90404              0              0     6.8834e-15      0.0012506
+transport gamma instead of q                                    26.83     1.4054e-14         4.6932         3.3186         2.0757        0.49882        0.71079        0.14593     8.2157e-15      0.0060686
+equal ticks (rho = 1)                                          12.993     3.3851e-08         2.3993         1.6966         1.5622        0.32501         1.7624        0.33912     4.2188e-15      0.0055506
+rho = 1836.152673426 (proton/electron mass ratio)              24.721     4.1131e-08         4.1208         2.9139         1.4881        0.32373     8.5166e-12     5.2143e-07     1.8285e-14      0.0034653
+
+change relative to base (ratio of the column to the base value; 1 = unchanged, 0 = vanishes):
+switch                                                   charge exp A       dipole A  current exp A   moment man A     flux exp A     flux man A   moment man B  frac energy B
+links frozen (a, b not updated)                                0.9322          1.246          1.043          1.043              0              0          1.177          1.002
+charge coupling off (k = 0)                                    0.9322          1.246          1.043          1.043              0              0          1.177          1.049
+face flux energy off in both copies (mu = 0)                   0.8953          1.442         0.6904         0.6888           8.35           5.19          1.224          1.396
+plaquette flux between copies off (mu_r = 0)                   0.9159          5.209          1.286          1.286          2.027          2.618          2.587          1.211
+matter coupling between copies off (kappa_r = 0)                1.505          1.286          2.549          2.549          1.374          1.787              0         0.0757
+copies decoupled (kappa_r = mu_r = 0)                           1.505           1.27          2.553          2.553          2.129          3.096              0              0
+transport gamma instead of q                                    1.633      4.687e-07           1.72           1.72          1.513          1.708          1.123         0.8771
+equal ticks (rho = 1)                                          0.7908          1.129         0.8793         0.8793          1.139          1.113          2.784          2.038
+rho = 1836.152673426 (proton/electron mass ratio)               1.505          1.372           1.51           1.51          1.085          1.109      1.346e-11      3.134e-06
