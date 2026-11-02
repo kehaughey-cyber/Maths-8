@@ -1,0 +1,19 @@
+Sourced values for maps/carbon_gram_aspects.md (gap-filling pass, retrieved 2026-11-02). Page text not saved except where a file is named. S = saved file in explore/data; W = web page answer (WebFetch/WebSearch summary, page text not saved), secondary unless a primary reference is shown.
+
+1. 14C beta-minus Q value (weak aspect). S: explore/data/iaea_livechart_ground_states.csv, row Z=6 N=8: Q(beta-) = 156.4765 +- 0.0037 keV; Jpi 0+; half-life 5700 +- 30 y; decay B- 100%; ENSDF cut-off 1-JUL-1990, extraction 2023-10-18.
+   12C row (Z=6 N=6) same file: Jpi 0+, r_ch 2.4702 +- 0.0022 fm, abundance 98.94 +- 0.06 %, B/A 7680.1446 +- 0.0002 keV, no magnetic dipole entry. The file also lists an electric_quadrupole value 0.06 +- 0.03 for 12C; not used (a spin-0 nucleus has no static quadrupole moment, so the column or row meaning is unclear).
+
+2. Electron magnetic moment. W: https://physics.nist.gov/cgi-bin/cuu/Value?muem (NIST CODATA 2022): mu_e = -9.284 764 6917(29) x 10^-24 J T^-1.
+
+3. Magnetic susceptibility. W: arXiv cond-mat/0207368 ("Magnetism of carbon-based materials", a review; the saved tool-result PDF text was read with pdftotext, lines 304):
+   - graphite along the c-axis: chi_perp = -(22 - 50) x 10^-6 emu/g, attributed to itinerant pi electrons.
+   - graphite parallel to the basal plane: "usually accepted" -5 x 10^-7 emu/g, but "experimental evidence that this component is paramagnetic, +2 x 10^-6 emu/g [95]"; negative in-plane values may come from sample misalignment.
+   - diamond: the review says the low-field moment is non-linear for graphite, C60 and diamond; it gives no diamond number in the quoted passage.
+   - diamond number: W search result quoting a susceptibility table (Wikipedia 'Magnetic susceptibility', mass susceptibility -4.9 x 10^-7 cm^3/g, molar -5.9 x 10^-6 cm^3/mol, room temperature). Secondary, the same search found that table's graphite row looked mislabelled. Treat the diamond value as unverified.
+   - The c-axis value is not a constant: one recent study (named in the search summary, not opened) finds tens of percent variation between bulk samples.
+
+4. Diamond properties. W: https://en.wikipedia.org/wiki/Material_properties_of_diamond (secondary; each value as the page shows it):
+   band gap 5.47 eV (no reference shown); refractive index 2.417 at 589.3 nm (footnote [22] Webster & Read 2000 is not clearly attached); electrical resistivity 1.0e11 to 1.0e18 ohm m (Fromentin 2004, The Physics Factbook); Mohs hardness 10 (no reference); thermal conductivity about 2200 W/(m K) natural (no reference), 3320 W/(m K) at room temperature for 12C-enriched synthetic diamond (Anthony et al., Phys. Rev. B 42, 1104, 1990), 41000 W/(m K) at 104 K for 12C-enriched (Wei et al., Phys. Rev. Lett. 70, 3764, 1993); burns in air above 700 C (John et al. 2002); graphitises about 1700 C in argon (Davies & Evans 1972; Evans & James 1964); density as specific gravity 3.516 to 3.525 (no reference); a = 3.56683 Angstrom (no reference).
+   Not obtained: bulk modulus, Young's modulus, elastic constants, Debye temperature, thermal expansion, dielectric constant (not on the page; the Ioffe archive page failed with a certificate error).
+
+5. Not obtained in this pass: weak-interaction rates in the gram beyond the existing neutrino numbers; graphite electronic structure (semimetal, from the review text only); any primary source for items 3 (diamond) and 4.
