@@ -1,0 +1,46 @@
+== what the nuclear magneton is
+m_e from mu_B = e hbar / (2 m_e): 9.109383713937393e-31 kg ; m_p = m_e x (m_p/m_e): 1.672621925960941e-27 kg
+mu_N = e hbar / (2 m_p) = 5.050783739238859e-27 J/T ;  mu_B / (m_p/m_e) = 5.0507837392388585e-27  (equal)
+proton reduced Compton length hbar/(m_p c) = 2.1030891005002003e-16 m (the stack lists 2.1030891e-16)
+e c lambda_p / 2 = 5.0507837392388585e-27 J/T ; ratio to mu_N = 0.9999999999999999  i.e. mu_N is the moment of one charge e circling at c on the radius lambda_p (current e c/(2 pi r) times area pi r^2)
+mu_N / h = 7.622593218755553 MHz/T
+
+== what it does: the precession (Larmor) frequency of a nuclear moment in a field, nu = |mu| B / (I h); and the g-factor g = mu / (I mu_N)
+nuclide   Jpi    I    mu (mu_N)     g = mu/(I mu_N)   |mu_N-units|   nu per tesla (MHz/T)   splitting h nu at 1 T (eV)   kT at 298.15 K / that
+H1         1/2+  0.5    2.7928474        5.5856947    2.7928474          42.577479               1.7609e-07            1.459e+05
+n1         1/2+  0.5   -1.9130427       -3.8260854    1.9130427          29.164693               1.2062e-07             2.13e+05
+H2           1+  1.0    0.8574382        0.8574382    0.8574382           6.535903               2.7030e-08            9.505e+05
+He3        1/2+  0.5   -2.1276253       -4.2552506    2.1276253          32.436045               1.3414e-07            1.915e+05
+C13        1/2-  0.5    0.7023690        1.4047380    0.7023690          10.707746               4.4284e-08            5.802e+05
+N14          1+  1.0    0.4035730        0.4035730    0.4035730           3.076273               1.2722e-08            2.019e+06
+N15        1/2-  0.5   -0.2830569       -0.5661138    0.2830569           4.315255               1.7846e-08             1.44e+06
+F19        1/2+  0.5    2.6283210        5.2566420    2.6283210          40.069244               1.6571e-07             1.55e+05
+check on the proton: 2 mu_p / h from the CODATA value = 42.577478460592516 MHz/T (the table row gives the line above)
+
+== symptoms: how the nucleus is not a point particle
+Dirac point proton (g = 2, spin 1/2): mu = 1.0000 mu_N; measured 2.792847351 -> factor 2.792847351  (g_p = 5.5856947)
+Dirac point neutron (no charge): mu = 0; measured -1.9130427 mu_N : a neutral particle with a moment must have charged parts that do not cancel
+measured ratio mu_n / mu_p = -0.6849793273932501
+quark picture (textbook, from memory): mu_p = (4 mu_u - mu_d)/3, mu_n = (4 mu_d - mu_u)/3, mu_q = e_q hbar/(2 m_q), m_q = m_p/3 gives mu_u = 2, mu_d = -1 (units mu_N): mu_p = 3.0000, mu_n = -2.0000, ratio -2/3 = -0.66667
+   against measured 2.7928 (-6.9%), -1.9130 (-4.3%), ratio -0.68498
+
+== symptoms in the gram: carbon-13 (natural abundance from the table row for carbon-12 = 98.94%, so 13C taken as 1.06%)
+13C nuclei in one gram: 5.319557673171683e+20  moment each 3.5475139241454584e-27 J/T
+all 13C moments aligned (expressed ceiling): M = 1.8871204915871361e-06 J/T
+   in B = 1.0 T at T = 298.15 K: M = 1.6263e-12 J/T ; manifest/expressed = tanh(8.618e-07) = 8.6180e-07
+   in B = 1.0 T at T = 4.2 K: M = 1.1545e-10 J/T ; manifest/expressed = tanh(6.118e-05) = 6.1177e-05
+nuclear Curie mass susceptibility of the 13C moments, 298.15 K: 2.0437e-15 m^3/kg = 1.6263e-13 emu/g (cgs: x 1e3/(4 pi))
+compare the diamond orbital (diamagnetic) susceptibility -4.9e-7 cm^3/g (secondary table value, unverified, carbon_aspect_sourced_values.txt section 3): ratio nuclear/diamagnetic = 3.32e-07
+
+== ablating the size scaling in the instrument against the measured moment ratio (proton order over electron order)
+instrument: moment per charge ratio = rho_p^(2g-1), rho_p = 1/(m_p/m_e), edge scaling geo = rho^g (g = 0: size does not follow the tick; g = 1: size follows the tick, the lab anchor)
+       g    model ratio   model/measured |mu_p/mu_e|    model/(mu_N/mu_B)
+   0.000   1.836153e+03                 1.208575e+06         3.371457e+06
+   0.500   1.000000e+00                 6.582107e+02         1.836153e+03
+   0.750   2.333703e-02                 1.536068e+01         4.285035e+01
+   1.000   5.446170e-04                 3.584727e-01         1.000000e+00
+   1.250   1.270974e-05                 8.365690e-03         2.333703e-02
+   1.500   2.966077e-07                 1.952304e-04         5.446170e-04
+   2.000   1.615376e-10                 1.063258e-07         2.966077e-07
+exponent that reproduces the measured |mu_p/mu_e| exactly: g = 0.931746888763938 ; the one that reproduces mu_N/mu_B: g = 1.0
+the difference 1 - g = 0.06825311123606204  is ln(mu_p/mu_N) / (2 ln(m_p/m_e)) =  0.06833021797878872
