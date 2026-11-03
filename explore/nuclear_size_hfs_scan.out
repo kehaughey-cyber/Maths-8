@@ -1,0 +1,23 @@
+== A. Z = 83, charge radius scaled (uniform sphere)
+  R_ch =   1.3803 fm (x0.25): delta_BR = -0.04861
+  R_ch =   2.7605 fm (x0.5): delta_BR = -0.07356
+  R_ch =   5.5211 fm (x1.0): delta_BR = -0.11148
+  R_ch =  11.0422 fm (x2.0): delta_BR = -0.16894
+  R_ch =  22.0844 fm (x4.0): delta_BR = -0.25472
+  local exponents d ln|delta_BR| / d ln R_N: 0.598, 0.600, 0.600, 0.592
+  for comparison: 2 gamma - 1 = 0.5914, 2 gamma = 1.5914, 1 (linear in R_N)
+
+== B. fixed charge radius 5.5211 fm, Z varied (uniform sphere)
+  Z = 20: delta_BR = -0.00465   delta_BR / (Z alpha R_N/lambda_e) = -1.728
+  Z = 40: delta_BR = -0.01324   delta_BR / (Z alpha R_N/lambda_e) = -2.458
+  Z = 60: delta_BR = -0.03417   delta_BR / (Z alpha R_N/lambda_e) = -4.228
+  Z = 75: delta_BR = -0.07260   delta_BR / (Z alpha R_N/lambda_e) = -7.187
+  Z = 83: delta_BR = -0.11148   delta_BR / (Z alpha R_N/lambda_e) = -9.971
+  local exponents d ln|delta_BR| / d ln Z: 1.509, 2.337, 3.377, 4.231
+
+== C. Fermi charge distribution (same rms radius) against the uniform sphere
+ion         Z R_ch (fm)  c (fm)  delta_BR uniform  delta_BR Fermi  Fermi - uniform
+165Ho66+   67    5.2022   6.229          -0.04610        -0.04577          0.00033
+187Re74+   75    5.3698   6.461          -0.07123        -0.07080          0.00043
+207Pb81+   82    5.4943   6.634          -0.10522        -0.10469          0.00053
+209Bi82+   83    5.5211   6.670          -0.11148        -0.11093          0.00055

@@ -18,6 +18,7 @@ Authored by Claude (Sonnet 5.5); no independent review claimed. A running list o
 ## Not entries (same number, different meaning)
 - Quark-mass uncertainties of ±2% statistical (`maps/carbon_complete_stack.md`): a measurement uncertainty, not a discrepancy.
 - The 0.116% electron-moment offset and the 1e-4 residuals of `HYPERFINE_SERIES_RESULTS.md`: an order of magnitude smaller.
+- The residuals of 0.1% to 2.0% left between the measured heavy-ion hyperfine splittings and the computed finite-size and magnetization corrections (`explore/NUCLEAR_SIZE_HFS_RESULTS.md`): standard-physics modelling uncertainty (QED not computed, the magnetization model between two bounds, moment values), not a gap between a framework number and a measurement; listed because it is of the 2% size.
 - The dispersion shortfall of +2.8% at |k| = 0.4 in `LIVE_WEB_RESULTS.md` (line 280): a lattice-dispersion effect that the file itself shows shrinking with packet width; listed here only because it is near 2%.
 
 ## What would make this ledger useful

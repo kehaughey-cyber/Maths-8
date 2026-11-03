@@ -1,0 +1,22 @@
+== checks of the solver on the point nucleus: E against gamma, and I(point) / (-(Z alpha)^3) against the Breit factor 1/(gamma (2 gamma - 1))
+  Z =  1: E = 0.9999733740, gamma = 0.9999733740 (diff +7.3e-15); I/(-(Z a)^3) = 1.00007664, Breit factor = 1.00007988 (ratio 0.99999676)
+  Z = 20: E = 0.9892924028, gamma = 0.9892924028 (diff +6.7e-15); I/(-(Z a)^3) = 1.03294157, Breit factor = 1.03294419 (ratio 0.99999746)
+  Z = 50: E = 0.9310594041, gamma = 0.9310594041 (diff +3.4e-14); I/(-(Z a)^3) = 1.24581786, Breit factor = 1.24582055 (ratio 0.99999785)
+  Z = 67: E = 0.8723271576, gamma = 0.8723271576 (diff -4.8e-14); I/(-(Z a)^3) = 1.53944816, Breit factor = 1.53945109 (ratio 0.99999810)
+  Z = 83: E = 0.7957081244, gamma = 0.7957081244 (diff -4.3e-14); I/(-(Z a)^3) = 2.12496434, Breit factor = 2.12497074 (ratio 0.99999698)
+
+== finite charge (uniform sphere, R = sqrt(5/3) R_ch) and magnetization (uniform sphere and thin shell at the same R), point-dipole integral ratios
+ion         Z   R (fm)  E_fin - E_pt   delta_BR  delta_BW unif  delta_BW shell  BR+BW(unif)  BR+BW(shell)  measured r/A - 1
+H           1    1.085     0.000e+00   -0.00003       -0.00001        -0.00002     -0.00004      -0.00005               nan
+3He+        2    2.538     8.200e-13   -0.00014       -0.00005        -0.00009     -0.00020      -0.00023          -0.00043
+165Ho66+   67    6.716     2.744e-05   -0.04610       -0.01109        -0.01761     -0.05720      -0.06372          -0.06656
+187Re74+   75    6.932     6.377e-05   -0.07123       -0.01520        -0.02411     -0.08644      -0.09534          -0.09443
+207Pb81+   82    7.093     1.315e-04   -0.10522       -0.01989        -0.03147     -0.12511      -0.13669          -0.14461
+209Bi82+   83    7.128     1.461e-04   -0.11148       -0.02068        -0.03264     -0.13216      -0.14412          -0.12640
+
+what is left of the measured shortfall after the computed corrections (QED not included; its size for Bi is of order -0.3% by recollection, not computed here):
+  3He+      measured -0.00043; after BR -0.00029; after BR + BW(uniform) -0.00023; after BR + BW(shell) -0.00020
+  165Ho66+  measured -0.06656; after BR -0.02046; after BR + BW(uniform) -0.00936; after BR + BW(shell) -0.00284
+  187Re74+  measured -0.09443; after BR -0.02320; after BR + BW(uniform) -0.00799; after BR + BW(shell) +0.00091
+  207Pb81+  measured -0.14461; after BR -0.03939; after BR + BW(uniform) -0.01950; after BR + BW(shell) -0.00792
+  209Bi82+  measured -0.12640; after BR -0.01492; after BR + BW(uniform) +0.00576; after BR + BW(shell) +0.01772
