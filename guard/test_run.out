@@ -1,0 +1,48 @@
+=== RUN 1: guard over the cleaned working tree (py -3 -I guard/check.py --all) ===
+WARN  outside-path     maps/alpha_ratio_replay_codex.md:7: Read QUESTION.md, README.md, CLAUDE.md, maps/alpha_candidates.md and existing raw outputs. Deep reference insp
+WARN  outside-path     maps/alpha_spine_followup_codex.md:12: Most explicit alpha interpretation recovered in Maths 6/docs/spine_sources/SPINE_MATHS6_2026-10-19_pre_close.m
+WARN  outside-path     notes/session_memory/inertia-as-propagation-rate.md:11: The hypothesis "what resists acceleration = change of rate of propagation through the matrix" IS the thesis of
+WARN  outside-path     notes/session_memory/su2-connection-already-built.md:13: `Maths 6/explore/periodic_table/route56_RESULTS.md` + `route56_tests.py` (2026-10-19), from F5/F6:
+guard: 0 error(s), 4 warning(s)
+exit=0
+
+=== RUN 2: negative controls, the committed (pre-excision) text fed through --stdin ===
+--- HEAD:AGENTS.md
+ERROR wall-distinct    AGENTS.md:9: - **No walls.** Archived warnings and failed experiments have a *scope*; they are never general prohibitions. 
+ERROR wall-keep        AGENTS.md:9: - **No walls.** Archived warnings and failed experiments have a *scope*; they are never general prohibitions. 
+ERROR wall-separation  AGENTS.md:9: - **No walls.** Archived warnings and failed experiments have a *scope*; they are never general prohibitions. 
+ERROR wall-audit       AGENTS.md:9: - **No walls.** Archived warnings and failed experiments have a *scope*; they are never general prohibitions. 
+guard: 4 error(s), 0 warning(s)
+exit=1
+--- HEAD:README.md
+ERROR wall-distinct    README.md:9: Maths 5/6/7 established a large, forced **floor**: the carrier 2I / 600-cell, the triad and recursive registra
+ERROR wall-keep        README.md:9: Maths 5/6/7 established a large, forced **floor**: the carrier 2I / 600-cell, the triad and recursive registra
+ERROR wall-separation  README.md:9: Maths 5/6/7 established a large, forced **floor**: the carrier 2I / 600-cell, the triad and recursive registra
+ERROR wall-apparatus   README.md:18: - Work is organized around the three touches in `QUESTION.md` (amplitude/QIT, geometry/GR, the force-gradings)
+guard: 4 error(s), 0 warning(s)
+exit=1
+--- HEAD:CLAUDE.md
+ERROR wall-distinct    CLAUDE.md:9: - **No walls.** Archived warnings and failed experiments have a *scope*; they are never general prohibitions. 
+ERROR wall-keep        CLAUDE.md:9: - **No walls.** Archived warnings and failed experiments have a *scope*; they are never general prohibitions. 
+ERROR wall-separation  CLAUDE.md:9: - **No walls.** Archived warnings and failed experiments have a *scope*; they are never general prohibitions. 
+ERROR wall-audit       CLAUDE.md:9: - **No walls.** Archived warnings and failed experiments have a *scope*; they are never general prohibitions. 
+guard: 4 error(s), 0 warning(s)
+exit=1
+
+=== RUN 3: floor-hash tamper control (one byte changed in memory, then compared with PROVENANCE) ===
+container_01_recursive_registration.md as stored  : True
+container_01_recursive_registration.md one byte off: False
+floor files in PROVENANCE table: 6
+
+=== RUN 4: hook install and live test ===
+installed C:\Users\Dad\OneDrive\Desktop\Optimus Prime\Maths 8\.git\hooks\pre-commit
+--- hook with nothing staged:
+guard: 0 error(s), 0 warning(s)
+exit=0
+--- hook with a staged probe file containing the old wall:
+ERROR wall-distinct    guard/_probe.txt:1: a note that says: keep the labels distinct until a map is derived
+ERROR wall-keep        guard/_probe.txt:1: a note that says: keep the labels distinct until a map is derived
+guard: 2 error(s), 0 warning(s)
+exit=1
+--- index after cleanup (should list no staged files):
+(end)

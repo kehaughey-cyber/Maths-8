@@ -23,7 +23,7 @@ Run: `py -3 -I -u explore/alpha_candidates.py > explore/alpha_candidates.out` (2
 - The alpha/photon arc of M6 (`alpha_photon.py`, `alpha_spacelike.py`): the files are not in this repo.
 
 ## Reading
-Every candidate that can be checked with what the repo holds came back negative. The finite carrier is exact (A5, A6), so α is not in any single level, and the two untested families both need a recursive structure.
+Every candidate that can be checked with what the repo holds came back negative. The finite carrier is exact (A5, A6), and the two untested families both need a recursive structure.
 sha256: *alpha_candidates.py dca1ea770dfd2c06f646ef0825469aecd9fb1f9099e7278445686dec3bb40494; *alpha_candidates.out 6f57191e611d09d5f536dc22baaf8693b40c2f52782c75b38b27333bfdef040e.
 
 ## Round 2 — the four families (run 2026-10-28)

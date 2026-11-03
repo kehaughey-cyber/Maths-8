@@ -15,8 +15,6 @@ R = 7 ln(phi)/(375 acos(1/3))
 
 Its reciprocal is 137.037892807872526483783380570704389179383816714745931072105. Relative reciprocal error against 137.036 is 0.000013812486299413904254214737035444550219042549008516536566215. The factor 375/7 was selected by the prior target-directed rational grammar, not forced by a demonstrated mechanism. This is a near-miss, not an alpha derivation. All printed digits are numerical evaluations at finite precision, not exact decimal identities.
 
-Append-only qualification of maps/alpha_candidates.md: its sentence concluding that alpha is not in any single level is unsupported by the finite searches. Nor does being algebraic prevent agreement with a finite-precision measured value. What those searches establish is failure within their tested expressions and operators only. Do not inherit the stronger exclusion.
-
 Replay:
 `py -3 -I -u explore/alpha_ratio_replay_codex.py`
 

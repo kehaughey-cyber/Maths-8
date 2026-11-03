@@ -1,0 +1,28 @@
+# Guard patterns for the Maths 8 repo. Read by guard/check.py. One rule per line: SEVERITY label regex.
+# ERROR blocks a commit. WARN is reported and does not block. EXEMPT <path or glob> skips a file.
+# The guard flags text that works as an instruction, or that points a worker outside this repo.
+# Credits, provenance rows and results that mention Maths 4-7 do not match anything here.
+
+# --- the old walls and their machinery, in any form (including quoted in order to refuse them) ---
+ERROR wall-distinct     (?i)\bdistinct until\b
+ERROR wall-keep         (?i)\bkeep\b[^\n.]{0,60}\b(mass|frequency|labels?|charge|content)\b[^\n.]{0,60}\bdistinct\b
+ERROR wall-separation   (?i)\bseparation (walls?|principles?)\b
+ERROR wall-audit        (?i)\bcontamination[- ]audit\b
+ERROR wall-refused      (?i)\brefused[- ]list\b
+ERROR wall-gates        (?i)\bfive gates\b
+ERROR wall-ownergate    (?i)\bowner[- ]gate\b|\bdanger (line|zone)\b
+ERROR wall-target       (?i)\btarget is not yours\b|\btake the next unstarted row\b
+ERROR wall-apparatus    \b(WORK_QUEUE|PHASES\.md|START_HERE|ENTRY_PROTOCOL|LEDGER_PROTOCOL|CONTRIBUTOR_PROTOCOL|COLLABORATION\.md|RESEARCH\.md)\b
+
+# --- reaching outside this repo ---
+ERROR outside-read      (?i)optimus prime[\\/]+(maths ?[4-7]|old revs|7-\d|GPT|Gemini|_MASTER|files\(17\)|session transition)
+WARN  outside-path      (?i)\bmaths ?[4-7][\\/][A-Za-z_.]
+WARN  outside-parent    (?i)\.\.[\\/]+maths ?[4-7]
+WARN  protocol-pointer  \b(PROTOCOL|FRONTIER|CONTACT)\.md\b
+
+# --- files that are not scanned ---
+# floor/ is checked by hash against floor/PROVENANCE.md instead of by pattern.
+EXEMPT guard/patterns.txt
+EXEMPT guard/test_run.out
+# The inventory of inherited text; it quotes the floor and so contains the phrases above by design.
+EXEMPT notes/inherited_directions_M4-M7.md
