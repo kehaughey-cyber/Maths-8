@@ -1,0 +1,44 @@
+stable nuclides with a radius and a binding energy: 239; 1/alpha = 137.0360
+   Z    A  nuclear cycles  atomic cycles     ratio  ratio x alpha
+   3    6          0.4198        0.01095     38.34         0.2798
+   6   12          1.1537        0.02190     52.67         0.3844
+   8   16          1.7456        0.02921     59.75         0.4360
+  14   28          3.7428        0.05122     73.08         0.5333
+  20   40          6.0282        0.07337     82.17         0.5996
+  26   54          8.8299        0.09574     92.23         0.6731
+  30   64         11.1303        0.11080    100.45         0.7330
+  40   90         16.9605        0.14920    113.68         0.8296
+  50  112         22.2030        0.18895    117.51         0.8575
+  60  142         29.5030        0.23056    127.96         0.9338
+  67  165         35.4389        0.26113    135.71         0.9903
+  75  185         40.1531        0.29794    134.77         0.9834
+  79  197         42.9669        0.31726    135.43         0.9883
+  82  206         45.1377        0.33221    135.87         0.9915
+stable nuclides with ratio within 2% of 1/alpha: Z, A = 60/148, 62/152, 62/154, 64/156, 64/157, 64/158, 64/160, 66/160, 66/161, 66/162, 66/163, 66/164, 67/165, 68/166, 68/167, 68/168, 68/170, 69/169, 70/170, 70/171, 70/172, 70/173, 70/174, 70/176, 71/175, 72/176, 72/177, 72/178, 72/179, 72/180, 73/181, 74/182, 74/184, 74/186, 75/185, 76/187, 76/188, 76/189, 76/190, 76/192, 77/191, 77/193, 78/194, 78/195, 78/196, 78/198, 79/197, 80/199, 80/200, 80/201, 80/202, 80/204, 81/203, 81/205, 82/206, 82/207, 82/208
+Z >= 60: ratio min 125.48 max 139.35 mean 135.18
+
+Lorentz angle of the 1s electron, theta = arcsin(Z alpha):
+  H, D      Z =  1  Z alpha = 0.00730  theta =   0.418 deg   atomic cycles (1 - cos theta)/sin theta = 0.00365  = tan(theta/2) = 0.00365
+  3He+      Z =  2  Z alpha = 0.01459  theta =   0.836 deg   atomic cycles (1 - cos theta)/sin theta = 0.00730  = tan(theta/2) = 0.00730
+  165Ho66+  Z = 67  Z alpha = 0.48892  theta =  29.270 deg   atomic cycles (1 - cos theta)/sin theta = 0.26113  = tan(theta/2) = 0.26113
+  187Re74+  Z = 75  Z alpha = 0.54730  theta =  33.182 deg   atomic cycles (1 - cos theta)/sin theta = 0.29794  = tan(theta/2) = 0.29794
+  207Pb81+  Z = 82  Z alpha = 0.59838  theta =  36.754 deg   atomic cycles (1 - cos theta)/sin theta = 0.33221  = tan(theta/2) = 0.33221
+  209Bi82+  Z = 83  Z alpha = 0.60568  theta =  37.278 deg   atomic cycles (1 - cos theta)/sin theta = 0.33729  = tan(theta/2) = 0.33729
+  the atomic cycles of the 1s state are exactly tan(theta/2): (1 - cos t)/sin t = tan(t/2).
+  Dirac hyperfine pole: gamma = 1/2, theta = 60 deg, Z alpha = sqrt3/2 = 0.86603, Z = 118.68; atomic cycles there = tan 30 deg = 1/sqrt3 = 0.57735
+  the lean xi = arcsin(sqrt3/3) = 0.61548 rad = 35.2644 deg ; sin xi = 1/sqrt3 = 0.57735  (equal to the atomic cycles at the pole)
+  critical charge: theta = 90 deg at Z alpha = 1, Z = 137.036; atomic cycles there = tan 45 deg = 1
+  Z alpha = sin 36 deg (0.62832 rad = pi/5, the 600-cell edge arc): Z = 80.55; Z alpha = sin 30 deg: Z = 68.52; heavy group theta = 29.3, 33.2, 36.8, 37.3 deg
+
+the atomic order registers tan(theta/2) cycles; the exponent excess of the hyperfine energy in terms of theta:
+  theta =   0.50 deg: p - 3 =     0.0002   atomic cycles 0.00436
+  theta =   5.00 deg: p - 3 =     0.0230   atomic cycles 0.04366
+  theta =  15.00 deg: p - 3 =     0.2206   atomic cycles 0.13165
+  theta =  29.27 deg: p - 3 =     1.0502   atomic cycles 0.26113
+  theta =  33.18 deg: p - 3 =     1.4896   atomic cycles 0.29792
+  theta =  36.76 deg: p - 3 =     2.0425   atomic cycles 0.33227
+  theta =  37.28 deg: p - 3 =     2.1389   atomic cycles 0.33731
+  theta =  45.00 deg: p - 3 =     4.4142   atomic cycles 0.41421
+  theta =  55.00 deg: p - 3 =    17.9397   atomic cycles 0.52057
+  theta =  59.00 deg: p - 3 =    97.6334   atomic cycles 0.56577
+  theta =  59.90 deg: p - 3 =   990.8808   atomic cycles 0.57619
