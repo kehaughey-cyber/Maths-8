@@ -51,3 +51,6 @@ A hydrogen-like series beyond Z = 2; the spin-magnetization (contact) coupling i
 
 sha256: *e_series_chain_origin.py 944c137c687fdcafa51813ef201bf8f1d9a7316583dcef70a94814714edff4f6; *e_series_chain_origin.out 77a0e5fa85b5b0a788ad704f70edca272eedf27bf366dd32cceac59882d2a9a8.
 Command: `py -3 -I -X utf8 -u explore/e_series_chain_origin.py > explore/e_series_chain_origin.out` (about 13 s).
+
+## Correction, appended 2026-11-03 (what was wrong above)
+§1 says the transverse levels have multiplicities "exactly 2k(k+2) for k = 1 to 5" and lists the fifth level as 3.6368399 with multiplicity 70. `e_series_chain_origin.py` groups eigenvalues with a relative tolerance of 5e-3 ("merges the icosahedral splitting of the higher levels"), so the fifth entry is a merge. Recomputed at a tolerance of 1e-7 (`explore/spine_proofs_check.py`, P11, `spine_proofs_check.out`): levels 1 to 4 are single levels with multiplicities 6, 16, 30, 48, and the k = 5 multiplet of 70 is split by the icosahedral symmetry into 30 at 3.5563272 and 40 at 3.6972244 (multiplicity-weighted mean 3.6372). The ratio λ/(k+1)² = 0.1010 quoted for k = 5 is therefore for a merged level. The lowest level 5 − 2√5 (multiplicity 6), the exact couplings, and every exponent in §2 to §4 do not use the fifth level and are unchanged.

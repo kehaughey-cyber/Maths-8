@@ -1,0 +1,90 @@
+P1  rotations n vs permutations n!:  n! = n  iff  n in {1,2}
+  [PASS] n! = n only for n = 1, 2 (n = 1..12) -> [1, 2]
+P2  the 2I carrier and the 600-cell
+  [PASS] 120 distinct vertices -> 120
+  [PASS] all unit 
+  [PASS] closed under quaternion multiplication (a group of order 120) 
+  [PASS] edge rule u.s = phi/2 (chord 1/phi, arc 36 deg): 720 edges, 12 neighbours each -> 720
+  [PASS] u.s = phi/2  <=>  |u-s|^2 = 1/phi^2 
+  [PASS] 1200 triangles -> 1200
+  [PASS] 600 tetrahedral cells (4-cliques) -> 600
+  [PASS] Euler characteristic 120 - 720 + 1200 - 600 = 0 
+  [PASS] graph distances from a vertex: 1, 12, 32, 42, 32, 1 -> [1, 12, 32, 42, 32, 1]
+P3  frustration eps = 2 pi - 5 arccos(1/3)
+  [PASS] regular tetrahedron dihedral angle arccos(1/3) = 70.5288 deg -> 70.528779366 deg
+  [PASS] five around an edge leave eps > 0 -> eps = 0.128388220476 rad = 7.356103172 deg
+P4  T(u,s) = (s, phi s - u) on the 1440 directed edges
+  [PASS] 1440 directed edges 
+  [PASS] T maps every directed edge to a directed edge (image is a vertex adjacent to s) 
+  [PASS] T is a permutation (unique predecessor) 
+  [PASS] 144 cycles, all of length 10 -> 144 cycles, lengths [10]
+  [PASS] T^5 (u,s) = (-u,-s) (antipode) for all 1440 
+  [PASS] recurrence period: 2cos(36 deg) = phi, so x_{n+1} + x_{n-1} = phi x_n has period 10 and x_{n+5} = -x_n 
+P5  the unique SO(4)-invariant symmetric bilinear form on R^4 is a multiple of the identity
+  [PASS] dimension of {M symmetric : E^T M + M E = 0 for all 6 generators E of so(4)} = 1 -> 1
+P6  dictionary identities (symbolic)
+  [PASS] Compton: R = hbar/(m c), E = m c^2 -> cycles = 1 
+  [PASS] 1 cycle = 2 pi nats by I = 2 pi R E/(hbar c) 
+  [PASS] r_s * lambda_C = 2 l_P^2 with r_s = 2 G m/c^2 
+  [PASS] hydrogen: a0 E_Ry/(hbar c) = alpha/2 
+  [PASS] Dirac 1s: R = a0/Z, E = (1 - cos theta) m c^2, sin theta = Z alpha -> cycles = (1 - cos th)/sin th = tan(theta/2)  [th = 2u: (1 - cos 2u)/sin 2u = 2 sin^2 u/(2 sin u cos u) = tan u] 
+  [PASS] pole of the Breit factor at gamma = 1/2: theta = 60 deg, Z = sin(60 deg)/alpha = 118.67; tan(30 deg) = 1/sqrt3; critical Z alpha = 1 gives tan(45 deg) = 1 -> Z_pole = 118.6767
+P7  rung-size form equals (8/3)[(2I+1)/(2I)] (mu_X/mu_B) Z^3 alpha^2 Ry
+  [PASS] (R_mag/a0)(lambda_e/a0) = (mu_X/mu_B) alpha^2 
+P8  F-splitting / (aligned - anti-aligned) = (2I+1)/(2I) from H = A s.I
+  [PASS] E(F=I+1/2) - E(F=I-1/2) = A (I + 1/2) 
+  [PASS] (aligned m_s=1/2,m_I=I) minus (anti m_s=-1/2,m_I=I) = A I; ratio = (2I+1)/(2I) 
+  [PASS] I = 1/2: eigenvalue splitting / I = (2I+1)/(2I) -> levels [-3/4, 1/4]
+  [PASS] I = 1: eigenvalue splitting / I = (2I+1)/(2I) -> levels [-1, 1/2]
+  [PASS] I = 3/2: eigenvalue splitting / I = (2I+1)/(2I) -> levels [-5/4, 3/4]
+  [PASS] I = 2: eigenvalue splitting / I = (2I+1)/(2I) -> levels [-3/2, 1]
+  [PASS] I = 5/2: eigenvalue splitting / I = (2I+1)/(2I) -> levels [-7/4, 5/4]
+  [PASS] I = 7/2: eigenvalue splitting / I = (2I+1)/(2I) -> levels [-9/4, 7/4]
+P9  p - 3 for the Dirac factor A = 1/(gamma (2 gamma - 1)), x = Z alpha = sin theta
+  [PASS] p - 3 = x d ln A/dx = (sin^2 th/cos th)(1/cos th + 2/(2 cos th - 1)) 
+  [PASS] leading terms 3 x^2 + ... -> 4*x**4 + 3*x**2
+  [PASS] point-nucleus density near 0 ~ r^(2 gamma - 2): finite-size exponent 2 gamma - 1 at Z = 83 -> 0.59142
+P10 ring modes, Zeeman splitting, moment, flux quantum
+  [PASS] q (holonomy +I): s^2 = |lambda - 1|^2 = 2 - 2 cos(theta_k) -> [np.float64(0.0), np.float64(0.381966011), np.float64(1.381966011)] ...
+  [PASS] gamma (holonomy -I): s^2 = |lambda - 1|^2 = 2 - 2 cos(theta_k) -> [np.float64(0.097886967), np.float64(0.824429495), np.float64(2.0)] ...
+  [PASS] d/dalpha 2 sin((theta - alpha)/2) at alpha = 0 = -cos(theta/2): theta = 36 deg gives -cos 18 deg = -0.95105652 
+  [PASS] moment per quantum (1/10) |d omega/d alpha| Area = cos18 deg * sin36 deg/2 = 0.2795084969 -> 0.2795084972
+  [PASS] splitting per unit field 2 mu = 0.559017 
+  [PASS] flux quantum: omega(k, alpha + 2 pi/10) = omega(k-1, alpha) 
+P11 face-energy operator S_F^T S_F on the 600-cell link field (quadratic part of mu Sum (1 - cos F))
+  [PASS] 119 zero modes (gradients): 720 - 119 = 601 = rank -> 119
+  lowest nonzero levels (value, multiplicity): [(0.527864, 6), (1.145898, 16), (1.9331897, 30), (2.8074176, 48), (3.5563272, 30), (3.6972244, 40)]
+  [PASS] lowest level 5 - 2 sqrt5 = 0.5278640, multiplicity 6 
+  [PASS] multiplicities of the first four levels = 2k(k+2), k = 1..4 = 6, 16, 30, 48 (each a single level to 1e-7) -> [6, 16, 30, 48]
+  [PASS] k = 5: the 70-fold multiplet splits under the icosahedral symmetry into 30 + 40 (3.5563272, 3.6972244); total 70 -> (3.5563272, 30), (3.6972244, 40); multiplicity-weighted mean 3.6368399
+P12 chain of layers: cosh(gamma) = 1 + mu lambda/(2 mu_r); exact couplings; continuum limit
+  [PASS] cosh(2 ln phi) = 3/2 
+  [PASS] cosh(3 ln phi) = sqrt5 
+  [PASS] p_M = 2, q = phi: mu_r/mu = lambda_1/(2 (3/2 - 1)) = lambda_1 
+  [PASS] p_M = 3, q = phi: mu_r/mu = lambda_1/(2 (sqrt5 - 1)) = (3 phi - 4)/4 = 0.2135255 -> 0.2135255
+  [PASS] isotropic rule mu_r/mu = (a/dt)^2, a^2 = lambda_1/4: p_M = arccosh(1 + 2 dt^2)/dt = 2 - dt^2/3 + ... -> 2 - dt**2/3
+  [PASS] q = phi: p_M(k=1) = 2 - dt^2/3 with dt = ln phi gives 1.9227 to leading order (full arccosh formula gives 1.930 with the isotropic coupling 0.570) -> leading 1.9228
+  [PASS] isotropic coupling at q = phi: (a_eff/dt)^2 = 0.570 with a_eff = sqrt(lambda_1/4) = 0.36330 -> 0.56989
+  [PASS] p_E = p_M + 1 (fixed moment, tick proportional to size): argument from units, not computed here 
+P13 subdivision volume V_n = 120 + 720(n-1) + 1200 C(n-1,2) + 600 C(n-1,3)
+  [PASS] V_1, V_2, V_3 = 120, 840, 2760 -> [120, 840, 2760]
+  [PASS] local growth exponent ln(V_{n+1}/V_n)/ln((n+1)/n), n = 1..7: 2.807, 2.934, 2.967, 2.980, 2.987, 2.9905, 2.9929 -> 3 -> 2.8074, 2.9339, 2.9668, 2.9800, 2.9867, 2.9905, 2.9929
+  [PASS] leading coefficient 600/3! = 100: V_n ~ 100 n^3 
+P14 uniform charged sphere: V(r) = -(Z alpha/2R)(3 - r^2/R^2) inside; -Z alpha/r outside
+  [PASS] continuous at r = R with -Za/R 
+  [PASS] Poisson: (1/r^2) d/dr (r^2 dV/dr) = 3 Za/R^3 (uniform charge density) 
+  [PASS] slope continuous at R: dV/dr(R) = Za/R^2 
+  [PASS] R_ch^2 = (3/5) R^2 (uniform sphere): R = sqrt(5/3) R_ch 
+P15 point-Coulomb 1s: F = -sqrt((1-g)/(1+g)) G, G = N r^g exp(-Z alpha r); I = int G F/r^2 dr / int (G^2 + F^2) dr = -(Z alpha)^3/(g (2 g - 1))
+  [PASS] origin ratio consistency: (g-1)/x = -x/(g+1) iff g^2 = 1 - x^2 
+  [PASS] F/G = (g-1)/x = -sqrt((1-g)/(1+g)) when x = sqrt(1-g^2) 
+  [PASS] gamma = 0.99: Gamma-function ratio equals -(Z alpha)^3/(g(2g-1)) -> -0.00289346573897 vs -0.00289346573897
+  [PASS] gamma = 0.9: Gamma-function ratio equals -(Z alpha)^3/(g(2g-1)) -> -0.115026499899 vs -0.115026499899
+  [PASS] gamma = 0.8: Gamma-function ratio equals -(Z alpha)^3/(g(2g-1)) -> -0.45 vs -0.45
+  [PASS] gamma = 0.7: Gamma-function ratio equals -(Z alpha)^3/(g(2g-1)) -> -1.30076017806 vs -1.30076017806
+P16 Wilson loop of the Clifford transport, mu, lambda_1
+  [PASS] trace -(8/5) sin(pi/5) = -0.940456403668; mu = (48/5) sin(pi/5) = -6 * trace = 5.64274 -> trace -0.940456403668, mu 5.642738
+  [PASS] SU(2) angle 2 arccos(tr/2) = 236.098 deg; SO(3) angle 360 - 236.098 = 123.90 deg -> 236.0982, 123.9018
+  [PASS] lowest face level equals 5 - 2 sqrt5 to 1e-12 (root of x^2 - 10 x + 5) -> 0.527864045000410
+
+FAILS: none
