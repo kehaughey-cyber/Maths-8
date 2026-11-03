@@ -1,0 +1,35 @@
+hc = 1239.841984 eV nm
+ion         Z s=1/(Z a)    I  mu(mu_N)       E (eV)  rel.unc    E_nr (eV)  r=E/E_nr   A(Z a)      r/A  note
+H           1   137.036  0.5    2.7928 5.874326e-06  1.0e-10 5.874656e-06   0.99994  1.00008  0.99986  Hellwig (sec.)
+D           1   137.036  1.0    0.8574 1.353953e-06  1.0e-10 1.353798e-06   1.00011  1.00008  1.00003  Wineland & Ramsey
+3He+        2    68.518  0.5    2.1276 3.583825e-05  1.0e-09 3.584204e-05   0.99989  1.00032  0.99957  Schuessler et al.
+165Ho66+   67     2.045  3.5    4.1600 2.164566e+00  2.6e-04 1.506329e+00   1.43698  1.53945  0.93344  Livermore EBIT
+187Re74+   75     1.827  2.5    3.2090 2.747877e+00  4.4e-04 1.711376e+00   1.60565  1.77309  0.90557  EBIT; isotope assignment inferred
+185Re74+   75     1.827  2.5    3.1760 2.720742e+00  4.4e-04 1.693777e+00   1.60632  1.77309  0.90594  EBIT; isotope assignment inferred
+207Pb81+   82     1.671  0.5    0.5906 1.215889e+00  2.0e-04 6.860822e-01   1.77222  2.07183  0.85539  Seelig 1998
+209Bi82+   83     1.651  4.5    4.0920 5.084000e+00  1.6e-04 2.738663e+00   1.85638  2.12497  0.87360  ESR (Bi table)
+
+effective exponent of the absolute energy in the electron-order size R = a0/Z at fixed moments: p_eff = d ln(E) / d ln Z with E = E_nr x A (Dirac point nucleus)
+  Z  s=1/(Z a)  p_eff (Dirac)
+  1    137.036         3.0002
+  2     68.518         3.0006
+  5     27.407         3.0040
+ 10     13.704         3.0161
+ 20      6.852         3.0658
+ 30      4.568         3.1536
+ 40      3.426         3.2883
+ 50      2.741         3.4853
+ 60      2.284         3.7715
+ 67      2.045         4.0501
+ 75      1.827         4.4899
+ 82      1.671         5.0415
+ 83      1.651         5.1385
+
+measured exponent between pairs of ions (moments and multiplicity divided out, so the Z-dependence only):
+H         -> 3He+      (Z 1 -> 2): measured p = 3.0015; non-relativistic Z^3 only = 3.0000; Dirac (E_nr A) = 3.0019
+3He+      -> 165Ho66+  (Z 2 -> 67): measured p = 3.1034; non-relativistic Z^3 only = 3.0000; Dirac (E_nr A) = 3.1229
+165Ho66+  -> 207Pb81+  (Z 67 -> 82): measured p = 4.0379; non-relativistic Z^3 only = 3.0000; Dirac (E_nr A) = 4.4701
+207Pb81+  -> 209Bi82+  (Z 82 -> 83): measured p = 6.8276; non-relativistic Z^3 only = 3.0000; Dirac (E_nr A) = 5.0894
+165Ho66+  -> 209Bi82+  (Z 67 -> 83): measured p = 4.1958; non-relativistic Z^3 only = 3.0000; Dirac (E_nr A) = 4.5052
+
+Note: the Dirac factor is the point-nucleus value; for Ho, Re, Pb, Bi the finite nuclear charge and Bohr-Weisskopf corrections are of order 1% to 10% and are not included, so r/A departs from 1 there.
