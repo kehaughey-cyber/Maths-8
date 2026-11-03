@@ -1,0 +1,22 @@
+== sanity of the kernels.  Uehling potential of a point nucleus at r = 0.1, 1, 10 (units lambda_e) per unit Z alpha:
+  r = 0.1: V_U/(Z alpha) = -1.7244630766e-02;  (Coulomb is -1.000000e+01; ratio 1.724463e-03);  finite sphere R = 0.0184: -1.7296145338e-02
+  r = 1.0: V_U/(Z alpha) = -5.5643485792e-05;  (Coulomb is -1.000000e+00; ratio 5.564349e-05);  finite sphere R = 0.0184: -5.5661132679e-05
+  r = 10.0: V_U/(Z alpha) = -5.7194253834e-15;  (Coulomb is -1.000000e-01; ratio 5.719425e-14);  finite sphere R = 0.0184: -5.7203111556e-15
+  inside a sphere of radius R = 0.0184: V_U(r)/(Z alpha) at r = 0.001, 0.01, 0.0184, 0.02: -3.92604014e-01, -3.47892463e-01, -2.32938095e-01, -2.05703071e-01
+  continuity at r = R (from inside, from outside): [52.39127327 52.39127317 52.39127267] [52.39127316 52.39127306 52.39127256]
+  analytic leading magnetic-loop coefficient (2/(3 pi)) * 2 * (9 pi/32) = 0.3750000000 (= 3/8 = 0.375)
+
+== low Z, point nucleus: total and parts of the vacuum-polarization correction in units of alpha (Z alpha)
+  Z      delta_wf      delta_ml         total  wf/(a Za)  ml/(a Za)  total/(a Za)
+  1  2.037179e-05  1.987677e-05  4.024856e-05    0.38256    0.37326       0.75582   (E shift -1.747e-12)
+  2  4.137829e-05  3.958829e-05  8.096657e-05    0.38852    0.37171       0.76023   (E shift -2.760e-11)
+  4  8.502356e-05  7.860960e-05  1.636332e-04    0.39916    0.36905       0.76821   (E shift -4.358e-10)
+  8  1.783739e-04  1.555571e-04  3.339310e-04    0.41871    0.36515       0.78386   (E shift -6.802e-09)
+ 16  3.902866e-04  3.082147e-04  6.985013e-04    0.45807    0.36175       0.81982   (E shift -1.051e-07)
+
+== the heavy ions, uniform charged sphere R = sqrt(5/3) R_ch (R_ch from hydrogenlike_series ion table), first-order VP pieces
+ion         Z     delta_wf     delta_ml     total VP    E shift (m c^2)
+165Ho66+   67 3.014788e-03 1.339558e-03 4.354346e-03   -3.740438991e-05
+187Re74+   75 3.879763e-03 1.554104e-03 5.433867e-03   -6.372621640e-05
+207Pb81+   82 4.837759e-03 1.759073e-03 6.596832e-03   -9.939845077e-05
+209Bi82+   83 4.991250e-03 1.789272e-03 6.780522e-03   -1.057865769e-04

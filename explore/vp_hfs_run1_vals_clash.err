@@ -1,0 +1,22 @@
+Traceback (most recent call last):
+  File "C:\Users\Dad\OneDrive\Desktop\Optimus Prime\Maths 8\explore\vp_hfs.py", line 105, in <module>
+    E0, s0 = solve(Z, None); E1, s1 = solve(Z, None, tab); I0, xs, r, c = hfs_integral(s0); I1, _, _, _ = hfs_integral(s1)
+                                      ~~~~~^^^^^^^^^^^^^^
+  File "C:\Users\Dad\OneDrive\Desktop\Optimus Prime\Maths 8\explore\vp_hfs.py", line 76, in solve
+    mid = 0.5*(lo+hi); fm = mism(mid)
+                            ~~~~^^^^^
+  File "C:\Users\Dad\OneDrive\Desktop\Optimus Prime\Maths 8\explore\vp_hfs.py", line 69, in mism
+    o = run_out(E)[-1]; i = run_in(E)[-1]; return (o[1]*i[2] - o[2]*i[1])/math.hypot(o[1], o[2])/math.hypot(i[1], i[2])
+        ~~~~~~~^^^
+  File "C:\Users\Dad\OneDrive\Desktop\Optimus Prime\Maths 8\explore\vp_hfs.py", line 63, in run_out
+    return rk4_run(f, math.log(r0), [G0, F0], math.log(rm), nout)
+  File "C:\Users\Dad\OneDrive\Desktop\Optimus Prime\Maths 8\explore\vp_hfs.py", line 42, in rk4_run
+    k1 = f(x, y); k2 = f(x+h/2, [y[0]+h/2*k1[0], y[1]+h/2*k1[1]]); k3 = f(x+h/2, [y[0]+h/2*k2[0], y[1]+h/2*k2[1]]); k4 = f(x+h, [y[0]+h*k3[0], y[1]+h*k3[1]])
+  File "C:\Users\Dad\OneDrive\Desktop\Optimus Prime\Maths 8\explore\vp_hfs.py", line 62, in <lambda>
+    f = lambda x, y: (lambda r, v: [r*(y[0]/r + (E+1-v)*y[1]), r*(-y[1]/r - (E-1-v)*y[0])])(math.exp(x), V(x, math.exp(x)))
+                                                                                                         ~^^^^^^^^^^^^^^^^
+  File "C:\Users\Dad\OneDrive\Desktop\Optimus Prime\Maths 8\explore\vp_hfs.py", line 57, in V
+    fr = u-i; return Vc(r) + za*(vals[i]*(1-fr)+vals[i+1]*fr)
+                                 ~~~~^^^
+IndexError: list index out of range
+finished

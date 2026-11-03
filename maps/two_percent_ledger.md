@@ -23,3 +23,6 @@ Authored by Claude (Sonnet 5.5); no independent review claimed. A running list o
 
 ## What would make this ledger useful
 Entries 1 to 5 compare different things (a numerical-atomic offset, two couplings, a constant, a quark-mass scale). Looking for a single cause would need the same quantity measured two ways. If a future result lands within a percent of an existing entry's size, add it and ask, for each pair, whether the same ratio (about 1.02) appears in both. No such ratio is asserted here.
+
+## Addendum 2026-11-03 (append-only)
+Not an entry, recorded for completeness: after the single-particle Bohr-Weisskopf correction and the (positive, +0.44% to +0.68%) vacuum polarization were computed (`explore/QED_BW_HFS_RESULTS.md`), the measured heavy-ion hyperfine r/A is still 0.8% to 2.1% below the computed product for all four ions (negative in every single-particle variant). The one piece not computed is the bound-state self-energy, which is the natural candidate; this is standard-physics modelling uncertainty with an identified missing term, not a framework-versus-measurement gap, and no common cause with entries 1 to 9 is asserted. The earlier line under "Not entries" quoting residuals of 0.1% to 2.0% was before vacuum polarization was added and is superseded by these numbers.

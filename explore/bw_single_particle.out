@@ -1,0 +1,38 @@
+== check 3: Clebsch-Gordan relative sign against numerical diagonalisation of J^2 (True = same relative sign)
+  l = 2, j = 5/2: True
+  l = 1, j = 1/2: True
+  l = 5, j = 9/2: True
+  l = 4, j = 7/2: True
+
+== check 1 and 2: s-wave, spin only, uniform density in radius R_N versus the old uniform-sphere magnetization (same electron wave function)
+  209Bi82+: new code W_spin = 0.97931235 (delta = -0.020688); old uniform-sphere integral 0.97931690 (delta = -0.020683); <s_z> = 0.5
+    point limit: W_orb = 1.00000000, W_spin = 1.00000000
+  207Pb81+: new code W_spin = 0.98010599 (delta = -0.019894); old uniform-sphere integral 0.98011055 (delta = -0.019889); <s_z> = 0.5
+    point limit: W_orb = 1.00000000, W_spin = 1.00000000
+  187Re74+: new code W_spin = 0.98479378 (delta = -0.015206); old uniform-sphere integral 0.98479719 (delta = -0.015203); <s_z> = 0.5
+    point limit: W_orb = 1.00000000, W_spin = 1.00000000
+
+== single-particle states.  Woods-Saxon r0 = 1.25 fm, a = 0.65 fm, spin-orbit 0.44 V0 (hbar/m_pi c)^2, depth set by the separation energy (AME2020).  Free Schmidt g factors.
+
+187Re74+: valence proton l = 2, j = 5/2, nodes 0, separation energy 5.9969 MeV, electron-side E = 0.8369993292, I = -2.69970968e-01
+  r0=1.25 a=0.65   V0 =  37.698 MeV, rms radius of the orbital 5.425 fm, <l_z> = +2.0000, <s_z> = +0.5000, W_orb = 0.990364, W_spin = 0.982858;  g_s x 1.0: delta_BW = -0.014010 (mu_orb +2.000, mu_spin +2.793)  g_s x 0.6: delta_BW = -0.013058 (mu_orb +2.000, mu_spin +1.676)  | spin part scaled to the measured mu = 3.209: g_s scale +0.433, delta_BW = -0.012464
+  r0=1.20 a=0.60   V0 =  38.738 MeV, rms radius of the orbital 5.221 fm, <l_z> = +2.0000, <s_z> = +0.5000, W_orb = 0.991013, W_spin = 0.983967;  g_s x 1.0: delta_BW = -0.013093 (mu_orb +2.000, mu_spin +2.793)  g_s x 0.6: delta_BW = -0.012199 (mu_orb +2.000, mu_spin +1.676)  | spin part scaled to the measured mu = 3.209: g_s scale +0.433, delta_BW = -0.011641
+  r0=1.30 a=0.70   V0 =  36.715 MeV, rms radius of the orbital 5.632 fm, <l_z> = +2.0000, <s_z> = +0.5000, W_orb = 0.989685, W_spin = 0.981707;  g_s x 1.0: delta_BW = -0.014964 (mu_orb +2.000, mu_spin +2.793)  g_s x 0.6: delta_BW = -0.013952 (mu_orb +2.000, mu_spin +1.676)  | spin part scaled to the measured mu = 3.209: g_s scale +0.433, delta_BW = -0.013321
+  S-2 MeV          V0 =  35.431 MeV, rms radius of the orbital 5.488 fm, <l_z> = +2.0000, <s_z> = +0.5000, W_orb = 0.990160, W_spin = 0.982513;  g_s x 1.0: delta_BW = -0.014296 (mu_orb +2.000, mu_spin +2.793)  g_s x 0.6: delta_BW = -0.013326 (mu_orb +2.000, mu_spin +1.676)  | spin part scaled to the measured mu = 3.209: g_s scale +0.433, delta_BW = -0.012721
+  S+2 MeV          V0 =  39.943 MeV, rms radius of the orbital 5.369 fm, <l_z> = +2.0000, <s_z> = +0.5000, W_orb = 0.990542, W_spin = 0.983160;  g_s x 1.0: delta_BW = -0.013760 (mu_orb +2.000, mu_spin +2.793)  g_s x 0.6: delta_BW = -0.012824 (mu_orb +2.000, mu_spin +1.676)  | spin part scaled to the measured mu = 3.209: g_s scale +0.433, delta_BW = -0.012239
+
+207Pb81+: valence neutron (hole) l = 1, j = 1/2, nodes 1, separation energy 7.3679 MeV, electron-side E = 0.8013417245, I = -3.97197798e-01
+  r0=1.25 a=0.65   V0 =  26.515 MeV, rms radius of the orbital 5.633 fm, <l_z> = +0.6667, <s_z> = -0.1667, W_orb = 0.987418, W_spin = 0.968373;  g_s x 1.0: delta_BW = -0.031627 (mu_orb +0.000, mu_spin +0.638)  g_s x 0.6: delta_BW = -0.031627 (mu_orb +0.000, mu_spin +0.383)  | spin part scaled to the measured mu = 0.5906: g_s scale +0.926, delta_BW = -0.031627
+  r0=1.20 a=0.60   V0 =  27.953 MeV, rms radius of the orbital 5.433 fm, <l_z> = +0.6667, <s_z> = -0.1667, W_orb = 0.988196, W_spin = 0.970180;  g_s x 1.0: delta_BW = -0.029820 (mu_orb +0.000, mu_spin +0.638)  g_s x 0.6: delta_BW = -0.029820 (mu_orb +0.000, mu_spin +0.383)  | spin part scaled to the measured mu = 0.5906: g_s scale +0.926, delta_BW = -0.029820
+  r0=1.30 a=0.70   V0 =  25.240 MeV, rms radius of the orbital 5.829 fm, <l_z> = +0.6667, <s_z> = -0.1667, W_orb = 0.986640, W_spin = 0.966580;  g_s x 1.0: delta_BW = -0.033420 (mu_orb +0.000, mu_spin +0.638)  g_s x 0.6: delta_BW = -0.033420 (mu_orb +0.000, mu_spin +0.383)  | spin part scaled to the measured mu = 0.5906: g_s scale +0.926, delta_BW = -0.033420
+  S-2 MeV          V0 =  23.863 MeV, rms radius of the orbital 5.862 fm, <l_z> = +0.6667, <s_z> = -0.1667, W_orb = 0.986526, W_spin = 0.966335;  g_s x 1.0: delta_BW = -0.033665 (mu_orb +0.000, mu_spin +0.638)  g_s x 0.6: delta_BW = -0.033665 (mu_orb +0.000, mu_spin +0.383)  | spin part scaled to the measured mu = 0.5906: g_s scale +0.926, delta_BW = -0.033665
+  S+2 MeV          V0 =  29.066 MeV, rms radius of the orbital 5.472 fm, <l_z> = +0.6667, <s_z> = -0.1667, W_orb = 0.988037, W_spin = 0.969801;  g_s x 1.0: delta_BW = -0.030199 (mu_orb +0.000, mu_spin +0.638)  g_s x 0.6: delta_BW = -0.030199 (mu_orb +0.000, mu_spin +0.383)  | spin part scaled to the measured mu = 0.5906: g_s scale +0.926, delta_BW = -0.030199
+
+209Bi82+: valence proton l = 5, j = 9/2, nodes 0, separation energy 3.7990 MeV, electron-side E = 0.7958542683, I = -4.19518540e-01
+  r0=1.25 a=0.65   V0 =  60.654 MeV, rms radius of the orbital 5.769 fm, <l_z> = +4.9091, <s_z> = -0.4091, W_orb = 0.985935, W_spin = 0.972589;  g_s x 1.0: delta_BW = -0.002443 (mu_orb +4.909, mu_spin -2.285)  g_s x 0.6: delta_BW = -0.008893 (mu_orb +4.909, mu_spin -1.371)  | spin part scaled to the measured mu = 4.092: g_s scale +0.358, delta_BW = -0.011400
+  r0=1.20 a=0.60   V0 =  63.840 MeV, rms radius of the orbital 5.523 fm, <l_z> = +4.9091, <s_z> = -0.4091, W_orb = 0.987002, W_spin = 0.974564;  g_s x 1.0: delta_BW = -0.002167 (mu_orb +4.909, mu_spin -2.285)  g_s x 0.6: delta_BW = -0.008179 (mu_orb +4.909, mu_spin -1.371)  | spin part scaled to the measured mu = 4.092: g_s scale +0.358, delta_BW = -0.010515
+  r0=1.30 a=0.70   V0 =  57.750 MeV, rms radius of the orbital 6.017 fm, <l_z> = +4.9091, <s_z> = -0.4091, W_orb = 0.984832, W_spin = 0.970564;  g_s x 1.0: delta_BW = -0.002742 (mu_orb +4.909, mu_spin -2.285)  g_s x 0.6: delta_BW = -0.009638 (mu_orb +4.909, mu_spin -1.371)  | spin part scaled to the measured mu = 4.092: g_s scale +0.358, delta_BW = -0.012318
+  S-2 MeV          V0 =  58.211 MeV, rms radius of the orbital 5.813 fm, <l_z> = +4.9091, <s_z> = -0.4091, W_orb = 0.985741, W_spin = 0.972234;  g_s x 1.0: delta_BW = -0.002496 (mu_orb +4.909, mu_spin -2.285)  g_s x 0.6: delta_BW = -0.009024 (mu_orb +4.909, mu_spin -1.371)  | spin part scaled to the measured mu = 4.092: g_s scale +0.358, delta_BW = -0.011561
+  S+2 MeV          V0 =  63.074 MeV, rms radius of the orbital 5.728 fm, <l_z> = +4.9091, <s_z> = -0.4091, W_orb = 0.986110, W_spin = 0.972911;  g_s x 1.0: delta_BW = -0.002395 (mu_orb +4.909, mu_spin -2.285)  g_s x 0.6: delta_BW = -0.008774 (mu_orb +4.909, mu_spin -1.371)  | spin part scaled to the measured mu = 4.092: g_s scale +0.358, delta_BW = -0.011254
+
+(165Ho66+ is not modelled: its ground state 7/2- is a deformed Nilsson state with no spherical |l, j = 7/2> partner in the proton shell below Z = 82 of the right parity; Re-187 is also deformed, so its number is a spherical estimate.)
