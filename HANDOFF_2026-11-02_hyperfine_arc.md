@@ -32,3 +32,12 @@ Hyperfine line of work, in order: `NUCLEAR_MAGNETON_RESULTS.md` (μ_N = e c ƛ_p
 
 ## Uncommitted material that predates this session (not touched, human's call)
 Modified: `AGENTS.md`, `CLAUDE.md`, `HANDOFF_BC_2026-10-28.md`, `QUESTION.md`, `README.md`, `explore/LIVE_WEB_RESULTS.md`, `floor/M5_SPINE_10-9-26.md`, `floor/M6_SPINE_2026-10-19.md`, `floor/PROVENANCE.md`, `floor/field_equations_v3.txt`, `maps/alpha_candidates.md`, `maps/alpha_mechanism_status.md`, `maps/alpha_ratio_replay_codex.md`. Untracked: `floor/as_imported/`, `guard/`, `notes/inherited_directions_M4-M7.md`, `notes/terminology.md`. `floor/PROVENANCE.md` records that the three floor files were edited at the human's direction on 2026-11-02 with the as-imported copies in `floor/as_imported/`; committing these is the human's decision.
+
+## Addendum, same day: reproducibility check (appended after the handoff commit)
+`explore/reproduce.py` (commit 987d536) re-ran every explore script that has a committed `.out`, against a fresh export of the committed tree (89 scripts; the 116 earlier counted all `.out` files). Result in `explore/REPRODUCE_REPORT_2026-11-02.md`: 75 byte-identical (45 also match a hash recorded in a note, 30 have no recorded hash), 6 DIFFERS, 8 ERROR. No chain or hash drift was reported. Environment: `explore/ENVIRONMENT.md`.
+- ERROR, runner limitation: `ptable_sample`, `ptable_solids`, `route56_approx2`, `route56_approx3` need command-line arguments the runner does not pass.
+- ERROR, probable missing file in git: `route56_e8_c` to `route56_e8_f` (FileNotFoundError on a fresh export; one of the `route56_e8_*` data files is likely untracked; not confirmed).
+- DIFFERS, probably timing stamps only (first differing line shown; the rest not checked): `e_series_chain`, `route56_band2`.
+- DIFFERS, not diagnosed (inherited scripts): `route56_core`, `route56_hecke_check`, `route56_link`, `route56_approx`.
+All of this session's E-series and hyperfine scripts matched except `e_series_chain` (timing stamp at the first differing line).
+Next: teach reproduce.py the arguments, ignore elapsed-time stamps when comparing, find the missing e8 data file, diagnose the four inherited DIFFERS. Do not edit chained or inherited scripts in place; copy to new names and record new hashes.
