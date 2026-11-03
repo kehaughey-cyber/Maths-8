@@ -1,0 +1,5 @@
+shell V: 120 icosians, |q|^2 (phys) = [1.], |sigma q|^2 = [1.]
+shell E: 720 icosians, |q|^2 (phys) = [3.618034], |sigma q|^2 = [1.381966]
+shell F: 1200 icosians, |q|^2 (phys) = [7.854102], |sigma q|^2 = [1.145898]
+shell C: 600 icosians, |q|^2 (phys) = [13.708204], |sigma q|^2 = [0.291796]
+points: 840 vs 840, all matched: True; edges: rule 5040, geodesic 5040, common 5040
