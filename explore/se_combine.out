@@ -1,0 +1,33 @@
+self-energy as sourced, relative to the Fermi energy E_nr (x_SE), and in units of the point Dirac factor (x_SE / A):
+ion        x_SE (alpha X)  x_SE (9706031)     x_SE/A  x_SE - a/2pi  (x_SE - a/2pi)/A
+165Ho66+        -0.013157         -0.0132  -0.008547     -0.014319         -0.009301
+187Re74+        -0.017105         -0.0171  -0.009647     -0.018266         -0.010302
+207Pb81+        -0.021800         -0.0218  -0.010522     -0.022961         -0.011083
+209Bi82+        -0.022549         -0.0226  -0.010611     -0.023710         -0.011158
+(alpha / 2 pi = 1.161410e-03)
+
+comparison of the vacuum polarization: this repository (first order, relative) converted with the factor A (1 + BR)(1 + BW_uniform) to the literature convention (relative to E_nr):
+  165Ho66+  computed +0.004354 -> x_VP +0.00632; literature Uehling electric + magnetic +0.0064; ratio computed / literature 0.9880
+  187Re74+  computed +0.005434 -> x_VP +0.00881; literature Uehling electric + magnetic +0.0090; ratio computed / literature 0.9792
+  207Pb81+  computed +0.006597 -> x_VP +0.01199; literature Uehling electric + magnetic +0.0122; ratio computed / literature 0.9825
+  209Bi82+  computed +0.006781 -> x_VP +0.01254; literature Uehling electric + magnetic +0.0128; ratio computed / literature 0.9795
+
+left = measured r/A / predicted r/A - 1:
+ion       BW model                            (a) x_SE as tabulated   (b) x_SE - a/2pi   (no SE)
+165Ho66+  uniform sphere (old bound)                       -0.00580           -0.00500   -0.01477
+165Ho66+  thin shell (old bound)                           +0.00086           +0.00167   -0.00823
+187Re74+  uniform sphere (old bound)                       -0.00484           -0.00412   -0.01528
+187Re74+  thin shell (old bound)                           +0.00434           +0.00507   -0.00629
+187Re74+  single particle, Schmidt g_s                     -0.00606           -0.00534   -0.01647
+187Re74+  single particle, g_s x 0.6                       -0.00702           -0.00631   -0.01742
+187Re74+  single particle, spin scaled to mu               -0.00763           -0.00692   -0.01801
+207Pb81+  uniform sphere (old bound)                       -0.01932           -0.01869   -0.03101
+207Pb81+  thin shell (old bound)                           -0.00746           -0.00681   -0.01943
+207Pb81+  single particle, Schmidt g_s                     -0.00729           -0.00665   -0.01927
+207Pb81+  single particle, g_s x 0.6                       -0.00729           -0.00665   -0.01927
+207Pb81+  single particle, spin scaled to mu               -0.00729           -0.00665   -0.01927
+209Bi82+  uniform sphere (old bound)                       +0.00944           +0.01007   -0.00279
+209Bi82+  thin shell (old bound)                           +0.02207           +0.02272   +0.00954
+209Bi82+  single particle, Schmidt g_s                     -0.00924           -0.00863   -0.02102
+209Bi82+  single particle, g_s x 0.6                       -0.00271           -0.00209   -0.01465
+209Bi82+  single particle, spin scaled to mu               -0.00016           +0.00047   -0.01215
