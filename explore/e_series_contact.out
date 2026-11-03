@@ -1,0 +1,49 @@
+== contact-term checks
+  copy A: dE/d(eps) numerical 253.5415743381, from force 253.5415743566
+  copy B: dE/d(eps) numerical 714.7044594404, from force 714.7044594658
+  force against finite differences, worst relative error 7.29e-11
+  per-history U(1) phases: E -236.800043127180 -> -236.800043127180 (difference +2.8e-14)
+  per-vertex common SU(2) rotation of both copies: E -236.800043127180 -> -236.800043127180 (difference -5.7e-14)
+  rotating only copy A (not an invariance, for contrast): E -> -60.500994
+
+== live dynamics with the contact term (two copies, radial links)
+  amplitude 0.05, J = 0.7, dt = 0.02: max |E(t) - E(0)| = 1.9552e-01 over t = 8.0; Gauss drift 4.77e-15; E0 = 150.480352 (contact 0.003585)
+  amplitude 0.05, J = 0.7, dt = 0.01: max |E(t) - E(0)| = 4.8887e-02 over t = 8.0; Gauss drift 5.54e-15; E0 = 150.480352 (contact 0.003585)
+  amplitude 0.3, J = 0.0, dt = 0.02: max |E(t) - E(0)| = 6.1613e+00 over t = 8.0; Gauss drift 2.71e-14; E0 = 5243.831131 (contact -0.000000)
+  amplitude 0.3, J = 0.0, dt = 0.01: max |E(t) - E(0)| = 1.5418e+00 over t = 8.0; Gauss drift 3.96e-14; E0 = 5243.831131 (contact -0.000000)
+  amplitude 0.3, J = 0.7, dt = 0.02: max |E(t) - E(0)| = 7.3083e+186 over t = 8.0; Gauss drift 4.99e+108; E0 = 5112.122826 (contact 0.612654)
+  amplitude 0.3, J = 0.7, dt = 0.01: max |E(t) - E(0)| = inf over t = 8.0; Gauss drift 4.90e+247; E0 = 5112.122826 (contact 0.612654)
+
+== mean-field readout: A on a T-cycle, B a unit-charge ring on cycle 22 with spinor (1, 0)
+  B: ring kq = +1 on cycle 22, 10 histories, total charge density sum |Psi|^2 = 1.000000; |s^B_v| per vertex (first 10 vertices of the cycle): 0.0500, 0.0500, 0.0500, 0.0500, 0.0500, 0.0500, 0.0500, 0.0500, 0.0500, 0.0500
+  ring kq = +0 on cycle 22: max |d_h| (mismatch with the transport) 2.121e-09, max |link current dG/da| 2.872e-17
+  ring kq = +1 on cycle 22: max |d_h| (mismatch with the transport) 1.954e-01, max |link current dG/da| 1.176e-01
+  ring kq = -1 on cycle 22: max |d_h| (mismatch with the transport) 1.954e-01, max |link current dG/da| 1.176e-01
+  A on cycle 22, J = 0: eigenvalues of M^dagger M (omega^2): [-0.        0.        0.381966  0.381966  0.381966  0.381966  1.381966  1.381966  1.381966  1.381966  2.618034  2.618034  2.618034  2.618034  3.618034  3.618034
+  3.618034  3.618034  4.        4.      ]
+  J =   1e-04: shifts of the kq = +-1 ring modes (omega^2 0.381966, 4 modes): -2.500000e-06, -2.499665e-06, +2.499665e-06, +2.500000e-06;  static modes (omega^2 = 0, 2): -2.500000e-06, +2.500000e-06
+  J =   1e-03: shifts of the kq = +-1 ring modes (omega^2 0.381966, 4 modes): -2.500000e-05, -2.499966e-05, +2.499966e-05, +2.500000e-05;  static modes (omega^2 = 0, 2): -2.500000e-05, +2.500000e-05
+  J =   1e-02: shifts of the kq = +-1 ring modes (omega^2 0.381966, 4 modes): -2.500000e-04, -2.499997e-04, +2.499997e-04, +2.500000e-04;  static modes (omega^2 = 0, 2): -2.500000e-04, +2.500000e-04
+  J =   1e-01: shifts of the kq = +-1 ring modes (omega^2 0.381966, 4 modes): -2.500000e-03, -2.500000e-03, +2.500000e-03, +2.500000e-03;  static modes (omega^2 = 0, 2): -2.500000e-03, +2.500000e-03
+  J =   1e+00: shifts of the kq = +-1 ring modes (omega^2 0.381966, 4 modes): -2.500000e-02, -2.500000e-02, +2.500000e-02, +2.500000e-02;  static modes (omega^2 = 0, 2): -2.500000e-02, +2.500000e-02
+
+  first-order shifts for A on cycle 22 are linear in J: ratio of shift at J = 1e-3 to shift at J = 1e-2 per unit J, kq = +-1 modes
+    [-0.025      -0.02499966  0.02499966  0.025     ] [-0.025      -0.02499997  0.02499997  0.025     ]
+
+== the same for A on every other cycle: largest ring-mode shift at J = 1e-2 per unit J, against the overlap of A's ring density with B's (sum_v n^A_v n^B_v for the kq = 1 ring of unit charge)
+  cycle  max |shift|/J   overlap sum n^A n^B   (the 8 largest overlaps, then the median and the smallest nonzero)
+     29  2.500000e-02  1.000000e-01
+     22  2.500000e-02  1.000000e-01
+      2  1.000059e-02  2.000000e-02
+     13  1.000057e-02  2.000000e-02
+     83  1.000059e-02  2.000000e-02
+     64  1.000056e-02  2.000000e-02
+     47  1.000056e-02  2.000000e-02
+     41  1.000057e-02  2.000000e-02
+  median over cycles with overlap > 0 (52 of 144): shift/J 1.000057e-02, overlap 2.000000e-02; smallest nonzero overlap 2.000e-02 (shift/J 1.000e-02)
+  correlation of max |shift|/J with the overlap over the 52 cycles with overlap > 0: 1.000000
+
+== calibration to hydrogen, as an inference to test and not a result: Delta(omega)/omega_A = Delta(omega^2)/(2 omega^2) for the spin-up / spin-down pair of the kq = +1 mode on cycle 22
+  shifts (per unit J): [-0.025      -0.02499966  0.02499966  0.025     ] ; omega_A^2 = 0.38196601082622883
+  measured hydrogen hyperfine / Rydberg = 4.317550e-07
+  largest minus smallest ring-mode shift per unit J: 5.000000e-02; J that makes Delta(omega)/omega_A equal the measured ratio: 6.5966e-06
