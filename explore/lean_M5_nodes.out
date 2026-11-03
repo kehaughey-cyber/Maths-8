@@ -1,0 +1,73 @@
+| node | name | claim (M6 spine claim column) | Lean module | theorems | compile | axiom footprint of the checked theorems |
+|---|---|---|---|---|---|---|
+| 00 | distinction | Triad: two within, one without; undefined existence differs from nonexistence. | `Container00.Distinction` | 7 | OK | none (zero axioms) |
+| 01 | recursive-registration | Recursive subdivision; live adjacent co-definition and cascading changes. | `Container01.RecursiveRegistration` | 5 | OK | none (zero axioms) |
+| 02 | registration-event | Actualization through contextual registration and observer roles. | `Container02.RegistrationEvent` | 8 | OK | none (zero axioms) |
+| 03 | dimensional-emergence | Triangulation/clique closure and dimensional constraints. | `Container03.DimensionalEmergence` | 7 | OK | {Classical.choice, Quot.sound, propext} (5 theorems axiom-free) |
+| 04 | integers | Counts/order give natural numbers and additive inverses. | `Container04.Integers` | 23 | OK | {Quot.sound, propext} (8 theorems axiom-free) |
+| 05 | geometric-bridge | Polarization produces Gram form `(D/2)(I+J)`. | `Container05.EquidistantDimensionReal` | 5 | OK | {Classical.choice, Quot.sound, propext} |
+| 05 | geometric-bridge | Polarization produces Gram form `(D/2)(I+J)`. | `Container05.GeometricBridge` | 9 | OK | none (zero axioms) |
+| 06 | carrier-2i | Exact golden-field construction of 120 units. | `Container06.Ring` | 9 | OK | no `#print axioms` in the file |
+| 07 | ordinal-dynamics | Successive changes constitute history. | `Container07.Dynamics` | 6 | OK | none (zero axioms) |
+| 08 | metric-dynamics | Ordinal walk gains a metric trajectory through05. | `Container08.MetricDynamics` | 14 | OK | none (zero axioms) |
+| 09 | kissing-twelve | Icosahedral kissing witness/field-norm transfer. | `Container09.KissingTwelve` | 6 | OK | none (zero axioms) |
+| 09 | kissing-twelve | Icosahedral kissing witness/field-norm transfer. | `Container09.SurfaceSlackReal` | 3 | OK | {Classical.choice, Quot.sound, propext} |
+| 10 | why-twelve | Twelvefold angular closure and registration arithmetic. | `Container10.PhaseLedgerReal` | 5 | OK | {Classical.choice, Quot.sound, propext} |
+| 10 | why-twelve | Twelvefold angular closure and registration arithmetic. | `Container10.WhyTwelve` | 5 | OK | none (zero axioms) |
+| 11 | icosahedron | Icosahedral realization/no-thirteenth in the stated metric. | `Container11.Icosahedron` | 8 | OK | none (zero axioms) |
+| 12 | e8-roots | Icosian construction realizes 240 E8 roots. | `Container12.E8Roots` | 4 | OK | none (zero axioms) |
+| 13 | archic-density | `ρ(v)=|B_r(v)|`, adjacency-ball count. | `Container13.ArchicDensity` | 6 | OK | none (zero axioms) |
+| 14 | density-deficit | Reference `1+3r(r+1)`; angular count `12−2d`, total12χ. | `Container14.DensityDeficit` | 4 | OK | none (zero axioms) |
+| 15 | density-extremum | Extremal density directions at twelve/anti-twelve. | `Container15.DensityExtremum` | 4 | OK | none (zero axioms) |
+| 16 | frustration-dynamo | `ε=2π−5 arccos(1/3)>0`. | `Container16.FrustrationDynamo` | 3 | OK | none (zero axioms) |
+| 17 | stone-bekenstein-compton | Information/energy ruler `2πRE/(ℏc ln2)`. | `Container17.StoneBekensteinCompton` | 3 | OK | none (zero axioms) |
+| 18 | stone-planck-anchor | Planck crossover/anchor. | `Container18.StonePlanckAnchor` | 5 | OK | none (zero axioms) |
+| 19 | entry-protocol | Provenance and substrate/physics correspondence infrastructure. | `Container19.EntryProtocol` | 2 | OK | none (zero axioms) |
+| 20 | density-gradient | Per-edge density/deficit gradient; gravity reading. | `Container20.DensityGradient` | 3 | OK | none (zero axioms) |
+| 21 | entry-gravity-curvature | Deficit/curvature comparison and integral count. | `Container21.EntryGravityCurvature` | 2 | OK | none (zero axioms) |
+| 22 | converge-top-down | Information and archon-count convergence under a warrant. | `Container22.ConvergeTopDown` | 2 | OK | none (zero axioms) |
+| 23 | level-integrality | Registration counts give integer levels on triadic floor. | `Container23.LevelIntegrality` | 8 | OK | none (zero axioms) |
+| 24 | stone-grounding | Symmetry/additivity force common weight `I=αL`, up to scale. | `Container24.StoneGrounding` | 8 | OK | none (zero axioms) |
+| 25 | dimension-forcing | Intrinsic counting-growth exponent two. | `Container25.DimensionForcing` | 7 | OK | none (zero axioms) |
+| 26 | base-2-forcing | Binary registrable alphabet. | `Container26.Base2Forcing` | 6 | OK | none (zero axioms) |
+| 27 | dimensional-accounting | Dimensionless substrate and `ℏ,c,G` anchor accounting. | `Container27.DimensionalAccounting` | 7 | OK | none (zero axioms) |
+| 28 | weak-su2 | Quaternion brackets and `2I⊂SU(2)`; weak correspondence. | `Container28.WeakSU2` | 6 | OK | none (zero axioms) |
+| 29 | em-u1 | Abelian phase and signed-defect charge reading. | `Container29.EmU1` | 5 | OK | none (zero axioms) |
+| 30 | strong-su3 | A2/SU(3) in E8. | `Container30.StrongSU3` | 6 | OK | none (zero axioms) |
+| 31 | color-seating | Order-three action: 6 fixed + 38 three-cycles. | `Container31.ColorSeating` | 4 | OK | none (zero axioms) |
+| 32 | registration-boundary | One 2π phase cycle. | `Container32.RegistrationBoundary` | 3 | OK | none (zero axioms) |
+| 33 | planck-anchor-test | Anchored edge/tick/rate reproduces c by construction. | `Container33.PlanckAnchorTest` | 4 | OK | none (zero axioms) |
+| 34 | vacuum-value | Minimum density/vacuum and cosmological factor. | `Container34.VacuumValue` | 3 | OK | none (zero axioms) |
+| 35 | force-alpha-hat | Naive Planck vacuum fails; alpha-hat=1/N reframe. | `Container35.ForceAlphaHat` | 3 | OK | none (zero axioms) |
+| 36 | negative-curvature | d>6 realizes the negative side of degree-six mirror. | `Container36.NegativeCurvature` | 11 | OK | none (zero axioms) |
+| 37 | geodesic-motion | Flat versus deficit-bent paths. | `Container37.GeodesicMotion` | 4 | OK | none (zero axioms) |
+| 38 | deflection-value | Equilateral deflection/deficit and double-cover geometry. | `Container38.DeflectionValue` | 3 | OK | none (zero axioms) |
+| 39 | point-mass-limit | Concentrated curvature;12-cone/coarse-smooth reading. | `Container39.PointMassLimit` | 2 | OK | none (zero axioms) |
+| 40 | deflection-form | Front/eikonal1/b argument and geometric4π flux. | `Container40.DeflectionForm` | 3 | OK | none (zero axioms) |
+| 41 | metric-no-thirteenth | Single quaternionic spin geometry supplies dimension lever. | `Container41.MetricNoThirteenth` | 3 | OK | none (zero axioms) |
+| 42 | single-su2-root | Quaternionic/single-SU(2) structure under composition assumptions. | `Container42.SingleSU2Root` | 3 | OK | none (zero axioms) |
+| 43 | composition-norm | Multiplicative norm and measure hinge. | `Container43.CompositionNorm` | 2 | OK | none (zero axioms) |
+| 44 | chirality | Orientation-pure casting and distinct mirror. | `Container44.Chirality` | 2 | OK | none (zero axioms) |
+| 45 | spinor | Central sign2π→−I,4π→I in spin lift. | `Container45.Spinor` | 2 | OK | none (zero axioms) |
+| 46 | spacetime-signature | Ordered time/finite-rate Lorentzian argument. | `Container46.SpacetimeSignature` | 2 | OK | none (zero axioms) |
+| 47 | focusing-resolution | Spatial and spacetime focusing are different operators. | `Container47.FocusingResolution` | 2 | OK | none (zero axioms) |
+| 48 | closed-left-wing | `V(6−d)=6χ`, genus-two anti-twelve mirror. | `Container48.ClosedLeftWing` | 3 | OK | none (zero axioms) |
+| 49 | cpt | Defect mirror, orbit swap, arrow reversal and CPT. | `Container49.CPT` | 2 | OK | none (zero axioms) |
+| 50 | electroweak-mixing | Rank-two neutral directions/Z correspondence. | `Container50.ElectroweakMixing` | 2 | OK | none (zero axioms) |
+| 51 | gauge-product | Internal gauge product; no forced1+3+8 geometry. | `Container51.GaugeProduct` | 2 | OK | none (zero axioms) |
+| 52 | continuum-limit | Refined12-cone/coarse continuum. | `Container52.ContinuumLimit` | 2 | OK | none (zero axioms) |
+| 53 | quantum-kinematics | Complex phase/amplitudes and norm-preserving composition. | `Container53.QuantumKinematics` | 3 | OK | none (zero axioms) |
+| 54 | deflection-factor | Two metric components/factor-two light-deflection contact. | `Container54.DeflectionFactor` | 2 | OK | none (zero axioms) |
+| 55 | born-hinge | Probability/composition norm. | `Container55.BornHinge` | 2 | OK | none (zero axioms) |
+| 56 | matter-census | Spinor/color/chiral representation types. | `Container56.MatterCensus` | 2 | OK | none (zero axioms) |
+| 57 | weinberg-angle | Normalization reduction; naive one-half fails. | `Container57.WeinbergAngle` | 3 | OK | none (zero axioms) |
+| 58 | hypercharge-grading | Z6 quotient/residues. | `Container58.HyperchargeGrading` | 2 | OK | none (zero axioms) |
+| 59 | content-selection | Nine irreps,60/60 split, selection problem. | `Container59.ContentSelection` | 3 | OK | none (zero axioms) |
+| 60 | content-a-root | Retracts content as an irreducible external root. | `Container60.ContentARoot` | 3 | OK | none (zero axioms) |
+| 61 | k2-surface-test | Threefold counts versus generic E8 embeddings. | `Container61.K2SurfaceTest` | 3 | OK | none (zero axioms) |
+| 62 | embedding-distinction | Native grading narrows A2/axis choices. | `Container62.EmbeddingDistinction` | 3 | OK | none (zero axioms) |
+| 63 | boundary-map | Conditional sector/charge map and mixing fork. | `Container63.BoundaryMap` | 3 | OK | none (zero axioms) |
+| 64 | coxeter-bridge | C=L_aR_b, orders5/6, order30, E8 exponent polynomial. | `Container64.CoxeterBridge` | 6 | OK | none (zero axioms) |
+| 65 | four-clocks | Four30-clocks; alignment selects288/480 ticks. | `Container65.FourClocks` | 3 | OK | none (zero axioms) |
+| 66 |  |  | `Container66.ArbiterSeating` | 4 | OK | none (zero axioms) |
+| 67 |  |  | `Container67.ConjugationGeneration` | 5 | OK | none (zero axioms) |

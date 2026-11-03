@@ -1,0 +1,129 @@
+{
+ "container": "49-cpt",
+ "grades": {
+  "DERIVED": 3,
+  "OWED": 1,
+  "POSTULATE": 1
+ },
+ "steps": [
+  {
+   "check": "charge(12-d) = -charge(d); C^2=id; C fixes d=6 (charge 0) -- C is the degree/wing mirror",
+   "determines": "UNIQUE (C = d->12-d negates 12-2d, is an involution, fixes the neutral d=6)",
+   "expr": "charge conjugation C acts as the degree-mirror d -> 12-d: it NEGATES the signed charge, charge(12-d) = 12-2(12-d) = -(12-2d) (29.EM.1); it is an involution (C^2 = id); and it FIXES the neutral flat site d=6 (charge 0) -- exactly the mirror that separates the right wing (d<6, +) from the left wing (d>6, -) in 36/48",
+   "frm": [
+    "29.EM.1",
+    "36.LW.1"
+   ],
+   "grade": "DERIVED",
+   "id": "CT.1",
+   "value": {
+    "C_is_the_wing_mirror": "d<->12-d at d=6 = the flat mirror separating the wings (36/48)",
+    "c_fixes_neutral_d6": true,
+    "c_involution": true,
+    "c_negates_charge": true,
+    "examples": {
+     "charge(4)": 4,
+     "charge(5)": 2,
+     "charge(6)": 0,
+     "charge(7)": -2,
+     "charge(8)": -4
+    }
+   },
+   "what": "C = charge conjugation = the degree-mirror d<->12-d: it NEGATES the charge 12-2d (29), the flat mirror of the wings (36/48)",
+   "why": "the first discrete symmetry, and it is the wing-mirror in disguise. Charge conjugation flips the sign of every charge; the substrate's charge is the signed angle-defect 12-2d (29.EM.1). The operation that negates it is the degree-mirror d -> 12-d: charge(12-d) = 12 - 2(12-d) = 2d - 12 = -(12-2d). RUN IT: charge(5)=+2 <-> charge(7)=-2, charge(4)=+4 <-> charge(8)=-4, and d=6 (charge 0) is fixed. So C is the reflection about the FLAT MIRROR d=6 -- the very mirror that separates the min-density right wing (the twelve, 15) from the max-density left wing (the anti-twelve, 36/48). C is an involution (applying the mirror twice restores d). So charge conjugation is a built substrate operation: particle (d<6) <-> antiparticle (d>6) is right-wing <-> left-wing. (The identification C <-> the degree-mirror is a reading, CT.4; that d->12-d negates 12-2d and is an involution is the derived arithmetic.)"
+  },
+  {
+   "check": "P swaps even(+1)<->odd(-1), an involution; the substrate violates P (44.CH.2, chiral)",
+   "determines": "UNIQUE (P = even<->odd orbit swap, an involution; the substrate violates it -- chiral, 44)",
+   "expr": "parity P is the orientation reversal that swaps the carrier's EVEN orbit with the ODD (mirror) orbit (44.CH.1/CH.2), flipping the sign +1 <-> -1. It is an involution. The substrate VIOLATES P: the two orbits are DISTINCT conjugate copies (44.CH.2), so parity is not a self-symmetry",
+   "frm": [
+    "44.CH.2"
+   ],
+   "grade": "DERIVED",
+   "id": "CT.2",
+   "value": {
+    "P_sign": {
+     "even": 1,
+     "odd": -1
+    },
+    "from": "44.CH.2 (the carrier's two orbits are distinct conjugate copies -- P not a self-symmetry)",
+    "p_involution": true,
+    "substrate_violates_P": true
+   },
+   "what": "P = parity = the even/odd orbit swap (44); the substrate VIOLATES P (it is chiral)",
+   "why": "the second discrete symmetry, already built in 44. Parity is a spatial orientation reversal; on the carrier it is the map that swaps the even-permutation orbit (the carrier) with the odd orbit (the conjugate mirror), flipping the sign +1 <-> -1 (44.CH.1). It is an involution (two reversals restore). CRUCIALLY the substrate VIOLATES P: 44.CH.2 showed the even and odd orbits are DISTINCT conjugate copies (the carrier != its mirror), so P maps the carrier off itself -- parity is not a self-symmetry. This is exactly the weak force's maximal parity violation (44.CH.3). So P is a real operation, and it is BROKEN by the substrate's chirality."
+  },
+  {
+   "check": "T reverses the arrow (+1<->-1), an involution (T^2=id)",
+   "determines": "UNIQUE (T = arrow reversal +1<->-1, an involution)",
+   "expr": "time reversal T reverses the ARROW of the directed succession -- the +1/-1 step direction (07.7.2) along the 1-D oriented time (46.LS.1) flips sign. It is an involution (reversing twice restores the arrow)",
+   "frm": [
+    "46.LS.1",
+    "07.7.2"
+   ],
+   "grade": "DERIVED",
+   "id": "CT.3",
+   "value": {
+    "directions": [
+     1,
+     -1
+    ],
+    "from": "46.LS.1 (1-D oriented time) + 07.7.2 (the +1/-1 arrow)",
+    "t_involution": true,
+    "t_reverses_arrow": true
+   },
+   "what": "T = time reversal = reversing the arrow of the directed ordinal succession (46/07); an involution",
+   "why": "the third discrete symmetry. Time is the 1-D oriented ordinal succession (46.LS.1), and its ARROW is the +1/-1 direction of each step (07.7.2). Time reversal T reverses that arrow: +1 <-> -1, so a forward walk becomes its backward reverse. It is an involution (T(T(x)) = x). The substrate HAS a definite arrow (07's directed succession, 46's oriented time), so T is a genuine, non-trivial operation -- the substrate is not time-symmetric at the level of the arrow (the succession has a direction), though the DYNAMICS' T-behaviour is a matter-sector question (CT.5)."
+  },
+  {
+   "check": null,
+   "determines": "POSTULATE (CPT symmetry via the CPT theorem, unlocked by 46; C/P/CP violable, CPT exact; held)",
+   "expr": "the CPT theorem (any Lorentz-invariant local structure is CPT-symmetric) becomes applicable now that 46 forced the Lorentz signature (as spin-statistics did, 45.SP.3). The substrate can violate C, P, CP individually (P is violated, 44; C/CP involve the matter sector) but CPT is EXACT. A CORRESPONDENCE, WEAK; the matter content and the quantitative CP violation do NOT travel",
+   "frm": [
+    "CT.1",
+    "CT.2",
+    "CT.3",
+    "46.LS.4"
+   ],
+   "grade": "POSTULATE",
+   "id": "CT.4",
+   "value": {
+    "does_not_travel": "the matter content; the quantitative CP violation (the CKM phase)",
+    "downstream_premise_use": false,
+    "matches": "the weak force violates C, P, CP; CPT exact",
+    "physics_side_cited": "the CPT theorem -- Lorentz-invariant local structure is CPT-symmetric even when C,P,CP are violated",
+    "substrate_side": "C (CT.1), P (CT.2, violated), T (CT.3) -- built involutions",
+    "unlocked_by": "46.LS.4 (the Lorentz signature) -- as spin-statistics 45.SP.3"
+   },
+   "what": "CPT (filed through 19): the CPT theorem -- now applicable because 46 forced the Lorentz signature",
+   "why": "the entry, held to the 19 discipline. SUBSTRATE side (checked, CT.1-CT.3): C (the charge/degree mirror), P (the orbit swap, violated), T (the arrow reversal) are all built substrate operations, each an involution. PHYSICS side (cited): the CPT theorem -- every Lorentz-invariant local quantum field theory is invariant under the combined CPT, even when C, P, CP are individually violated. THE UNLOCK: CPT (like spin-statistics, 45.SP.3) requires the LORENTZ structure, which the substrate now has (46.LS.4). THE CORRESPONDENCE: the substrate's C, P, T <-> the physical discrete symmetries, and CPT is exact while P is violated (44, the chirality) and C/CP may be violated in the matter sector. This MATCHES the weak force (C, P, and CP all violated; CPT exact). FALSIFICATION: a Lorentz-invariant substrate that violated CPT would refute the theorem; it does not. WHAT DOES NOT TRAVEL: the matter content, WHICH fields, and the QUANTITATIVE C/CP violation (the CKM phase). A correspondence, quarantined; no downstream premise use."
+  },
+  {
+   "check": null,
+   "determines": "OWED (CPT re-derivation; the quantitative C/CP violation -- matter + values, danger zone)",
+   "expr": "OWED: (a) CPT re-derived on the substrate rather than cited -- needs the field/operator structure (as spin-statistics does, 45); (b) the quantitative C / CP violation -- the CKM phase, the matter/antimatter asymmetry -- the matter census and values, the danger zone. The discrete operations C, P, T are built; CPT is corresponded; the quantitative CP violation is owed",
+   "frm": [
+    "CT.4"
+   ],
+   "grade": "OWED",
+   "id": "CT.5",
+   "value": {
+    "owed_cp_violation": "the quantitative C/CP violation -- the CKM phase, baryogenesis -- matter + values, danger zone",
+    "owed_cpt_derivation": "CPT re-derived from the substrate's field structure (as spin-statistics, 45)",
+    "present": false
+   },
+   "what": "OWED: CPT re-derived on the substrate (needs the field structure); the quantitative C/CP violation (matter, danger zone)",
+   "why": "the honest residual. CT.1-CT.3 build C, P, T as substrate operations; CT.4 files CPT via the theorem (unlocked by 46). What remains: (a) CPT RE-DERIVED on the substrate -- a genuine proof from the substrate's field/operator structure, which (like spin-statistics, 45.SP.4) needs more than the signature; (b) the QUANTITATIVE C and CP violation -- the CKM phase, the matter/antimatter asymmetry (baryogenesis) -- which requires the matter census and coupling values, the DANGER ZONE, not attempted. So the discrete-symmetry STRUCTURE is forced/corresponded (danger-free); the quantitative CP violation is the forward, gated work. NOT attempted here."
+  }
+ ],
+ "values": {
+  "c_fixes_neutral_d6": true,
+  "c_involution": true,
+  "c_negates_charge": true,
+  "finding": "CPT: the substrate's discrete symmetries, unlocked by the signature (46). C = charge conjugation = the degree-mirror d<->12-d that NEGATES the charge 12-2d (29) -- the flat mirror separating the wings (36/48), an involution (CT.1). P = parity = the even/odd orbit swap (44), which the substrate VIOLATES (chiral), an involution (CT.2). T = time reversal = reversing the arrow of the directed succession (46/07), an involution (CT.3). CPT (POSTULATE, filed through 19): the CPT theorem, applicable now that 46 forced the Lorentz signature (as spin-statistics 45) -- the substrate can violate C, P, CP but CPT is exact, matching the weak force (CT.4). CPT re-derivation + the quantitative C/CP violation (matter, danger zone) are OWED (CT.5). Danger-free; nothing fitted.",
+  "p_involution": true,
+  "substrate_violates_P": true,
+  "t_involution": true,
+  "t_reverses_arrow": true
+ }
+}

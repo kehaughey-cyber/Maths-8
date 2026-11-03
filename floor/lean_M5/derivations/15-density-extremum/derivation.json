@@ -1,0 +1,128 @@
+{
+ "container": "15-density-extremum",
+ "grades": {
+  "DERIVED": 2,
+  "OWED": 0,
+  "POSTULATE": 1
+ },
+ "steps": [
+  {
+   "check": "rho_min = flat - r(r+1)/2 at the twelve = [6,16,31,51]; rho_max = flat = [7,19,37,61]",
+   "determines": "UNIQUE (the extremal sites and values are fixed by the mesh)",
+   "expr": "rho(v)=|B_r(v)|; min over substrate = flat_ball(r) - r(r+1)/2 (the twelve); max = flat_ball(r) (flattest deg-6); rho_min < rho_max",
+   "frm": [
+    "14.B.2",
+    "13.A.2"
+   ],
+   "grade": "DERIVED",
+   "id": "C.1",
+   "value": {
+    "gradient_real": true,
+    "level": "R4",
+    "max_is_flat_deg6": true,
+    "min_at_the_twelve_deg5": true,
+    "rho_max_r1_to_4": [
+     7,
+     19,
+     37,
+     61
+    ],
+    "rho_min_formula_flat_minus_triangular": true,
+    "rho_min_r1_to_4": [
+     6,
+     16,
+     31,
+     51
+    ]
+   },
+   "what": "the density extremum: rho_min at the twelve (flat - r(r+1)/2), rho_max at the flat mirror",
+   "why": "archic density rho(v) = |B_r(v)| is the observable of container 13. Across the substrate its MINIMUM is attained exactly at the twelve degree-5 sites -- rho_min(r) = flat_ball(r) - r(r+1)/2, the MAXIMUM deficit / maximum positive curvature (14's primordial law seen as an extremum) -- and its MAXIMUM at the flattest degree-6 sites, rho_max(r) = flat_ball(r), the flat value (attained cleanly at R4, where a degree-6 vertex sits far enough from all twelve to have deficit 0). There is a real density GRADIENT rho_min < rho_max, from the twelve up to the flat mirror. Exact integer, computed on R4."
+  },
+  {
+   "check": "net total deficit = 24 = 12*chi > 0 (topology); max degree <= 6 here (this construction)",
+   "determines": "UNIQUE (the total 12*chi is topological; the all-degree<=6 is this construction's, stated as such)",
+   "expr": "TOTAL angle deficit Sum(12-2d)=12*chi=24>0 (topology, a law); this construction's max degree = 6 everywhere (no negative-curvature site here, by construction not by law)",
+   "frm": [
+    "C.1",
+    "14.B.4"
+   ],
+   "grade": "DERIVED",
+   "id": "C.2",
+   "value": {
+    "all_degree_le_6_is_constructional_not_forced": true,
+    "max_degree_per_level": {
+     "R1": 5,
+     "R2": 6,
+     "R3": 6,
+     "R4": 6
+    },
+    "max_density_end": "NOT realized here; a different, buildable geometry, not a reflection of this one",
+    "mirror_at": "D=0 (degree 6, deficit zero)",
+    "net_angle_deficit_per_level": {
+     "R1": 24,
+     "R2": 24,
+     "R3": 24,
+     "R4": 24
+    },
+    "net_positive_total_is_topological": true,
+    "no_hyperbolic_vertex_here": true,
+    "twelve_chi": 24
+   },
+   "what": "the signed mirror (D=0, deg 6) and what THIS substrate realizes (rho <= flat)",
+   "why": "D = 0 -- a degree-6 site, deficit zero -- is the MIRROR between the two signs of the curvature. TWO facts, kept distinct: (a) a LAW -- Gauss-Bonnet fixes the TOTAL angle deficit at 12*chi = 24 > 0, so a closed genus-0 surface must be NET positively curved; (b) THIS construction's -- the geodesic subdivision of the icosahedron happens to give every vertex degree <= 6 (no negative-curvature degree>6 site anywhere), so here rho never exceeds flat. (b) is NOT forced by (a): a closed sphere MAY carry local saddle vertices if they are outweighed; ours has none by construction. So the maximum-density end is simply NOT REALIZED on this substrate -- it is NOT a 'complement' or reflection of the minimum-density side (the two signs are independent regions, not mirror images), and it is NOT forbidden in general. A region of rho > flat requires a DIFFERENT geometry (one carrying degree>6 sites) -- real and buildable, neither built nor characterized here."
+  },
+  {
+   "check": null,
+   "determines": "POSSIBLE, NOT confirmed; no value; no downstream premise until warranted",
+   "expr": "minimum archic density <-> vacuum/dark-energy direction (realized, the twelve); maximum archic density <-> black-hole direction (Schwarzschild attaches; NOT realized on this substrate)",
+   "frm": [
+    "C.1",
+    "C.2"
+   ],
+   "grade": "POSTULATE",
+   "id": "C.3",
+   "value": {
+    "assignment_also_unconfirmed": true,
+    "downstream_premise_use": false,
+    "max_density_direction": "black hole / Schwarzschild (NOT realized here; a different buildable geometry)",
+    "max_density_geometry_undecided": true,
+    "min_density_direction": "vacuum / dark-energy (realized: the twelve)",
+    "mirror": "flat (D=0, degree 6)",
+    "status": "possible, NOT confirmed",
+    "values": "DEFERRED (Step 10 owes the value, only after close AND top-down meets bottom-up)"
+   },
+   "what": "the named possibility: min density <-> vacuum, max density <-> black hole (POSSIBLE, NOT confirmed; values deferred)",
+   "why": "the arc's working correspondence, NAMED as a possibility to test and NOT asserted (Kevin, 2026-08-25: possible, not confirmed; name the directions, defer values). From the maths-4 clues (reference only, not derived here): MINIMUM archic density corresponds to the VACUUM / dark-energy direction -- realized on this substrate at the twelve; MAXIMUM archic density corresponds to the BLACK-HOLE direction, where the Schwarzschild radius attaches (per the clue) -- NOT realized on THIS substrate (a different, buildable geometry; see C.2). NO value is computed or fitted; what awaits WARRANT is BOTH the ASSIGNMENT (which extremum <-> which physical end) AND the GEOMETRY of the max-density end (whether negative curvature or another high-density mechanism -- not decided here; comparing a discrete-graph curvature sign to a physical one now would be reading a contradiction off a road not yet built). Warrant = the derivation closing AND the top-down count meeting the bottom-up. No downstream container may use this as a premise until confirmed. This is the honest state: a possibility, held and capped."
+  }
+ ],
+ "values": {
+  "max_degree_per_level": {
+   "R1": 5,
+   "R2": 6,
+   "R3": 6,
+   "R4": 6
+  },
+  "max_density_direction": "black hole (NOT realized here; a different buildable geometry)",
+  "min_density_direction": "vacuum / dark-energy (realized)",
+  "naming_status": "possible, NOT confirmed; values deferred",
+  "net_angle_deficit_per_level": {
+   "R1": 24,
+   "R2": 24,
+   "R3": 24,
+   "R4": 24
+  },
+  "rho_max_r1_to_4": [
+   7,
+   19,
+   37,
+   61
+  ],
+  "rho_min_r1_to_4": [
+   6,
+   16,
+   31,
+   51
+  ],
+  "twelve_chi": 24
+ }
+}

@@ -1,0 +1,101 @@
+{
+ "container": "25-dimension-forcing",
+ "grades": {
+  "DERIVED": 2,
+  "OWED": 1,
+  "POSTULATE": 0
+ },
+ "steps": [
+  {
+   "check": "flat_ball degree 2 (d2 const 6, d3 = 0); ring 6r linear; line 2r+1 degree 1 -> intrinsic dim 2",
+   "determines": "UNIQUE (the intrinsic dimension is the ball-growth polynomial degree = 2)",
+   "expr": "flat_ball(r)=1+3r(r+1) is degree 2 (second difference const 6, third difference 0); the ring count 6r is linear (shell ~ r^{d-1}=r^1), so the intrinsic dimension d=2 -- forced, not chosen",
+   "frm": [
+    "14.B.1",
+    "13.A.2"
+   ],
+   "grade": "DERIVED",
+   "id": "DF.1",
+   "value": {
+    "distinct_from_ambient": "this is intrinsic n=2 (surface), NOT the ambient dim=3 (DF.3)",
+    "flat_ball": "1+3r(r+1) = 1+3r+3r^2, degree 2",
+    "intrinsic_dimension": 2,
+    "line_1d_is_degree1_contrast": true,
+    "not_1d_not_3d": "line (2r+1) is degree 1; a cubic is degree 3; flat_ball is degree 2",
+    "ring_is_6r_linear": true,
+    "second_difference_constant_6": true,
+    "third_difference_zero": true
+   },
+   "what": "the counting law forces the INTRINSIC dimension n=2 (ball-growth polynomial degree)",
+   "why": "the first, solid half of dimension-forcing. The intrinsic (growth) dimension of a space is the degree of its ball-growth counting law: |B_r| ~ r^d. Container 14's flat reference flat_ball(r) = 1+3r(r+1) = 1+3r+3r^2 is a DEGREE-2 polynomial -- certified by its finite differences: the second difference is the nonzero constant 6 (the hallmark of degree exactly 2) and the third difference is 0. Equivalently the RING (shell) count is 6r, LINEAR in r; a shell grows as r^{d-1}, so 6r ~ r^1 gives d-1=1, d=2. This is FORCED by the icosahedral/triangular adjacency (6 per ring = the flat degree-6 triangular tiling, container 14.B.1), not put in by hand. And it is discriminating: a 1-D lattice ball 2r+1 has second difference 0 (degree 1), so the substrate is NOT 1-D; a 3-D volume would have a nonzero third difference, and flat_ball's third difference is 0, so it is NOT degree 3. The substrate is intrinsically a SURFACE -- dimension exactly 2. NOTE: this is the n in the curvature law V(eps) (container 21, n=2) and is DISTINCT from the ambient dimension 3 (DF.3); the counting law forces the intrinsic 2, not the ambient 3."
+  },
+  {
+   "check": "6(2+2)=24=12*2 (sphere); with n fixed 2, matches 12chi only at chi=2 -> coincidence not identity",
+   "determines": "UNIQUE (6(n+2)=24 at n=2; the =12chi equality holds only at chi=2)",
+   "expr": "6(n+2) at the intrinsic n=2 (DF.1) is 24, forced; it equals the Gauss-Bonnet total 12*chi=24 for the sphere (chi=2) but NOT for chi != 2 (n stays 2), so the equality is a coincidence, not a forced identity",
+   "frm": [
+    "DF.1",
+    "14.B.4"
+   ],
+   "grade": "DERIVED",
+   "id": "DF.2",
+   "value": {
+    "coefficient_6_n_plus_2_at_n2": 24,
+    "coefficient_forced_at_n2": true,
+    "equality_is_sphere_coincidence_not_identity": true,
+    "gauss_bonnet_sphere_12chi": 24,
+    "match_by_chi_sphere_rp2_torus": {
+     "0": false,
+     "1": false,
+     "2": true
+    },
+    "meets_only_for_2sphere": true,
+    "provenance": "6(n+2) is local/dimensional (forced by n=2); 12chi is topological (forced by chi=2)"
+   },
+   "what": "the coefficient 6(n+2)=24 is forced at n=2; 6(n+2)=12*chi is a SPHERE COINCIDENCE",
+   "why": "the coefficient half, and the honest disambiguation the roadmap's question needed. The local curvature law is V(eps)=w_n eps^n [1 - R eps^2 / (6(n+2))] (container 21, cited). Its coefficient 6(n+2), evaluated at the FORCED intrinsic dimension n=2 (DF.1), is 6*4 = 24 -- so the coefficient is FORCED by the counting law, not put in by hand. It coincides with the substrate's Gauss-Bonnet total deficit 12*chi = 24 (chi=2, container 14.B.4). Is that a forced IDENTITY or a COINCIDENCE? RUN IT: the intrinsic dimension of a surface is 2 REGARDLESS of genus (any closed surface is 2-D), so hold n=2 and vary the topology. 6(2+2)=24 equals 12*chi only at chi=2 (the sphere); for chi=1 it is 24 vs 12, for chi=0 (the torus) 24 vs 0 -- NO match. So 6(n+2)=12*chi is SPHERE-SPECIFIC: a COINCIDENCE of chi=2, NOT a structural identity. This prevents a false-identity claim (the two 24s have different provenance -- one local/dimensional, one topological -- and agree only here). The coefficient is forced by n; the Gauss-Bonnet total is forced by chi; they meet at 24 for the 2-sphere alone."
+  },
+  {
+   "check": null,
+   "determines": "OWED (the ambient metric no-thirteenth; located, not closed; decided-failed levers named)",
+   "expr": "the '3' of 'why 3 dimensions' is the AMBIENT dimension (the 2-sphere's embedding / the kissing dim=3), which is container 03's OPEN metric no-thirteenth (3.7) -- the counting law does not supply it, and its levers are decided-failed",
+   "frm": [
+    "DF.1",
+    "03.6",
+    "03.7"
+   ],
+   "grade": "OWED",
+   "id": "DF.3",
+   "value": {
+    "ambient_dim_not_forced": true,
+    "counting_law_cannot_supply": "it measures INTRINSIC structure; a metric no-thirteenth is an AMBIENT embedding fact",
+    "decided_failed_levers": "separation + kissing (CORRECTIONS #6: 24-cell/600-cell pass at d=4; do not re-attempt)",
+    "dim_eq_3_is_checked_negative": "03.6 (no-thirteenth is topological census, not metric; sphere 19.6% uncovered; D4 admits 13 at d=4)",
+    "dim_ge_3_derived": "03.5 (tetrahedron minimum / equidistant -> dim >= 3)",
+    "not_reattempted": true,
+    "present": false,
+    "what_it_is": "container 03's 3.7 metric no-thirteenth (a substrate-native METRIC obstruction)"
+   },
+   "what": "the AMBIENT dimension 3 is NOT forced by the counting law -- the metric no-thirteenth (OWED)",
+   "why": "the residual, located and NOT re-attempted -- the honest boundary. The counting law forces the INTRINSIC dimension 2 (DF.1); the '3' of 'why 3 dimensions' is a DIFFERENT dimension -- the AMBIENT one, in which the closed 2-sphere sits (the twelve kissing, the icosahedron, container 09/03). Container 03 established dim >= 3 (the tetrahedron minimum / equidistant->dim, 3.5) but showed dim = 3 is a CHECKED NEGATIVE (3.6): the substrate's no-thirteenth is TOPOLOGICAL (an Euler census at any d), never METRIC; the sphere is 19.6% uncovered by twelve caps (room exists) and D4 admits 13 at d=4. The one genuinely OPEN thing (03's 3.7) is a substrate-native METRIC no-thirteenth, and nothing supplies one. Its candidate levers are DECIDED-FAILED (CORRECTIONS #6: the separation lever passes at d=4 for the 24-cell/600-cell; 'do not re-attempt'). The new ball-growth/density machinery (13-24) does NOT change this: it measures INTRINSIC structure (counts within the surface), and a metric no-thirteenth is an AMBIENT embedding fact the intrinsic count cannot see -- indeed the 19.6%-uncovered fact says the ambient sphere has metric ROOM. So the ambient dim=3 stays OWED, located precisely: it needs a substrate-native metric obstruction that neither the intrinsic counting law nor the decided-failed separation/kissing levers provide. NOT re-attempted here."
+  }
+ ],
+ "values": {
+  "ambient_3_is_owed": true,
+  "coefficient_at_n2": 24,
+  "equality_is_sphere_coincidence": true,
+  "finding": "the counting law forces intrinsic n=2 (and the coefficient 6(n+2)=24); ambient dim=3 (the metric no-thirteenth) is NOT forced -- 'why 3' = forced-2 + owed-3",
+  "forces_intrinsic_2": true,
+  "gauss_bonnet_sphere": 24,
+  "intrinsic_dimension": 2,
+  "line_1d_is_degree1": true,
+  "match_by_chi": {
+   "0": false,
+   "1": false,
+   "2": true
+  },
+  "ring_is_6r_linear": true,
+  "second_difference_constant_6": true,
+  "third_difference_zero": true
+ }
+}

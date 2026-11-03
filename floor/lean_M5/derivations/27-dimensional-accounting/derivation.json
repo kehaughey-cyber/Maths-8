@@ -1,0 +1,194 @@
+{
+ "container": "27-dimensional-accounting",
+ "grades": {
+  "DERIVED": 3,
+  "OWED": 1,
+  "POSTULATE": 0
+ },
+ "steps": [
+  {
+   "check": "every tower quantity (|B_r|,L,chi,radits,BC,alphabet) has (L,T,M) dimension (0,0,0) -- dimensionless",
+   "determines": "UNIQUE (the substrate's quantities are counts/ratios; their (L,T,M) dimension is (0,0,0))",
+   "expr": "every quantity the tower computes (|B_r| 13, archon count L 23, degree/chi/240/12, radits/deficits 14/16, BC=2pi/ln2 17, the base-2 alphabet 26) is a COUNT or a dimensionless RATIO -- (L,T,M) exponents (0,0,0); no length, time, mass, or energy is native",
+   "frm": [
+    "13.A.2",
+    "23.LI.2",
+    "26.B2.1"
+   ],
+   "grade": "DERIVED",
+   "id": "DA.1",
+   "value": {
+    "all_dimensionless": true,
+    "base_dimensions": "(L, T, M) -- length, time, mass",
+    "no_native_units": "no metre/second/kilogram/joule; relational, exact Q(sqrt5), never metric-with-units",
+    "substrate_quantities": {
+     "BC=2pi/ln2_(17)": [
+      0,
+      0,
+      0
+     ],
+     "archon_count_L_(23)": [
+      0,
+      0,
+      0
+     ],
+     "ball_growth_|B_r|_(13)": [
+      0,
+      0,
+      0
+     ],
+     "base-2_alphabet_(26)": [
+      0,
+      0,
+      0
+     ],
+     "degree_/_Euler_chi_/_240_/_12": [
+      0,
+      0,
+      0
+     ],
+     "radits_/_deficits_(14/16)": [
+      0,
+      0,
+      0
+     ]
+    }
+   },
+   "what": "the substrate is DIMENSIONLESS -- every tower quantity carries dimension (0,0,0)",
+   "why": "the floor of the accounting, and it is a census of the whole tower. A 'dimension' is a vector of exponents over the base units -- here (L,T,M) for length, time, mass; a quantity is DIMENSIONLESS when that vector is (0,0,0). Run down what the substrate actually produces: ball-growth counts |B_r| (13), the archon count L=|A(d)| (23), vertex degrees and the Euler characteristic and the 240 and the 12, angle radits and deficits (14/16), the pure number BC=2pi/ln2 (17), the base-2 alphabet size (26). Every one is a COUNT (an integer) or a dimensionless RATIO of counts/angles. NONE carries a length, a time, a mass, or an energy -- there is no metre, second, kilogram, or joule anywhere in the substrate; the geometry is relational and exact-arithmetic (Q(sqrt5)), never metric-with-units. So the substrate lives entirely at dimension (0,0,0). This is not a limitation to apologise for; it is the precise fact that makes DA.2's accounting exact."
+  },
+  {
+   "check": "det[[2,-1,1],[1,-1,0],[3,-2,-1]] = 2 != 0 -> {hbar,c,G} a dimensional basis; exactly 3 anchors external",
+   "determines": "UNIQUE (det of the {hbar,c,G} exponent matrix = 2; the three span (L,T,M), rank 3)",
+   "expr": "the (L,T,M) exponent matrix of {hbar=(2,-1,1), c=(1,-1,0), G=(3,-2,-1)} has determinant 2 != 0, so the three SPAN the dimension space -- any dimensionful quantity's units are a unique monomial in hbar,c,G (Planck units). So exactly 3 dimensionful anchors fix ALL units; a dimensionless substrate supplies none -> >= 3 dimensionful inputs are IRREDUCIBLY EXTERNAL",
+   "frm": [
+    "DA.1"
+   ],
+   "grade": "DERIVED",
+   "id": "DA.2",
+   "value": {
+    "G_dim": [
+     3,
+     -2,
+     -1
+    ],
+    "anchors_independent": true,
+    "c_dim": [
+     1,
+     -1,
+     0
+    ],
+    "determinant": 2,
+    "dimension_rank": 3,
+    "exactly_three_anchors": "rank(L,T,M)=3 and {hbar,c,G} realize it (det=2) -> exactly 3 fix all units",
+    "hbar_dim": [
+     2,
+     -1,
+     1
+    ],
+    "irreducibly_external": ">= 3 dimensionful inputs; the dimensionless substrate supplies none",
+    "why_planck_units_exist": "a basis for dimension space -> unique monomial hbar^a c^b G^d for any unit"
+   },
+   "what": "{hbar, c, G} is a DIMENSIONAL BASIS (det=2 != 0) -- exactly 3 anchors are irreducibly external",
+   "why": "the headline, and it is what makes Path B honest instead of a category error. Path B asked to 'derive hbar/c/G'. But dimension space (L,T,M) is a 3-dimensional vector space over the exponents, and {hbar, c, G} is a BASIS for it: their exponent matrix [[2,-1,1],[1,-1,0],[3,-2,-1]] has determinant 2, nonzero, so the three are independent and span. That is precisely why Planck units (l_P, t_P, m_P) exist and are unique -- every physical unit is a unique monomial hbar^a c^b G^d. Two consequences, both forced. (i) EXACTLY THREE dimensionful numbers are needed to fix every unit -- no fewer (the rank is 3), no more (three already span). (ii) The substrate is dimensionless (DA.1), so it supplies NONE of the three: a count times a count is a count, forever at (0,0,0); you cannot manufacture a metre from integers. Therefore >= 3 dimensionful inputs are IRREDUCIBLY EXTERNAL to the substrate -- they enter at MEASUREMENT (the Stones 17/18), exactly as maths-4 found ('the substrate's coupling is unity; alpha must enter where the substrate meets measurement'). This is not defeat: it is an exact ACCOUNTING -- it says how much is external (three numbers, the Planck scale) and, by DA.1, that everything else is the substrate's dimensionless business."
+  },
+  {
+   "check": "alpha readings (2,-2,1)!=(1,0,0) but sum=(3,-2,1)=dim(hbar*c) (Compton dual); each = a Planck monomial",
+   "determines": "UNIQUE (the two alpha readings' dimension vectors, their Compton-dual sum, and their Planck monomials)",
+   "expr": "alpha = alpha_hat (dimensionless) x (Planck-unit anchor); the source reads alpha as 'energy per archon' (dim (2,-2,1), Stone 17) AND as the 'edge' in c=alpha/tau (dim (1,0,0), 18.P.3) -- dimensionally DISTINCT but COMPTON-DUAL (their sum = (3,-2,1) = dim(hbar*c), i.e. E*R=hbar*c). Each reading's units are a Planck monomial (2*energy=hbar+5c-G; 2*length=hbar+G-3c)",
+   "frm": [
+    "DA.2",
+    "17.S.1"
+   ],
+   "grade": "DERIVED",
+   "id": "DA.3",
+   "value": {
+    "alpha_energy_dim": [
+     2,
+     -2,
+     1
+    ],
+    "alpha_length_dim": [
+     1,
+     0,
+     0
+    ],
+    "compton_dual_sum_is_hbarc": true,
+    "energy_reading_is_planck_energy_2E_eq_hbar_5c_minus_G": true,
+    "factorization": "alpha = alpha_hat (dimensionless, substrate-forcible) x (Planck-unit anchor)",
+    "hbarc_dim": [
+     3,
+     -2,
+     1
+    ],
+    "length_reading_is_planck_length_2L_eq_hbar_G_minus_3c": true,
+    "reading_quarantined": "which alpha, and E*R=hbar*c as the registration boundary, is Stone 17/18's, held",
+    "readings_dimensionally_differ": true
+   },
+   "what": "the per-archon alpha FACTORIZES as alpha_hat x (Planck anchor); its two readings are Compton-dual",
+   "why": "the per-archon alpha, put on the ledger -- and it surfaces a conflation the source carries. alpha is read TWO ways in the corpus: 'energy per archon' (Stone 17, dimension energy (2,-2,1)) and the registration EDGE in c=alpha/tau (Kevin's Planck hypothesis 18.P.3: c a speed L/T, tau the tick T, so alpha=c*tau=length (1,0,0)). Those dimension vectors are DIFFERENT, so 'alpha' names two different objects unless one reading is wrong -- a real overload, exactly the kind the container discipline exists to catch. RUN IT: are they unrelated, or dual? Their dimensions SUM to (3,-2,1), which is the dimension of hbar*c -- so (energy alpha)*(length alpha) ~ hbar*c, i.e. E*R=hbar*c, which is LITERALLY Stone 17's cold algebra (17.S.1). The two readings are COMPTON-DUAL, not contradictory: the energy-alpha and the length-alpha are Compton conjugates, linked by hbar*c. And each one's units ARE a Planck monomial: 2*(energy alpha)=hbar+5c-G (the Planck energy sqrt(hbar c^5/G)), 2*(length alpha)=hbar+G-3c (the Planck length sqrt(hbar G/c^3)) -- both checked as integer exponent identities (the factor 2 clears the square roots). CONCLUSION: under either reading alpha = alpha_hat (dimensionless) x (a fixed Planck-unit anchor), so alpha's ABSOLUTE value carries units and needs the anchor; ONLY the dimensionless alpha_hat is the substrate's to force. The physical READING (which alpha, and that E*R=hbar*c is the registration boundary) stays Stone-quarantined; the DIMENSIONAL arithmetic here is what is derived."
+  },
+  {
+   "check": null,
+   "determines": "OWED (force alpha_hat via the F2 transfer rule; disambiguate the reading via Planck/SEC9; located)",
+   "expr": "alpha's value = alpha_hat (dimensionless) x (3 Planck anchors, irreducibly external, DA.2). Forcing alpha_hat from the substrate is the FORWARD Path B work -- the transfer rule at F2 (container 16's eps), computed-then-compared NEVER fitted, respecting maths-4's refused-list; the energy-vs-length reading awaits the Planck hypothesis (18.P.3) / SEC9. Located, not closed.",
+   "frm": [
+    "DA.2",
+    "DA.3",
+    "16.D.1"
+   ],
+   "grade": "OWED",
+   "id": "DA.4",
+   "value": {
+    "how_constrained": "FORCED not fitted (census 'stays failing' when fitted); respect refused-list (1/144,1/12,24,20,2^7)",
+    "irreducible_external": "exactly the 3 Planck anchors {hbar,c,G} = {l_P,t_P,m_P} (DA.2, det=2)",
+    "not_attempted": true,
+    "owed_object": "the TRANSFER RULE (how frustration at one level enters the next) -- NOT composing to hit a number",
+    "present": false,
+    "principled_opening": "F2 = the packing frustration = container 16's eps=7.356deg (maths-4: first quantity with SLACK, unpinned)",
+    "reading_disambiguation": "energy-vs-length alpha awaits the Planck hypothesis (18.P.3) / SEC9 (both OPEN)",
+    "substrate_must_force": "only the dimensionless alpha_hat (DA.3)"
+   },
+   "what": "forcing the dimensionless alpha_hat is the forward Path B work; the reading awaits Planck/SEC9 (OWED)",
+   "why": "the residual, located precisely and NOT attempted here -- the honest boundary, and the map for what Path B does next. The accounting closes the dimensionful question: EXACTLY the three Planck anchors (hbar, c, G -- equivalently l_P, t_P, m_P) are irreducibly external (DA.2), and alpha's absolute value = alpha_hat x (a Planck-unit anchor) (DA.3). So the ONLY thing the substrate can, or must, supply for alpha is the DIMENSIONLESS factor alpha_hat. Forcing alpha_hat is the real forward Path B work, and the accounting already constrains HOW to look: (i) it must be FORCED, not assembled -- the 864/standing-lag census 'stays failing' precisely because it was fitted, not forced; (ii) it must respect maths-4's REFUSED-LIST (1/144, 1/12, 24, 20, 2^7 -- recorded as refused; do not fish pi/phi/12 near a target); (iii) the one PRINCIPLED opening is F2, the packing frustration = container 16's eps=7.356deg, maths-4's 'first quantity with SLACK, unpinned', and the owed object there is the TRANSFER RULE (how a frustration at one level enters the next), NOT composing frustrations to hit a number. Separately, the energy-vs-length reading of alpha (DA.3) is a disambiguation that touches the Planck hypothesis (18.P.3, l_P=edge/t_P=tick) and SEC9 (Compton = registration boundary), both OPEN. So: the irreducible external input is the 3 Planck anchors (located); alpha_hat and the reading are the forward Path B agenda. NOT attempted here."
+  }
+ ],
+ "values": {
+  "G_dim": [
+   3,
+   -2,
+   -1
+  ],
+  "alpha_energy_dim": [
+   2,
+   -2,
+   1
+  ],
+  "alpha_length_dim": [
+   1,
+   0,
+   0
+  ],
+  "anchor_determinant": 2,
+  "anchors_independent": true,
+  "c_dim": [
+   1,
+   -1,
+   0
+  ],
+  "compton_dual": true,
+  "dimension_rank": 3,
+  "energy_is_planck_energy": true,
+  "exactly_three_anchors_external": true,
+  "finding": "the substrate is dimensionless (DA.1); {hbar,c,G} is a dimensional basis (det=2), so EXACTLY 3 dimensionful anchors are irreducibly external (DA.2); the per-archon alpha = alpha_hat (dimensionless, the substrate's to force) x a Planck anchor, its energy/length readings Compton-dual via E*R=hbar*c (DA.3); forcing alpha_hat (the F2 transfer rule, forced-not-fitted, refused-list respected) is the forward Path B work (DA.4). Path B's honest content: derive the dimensionless alpha_hat; exactly three Planck numbers stay external.",
+  "hbar_dim": [
+   2,
+   -1,
+   1
+  ],
+  "length_is_planck_length": true,
+  "readings_differ": true,
+  "substrate_all_dimensionless": true,
+  "substrate_forces_only_alpha_hat": true
+ }
+}

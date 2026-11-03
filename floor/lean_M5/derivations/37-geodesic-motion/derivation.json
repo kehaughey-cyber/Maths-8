@@ -1,0 +1,181 @@
+{
+ "container": "37-geodesic-motion",
+ "grades": {
+  "DERIVED": 4,
+  "OWED": 1,
+  "POSTULATE": 1
+ },
+ "steps": [
+  {
+   "check": "angle_deficit(6) = 0 => geodesic straight in a flat region (08's free walk)",
+   "determines": "UNIQUE (deficit at d=6 is 0 => zero deflection => straight, 08's free walk)",
+   "expr": "a geodesic through a degree-6 (deficit-0) region deflects by 0 -- it is straight, zero Delta^2, exactly container 08's free walk (constant velocity, zero acceleration = Newton's first law), recovered here as the deficit-0 special case",
+   "frm": [
+    "08.8.7",
+    "14.B.4"
+   ],
+   "grade": "DERIVED",
+   "id": "GM.1",
+   "value": {
+    "flat_deflection": 0,
+    "flat_degree": 6,
+    "recovers": "08.8.7 straight_zero_accel (Newton's first law)"
+   },
+   "what": "in a FLAT region (degree-6) the geodesic is STRAIGHT: deflection 0 -- 08's free walk / Newton's first law",
+   "why": "the free case, to anchor the rest. Container 08 proved a STRAIGHT walk has zero acceleration everywhere (08.8.7, straight_zero_accel = discrete Newton's first law). Here the walk lives on the curved adjacency mesh, and 'straight' means an adjacency-geodesic. In a FLAT region -- degree-6 vertices, angle deficit 12-2*6 = 0 -- there is no curvature to bend it, so the geodesic deflects by 0 and its Delta^2 is 0: uniform motion. This is 08's free walk as the deficit-0 case, and it is the baseline the deflection (GM.2) departs from."
+  },
+  {
+   "check": "deflection(d) = angle_deficit(d) = 12-2d: +2 (d=5), 0 (d=6), -2 (d=7), -4 (d=8)",
+   "determines": "UNIQUE (deflection = angle deficit 12-2d, the Regge holonomy, fixed by 14.B.4)",
+   "expr": "the deflection of a geodesic around a degree-d vertex equals the angle deficit 12-2d (14.B.4): +2 at the twelve (d=5), 0 flat (d=6), -2 at a degree-7 (the left wing). Parallel transport around the vertex rotates a vector by the deficit -- the holonomy IS the curvature",
+   "frm": [
+    "GM.1",
+    "14.B.4",
+    "36.LW.1"
+   ],
+   "grade": "DERIVED",
+   "id": "GM.2",
+   "value": {
+    "deflection_by_degree": {
+     "5": 2,
+     "6": 0,
+     "7": -2,
+     "8": -4
+    },
+    "geodesic_follows_mesh": "straight locally, bent by the deficit at each curvature site",
+    "mechanism": "Regge holonomy -- transport around a vertex rotates by the deficit"
+   },
+   "what": "near a degree-d vertex the geodesic DEFLECTS by the angle deficit (12-2d) -- the Regge holonomy",
+   "why": "the heart. On a piecewise-flat mesh the curvature is concentrated at the vertices as the angle deficit (14.B.4: 12-2d radits; the twelve carry +2 each, total 12*chi = 24 = 4*pi, Gauss-Bonnet, confirmed in 21). Regge calculus: a vector parallel-transported once around a vertex comes back rotated by exactly the deficit -- the holonomy. A geodesic passing the vertex is therefore DEFLECTED by the deficit: it is straight LOCALLY (each mesh triangle is flat) but the accumulated turn around the concentrated curvature is the deficit. So a geodesic is NOT straight in the embedding -- it follows the mesh, bending by 12-2d at each curvature site. This is the discrete geodesic deviation: the deficit ACTS on the trajectory. It reuses 36.LW.1's signed deficit across both wings (+ at the twelve, - at degree>6)."
+  },
+  {
+   "check": "focusing(d) = (angle_deficit(d) > 0): focus at d=5, neutral d=6, defocus d=7",
+   "determines": "UNIQUE (focusing sign = sign of the deficit; the convergence provenance cited)",
+   "expr": "sign(deflection) = sign(deficit): a POSITIVE-deficit vertex (a cone point, d<6 -- the twelve) FOCUSES geodesics (they converge); a NEGATIVE-deficit vertex (d>6 -- the left wing, 36) DEFOCUSES (they diverge); d=6 is neutral. The sign is the discrete geodesic-deviation sign",
+   "frm": [
+    "GM.2",
+    "36.LW.4"
+   ],
+   "grade": "DERIVED",
+   "id": "GM.3",
+   "value": {
+    "convergence_provenance": "discrete geodesic deviation on a cone -- CITED, not re-proved",
+    "focus_by_degree": {
+     "5": "focus",
+     "6": "neutral",
+     "7": "defocus",
+     "8": "defocus"
+    },
+    "left_wing_defocus": true,
+    "sign_rule": "focusing <=> angle_deficit > 0 (positive spatial curvature, a cone, focuses)",
+    "twelve_focus": true
+   },
+   "what": "the SIGN of the deficit sets FOCUSING: d<6 (positive, the twelve) focuses; d>6 (negative, left wing) defocuses",
+   "why": "the tidal sign -- attractive vs repulsive. A positive angle deficit is a CONE point (fold paper into a cone): two geodesics passing it RECONVERGE beyond the apex -- FOCUSING, the discrete geodesic-deviation / Raychaudhuri focusing. A negative deficit (an excess-angle saddle, degree>6, the left wing of 36) DEFOCUSES -- geodesics diverge. d=6 (deficit 0, flat) is neutral (08's parallel straight lines stay parallel). So sign(focusing) = sign(deficit) = sign(12-2d). The SIGN is derived arithmetic; the cone-geodesic-CONVERGENCE meaning is the standard discrete-geometry fact, CITED (as container 16 cites the trig and 10 cites arcsin), not re-proved. This ties the two wings (36) to the two tidal signs: the twelve focus, the left wing defocuses."
+  },
+  {
+   "check": "along [6,6,5,6,6] the geodesic acceleration Delta^2 = [0,0,2,0,0] (nonzero only at the deficit)",
+   "determines": "UNIQUE (a = Delta^2 nonzero only at the deficit vertex, = the deflection there)",
+   "expr": "along a geodesic the discrete acceleration a = Delta^2 (08.8.7) is ZERO on flat (degree-6) segments and NONZERO exactly at a deficit vertex, equal to the deflection there: for a path [6,6,5,6,6] the accelerations are [0,0,+2,0,0] -- localized at the twelve site. So a ~ curvature: the discrete geodesic equation, gravity localizing at the deficit",
+   "frm": [
+    "GM.2",
+    "08.8.7"
+   ],
+   "grade": "DERIVED",
+   "id": "GM.4",
+   "value": {
+    "acceleration": [
+     0,
+     0,
+     2,
+     0,
+     0
+    ],
+    "nonzero_only_at_deficit": true,
+    "path_degrees": [
+     6,
+     6,
+     5,
+     6,
+     6
+    ],
+    "reading": "a ~ curvature -- the discrete geodesic equation; gravity localizes at the deficit",
+    "reuses": "08.8.7 discrete acceleration Delta^2 (elbow localization)"
+   },
+   "what": "discrete geodesic ACCELERATION localizes at curvature: a = Delta^2 is nonzero ONLY at the deficit (a ~ curvature)",
+   "why": "closing the loop with 08's acceleration. Container 08.8.7 built discrete acceleration as the second difference Delta^2 of the trajectory and proved it LOCALIZES a bend (the elbow's accelerations 0,2,0 -- zero on the straight segments, nonzero only at the corner). Here the bend is not a free choice: it is FORCED by the deficit (GM.2). So a geodesic crossing a flat region, passing one degree-5 site, then flat again ([6,6,5,6,6]) has acceleration [0,0,+2,0,0] -- zero wherever the deficit is zero, and equal to the deflection (+2) exactly at the curvature. That is 'acceleration proportional to curvature' -- the discrete geodesic equation, and the precise sense in which gravity (the deficit field, 14/20/21) MOVES the free walk. Free-fall = following the mesh; the acceleration is the curvature's, not an external force's."
+  },
+  {
+   "check": null,
+   "determines": "POSTULATE (geodesic = free-fall; the focusing-sign a test on the vacuum/black-hole readings; held)",
+   "expr": "geodesic deflection by the deficit <-> gravitational free-fall (the deficit is the tidal field; focusing/defocusing = attractive/repulsive). NAMED, held, quarantined. It SURFACES A TENSION (a discriminating test, not a defect): FOCUSING is at the twelve (positive deficit) -- but 15.C.3 reads the twelve (min density) as VACUUM/dark-energy, which is REPULSIVE. So the focusing sign is a check the vacuum/black-hole readings (15.C.3, 36.LW.5) must satisfy",
+   "frm": [
+    "GM.3",
+    "GM.4",
+    "20.G.4",
+    "21.GC.3"
+   ],
+   "grade": "POSTULATE",
+   "id": "GM.5",
+   "value": {
+    "candidate_resolutions": "(a) twelve are matter-like not vacuum; (b) spatial curvature != vacuum-energy/Lambda; (c) the rho=flat-D inversion flips the reading",
+    "correspondence_not_confirmed": true,
+    "downstream_premise_use": false,
+    "filed_through": "the 19 gate (mirror of 20.G.4, 21.GC.3)",
+    "focusing_tension": "focusing (attractive) at the twelve (positive deficit, MIN density) vs 15.C.3's twelve=VACUUM (repulsive) -- a test on 15.C.3 / 36.LW.5, not resolved here",
+    "reading": "geodesic deflection by the deficit <-> gravitational free-fall; deficit = the tidal field"
+   },
+   "what": "the reading (filed through 19): geodesic deflection = gravitational FREE-FALL; and the focusing-sign is a TEST on the vacuum/black-hole readings",
+   "why": "the physical correspondence, filed through the 19 gate, held to the same discipline as 20.G.4 (gravity = grad rho) and 21.GC.3 (deficit <-> scalar curvature). SUBSTRATE side (checked, GM.1-4): a geodesic deflects by the deficit, the sign sets focusing, acceleration localizes at curvature. PHYSICS side (cited): free-falling test particles follow geodesics; tidal focusing is the geodesic-deviation / Raychaudhuri equation; positive curvature focuses. THE READING: geodesic motion on the deficit mesh IS gravitational free-fall, the deficit the tidal field. THE TENSION, STATED NOT HIDDEN: focusing (attractive) is at the twelve -- positive deficit, MIN archic density (rho = flat - D, so max positive deficit is min density) -- yet 15.C.3 reads the twelve as VACUUM/dark-energy, which is REPULSIVE (defocusing). Either (a) the twelve are matter-like not vacuum, or (b) spatial curvature (focusing) and vacuum-energy/Lambda (repulsion) are different things not to be conflated, or (c) the density<->curvature inversion flips the reading. This is NOT resolved here -- it is a GOOD outcome: the geodesic sign gives the vacuum/black-hole readings (15.C.3, 36.LW.5) a falsifiable test they must pass. WHAT DOES NOT TRAVEL: the continuum geodesic equation (GM.6); any value/coupling; mass (danger zone). A correspondence, WEAK; quarantined; no downstream premise use."
+  },
+  {
+   "check": null,
+   "determines": "OWED (continuum geodesic equation; the quantitative gravity value; mass/coupling -- danger zone)",
+   "expr": "OWED: (a) the CONTINUOUS geodesic equation (smooth derivatives) -- needs 08.8.6's continuum, held deliberately NOT a rung; (b) the quantitative deflection <-> Newtonian/GR gravity match -- computed-then-compared, NEVER fitted; (c) mass and the gravitational coupling -- the danger zone, out. The discrete geodesic mechanics is built; its continuum limit, value, and mass are owed",
+   "frm": [
+    "GM.5"
+   ],
+   "grade": "OWED",
+   "id": "GM.6",
+   "value": {
+    "owed_continuum": "the continuous geodesic equation -- needs 08.8.6 (emergent, not-a-rung)",
+    "owed_mass": "mass + the gravitational coupling -- danger zone, out",
+    "owed_reading": "the focusing-sign tension (GM.5): twelve matter or vacuum? -- held",
+    "owed_value": "quantitative deflection <-> Newtonian/GR gravity -- computed-then-compared, never fitted",
+    "present": false
+   },
+   "what": "OWED: the continuous geodesic equation (08.8.6, not-a-rung); the quantitative gravity match (value); mass (danger zone)",
+   "why": "the honest residual. GM.1-GM.4 build the DISCRETE geodesic mechanics (deflection = deficit, sign = focusing, acceleration localizes); what stays owed: (a) the CONTINUOUS geodesic equation -- actual derivatives along a smooth curve -- which needs 08.8.6's continuum, and 08 holds that deliberately NOT a rung (the substrate is quantized; the continuum is an emergent large-N limit if needed); (b) the VALUE -- matching the deflection quantitatively to Newtonian free-fall / the GR geodesic equation -- gated exactly as rho_Lambda (34) and the max-density value (36.LW.6): computed-then-compared, never fitted; (c) MASS and the gravitational coupling -- the danger zone, not attempted. And the focusing-sign tension (GM.5) is owed a resolution: is the twelve matter or vacuum? That is a reading question, held. NOT attempted further here."
+  }
+ ],
+ "values": {
+  "acceleration": [
+   0,
+   0,
+   2,
+   0,
+   0
+  ],
+  "deflection_by_degree": {
+   "5": 2,
+   "6": 0,
+   "7": -2,
+   "8": -4
+  },
+  "finding": "GEODESIC MOTION -- the walk accelerating in the curvature field -- is built. In a flat region the geodesic is straight (GM.1, = 08's free walk / Newton's first law); near a degree-d vertex it DEFLECTS by the angle deficit 12-2d (GM.2, the Regge holonomy); the SIGN of the deficit sets FOCUSING -- the twelve (positive, d<6) focus, the left wing (negative, d>6, container 36) defocuses (GM.3); and the discrete acceleration Delta^2 (08.8.7) is nonzero ONLY at the deficit, a ~ curvature (GM.4, the discrete geodesic equation). The reading geodesic = free-fall is POSTULATE (filed through 19), and it SURFACES A TEST: focusing is at the twelve (positive deficit) but 15.C.3 reads the twelve as vacuum (repulsive) -- a discriminating check on the vacuum/black-hole readings (15.C.3, 36.LW.5), not resolved here. The continuum equation, the quantitative value, and mass are OWED (danger-free; nothing fitted).",
+  "flat_deflection": 0,
+  "focus_by_degree": {
+   "5": "focus",
+   "6": "neutral",
+   "7": "defocus",
+   "8": "defocus"
+  },
+  "path_degrees": [
+   6,
+   6,
+   5,
+   6,
+   6
+  ]
+ }
+}

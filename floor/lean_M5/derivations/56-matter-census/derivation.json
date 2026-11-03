@@ -1,0 +1,136 @@
+{
+ "container": "56-matter-census",
+ "grades": {
+  "DERIVED": 4,
+  "OWED": 1,
+  "POSTULATE": 1
+ },
+ "steps": [
+  {
+   "check": "the substrate carries spinor reps (45) -> matter fields are fermionic",
+   "determines": "UNIQUE (matter fields = spinor reps of the carrier -- fermionic, 45)",
+   "expr": "the substrate carries 2-valued (spinor) representations -- half-integer spin, the objects that need 4*pi to return (45.SP.2). So matter fields are spinors of the carrier: they are FERMIONIC. The matter content is built on the carrier's spinor reps",
+   "frm": [
+    "45.SP.2"
+   ],
+   "grade": "DERIVED",
+   "id": "MC.1",
+   "value": {
+    "from": "45.SP.2 (the 2-valued half-integer-spin reps)",
+    "matter_is_fermionic": true,
+    "spinor_reps_exist": true
+   },
+   "what": "FERMIONS = spinor reps: the substrate carries 2-valued (half-integer-spin) reps (45) -- matter is fermionic",
+   "why": "the first census fact: matter is fermionic. Container 45 forced the spinor structure -- the carrier 2I is the double cover, carrying 2-valued reps on which a 2*pi rotation acts as -1 (half-integer spin). Physical matter (electrons, quarks, neutrinos) is FERMIONIC (half-integer spin); on the substrate, matter fields are the carrier's spinor reps. So the census starts: the matter content is built from spinor (fermionic) reps of the carrier. (WHICH spinor reps are the physical fermions is MC.5/MC.6; here: they are spinors.)"
+  },
+  {
+   "check": "6 colourless singlets + 38 coloured triples: 6 + 3*38 = 120 -- the quark/lepton type split (31)",
+   "determines": "UNIQUE (6 colour-singlets + 38 colour-triples = 120; the quark/lepton type split, 31)",
+   "expr": "the order-3 colour element of 2I (31) has 6 FIXED points -- colourless, colour SINGLETS (lepton-type) -- and 38 THREE-CYCLES -- coloured, colour TRIPLETS (quark-type); 6 + 3*38 = 120 (the whole carrier). So the substrate structurally DISTINGUISHES colour-singlet (lepton-like) from colour-triplet (quark-like) objects -- the quark/lepton type split",
+   "frm": [
+    "31.CS.1",
+    "31.CS.2"
+   ],
+   "grade": "DERIVED",
+   "id": "MC.2",
+   "value": {
+    "carrier_total": 120,
+    "n_coloured_triples": 38,
+    "n_colourless_singlets": 6,
+    "type_split": "colour-singlet (lepton-type) vs colour-triplet (quark-type)"
+   },
+   "what": "the COLOUR type-split: 6 colourless (SINGLETS, lepton-type) + 38 three-cycles (TRIPLETS, quark-type), 6+3*38=120",
+   "why": "the second census fact: the quark/lepton type split, from colour. Container 31 forced the native colour Z/3: the order-3 element g3 of the carrier partitions the 120 into 6 FIXED points (colourless -- the Z/3 acts trivially, colour SINGLETS) and 38 THREE-CYCLES (coloured -- the Z/3 permutes three colours, colour TRIPLETS), 6 + 3*38 = 120. This IS the quark/lepton distinction in the substrate's own structure: colour-SINGLET objects (leptons carry no colour) vs colour-TRIPLET objects (quarks come in three colours). RUN IT: 6 + 3*38 = 120, the carrier. So the substrate structurally carries both colour-singlet (lepton-type) and colour-triplet (quark-type) matter -- the second SM quantum-number KIND (colour), located. (WHICH objects are the physical leptons/quarks, and how many generations, is MC.5/MC.6, not claimed here.)"
+  },
+  {
+   "check": "the carrier is chiral (44) + weak su(2) (28) -> fermions carry chirality + weak isospin",
+   "determines": "UNIQUE (fermions carry chirality (44) + weak isospin (28) -- the SM chiral doublet/singlet type)",
+   "expr": "the carrier is CHIRAL (44 -- orientation-pure, one handedness), and the weak su(2) (28) is a 3-generator non-abelian symmetry (weak isospin). So substrate fermions carry CHIRALITY + weak isospin -- the SM's chiral structure (left-handed weak doublets, right-handed singlets)",
+   "frm": [
+    "44.CH.2",
+    "28.W.1"
+   ],
+   "grade": "DERIVED",
+   "id": "MC.3",
+   "value": {
+    "chiral": true,
+    "structure": "left-handed weak doublets + right-handed singlets (chiral, 44/28)",
+    "weak_isospin_generators": 3
+   },
+   "what": "the CHIRAL WEAK structure: fermions are chiral (44) and carry weak isospin (su(2), 28) -- the SM doublet/singlet type",
+   "why": "the third census fact: the chiral weak structure. Container 44 forced the substrate's chirality (one handedness, parity violated); container 28 located the weak su(2) (3 generators, weak isospin). Together: substrate fermions carry a CHIRALITY (a definite handedness) and a weak-isospin quantum number (su(2)). This is the SM's chiral weak structure -- fermions come as LEFT-HANDED weak DOUBLETS (the chiral coupling) and RIGHT-HANDED SINGLETS. So the third SM quantum-number KIND (weak isospin + chirality) is located. (The V-A form, the specific doublet assignments, are MC.6 / danger.)"
+  },
+  {
+   "check": "the three SM quantum-number KINDS (spin, colour, weak-isospin/chirality) are located (MC.1-MC.3)",
+   "determines": "UNIQUE (the three SM quantum-number KINDS -- spin, colour, weak-isospin/chirality -- are located)",
+   "expr": "consolidating MC.1-MC.3: the substrate's matter content carries exactly the KINDS of quantum numbers the SM fermions do -- SPIN (spinor reps, MC.1), COLOUR (triplet or singlet, MC.2), and WEAK ISOSPIN + CHIRALITY (MC.3). The TYPE-structure of the matter census -- the quantum-number KINDS, not the specific assignments -- is located",
+   "frm": [
+    "MC.1",
+    "MC.2",
+    "MC.3"
+   ],
+   "grade": "DERIVED",
+   "id": "MC.4",
+   "value": {
+    "kinds_located": true,
+    "prerequisite_for": "the Weinberg angle (hypercharges) and mass ratios (the fermion content)",
+    "quantum_number_kinds": [
+     "spin (spinor)",
+     "colour (triplet/singlet)",
+     "weak isospin + chirality"
+    ]
+   },
+   "what": "the TYPE-structure located: substrate fermions carry the KINDS of SM quantum numbers -- spin, colour, weak-isospin/chirality",
+   "why": "the census-structure result. Physical fermions are labelled by: spin (they are spin-1/2 -- fermionic), colour (quarks are colour triplets, leptons singlets), and weak isospin + chirality (left-handed doublets, right-handed singlets), plus hypercharge/electric charge (29). The substrate locates the KINDS: spinor reps (MC.1 = spin-1/2), the colour singlet/triplet split (MC.2 = colour), chirality + weak isospin (MC.3). So the substrate's fermion content carries the SM quantum-number TYPES -- the KINDS of labels are all present. This is the matter-census STRUCTURE: it says WHAT kinds of matter the substrate has (fermionic, coloured-or-not, chiral, weak-isospin-carrying), which is the prerequisite for the value crossings (the Weinberg angle needs the hypercharges; mass ratios need the fermion content). What it does NOT do is assign specific objects or count generations (MC.5/MC.6). The KINDS are located; the census's numbers are owed."
+  },
+  {
+   "check": null,
+   "determines": "POSTULATE (substrate fermion types <-> SM fermions; specific assignments/generations NOT claimed; held)",
+   "expr": "filed through the 19 gate: the substrate's fermion TYPES (MC.4) <-> the SM fermions -- quarks = colour triplets (MC.2), leptons = colour singlets, chiral weak doublets (MC.3), fermionic (MC.1). WHICH specific substrate object is which physical fermion is NOT claimed. A CORRESPONDENCE, WEAK",
+   "frm": [
+    "MC.4",
+    "31.CS.3"
+   ],
+   "grade": "POSTULATE",
+   "id": "MC.5",
+   "value": {
+    "correspondence": "substrate fermion types <-> SM: quarks=triplets, leptons=singlets, chiral doublets, fermionic",
+    "does_not_travel": "which object is which fermion; the generation count (MC.6); hypercharges; masses",
+    "downstream_premise_use": false
+   },
+   "what": "the correspondence (filed 19): substrate fermion types <-> SM fermions (quarks = triplets, leptons = singlets, chiral doublets)",
+   "why": "the entry, held to the 19 discipline (mirror of 31.CS.3). SUBSTRATE side (checked, MC.1-MC.4): matter is fermionic (spinor), colour-singlet-or-triplet, chiral, weak-isospin-carrying -- the SM quantum-number KINDS. PHYSICS side (cited): the SM fermions are spin-1/2, come as colour triplets (quarks) and singlets (leptons), in left-handed weak doublets and right-handed singlets. THE CORRESPONDENCE: the substrate fermion TYPES <-> the SM fermion types (quarks <-> colour triplets, leptons <-> singlets, the chiral doublet structure). FALSIFICATION: if the substrate carried no colour-singlet or no colour-triplet or no chiral reps, it could not host the SM fermions; it hosts all (MC.1-MC.3). WHAT DOES NOT TRAVEL: WHICH specific object is the electron / the up quark (the detailed census); the number of generations (MC.6, NOT fished); the hypercharges; the masses. A correspondence, quarantined; no downstream premise use."
+  },
+  {
+   "check": null,
+   "determines": "OWED (generation count NOT forced -- fitting trap refused; hypercharges -- fork; masses -- danger)",
+   "expr": "OWED: (a) the GENERATION count (three) is NOT forced -- the substrate's various 3-folds (colour Z/3 in 31, the triad in 00, su(2)'s 3 in 28) are DIFFERENT threes (the 1+3+8 lesson, 31/51); over-reading any one as '3 generations' is REFUSED (the fitting/dismissal trap CORRECTIONS warns of); (b) the hypercharge assignments (need the fork embedding, 51.GP.4); (c) the masses / mass ratios (danger zone, the Higgs). Held open; generations explicitly held-open-NOT-fished",
+   "frm": [
+    "MC.5"
+   ],
+   "grade": "OWED",
+   "id": "MC.6",
+   "value": {
+    "generation_count_not_forced": true,
+    "owed_hypercharge": "the hypercharge assignments -- need the E8->SM embedding (the fork, 51.GP.4)",
+    "owed_masses": "the masses / mass ratios -- danger zone (the Higgs, values)",
+    "present": false,
+    "why_not_fished": "the substrate 3-folds (colour Z/3, the triad, su(2)'s 3) are DIFFERENT threes (1+3+8 lesson, 31/51); naming one 'generations' is renaming (G3), refused"
+   },
+   "what": "OWED + the EXPLICIT NON-FISH: the generation count (three) is NOT forced -- the substrate 3-folds are DIFFERENT threes (the fitting trap refused)",
+   "why": "the honest residual, and the discipline's hardest line held. MC.1-MC.4 locate the fermion quantum-number KINDS (danger-free). What is NOT forced, and MUST NOT be fished: (a) THE GENERATION COUNT. Physics has three fermion generations, and no theory forces the three. The substrate has several 3-folds -- colour's Z/3 (31), the floor triad (00), su(2)'s three generators (28) -- and it is TEMPTING to declare one of them 'the three generations'. That is the FITTING/DISMISSAL trap the whole project guards against (CORRECTIONS; the 1+3+8 lesson, 31/51, established these are DIFFERENT threes at different levels, not one). So the generation count is NOT forced and is explicitly held-open-not-fished -- naming a substrate 3-fold 'generations' without a derivation would be renaming (CONTACT.md G3), refused. (b) The HYPERCHARGE assignments need the E8->SM embedding (the fork, 51.GP.4). (c) The MASSES / mass ratios are the danger zone (the Higgs, values). So this container locates the matter KINDS (the prerequisite for the value crossings) and REFUSES to fish the generation count or the masses. The Weinberg angle and mass ratios remain gated on the fork + these owed pieces. NOT attempted further here."
+  }
+ ],
+ "values": {
+  "carrier_total": 120,
+  "finding": "THE MATTER-CENSUS STRUCTURE (the danger-free prerequisite for the value crossings). The substrate's fermion content carries the KINDS of SM quantum numbers: FERMIONS = spinor reps (45, MC.1); the COLOUR type-split -- 6 colourless SINGLETS (leptons) + 38 coloured TRIPLETS (quarks), 6+3*38=120 (31, MC.2); CHIRALITY + weak isospin (44/28, MC.3). The TYPE-structure (spin, colour, weak-isospin/chirality) is located (MC.4). Correspondence to the SM fermions filed (MC.5, POSTULATE) -- which specific object is which is NOT claimed. EXPLICIT NON-FISH (MC.6): the GENERATION count (three) is NOT forced -- the substrate 3-folds (colour Z/3, the triad, su(2)'s 3) are DIFFERENT threes (1+3+8 lesson); naming one 'generations' is renaming, refused; hypercharges need the fork; masses are danger. The Weinberg angle + mass ratios remain gated on the fork + these. Danger-free; nothing fitted; generations NOT fished.",
+  "n_coloured_triples": 38,
+  "n_colourless_singlets": 6,
+  "quantum_number_kinds": [
+   "spin (spinor)",
+   "colour (triplet/singlet)",
+   "weak isospin + chirality"
+  ],
+  "weak_isospin_generators": 3
+ }
+}

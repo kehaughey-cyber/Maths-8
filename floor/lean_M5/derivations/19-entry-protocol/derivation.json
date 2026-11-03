@@ -1,0 +1,245 @@
+{
+ "container": "19-entry-protocol",
+ "grades": {
+  "DERIVED": 3,
+  "OWED": 0,
+  "POSTULATE": 1
+ },
+ "steps": [
+  {
+   "check": "the four-parts validator passes on the worked entry (all four non-empty)",
+   "determines": "UNIQUE (the format is fixed; the validator is decidable)",
+   "expr": "an entry = {SUBSTRATE checked, PHYSICS cited, DOES-NOT-TRAVEL non-empty, FALSIFIES-BY}; correspondence (owed) vs resolution (the goal)",
+   "frm": [],
+   "grade": "DERIVED",
+   "id": "E.1",
+   "value": {
+    "correspondence_is_not_resolution": true,
+    "deliverable": "a TRANSLATION, not a replacement; translation is not deference",
+    "four_parts": [
+     "SUBSTRATE SIDE (checked)",
+     "PHYSICS SIDE (cited, never re-derived)",
+     "WHAT DOES NOT TRAVEL (non-empty)",
+     "FALSIFICATION SURFACE (both sides, can disagree)"
+    ],
+    "kinds": [
+     "CORRESPONDENCE (owed)",
+     "RESOLUTION (the goal)"
+    ],
+    "worked_entry_four_parts_ok": true
+   },
+   "what": "the entry format: four mandatory parts (checked substrate <-> cited physics), and the four-parts validator",
+   "why": "an ENTRY pairs a CHECKED substrate-side object with a CITED standing physics result, each declaring what does NOT travel, each falsifiable by an outside reader who computes both sides and disagrees. FOUR parts, all mandatory and non-empty -- WHAT-DOES-NOT-TRAVEL especially (Kelvin and miles do not convert; an entry that carries everything across is a unification claim, which this project is not making). Two KINDS: a CORRESPONDENCE builds the common language (what the project OWES); a RESOLUTION states, in that language, a fix to a problem physics records as open (what it is FOR) -- and a correspondence must NOT be written as a resolution. The four_parts_ok validator is mechanical and passes on the worked entry (E.4)."
+  },
+  {
+   "check": "no DERIVED step rests on a quarantined reading (scan passes); substrate bar holds",
+   "determines": "UNIQUE (the quarantine holds or names its violation)",
+   "expr": "for every DERIVED step in every container, no dependency (frm) is a quarantined reading (downstream_premise_use=False, or a Stone's non-DERIVED step)",
+   "frm": [
+    "E.1"
+   ],
+   "grade": "DERIVED",
+   "id": "E.2",
+   "value": {
+    "derived_steps_checked": 216,
+    "quarantine_holds": true,
+    "quarantined_readings": [
+     "15.C.3",
+     "16.D.3",
+     "17.S.3",
+     "17.S.4",
+     "17.S.5",
+     "18.P.3",
+     "18.P.4",
+     "20.G.4",
+     "21.GC.3",
+     "23.LI.5",
+     "24.SG.4",
+     "26.B2.3",
+     "28.W.3",
+     "29.EM.3",
+     "30.S.3",
+     "31.CS.3",
+     "32.RB.3",
+     "33.PA.3",
+     "34.VV.3",
+     "35.AH.3",
+     "36.LW.5",
+     "37.GM.5",
+     "38.DV.4",
+     "39.PM.2",
+     "39.PM.4",
+     "40.DF.5",
+     "41.NT.5",
+     "42.SR.6",
+     "44.CH.3",
+     "45.SP.3",
+     "46.LS.5",
+     "47.FR.4",
+     "48.CW.4",
+     "49.CT.4",
+     "50.EW.3",
+     "51.GP.4",
+     "52.CL.3",
+     "53.QK.4",
+     "54.FC.3",
+     "55.BR.3",
+     "56.MC.5",
+     "57.WA.5",
+     "58.HC.5",
+     "59.KS.4",
+     "60.RX.4",
+     "61.ST.5",
+     "62.ED.5",
+     "63.BM.5",
+     "64.CX.6",
+     "65.FC.4",
+     "65.FC.5",
+     "66.AS.5"
+    ],
+    "rule": "AN ENTRY IS NEVER A PREMISE; no DERIVED result rests on a quarantined reading",
+    "substrate_bar_ok": true,
+    "violations": []
+   },
+   "what": "the quarantine, mechanical: no DERIVED result rests on a quarantined physics reading",
+   "why": "THE RULE THE FORMAT RESTS ON, as a graph query run every time verify.py runs this container. A QUARANTINED READING is a physics reading held as a possibility -- a POSTULATE/OWED step marked downstream_premise_use=False (the named possibilities 15.C.3, 16.D.3), or any non-DERIVED step of a QUARANTINED Stone (17.S.3/4/5, 18.P.3/4). The check VERIFIES that NO DERIVED step anywhere lists one in its dependencies -- every DERIVED result rests only on DERIVED/checked things. This is the STONE rule generalised (read, never import): if the physics were abandoned tomorrow, nothing DERIVED would move. It PASSES now across all built containers. Plus the SUBSTRATE BAR: the worked entry's substrate side (14.B.4) resolves to a DERIVED (checked) step -- an entry may not pair a citation with a guess."
+  },
+  {
+   "check": "the worked entry passes all six admission tests (with honest notes)",
+   "determines": "UNIQUE (six tests; the worked entry passes all)",
+   "expr": "renaming . cannot-fail . import . fit . tier . observer-rank; a candidate failing ANY is not an entry",
+   "frm": [
+    "E.1",
+    "E.2"
+   ],
+   "grade": "DERIVED",
+   "id": "E.3",
+   "value": {
+    "all_pass_on_worked_entry": true,
+    "failing_any_is_not_an_entry": true,
+    "six_tests": {
+     "1_renaming": {
+      "note": "a reader computes the Regge deficit from the substrate degree on ANY mesh, and the permanence (Sum=12*chi) from the substrate's own refinement -- predictive, not a bare relabel.",
+      "pass": true
+     },
+     "2_cannot_fail": {
+      "note": "the non-trivial content is the PERMANENCE: the total is 12*chi and refinement-INVARIANT. A substrate whose deficit failed to sum to 2*pi*chi, or drifted under refinement, would refute -- state that refuter first. (The bare angle formula 2pi-d*pi/3 is near-definitional; the conservation is the content, exactly as maths-4 DEFECT-PERMANENCE.)",
+      "pass": true
+     },
+     "3_import": {
+      "note": "no checked proof uses Regge; 14.B.4 is derived from the registration/closure combinatorics (Gauss-Bonnet), zero-axiom. Regge is cited as the correspondence, never as machinery -- the IMPORT test, which E.2 also enforces.",
+      "pass": true
+     },
+     "4_fit": {
+      "note": "no free parameter, no fitted number; 12*chi = 24 falls out of the closed triangulation (chi=2), not chosen to match.",
+      "pass": true
+     },
+     "5_tier": {
+      "note": "named: SURFACE (the closed triangulated 2-sphere / the twelve). A pairing across mismatched tiers is the project's most-repeated error; named here.",
+      "pass": true
+     },
+     "6_observer_rank": {
+      "note": "ported placeholder: the substrate object is a per-vertex integer count (constitution) read as an angle deficit (reading). Named, not inferred one-from-the-other. (The full maths-4 two-axis test is not re-built.)",
+      "pass": true
+     }
+    }
+   },
+   "what": "the six admission tests -- the gate (applied to the worked entry)",
+   "why": "the genre fails predictably; each failure mode becomes a test a candidate must pass BEFORE it is written. 1 RENAMING (compute one side from the other, not relabel -- a name is not a translation). 2 CANNOT-FAIL (could it have come out false? state the refuter -- an identity true by algebra explains nothing). 3 IMPORT (no checked proof uses the physics side -- physics is a stone to translate against, never machinery; E.2 enforces this mechanically). 4 FIT (no free or fitted parameter). 5 TIER (name the substrate tier; cross-tier pairing is the repeated error). 6 OBSERVER-RANK (name it; ported placeholder). The worked entry is run through all six and passes, with honest notes (its cannot-fail content is the PERMANENCE, not the near-definitional angle formula). A candidate failing any is NOT filed as a weaker entry -- it is not an entry."
+  },
+  {
+   "check": null,
+   "determines": "POSTULATE (a correspondence reading; illustration; never a premise)",
+   "expr": "SUBSTRATE 14.B.4 (12*chi, checked) <-> PHYSICS Regge delta=2pi-d*pi/3, Sum=2pi*chi (cited); does-not-travel: the Regge action/continuum/Einstein eqs",
+   "frm": [
+    "E.3",
+    "14.B.4"
+   ],
+   "grade": "POSTULATE",
+   "id": "E.4",
+   "value": {
+    "does_not_travel": "the Regge ACTION, its continuum limit, and the Einstein equations it approximates -- NOT imported, NOT implied, and must not be cited from here. The substrate derived its deficit from its own registration/closure combinatorics; the correspondence is a CHECK on that, not a supply line.",
+    "downstream_premise_use": false,
+    "falsifies_by": "an outside reader computes the substrate's per-vertex deficit (14.B.4, on ANY refinement mesh) and the Regge deficit angle on the SAME mesh; a disagreement is a nonzero difference in radits at some vertex. On ANY mesh -- not one example.",
+    "filed": false,
+    "grade_note": "an entry is ASSERTED/held -- the pairing is a reading, not a proof",
+    "kind": "CORRESPONDENCE",
+    "name": "ENTRY-density-deficit-is-Regge",
+    "physics_side": "Regge calculus: a vertex carries deficit angle delta = 2*pi - (sum of incident corner angles); for an equilateral triangulation delta = 2*pi - d*pi/3, and Sum(delta) = 2*pi*chi (Gauss-Bonnet). CITED, not re-derived.",
+    "substrate_ref": "14.B.4",
+    "substrate_side": "14-density-deficit B.4 -- the angle-deficit charge Sum(12-2d) = 12*chi = 24 (the twelve carry 2 radits each, refinement-invariant). CHECKED (DERIVED, zero-axiom).",
+    "tier": "surface (the closed triangulated 2-sphere / the twelve)"
+   },
+   "what": "worked entry (ILLUSTRATION, not filed): the angle-deficit (14.B.4) <-> Regge deficit",
+   "why": "the worked CORRESPONDENCE entry, cast in the four-part format to show the shape and to give E.1-E.3 something to range over -- ILLUSTRATION only, NOT a filed physical claim, and (like every entry) NEVER a premise (downstream_premise_use=False). SUBSTRATE SIDE: container 14.B.4, the angle-deficit charge Sum(12-2d) = 12*chi = 24, refinement-invariant, CHECKED (DERIVED, zero-axiom). PHYSICS SIDE: Regge calculus' deficit angle delta = 2*pi - d*pi/3 with Sum(delta) = 2*pi*chi, CITED not re-derived. DOES NOT TRAVEL: the Regge action, its continuum limit, the Einstein equations -- not imported, not implied. FALSIFIES BY: compute both per-vertex deficits on ANY mesh and find disagreement. It is a CORRESPONDENCE (the common language), NOT a resolution (it closes no open physics problem). Held as a reading -- what the Lean proves is proved, what it is ABOUT is asserted."
+  }
+ ],
+ "values": {
+  "derived_steps_checked": 216,
+  "four_parts": [
+   "SUBSTRATE SIDE (checked)",
+   "PHYSICS SIDE (cited, never re-derived)",
+   "WHAT DOES NOT TRAVEL (non-empty)",
+   "FALSIFICATION SURFACE (both sides, can disagree)"
+  ],
+  "is_infrastructure": true,
+  "quarantine_holds": true,
+  "quarantined_readings": [
+   "15.C.3",
+   "16.D.3",
+   "17.S.3",
+   "17.S.4",
+   "17.S.5",
+   "18.P.3",
+   "18.P.4",
+   "20.G.4",
+   "21.GC.3",
+   "23.LI.5",
+   "24.SG.4",
+   "26.B2.3",
+   "28.W.3",
+   "29.EM.3",
+   "30.S.3",
+   "31.CS.3",
+   "32.RB.3",
+   "33.PA.3",
+   "34.VV.3",
+   "35.AH.3",
+   "36.LW.5",
+   "37.GM.5",
+   "38.DV.4",
+   "39.PM.2",
+   "39.PM.4",
+   "40.DF.5",
+   "41.NT.5",
+   "42.SR.6",
+   "44.CH.3",
+   "45.SP.3",
+   "46.LS.5",
+   "47.FR.4",
+   "48.CW.4",
+   "49.CT.4",
+   "50.EW.3",
+   "51.GP.4",
+   "52.CL.3",
+   "53.QK.4",
+   "54.FC.3",
+   "55.BR.3",
+   "56.MC.5",
+   "57.WA.5",
+   "58.HC.5",
+   "59.KS.4",
+   "60.RX.4",
+   "61.ST.5",
+   "62.ED.5",
+   "63.BM.5",
+   "64.CX.6",
+   "65.FC.4",
+   "65.FC.5",
+   "66.AS.5"
+  ],
+  "rule": "AN ENTRY IS NEVER A PREMISE (no DERIVED rests on a quarantined reading)",
+  "six_tests_all_pass": true,
+  "worked_entry": "ENTRY-density-deficit-is-Regge"
+ }
+}

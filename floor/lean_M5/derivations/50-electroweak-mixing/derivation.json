@@ -1,0 +1,102 @@
+{
+ "container": "50-electroweak-mixing",
+ "grades": {
+  "DERIVED": 2,
+  "OWED": 1,
+  "POSTULATE": 1
+ },
+ "steps": [
+  {
+   "check": "rank(u(1))+rank(su(2)) = 1+1 = 2 -> two neutral gauge directions (B, W3)",
+   "determines": "UNIQUE (rank(u(1))+rank(su(2)) = 1+1 = 2 -- two neutral Cartan directions)",
+   "expr": "the maximal torus (Cartan) of the electroweak algebra u(1)(+)su(2) (29.EM.2) has rank = rank(u(1)) + rank(su(2)) = 1 + 1 = 2: the hypercharge Y (the u(1) direction) and the weak isospin T3 (su(2)'s Cartan). So there are exactly TWO commuting neutral gauge directions -- B (from u(1)) and W3 (from su(2))",
+   "frm": [
+    "29.EM.2",
+    "28.W.1"
+   ],
+   "grade": "DERIVED",
+   "id": "EW.1",
+   "value": {
+    "cartan_rank": 2,
+    "neutral_bosons": 2,
+    "rank_su2": 1,
+    "rank_u1": 1,
+    "which": "B (from u(1), hypercharge Y) and W3 (from su(2), T3)"
+   },
+   "what": "the electroweak Cartan is RANK 2: rank(u(1))+rank(su(2)) = 1+1 = 2 -> two neutral gauge directions (B, W3)",
+   "why": "the structural fact 29 stopped short of. Container 29.EM.2 gave the electroweak algebra as u(1)(+)su(2), dimension 1+3 = 4. Its MAXIMAL TORUS (Cartan subalgebra -- the maximal set of commuting generators) has rank = rank(u(1)) + rank(su(2)). rank(u(1)) = 1 (one abelian generator, the hypercharge Y, 29). su(2) has rank 1 (its Cartan is one generator -- the diagonal T3, since only one of i,j,k can be diagonalized at a time, 28). So the electroweak Cartan is rank 1+1 = 2: TWO commuting neutral directions, conventionally B (the u(1) gauge boson) and W3 (the neutral su(2) one). This rank-2 fact is what forces the mixing (EW.2): two neutral bosons must combine."
+  },
+  {
+   "check": "rank-2 Cartan => photon = a combination (both nonzero), Z = orthogonal -> a second neutral boson (Z) forced",
+   "determines": "UNIQUE (rank-2 Cartan => two neutral bosons => the photon is a combination, the Z the orthogonal -- mixing exists)",
+   "expr": "the unbroken electromagnetic U(1)_EM is a LINE in the rank-2 Cartan plane (EW.1); the orthogonal line is the Z. Generically the photon is a nontrivial COMBINATION of Y and T3 (aligned with neither axis) -- MIXING -- so a SECOND neutral gauge boson, the Z, is forced, distinct from the photon",
+   "frm": [
+    "EW.1"
+   ],
+   "grade": "DERIVED",
+   "id": "EW.2",
+   "value": {
+    "forced": "a second neutral boson (the Z), distinct from the photon -- from the rank-2 Cartan",
+    "mixing_exists": true,
+    "photon_direction_schematic": [
+     1,
+     1
+    ],
+    "second_neutral_boson_forced": true,
+    "z_orthogonal_schematic": [
+     1,
+     -1
+    ]
+   },
+   "what": "the two neutral directions MIX: the photon is a combination of Y and T3; the orthogonal one is the Z (a SECOND neutral boson, forced)",
+   "why": "the mixing, forced by the rank-2 Cartan. With two commuting neutral directions (B and W3, EW.1), electroweak symmetry breaking leaves ONE unbroken U(1) (electromagnetism -- the massless photon) and one broken (the massive Z). The unbroken direction is a LINE in the 2-dimensional Cartan plane; the Z is the orthogonal line. Unless the photon happened to align exactly with an axis (pure hypercharge Y or pure T3), it is a nontrivial COMBINATION of both -- which is what MIXING means. The key forced consequence, danger-free: because the Cartan is rank 2 (not 1), there are TWO neutral gauge bosons, so a SECOND neutral boson beyond the photon -- the Z -- is FORCED to exist. (The specific combination -- the mixing angle -- is EW.3, a value; here only the EXISTENCE of the mixing / the Z is claimed.) This is the substrate predicting the Z boson from the rank-2 electroweak Cartan."
+  },
+  {
+   "check": null,
+   "determines": "POSTULATE (photon = massless combination, Z = orthogonal; the angle theta_W a value; held)",
+   "expr": "filed through the 19 gate: the substrate's two neutral directions (EW.2) <-> the physical B and W3; the photon = the massless combination (Q = T3 + Y/2, Gell-Mann-Nishijima), the Z = the massive orthogonal one. The WEINBERG ANGLE theta_W (WHICH combination) is a VALUE; the breaking that selects it (the Higgs) is MATTER. A CORRESPONDENCE, WEAK -- the angle, the masses, the breaking do NOT travel",
+   "frm": [
+    "EW.2",
+    "29.EM.3"
+   ],
+   "grade": "POSTULATE",
+   "id": "EW.3",
+   "value": {
+    "correspondence": "two neutral directions <-> B, W3; unbroken combination <-> photon; orthogonal <-> Z",
+    "does_not_travel": "the Weinberg angle theta_W (value); the W/Z masses + Higgs breaking (matter, danger); hypercharge assignments",
+    "downstream_premise_use": false,
+    "physics_side_cited": "SU(2)xU(1)->U(1)_EM: photon = B cos+W3 sin, Z orthogonal; Q = T3 + Y/2",
+    "substrate_side": "rank-2 Cartan -> two neutral bosons that mix (EW.1-EW.2)"
+   },
+   "what": "the filed correspondence (through 19): photon = massless combination, Z = massive orthogonal (Gell-Mann-Nishijima); the ANGLE is a value",
+   "why": "the entry, held to the 19 discipline (mirror of 29.EM.3). SUBSTRATE side (checked, EW.1-EW.2): the electroweak Cartan is rank 2, so two neutral bosons that must mix -- a photon and a Z. PHYSICS side (cited): electroweak symmetry breaking SU(2)xU(1) -> U(1)_EM leaves the massless photon (the combination A = B cos(theta_W) + W3 sin(theta_W)) and the massive Z (the orthogonal), with the electric charge Q = T3 + Y/2 (Gell-Mann-Nishijima). THE CORRESPONDENCE: the substrate's two neutral directions <-> B and W3; the unbroken combination <-> the photon; the orthogonal <-> the Z. FALSIFICATION: a rank-1 electroweak Cartan would give NO second neutral boson (no Z); the substrate has rank 2 (EW.1) and the Z exists -- it PASSES. WHAT DOES NOT TRAVEL: the WEINBERG ANGLE theta_W (a value -- which combination), the W/Z MASSES and the HIGGS breaking mechanism (matter, danger zone), and the matter hypercharge assignments. A correspondence, quarantined; no downstream premise use."
+  },
+  {
+   "check": null,
+   "determines": "OWED (the Weinberg angle; the Higgs/breaking + W/Z masses; hypercharge assignments -- danger zone)",
+   "expr": "OWED: (a) the WEINBERG ANGLE theta_W -- which combination is the photon -- a dimensionless value (an alpha_hat-type quantity, 27, to force not fit); (b) the HIGGS / electroweak breaking mechanism giving the W and Z their masses -- MATTER, the danger zone; (c) the matter HYPERCHARGE assignments. The mixing EXISTENCE (the Z) is forced; the angle, the masses, and the assignments are owed",
+   "frm": [
+    "EW.3"
+   ],
+   "grade": "OWED",
+   "id": "EW.4",
+   "value": {
+    "owed_angle": "the Weinberg angle theta_W -- an alpha_hat-type value to force not fit (27)",
+    "owed_breaking": "the Higgs / electroweak breaking + W/Z masses -- matter, danger zone",
+    "owed_hypercharge": "the matter hypercharge assignments (which fermions carry which Y)",
+    "present": false
+   },
+   "what": "OWED: the Weinberg angle value; the Higgs/electroweak breaking (W/Z masses); the matter hypercharge assignments -- danger zone",
+   "why": "the honest residual. EW.1-EW.2 force the mixing existence (rank-2 Cartan -> a second neutral boson, the Z); EW.3 files the correspondence. What remains: (a) the WEINBERG ANGLE theta_W -- the specific combination -- a dimensionless coupling, hence (per 27) an alpha_hat quantity to FORCE not fit, respecting the refused-list; (b) the ELECTROWEAK BREAKING -- the Higgs mechanism, the W/Z masses (the photon staying massless) -- which involves MASS and the matter sector, the DANGER ZONE, not attempted; (c) the matter HYPERCHARGE assignments (which fermions carry which Y). So the mixing STRUCTURE (the Z's existence) is forced and danger-free; the angle, the masses, and the assignments are the forward, gated work. NOT attempted here."
+  }
+ ],
+ "values": {
+  "cartan_rank": 2,
+  "finding": "ELECTROWEAK MIXING: the Cartan is rank 2, so a second neutral boson (the Z) is forced. 29 gave u(1)+su(2)=1+3=4; here the maximal torus has rank(u(1))+rank(su(2)) = 1+1 = 2 -- two commuting neutral directions, B and W3 (EW.1). They MIX: the unbroken U(1)_EM (the massless photon) is a nontrivial combination of Y and T3, the Z is the orthogonal one -- so the substrate FORCES a second neutral boson, the Z, distinct from the photon (EW.2). The correspondence (photon = massless combination, Z = orthogonal, Q = T3 + Y/2) is filed through 19 (EW.3, POSTULATE); the WEINBERG ANGLE (which combination), the Higgs/breaking + W/Z masses, and the hypercharge assignments are OWED (EW.4, danger zone). Danger-free; nothing fitted.",
+  "mixing_exists": true,
+  "neutral_bosons": 2,
+  "rank_su2": 1,
+  "rank_u1": 1,
+  "second_neutral_boson_forced": true
+ }
+}

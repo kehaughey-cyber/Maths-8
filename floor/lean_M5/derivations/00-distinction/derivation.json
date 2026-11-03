@@ -1,0 +1,190 @@
+{
+ "container": "00-distinction",
+ "grades": {
+  "DERIVED": 3,
+  "OWED": 0,
+  "POSTULATE": 3
+ },
+ "steps": [
+  {
+   "check": null,
+   "determines": "UNIQUE (there is one totality)",
+   "expr": "registration_1 := (all that is | non-existence)",
+   "frm": [],
+   "grade": "POSTULATE",
+   "id": "0.1",
+   "value": {
+    "counterpoint": "non-existence (not a thing; 0)",
+    "state": "all that is"
+   },
+   "what": "registration 1: all-that-is, bounded against non-existence",
+   "why": "the founding distinction. Existence is a distinction only against non-existence -- but non-existence is not a thing to subdivide or perceive (if it does not exist there is nothing to consider); it is the counterpoint. '0' is that non-existence, and it does not exist. Every later registration subdivides the RESIDUAL of all-that-is, never this bound."
+  },
+  {
+   "check": "three distinct states; perceivable iff existent",
+   "determines": "UNIQUE",
+   "expr": "{ definedExistent, undefinedExistent, nonExistent }",
+   "frm": [
+    "0.1"
+   ],
+   "grade": "DERIVED",
+   "id": "0.2",
+   "value": {
+    "distinct": true,
+    "perceivable": {
+     "definedExistent": true,
+     "nonExistent": false,
+     "undefinedExistent": true
+    },
+    "states": {
+     "definedExistent": {
+      "defined": true,
+      "existent": true
+     },
+     "nonExistent": {
+      "defined": null,
+      "existent": false
+     },
+     "undefinedExistent": {
+      "defined": false,
+      "existent": true
+     }
+    },
+    "undefined_is_not_nonexistent": true
+   },
+   "what": "the three existential states",
+   "why": "within existence a thing is defined or undefined; outside it, non-existent. Undefined is NOT non-existent -- it exists and can be perceived and later defined. Non-existence alone cannot be perceived or registered. Three distinct states, and the perceivable ones are exactly the two existent ones."
+  },
+  {
+   "check": "state and residual are positive selections, both existent, no negation",
+   "determines": "UNIQUE given the labelling",
+   "expr": "distinction := a base partitioned by label into state (defined) and residual (undefined)",
+   "frm": [
+    "0.2"
+   ],
+   "grade": "DERIVED",
+   "id": "0.3",
+   "value": {
+    "base": [
+     "a",
+     "b",
+     "c",
+     "d",
+     "e"
+    ],
+    "both_existent": true,
+    "residual": [
+     "c",
+     "d",
+     "e"
+    ],
+    "state": [
+     "a",
+     "b"
+    ]
+   },
+   "what": "a distinction: defined | undefined-existent, both existent, no is-not",
+   "why": "a distinction within existence marks part of a base as defined (the state) and leaves the rest undefined-existent (the residual) -- BOTH existent. The residual is selected as 'label = undefined', a positive potential, never 'not state'. No negation enters the floor."
+  },
+  {
+   "check": null,
+   "determines": "UNIQUE (three, not two, not four)",
+   "expr": "registration := (observer_within1, observer_within2, observer_without) observe -> perceive & agree -> artifact (the distinction), live",
+   "frm": [
+    "0.1"
+   ],
+   "grade": "POSTULATE",
+   "id": "0.4",
+   "value": {
+    "act": "perceive+register",
+    "artifact": "the registration (live)",
+    "observers": [
+     "within1",
+     "within2",
+     "without"
+    ],
+    "observers_are_not_the_registration": true
+   },
+   "what": "the triad: three observers produce the live artifact",
+   "why": "two poles are bare polarity; the difference is a REGISTERED distinction only once a third perceives it -- two observers within, one without. They observe, perceive and agree, and their agreement is the artifact: the registration, which stays live. The observers are the objects; observation is the act (perceive + register); the registration is the record. Their criticality is not manifest until change is examined."
+  },
+  {
+   "check": "a distinction requires both a defined and an undefined thing",
+   "determines": "UNIQUE",
+   "expr": "distinction  <=>  state witnessed AND residual witnessed",
+   "frm": [
+    "0.3"
+   ],
+   "grade": "DERIVED",
+   "id": "0.5",
+   "value": {
+    "all_defined_is_distinction": false,
+    "labelled_is_distinction": true,
+    "needs_both": true,
+    "none_defined_is_distinction": false
+   },
+   "what": "Proposition 1 (poles): state and residual co-define -- neither alone",
+   "why": "1 requires its co-defining other: a fully-defined base leaves no residual (nothing distinguished FROM) and a wholly-undefined base has no state -- neither is a distinction. The bound needs both sides, and both are existent. This is the checkable half of Prop 1."
+  },
+  {
+   "check": null,
+   "determines": "UNIQUE",
+   "expr": "registered_distinction  requires  the observer without",
+   "frm": [
+    "0.4",
+    "0.5"
+   ],
+   "grade": "POSTULATE",
+   "id": "0.6",
+   "value": {
+    "derivable_here": false,
+    "polarity_needs_the_third": true,
+    "status": "working hypothesis (Kevin); open to disproof"
+   },
+   "what": "Proposition 1 (the third): the poles require the perceiving without",
+   "why": "the two poles co-defining is polarity; it becomes a registered distinction only with the third -- the perceiver without. 'Neither can exist without perception.' This completes Prop 1 as triadic, and it is the working hypothesis, not a theorem: there is no handle yet to derive that the third is present already at registration 1. Held as postulate, capped."
+  }
+ ],
+ "values": {
+  "base": [
+   "a",
+   "b",
+   "c",
+   "d",
+   "e"
+  ],
+  "existential_states": {
+   "definedExistent": {
+    "defined": true,
+    "existent": true
+   },
+   "nonExistent": {
+    "defined": null,
+    "existent": false
+   },
+   "undefinedExistent": {
+    "defined": false,
+    "existent": true
+   }
+  },
+  "perceivable": {
+   "definedExistent": true,
+   "nonExistent": false,
+   "undefinedExistent": true
+  },
+  "residual": [
+   "c",
+   "d",
+   "e"
+  ],
+  "state": [
+   "a",
+   "b"
+  ],
+  "triad": [
+   "within1",
+   "within2",
+   "without"
+  ]
+ }
+}

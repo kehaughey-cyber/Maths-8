@@ -1,0 +1,517 @@
+{
+ "container": "08-metric-dynamics",
+ "grades": {
+  "DERIVED": 5,
+  "OWED": 1,
+  "POSTULATE": 1
+ },
+ "steps": [
+  {
+   "check": "steps are unit vectors; a genuine 2-D turn exists (dim >= 2 from the bridge)",
+   "determines": "UNIQUE given the bridge (the image is fixed by the correspondence)",
+   "expr": "positions in the integer lattice (bridge's unit separation); steps are unit vectors; dim >= 2",
+   "frm": [
+    "05.4",
+    "07.1"
+   ],
+   "grade": "DERIVED",
+   "id": "8.1",
+   "value": {
+    "space": "integer lattice, dim >= 2 (from 05)",
+    "steps_are_unit": true,
+    "turning_possible": true
+   },
+   "what": "across the bridge, the walk is a trajectory in Euclidean space",
+   "why": "the geometric-balance bridge (05) maps the walk's positions to points in Euclidean space, at the unit separation. The ordinal walk (07) was 1-D on the integer line; here dim >= 2 (05's rung 5: 3 equidistant points force a plane) lets the trajectory TURN -- a perpendicular step exists. Steps are unit vectors; a walk is a lattice trajectory. The substrate is still relational; this is its Euclidean image."
+  },
+  {
+   "check": "|net|^2 exact; a turned walk gives a non-square (sqrt2) -> the reals",
+   "determines": "UNIQUE (the distance is fixed by the metric)",
+   "expr": "|net|^2 = <net,net> (exact) ; |net| = sqrt(|net|^2) -- irrational when |net|^2 is non-square",
+   "frm": [
+    "8.1"
+   ],
+   "grade": "DERIVED",
+   "id": "8.2",
+   "value": {
+    "distances": {
+     "elbow": {
+      "disp": "sqrt(8)",
+      "disp_sq": 8,
+      "net": [
+       2,
+       2
+      ],
+      "rational": false
+     },
+     "reversed": {
+      "disp": "0",
+      "disp_sq": 0,
+      "net": [
+       0,
+       0
+      ],
+      "rational": true
+     },
+     "straight": {
+      "disp": "3",
+      "disp_sq": 9,
+      "net": [
+       3,
+       0
+      ],
+      "rational": true
+     },
+     "turned": {
+      "disp": "sqrt(2)",
+      "disp_sq": 2,
+      "net": [
+       1,
+       1
+      ],
+      "rational": false
+     }
+    },
+    "reals_enter_via": "sqrt of a non-square displacement (e.g. sqrt2)"
+   },
+   "what": "the metric -- Euclidean distance, and the REALS enter",
+   "why": "the bridge's inner product gives distance: the net displacement's length is sqrt(<net,net>). For an axis walk that is rational, but a TURNED walk nets (1,1), length sqrt(2) -- IRRATIONAL. So distance is a REAL, not a rational. This completes the number ladder: integers (04, directions) -> rationals (07, rates) -> REALS (distances, here). The reals waited for the metric, which waited for the bridge. Squared lengths stay exact integers; the irrational length is named, not mechanised."
+  },
+  {
+   "check": "speed = path/time; velocity = net/time (vector); computed per walk",
+   "determines": "UNIQUE (speed and velocity are fixed by the trajectory)",
+   "expr": "speed = path/time (= 1, unit motion) ; velocity = net/time (a VECTOR), |velocity| = |net|/T",
+   "frm": [
+    "8.2",
+    "07.3"
+   ],
+   "grade": "DERIVED",
+   "id": "8.3",
+   "value": {
+    "note": "07's rate = velocity magnitude; metric adds speed & direction",
+    "speed_velocity": {
+     "elbow": {
+      "path": 4,
+      "speed": "1 (unit motion)",
+      "time": 4,
+      "velocity_magsq": "8/16",
+      "velocity_magsq_reduced": "1/2"
+     },
+     "reversed": {
+      "path": 2,
+      "speed": "1 (unit motion)",
+      "time": 2,
+      "velocity_magsq": "0/4",
+      "velocity_magsq_reduced": "0/1"
+     },
+     "straight": {
+      "path": 3,
+      "speed": "1 (unit motion)",
+      "time": 3,
+      "velocity_magsq": "9/9",
+      "velocity_magsq_reduced": "1/1"
+     },
+     "turned": {
+      "path": 2,
+      "speed": "1 (unit motion)",
+      "time": 2,
+      "velocity_magsq": "2/4",
+      "velocity_magsq_reduced": "1/2"
+     }
+    }
+   },
+   "what": "speed vs velocity -- the metric splits the ordinal rate in two",
+   "why": "with a metric, 07's single 'rate' splits: SPEED is path length per tick (the rate of MOTION), VELOCITY is net displacement per tick (the rate of getting SOMEWHERE) -- and it is a VECTOR, with a direction the bridge's space supplies. 07's rational rate is revealed as the velocity MAGNITUDE; the metric adds speed and the vector nature. For unit motion speed = 1; velocity magnitude = |net|/T <= 1."
+  },
+  {
+   "check": "|net|^2 <= T^2 for every walk; equality iff straight",
+   "determines": "UNIQUE (the inequality is a fixed metric fact)",
+   "expr": "|net| <= path ; equality iff the walk is straight (no turn, no reversal)",
+   "frm": [
+    "8.3"
+   ],
+   "grade": "DERIVED",
+   "id": "8.4",
+   "value": {
+    "equality_iff": "straight (no turn, no reversal)",
+    "triangle": {
+     "elbow": {
+      "disp_sq": 8,
+      "path_sq": 16,
+      "straight_equality": false,
+      "velocity_le_speed": true
+     },
+     "reversed": {
+      "disp_sq": 0,
+      "path_sq": 4,
+      "straight_equality": false,
+      "velocity_le_speed": true
+     },
+     "straight": {
+      "disp_sq": 9,
+      "path_sq": 9,
+      "straight_equality": true,
+      "velocity_le_speed": true
+     },
+     "turned": {
+      "disp_sq": 2,
+      "path_sq": 4,
+      "straight_equality": false,
+      "velocity_le_speed": true
+     }
+    }
+   },
+   "what": "velocity <= speed -- the triangle inequality (displacement <= distance travelled)",
+   "why": "the net displacement never exceeds the distance travelled: |net| <= path, i.e. |net|^2 <= T^2. Equality holds exactly when the walk is STRAIGHT -- every step the same direction, no turn and no reversal. The DEFICIT (speed above velocity) measures wandering: the reversed walk moves at full speed yet nets zero (velocity 0) -- motion without progress, which the ordinal count could not see and the metric makes precise. This is the metric structure's core."
+  },
+  {
+   "check": null,
+   "determines": "the reading (metric = bridge-image of ordinal), held",
+   "expr": "metric dynamics = ordinal dynamics (07) under the bridge (05); substrate stays relational",
+   "frm": [
+    "8.4",
+    "05.5"
+   ],
+   "grade": "POSTULATE",
+   "id": "8.5",
+   "value": {
+    "ladder": "ordinal (07) -> bridge (05) -> metric (08)",
+    "substrate": "the relational floor"
+   },
+   "what": "metric motion is the bridge-image of ordinal dynamics -- the ladder closes",
+   "why": "speed and velocity are the Euclidean IMAGE of 07's succession and rate, carried across the bridge (05). The substrate remains the relational floor; the trajectory is its image, not the thing -- do not reify it ('all of math is a language ... to describe a thing', Kevin). With this the ladder Kevin drew is complete: ordinal (07) -> bridge (05) -> metric (here). Held as the reading, capped."
+  },
+  {
+   "check": null,
+   "determines": "OWED -- deliberately: the continuum is EMERGENT (a large-N limit), not a floor rung",
+   "expr": "the CONTINUOUS layer (smooth trajectory, actual derivatives, curvature) EMERGES as a large-N limit of the quantized walk -- it is not a floor primitive to axiomatize in",
+   "frm": [
+    "8.4"
+   ],
+   "grade": "OWED",
+   "id": "8.6",
+   "value": {
+    "built_here": false,
+    "continuous_layer": "EMERGENT: a large-N limit of the quantized dynamics, not a floor primitive",
+    "discrete_acceleration": "BUILT at 8.7 (the second difference Delta^2, Mathlib-free)",
+    "why_not_a_rung": "the substrate is quantized/discrete; an axiomatized continuum would smuggle continuity in (a coordinates-before-motion category error)"
+   },
+   "what": "the continuum as an EMERGENT limit, NOT a floor rung -- OWED (discrete accel is 8.7)",
+   "why": "the DISCRETE half of acceleration is now BUILT at 8.7 (the second difference Delta^2, Mathlib-free). What remains here is a substrate COMMITMENT, not a missing computation. The CONTINUOUS layer -- a smooth trajectory, actual derivatives, curvature -- would need the reals as a COMPLETE ordered field with calculus. But the substrate is QUANTIZED ('quantized & orchestrated information', Kevin): everything built is discrete (registrations, ticks, the integer lattice; the reals entered at 8.2 only as algebraic distances like sqrt2, NOT as a continuum). So continuity here is EMERGENT -- a large-N limit of the discrete metric dynamics, to fall out later IF something needs it -- and is NOT a rung to build. Axiomatizing a continuum at the floor would smuggle continuity into a discrete substrate, the same category error as coordinates-before-motion. This is a substrate commitment (owner's): the evidence points to emergent, not fundamental."
+  },
+  {
+   "check": "Delta^2: straight=0 accel; turn/reversal nonzero; reversal |a|^2=4; sum telescopes",
+   "determines": "UNIQUE (the second difference is fixed by the trajectory)",
+   "expr": "a_t = Delta^2 x_t = v_{t+1} - v_t = s_{t+1} - s_t ; straight <=> a = 0 everywhere ; sum a_t = v_last - v_first (telescopes)",
+   "frm": [
+    "8.3",
+    "8.4"
+   ],
+   "grade": "DERIVED",
+   "id": "8.7",
+   "value": {
+    "acceleration": {
+     "elbow": {
+      "accel": [
+       [
+        0,
+        0
+       ],
+       [
+        -1,
+        1
+       ],
+       [
+        0,
+        0
+       ]
+      ],
+      "accel_magsq": [
+       0,
+       2,
+       0
+      ],
+      "all_zero": false,
+      "sum_accel": [
+       -1,
+       1
+      ],
+      "telescopes_to_net_velocity_change": true
+     },
+     "reversed": {
+      "accel": [
+       [
+        -2,
+        0
+       ]
+      ],
+      "accel_magsq": [
+       4
+      ],
+      "all_zero": false,
+      "sum_accel": [
+       -2,
+       0
+      ],
+      "telescopes_to_net_velocity_change": true
+     },
+     "straight": {
+      "accel": [
+       [
+        0,
+        0
+       ],
+       [
+        0,
+        0
+       ]
+      ],
+      "accel_magsq": [
+       0,
+       0
+      ],
+      "all_zero": true,
+      "sum_accel": [
+       0,
+       0
+      ],
+      "telescopes_to_net_velocity_change": true
+     },
+     "turned": {
+      "accel": [
+       [
+        -1,
+        1
+       ]
+      ],
+      "accel_magsq": [
+       2
+      ],
+      "all_zero": false,
+      "sum_accel": [
+       -1,
+       1
+      ],
+      "telescopes_to_net_velocity_change": true
+     }
+    },
+    "definition": "a_t = Delta^2 x_t = s_{t+1} - s_t (second difference of position)",
+    "elbow_localizes_at_corner": true,
+    "reversal_magsq_is_4": true,
+    "straight_zero_accel": true,
+    "telescopes": true,
+    "turn_nonzero_accel": true
+   },
+   "what": "discrete acceleration -- the second difference Delta^2 (uniform motion <=> zero accel)",
+   "why": "the BUILDABLE half of acceleration, in the same discrete Mathlib-free style -- NO continuum. Discrete acceleration is the SECOND DIFFERENCE of position, equivalently the first difference of velocity: a_t = v_{t+1} - v_t = s_{t+1} - s_t, the change of step vector, a vector on the integer lattice. Its facts: (1) a STRAIGHT walk (constant step) has ZERO acceleration everywhere -- uniform motion, the discrete Newton's-first-law, and exactly 8.4's 'equality iff straight' seen locally; (2) acceleration is nonzero exactly at a TURN or REVERSAL and LOCALIZES the bend -- the elbow's accel is (0,0),(-1,1),(0,0): zero on the straight segments, nonzero only at the corner; (3) a REVERSAL is the maximal single acceleration, |a|^2 = 4 (a full 180-degree flip of the unit step); (4) the accelerations TELESCOPE: their sum is v_last - v_first, the net change of velocity over the walk. All exact integer-lattice differences -- the discrete increment, with the continuum left emergent (8.6)."
+  }
+ ],
+ "values": {
+  "accel_telescopes": true,
+  "acceleration": {
+   "elbow": {
+    "accel": [
+     [
+      0,
+      0
+     ],
+     [
+      -1,
+      1
+     ],
+     [
+      0,
+      0
+     ]
+    ],
+    "accel_magsq": [
+     0,
+     2,
+     0
+    ],
+    "all_zero": false,
+    "sum_accel": [
+     -1,
+     1
+    ],
+    "telescopes_to_net_velocity_change": true
+   },
+   "reversed": {
+    "accel": [
+     [
+      -2,
+      0
+     ]
+    ],
+    "accel_magsq": [
+     4
+    ],
+    "all_zero": false,
+    "sum_accel": [
+     -2,
+     0
+    ],
+    "telescopes_to_net_velocity_change": true
+   },
+   "straight": {
+    "accel": [
+     [
+      0,
+      0
+     ],
+     [
+      0,
+      0
+     ]
+    ],
+    "accel_magsq": [
+     0,
+     0
+    ],
+    "all_zero": true,
+    "sum_accel": [
+     0,
+     0
+    ],
+    "telescopes_to_net_velocity_change": true
+   },
+   "turned": {
+    "accel": [
+     [
+      -1,
+      1
+     ]
+    ],
+    "accel_magsq": [
+     2
+    ],
+    "all_zero": false,
+    "sum_accel": [
+     -1,
+     1
+    ],
+    "telescopes_to_net_velocity_change": true
+   }
+  },
+  "distances": {
+   "elbow": {
+    "disp": "sqrt(8)",
+    "disp_sq": 8,
+    "net": [
+     2,
+     2
+    ],
+    "rational": false
+   },
+   "reversed": {
+    "disp": "0",
+    "disp_sq": 0,
+    "net": [
+     0,
+     0
+    ],
+    "rational": true
+   },
+   "straight": {
+    "disp": "3",
+    "disp_sq": 9,
+    "net": [
+     3,
+     0
+    ],
+    "rational": true
+   },
+   "turned": {
+    "disp": "sqrt(2)",
+    "disp_sq": 2,
+    "net": [
+     1,
+     1
+    ],
+    "rational": false
+   }
+  },
+  "reals_enter": true,
+  "triangle": {
+   "elbow": {
+    "disp_sq": 8,
+    "path_sq": 16,
+    "straight_equality": false,
+    "velocity_le_speed": true
+   },
+   "reversed": {
+    "disp_sq": 0,
+    "path_sq": 4,
+    "straight_equality": false,
+    "velocity_le_speed": true
+   },
+   "straight": {
+    "disp_sq": 9,
+    "path_sq": 9,
+    "straight_equality": true,
+    "velocity_le_speed": true
+   },
+   "turned": {
+    "disp_sq": 2,
+    "path_sq": 4,
+    "straight_equality": false,
+    "velocity_le_speed": true
+   }
+  },
+  "triangle_holds": true,
+  "walks": {
+   "elbow": [
+    [
+     1,
+     0
+    ],
+    [
+     1,
+     0
+    ],
+    [
+     0,
+     1
+    ],
+    [
+     0,
+     1
+    ]
+   ],
+   "reversed": [
+    [
+     1,
+     0
+    ],
+    [
+     -1,
+     0
+    ]
+   ],
+   "straight": [
+    [
+     1,
+     0
+    ],
+    [
+     1,
+     0
+    ],
+    [
+     1,
+     0
+    ]
+   ],
+   "turned": [
+    [
+     1,
+     0
+    ],
+    [
+     0,
+     1
+    ]
+   ]
+  }
+ }
+}

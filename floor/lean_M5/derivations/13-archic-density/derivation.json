@@ -1,0 +1,500 @@
+{
+ "container": "13-archic-density",
+ "grades": {
+  "DERIVED": 3,
+  "OWED": 0,
+  "POSTULATE": 0
+ },
+ "steps": [
+  {
+   "check": "R1 is a closed deg-5 triangular mesh (chi=2); subdivision keeps chi=2 and {5:12, 6:rest}",
+   "determines": "UNIQUE UP TO graph isomorphism (the icosahedron; its refinements are determined by it)",
+   "expr": "V=12,E=30,F=20,chi=2 all deg 5 (03's shell, re-derived cold); 1->4 subdivision keeps chi=2 and degree spectrum {5: the twelve, 6: the rest}",
+   "frm": [
+    "03.4"
+   ],
+   "grade": "DERIVED",
+   "id": "A.1",
+   "value": {
+    "census": {
+     "R1": {
+      "E": 30,
+      "F": 20,
+      "V": 12,
+      "deg5": 12,
+      "deg6": 0,
+      "euler": 2
+     },
+     "R2": {
+      "E": 120,
+      "F": 80,
+      "V": 42,
+      "deg5": 12,
+      "deg6": 30,
+      "euler": 2
+     },
+     "R3": {
+      "E": 480,
+      "F": 320,
+      "V": 162,
+      "deg5": 12,
+      "deg6": 150,
+      "euler": 2
+     },
+     "R4": {
+      "E": 1920,
+      "F": 1280,
+      "V": 642,
+      "deg5": 12,
+      "deg6": 630,
+      "euler": 2
+     }
+    },
+    "degree_spectrum": "{5: twelve, 6: rest} at every level",
+    "degree_spectrum_ok": true,
+    "euler_preserved": true,
+    "min_sq_distance": [
+     4,
+     0
+    ],
+    "r1_closed_deg5_triangular": true,
+    "r1_edges": [
+     [
+      0,
+      1
+     ],
+     [
+      0,
+      2
+     ],
+     [
+      0,
+      4
+     ],
+     [
+      0,
+      6
+     ],
+     [
+      0,
+      8
+     ],
+     [
+      1,
+      2
+     ],
+     [
+      1,
+      5
+     ],
+     [
+      1,
+      6
+     ],
+     [
+      1,
+      7
+     ],
+     [
+      2,
+      3
+     ],
+     [
+      2,
+      7
+     ],
+     [
+      2,
+      8
+     ],
+     [
+      3,
+      7
+     ],
+     [
+      3,
+      8
+     ],
+     [
+      3,
+      9
+     ],
+     [
+      3,
+      10
+     ],
+     [
+      4,
+      6
+     ],
+     [
+      4,
+      8
+     ],
+     [
+      4,
+      10
+     ],
+     [
+      4,
+      11
+     ],
+     [
+      5,
+      6
+     ],
+     [
+      5,
+      7
+     ],
+     [
+      5,
+      9
+     ],
+     [
+      5,
+      11
+     ],
+     [
+      6,
+      11
+     ],
+     [
+      7,
+      9
+     ],
+     [
+      8,
+      10
+     ],
+     [
+      9,
+      10
+     ],
+     [
+      9,
+      11
+     ],
+     [
+      10,
+      11
+     ]
+    ]
+   },
+   "what": "the adjacency substrate: the icosahedron (closed deg-5 triangular mesh) and its combinatorial refinements R1..R4",
+   "why": "the observable needs a substrate to live on, and it must be the substrate's OWN adjacency, not an imported lattice. So the icosahedron is re-derived COLD: its twelve vertices (0,+-1,+-phi) & cyclic, edges = the pairs at the minimal squared distance (the pure integer 4 in Z[phi]; the other distances 4+4phi, 8+4phi are strictly larger, so the minimum is exact without any irrational comparison). The result satisfies container 03's OWN closed-mesh predicate -- triangular faces, every edge in two faces, uniform degree 5, Euler chi=2 -- so this re-exhibits the shell 03 SELECTED (via the three-observer separation), it does not merely trust it. The adjacency web is then REFINED by combinatorial 1->4 subdivision (an edge-midpoint registration, each triangle re-cut into four; pure combinatorics, no coordinates): a family R1..R4 of closed webs on the same 2-sphere bound, each with chi=2 and degree spectrum exactly {5: the original TWELVE, 6: every refinement vertex}. The twelve degree-5 sites persist at every level -- the seed Step 2's curvature concentrates on."
+  },
+  {
+   "check": "on R1 every vertex has ball profile (1,6,11,12); pure adjacency, regional",
+   "determines": "UNIQUE (given the mesh and (v, r) the count is fixed)",
+   "expr": "|B_r(v)| = #{ registrations within r adjacency steps of v }; on R1 every vertex has profile (1, 6, 11, 12)",
+   "frm": [
+    "A.1"
+   ],
+   "grade": "DERIVED",
+   "id": "A.2",
+   "value": {
+    "r1_ball_profile": [
+     1,
+     6,
+     11,
+     12
+    ],
+    "r1_profile_uniform_over_all_twelve": true,
+    "reads": "|B_0|=1, |B_1|=6, |B_2|=11, |B_3|=12 (diameter 3)"
+   },
+   "what": "the archic-density observable |B_r(v)|: a breadth-first count over adjacency",
+   "why": "ARCHIC DENSITY is the ball-growth observable: |B_r(v)| is the number of registrations within r adjacency STEPS of v -- a breadth-first count over the relation itself. It consults NO distance, NO embedding, NO angle; once A.1 fixes the edges, only adjacency is used. It is REGIONAL (a count over an r-neighbourhood, not a per-site number) -- which is what a density has to be. On R1 the mesh is vertex-transitive, so all twelve vertices share the identical profile (1, 6, 11, 12): the vertex, its 5 neighbours (|B_1|=6), its 5 second-neighbours (|B_2|=11), its antipode (|B_3|=12) -- the whole icosahedron by radius 3, its graph diameter."
+  },
+  {
+   "check": "|B_1|=deg+1 (relabelling); R3: 2 degree classes < 4 ball-profile classes (deg-6 splits 3)",
+   "determines": "UNIQUE (the partition refinement is fixed by the meshes)",
+   "expr": "|B_1(v)| = deg(v)+1 (a relabelling at r=1, and the profile always determines the degree); on R3 degree gives 2 classes, ball growth gives 4 (150 deg-6 vertices split 60/30/60)",
+   "frm": [
+    "A.2"
+   ],
+   "grade": "DERIVED",
+   "id": "A.3",
+   "value": {
+    "R3_deg6_profile_classes": 3,
+    "R3_degree_classes": 2,
+    "R3_profile_classes": 4,
+    "R3_profile_multiset": [
+     [
+      [
+       1,
+       6,
+       16,
+       31
+      ],
+      12
+     ],
+     [
+      [
+       1,
+       7,
+       18,
+       34
+      ],
+      60
+     ],
+     [
+      [
+       1,
+       7,
+       19,
+       35
+      ],
+      30
+     ],
+     [
+      [
+       1,
+       7,
+       19,
+       36
+      ],
+      60
+     ]
+    ],
+    "ball1_eq_deg_plus_1_all_levels": true,
+    "strictly_finer": true,
+    "witness_level": "R3",
+    "witness_pair_deg6_profiles": [
+     [
+      1,
+      7,
+      18,
+      34
+     ],
+     [
+      1,
+      7,
+      19,
+      35
+     ]
+    ]
+   },
+   "what": "finer than the degree, NOT a renaming: |B_1|=deg+1 but the profile strictly refines degree on R3",
+   "why": "the method demands a new observable prove it is not a relabelling of an old one. At r=1, |B_1(v)| = deg(v)+1 exactly -- so at r=1 ball growth IS the degree, and, generally, the profile always DETERMINES the degree (its r=1 entry), hence its partition of the vertices always REFINES the degree partition. The content is that it refines it STRICTLY: on R3 the degree sees only 2 classes (the twelve at 5, the 150 others at 6), while the ball profile sees 4 -- the 150 degree-6 vertices split into 3 profile classes (60/30/60). So two degree-6 vertices carry DIFFERENT ball profiles ((1,7,18,34) vs (1,7,19,35)) that the degree declares identical. A relabelling cannot separate what the degree identifies; ball growth does. It is a strictly finer observable -- and (foreshadowing Step 2 only) the class that grows slowest, (1,6,16,31), is exactly the twelve degree-5 sites: the observable already 'sees' where the curvature will sit."
+  }
+ ],
+ "values": {
+  "R3_degree_classes": 2,
+  "R3_profile_classes": 4,
+  "R3_profile_multiset": [
+   [
+    [
+     1,
+     6,
+     16,
+     31
+    ],
+    12
+   ],
+   [
+    [
+     1,
+     7,
+     18,
+     34
+    ],
+    60
+   ],
+   [
+    [
+     1,
+     7,
+     19,
+     35
+    ],
+    30
+   ],
+   [
+    [
+     1,
+     7,
+     19,
+     36
+    ],
+    60
+   ]
+  ],
+  "census": {
+   "R1": {
+    "E": 30,
+    "F": 20,
+    "V": 12,
+    "deg5": 12,
+    "deg6": 0,
+    "euler": 2
+   },
+   "R2": {
+    "E": 120,
+    "F": 80,
+    "V": 42,
+    "deg5": 12,
+    "deg6": 30,
+    "euler": 2
+   },
+   "R3": {
+    "E": 480,
+    "F": 320,
+    "V": 162,
+    "deg5": 12,
+    "deg6": 150,
+    "euler": 2
+   },
+   "R4": {
+    "E": 1920,
+    "F": 1280,
+    "V": 642,
+    "deg5": 12,
+    "deg6": 630,
+    "euler": 2
+   }
+  },
+  "r1_ball_profile": [
+   1,
+   6,
+   11,
+   12
+  ],
+  "r1_edges": [
+   [
+    0,
+    1
+   ],
+   [
+    0,
+    2
+   ],
+   [
+    0,
+    4
+   ],
+   [
+    0,
+    6
+   ],
+   [
+    0,
+    8
+   ],
+   [
+    1,
+    2
+   ],
+   [
+    1,
+    5
+   ],
+   [
+    1,
+    6
+   ],
+   [
+    1,
+    7
+   ],
+   [
+    2,
+    3
+   ],
+   [
+    2,
+    7
+   ],
+   [
+    2,
+    8
+   ],
+   [
+    3,
+    7
+   ],
+   [
+    3,
+    8
+   ],
+   [
+    3,
+    9
+   ],
+   [
+    3,
+    10
+   ],
+   [
+    4,
+    6
+   ],
+   [
+    4,
+    8
+   ],
+   [
+    4,
+    10
+   ],
+   [
+    4,
+    11
+   ],
+   [
+    5,
+    6
+   ],
+   [
+    5,
+    7
+   ],
+   [
+    5,
+    9
+   ],
+   [
+    5,
+    11
+   ],
+   [
+    6,
+    11
+   ],
+   [
+    7,
+    9
+   ],
+   [
+    8,
+    10
+   ],
+   [
+    9,
+    10
+   ],
+   [
+    9,
+    11
+   ],
+   [
+    10,
+    11
+   ]
+  ],
+  "witness_pair_deg6_profiles": [
+   [
+    1,
+    7,
+    18,
+    34
+   ],
+   [
+    1,
+    7,
+    19,
+    35
+   ]
+  ]
+ }
+}

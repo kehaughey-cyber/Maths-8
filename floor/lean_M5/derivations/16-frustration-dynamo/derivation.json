@@ -1,0 +1,93 @@
+{
+ "container": "16-frustration-dynamo",
+ "grades": {
+  "DERIVED": 2,
+  "OWED": 0,
+  "POSTULATE": 1
+ },
+ "steps": [
+  {
+   "check": "eps = 2pi - 5*arccos(1/3) ~ 7.356 deg > 0; strict positivity reduces to 45 < 49",
+   "determines": "UNIQUE (the gap is fixed; strictly positive by 45 < 49)",
+   "expr": "eps = 2pi - 5*arccos(1/3) = 2pi - 10*arcsin(sqrt3/3); eps > 0 <=> cos(2pi/5)=(sqrt5-1)/4 < 1/3 <=> 45 < 49",
+   "frm": [
+    "08",
+    "03.4"
+   ],
+   "grade": "DERIVED",
+   "id": "D.1",
+   "value": {
+    "cos_2pi_5_check": true,
+    "dihedral_arccos_1_3_deg": 70.528779,
+    "dihedral_eq_2_arcsin_sqrt3_3": true,
+    "eps_deg": 7.356103,
+    "eps_rad": 0.128388,
+    "five_tetrahedra_span_deg": 352.643897,
+    "integer_core_lhs_45": 45,
+    "integer_core_rhs_49": 49,
+    "positivity_reduction": "eps>0 <=> cos(2pi/5)=(sqrt5-1)/4 < 1/3 <=> 3 sqrt5 < 7 <=> 45 < 49",
+    "strictly_positive": true
+   },
+   "what": "the tetrahedral gap: five regular tetrahedra around an edge leave eps ~ 7.356 deg > 0",
+   "why": "the regular-tetrahedron DIHEDRAL angle is arccos(1/3) = 2*arcsin(sqrt3/3) (~70.5288 deg). Five tetrahedra packed around a shared edge span 5*arccos(1/3) ~ 352.644 deg, which is LESS than a full 2pi -- so they do not close; the gap is eps = 2pi - 5*arccos(1/3) = 2pi - 10*arcsin(sqrt3/3) ~ 7.356 deg. This is the classic geometric FRUSTRATION of icosahedral/tetrahedral packing. That eps is STRICTLY positive needs no numerics: eps > 0 iff arccos(1/3) < 2pi/5 iff 1/3 > cos(2pi/5), and cos(2pi/5) = (sqrt5 - 1)/4, so the claim is 3(sqrt5 - 1) < 4, i.e. 3*sqrt5 < 7, i.e. 45 < 49 -- a clean integer core. The trig identities (needing R) are CITED (as container 10 cites arcsin(1/2)=pi/6); the reduced inequality is proved zero-axiom."
+  },
+  {
+   "check": "eps>0 is exact and scale-independent; eps != 24 (12chi) and != 120 (Lambda)",
+   "determines": "UNIQUE (eps is a fixed positive angle; distinct from the other two frustrations)",
+   "expr": "eps > 0 exactly (not finite-size, scale-independent); eps (~7.356 deg) != 12*chi (24 radits) != Lambda (120 deg)",
+   "frm": [
+    "D.1",
+    "14.B.4"
+   ],
+   "grade": "DERIVED",
+   "id": "D.2",
+   "value": {
+    "distinct_from_angle_deficit_12chi_24": true,
+    "distinct_from_lambda_120": true,
+    "eps_deg": 7.356103,
+    "irreducible_not_finite_size": true,
+    "no_strain_free_configuration": true,
+    "scale_independent": true,
+    "three_frustrations": "ball-growth deficit (14) | angle-deficit charge 12chi=24 (14.B.4) | dihedral gap eps~7.356deg (here)"
+   },
+   "what": "the frustration is IRREDUCIBLE and DISTINCT from the Step-2 deficits",
+   "why": "eps is EXACTLY positive -- a fixed angle of the geometry, not a discretization or finite-size artifact, and independent of any mesh scale. So the substrate has NO strain-free (closed) configuration; the frustration never resolves. And -- the anti-conflation discipline made explicit -- eps is a THIRD, distinct quantity: NOT container 14's ball-growth deficit (flat_ball - |B_r|), and NOT its angle-deficit charge 12*chi = 24 radits (Gauss-Bonnet). eps is the 3-D DIHEDRAL packing gap (~7.356 deg). Three different frustrations of one icosahedral geometry; numerically eps != 24 != 120, and they are defined on different structures. Named apart on sight, never merged."
+  },
+  {
+   "check": null,
+   "determines": "POSSIBLE, NOT confirmed; dynamo != vacuum; no value; no downstream premise",
+   "expr": "eps != 0 read as what prevents the substrate from settling; the dynamo is NOT the vacuum (Step 3 min-density); Lambda = 2pi/3 a cited clue value for the dynamo",
+   "frm": [
+    "D.1",
+    "D.2",
+    "15.C.3"
+   ],
+   "grade": "POSTULATE",
+   "id": "D.3",
+   "value": {
+    "downstream_premise_use": false,
+    "dynamo_is_not_the_vacuum": true,
+    "lambda_2pi_3_deg": 120.0,
+    "lambda_status": "secondary-route (torsion) clue value; CITED, not derived here; distinct from eps and 12chi",
+    "reading": "eps != 0 = persistence engine (dynamo)",
+    "status": "possible, NOT confirmed",
+    "vacuum_is": "Step 3 minimum-density extremum (container 15) -- a DIFFERENT object",
+    "values": "DEFERRED"
+   },
+   "what": "the dynamo reading: eps != 0 = the persistence engine; a DYNAMO, NOT the vacuum (POSSIBLE, NOT confirmed; values deferred)",
+   "why": "the arc's working reading, NAMED as a possibility and NOT asserted (the container-15 discipline: the math is derived, the physical reading is held). eps != 0 is read as the PERSISTENCE ENGINE -- the irreducible frustration is what keeps the substrate from ever settling into a closed state, forcing ongoing dynamics. THE CRITICAL ANTI-CONFLATION (handoff, load-bearing): this DYNAMO -- the delta that prevents resolution -- is NOT the VACUUM (Step 3's minimum-density extremum, container 15). They are different objects; do not conflate. A cosmological-constant-like Lambda, if it corresponds to anything in this substrate, corresponds to the DYNAMO, not to a vacuum energy density. Lambda = 2pi/3 is a SECONDARY-route (torsion) clue value -- CITED, not derived here, and distinct from eps and from 12*chi. NO value is computed or fitted; the correspondence and any value await warrant (the derivation closing AND top-down meeting bottom-up). No downstream container may use this reading as a premise."
+  }
+ ],
+ "values": {
+  "dihedral_deg": 70.528779,
+  "dynamo_is_not_the_vacuum": true,
+  "eps_deg": 7.356103,
+  "eps_rad": 0.128388,
+  "five_tetrahedra_span_deg": 352.643897,
+  "integer_core_lhs_45": 45,
+  "integer_core_rhs_49": 49,
+  "lambda_deg": 120.0,
+  "strictly_positive": true,
+  "twelve_chi_radits": 24
+ }
+}

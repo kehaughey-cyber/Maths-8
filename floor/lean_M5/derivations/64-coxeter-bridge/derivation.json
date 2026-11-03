@@ -1,0 +1,311 @@
+{
+ "container": "64-coxeter-bridge",
+ "grades": {
+  "DERIVED": 5,
+  "OWED": 1,
+  "POSTULATE": 1
+ },
+ "steps": [
+  {
+   "check": "C = L_a.R_b: order 30, C H C^T=H, 8 cycles of 30 on 240 roots, 4 cycles of 30 on 120 icosians",
+   "determines": "UNIQUE UP TO conjugacy (the tick is one E8 Coxeter element; all such are W(E8)-conjugate)",
+   "expr": "the substrate tick is the composite screw C = L_a . R_b: left-multiply by an order-5 icosian a, right-multiply by an order-6 icosian b, as an 8x8 integer isometry on 06's Z-basis (= 12's E8 lattice). C H C^T = H (isometry), and C has order EXACTLY 30 (a^10=1 and b needs 6 | n, so 30 | n; order 30). The witness (a, b) is found BY CRITERION -- the first order-5 x order-6 pair (canonical icosian order) whose tick has characteristic polynomial Phi_30 (CX.2) -- not imported. As a permutation, C cuts the 240 roots into 8 cycles of length 30 (8 helices; 8*30=240) and the 120 icosians into 4 cycles of length 30 (4*30=120) -- the H4 Coxeter element on the 120, one 30",
+   "frm": [
+    "06.6.5",
+    "12.E.2"
+   ],
+   "grade": "DERIVED",
+   "id": "CX.1",
+   "value": {
+    "a_doubled": [
+     -1,
+     1,
+     -1,
+     0,
+     0,
+     -1,
+     0,
+     0
+    ],
+    "a_order": 5,
+    "b_doubled": [
+     1,
+     0,
+     -1,
+     0,
+     -1,
+     0,
+     -1,
+     0
+    ],
+    "b_order": 6,
+    "helix_120_is_4x30": true,
+    "helix_240_is_8x30": true,
+    "ico_cycle_lengths": [
+     30
+    ],
+    "isometry": true,
+    "n_ico_cycles": 4,
+    "n_root_cycles": 8,
+    "root_cycle_lengths": [
+     30
+    ],
+    "tick_order": 30
+   },
+   "what": "THE TICK IS AN ORDER-30 E8 ISOMETRY. C = L_a . R_b (a order 5, b order 6 icosians) preserves the E8 form and has order EXACTLY 30; it cuts the 240 roots into 8 helices of 30 (8*30=240) and the 120 icosians into 4 loops of 30 (4*30=120)",
+   "why": "the object the whole container is about, built cold. The tick is the substrate's OWN time-evolution (the propagative screw of the notation-ref R5/R7-R9); 62/63 treated K2 as static subalgebra, but Kevin's catch is that the live structure is DYNAMICAL. Here the tick is realized as an exact 8x8 isometry on the E8 lattice and shown to have order 30 = the E8 Coxeter number h, cutting both the 240 roots (8 helices) and the 120 icosians (4 loops) into length-30 orbits. Exact-integer over H; the witness pair is a reproducible criterion-search, not a literal."
+  },
+  {
+   "check": "char poly of C = Phi_30 = x^8+x^7-x^5-x^4-x^3+x+1; exponents {1,7,11,13,17,19,23,29}, sum 120",
+   "determines": "UNIQUE (char poly = Phi_30; the 8 E8 exponents, sum 120)",
+   "expr": "the characteristic polynomial of C (Faddeev-LeVerrier over the integers) is EXACTLY the 30th cyclotomic polynomial Phi_30(x) = x^8 + x^7 - x^5 - x^4 - x^3 + x + 1. Its roots are the primitive 30th roots of unity exp(2*pi*i*m/30) for m in {1,7,11,13,17,19,23,29} -- the 8 = rank(E8) integers in [1,30) coprime to 30, which are EXACTLY the E8 exponents (sum 120 = h*rank/2 = 30*8/2). So the tick's eigenvalue angles ARE the E8 exponents and its order 30 IS the Coxeter number h: C is an E8 Coxeter element. The certificate is the integer coefficient vector of Phi_30 -- no floating-point eigenvalues",
+   "frm": [
+    "CX.1"
+   ],
+   "grade": "DERIVED",
+   "id": "CX.2",
+   "value": {
+    "charpoly": [
+     1,
+     1,
+     0,
+     -1,
+     -1,
+     -1,
+     0,
+     1,
+     1
+    ],
+    "coxeter_number": 30,
+    "exponent_sum": 120,
+    "exponents": [
+     1,
+     7,
+     11,
+     13,
+     17,
+     19,
+     23,
+     29
+    ],
+    "exponents_are_coprime_residues": true,
+    "is_phi30": true,
+    "n_exponents": 8,
+    "rank": 8
+   },
+   "what": "THE SPECTRUM IS E8's. The tick's characteristic polynomial is EXACTLY Phi_30(x)=x^8+x^7-x^5-x^4-x^3+x+1; its eigenvalue angles are the E8 exponents {1,7,11,13,17,19,23,29} -- so the tick IS the E8 Coxeter element",
+   "why": "the headline, and the 'non-generic reason for the E8 structure' that 62/63 said was OWED, now supplied -- dynamically. 62's ED.6 and 63 asked for a substrate reason the E8 structure is picked out; the answer is that the substrate's own tick IS the Coxeter element -- the single conjugacy class that generates E8's whole eigenvalue skeleton (its exponents / its Coxeter plane). G4 refuter: had the charpoly been any other degree-8 integer polynomial (not Phi_30), C would not be a Coxeter element and the claim would fail cold; it is exactly Phi_30. G3: the computation never names 'physics' -- it is the spectrum of a quaternion screw on a lattice. Exact-integer (the charpoly coefficients)."
+  },
+  {
+   "check": "C^10 = R_{b^4} (a^10=1, b^10=b^4), order 3, fixed-point-free: 40 three-cycles on 120, 80 on 240",
+   "determines": "UNIQUE (C^10 = R_{b^4}, order 3, fixed-point-free: 40 three-cycles on 120, 80 on 240)",
+   "expr": "C^10 = R_{b^4}: because a^10 = 1 (a order 5) the left factor dies, and b^10 = b^4 (b order 6), so C^10 is PURE right-multiplication by b^4. b^4 has order 3, and right-multiplication by a non-identity group element is FIXED-POINT-FREE, so C^10 is an order-3 fixed-point-free map: 40 three-cycles on the 120 icosians (the 40/40/40 generation blocks) and 80 three-cycles on the 240 roots, zero fixed points. This is precisely the OUTER (left/right-regular) Z/3 -- fixed-point-free, distinct from colour's INNER conjugation Z/3 (6 fixed + 38 triples, 31/62). So 61's 'generation = the outer Z/3' is realized as generation = C^10, a power of the substrate's own time-evolution",
+   "frm": [
+    "CX.1",
+    "61.ST.3"
+   ],
+   "grade": "DERIVED",
+   "id": "CX.3",
+   "value": {
+    "b4_order": 3,
+    "c10_is_right_mult_b4": true,
+    "gen_cycle_len_120": [
+     3
+    ],
+    "gen_cycle_len_240": [
+     3
+    ],
+    "gen_fixed_120": 0,
+    "gen_fixed_240": 0,
+    "gen_n_cycles_120": 40,
+    "gen_n_cycles_240": 80,
+    "gen_order": 3
+   },
+   "what": "GENERATION IS A POWER OF THE TICK. C^10 = R_{b^4} is PURE right-multiplication, an order-3 FIXED-POINT-FREE element -- 40 three-cycles on the 120 (40/40/40) and 80 on the 240 = the outer/generation Z/3. Grounds 61",
+   "why": "the upgrade 61 was reaching for. 61 identified generation with the outer Z/3 but could only MOTIVATE the count 3 (via 3^1||120 and the triadic floor), not derive it from the dynamics. Here generation is a specific POWER of the tick (C^10), so the count-3 is the order of C^10 -- an order forced by the tick's own period 30 (30/gcd(30,10)=3). G4 refuter: had C^10 had any fixed point, or order != 3, it could not be the fixed-point-free generation Z/3; it is exactly order-3 fixed-point-free. G3: no 'generation' label enters the computation -- it is the 10th power of a lattice isometry. Exact-integer."
+  },
+  {
+   "check": "conj by b^2 fixes an A2xA2 (12 roots, sig 12/12/24/24/72); C^15 = -I (the central fold)",
+   "determines": "UNIQUE (conj by b^2 fixes an A2xA2, 12 roots; C^15 = -I central)",
+   "expr": "the tick's own order-3 generator is g3 = b^2. Conjugation by g3 fixes EXACTLY 12 roots with the inner-product signature 12/12/24/24/72 of an A2 x A2 -- EXACTLY container 62's colour cut, now tied to the tick. And C^15 = -I: since C has order 30, its half-power C^15 is the central involution -1 -- the 2*pi turn = the duality w = the antipode/central character (container 45's central -1). So colour (INNER, conjugation by g3 = b^2), generation (OUTER, C^10 = right-mult by b^4), and the fold (CENTRAL, C^15 = -1) are all powers or aspects of the ONE tick C -- and the mass-law walk too (CX.5). This answers 62/63's owed 'mechanism' (option-3 form): the mechanism is the dynamics / the arrow of time",
+   "frm": [
+    "CX.1",
+    "62.ED.2",
+    "45.SP.1"
+   ],
+   "grade": "DERIVED",
+   "id": "CX.4",
+   "value": {
+    "c15_is_neg_identity": true,
+    "colour_fixed_locus_is_A2xA2": true,
+    "colour_fixed_root_count": 12,
+    "colour_g3_order": 3,
+    "colour_ip_signature": {
+     "-1": 24,
+     "-2": 12,
+     "0": 72,
+     "1": 24,
+     "2": 12
+    },
+    "note": "colour = conj b^2 (inner Z/3); generation = C^10 = R_{b^4} (outer Z/3); fold = C^15 = -1 (central) -- all aspects of the ONE tick"
+   },
+   "what": "COLOUR AND THE FOLD ARE ALSO POWERS/ASPECTS OF THE TICK. Conjugation by g3=b^2 (the tick's own order-3 generator) fixes an A2 x A2 (12 roots, 62's colour cut); and C^15 = -I is the central fold (45's -1). Colour, generation, fold: ONE tick",
+   "why": "the unification, and the tie back to 62/45. 62 found colour as conjugation by an order-3 element with fixed locus A2 x A2; here that order-3 element is the tick's OWN generator b^2 -- so 62's static colour cut is an aspect of the dynamical tick. 45's central -1 (the spinor 2*pi -> -1) is C^15, the tick's half-turn. So the substrate's three Z-structures -- inner colour, outer generation, central duality -- are all read off the ONE tick, not three coincidental threes/twos. G3: the computation is conjugation and matrix powers of a lattice isometry; no physics name enters. Exact-integer."
+  },
+  {
+   "check": "the +phi/2 degree-12 walk on the 120 is preserved by the tick permutation tau(v)=a.v.b (mass shares the tick)",
+   "determines": "UNIQUE (the +phi/2 degree-12 walk is tau-invariant; mass shares the tick)",
+   "expr": "the native mass law (notation-ref R25/R26: m_d = 12/d, the twelve-witness census's Galois-symmetrized walk eigenvalue) lives on the +phi/2 ADJACENCY -- the degree-12 icosian graph where v ~ w iff Re(conj(v).w) = phi/2. The tick permutation tau(v) = a.v.b PRESERVES this adjacency: Re(conj(a v b).(a w b)) = Re(conj(b).conj(v).w.b) = Re(conj(v).w) (Re is conjugation-invariant and conj(a)a = 1), so ADJ[i][j] = ADJ[tau i][tau j] -- tau is a graph automorphism of every shell. Hence the mass-law walk COMMUTES with the tick and all its powers: the pentagon C^6 (order 5), generation C^10 (order 3), the fold C^15 (order 2). Mass, colour, generation, and the fold are one dynamical element -- the tick. (The 120x120 commutation is exact-integer, verify-guarded.)",
+   "frm": [
+    "CX.1",
+    "CX.3",
+    "CX.4"
+   ],
+   "grade": "DERIVED",
+   "id": "CX.5",
+   "value": {
+    "adjacency_degree": [
+     12
+    ],
+    "mass_walk_commutes_with_tick": true,
+    "note": "tau(v)=a.v.b is a graph automorphism of the +phi/2 shell -> the mass-law walk shares the tick with colour/generation/fold"
+   },
+   "what": "THE MASS-LAW WALK SHARES THE TICK. The +phi/2 adjacency (the degree-12 icosian graph carrying the native mass law m_d=12/d) is preserved by the tick permutation tau(v)=a.v.b -- so the mass scale commutes with the tick and ALL its powers. Mass + colour + generation + fold = one tick",
+   "why": "the last thread that ties the mass scale into the same tick -- the open item from the session boot ('does a power of the tick tie the mass-law walk in?'). The nine association-scheme walks on the 120 (the inner-product shells) all commute with the two-sided 2I-action, and the tick is one two-sided element, so every shell -- including the +phi/2 mass walk -- is simultaneously graded by the tick's eigenspaces. So the mass spectrum, colour, generation, and the fold are not four coincidences but four faces of the ONE tick. G3: no mass VALUE is computed or fitted here -- only that the mass-carrying graph is tick-invariant. Exact-integer over Z[phi]."
+  },
+  {
+   "check": null,
+   "determines": "POSTULATE (the tick = the E8 Coxeter element; colour/generation/fold/mass its aspects -- a unification, not a forcing; the E8 mechanism is dynamical)",
+   "expr": "the disciplined reading. The substrate's own time-evolution -- the tick C = L_a . R_b -- IS the E8 Coxeter element (CX.2), and colour (conj b^2, CX.4), generation (C^10, CX.3), the fold (C^15, CX.4) and the mass-law walk (CX.5) are all powers or aspects of it. So the 'non-generic reason for the E8 structure' that 62 (ED.6) and 63 named OWED is DYNAMICAL -- the arrow of time -- not a static subalgebra. HONEST CAVEAT (do not overclaim): this is a UNIFICATION, NOT a forcing. All E8 Coxeter elements are W(E8)-conjugate, and the tick is one member of that conjugacy class, so it does NOT force a UNIQUE colour A2 -- the same residual arbitrariness as 62 (canonical only up to the tick's conjugacy). What is NEW and real: the arbitrariness is UNIFIED (one tick simultaneously fixes colour, generation, the fold, and the mass grading, coherently) and PHYSICALIZED (tied to the substrate's dynamics). It does NOT touch the content map -- 63's structural gap (which irreps are the fermions) stands untouched. So: a genuine reduction/unification (the twin, at the dynamical level, of 61's count-3 and 62's which-A2 reductions), NOT a forcing, NOT a solution to K2",
+   "frm": [
+    "CX.2",
+    "CX.3",
+    "CX.4",
+    "CX.5"
+   ],
+   "grade": "POSTULATE",
+   "id": "CX.6",
+   "value": {
+    "does_not_touch": "the content map (63's structural gap: which irreps are the fermions) is untouched",
+    "downstream_premise_use": false,
+    "e8_mechanism": "dynamical (the arrow of time), not a static subalgebra -- answers 62.ED.6 / 63's owed mechanism at the unification level",
+    "is_forcing": false,
+    "is_unification": true,
+    "residual": "the tick is W(E8)-conjugate to every E8 Coxeter element -> colour A2 canonical only up to the tick's conjugacy (same residual as 62)",
+    "tick_is_e8_coxeter": true,
+    "twin_of": "61's count-3 and 62's which-A2 reductions, now at the dynamical level",
+    "unifies": [
+     "colour (conj b^2)",
+     "generation (C^10)",
+     "fold (C^15)",
+     "mass-law walk"
+    ]
+   },
+   "what": "(verdict, POSTULATE) The substrate's TICK IS the E8 Coxeter element; colour, generation, the fold, and the mass scale are aspects of that ONE element -- the DYNAMICAL origin of the E8 structure that 62/63 left owed. A UNIFICATION, not a forcing",
+   "why": "the corrected, disciplined standing -- neither dismissal nor over-affirmation. It would be easy to over-read 'the tick is the E8 Coxeter element' as forcing the E8 structure uniquely; it does not (all Coxeter elements are conjugate). It would be easy to dismiss it as 'just a Coxeter element'; it is not -- it UNIFIES colour, generation, the fold, and the mass scale under one dynamical object, exactly the kind of reduction the program is after (FRONTIER: a structure reduced to a named root/mechanism is the success). The open question that would move it to a forcing (CX.7): a substrate reason to canonicalize the tick among its W-conjugates. No downstream premise rests on this reading; filed through 19, quarantined."
+  },
+  {
+   "check": null,
+   "determines": "OWED (the fork's frame-alignment rule / the four clocks re-derived cold -> a forcing; plus the content selection from 61/63)",
+   "expr": "OWED, correctly scoped. The tick's canonicity is NOT a conjugation question -- all E8 Coxeter elements are W(E8)-conjugate (a theorem; the substrate itself has 'no privileged edge' under 2I-conjugation, so asking a conjugation-invariant to single one out is category-wrong, the CORRECTIONS #7/#12 trap). The substrate's ACTUAL canonicalizers are structures OUTSIDE W(E8), and the corpus names them: (i) the CANONICAL QUATERNION FRAME = the Galois-fixed (phi-free) spine -- computed cold as the 24 Hurwitz units (= 2T), of which the 8 axis units {+-1,+-i,+-j,+-k} are the corpus's Q8 seam; and (ii) the PARITY BIT -- the mirror L_a.R_{b^-1} is a fixed-point-free involution pairing the 8 conjugation-orbits of Coxeter ticks into 4 chiral pairs (the free ZZ/2 'set at the origin, unobservable from within', the charge-conjugate families A<->B of the CPT chapter). So relative to the fixed frame the residual is the parity bit. What is OWED to turn the unification (CX.6) into a forcing: the FRAME-ALIGNMENT RULE -- the fork's four-clocks / arbiter seating that ties the tick to the canonical frame -- RE-DERIVED at our standard (their docs grade it THEOREM; we have not rebuilt it cold). Independently, the K2 content selection (which irreps are the fermions, 61/63) remains owed; no content is fitted here",
+   "frm": [
+    "CX.6"
+   ],
+   "grade": "OWED",
+   "id": "CX.7",
+   "value": {
+    "canonicalizer_is_not_conjugation_invariant": "all E8 Coxeter elements are W-conjugate (theorem); 'no edge is privileged' -- a conjugation-invariant CANNOT distinguish them (CORRECTIONS #7/#12)",
+    "located_canonical_frame": "the Galois-fixed phi-free spine: 24 Hurwitz units (2T), of which 8 axis units {+-1,+-i,+-j,+-k} = the Q8 seam (computed cold)",
+    "located_parity_bit": "the mirror L_a.R_{b^-1} is a fixed-point-free involution pairing the 8 conjugation-orbits into 4 chiral pairs -- the free ZZ/2 set at the origin (CPT chapter)",
+    "owed_frame_alignment_rule": "the fork's four-clocks / arbiter seating tying the tick to the canonical frame, re-derived at our standard (-> a forcing up to parity)",
+    "owed_from_61_63": "the content selection K2 (which irreps are the fermions) -- still the lone open input",
+    "present": false
+   },
+   "what": "OWED (refined 2026-09-17, Kevin's 'look at the corpus again'): the canonicalizer is NOT a W(E8)/conjugation invariant (all Coxeter elements are W-conjugate -- a theorem; 'no edge is privileged'). It is the substrate's Galois-fixed canonical FRAME (the 24 Hurwitz / 8-axis Q8 seam) + the PARITY BIT; owed is the fork's FRAME-ALIGNMENT rule (the four clocks / arbiter) re-derived cold. Plus the content selection K2 (61/63). Nothing fitted",
+   "why": "the honest residual, RE-EXAMINED after Kevin caught an over-negation ('no canonical tick emerges' was the scoped-negative-as-forbidden-region error, CORRECTIONS #7). The first pass tested only conjugation-invariants -- which by theorem cannot distinguish W-conjugate Coxeter elements -- and wrongly read that as 'no canonical tick'. Looked at with the corpus's own canonicalizers (the Galois-fixed frame + the parity bit, both computed cold: 24 Hurwitz / 8 axis; mirror pairs 8->4), the tick IS canonical relative to the frame, up to a parity ZZ/2 that SHOULD be free (it is P-violation). So this is a REDUCTION ('which tick' -> 'the frame-alignment rule + the parity bit'), not a checked-negative -- the frame-alignment rule (the four clocks / arbiter) is the owed piece, the concrete route from unification to forcing. The discipline holds: nothing about the SM multiplets is assembled here; the four-clocks re-derivation must pass the value-gate cold."
+  }
+ ],
+ "values": {
+  "a_doubled": [
+   -1,
+   1,
+   -1,
+   0,
+   0,
+   -1,
+   0,
+   0
+  ],
+  "a_order": 5,
+  "adjacency_degree": [
+   12
+  ],
+  "b_doubled": [
+   1,
+   0,
+   -1,
+   0,
+   -1,
+   0,
+   -1,
+   0
+  ],
+  "b_order": 6,
+  "c10_is_right_mult_b4": true,
+  "c15_is_neg_identity": true,
+  "charpoly": [
+   1,
+   1,
+   0,
+   -1,
+   -1,
+   -1,
+   0,
+   1,
+   1
+  ],
+  "colour_fixed_locus_is_A2xA2": true,
+  "colour_fixed_root_count": 12,
+  "colour_g3_order": 3,
+  "colour_ip_signature": {
+   "-1": 24,
+   "-2": 12,
+   "0": 72,
+   "1": 24,
+   "2": 12
+  },
+  "coxeter_number": 30,
+  "exponent_sum": 120,
+  "exponents": [
+   1,
+   7,
+   11,
+   13,
+   17,
+   19,
+   23,
+   29
+  ],
+  "finding": "THE COXETER-30 BRIDGE (Maths 6.9; Kevin's statics/dynamics catch), formalized. Run as WALKS, the substrate's tick C = L_a . R_b (a order-5, b order-6 icosians) is an order-30 E8 isometry (CX.1) whose characteristic polynomial is EXACTLY Phi_30 -- its eigenvalue angles are the E8 exponents {1,7,11,13,17,19,23,29}, so C IS the E8 Coxeter element (CX.2, the 'non-generic reason for the E8 structure' 62/63 owed, supplied dynamically). It cuts the 240 roots into 8 helices of 30 and the 120 icosians into 4 loops of 30 (the H4 Coxeter, one 30). GENERATION = C^10 = R_{b^4}, pure right-mult, order-3 fixed-point-free (40/40/40 on 120, 80 three-cycles on 240) = the outer Z/3 (CX.3, grounds 61). COLOUR = conj by g3=b^2, fixed locus an A2 x A2 (12 roots, 62's cut); the FOLD = C^15 = -I, the central -1 (45) -- so colour (inner), generation (outer), the fold (central) are all powers/aspects of the ONE tick (CX.4). The +phi/2 MASS-LAW walk commutes with the tick (CX.5), so mass shares it too. VERDICT (CX.6, POSTULATE): the substrate's time-evolution IS the E8 Coxeter element; colour, generation, the fold, and the mass scale are its aspects -- the E8 mechanism is DYNAMICAL (the arrow of time). A UNIFICATION, not a forcing (all E8 Coxeter elements are W-conjugate; the tick is one -> no unique colour A2, the same residual as 62); it does NOT touch the content map (63). OWED (CX.7): a canonical tick (-> a forcing), or the impossibility proof; plus the content selection K2. Nothing fitted.",
+  "gen_fixed_120": 0,
+  "gen_fixed_240": 0,
+  "gen_n_cycles_120": 40,
+  "gen_n_cycles_240": 80,
+  "gen_order": 3,
+  "helix_120_is_4x30": true,
+  "helix_240_is_8x30": true,
+  "ico_cycle_lengths": [
+   30
+  ],
+  "is_phi30": true,
+  "isometry": true,
+  "mass_walk_commutes_with_tick": true,
+  "n_ico_cycles": 4,
+  "n_root_cycles": 8,
+  "rank": 8,
+  "root_cycle_lengths": [
+   30
+  ],
+  "tick_order": 30
+ }
+}

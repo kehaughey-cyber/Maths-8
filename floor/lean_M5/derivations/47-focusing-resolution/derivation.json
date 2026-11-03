@@ -1,0 +1,116 @@
+{
+ "container": "47-focusing-resolution",
+ "grades": {
+  "DERIVED": 3,
+  "OWED": 1,
+  "POSTULATE": 1
+ },
+ "steps": [
+  {
+   "check": "the twelve have positive deficit (+2, 37 focusing) and are 15.C.3's vacuum reading -- the tension",
+   "determines": "UNIQUE (the tension is a definite pair of opposite signs at the twelve)",
+   "expr": "37.GM.3: a positive spatial angle-deficit (the twelve, d=5, deficit +2) FOCUSES geodesics -- attractive. 15.C.3: the twelve (minimum archic density) <-> VACUUM / dark-energy -- repulsive. Same twelve, opposite signs: the apparent contradiction 37.GM.5 flagged as a discriminating test",
+   "frm": [
+    "37.GM.3",
+    "14.B.4"
+   ],
+   "grade": "DERIVED",
+   "id": "FR.1",
+   "value": {
+    "spatial_focus_attractive": true,
+    "tension": "37.GM.3 attractive (spatial focusing) vs 15.C.3 repulsive (vacuum) at the same twelve",
+    "twelve_deficit": 2,
+    "twelve_is_vacuum_reading": true
+   },
+   "what": "the tension: 37.GM.3 focuses (attractive) at the twelve (positive deficit); 15.C.3 reads the twelve as VACUUM (repulsive)",
+   "why": "state the tension exactly, so the resolution is measured against it. Container 37.GM.3 derived: the SIGN of the angle deficit sets focusing -- a positive deficit (a cone point, the twelve at d=5, deficit 12-10 = +2) FOCUSES geodesics (convergence, the attractive sign). Container 15.C.3 read the twelve (the MINIMUM archic density) as the VACUUM / dark-energy direction -- which is REPULSIVE (accelerated expansion). So at the SAME twelve, 37 says attractive (focusing) and 15 says repulsive (vacuum). 37.GM.5 flagged this as a test with three candidate resolutions -- (a) the twelve are matter not vacuum; (b) spatial curvature != vacuum-energy, different things; (c) the rho=flat-D inversion flips the reading -- and left it a held reading. This container resolves it via (b), now that the signature (46) makes 'spatial vs spacetime' a real distinction."
+  },
+  {
+   "check": "37's focusing is spatial K; GR attraction is the timelike Raychaudhuri contraction (needs 46) -- different operators",
+   "determines": "UNIQUE (spatial Gaussian K != the timelike Ricci contraction; the split needs 46's signature)",
+   "expr": "37.GM.3's focusing is SPATIAL -- the Gaussian curvature K of the intrinsic 2-surface (25/14, the angle deficit). Gravitational attraction/repulsion is a SPACETIME fact: the Raychaudhuri focusing of the TIMELIKE geodesic congruence, dtheta/dtau ~ -(rho+3p), which needs the timelike direction of the signature (46). Spatial K and the timelike Ricci contraction R_{tt} are DIFFERENT objects",
+   "frm": [
+    "FR.1",
+    "46.LS.4"
+   ],
+   "grade": "DERIVED",
+   "id": "FR.2",
+   "value": {
+    "cited": "the Raychaudhuri equation; R_{mu nu}u^mu u^nu = 4piG(rho+3p)",
+    "different_objects": true,
+    "enabled_by": "46.LS.4 (the Lorentzian signature gives a timelike direction)",
+    "spacetime_operator": "Raychaudhuri: -R_{tt} = -4piG(rho+3p) on a TIMELIKE congruence -- needs 46's timelike direction",
+    "spatial_operator": "Gaussian curvature K of the 2-surface (the angle deficit, 14/25) -- 37.GM.3"
+   },
+   "what": "the two focusings are DIFFERENT operators: 37 is SPATIAL (Gaussian K); GR attraction is SPACETIME (Raychaudhuri, timelike) -- needs 46",
+   "why": "the crux, and it needed the signature. Before 46 there was no principled 'spatial vs spacetime' split, so the two signs looked comparable. Now: 37.GM.3's focusing is the convergence of geodesics ON THE SPATIAL 2-SURFACE -- governed by the intrinsic Gaussian curvature K (the angle deficit, 14/25). Gravitational attraction/repulsion is a different thing entirely: the RAYCHAUDHURI focusing of a congruence of TIMELIKE (worldline) geodesics in spacetime, dtheta/dtau = ... - R_{mu nu} u^mu u^nu, and for a perfect fluid R_{mu nu}u^mu u^nu = 4*pi*G*(rho + 3p). That contraction is over the TIMELIKE direction u -- which exists only because the signature is Lorentzian (46.LS.4): in a Euclidean (4,0) world there is no timelike u and no Raychaudhuri attraction at all. So the two 'focusings' are DIFFERENT OPERATORS: spatial K (a property of the surface at an instant) vs the timelike Ricci contraction (a property of the spacetime, sourced by rho+3p). Cited: the Raychaudhuri equation and R_{mu nu}u^mu u^nu = 4piG(rho+3p); enabled by 46's timelike direction."
+  },
+  {
+   "check": "rho+3p: vacuum(w=-1)=-2<0 repulsive, dust(w=0)=+1>0 attractive; independent of spatial K -> no contradiction",
+   "determines": "UNIQUE (rho+3p sign: vacuum -2rho<0, matter rho>0; independent of spatial K -> no contradiction)",
+   "expr": "the SPACETIME focusing sign is set by rho+3p (the strong-energy quantity), NOT by the spatial K: for VACUUM/Lambda (w=-1) rho+3p = -2rho < 0 => REPULSIVE; for MATTER/dust (w=0) rho+3p = rho > 0 => attractive. This is INDEPENDENT of the spatial curvature sign, so positive spatial curvature (37's spatial focusing) and vacuum/Lambda repulsion (15's reading) can hold AT ONCE -- no contradiction. The 37.GM.5 tension is a spatial/spacetime TYPE error, dissolved by 46",
+   "frm": [
+    "FR.2"
+   ],
+   "grade": "DERIVED",
+   "id": "FR.3",
+   "value": {
+    "independent_of_spatial_K": true,
+    "matter_attractive": true,
+    "resolution": "candidate (b): spatial curvature (37) != vacuum-energy/Lambda (15); different axes; no contradiction",
+    "rho_plus_3p_dust_w0": 1,
+    "rho_plus_3p_vacuum_w_minus1": -2,
+    "type_error": "37.GM.5 compared a spatial-K sign with a spacetime-(rho+3p) sign -- 46 tells them apart",
+    "vacuum_repulsive": true
+   },
+   "what": "therefore NO CONTRADICTION: the spacetime sign is rho+3p (vacuum -2rho<0 repulsive; matter rho>0 attractive), INDEPENDENT of spatial K",
+   "why": "the dissolution. The spacetime attraction/repulsion sign is -(rho+3p) (Raychaudhuri, FR.2). RUN IT: for VACUUM (equation of state p = -rho, w=-1) rho+3p = rho - 3rho = -2rho < 0, so -(rho+3p) > 0 = DEFOCUSING = REPULSIVE (this is exactly why dark energy accelerates expansion); for MATTER (dust, p=0) rho+3p = rho > 0 = focusing = attractive. So the spacetime sign is a property of the matter content (rho+3p), entirely SEPARATE from the SPATIAL Gaussian curvature K (37's deficit). The two signs are on INDEPENDENT axes: a cone point can have K > 0 (spatial geodesics converge on the surface, 37.GM.3) while the same region is vacuum-dominated with rho+3p < 0 (spacetime timelike geodesics defocus, 15.C.3) -- both true, no conflict. So the apparent contradiction 37.GM.5 flagged was a TYPE ERROR: it compared a spatial curvature sign with a spacetime attraction sign as if they were the same quantity. The signature (46) is exactly what tells them apart. Resolution (b), forced."
+  },
+  {
+   "check": null,
+   "determines": "POSTULATE (which the twelve are -- vacuum or matter -- is a separate held reading, not decided)",
+   "expr": "the resolution removes the CONTRADICTION (FR.3), not the READING: WHICH the twelve actually are -- vacuum/dark-energy (15.C.3) or matter-like -- is a SEPARATE question, not decided here. 15.C.3 survives, now uncontradicted by the focusing sign; candidate (a) is not thereby forced",
+   "frm": [
+    "FR.3",
+    "15.C.3"
+   ],
+   "grade": "POSTULATE",
+   "id": "FR.4",
+   "value": {
+    "candidate_a_not_forced": "(a) is not needed to resolve the tension; the twelve may be vacuum with positive spatial K",
+    "does_not_decide": "whether the twelve are vacuum (15.C.3) or matter (candidate a) -- a separate reading",
+    "downstream_premise_use": false,
+    "resolves": "the contradiction (FR.3), via candidate (b)"
+   },
+   "what": "what is NOT decided (held): WHICH the twelve are -- vacuum (15.C.3) or matter -- is a separate reading",
+   "why": "the honest boundary of the resolution. FR.3 dissolves the tension: 37's spatial focusing and 15's vacuum reading are not in conflict (different operators). But that does NOT decide which the twelve ARE. 37.GM.5's candidate (a) was 'the twelve are matter not vacuum'; FR.3 shows (a) is NOT NEEDED to resolve the tension (b) does it), so (a) is not forced -- the twelve could be vacuum (15.C.3) with positive spatial curvature, consistently. Deciding vacuum-vs-matter is a reading that needs the stress-energy content (rho+3p for the twelve specifically) and the matter census -- held, and gated by the danger zone. So this container RESOLVES the sign tension and LEAVES the vacuum/matter reading open, uncontradicted. A held reading, quarantined; no downstream premise use."
+  },
+  {
+   "check": null,
+   "determines": "OWED (quantitative Raychaudhuri -- continuum+mass, danger; vacuum-vs-matter -- census)",
+   "expr": "OWED: (a) the QUANTITATIVE Raychaudhuri focusing on the substrate -- needs the continuum (08.8.6) and a stress-energy tensor (rho+3p from the substrate), i.e. MASS -- the danger zone; (b) DECIDING vacuum-vs-matter for the twelve (15.C.3) -- a reading needing the matter census. The tension is resolved; the quantitative dynamics and the vacuum/matter reading are owed",
+   "frm": [
+    "FR.3",
+    "FR.4"
+   ],
+   "grade": "OWED",
+   "id": "FR.5",
+   "value": {
+    "owed_quantitative": "the Raychaudhuri equation on the substrate -- needs the continuum + stress-energy (mass), danger zone",
+    "owed_reading": "deciding vacuum-vs-matter for the twelve (15.C.3) -- the matter census, a reading + danger",
+    "present": false
+   },
+   "what": "OWED: quantitative Raychaudhuri on the substrate (continuum + stress-energy = mass, danger); deciding vacuum-vs-matter (census)",
+   "why": "the honest residual. FR.1-FR.3 resolve the 37.GM.5 tension (a spatial/spacetime type error, dissolved by 46); FR.4 holds the vacuum/matter reading open. What remains: (a) the QUANTITATIVE Raychaudhuri equation on the substrate -- a real timelike congruence, its expansion theta, and R_{tt} from a substrate stress-energy -- which needs the continuum (08.8.6, not-a-rung) and a stress-energy tensor, hence MASS: the danger zone, not attempted; (b) DECIDING whether the twelve are vacuum or matter (15.C.3 / FR.4) -- needs the matter census and the equation of state at the twelve, a reading + danger. So the sign confusion is cleared (danger-free); the quantitative gravitational dynamics and the vacuum/matter determination are the forward, gated work. NOT attempted here."
+  }
+ ],
+ "values": {
+  "finding": "THE FOCUSING TENSION (37.GM.5) RESOLVED, using the signature (46). The tension: 37.GM.3 focuses (attractive) at the twelve (positive spatial deficit) but 15.C.3 reads them as vacuum (repulsive) (FR.1). Resolution -- candidate (b), now forced: the two are DIFFERENT operators -- 37's is SPATIAL Gaussian curvature K; gravitational attraction/repulsion is the SPACETIME Raychaudhuri focusing of the TIMELIKE congruence, dtheta/dtau ~ -(rho+3p), which needs 46's timelike direction (FR.2). The spacetime sign is rho+3p (vacuum w=-1: -2rho<0 repulsive; matter w=0: rho>0 attractive), INDEPENDENT of spatial K -- so positive spatial curvature and vacuum repulsion hold at once, NO contradiction (FR.3). The tension was a spatial/spacetime TYPE error, dissolved by 46. Which the twelve ARE (vacuum vs matter) stays a separate held reading (FR.4); the quantitative Raychaudhuri + the reading are OWED (FR.5, danger). Danger-free; nothing fitted.",
+  "matter_attractive": true,
+  "rho_plus_3p_dust": 1,
+  "rho_plus_3p_vacuum": -2,
+  "spatial_focus_attractive": true,
+  "twelve_deficit": 2,
+  "vacuum_repulsive": true
+ }
+}

@@ -1,0 +1,175 @@
+{
+ "container": "07-ordinal-dynamics",
+ "grades": {
+  "DERIVED": 4,
+  "OWED": 1,
+  "POSTULATE": 1
+ },
+ "steps": [
+  {
+   "check": "the tick order is total & transitive (04's order on indices)",
+   "determines": "the order is UNIQUE (04's total order); each event's content is CHOSEN",
+   "expr": "a history: change-events indexed by ticks, ordered by t <= u (04's total order)",
+   "frm": [],
+   "grade": "DERIVED",
+   "id": "7.1",
+   "value": {
+    "history_length": 6,
+    "index_by": "container 04's integer order",
+    "order_total": true,
+    "order_transitive": true,
+    "seat": "container 02's change event"
+   },
+   "what": "succession -- change (02) ordered into a history by the integer order (04)",
+   "why": "container 02 says change ENTERS (the registration event, potential -> stable). Dynamics begins when changes SUCCEED one another -- ordered by the integer line (04). The tick order IS 04's total order restricted to indices: total and transitive, so every pair of moments is comparable (before/after). This is the first before/after, and it needs no space -- only the order already built."
+  },
+  {
+   "check": "steps drawn from 04's two distinct directions {+1,-1}",
+   "determines": "UNIQUE (the two directions are 04's units)",
+   "expr": "each tick's change is a signed step in {+1, -1}; a walk is a sequence of them",
+   "frm": [
+    "7.1"
+   ],
+   "grade": "DERIVED",
+   "id": "7.2",
+   "value": {
+    "directions": [
+     1,
+     -1
+    ],
+    "distinct": true,
+    "steps_valid": true,
+    "walk": [
+     1,
+     1,
+     -1,
+     1,
+     -1,
+     1
+    ]
+   },
+   "what": "the directed step -- each change carries a direction (04's +1 / -1)",
+   "why": "a change is not merely THAT something changed (02) but WHICH WAY (04): each step is one of the two directions off the counterpoint, +1 or -1 -- distinct (04.4). Change (02) composed with direction (04) is the DIRECTED step. Still ordinal: the step is +1/-1 on the relational line, not a displacement in space."
+  },
+  {
+   "check": "rate is a ratio: walk & double-speed repeat equal by cross-multiply",
+   "determines": "the rate is UNIQUE (as a rational); its (net,ticks) representative is CHOSEN",
+   "expr": "net = sum of steps (04's addPair) ; rate = (net, ticks) ; equal iff net1*T2 = net2*T1",
+   "frm": [
+    "7.2"
+   ],
+   "grade": "DERIVED",
+   "id": "7.3",
+   "value": {
+    "net": 2,
+    "rate_half": [
+     1,
+     3
+    ],
+    "rate_walk": [
+     2,
+     6
+    ],
+    "same_rate_by_cross_multiply": true,
+    "scale_invariant": true,
+    "ticks": 6
+   },
+   "what": "net and RATE -- the rationals enter (net displacement per tick)",
+   "why": "the net displacement of a walk is the sum of its signed steps -- an integer (04). The RATE is that net PER tick: a ratio of an integer and a positive count. That ratio is the RATIONALS -- the number-object between the integers (04) and the reals (which arrive only at the bridge, with the metric). Its equality is cross-MULTIPLY, exactly mirroring how integers are pairs under cross-ADD (04.2): a walk and its double-speed repeat share one rate. Dynamics-as-rate FORCES a new number, and it is still pre-geometric (a ratio of counts)."
+  },
+  {
+   "check": "return <-> net 0 <-> balanced (+1 count = -1 count)",
+   "determines": "UNIQUE (return <-> balance); the period is a property of the walk",
+   "expr": "a walk returns iff net = 0 iff #(+1) = #(-1); it closes to the counterpoint",
+   "frm": [
+    "7.3"
+   ],
+   "grade": "DERIVED",
+   "id": "7.4",
+   "value": {
+    "cycle": [
+     1,
+     1,
+     -1,
+     -1
+    ],
+    "period": 4,
+    "return_iff_balanced": true,
+    "returns": true,
+    "specific_period_12": "OWED to 02 / the clocks (not forced here)"
+   },
+   "what": "cyclic return -- the first periodic dynamics (change that comes back)",
+   "why": "the simplest non-trivial dynamics that CLOSES: a balanced walk (equal +1 and -1 steps) returns to where it began -- net ~ 0, the counterpoint (04.3). This is the first PERIODIC dynamics, the seat of cycles and clocks. The SPECIFIC period (container 02's OWED, phase cycle -> 12, and the clue-doc four clocks) is NOT forced here -- only that return exists and means balance; the 12 is cited downstream, not smuggled."
+  },
+  {
+   "check": null,
+   "determines": "the reading (relativity of the origin), held",
+   "expr": "shift all positions by c: the steps and the net displacement are unchanged; the origin is not",
+   "frm": [
+    "7.1",
+    "7.3"
+   ],
+   "grade": "POSTULATE",
+   "id": "7.5",
+   "value": {
+    "invariants": "direction of each step; net displacement between ticks",
+    "net_invariant": true,
+    "origin_is_observer_relative": true,
+    "steps_invariant": true
+   },
+   "what": "observer-relativity -- origin is observer-relative; step & net are invariant",
+   "why": "the walk is defined by its STEPS (differences), so the absolute origin is not part of it -- a different observer (02's observer/observed co-emergence) sees the same walk from a shifted origin. What all observers agree on is the DIRECTION of each step and the NET displacement between two ticks; the absolute position they need not. This is the seed of RELATIVITY -- Galilean, but ordinal and pre-metric. Held as the reading, not proven."
+  },
+  {
+   "check": null,
+   "determines": "OWED (only the CONTINUOUS trajectory, 08.8.6 -- deliberately not-a-rung; discrete metric dynamics DISCHARGED by 08)",
+   "expr": "velocity, acceleration, and the (discrete) trajectory are BUILT across the bridge in container 08; the CONTINUOUS trajectory is 08.8.6 -- an emergent large-N limit, deliberately not a rung",
+   "frm": [
+    "7.3"
+   ],
+   "grade": "OWED",
+   "id": "7.6",
+   "value": {
+    "built_here": false,
+    "discharged_by": "container 08 -- velocity/speed (8.3), trajectory (8.1), triangle inequality (8.4), discrete acceleration Delta^2 (8.7)",
+    "forward_edge": "dynamics under influence -- the walk accelerating in the density gradient (20) = geodesic/free-fall motion, coupling 08<->20/21, danger-free; NOT built",
+    "remaining": "only the CONTINUOUS trajectory (08.8.6) -- emergent large-N limit, deliberately not a rung (quantized substrate)"
+   },
+   "what": "metric dynamics -- velocity, acceleration, trajectories -- DISCHARGED by container 08 (only the CONTINUOUS trajectory is 08.8.6, deliberately not-a-rung)",
+   "why": "RETREATED 2026-09-03: this deferred metric dynamics to 'after the bridge', and the bridge (05) + metric dynamics (08) have since been BUILT. Container 08 discharges it: velocity as net displacement per tick (08.8.3), speed as path per tick (08.8.3), the trajectory in Euclidean space (08.8.1), the triangle inequality velocity<=speed (08.8.4), and DISCRETE ACCELERATION -- the second difference Delta^2 (08.8.7, DERIVED zero-axiom: straight => zero acceleration = Newton's first law, a turn localizes the bend, a reversal is the maximal accel). So 07's ordinal rate IS 08's velocity magnitude, across the bridge. What remains is ONLY the CONTINUOUS trajectory (actual derivatives, a smooth curve) -- container 08.8.6 -- and 08 holds it deliberately NOT a rung: the substrate is quantized, so continuity is an emergent large-N limit to fall out later IF needed, never a floor axiom (axiomatizing a continuum would smuggle continuity into a discrete substrate). The genuine unbuilt FORWARD edge is not this at all: it is DYNAMICS UNDER INFLUENCE -- the walk ACCELERATING in the density gradient (20, gravity = grad rho), i.e. geodesic / free-fall motion -- which couples 08 (kinematics) to 20/21 (gravity) and is danger-free geometry (no mass). Deferred there, not here."
+  }
+ ],
+ "values": {
+  "cycle": [
+   1,
+   1,
+   -1,
+   -1
+  ],
+  "cycle_period": 4,
+  "cycle_returns": true,
+  "directions": [
+   1,
+   -1
+  ],
+  "half": [
+   1,
+   1,
+   -1
+  ],
+  "net": 2,
+  "rate_walk": [
+   2,
+   6
+  ],
+  "ticks": 6,
+  "walk": [
+   1,
+   1,
+   -1,
+   1,
+   -1,
+   1
+  ]
+ }
+}

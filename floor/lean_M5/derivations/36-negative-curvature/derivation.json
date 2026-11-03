@@ -1,0 +1,241 @@
+{
+ "container": "36-negative-curvature",
+ "grades": {
+  "DERIVED": 4,
+  "OWED": 1,
+  "POSTULATE": 1
+ },
+ "steps": [
+  {
+   "check": "D_1(d) = 6-d and angle_deficit(d) = 12-2d; negative for d>6",
+   "determines": "UNIQUE (D_1 = 6-d, angle deficit = 12-2d, fixed by the equilateral-triangulation convention)",
+   "expr": "the deficit D_1 = flat_ball(1) - |B_1| = 7 - (d+1) = 6 - d, and the angle deficit = 12 - 2d (14.B.4): d<6 => +(right, min-density, the twelve); d=6 => 0 (the mirror, flat); d>6 => NEGATIVE (the LEFT wing, max-density)",
+   "frm": [
+    "14.B.2",
+    "14.B.4"
+   ],
+   "grade": "DERIVED",
+   "id": "LW.1",
+   "value": {
+    "left_wing_is": "degree > 6 (D_1 < 0, angle deficit < 0) -- the max-density direction",
+    "mirror_at": "d=6 (D_1=0), the flat degree-6 site",
+    "table": {
+     "5": {
+      "D_1": 1,
+      "angle_deficit": 2,
+      "sign": "+ right/min-density"
+     },
+     "6": {
+      "D_1": 0,
+      "angle_deficit": 0,
+      "sign": "0 mirror/flat"
+     },
+     "7": {
+      "D_1": -1,
+      "angle_deficit": -2,
+      "sign": "- LEFT/max-density"
+     },
+     "8": {
+      "D_1": -2,
+      "angle_deficit": -4,
+      "sign": "- LEFT/max-density"
+     }
+    }
+   },
+   "what": "signed curvature at a degree-d vertex EXTENDS across the mirror: D_1 = 6-d (angle deficit 12-2d)",
+   "why": "container 14 made the deficit SIGNED (D>0 spherical, D=0 flat/the mirror, D<0 hyperbolic) but the icosahedral substrate realizes only D>=0 (degree<=6 everywhere). Reading the SAME formula across the mirror: at a degree-d vertex the ball-deficit at r=1 is D_1 = flat_ball(1) - |B_1| = 7 - (d+1) = 6-d, and the angle deficit (14.B.4) is 12-2d. For d = 5 (the twelve): +1 / +2 (positive curvature, SLOWER-than-flat growth, MIN density). For d = 6 (flat): 0 / 0 (the mirror). For d > 6: NEGATIVE (faster-than-flat growth, hyperbolic, MAX density). So the mirror at D=0 has a genuine LEFT side, and it is the degree>6 sites -- exactly the 'faster-than-flat, hyperbolic' D<0 that 14.B.2 named but the sphere never realized. This is the sign-mirror image of the twelve."
+  },
+  {
+   "check": "the degree-7 star: centre degree 7, |B_1| = 8 > flat 7, D_1 = -1 < 0",
+   "determines": "UNIQUE (the degree-7 triangular star: 8 vertices, |B_1| = 8, D_1 = -1)",
+   "expr": "the degree-7 star (centre + a 7-cycle, triangular faces) has |B_1| = 8, so D_1 = flat_ball(1) - 8 = 7 - 8 = -1 < 0, and rho = |B_1| = 8 EXCEEDS the right wing's rho_max = flat = 7 -- the max-density direction, REALIZED",
+   "frm": [
+    "LW.1",
+    "13.A.2"
+   ],
+   "grade": "DERIVED",
+   "id": "LW.2",
+   "value": {
+    "B1": 8,
+    "D_1": -1,
+    "centre_degree": 7,
+    "flat_ball_1": 7,
+    "realizes": "the max-density direction 15.C.2 deferred as 'a different, buildable geometry'",
+    "rho_exceeds_right_wing_max": true
+   },
+   "what": "an explicit degree-7 star realizes the FIRST negative-curvature site: |B_1| = 8 > flat 7, D_1 = -1",
+   "why": "build it cold, the mirror of container 13's degree-5 vertex. A degree-7 vertex with triangular faces is a centre c adjacent to a 7-cycle n0..n6 (the triangles c-ni-n(i+1)). Its ball |B_1| = 1 + 7 = 8 (the relabelling identity |B_1| = deg+1, 13.A.3). Against the flat reference flat_ball(1) = 7 (14.B.1), the deficit is D_1 = 7 - 8 = -1 < 0 -- NEGATIVE curvature. And the archic density rho = |B_1| = 8 EXCEEDS the right wing's maximum rho_max = flat = 7 (15.C.1): this site is DENSER than anything on the sphere. So the max-density extremum -- which 15.C.2 said 'is simply not realized on this substrate ... a different geometry (one carrying degree > 6 sites), real and buildable, and neither built nor characterized' -- is here, built and characterized. The twelve are the min (D=+1); the degree-7 star is the first max (D=-1); D=0 is the mirror between them."
+  },
+  {
+   "check": "the recurrence reproduces flat {3,6}; at d=7, D_r = [0,-1,-10,-48,-171,-526] < 0 and growing",
+   "determines": "UNIQUE (the {3,7} coordination sequence; validated by reproducing flat {3,6})",
+   "expr": "the {3,d} coordination recurrence a(n+1) = (d-4)a(n) - a(n-1) reproduces flat {3,6} = 6r EXACTLY (the internal guard); at d=7 it gives rings [7,21,56,147,385], |B_r| = [1,8,29,85,232,617], and D_r = flat - |B_r| = [0,-1,-10,-48,-171,-526] -- NEGATIVE and GROWING (exponential): the max-density deficit is UNBOUNDED, the mirror of the twelve's bounded tri(r)",
+   "frm": [
+    "LW.2",
+    "14.B.1"
+   ],
+   "grade": "DERIVED",
+   "id": "LW.3",
+   "value": {
+    "all_negative": true,
+    "contrast": "flat is quadratic |B_r|~3r^2; the twelve's positive deficit tri(r) is bounded; the left wing is exponential and unbounded",
+    "flat_balls": [
+     1,
+     7,
+     19,
+     37,
+     61,
+     91
+    ],
+    "flat_reproduced_guard": true,
+    "growing": true,
+    "hyp_balls_3_7": [
+     1,
+     8,
+     29,
+     85,
+     232,
+     617
+    ],
+    "hyp_deficit_D_r": [
+     0,
+     -1,
+     -10,
+     -48,
+     -171,
+     -526
+    ],
+    "hyp_rings_3_7": [
+     1,
+     7,
+     21,
+     56,
+     147,
+     385
+    ],
+    "recurrence": "a(n+1) = (d-4)a(n) - a(n-1), a(1)=d, a(2)=d(d-4)"
+   },
+   "what": "the {3,7} hyperbolic tiling grows FASTER than flat (validated cold on flat {3,6}): D_r < 0 and growing",
+   "why": "past r=1 the negative curvature COMPOUNDS. The regular triangular tiling {3,d} has a coordination sequence fixed by the transfer recurrence a(n+1) = (d-4)a(n) - a(n-1), a(1)=d, a(2)=d(d-4). This is computed COLD and CHECKED against the one case we already own: at d=6 (flat) it must give the degree-6 rings 6r and flat_ball = 1+3r(r+1) -- and it does, exactly (flat_reproduced = the guard). Trusting it thus validated, at d=7 the rings are [7,21,56,147,385] and |B_r| = [1,8,29,85,232,617]. The deficit D_r = flat_ball(r) - |B_r| = [0,-1,-10,-48,-171,-526] is negative from r=1 and grows (more negative every step) -- hyperbolic EXPONENTIAL growth, versus flat's quadratic. So the max-density side is not just denser at a point (LW.2) but has UNBOUNDED density growth -- the exact sign-and-magnitude mirror of the twelve, whose positive deficit is the bounded triangular tri(r) = [1,3,6,10] (14.B.3). The vacuum end is a shallow minimum; the black-hole end is a runaway maximum."
+  },
+  {
+   "check": "right wing sum(12-2d) = +24 = 12*chi => chi=2; a degree-7 site is -2 < 0 => all-deg>6 has chi<0",
+   "determines": "UNIQUE (Gauss-Bonnet: sum(12-2d) = 12*chi; right chi=2, all-deg>6 chi<0)",
+   "expr": "Gauss-Bonnet: sum over vertices of (12-2d) = 12*chi. Right wing (twelve deg-5): 12*(+2) = +24 = 12*chi => chi = 2, genus 0 (the sphere, 14/15). An all-degree>6 surface has sum < 0 => chi < 0 => genus >= 2 (closed) OR the OPEN hyperbolic plane. So the left wing is NOT a genus-0 sphere",
+   "frm": [
+    "LW.1",
+    "14.B.4",
+    "15.C.2"
+   ],
+   "grade": "DERIVED",
+   "id": "LW.4",
+   "value": {
+    "left_wing_topology": "chi < 0 => genus >= 2 (closed) or the OPEN hyperbolic plane -- NOT genus-0",
+    "right_wing_chi": 2,
+    "right_wing_deficit_total": 24,
+    "right_wing_genus": 0,
+    "single_deg7_contribution": -2,
+    "why_right_wing_one_sided": "chi=2>0 pins net curvature +24>0 (15.C.2); net-negative cannot fit on the sphere"
+   },
+   "what": "topology: the wings live on DIFFERENT surfaces -- Gauss-Bonnet sum(12-2d) = 12*chi; left needs chi<0",
+   "why": "this is WHY the right wing is forced one-sided, and it is honest about what the left wing costs. The total angle deficit is a topological invariant: sum_v (12 - 2*deg_v) = 12*chi (Gauss-Bonnet, 14.B.4). The icosahedral sphere has the twelve degree-5 sites contributing 12*(+2) = +24 = 12*chi, so chi = 2 (genus 0). A surface that is negatively curved EVERYWHERE (all deg > 6, every (12-2d) < 0) must have sum < 0, hence chi < 0 -- a closed genus >= 2 surface, or the non-compact (open) hyperbolic plane. It CANNOT be a genus-0 sphere. This is exactly why container 15.C.2 found the sphere one-sided (D >= 0): on a closed genus-0 surface Gauss-Bonnet PINS the net curvature at +12*chi = +24 > 0, so it cannot be net-negative -- the left wing simply does not fit on the same surface. The two signs are not two regions of one sphere; they are two topologies. (This is the curvature-total statement only -- NOT a claim about which surface the substrate 'is'.)"
+  },
+  {
+   "check": null,
+   "determines": "POSTULATE (max density <-> black-hole direction; a named possibility, not confirmed; held)",
+   "expr": "the max-density direction (D < 0, degree > 6) <-> the BLACK-HOLE end (where Schwarzschild attaches), the sign-mirror of 15.C.3's min-density <-> vacuum. NAMED as a possibility, NOT confirmed -- held, quarantined, the same discipline 15 applied to the vacuum side",
+   "frm": [
+    "LW.3",
+    "LW.4",
+    "15.C.3"
+   ],
+   "grade": "POSTULATE",
+   "id": "LW.5",
+   "value": {
+    "correspondence_not_confirmed": true,
+    "downstream_premise_use": false,
+    "mirror_of": "15.C.3 (min density <-> vacuum), same POSTULATE discipline",
+    "reading": "max archic density (D<0, degree>6) <-> the black-hole direction (Schwarzschild attaches)",
+    "touches_metric_no_thirteenth": "degree>6 = the 13th-neighbour room; 'does the substrate go left of the mirror?' = 03.3.7/09.6.6/25.DF.3/01.1.6 from the other side",
+    "what_does_not_travel": "the value (OWED); the closed realization; whether the substrate realizes degree>6"
+   },
+   "what": "the reading (mirror of 15.C.3): MAX archic density <-> the BLACK-HOLE direction (Schwarzschild) -- a named possibility",
+   "why": "the arc's working correspondence for the max side, named to be tested, not asserted -- exactly the grade 15.C.3 carries for the min side (Kevin's steer: name the direction, hold confirmation until warranted). From the maths-4 clues (reference only): the minimum archic density is the vacuum / dark-energy direction (15.C.3, realized on the sphere); the MAXIMUM archic density is the BLACK-HOLE direction, where the Schwarzschild radius attaches (the max-density end many sessions ago). This container REALIZES that max direction (LW.2/LW.3) -- a genuine denser-than-flat, runaway-growth region -- and reads it, as a POSSIBILITY, as the black-hole side. It also touches the METRIC-NO-THIRTEENTH (03.3.7 / 09.6.6 / 25.DF.3 / 01.1.6): degree > 6 is precisely the 'room for a 13th neighbour', so the question of whether the SUBSTRATE ever goes left of the mirror IS the metric-no-thirteenth from the other side. WHAT DOES NOT TRAVEL: any value (the Schwarzschild radius / max density -- OWED); the closed realization; whether the substrate realizes it at all. A CORRESPONDENCE / reading; held, quarantined; no downstream premise use."
+  },
+  {
+   "check": null,
+   "determines": "OWED (closed realization; the value; whether the substrate realizes degree>6 = the metric-no-thirteenth)",
+   "expr": "OWED: (a) a CLOSED negative-curvature realization (genus >= 2, LW.4) rather than a patch; (b) the VALUE at the max-density end (the Schwarzschild radius / max density) -- computed-then-compared, NEVER fitted; (c) whether the SUBSTRATE ever realizes degree > 6 -- the metric-no-thirteenth from the other side. The direction is built; its closure, value, and substrate-realization are owed",
+   "frm": [
+    "LW.5"
+   ],
+   "grade": "OWED",
+   "id": "LW.6",
+   "value": {
+    "owed_closed": "a closed genus>=2 negative-curvature surface (LW.4); only a patch/open plane is built here",
+    "owed_substrate": "whether the substrate ever realizes degree>6 -- the metric-no-thirteenth (03.3.7/09.6.6/25.DF.3/01.1.6) from the other side; a 13th neighbour IS a degree-7 site",
+    "owed_value": "the max-density / Schwarzschild value -- computed-then-compared NEVER fitted, danger zone out",
+    "present": false
+   },
+   "what": "OWED: the closed higher-genus realization; the max-density / Schwarzschild VALUE; does the substrate go LEFT of the mirror?",
+   "why": "the honest residual. LW.1-LW.4 build the max-density DIRECTION as a geometry (local site LW.2, growth LW.3, topology LW.4); what stays owed: (a) a CLOSED left-wing surface -- LW.4 says it needs genus >= 2; only a patch / the open plane is exhibited here, a closed hyperbolic surface is not built; (b) the VALUE -- the Schwarzschild radius fell out of the max-density end in maths 4 (clue), but here no number is emitted; it is gated the same way as rho_Lambda (34): computed-then-compared, never fitted, danger zone (mass) out; (c) the deep one -- WHETHER THE SUBSTRATE GOES LEFT OF THE MIRROR at all. The registration substrate built so far (00-13) is the icosahedral sphere, one-sided D >= 0. Whether recursion ever produces a degree>6 site is the metric-no-thirteenth question (03.3.7 / 09.6.6 / 25.DF.3 / 01.1.6 -- the four collapsed to one) seen from the negative side: a 13th neighbour IS a degree-7 (left-wing) site. So the left wing's REALIZATION and the metric-no-thirteenth are the SAME open problem. NOT attempted further here."
+  }
+ ],
+ "values": {
+  "deg_table": {
+   "5": {
+    "D_1": 1,
+    "angle_deficit": 2,
+    "sign": "+ right/min-density"
+   },
+   "6": {
+    "D_1": 0,
+    "angle_deficit": 0,
+    "sign": "0 mirror/flat"
+   },
+   "7": {
+    "D_1": -1,
+    "angle_deficit": -2,
+    "sign": "- LEFT/max-density"
+   },
+   "8": {
+    "D_1": -2,
+    "angle_deficit": -4,
+    "sign": "- LEFT/max-density"
+   }
+  },
+  "finding": "the LEFT WING of the mirror -- the negative-curvature / max-density direction 15.C.2 deferred -- is BUILT. Signed curvature D_1 = 6-d extends across the mirror: d>6 is NEGATIVE (LW.1); an explicit degree-7 star realizes rho = |B_1| = 8 > flat 7, D_1 = -1 (LW.2); the {3,7} tiling grows faster than flat (validated cold on flat {3,6}), D_r = [0,-1,-10,-48,-171,-526] < 0 and exponential -- an UNBOUNDED max, the mirror of the twelve's bounded min (LW.3); Gauss-Bonnet forces the left wing onto a chi<0 surface (genus>=2 or the open plane), NOT the genus-0 sphere -- which is WHY the right wing is one-sided (LW.4). The max-density <-> BLACK-HOLE reading is POSTULATE (mirror of 15.C.3); the closed realization, the value, and whether the substrate goes left of the mirror are OWED -- and that last is the metric-no-thirteenth (01.1.6/03.3.7/09.6.6/25.DF.3) from the other side. Danger-free, nothing fitted.",
+  "flat_ball_1": 7,
+  "flat_reproduced_guard": true,
+  "hyp_balls_3_7": [
+   1,
+   8,
+   29,
+   85,
+   232,
+   617
+  ],
+  "hyp_deficit_D_r": [
+   0,
+   -1,
+   -10,
+   -48,
+   -171,
+   -526
+  ],
+  "hyp_rings_3_7": [
+   1,
+   7,
+   21,
+   56,
+   147,
+   385
+  ],
+  "mirror_at_degree": 6,
+  "right_wing_chi": 2,
+  "single_deg7_deficit": -2,
+  "star_B1": 8,
+  "star_D1": -1,
+  "star_centre_degree": 7
+ }
+}

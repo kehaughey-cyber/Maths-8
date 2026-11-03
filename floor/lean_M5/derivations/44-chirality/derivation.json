@@ -1,0 +1,97 @@
+{
+ "container": "44-chirality",
+ "grades": {
+  "DERIVED": 2,
+  "OWED": 1,
+  "POSTULATE": 1
+ },
+ "steps": [
+  {
+   "check": "the 12 even permutations (A4) are closed under composition (even.even=even), all sign +1",
+   "determines": "UNIQUE (the even orbit is closed under composition, sign +1; the carrier is orientation-pure)",
+   "expr": "06.1 builds the carrier's 96-block on the EVEN permutations of four coordinates -- sign +1, orientation-preserving. The 12 even permutations (A4) are CLOSED under composition (even.even=even, the sign homomorphism is multiplicative), so the carrier never generates an orientation-reversing map. And 2I sits in SU(2) = the proper rotations (det +1, the double cover of SO(3)) -- it contains no reflection / improper element",
+   "frm": [
+    "06.6.1"
+   ],
+   "grade": "DERIVED",
+   "id": "CH.1",
+   "value": {
+    "all_even_sign_plus": true,
+    "carrier_in_SU2": "2I subset SU(2) = proper rotations (det +1), the double cover of SO(3) -- no reflection",
+    "clue": "06.1 builds the 96-block on EVEN permutations only; the odd orbit is the conjugate mirror",
+    "even_closed_under_composition": true,
+    "even_count": 12,
+    "odd_count": 12
+   },
+   "what": "the carrier is ORIENTATION-PURE: 06.1's even permutations (sign +1) are closed under composition; 2I subset SU(2) = proper rotations (det +1)",
+   "why": "the handedness, sitting in plain sight in 06. Container 06.1 is literally 'the even permutations of four coordinates', and its own note records that 'taking the odd orbit instead gives a conjugate copy' -- the carrier is one orbit, the EVEN one. Even permutations have sign +1 (orientation-preserving); the sign is a homomorphism to {+1,-1}, so a product of even permutations is even -- the 12 even permutations (A4) are closed under composition. RUN IT: |EVEN| = 12, and even.even = even for all pairs. So nothing the carrier does reverses orientation. This matches the quaternionic picture: 2I is a finite subgroup of SU(2), and SU(2) double-covers SO(3) = the PROPER rotations (det +1); there is no reflection (det -1, an improper element) anywhere in the carrier. The carrier is orientation-PURE -- one handedness, built in."
+  },
+  {
+   "check": "a transposition (sign -1) sends every even carrier element into the disjoint odd orbit -- parity is not a self-map",
+   "determines": "UNIQUE (parity sends the even carrier to the disjoint odd conjugate copy -- not a self-map)",
+   "expr": "an orientation reversal is an ODD permutation / a reflection (sign -1). Composing it with any carrier (even) element gives an ODD map (odd.even=odd) -- it lands in the OTHER orbit, the conjugate (odd) copy, which is a DISTINCT carrier (06 finding-2 / CORRECTIONS #5), disjoint from the even one. So the mirror image of the carrier is NOT the carrier: the substrate is CHIRAL",
+   "frm": [
+    "CH.1",
+    "06.6.2"
+   ],
+   "grade": "DERIVED",
+   "id": "CH.2",
+   "value": {
+    "chirality": "the carrier != its mirror image (the conjugate odd copy, 06 finding-2 / CORRECTIONS #5)",
+    "choice_is_the_chirality": "06 chose the even orbit; the choice is the handedness",
+    "mirror_leaves_even_orbit": true,
+    "odd_count": 12,
+    "orbits_disjoint": true,
+    "transposition_parity": 1
+   },
+   "what": "PARITY is not a self-symmetry: an orientation reversal carries the carrier to the DISTINCT conjugate (mirror) copy",
+   "why": "the chirality itself: the carrier is not equal to its own mirror image. Parity (a reflection, an orientation reversal) is an ODD permutation, sign -1. Apply it to the carrier's even orbit: odd.even = odd (the sign flips), so every carrier element is sent OUT of the even orbit into the odd one. The odd orbit is the CONJUGATE copy of the carrier -- 06's finding 2 / CORRECTIONS #5: the base (0,1/2,phi^-1/2,phi/2) on the even orbit vs the odd orbit are conjugate copies differing in 96 of 120 elements, the same abstract 2I in a mirror embedding. The two orbits are DISJOINT (a permutation is even or odd, never both). So parity maps the carrier to a DIFFERENT carrier -- it is not a self-symmetry. The substrate has a definite HANDEDNESS. (This is why 06 had to CHOOSE the even orbit and record the odd as the conjugate: the choice IS the chirality.)"
+  },
+  {
+   "check": null,
+   "determines": "POSTULATE (chirality <-> weak parity violation; a filed correspondence, WEAK, held)",
+   "expr": "filed through the 19 gate: the substrate's single handedness (no parity self-map, CH.2) <-> the WEAK force's parity violation (the one chiral force, SU(2), 28, couples to a single handedness). The carrier having exactly one handedness is the structure the chiral weak force requires. A CORRESPONDENCE, WEAK; reps / the coupling / the V-A form do NOT travel",
+   "frm": [
+    "CH.2",
+    "28.W.2"
+   ],
+   "grade": "POSTULATE",
+   "id": "CH.3",
+   "value": {
+    "correspondence": "substrate chirality <-> weak parity violation (forced here, was cited in 28.W.2)",
+    "does_not_travel": "the matter representations; the V-A structure; the coupling",
+    "downstream_premise_use": false,
+    "falsification": "all-parity-symmetric interactions would refute; the weak force is maximally chiral -- PASSES",
+    "physics_side_cited": "the weak force violates parity maximally -- couples to one handedness (Wu 1957); the other forces do not",
+    "substrate_side": "the carrier is orientation-pure; parity maps it to a distinct mirror copy (CH.1-CH.2)"
+   },
+   "what": "the correspondence (filed through 19): substrate chirality <-> WEAK PARITY VIOLATION",
+   "why": "the physical entry, held to the 19 discipline (mirror of 28.W.3). SUBSTRATE side (checked, CH.1-CH.2): the carrier is orientation-pure and parity carries it to a distinct mirror copy -- one handedness, built in. PHYSICS side (cited, never re-derived): the WEAK force is the one force that VIOLATES PARITY -- it couples only to left-handed fermions (and right-handed antifermions), maximal violation (Wu 1957); the other three forces are parity-symmetric. THE CORRESPONDENCE: the substrate's chirality (the carrier's single handedness, which 28.W.2 already needed and cited from maths-4) <-> the weak force's coupling to a single handedness. It is now forced on the substrate (CH.1-CH.2), not merely cited. FALSIFICATION SURFACE: if the fundamental interactions were ALL parity-symmetric, a chiral substrate would be wrong; but the weak force is maximally parity-violating -- the correspondence PASSES the consistency it asserts. WHAT DOES NOT TRAVEL: the matter REPRESENTATIONS (which fermions are left-handed doublets), the V-A structure, the coupling. A correspondence, quarantined (downstream_premise_use=False); no DERIVED step rests on it."
+  },
+  {
+   "check": null,
+   "determines": "OWED (the left/right labelling convention; the quantitative V-A parity violation -- danger zone)",
+   "expr": "OWED: (a) WHICH of the two orbits maps to physical LEFT -- a convention/reading until matter is oriented on the substrate; (b) the QUANTITATIVE parity violation -- the V-A structure, maximal violation, the specific chiral couplings -- which needs matter representations and values (the danger zone). The substrate's chirality is forced; its orientation labelling and quantitative content are owed",
+   "frm": [
+    "CH.3"
+   ],
+   "grade": "OWED",
+   "id": "CH.4",
+   "value": {
+    "owed_labelling": "which orbit is physical-left -- a convention until matter is oriented on the carrier",
+    "owed_quantitative": "the V-A structure / maximal violation / chiral couplings -- matter + values, danger zone",
+    "present": false
+   },
+   "what": "OWED: which handedness is physical-left (a convention until matter is oriented); the quantitative V-A parity violation (danger zone)",
+   "why": "the honest residual. CH.1-CH.2 force that the substrate is chiral (one handedness, parity not a self-map); CH.3 files the correspondence to weak parity violation. What remains: (a) which orbit is 'left' -- the substrate distinguishes its two mirror copies but nothing here labels one as the physical left-handed sector; that is a convention until matter fields are oriented on the carrier (a later, matter-sector question); (b) the QUANTITATIVE parity violation -- the V-A (vector minus axial) structure, the maximal-violation coupling -- which requires the matter representations and coupling values, the DANGER ZONE, not attempted. So the handedness is forced; the labelling and the numbers are owed. NOT attempted further here."
+  }
+ ],
+ "values": {
+  "even_closed": true,
+  "even_count": 12,
+  "finding": "CHIRALITY forced on the substrate (28.W.2 only CITED it). The clue was in 06: the carrier is built on EVEN permutations (06.1, sign +1), the 12 of which are closed under composition -- so the carrier is ORIENTATION-PURE (CH.1); 2I subset SU(2) = proper rotations (det +1), no reflection. PARITY (an odd permutation / reflection, sign -1) carries the carrier into the DISJOINT odd orbit -- the conjugate mirror copy (06 finding-2 / CORRECTIONS #5), a distinct carrier -- so the substrate is CHIRAL, parity is not a self-symmetry (CH.2). Filed correspondence (CH.3, POSTULATE): substrate chirality <-> WEAK PARITY VIOLATION (the one chiral force, 28). The left/right labelling + the quantitative V-A violation are OWED (CH.4, danger zone). Danger-free; nothing fitted.",
+  "odd_count": 12,
+  "orbits_disjoint": true,
+  "transposition_parity": 1
+ }
+}

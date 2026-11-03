@@ -1,0 +1,109 @@
+{
+ "container": "52-continuum-limit",
+ "grades": {
+  "DERIVED": 2,
+  "OWED": 1,
+  "POSTULATE": 1
+ },
+ "steps": [
+  {
+   "check": "flat_ball = 1+3r+3r^2; |B_r|-3r^2 = 1+3r (lower order); second difference const 6 -> flat 2D coarse limit",
+   "determines": "UNIQUE (flat_ball leading 3r^2, remainder 1+3r lower order, d2 const 6 -> flat 2D coarse limit)",
+   "expr": "flat_ball(r) = 1+3r(r+1) = 1+3r+3r^2 has leading term 3r^2 -- the continuum area-growth of a flat 2-surface; the remainder |B_r| - 3r^2 = 1+3r is LOWER order, so |B_r|/r^2 -> 3 (a constant) as r -> infinity, and the second difference is the constant 6 (degree exactly 2, 25.DF.1). Away from the cones the coarse geometry converges to flat R^2",
+   "frm": [
+    "25.DF.1",
+    "14.B.1"
+   ],
+   "grade": "DERIVED",
+   "id": "CL.1",
+   "value": {
+    "coarse_limit": "flat R^2 (area-growth ~ 3r^2); |B_r|/r^2 -> 3",
+    "leading_coefficient": 3,
+    "lower_is_linear": true,
+    "lower_order_remainder": {
+     "1": 4,
+     "2": 7,
+     "3": 10,
+     "4": 13,
+     "5": 16,
+     "6": 19,
+     "7": 22
+    },
+    "second_difference_const_6": true
+   },
+   "what": "the coarse limit is FLAT 2D: flat_ball(r) = 1+3r+3r^2, |B_r|/r^2 -> 3, second difference const 6 (degree 2, 25)",
+   "why": "the convergence, danger-free. The discrete ball-count flat_ball(r) = 1+3r+3r^2 is a degree-2 polynomial (25.DF.1 forced intrinsic dimension 2 from exactly this). Its leading term 3r^2 is the continuum AREA-growth of a flat 2-surface (a disk of radius r has area ~ r^2); the correction |B_r| - 3r^2 = 1+3r is linear -- lower order -- so the ratio |B_r|/r^2 = 3 + 3/r + 1/r^2 -> 3 as r grows. The second difference is the constant 6 (degree exactly 2, no cubic term). So under refinement/at large scale the substrate's counting CONVERGES to flat 2-dimensional Euclidean area-growth: the coarse geometry is FLAT R^2 (away from the cones, CL.2). This is why GR's smooth flat manifold works as the coarse image -- the substrate's own counting IS flat 2D area-growth in the limit. A limit statement, exact-integer, no continuum axiom smuggled."
+  },
+  {
+   "check": "12 cones, each 2 radits (pi/3); total 12*2 = 24 radits = 4*pi = 2*pi*chi (a 12-cone orbifold sphere)",
+   "determines": "UNIQUE (12 cones, each pi/3, total 4*pi = 2*pi*chi -- a 12-cone orbifold sphere)",
+   "expr": "refinement does NOT smear the combinatorial curvature (39.PM.1), so the continuum keeps 12 conical singularities, each with cone-deficit = the angle deficit at d=5 = 2 radits = pi/3 (38.DV.1; 12 radits = 2pi); total 12*(pi/3) = 24 radits = 4*pi = 2*pi*chi (Gauss-Bonnet, chi=2, 38.DV.3). So the emergent continuum is a smooth 2-SPHERE with 12 cone-points -- a 12-cone ORBIFOLD",
+   "frm": [
+    "CL.1",
+    "39.PM.1",
+    "38.DV.1"
+   ],
+   "grade": "DERIVED",
+   "id": "CL.2",
+   "value": {
+    "cone_deficit": "pi/3 (2 radits, 12 radits = 2pi)",
+    "cone_deficit_radits": 2,
+    "cones": 12,
+    "continuum": "a smooth 2-sphere with 12 conical singularities -- a 12-cone orbifold, total cone-deficit 4*pi",
+    "total_is_4pi": true,
+    "total_radits": 24
+   },
+   "what": "the 12 cones persist (39 orbifold): each cone-deficit pi/3 (38), total 12*(pi/3) = 4*pi -- a 12-cone ORBIFOLD sphere",
+   "why": "the singular structure the flat limit leaves behind. Container 39.PM.1 proved refinement does not SMEAR the deficit -- it stays concentrated at the twelve degree-5 sites -- so the continuum is NOT a smooth sphere but a 12-cone ORBIFOLD. CL.1 gives the smooth flat coarse limit BETWEEN the cones; at each of the 12 cone-points the deficit persists as a conical singularity of cone-deficit = the angle deficit at d=5 = 2 radits (38.DV.1) = pi/3 (since 12 radits = 2pi). The total is 12*(pi/3) = 24 radits = 4*pi = 2*pi*chi (chi=2, Gauss-Bonnet, 38.DV.3 -- the same 4*pi double cover). So the emergent continuum is precisely: a smooth 2-sphere everywhere EXCEPT 12 conical points, total cone-deficit 4*pi. This is the geometric arena for gravity -- flat away from sources (CL.1), concentrated curvature at the twelve (the sources, 20/37), total 4*pi (38)."
+  },
+  {
+   "check": null,
+   "determines": "POSTULATE (GR's smooth manifold = the emergent coarse orbifold image; a large-N limit, not a floor axiom; held)",
+   "expr": "GR's smooth (pseudo-Riemannian) manifold <-> the substrate's EMERGENT coarse image AWAY from the 12 cones: flat 2D at large scale (CL.1), the cones the localized sources (CL.2). It is a large-N limit (40's ZPHI = curves-at-scale -- the smooth manifold is the coarse-scale image, not the privileged real), NOT a floor axiom (08.8.6) -- the substrate stays quantized. A CORRESPONDENCE, WEAK",
+   "frm": [
+    "CL.2",
+    "40.DF.5",
+    "08.8.6"
+   ],
+   "grade": "POSTULATE",
+   "id": "CL.3",
+   "value": {
+    "correspondence": "GR's smooth manifold <-> the emergent coarse image away from the cones (40, ZPHI = curves-at-scale)",
+    "does_not_travel": "the continuum as privileged real; the metric dynamics (46 + mass, danger); any value",
+    "downstream_premise_use": false,
+    "emergent_not_axiom": "a large-N limit (08.8.6), NOT a floor rung -- the substrate stays quantized",
+    "physics_side_cited": "GR's smooth pseudo-Riemannian manifold",
+    "substrate_side": "flat 2D coarse limit (CL.1) + 12 persistent cones (CL.2) = a 12-cone orbifold"
+   },
+   "what": "the reading (filed through 19): GR's smooth manifold = the EMERGENT coarse image away from the cones (40); NOT a floor axiom (08.8.6)",
+   "why": "the entry, held to the 19 discipline. SUBSTRATE side (checked, CL.1-CL.2): the coarse limit is flat 2D with 12 persistent conical singularities (an orbifold), total cone-deficit 4*pi. PHYSICS side (cited): general relativity models spacetime as a smooth pseudo-Riemannian manifold. THE CORRESPONDENCE: GR's smooth manifold <-> the substrate's emergent coarse image away from the cones (40's ZPHI = curves-at-scale, the smooth manifold as the coarse-scale image -- GR's continuum is itself an idealization, 39/40). Crucially it is EMERGENT, a large-N limit, NOT a floor rung (08.8.6): axiomatizing a continuum would smuggle continuity into a discrete substrate. WHAT DOES NOT TRAVEL: that the continuum is the privileged real (it is the coarse image); the metric DYNAMICS (46's metric identification + mass = the danger zone); any value. A correspondence, quarantined; no downstream premise use."
+  },
+  {
+   "check": null,
+   "determines": "OWED (analytic metric convergence -- 46 + mass, danger; cone-resolution; leaving the orbifold -- 36/48)",
+   "expr": "OWED: (a) the ANALYTIC convergence -- a measure/metric limit, not just the leading-order count -- which needs 46's metric identification and, for the dynamics, MASS (the danger zone); (b) the orbifold cone-RESOLUTION (how, if ever, the cones smooth); (c) whether the substrate ever LEAVES the orbifold -- the left wing (36/48), the metric-no-thirteenth. The SHAPE is forced; the analysis and the dynamics are owed",
+   "frm": [
+    "CL.3"
+   ],
+   "grade": "OWED",
+   "id": "CL.4",
+   "value": {
+    "owed_analytic": "the measure/metric convergence (not just the leading count) -- needs 46's metric + mass (danger)",
+    "owed_left_wing": "whether the substrate leaves the orbifold into the left wing (36/48) -- the metric-no-thirteenth",
+    "owed_resolution": "the orbifold cone-resolution -- the cones are source sites (danger)",
+    "present": false
+   },
+   "what": "OWED: the analytic measure/metric convergence (46's metric + mass, danger); the cone-resolution; whether the substrate leaves the orbifold (36/48)",
+   "why": "the honest residual. CL.1-CL.2 force the SHAPE of the emergent continuum (flat 2D + 12 cones = an orbifold sphere, total 4*pi); CL.3 files the GR correspondence. What remains: (a) the ANALYTIC limit -- genuine measure/metric convergence (not just the leading r^2 coefficient) -- which needs a metric (46's identification, itself a correspondence) and, for gravity DYNAMICS, a stress-energy = MASS: the DANGER ZONE; (b) the cone-RESOLUTION -- whether/how the conical singularities resolve (they are the mass/source sites, so this too touches the danger zone); (c) whether the substrate ever leaves the right-wing orbifold into the left wing (36/48), the metric-no-thirteenth (41/42/43). So the emergent continuum's SHAPE is forced and danger-free; the analytic limit, the dynamics, and the cone-resolution are the forward, gated work. NOT attempted here."
+  }
+ ],
+ "values": {
+  "cone_deficit_radits": 2,
+  "cones": 12,
+  "finding": "THE CONTINUUM LIMIT: the emergent smooth manifold is a 12-cone ORBIFOLD sphere. 08.8.6 holds the continuum as an emergent large-N limit; here its SHAPE is forced, danger-free. The coarse limit is FLAT 2D -- flat_ball(r)=1+3r+3r^2, leading 3r^2 (continuum area-growth), |B_r|/r^2 -> 3, second difference const 6 (degree 2, 25) (CL.1). The 12 cones PERSIST under refinement (39.PM.1's orbifold), each cone-deficit pi/3 (38.DV.1), total 12*(pi/3) = 4*pi = 2*pi*chi (38.DV.3) -- so the continuum is a smooth 2-sphere with 12 conical singularities, a 12-cone orbifold (CL.2). GR's smooth manifold = the emergent coarse image away from the cones (40's curves-at-scale), NOT a floor axiom (08.8.6) -- POSTULATE (CL.3). The analytic metric convergence + dynamics + cone-resolution are OWED (CL.4, danger zone). Danger-free; nothing fitted.",
+  "leading_coefficient": 3,
+  "second_difference_const_6": true,
+  "total_is_4pi": true,
+  "total_radits": 24
+ }
+}

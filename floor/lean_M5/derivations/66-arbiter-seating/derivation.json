@@ -1,0 +1,234 @@
+{
+ "container": "66-arbiter-seating",
+ "grades": {
+  "DERIVED": 4,
+  "OWED": 1,
+  "POSTULATE": 1
+ },
+ "steps": [
+  {
+   "check": "the arbiter (identity) clock has seats 13/13/4 by latitude, universal over all 288 aligned ticks",
+   "determines": "UNIQUE (arbiter seat-count 13/13/4, universal over the 288)",
+   "expr": "the arbiter is the tick's 30-clock through the observer -- the clock containing the identity 1 (the axis-1 clock of 65, the composite order-5 x order-6 servicing circuit). Classifying its 30 seats by latitude sign (Re(v) > 0 above, < 0 below, = 0 on the equator -- exact sign over Z[phi]) gives EXACTLY 13 above / 13 below / 4 equator -- seat-symmetric about the equator (mean latitude zero). Sweeping all 288 frame-aligned ticks (65), this 13/13/4 holds for EVERY one -- a universal property of the arbiter clock, reproducing the fork's arbiter seat census cold",
+   "frm": [
+    "65.FC.3",
+    "64.CX.1"
+   ],
+   "grade": "DERIVED",
+   "id": "AS.1",
+   "value": {
+    "canonical_arbiter_seats": [
+     13,
+     13,
+     4
+    ],
+    "n_aligned": 288,
+    "seat_distribution": {
+     "(13, 13, 4)": 288
+    },
+    "seat_universal_13_13_4": true,
+    "shells": [
+     [
+      0,
+      1
+     ],
+     [
+      1,
+      12
+     ],
+     [
+      2,
+      32
+     ],
+     [
+      3,
+      42
+     ],
+     [
+      4,
+      32
+     ],
+     [
+      5,
+      1
+     ]
+    ]
+   },
+   "what": "THE ARBITER CLOCK: the servicing clock through the observer (the identity's clock, axis-1 of 65) has seat-count 13 above / 13 below / 4 equator (mean latitude zero) -- and this seat-symmetry is UNIVERSAL: 13/13/4 for ALL 288 frame-aligned ticks",
+   "why": "the arbiter clock, grounded. The fork's Proton-Capture chapter states the arbiter's 30-step walk is 'symmetric about the equator -- 13 above, 13 below, 4 on the equator, mean latitude zero'. Here that is reproduced cold as the identity's tick-clock, and shown UNIVERSAL across the 288 aligned ticks. Exact-integer over Z[phi] (exact latitude sign); deterministic clock computation."
+  },
+  {
+   "check": "arbiter clock total lag = 81 = 9^2 (universal over 288); canonical split 18/51/12",
+   "determines": "UNIQUE (arbiter total lag 81 = 9^2, universal; canonical split 18/51/12)",
+   "expr": "lag-depth(v) = the registration distance = the adjacency-graph distance from the pole 1 (the causal shells {1,12,32,42,32,1}, diameter 5). Summing lag-depth over the arbiter clock's 30 seats gives EXACTLY 81 = 9^2 (the lag budget eta(W)=9, squared) -- and this total 81 is UNIVERSAL across all 288 aligned ticks. For the canonical tick the split by latitude is 18 above / 51 below / 12 equator (18+51+12 = 81) -- the fork's arbiter dwell census, cold",
+   "frm": [
+    "AS.1"
+   ],
+   "grade": "DERIVED",
+   "id": "AS.2",
+   "value": {
+    "canonical_lag_split": [
+     18,
+     51,
+     12
+    ],
+    "canonical_total_lag": 81,
+    "lag_distribution": {
+     "81": 288
+    },
+    "total_lag_universal_81": true
+   },
+   "what": "THE LAG CENSUS: weighting each seat by its registration distance (graph distance from the pole 1; shells {1,12,32,42,32,1}), the arbiter clock's TOTAL LAG is EXACTLY 81 = 9^2 -- UNIVERSAL over the 288. The canonical split is 18 above / 51 below / 12 equator",
+   "why": "the fork's '81 = 9^2' lag budget and the 18/51/12 dwell, reproduced cold. The registration distance is the substrate's own causal depth (the diameter-5 shells); its sum over the arbiter clock is exactly the winding budget squared. That the total 81 is universal (like the 13/13/4 seat-count) means these are structural features of every aligned tick's arbiter clock, not fitted. Exact-integer (BFS distances)."
+  },
+  {
+   "check": "arbiter lean = -33; four-clock total = -93 = sum_all sign(Re v)*dist(1,v), tick-independent",
+   "determines": "UNIQUE (arbiter lean -33; four-clock total -93 = a tick-independent substrate constant)",
+   "expr": "the arbiter LEAN = (lag-weighted above) - (lag-weighted below) = 18 - 51 = -33 for the canonical tick -- the fork's proton lean (Proton-Capture chapter), reproduced cold. The FOUR-CLOCK TOTAL lean is EXACTLY -93 (the fork's Keystone total, 'the arbiter chose BELOW'). CRUCIAL: because the four clocks PARTITION all 120 seats, the four-clock total = sum over ALL 120 of sign(Re v) * dist(1, v) = -93 -- a TICK-INDEPENDENT substrate constant (every aligned tick's four leans sum to -93; both lean-multiset classes of AS.4 sum to -93). So -93 is a substrate CONSTANT, not a selector; the parity bit is its global-reflection mirror +93 (reflect the carrier -> flip every Re-sign), unobservable from within",
+   "frm": [
+    "AS.1",
+    "AS.2"
+   ],
+   "grade": "DERIVED",
+   "id": "AS.3",
+   "value": {
+    "canonical_arbiter_lean": -33,
+    "four_clock_total_lean": -93,
+    "parity_bit": "the global reflection of the carrier (-93 <-> +93), unobservable from within",
+    "total_is_tick_independent": true
+   },
+   "what": "THE LEAN, REPRODUCED COLD: the arbiter lean = (lag above) - (lag below) = 18 - 51 = -33 (the fork's proton lean). The FOUR-CLOCK TOTAL lean is -93 (the fork's Keystone total) -- but it is a TICK-INDEPENDENT CONSTANT (the clocks partition all 120), so -93 is a substrate constant, NOT a selector",
+   "why": "the fork's -33 and -93, reproduced cold AND correctly typed. The -93 is real, but it is a global constant (a sum over all 120 seats), so it cannot select a tick -- an honest correction to any reading that treats -93 as a tick-property. The parity bit (the fork's 'sign set at the origin, +93 vs -93') is the global reflection of the carrier, the free ZZ/2 -- consistent with 65.FC.4 (the origin-sign). Exact-integer."
+  },
+  {
+   "check": "arbiter lean is 2-valued (-33:144, -25:144); 4-clock lean multiset has 2 classes of 144; cuts 288->2",
+   "determines": "UNIQUE (arbiter lean 2-valued: -33 [144] / -25 [144]; cuts 288 -> 2, not -> 1)",
+   "expr": "does the arbiter lean CUT the 288 frame-aligned ticks? Seat-count (13/13/4, AS.1) and total lag (81, AS.2) are UNIVERSAL -- they carry no selective content. But the arbiter clock's LEAN is -33 for 144 of the 288 and -25 for the other 144; equivalently the sorted 4-clock lean multiset takes EXACTLY 2 values -- (-33,-26,-22,-12) [144 ticks, the max-arbiter-lean / canonical class] and (-26,-25,-22,-20) [144 ticks] (both summing to -93, AS.3). So the arbiter lean CUTS 288 -> 2 classes of 144. It does NOT cut to a unique tick: 144 remain in the -33 class (12 with the S3 axis-labeling, 16 or 32 each)",
+   "frm": [
+    "AS.3",
+    "65.FC.3"
+   ],
+   "grade": "DERIVED",
+   "id": "AS.4",
+   "value": {
+    "arbiter_lean_values": {
+     "-33": 144,
+     "-25": 144
+    },
+    "cut": "288 -> 2 classes of 144 (NOT -> 1)",
+    "lean_multiset_counts": {
+     "[-26, -25, -22, -20]": 144,
+     "[-33, -26, -22, -12]": 144
+    },
+    "max_arbiter_lean": 33,
+    "n_in_maxlean_class": 144,
+    "n_lean_multisets": 2
+   },
+   "what": "THE SELECTOR TEST: seat 13/13/4 and lag 81 are UNIVERSAL (no cut), but the 4-clock lean MULTISET takes EXACTLY 2 values over the 288 -- (-33,-26,-22,-12) [144] and (-26,-25,-22,-20) [144]. So the arbiter lean CUTS 288 -> 2 classes of 144; the arbiter's own lean is -33 or -25 (144 each). NOT a unique tick",
+   "why": "the decisive result -- and it is neither dismissal nor forcing. The arbiter lean is NOT inert (it genuinely splits the 288 into two lean-classes, 144 each) -- so re-deriving the arbiter seating IS a real further selector. But it does NOT achieve the forcing Kevin's chain asked whether it reaches: it cuts 288 -> 2, not 288 -> 1. G4 refuter: had the arbiter lean been universal (one value for all 288), the arbiter seating would carry no selective content; had it been 288-valued, it would pick a unique tick -- instead it is 2-valued (144/144). G3: the computation names no physics -- it is lag-weighted latitude sums on tick-clocks. Exact-integer over the 288."
+  },
+  {
+   "check": null,
+   "determines": "POSTULATE (the arbiter seating cuts 288 -> 2, reproduces the fork's -33/81/-93 cold; a further reduction, NOT a forcing; a unique tick remains owed)",
+   "expr": "the disciplined verdict. Re-deriving the arbiter seating cold REPRODUCES the fork's arbiter apparatus exactly and unfitted: the arbiter (servicing) clock is seat-symmetric 13/13/4 (AS.1), total lag 81 = 9^2 (AS.2), lean -33 (AS.3); the four-clock total -93 is a tick-independent substrate constant (AS.3). As a canonical selector it CUTS the 288 frame-aligned ticks to 2 lean-classes of 144 (AS.4); the max-arbiter-lean class (-33) holds the canonical tick and the proton's -33. But it does NOT force a UNIQUE tick up to parity: 144 remain (12 with the S3 axis-labeling, 16/32 each). So the reduction chain DEEPENS by one honest step (61 count-3 -> 62 which-A2 -> 64 the tick=Coxeter -> 65 the frame 480->288 -> 66 the arbiter lean 288->2) but the FORCING that Kevin's chain asked whether the arbiter seating achieves is NOT reached: a unique tick up to parity remains owed (AS.6). The parity bit is the global carrier-reflection (-93 <-> +93). Does NOT touch the content map (K2, 63). The fork's arbiter numbers (-33, 81, the 116 of 65) are now grounded cold; its mass numbers stay CANDIDATE (they rest on K2 and on the 144-fold residual, both owed)",
+   "frm": [
+    "AS.4"
+   ],
+   "grade": "POSTULATE",
+   "id": "AS.5",
+   "value": {
+    "chain": "61 count-3 -> 62 which-A2 -> 64 tick=Coxeter -> 65 frame 480->288 -> 66 arbiter-lean 288->2 (all reductions)",
+    "cut": "288 -> 2 lean-classes of 144 (max-lean -33 class = 144)",
+    "does_not_touch": "the content map (K2, 63); fork mass numbers stay CANDIDATE",
+    "downstream_premise_use": false,
+    "is_forcing": false,
+    "is_selector": true,
+    "parity_bit": "the global carrier-reflection (-93 <-> +93)",
+    "reproduces_fork_cold": [
+     "arbiter 13/13/4",
+     "lag 81=9^2",
+     "lean -33",
+     "four-clock total -93"
+    ],
+    "residual": "144 in the -33 class (12 with S3 axis-labeling, 16/32 each)"
+   },
+   "what": "(verdict, POSTULATE) The arbiter seating is a genuine cold-reproduced SELECTOR (reproduces -33/81/13-13-4/-93 exactly; cuts 288 -> 2 lean-classes, the max-lean -33 class = 144 holding the canonical tick + the proton's -33) but does NOT force a unique tick. The reduction chain DEEPENS (61->62->64->65->66); the FORCING is NOT achieved -- 144 remain",
+   "why": "the honest landing, careful in both directions. It does NOT dismiss the arbiter seating (it is a real selector -- 288 -> 2 -- and it reproduces the fork's numbers cold, a genuine advance in grounding the fork). It does NOT over-affirm (it is NOT the forcing -- 144 remain; claiming 'canonical tick forced' would be the over-affirmation twin of CORRECTIONS #12's dismissal). So the chain 61->62->64->65->66 is five honest reductions, and the forcing stays owed -- the truthful state. No downstream premise rests on this reading; filed through 19, quarantined."
+  },
+  {
+   "check": null,
+   "determines": "OWED (a unique-tick selector within the 144 class, or the irreducibility proof; plus K2)",
+   "expr": "OWED: (a) a substrate principle that cuts the 144-tick max-arbiter-lean class to a UNIQUE tick (up to the parity bit and the S3 axis-naming) -- would complete the forcing the chain 61->62->64->65->66 has been approaching; (b) failing that, a proof the residual (144, or 12 up to labeling) is irreducible -- the arbiterness is genuinely a family; (c) independently, the K2 content selection (which irreps are the fermions, 61/63). The fork's mass numbers (the 116-metered n-p splitting, the proton ratio) rest on the arbiter seating (now partly grounded) AND on K2 AND on the 144-fold residual -- CANDIDATE, not banked. Nothing fitted; the refused-list binds",
+   "frm": [
+    "AS.5"
+   ],
+   "grade": "OWED",
+   "id": "AS.6",
+   "value": {
+    "fork_masses_status": "CANDIDATE (rest on the arbiter seating + K2 + the 144 residual)",
+    "owed_from_61_63": "the K2 content selection -- still the lone open input",
+    "owed_impossibility": "or a proof the 144-fold residual is irreducible",
+    "owed_unique_tick": "a principle cutting the 144 max-lean class to 1 up to parity/labeling (-> the forcing)",
+    "present": false
+   },
+   "what": "OWED: a principle selecting a UNIQUE tick within the max-lean (-33) class (144 -> 1 up to parity/labeling), or a proof the residual is irreducible; plus the K2 content selection (61/63). Nothing fitted",
+   "why": "the honest residual, located and not attempted. The arbiter seating reduces the arbiterness (288 -> 2, or -> the 144 max-lean class) but does not force a unique tick; what remains is the finest cut, and re-deriving it (or proving it irreducible) is the next crossing. Even a unique tick would not close K2. The discipline holds: no mass value is assembled here."
+  }
+ ],
+ "values": {
+  "arbiter_lean_values": {
+   "-33": 144,
+   "-25": 144
+  },
+  "canonical_arbiter_lean": -33,
+  "canonical_arbiter_seats": [
+   13,
+   13,
+   4
+  ],
+  "canonical_lag_split": [
+   18,
+   51,
+   12
+  ],
+  "canonical_total_lag": 81,
+  "finding": "THE ARBITER SEATING (Kevin: run the piece that would turn the chain into a forcing). Cold, target out of view. The arbiter = the servicing clock through the observer (the identity's tick-clock). Its census reproduces the fork EXACTLY and unfitted: seats 13/13/4 (AS.1, universal over the 288), total lag 81 = 9^2 (AS.2, universal; canonical split 18/51/12), lean -33 (AS.3); the four-clock total -93 is a TICK-INDEPENDENT substrate constant (the clocks partition all 120). As a SELECTOR (AS.4): seat and lag are universal (no cut), but the 4-clock lean multiset takes EXACTLY 2 values over the 288 -- (-33,-26,-22,-12) [144] and (-26,-25,-22,-20) [144] -- so the arbiter lean CUTS 288 -> 2 classes of 144 (the max-lean -33 class holds the canonical tick + the proton's -33). VERDICT (AS.5, POSTULATE): a genuine further REDUCTION (288 -> 2), NOT the forcing -- it does NOT cut 288 -> 1; 144 remain. The chain deepens (61->62->64->65->66, all reductions); a unique tick up to parity remains OWED (AS.6). The parity bit is the global carrier-reflection (-93 <-> +93). Does not touch K2. The fork's -33/81/-93/116 are grounded cold; its mass numbers stay CANDIDATE. Nothing fitted.",
+  "four_clock_total_lean": -93,
+  "lean_multiset_counts": {
+   "[-26, -25, -22, -20]": 144,
+   "[-33, -26, -22, -12]": 144
+  },
+  "max_arbiter_lean": 33,
+  "n_aligned": 288,
+  "n_in_maxlean_class": 144,
+  "n_lean_multisets": 2,
+  "seat_universal_13_13_4": true,
+  "shells": [
+   [
+    0,
+    1
+   ],
+   [
+    1,
+    12
+   ],
+   [
+    2,
+    32
+   ],
+   [
+    3,
+    42
+   ],
+   [
+    4,
+    32
+   ],
+   [
+    5,
+    1
+   ]
+  ],
+  "total_lag_universal_81": true
+ }
+}

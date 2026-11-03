@@ -1,0 +1,126 @@
+{
+ "container": "53-quantum-kinematics",
+ "grades": {
+  "DERIVED": 3,
+  "OWED": 1,
+  "POSTULATE": 1
+ },
+ "steps": [
+  {
+   "check": "the minimal registration boundary is one 2*pi cycle (12 radits) = a U(1) phase",
+   "determines": "UNIQUE (the 2*pi registration cycle is a U(1) phase -- 32.RB.1 / 10.W.2)",
+   "expr": "the substrate's minimal registration boundary is one phase cycle = 2*pi (32.RB.1: twelve pi/6-writes fill the 2*pi cycle, 10.W.2). A 2*pi cycle is a U(1) -- the unit circle. So registration carries a PHASE, the U(1) phase of quantum mechanics",
+   "frm": [
+    "32.RB.1",
+    "10.W.2"
+   ],
+   "grade": "DERIVED",
+   "id": "QK.1",
+   "value": {
+    "phase_cycle_radits": 12,
+    "phase_group": "U(1) -- the unit circle (angles mod 2*pi)",
+    "phase_is_2pi": true
+   },
+   "what": "the PHASE: the minimal registration boundary is one 2*pi cycle (32.RB.1 / 10.W.2) -- a U(1), the unit circle",
+   "why": "the first quantum ingredient, already built. Container 10.W.2 (and 32.RB.1) established the substrate's registration boundary is one 2*pi PHASE CYCLE -- twelve pi/6-writes fill it, a thirteenth overflows. A 2*pi cycle is exactly a U(1), the unit circle (angles mod 2*pi). So each registration carries a PHASE living in U(1) -- the same U(1) phase that quantum amplitudes carry (e^{i*theta}). This is the abelian phase (29's u(1)), read now as the QM phase rather than the EM charge. Not a new postulate: the 2*pi cycle is the built registration boundary; here it is identified as the quantum phase U(1). Danger-free."
+  },
+  {
+   "check": "i^2 = -1 (the imaginary unit); C = R(+)R*i abelian subset H -- complex amplitudes",
+   "determines": "UNIQUE (C = R(+)R*i, i^2=-1, abelian, C subset H -- the complex amplitude)",
+   "expr": "the phase U(1) (QK.1) is the unit circle of the abelian sector C = R (+) R*i of the carrier's quaternion algebra H (42/43): i^2 = -1 (the imaginary unit), abelian ([i,i]=0, 29.EM.2), and C sits inside H. So a state carries a COMPLEX amplitude -- a phase (U(1)) times a magnitude -- the C of quantum mechanics",
+   "frm": [
+    "QK.1",
+    "29.EM.2"
+   ],
+   "grade": "DERIVED",
+   "id": "QK.2",
+   "value": {
+    "C_is_2real_dim": true,
+    "complex_amplitude": "z = magnitude * e^{i*phase}; C = R(+)R*i subset H (42/43); the abelian sector (29)",
+    "i_squared": [
+     -1,
+     0,
+     0,
+     0
+    ],
+    "i_squared_is_neg1": true
+   },
+   "what": "COMPLEX amplitudes: the phase U(1) is the abelian C-sector of the carrier -- C = R(+)R*i, i^2 = -1, C subset H",
+   "why": "the second ingredient: the amplitudes are COMPLEX. The phase U(1) (QK.1) is the unit circle of a 2-real-dimensional abelian subalgebra: C = R (+) R*i, spanned by 1 and one imaginary unit i with i^2 = -1. RUN IT: i*i = (-1,0,0,0) = -1. This C is the ABELIAN direction of the carrier's quaternion algebra H (29.EM.2's u(1), [i,i]=0), and C subset H (42/43). So a substrate state carries a COMPLEX amplitude z = magnitude * e^{i*phase} -- exactly QM's complex amplitude. The complex structure of quantum mechanics is the abelian C-sector of the same H that gives 3D (42) and the spinor (45); the phase is its unit circle. Danger-free -- a structural identification, no measure/probability yet (that is the Born rule, QK.4/QK.5)."
+  },
+  {
+   "check": "carrier elements unit-norm (SU(2)); norm multiplicative (43) => composition is norm-preserving (unitary)",
+   "determines": "UNIQUE (carrier unit-norm SU(2) + multiplicative norm => norm-preserving = unitary evolution)",
+   "expr": "the carrier is SU(2) (28), whose elements are unit-norm (|q| = 1), and the composition norm is MULTIPLICATIVE (43.CN.4/CN.5: |xy| = |x||y|); so registration composition by a carrier element PRESERVES the norm -- it is a UNITARY transformation. Evolution by the carrier is unitary",
+   "frm": [
+    "QK.2",
+    "28.W.2",
+    "43.CN.5"
+   ],
+   "grade": "DERIVED",
+   "id": "QK.3",
+   "value": {
+    "carrier_unit_norm": true,
+    "norm_multiplicative": true,
+    "unitary": "composition by a unit-norm carrier element (SU(2)) preserves the norm -- unitary evolution"
+   },
+   "what": "UNITARITY: the carrier is SU(2) (unit-norm), and the composition norm is multiplicative (43) -- norm-preserving = unitary",
+   "why": "the third ingredient: evolution is UNITARY. Quantum evolution is norm-preserving (unitary) -- probabilities are conserved. On the substrate: the carrier is SU(2) (28.W.2), the group of UNIT-norm quaternions (|q| = 1). Composing a state with a carrier element multiplies norms (43.CN.4/CN.5, the composition norm |xy| = |x||y|), and since the carrier element has norm 1, the state's norm is PRESERVED. RUN IT: carrier elements 1, i have norm^2 = 1; and the norm is multiplicative (|i*i| = |i|*|i| = 1). So registration composition by the carrier is a NORM-PRESERVING (unitary) transformation -- the U of QM's unitary evolution. This is why SU(2) is the *special UNITARY* group. Danger-free -- the composition structure, no measure yet."
+  },
+  {
+   "check": null,
+   "determines": "POSTULATE (the kinematic assembly = QM's stage; the Born rule is the gate, closes 43.CN.4; held)",
+   "expr": "filed through the 19 gate: a U(1) phase (QK.1) + complex amplitudes (QK.2) + norm-preserving composition (QK.3) ARE the kinematic stage of quantum mechanics -- a complex state space, superposition, unitary dynamics. AND the BORN RULE (|amplitude|^2 = probability/measure) is the deep identification, flagged as THE GATE -- it also CLOSES 43.CN.4 (the composition norm = the measure). A CORRESPONDENCE, WEAK; the Born rule, measurement, and values do NOT travel",
+   "frm": [
+    "QK.1",
+    "QK.2",
+    "QK.3"
+   ],
+   "grade": "POSTULATE",
+   "id": "QK.4",
+   "value": {
+    "correspondence": "the substrate's phase/complex/unitary ingredients <-> QM's kinematic stage (the STAGE, as 46 is for GR)",
+    "downstream_premise_use": false,
+    "not_crossed": "the ingredients located, the hinge named and left owed -- no renaming, no hand-waving",
+    "physics_side_cited": "QM's kinematic stage: a complex Hilbert space, unitary evolution, superposition",
+    "substrate_side": "U(1) phase (QK.1) + complex amplitudes (QK.2) + unitary composition (QK.3)",
+    "the_gate": "the BORN RULE: |amplitude|^2 = probability/measure -- danger-adjacent; ALSO closes 43.CN.4 (composition norm = the measure)"
+   },
+   "what": "the ASSEMBLY (filed through 19): U(1) phase + complex amplitudes + unitary evolution = QM's kinematic stage; the BORN RULE is the gate",
+   "why": "the entry, held to the 19 discipline -- and the honest boundary between the danger-free kinematics and the gated Born rule. SUBSTRATE side (checked, QK.1-QK.3): a U(1) phase, complex amplitudes (C subset H), unitary composition (SU(2) + multiplicative norm). PHYSICS side (cited): quantum mechanics' kinematic stage is a COMPLEX Hilbert space with UNITARY evolution and the SUPERPOSITION principle. THE CORRESPONDENCE: the substrate's phase/complex/unitary ingredients <-> QM's kinematic stage. This is the same tier of claim as the Lorentz signature (46) for GR: the STAGE, not the dynamics or the values. THE GATE, stated not crossed: the BORN RULE -- that |amplitude|^2 is the PROBABILITY (the measure) -- is the step from kinematics to physics, and it is DANGER-ADJACENT (it brings in measurement, probability, values). It is ALSO exactly the identification that would close 43.CN.4: the composition/multiplicative norm IS the intensive measure (|amplitude|^2 = the share). So the Born rule is the single deep hinge joining the quantum measure and the composition norm -- flagged HERE as the gate, NOT crossed (no renaming, no hand-waving: the ingredients are located, the hinge is named and left owed). WHAT DOES NOT TRAVEL: the Born rule, measurement/collapse, the full Hilbert space, any value. A correspondence, quarantined; no downstream premise use."
+  },
+  {
+   "check": null,
+   "determines": "OWED (the Born rule = norm^2 = measure, closes 43.CN.4; measurement; Hilbert space; values -- the gate)",
+   "expr": "OWED: (a) the BORN RULE derived -- |amplitude|^2 = the measure/probability -- which is the deep identification also closing 43.CN.4 (the composition norm = the intensive share/measure); it is DANGER-ADJACENT (probability, measurement); (b) measurement / collapse; (c) the full Hilbert-space structure and any values. The kinematic ingredients (QK.1-QK.3) are located; the Born rule and the measurement structure are the gated forward work",
+   "frm": [
+    "QK.4"
+   ],
+   "grade": "OWED",
+   "id": "QK.5",
+   "value": {
+    "gate": "the Born rule is a Kevin-gated crossing (danger-adjacent); closing it closes 43.CN.4 too",
+    "owed_born_rule": "|amplitude|^2 = probability/measure -- danger-adjacent; the SAME hinge as 43.CN.4 (composition norm = the measure)",
+    "owed_hilbert": "the full Hilbert-space structure and any values",
+    "owed_measurement": "measurement / collapse -- how definite outcomes arise",
+    "present": false
+   },
+   "what": "OWED (the gate): the BORN RULE derived (norm^2 = measure, closes 43.CN.4); measurement/collapse; the full Hilbert space; values",
+   "why": "the honest residual and the gate. QK.1-QK.3 locate the danger-free kinematic ingredients (phase, complex amplitudes, unitary evolution); QK.4 files the assembly and names the Born-rule gate. What remains: (a) the BORN RULE -- deriving that |amplitude|^2 is the probability -- which is the identification norm^2 = the intensive measure, EXACTLY the hinge that would close 43.CN.4 (the composition norm as the measure); this is DANGER-ADJACENT (it brings in probability and the measurement problem) and is a Kevin-gated crossing; (b) MEASUREMENT / collapse -- how definite outcomes arise; (c) the full HILBERT-SPACE structure and any numerical values. So the quantum STAGE is located (danger-free); the Born rule / measurement is the gated forward work -- and it is the same hinge as 43.CN.4, so closing one closes the other. NOT attempted here."
+  }
+ ],
+ "values": {
+  "carrier_unit_norm": true,
+  "finding": "QUANTUM KINEMATICS: the substrate's U(1) phase, complex amplitudes, unitary evolution. The minimal registration boundary is one 2*pi cycle (32/10) -- a U(1) PHASE (QK.1); that phase is the abelian C-sector C = R(+)R*i, i^2=-1, C subset H (29/42/43) -- COMPLEX amplitudes (QK.2); the carrier is unit-norm SU(2) (28) with a multiplicative composition norm (43) -- so composition is norm-preserving = UNITARY (QK.3). These ARE QM's kinematic stage (a complex Hilbert space, superposition, unitary dynamics), filed as a correspondence (QK.4, POSTULATE) -- the STAGE, as 46 is for GR. The BORN RULE (|amplitude|^2 = measure) is flagged as THE GATE, danger-adjacent, and it is the SAME hinge that closes 43.CN.4 (the composition norm = the measure) -- named, not crossed; OWED (QK.5). QK.1-QK.3 danger-free; nothing fitted, no renaming.",
+  "i_squared": [
+   -1,
+   0,
+   0,
+   0
+  ],
+  "i_squared_is_neg1": true,
+  "norm_multiplicative": true,
+  "phase_cycle_radits": 12,
+  "phase_is_2pi": true
+ }
+}

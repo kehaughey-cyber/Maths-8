@@ -1,0 +1,117 @@
+{
+ "container": "32-registration-boundary",
+ "grades": {
+  "DERIVED": 2,
+  "OWED": 1,
+  "POSTULATE": 1
+ },
+ "steps": [
+  {
+   "check": "12 pi/6-writes fill the cycle = 2*pi; the 13th overflows (container 10) -> the registration boundary is 2*pi",
+   "determines": "UNIQUE (the phase cycle fills at 12 writes = 2*pi; the 13th overflows -- container 10)",
+   "expr": "closing a registration's adjacency ledger takes 12 writes of pi/6 = 2*pi (container 10's phase ledger); the 13th overflows. So the substrate's OWN minimal closed registration -- its boundary -- is 2*pi (one full phase cycle), forced by the counting, not assumed",
+   "frm": [
+    "10.W.2"
+   ],
+   "grade": "DERIVED",
+   "id": "RB.1",
+   "value": {
+    "boundary_expr": "12*(pi/6) = 2*pi (container 10, proved in-repo)",
+    "boundary_is_2pi": true,
+    "cycle_radits": 12,
+    "cycle_writes": 12,
+    "danger_free": "the dimensionless 2*pi; no mass / Compton / numerology",
+    "thirteen_overflows": true,
+    "twelve_fills": true,
+    "write_radits": 1
+   },
+   "what": "the substrate's minimal registration boundary is one phase cycle = 2*pi (12 pi/6-writes)",
+   "why": "the substrate side of SEC9, consuming container 10 cold. Stone 17 (S.3) ASSUMED that a registration boundary is a 2*pi circumference -- but assumed, never derived (SEC9-PHASE-CLOSURE-HYPOTHESIS, OPEN; re-verified SUPERSEDED_BY: NONE). Here the substrate SUPPLIES its own boundary: container 10's phase ledger (W.2, DERIVED, proved in-repo at Container10.PhaseLedgerReal) shows a registration's adjacency ledger is a cyclic structure of capacity 12, each write costing 1 radit = pi/6 (arcsin(1/2)=pi/6), so 12 writes exactly FILL the cycle (12*(pi/6)=2*pi) and a 13th OVERFLOWS. The minimal CLOSED registration -- the boundary at which the ledger returns to its start -- is therefore 2*pi, one full phase cycle. This is not an assumption about circumferences; it is the substrate's own phase closure (container 10), a COUNT (12 radits) that happens to equal 2*pi. So the substrate HAS a 2*pi boundary, natively. DANGER-FREE: this is the dimensionless 2*pi; no mass, no Compton wavelength, no numerology."
+  },
+  {
+   "check": "BC=2*pi/ln2=9.0647 (Stone 17); the 2*pi boundary in bits = 2*pi/ln2 = BC -> the two 2*pi's are one",
+   "determines": "UNIQUE (BC=2*pi/ln2=9.0647; the boundary in bits = 2*pi/ln2 = BC; the 2*pi's coincide)",
+   "expr": "Stone 17's ruler is BC = 2*pi/ln2 = 9.0647 (S.1). In the substrate's base-2 unit (container 26), the 2*pi registration boundary (RB.1) carries 2*pi/ln2 bits = BC. So container 10's phase 2*pi is the SAME 2*pi that sits in the Bekenstein-Compton ruler -- the 2*pi is identified, not two coincidences",
+   "frm": [
+    "RB.1",
+    "17.S.1",
+    "26.B2.2"
+   ],
+   "grade": "DERIVED",
+   "id": "RB.2",
+   "value": {
+    "BC_expr": "2*pi/ln2",
+    "BC_value": 9.06472,
+    "boundary_in_bits": 9.06472,
+    "certification": "numeric/cited (needs R); the identification of the two 2*pi's is derived",
+    "ln2": 0.693147,
+    "matches_BC": true,
+    "same_2pi": true,
+    "the_two_2pi_are_one": "container 10's phase 2*pi = Stone 17's BC-2*pi"
+   },
+   "what": "the 2*pi boundary IS the 2*pi in Stone 17's BC: BC=2*pi/ln2, boundary=2*pi/ln2 bits",
+   "why": "the bridge: the substrate's phase 2*pi (RB.1) and Stone 17's BC-2*pi are the SAME 2*pi. Stone 17 derived BC = 2*pi/ln2 by mass-cancellation (R*E=hbar*c, S.1); the 2*pi there came from the Compton = one-full-wave = 2*pi-circumference ASSUMPTION (S.3). RB.1 supplies that 2*pi from the substrate (the phase cycle). Now measure the boundary's information in the substrate's OWN unit: base-2 (container 26 -- the registrable alphabet is 2, so the count is in bits). The 2*pi boundary, expressed in bits, is 2*pi/ln2 (the ln2 = nats->bits conversion, container 26) = 9.0647 = exactly Stone 17's BC. So the substrate's registration boundary, in bits, IS BC. The two 2*pi's -- the phase cycle (10) and the Bekenstein-Compton ruler (17) -- are one. (The number BC=9.0647 needs R; cited/numeric, as Stone 17's own BC line is. The IDENTIFICATION of the two 2*pi's is the derived content; the physical reading is RB.3.) DANGER-FREE: still dimensionless (2*pi, ln2, BC); no mass."
+  },
+  {
+   "check": null,
+   "determines": "POSTULATE (the filed SEC9 correspondence: substrate 2*pi boundary <-> Compton 2*pi; held, quarantined)",
+   "expr": "filed through the 19 gate: the substrate's 2*pi registration boundary (RB.1) <-> the Compton wavelength's 2*pi (Stone 17 S.3a, the assumed equivalence); the boundary's information (2*pi nats = BC, RB.2) <-> Bekenstein-at-Compton (Kevin's min-info = 2*pi nats lead). Discharges S.3a from ASSUMED to CORRESPONDED. The mass (R=hbar/mc) stays external (27); the physical reading is held",
+   "frm": [
+    "RB.1",
+    "RB.2",
+    "17.S.3"
+   ],
+   "grade": "POSTULATE",
+   "id": "RB.3",
+   "value": {
+    "consequence": "BC=2*pi/ln2 is now an APPLICABLE ruler on the substrate, not just a matched calibration",
+    "correspondence": "substrate 2*pi boundary <-> Compton 2*pi; boundary info (2*pi nats = BC) <-> Bekenstein-at-Compton",
+    "correspondence_not_resolution": true,
+    "discharges": "Stone 17 S.3a from ASSUMED to a filed CORRESPONDENCE (SEC9, the load-bearer)",
+    "downstream_premise_use": false,
+    "falsification_surface": "the substrate boundary must be 2*pi (RB.1); a non-full-cycle closure would fail it",
+    "min_info_lead": "Kevin's min-info = Bekenstein-at-Compton (2*pi nats), made precise -- the same 2*pi",
+    "physics_side_cited": "Stone 17 S.3 (assumed): Compton R=hbar/mc = 2*pi-circumference = the boundary; Bekenstein-at-Compton = BC",
+    "sec9_open": "re-verified OPEN, SUPERSEDED_BY: NONE",
+    "substrate_side": "the registration boundary is 2*pi (RB.1); in bits = BC (RB.2)",
+    "weak_consistency_not_discrimination": true,
+    "what_does_not_travel": "the MASS (R=hbar/mc, one of the 3 external Planck anchors, 27); the base-2 reading (26); the physical mechanism"
+   },
+   "what": "THE FILED ENTRY (SEC9): the substrate's 2*pi boundary <-> the Compton 2*pi; info <-> Bekenstein",
+   "why": "the entry, the four parts, and the discharge of the load-bearing SEC9 assumption. SUBSTRATE SIDE (checked): the registration boundary is 2*pi (RB.1); in bits it is BC (RB.2). PHYSICS SIDE (cited, Stone 17 S.3, assumed/unproven): the Compton wavelength R=hbar/mc is one full wave = a 2*pi circumference = the minimum registration boundary; the Bekenstein bound at that scale is 2*pi/ln2 = BC. THE CORRESPONDENCE: the substrate's 2*pi phase boundary <-> the Compton 2*pi; the boundary's information (2*pi nats = BC) <-> Bekenstein-at-Compton. This is Kevin's deferred lead 'min-info = Bekenstein-at-Compton (2*pi nats)', made precise: the minimum to register (close one phase cycle) is 2*pi, and Bekenstein at the Compton scale is 2*pi -- the SAME 2*pi. So Stone 17's S.3a (the assumed Compton=registration-boundary) is DISCHARGED from ASSUMED to a filed CORRESPONDENCE: the substrate has its own 2*pi boundary, and it matches. WHAT DOES NOT TRAVEL: the MASS (R=hbar/mc contains m, one of the 3 irreducibly-external Planck anchors, container 27 -- NOT derived); the base-2 READING (container 26, held); the PHYSICAL identification (that the Compton scale IS where a physical registration happens -- a correspondence, not a proof of the mechanism). FALSIFICATION SURFACE: the substrate boundary MUST be 2*pi (checked, RB.1); if a registration closed at anything but a full cycle, the correspondence -- and BC's applicability -- would FAIL. CONSEQUENCE (the load-bearer unblocked): with S.3a corresponded, BC=2*pi/ln2 is no longer merely a matched calibration but an APPLICABLE dimensionless ruler on the substrate. A CORRESPONDENCE, WEAK (consistency, not discrimination); quarantined. SEARCH-FIRST honoured: SEC9 re-verified OPEN, SUPERSEDED_BY: NONE."
+  },
+  {
+   "check": null,
+   "determines": "OWED (the mass -- external; the Planck anchor -- Step 3; discrimination; the value -- Step 4; located)",
+   "expr": "the mass m in R=hbar/mc is external (27, one of the 3 Planck anchors); the Planck anchor (l_P=edge/t_P=tick, Step 3) is next; DISCRIMINATION is owed (Stone 17 S.4 -- SEC9 is an identity, not yet a prediction that forbids anything); the full alpha value waits on all of it. Located",
+   "frm": [
+    "RB.3",
+    "27.DA.2"
+   ],
+   "grade": "OWED",
+   "id": "RB.4",
+   "value": {
+    "discrimination_owed": "Stone 17 S.4 -- SEC9 as discharged is an identity, not yet a forbidding prediction",
+    "located_not_attempted": true,
+    "mass_external": "m in R=hbar/mc is one of the 3 irreducibly-external Planck anchors (27); not derived",
+    "planck_anchor": "Stone 18 P.3 (l_P=edge/t_P=tick => c=alpha/tau) -- alpha-value plan Step 3, next",
+    "present": false,
+    "the_value": "the full alpha value + rho_Lambda (Step 4) wait behind the mass, the anchor, and alpha_hat"
+   },
+   "what": "the mass (external, 27), the Planck anchor (Step 3), discrimination, the alpha value -- OWED",
+   "why": "the residual, located and NOT attempted -- the honest boundary. RB.1-RB.3 discharge SEC9 (the registration boundary is 2*pi, corresponding to the Compton 2*pi) as a correspondence, unblocking BC as an applicable ruler. What remains for alpha's value: (i) the MASS in R=hbar/mc -- one of the 3 irreducibly-external Planck anchors (container 27); the substrate does not, and per 27 cannot, emit it -- it enters at measurement; (ii) the PLANCK ANCHOR (Stone 18 P.3: l_P=edge, t_P=tick => c=l_P/t_P=alpha/tau) -- the alpha-value plan's Step 3, to prove or refute; (iii) DISCRIMINATION -- Stone 17 S.4: SEC9 as discharged is still an IDENTITY (the boundary equals 2*pi equals BC), not a prediction that forbids a measurement; it passes on consistency, not discrimination; (iv) the full alpha VALUE and rho_Lambda (Step 4) wait behind (i)-(iii) plus the dimensionless alpha_hat. So SEC9 is discharged as a correspondence; the mass stays external, the Planck anchor and discrimination and the value are the forward work. NOT attempted here."
+  }
+ ],
+ "values": {
+  "BC_value": 9.06472,
+  "boundary_in_bits": 9.06472,
+  "boundary_is_2pi": true,
+  "cycle_radits": 12,
+  "cycle_writes": 12,
+  "finding": "SEC9 (the load-bearer) DISCHARGED as a correspondence: the substrate's minimal registration boundary is 2*pi (one phase cycle = 12 pi/6-writes, container 10 -- RB.1), and in the substrate's base-2 unit it carries 2*pi/ln2 bits = Stone 17's BC (RB.2) -- so the phase 2*pi and the Bekenstein-Compton 2*pi are ONE; filed through 19 (RB.3, POSTULATE, WEAK) as the substrate 2*pi boundary <-> Compton 2*pi, making Kevin's min-info=Bekenstein-at-2*pi-nats lead precise and unblocking BC as an applicable ruler; the mass stays external (27), the Planck anchor + discrimination + the value are OWED (RB.4). Danger-free.",
+  "matches_BC": true,
+  "sec9_discharged_as_correspondence": true,
+  "thirteen_overflows": true,
+  "twelve_fills": true
+ }
+}

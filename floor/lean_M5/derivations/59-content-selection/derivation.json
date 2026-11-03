@@ -1,0 +1,236 @@
+{
+ "container": "59-content-selection",
+ "grades": {
+  "DERIVED": 3,
+  "OWED": 1,
+  "POSTULATE": 1
+ },
+ "steps": [
+  {
+   "check": "2I: 9 irreps, sum dim^2=120; central-character split A5 {1,3,3',4,5}=60 / spinor {2,2',4',6}=60",
+   "determines": "UNIQUE (9 irreps, sum dim^2=120; w-split A5 {1,3,3',4,5} / spinor {2,2',4',6}, each 60)",
+   "expr": "the carrier 2I = SL(2,5) has 9 irreducible representations, dims {1,2,2',3,3',4,4',5,6}, sum dim^2 = 120 = |2I|. The central element -1 acts as chi(-1)/dim = +1 or -1: the +1 (vector) irreps factor through PSL(2,5) = A5 -- the set {1,3,3',4,5}, sum dim^2 = 60 = |A5|; the -1 (spinor/faithful) irreps are {2,2',4',6}, sum dim^2 = 60. This central character IS the duality grading w (45's central -1, 58's w in \u2124/2)",
+   "frm": [
+    "45.SP.2",
+    "58.HC.1",
+    "06.1"
+   ],
+   "grade": "DERIVED",
+   "id": "KS.1",
+   "value": {
+    "a5_side": [
+     "1",
+     "3",
+     "3'",
+     "4",
+     "5"
+    ],
+    "a5_sum_dim2": 60,
+    "dims": {
+     "1": 1,
+     "2": 2,
+     "2'": 2,
+     "3": 3,
+     "3'": 3,
+     "4": 4,
+     "4'": 4,
+     "5": 5,
+     "6": 6
+    },
+    "spinor_side": [
+     "2",
+     "2'",
+     "4'",
+     "6"
+    ],
+    "spinor_sum_dim2": 60,
+    "sum_dim2": 120
+   },
+   "what": "the forced irrep structure: 2I has 9 irreps (sum dim^2 = 120); the central character (duality w) splits them A5/vector {1,3,3',4,5} (60) vs spinor {2,2',4',6} (60)",
+   "why": "the group-theory floor, forced and target-free. 2I = SL(2,5) is fixed by container 06; its 9 irreps and their dims are standard (the McKay E8 nodes). The central character chi(-1)/dim in {+1,-1} is the duality w already used in 58 (from 45's central -1): the w=0 irreps are exactly those factoring through the A5 = PSL(2,5) quotient (kernel {+-1}), and the w=1 irreps are the genuinely 2-valued (spinorial) ones. The two sides each carry sum dim^2 = 60 = |A5|. All of this is forced with no physics target in view."
+  },
+  {
+   "check": "the 12-neighbour conjugation rep decomposes as 1+3+3'+5 (dims 12); recomputed cold",
+   "determines": "UNIQUE (12-vertex conjugation rep = 1+3+3'+5, dims 12; colour triplet (3,3'))",
+   "expr": "matter = the codim-3 vertex defect (R25); the carrier acts by conjugation on the 12 icosahedron neighbours (the twelve, 09/11), and that 12-dim permutation representation decomposes as 1 (+) 3 (+) 3' (+) 5 (each once; dims 1+3+3+5 = 12). Recomputed cold here from A5's 12-vertex perm rep (permutation character [12,0,0,2,2] over A5's classes -> multiplicities all 1). The colour triplet is the pair (3,3') (31); 1 and 5 are colourless. So the substrate's OWN matter content is a 12-STATE lattice",
+   "frm": [
+    "KS.1",
+    "31.CS.1",
+    "09.6.4"
+   ],
+   "grade": "DERIVED",
+   "id": "KS.2",
+   "value": {
+    "matter_dim": 12,
+    "matter_lattice": [
+     "1",
+     "3",
+     "3'",
+     "5"
+    ],
+    "multiplicities": {
+     "1": 1,
+     "3": 1,
+     "3'": 1,
+     "4": 0,
+     "5": 1
+    },
+    "perm_character": [
+     12,
+     0,
+     0,
+     2,
+     2
+    ]
+   },
+   "what": "the natural matter lattice: the 2I-conjugation rep on the 12 icosahedron neighbours = 1(+)3(+)3'(+)5 (dims 12) -- recomputed cold; colour triplet=(3,3'), 1/5 colourless",
+   "why": "the fork's R25, rederived cold. The 12 neighbours (the kissing twelve, 09/11) carry the A5-conjugation permutation representation; decomposing it against the A5 character table gives multiplicities 1,3,3',5 (each unit) and 0 for the 4 -- recomputed here from scratch (build A5, the C5-coset 12-point action, the perm character [12,0,0,2,2], the inner products). This is the substrate's native matter lattice {1,3,3',5}, dims summing to 12. The (3,3') pair is the colour triplet + its Galois partner (31); 1 and 5 are colour singlets. Target-free: no SM multiplet is invoked here -- this is pure carrier geometry."
+  },
+  {
+   "check": "SM generation 15 (16 w/ nu_R); natural sizes 12/14/16, none = 15 -> content NOT forced (scoped)",
+   "determines": "UNIQUE (SM 15 vs natural 12/14/16 -- none matches; content selection NOT forced, scoped)",
+   "expr": "the SM chiral generation is 15 Weyl states (Q:6 + u_c:3 + d_c:3 + L:2 + e_c:1; 16 with a right-handed neutrino). The substrate's natural content SIZES are: matter lattice 12 (KS.2), spinor set {2,2',4',6} = 14, vector set {1,3,3',4,5} = 16. NONE equals 15. So the map 'substrate irreps -> SM fermion multiplets' is NOT forced by the counting -- it is under-determined (the fork's COMPARISON grade, confirmed). The 16-with-nu_R coincidence is a NOTICING, not a forcing, and it does not respect the SM's SU(3)xSU(2) multiplet structure (an A5 irrep is not an SU(3)xSU(2) multiplet)",
+   "frm": [
+    "KS.2",
+    "56.MC.6"
+   ],
+   "grade": "DERIVED",
+   "id": "KS.3",
+   "value": {
+    "matter_dim": 12,
+    "mismatches": {
+     "matter_12": true,
+     "spinor_14": true,
+     "vector_16": true
+    },
+    "none_is_15": true,
+    "noticing_not_banked": "vector set 16 = generation with nu_R -- a NOTICING (leads allowed), NOT banked (needs nu_R; A5 irreps carry no SU(3)xSU(2) numbers -> renaming, G3)",
+    "sm_generation": {
+     "L": 2,
+     "Q": 6,
+     "d_c": 3,
+     "e_c": 1,
+     "u_c": 3
+    },
+    "sm_states": 15,
+    "sm_with_nu_r": 16,
+    "spinor_dim": 14,
+    "vector_dim": 16
+   },
+   "what": "the K2 gap (SCOPED negative): the SM generation is 15 (16 w/ nu_R); the substrate's natural sizes are 12/14/16 -- NONE is 15, so the content map is NOT forced (the fork's COMPARISON)",
+   "why": "the honest answer to K2, and a SCOPED negative (CORRECTIONS #7). WHAT WAS TESTED: the substrate's natural content sizes (12 the matter lattice, 14 the spinor/fermion set, 16 the vector set) against the SM generation count 15 (16 with nu_R). RESULT: none matches 15 -- the content selection is not fixed by the substrate's counts. The vector set = 16 = a generation WITH nu_R is a real NOTICING and is recorded as such (leads are admissible), but it is NOT banked: (a) it needs nu_R, a choice; (b) an A5 irrep carries no SU(3)xSU(2) quantum numbers, so equating {1,3,3',4,5} with (Q,u_c,d_c,L,e_c,nu_R) would be renaming (G3) -- the dims coincide but the structure does not. So K2 is genuinely under-determined. SCOPE NOT COVERED: a derivation that selects the irreps together WITH their colour/isospin/hypercharge quantum numbers and the right count. REOPENS: on any such derivation (target out of view). This is a discriminating negative -- the substrate's matter content does not, by counting, deliver the SM generation."
+  },
+  {
+   "check": null,
+   "determines": "POSTULATE (mass spectrum {12,4,4,0} forced arithmetic; its physical identification rests on the un-forced K2)",
+   "expr": "the absolute hypercharge levels (58.HC.5) and the fork's mass numbers ride on the content selection (KS.3). The matter-lattice mass spectrum {12,4,4,0} = 12/d over {1,3,3',5} (mass_5 = 0 since 5 does not divide 12) is forced GROUP THEORY given the lattice (KS.2) + the mass-law definition -- but its IDENTIFICATION with physical masses, and the nucleon masses built on it, INHERIT the K2 gap (KS.3). So those numbers are COMPARISON, not forced results",
+   "frm": [
+    "KS.3",
+    "58.HC.5",
+    "56.MC.6"
+   ],
+   "grade": "POSTULATE",
+   "id": "KS.4",
+   "value": {
+    "downstream_premise_use": false,
+    "forced": "the spectrum 12/d over the matter lattice (arithmetic)",
+    "mass_spectrum": [
+     12,
+     4,
+     4,
+     0
+    ],
+    "over": [
+     "1",
+     "3",
+     "3'",
+     "5"
+    ],
+    "rests_on_K2": "the physical-mass identification + all SM mass ratios (incl. the nucleon masses) need the content map (KS.3), not forced"
+   },
+   "what": "the consequence (POSTULATE, filed 19): the absolute hypercharges (58.HC.5) and the fork's mass numbers REST on this un-forced content map -- forced group theory, COMPARISON identification",
+   "why": "the honest consequence, graded POSTULATE. What is EARNED cold: the mass-law SPECTRUM {12,4,4,0} is forced arithmetic (12/d over the matter lattice, with the 5 vanishing because chi_5 = 0). What is a READING (filed 19, quarantined): that these ARE the physical masses / that any SM mass ratio follows -- because that requires the content map (KS.3), which is not forced. Therefore the fork's mass numbers (the matter-lattice spectrum, and the nucleon masses m_p/m_e etc. that build on it) rest on a COMPARISON-grade foundation: they cannot be forced results while K2 is open. This is consistent with the separate assessment of the nucleon chapter (an assembly on an un-forced content map). No downstream premise rests on this reading."
+  },
+  {
+   "check": null,
+   "determines": "OWED (force the irreps+quantum-numbers+count with target out of view; generations not fished)",
+   "expr": "OWED: a derivation that selects which carrier irreps are the fermions TOGETHER WITH their SU(3)xSU(2)xU(1) quantum numbers and the correct state count (respecting 58's forced fractional hypercharge), with the SM content out of view -- only that forces K2 and, with it, the absolute hypercharge levels and the cold sin^2(theta_W) (57). The generation count (three) stays NOT fished (56.MC.6) -- different 3-folds are not one. The 16-with-nu_R noticing is an admissible lead; banking it is refused (G3 renaming, G5 no-fit)",
+   "frm": [
+    "KS.3",
+    "KS.4"
+   ],
+   "grade": "OWED",
+   "id": "KS.5",
+   "value": {
+    "not_fished": "the generation count (three); the 16=16-with-nu_R coincidence (noticing only)",
+    "owed": "select fermion irreps WITH SU(3)xSU(2)xU(1) quantum numbers + correct count, target out of view",
+    "present": false,
+    "unblocks": "the cold sin^2(theta_W) (57), the absolute hypercharges (58), SM mass ratios"
+   },
+   "what": "OWED: what would FORCE K2 -- select the irreps WITH their SU(3)xSU(2)xU(1) quantum numbers and the right count, target out of view; generations (3) NOT fished; 16=16 noticing allowed, banking refused",
+   "why": "the honest residual, and the discipline. K2 is the load-bearing owed premise beneath the matter sector: the cold sin^2(theta_W) (57), the absolute hypercharges (58), and any SM mass ratio all wait on it. Forcing it requires selecting the fermion irreps WITH matching colour/isospin/hypercharge quantum numbers AND the right count -- not by matching a dimension total (the 12/14/16 vs 15 mismatch shows counting alone under-determines it), and not by fishing (the 16=16-with-nu_R coincidence is noticed, not banked; the generation 3 is not fished). Until such a derivation exists, K2 is genuinely open and the fork's mass numbers stay COMPARISON. This is the truthful state: the substrate forces the matter STRUCTURE (irreps, gradings, lattice, spectrum) but not the SM CONTENT MAP."
+  }
+ ],
+ "values": {
+  "a5_side": [
+   "1",
+   "3",
+   "3'",
+   "4",
+   "5"
+  ],
+  "a5_sum_dim2": 60,
+  "dims": {
+   "1": 1,
+   "2": 2,
+   "2'": 2,
+   "3": 3,
+   "3'": 3,
+   "4": 4,
+   "4'": 4,
+   "5": 5,
+   "6": 6
+  },
+  "finding": "CONTENT SELECTION (K2), attacked head-on with the target out of view: the substrate FORCES the matter STRUCTURE but NOT the SM content map. Forced: 2I's 9 irreps (sum dim^2=120), the central-character split A5 {1,3,3',4,5} / spinor {2,2',4',6} (each 60, KS.1); the matter lattice = the 12-vertex conjugation rep 1+3+3'+5 (dims 12, recomputed cold, KS.2); the mass-law spectrum {12,4,4,0}=12/d over {1,3,3',5} (KS.4). NOT forced (KS.3, scoped negative): the SM generation is 15 (16 w/ nu_R), but the natural content sizes are 12/14/16 -- NONE is 15, so which irreps are the fermions (with SU(3)xSU(2)xU(1) quantum numbers) is under-determined -- the fork's own COMPARISON. The 16=16-with-nu_R coincidence is a noticing, NOT banked (an A5 irrep carries no SU(3)xSU(2) numbers -> renaming). CONSEQUENCE (KS.4): the absolute hypercharges (58) and the fork's mass numbers (incl. the nucleon masses) rest on this un-forced map -- they are NOT forced results while K2 is open. This answers the standing question: the fork's mass numbers are not forced. OWED (KS.5): force the irreps+quantum-numbers+count, target out of view; generations not fished. Nothing fitted; the 12/14/16 vs 15 mismatch is a discriminating negative.",
+  "mass_spectrum": [
+   12,
+   4,
+   4,
+   0
+  ],
+  "matter_dim": 12,
+  "matter_lattice": [
+   "1",
+   "3",
+   "3'",
+   "5"
+  ],
+  "matter_multiplicities": {
+   "1": 1,
+   "3": 1,
+   "3'": 1,
+   "4": 0,
+   "5": 1
+  },
+  "none_is_15": true,
+  "perm_character": [
+   12,
+   0,
+   0,
+   2,
+   2
+  ],
+  "sm_states": 15,
+  "sm_with_nu_r": 16,
+  "spinor_dim": 14,
+  "spinor_side": [
+   "2",
+   "2'",
+   "4'",
+   "6"
+  ],
+  "spinor_sum_dim2": 60,
+  "sum_dim2": 120,
+  "vector_dim": 16
+ }
+}

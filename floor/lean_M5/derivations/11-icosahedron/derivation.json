@@ -1,0 +1,265 @@
+{
+ "container": "11-icosahedron",
+ "grades": {
+  "DERIVED": 5,
+  "OWED": 0,
+  "POSTULATE": 0
+ },
+ "steps": [
+  {
+   "check": "N is multiplicative; N(phi)=-1, Tr(phi)=1",
+   "determines": "UNIQUE (the field norm and trace are fixed by Z[phi])",
+   "expr": "N(a+b phi) = a^2 + ab - b^2 ; N(xy) = N(x)N(y) ; Tr(a+b phi) = 2a+b",
+   "frm": [],
+   "grade": "DERIVED",
+   "id": "I.1",
+   "value": {
+    "norm_multiplicative": true,
+    "phi_facts": {
+     "N_one": 1,
+     "N_phi": -1,
+     "Tr_one": 2,
+     "Tr_phi": 1
+    }
+   },
+   "what": "the transfer rule: the Z[phi] field norm is multiplicative",
+   "why": "the icosahedral module lives in Z[phi], and the object that makes its geometry ARITHMETIC is the field norm N(a+b phi) = a^2 + ab - b^2 (with N(phi) = -1, N(1) = 1) -- it is MULTIPLICATIVE, so every squared length in the module has an INTEGER field norm. That integer is the transfer rule's quantization: the overlaps' norms 9,16,5 (I.3) are integers precisely because N is multiplicative on exact Z[phi] squared lengths. Foundational and exact."
+  },
+  {
+   "check": "twelve = six + negatives; det(six) = 8 != 0 so rank exactly 6",
+   "determines": "UNIQUE (the rank is exactly 6; the E8 identification is refuted)",
+   "expr": "twelve = six and their negatives (rank <= 6); det(six flattened) = 8 != 0 (rank = 6); 6 < 8",
+   "frm": [
+    "I.1"
+   ],
+   "grade": "DERIVED",
+   "id": "I.2",
+   "value": {
+    "rank_exactly_6": true,
+    "refutes": "rank 6 < 8 = rank(E8)",
+    "six_and_negatives": true,
+    "six_direction_det": 8,
+    "twelve_distinct": true
+   },
+   "what": "the rank obstruction: the module has rank EXACTLY 6 (six-direction det = 8)",
+   "why": "the twelve directions are the six DIRS and their negatives, so the module they Z-span has rank AT MOST 6. And the 6x6 determinant of the six directions (flattened to six integers each) is 8, nonzero -- so they are Z-independent and the rank is EXACTLY 6. This is the RANK OBSTRUCTION: rank 6 < 8 = rank(E8), which REFUTES identifying the 3-D icosahedral overlaps with E8 lattice vectors. Derived cold (the determinant is recomputed here), not asserted; and not copying maths 4's externally-solved value -- the determinant is computed from the directions."
+  },
+  {
+   "check": "overlaps have sq-len 6-3phi/20-12phi/18-11phi, norms 9/16/5, all below phi+2",
+   "determines": "CHOSEN (the overlap witnesses; their squared lengths and norms are UNIQUE, computed)",
+   "expr": "sqLen(overlap_k) in {6-3phi, 20-12phi, 18-11phi}; field norms 9,16,5; all < contact phi+2",
+   "frm": [
+    "I.1"
+   ],
+   "grade": "DERIVED",
+   "id": "I.3",
+   "value": {
+    "contact_sq": [
+     2,
+     1
+    ],
+    "field_norms": [
+     9,
+     16,
+     5
+    ],
+    "overlaps": {
+     "shell2": {
+      "below_contact": true,
+      "field_norm": 9,
+      "sq_len": [
+       6,
+       -3
+      ]
+     },
+     "shell3": {
+      "below_contact": true,
+      "field_norm": 16,
+      "sq_len": [
+       20,
+       -12
+      ]
+     },
+     "shell4": {
+      "below_contact": true,
+      "field_norm": 5,
+      "sq_len": [
+       18,
+       -11
+      ]
+     }
+    }
+   },
+   "what": "the three frustration overlaps: sq-lengths 6-3phi, 20-12phi, 18-11phi (norms 9,16,5)",
+   "why": "the FRUSTRATION: the first overlapping difference vector found at shells 2, 3 and 4 of the module has squared length exactly 6-3phi, 20-12phi, 18-11phi (exact Z[phi]) -- each with INTEGER field norm 9, 16, 5 by the transfer rule (I.1), and each strictly BELOW the contact distance^2 phi+2. Being below contact is exactly what makes them overlaps (failures to keep the minimum separation). The overlap witnesses are found by an EXTERNAL search over shells (scope: the recursion producing them is not built here); their squared lengths and norms are COMPUTED here from the witnesses, exact."
+  },
+  {
+   "check": "cuboctahedron: deg 4, E=24, F=14, 8 triangles + 6 squares",
+   "determines": "UNIQUE (the face census is fixed by the configuration)",
+   "expr": "12 vertices, each degree 4; E = 24; Euler F = 14; only 8 faces are triangles, 6 are squares",
+   "frm": [
+    "I.2"
+   ],
+   "grade": "DERIVED",
+   "id": "I.4",
+   "value": {
+    "all_degree_4": true,
+    "edges": 24,
+    "faces": 14,
+    "squares": 6,
+    "triangles": 8,
+    "vertices": 12
+   },
+   "what": "the cuboctahedron is NOT a triangulation: 8 triangles + 6 squares",
+   "why": "the cuboctahedron (the FCC kissing shell, (+-1,+-1,0) and permutations) has twelve vertices and twelve neighbours, JUST LIKE the icosahedron, and it even tiles space. What keeps it OUT of the closure trichotomy is not separation (both shells are relationally separated) but TRIANGULATION: each vertex has degree 4, so E = 24, and Euler forces F = 14 -- but only EIGHT of those faces are triangles; the other SIX are squares. Triangular faces are the trichotomy's hypothesis (the triangle is the geometric primitive), so the frustration traces to the primitive. This is the LOAD-BEARING exclusion. All integer, exact."
+  },
+  {
+   "check": "minimal shell splits 12 (phi+2) + 20 (6-3phi) at trace-form norm 3",
+   "determines": "UNIQUE split (12+20); the count is >= 32, scoped to the [-1,1] box (a search, not completeness)",
+   "expr": "at trace-form norm 3: 12 vectors at sq-len phi+2, 20 at 6-3phi; same trace-norm, different squared lengths",
+   "frm": [
+    "I.1",
+    "I.3"
+   ],
+   "grade": "DERIVED",
+   "id": "I.5",
+   "value": {
+    "dodeca_sq_len": [
+     6,
+     -3
+    ],
+    "dodecahedron_count": 20,
+    "icosa_sq_len": [
+     2,
+     1
+    ],
+    "icosahedron_count": 12,
+    "overlap2_is_dodecahedral_minimal": true,
+    "scope": "coefficients in [-1,1]^6; read 32 as 'at least 32 with exactly this split'",
+    "shell_total_in_box": 32,
+    "trace_form_norm": 3
+   },
+   "what": "the 12 + 20 minimal shell: 12 icosahedron (phi+2) + 20 dodecahedron (6-3phi)",
+   "why": "the rank-6 lattice's minimal shell (vectors at the minimal codifferent trace-form norm 3, over the [-1,1]^6 coefficient box) SPLITS 12 + 20: twelve vectors have squared length phi+2 (the ICOSAHEDRON directions) and twenty have 6-3phi (the DODECAHEDRON directions). SAME trace-form norm, DIFFERENT squared lengths -- the internal trade of the transfer rule, appearing at rank 6. AND the shell-2 overlap (I.3, squared length 6-3phi) is itself one of the twenty dodecahedral minimal vectors: the substrate's first failure to close is a minimal vector of its own lattice. Exact in Z[phi]; no real arithmetic needed to see the split."
+  }
+ ],
+ "values": {
+  "contact_sq": [
+   2,
+   1
+  ],
+  "cuboctahedron": {
+   "edges": 24,
+   "faces": 14,
+   "squares": 6,
+   "triangles": 8
+  },
+  "dirs12": [
+   [
+    0,
+    0,
+    1,
+    0,
+    0,
+    1
+   ],
+   [
+    1,
+    0,
+    0,
+    1,
+    0,
+    0
+   ],
+   [
+    0,
+    1,
+    0,
+    0,
+    1,
+    0
+   ],
+   [
+    0,
+    0,
+    1,
+    0,
+    0,
+    -1
+   ],
+   [
+    1,
+    0,
+    0,
+    -1,
+    0,
+    0
+   ],
+   [
+    0,
+    -1,
+    0,
+    0,
+    1,
+    0
+   ],
+   [
+    0,
+    0,
+    -1,
+    0,
+    0,
+    -1
+   ],
+   [
+    -1,
+    0,
+    0,
+    -1,
+    0,
+    0
+   ],
+   [
+    0,
+    -1,
+    0,
+    0,
+    -1,
+    0
+   ],
+   [
+    0,
+    0,
+    -1,
+    0,
+    0,
+    1
+   ],
+   [
+    -1,
+    0,
+    0,
+    1,
+    0,
+    0
+   ],
+   [
+    0,
+    1,
+    0,
+    0,
+    -1,
+    0
+   ]
+  ],
+  "dodecahedron_count": 20,
+  "icosahedron_count": 12,
+  "overlap_field_norms": [
+   9,
+   16,
+   5
+  ],
+  "shell_total": 32,
+  "six_direction_det": 8
+ }
+}

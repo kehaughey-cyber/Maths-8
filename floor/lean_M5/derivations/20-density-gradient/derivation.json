@@ -1,0 +1,127 @@
+{
+ "container": "20-density-gradient",
+ "grades": {
+  "DERIVED": 3,
+  "OWED": 0,
+  "POSTULATE": 1
+ },
+ "steps": [
+  {
+   "check": "gm and L are well-defined adjacency fields; at the twelve gm = L = 5r",
+   "determines": "UNIQUE (the gradient fields are fixed by rho on the mesh)",
+   "expr": "for edge (u,v): rho(u)-rho(v); gm(v)=sum|rho(w)-rho(v)|; L(v)=sum(rho(w)-rho(v)); adjacency-only",
+   "frm": [
+    "13.A.2",
+    "14.B.2"
+   ],
+   "grade": "DERIVED",
+   "id": "G.1",
+   "value": {
+    "deg5_gradient_magnitude": [
+     15
+    ],
+    "deg5_laplacian": [
+     15
+    ],
+    "level": "R4",
+    "radius": 3,
+    "twelve_are_minima_gm_eq_lap_eq_5r": true
+   },
+   "what": "the density gradient: edge differences of rho, the per-vertex magnitude and the Laplacian",
+   "why": "gravity is the CHANGE in the packing, so the object is the GRADIENT of the density observable rho(v)=|B_r(v)| (container 13). Per edge (u,v): the difference rho(u)-rho(v). Per vertex: the gradient magnitude gm(v) = sum over neighbours |rho(w)-rho(v)|, and the graph Laplacian L(v) = sum (rho(w)-rho(v)). Both are pure adjacency -- no distance, no embedding -- exactly like |B_r| itself. At each of the twelve (a local minimum of rho) every neighbour is higher, so gm = L = 5r (five neighbours, each higher by r). Computed cold on R4 at r=3."
+  },
+  {
+   "check": "large flat regions (no gravity), growing with refinement; the twelve are the sources",
+   "determines": "UNIQUE (the zero-gradient set is fixed by the mesh)",
+   "expr": "most vertices have gm=0 (rho locally constant = flat = no gravity); gm>0 only near the twelve (the sources)",
+   "frm": [
+    "G.1"
+   ],
+   "grade": "DERIVED",
+   "id": "G.2",
+   "value": {
+    "flat_fraction": {
+     "R3": "0/162",
+     "R4": "270/642",
+     "R5": "2190/2562"
+    },
+    "flat_grows_with_refinement": true,
+    "most_flat_at_finest": true,
+    "totals": {
+     "R3": 162,
+     "R4": 642,
+     "R5": 2562
+    },
+    "twelve_are_sources": true,
+    "zero_gradient_counts": {
+     "R3": 0,
+     "R4": 270,
+     "R5": 2190
+    }
+   },
+   "what": "gravity localizes: flat regions have NO gradient; it is nonzero only near the twelve",
+   "why": "the substrate realization of 'no change in packing -> no gravity'. Large regions have ZERO gradient -- rho is locally constant there, flat, no gravity: {'R3': '0/162', 'R4': '270/642', 'R5': '2190/2562'} (the flat fraction). As the mesh REFINES at fixed r the flat fraction GROWS (the twelve become sparser; at the finest level R5, 2190/2562 is flat) -- toward the physical picture: most of space is flat, gravity localized near the sources. (At a fixed mesh the flat region shrinks as r grows, the influence reaching further.) The gradient is nonzero only NEAR the twelve, which are local MINIMA of rho (gm>0 at all twelve, the gradient SOURCES). Gravity is exactly where the density varies."
+  },
+  {
+   "check": "sum_v L(v) = 0 at every level (Gauss); rho(w)-rho(v) = deficit(v)-deficit(w) everywhere",
+   "determines": "UNIQUE (both are exact identities)",
+   "expr": "sum_v L(v) = 0 exactly (each edge cancels); rho = flat - deficit so rho(w)-rho(v) = deficit(v)-deficit(w)",
+   "frm": [
+    "G.1",
+    "14.B.2"
+   ],
+   "grade": "DERIVED",
+   "id": "G.3",
+   "value": {
+    "gauss_sources_sum_to_zero": true,
+    "grad_rho_eq_neg_grad_deficit": true,
+    "total_laplacian_per_level": {
+     "R3": 0,
+     "R4": 0,
+     "R5": 0
+    }
+   },
+   "what": "the sources sum to zero (a discrete Gauss law), and grad(rho) = -grad(deficit)",
+   "why": "TWO exact facts. (a) THE GAUSS LAW: sum over all vertices of L(v) is 0 -- each edge (u,v) contributes rho(v)-rho(u) at u and rho(u)-rho(v) at v, which cancel. So the gravity SOURCES sum to zero on the CLOSED substrate (as total charge is zero on a closed universe): the twelve's positive sources are exactly balanced by the negative-L neighbours. Checked at every level: {'R3': 0, 'R4': 0, 'R5': 0}. (b) GRADIENT DUALITY: since rho = flat_ball(r) - deficit (14) and flat_ball is constant per r, grad(rho) = -grad(deficit) edge-by-edge -- the density gradient IS the negative of the curvature-deficit gradient. Gravity (grad rho) and curvature (deficit) are the same field, differentiated."
+  },
+  {
+   "check": null,
+   "determines": "POSSIBLE, NOT confirmed; a gradient claim not a field equation; no value; no downstream premise",
+   "expr": "gravity = grad(rho) -- named, held; the Poisson field equation Laplacian(rho)=k*deficit does NOT hold (checked)",
+   "frm": [
+    "G.2",
+    "G.3"
+   ],
+   "grade": "POSTULATE",
+   "id": "G.4",
+   "value": {
+    "checked_negative_poisson": "Laplacian(rho) = k*deficit does NOT hold (L(deg5)=5r != k*tri(r))",
+    "deferred_to": "Step 9 GR entry (gravity <-> curvature) and Step 10 (value)",
+    "downstream_premise_use": false,
+    "not_a_field_equation": true,
+    "reading": "gravity = grad(rho) (the change in packing)"
+   },
+   "what": "the named reading: gravity = the density gradient (POSSIBLE, NOT confirmed); and the checked-negative (not a field equation)",
+   "why": "the arc's claim, NAMED as a possibility and held (the container-15 discipline: the math is derived, the physical reading is a POSTULATE). Gravity = the density gradient grad(rho). AND a CHECKED-NEGATIVE kept explicit so it is never over-claimed: the naive discrete POISSON field equation Laplacian(rho) = k*deficit does NOT hold -- L(deg-5) = 5r (r=2 -> 10, r=3 -> 15) is not proportional to the ball deficit tri(r) (3, 6). So 'gravity = grad(rho)' is a GRADIENT claim, NOT a field-equation claim here. The physical FORCE, its direction (toward the vacuum or the black-hole extremum), and any VALUE are deferred to the Step 9 GR correspondence entry (through the container-19 gate) and Step 10. No downstream container may use this reading as a premise."
+  }
+ ],
+ "values": {
+  "checked_negative": "Laplacian(rho) != k*deficit",
+  "deg5_gradient": 15,
+  "gauss_sources_sum_to_zero": true,
+  "grad_rho_eq_neg_grad_deficit": true,
+  "gravity_is_gradient": "named possibility (POSTULATE); not a field equation",
+  "level": "R4",
+  "radius": 3,
+  "totals": {
+   "R3": 162,
+   "R4": 642,
+   "R5": 2562
+  },
+  "zero_gradient_counts": {
+   "R3": 0,
+   "R4": 270,
+   "R5": 2190
+  }
+ }
+}

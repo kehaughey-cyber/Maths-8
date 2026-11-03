@@ -1,0 +1,322 @@
+{
+ "container": "23-level-integrality",
+ "grades": {
+  "DERIVED": 4,
+  "OWED": 0,
+  "POSTULATE": 1
+ },
+ "steps": [
+  {
+   "check": "a registration element is a finite archon set built by 01's stepwise subdivision",
+   "determines": "UNIQUE (A(d) is the set of archons registered into d)",
+   "expr": "archon = container 00's level-0 registration primitive; a registration element d is a FINITE join of archons A(d), each registered into the residual (container 01)",
+   "frm": [
+    "00.2",
+    "00.3",
+    "01.1"
+   ],
+   "grade": "DERIVED",
+   "id": "LI.1",
+   "value": {
+    "A(d)": "the archon set of d -- finite by construction (no continuum of sub-atoms)",
+    "archon": "container 00 level-0 primitive (registration by three observers)",
+    "atomisticity_is_structural": true,
+    "demo_element": [
+     10,
+     20,
+     30,
+     40
+    ],
+    "demo_level": 4,
+    "registration_element": "a finite join of archons, built by 01's residual subdivision"
+   },
+   "what": "the archon and the registration element (atomisticity-cold, from 00 + 01)",
+   "why": "the dcpo floor's Archon (an order-atom of D, p with nothing strictly between bottom and p) and its atomisticity axiom R13 (every d is the join of the archons below it) are recovered COLD, without a lattice or a measure. On the triadic floor the archon IS container 00's level-0 primitive -- the live registration produced by the three-observer act -- and container 01 builds every registration element by stepwise POSITIVE subdivision of the residual (01.1). So A(d), the set of archons composing d, is FINITE BY CONSTRUCTION: there is no continuum of sub-atoms as there is below a Hilbert-space projection. Atomisticity is structural here, not an axiom imposed on an abstract order."
+  },
+  {
+   "check": "all propagation orders give one level (path-independent); fresh step +1; level is a Nat",
+   "determines": "UNIQUE (the level is the cardinality of A(d); path-independent)",
+   "expr": "L(d) = |A(d)|; every propagation sequence building d gives the same count (each fresh step +1, covering-cold); a cardinality is a Nat -- integrality is structural, no continuum",
+   "frm": [
+    "LI.1",
+    "01.3"
+   ],
+   "grade": "DERIVED",
+   "id": "LI.2",
+   "value": {
+    "all_orders_give_level": [
+     4
+    ],
+    "covering_fresh_plus_one": true,
+    "covering_idempotent_on_present": true,
+    "dcpo_needed": "R6 (real measure) + R10b + R14 to FORCE integrality; triadic needs none of it",
+    "distinct_sets_built": 1,
+    "integrality_is_structural_not_forced": true,
+    "level_is_nonneg_integer": true,
+    "orders_tried": 24,
+    "path_independent": true
+   },
+   "what": "the level L(d) := |A(d)| is well-defined, path-independent, an integer (THE HEART)",
+   "why": "the reconstruction's heart, and where the dcpo floor's real-analysis machinery is NOT needed. WELL-DEFINEDNESS: all 24 propagation orders of a 4-archon element yield the same level 4 and the same set -- the level does not depend on the build order. This is the triadic analog of 'dimension is well-defined' (all maximal orthogonal families have equal cardinality), which is exactly what R13 + R14 + R10b bought on the dcpo floor. COVERING-COLD: a fresh archon raises the level by exactly 1 (01.3's positive disjoint residual), while re-adding a present archon does not -- so the covering property holds and needs disjointness. INTEGRALITY: L(d) is a CARDINALITY, a non-negative integer BY CONSTRUCTION. The dcpo LI had to force a real Scott-continuous measure I onto integer multiples of alpha; the triadic floor never introduced the continuum, so integrality is free. 'No element has a fractional level' becomes 'the level is a count' -- the framework's 'rho is a forced COUNT, no continuum, no free cutoff' thesis, made rigorous."
+  },
+  {
+   "check": "orthogonal levels add (disjoint union); overlapping levels do not (checked negative)",
+   "determines": "UNIQUE (additivity holds exactly on orthogonal pairs)",
+   "expr": "for disjoint-residual a, b: |A(a) union A(b)| = |A(a)| + |A(b)|; for overlapping a, b it FAILS -- so additivity is exactly the orthogonal case (R10b/R14 on the dcpo floor)",
+   "frm": [
+    "LI.2"
+   ],
+   "grade": "DERIVED",
+   "id": "LI.3",
+   "value": {
+    "additivity_needs_orthogonality": true,
+    "orthogonal_example": {
+     "L(a)+L(b)": 6,
+     "L(a|+|b)": 6,
+     "a": [
+      1,
+      2,
+      3
+     ],
+     "additive": true,
+     "b": [
+      4,
+      5,
+      6
+     ]
+    },
+    "overlap_checked_negative": {
+     "L(a)+L(b)": 5,
+     "L(a|+|b)": 4,
+     "a": [
+      1,
+      2,
+      3
+     ],
+     "additive": false,
+     "b": [
+      3,
+      4
+     ]
+    }
+   },
+   "what": "additivity L(a (+) b) = L(a) + L(b) on ORTHOGONAL a, b (overlap = checked negative)",
+   "why": "the triadic recovery of R10b (valuation: I(a join b) = I(a) + I(b) for orthogonal a, b) and R14 (countable additivity over orthogonal families). Here it is pure cardinality of a DISJOINT union: two orthogonal registration elements (disjoint archon sets -- their residuals do not overlap, 01.3) compose with levels that ADD. The overlapping case is kept as a CHECKED NEGATIVE (the protocol's discipline): elements sharing an archon do NOT add (|{1,2,3} union {3,4}| = 4, not 5) -- so additivity is not vacuous; it holds PRECISELY on orthogonal pairs, which is what the dcpo valuation axiom also restricts to. This is the additivity leg the convergence condition (container 22, CV.2) needs, now cold on the triadic floor."
+  },
+  {
+   "check": "on the R1 icosahedron, every vertex has L(B_r) = (1,6,11,12) = container 13's |B_r|",
+   "determines": "UNIQUE (the ball's level is its archon count = |B_r|)",
+   "expr": "A(B_r(v)) = the registrations within r adjacency steps; L(B_r) = |A(B_r)| = |B_r(v)| -- the top-down level equals container 13's bottom-up count, on every R1 vertex",
+   "frm": [
+    "LI.2",
+    "13.A.2"
+   ],
+   "grade": "DERIVED",
+   "id": "LI.4",
+   "value": {
+    "L(B_r)=|B_r|": "the ball read as a registration element; its level is container 13's count",
+    "discharges": "container 22 owed_b (identify B_r with a registration element d)",
+    "profile_every_vertex": [
+     1,
+     6,
+     11,
+     12
+    ],
+    "r1_ball_profiles_are_level": true
+   },
+   "what": "the ball B_r is a registration element; L(B_r) = |B_r| (consumes 13; owed_b)",
+   "why": "the identification container 22 named owed_b, now made. Container 13's ball-growth |B_r(v)| is a breadth-first archon COUNT over adjacency. Read the ball as a REGISTRATION ELEMENT d = B_r whose archons A(d) are exactly those registrations within r adjacency steps of v. Then LI.2 applies: L(B_r) = |A(B_r)| = |B_r| -- the level of the ball (top-down, I/alpha in the dcpo language) IS the bottom-up count (container 13). Recomputed cold on the R1 icosahedron (the same Z[phi] minimal-distance adjacency as 13), every vertex gives the profile (1, 6, 11, 12): L(B_0)=1, L(B_1)=6, L(B_2)=11, L(B_3)=12. Each radius adds the fresh ring (the disjoint front -- covering-cold, LI.2). So on this substrate the top-down level and the bottom-up count are the SAME integer, per vertex. This closes the identification leg of Step 10's warrant condition; only the alpha-link (LI.5) remains, quarantined."
+  },
+  {
+   "check": null,
+   "determines": "POSTULATE (EAI rests on the triad postulate; alpha is quarantined, Step 12)",
+   "expr": "IF every archon carries a common quantum alpha (EAI-cold) and I is additive on orthogonal joins, THEN I(d) = alpha * L(d), so I(d)/alpha = |A(d)| -- the dcpo Theorem LI, recovered",
+   "frm": [
+    "LI.2",
+    "LI.3",
+    "00.4",
+    "17.S.3"
+   ],
+   "grade": "POSTULATE",
+   "id": "LI.5",
+   "value": {
+    "alpha_status": "Stone 5's quarantined reading 17.S.3 -- not a premise until Step 12",
+    "downstream_premise_use": false,
+    "eai_cold": "every archon = the same three-observer act (01's self-similar rule) -> equal quantum",
+    "if_granted": "I(d) = alpha * L(d) => I(d)/alpha = |A(d)| = L(d) (the dcpo Theorem LI)",
+    "owed_c_remains": "the alpha grounding stays owed to Step 12 (stone-grounding)",
+    "present": false,
+    "rests_on": "the triad postulate 00.4/00.6 (held, not proven)"
+   },
+   "what": "EAI-cold + the alpha-valuation recovers the dcpo Theorem LI (POSTULATE, quarantined)",
+   "why": "the bridge from the count (derived, cold) to the dcpo floor's rho = I(d)/alpha -- kept OFF the derived core and graded POSTULATE, quarantined. On the dcpo floor Theorem EAI (all archons carry equal information alpha) was proved from R3/R8'/R6/R15, and R15 was itself under repair (R15a 'maybe provable' / R15b a NEW axiom). Cold on the triadic floor, EAI's content is: every archon is the SAME act -- one registered distinction by three observers, the identical local rule applied at every site (container 01's self-similar subdivision). So no archon can carry more than another; each carries one common quantum alpha. But this rests on the TRIAD POSTULATE (00.4/00.6, held not proven), and alpha itself is Stone 5's QUARANTINED reading (17.S.3), which cannot be a premise until grounded (Step 12, container 22's owed_c). GIVEN both, additivity (LI.3) gives I(d) = alpha * L(d), hence I(d)/alpha = |A(d)| = L(d) -- the dcpo Theorem LI recovered, now with its integrality leg DERIVED-cold (LI.2) and only the alpha-valuation held. This is the honest boundary: the count is proven; the ruler is owed."
+  }
+ ],
+ "values": {
+  "additivity_orthogonal": {
+   "a": [
+    1,
+    2,
+    3
+   ],
+   "b": [
+    4,
+    5,
+    6
+   ],
+   "sum": 6
+  },
+  "additivity_overlap_fails": {
+   "a": [
+    1,
+    2,
+    3
+   ],
+   "b": [
+    3,
+    4
+   ],
+   "count": 4,
+   "naive_sum": 5
+  },
+  "all_orders_give_level": [
+   4
+  ],
+  "alpha_still_owed": "owed_c (alpha grounding, Step 12) -- LI.5 POSTULATE, quarantined",
+  "covering_fresh_plus_one": true,
+  "covering_idempotent_on_present": true,
+  "integrality_is_structural": true,
+  "level_is_nonneg_integer": true,
+  "path_independent": true,
+  "r1_ball_is_level": true,
+  "r1_ball_profile": [
+   1,
+   6,
+   11,
+   12
+  ],
+  "r1_edges": [
+   [
+    0,
+    1
+   ],
+   [
+    0,
+    2
+   ],
+   [
+    0,
+    4
+   ],
+   [
+    0,
+    6
+   ],
+   [
+    0,
+    8
+   ],
+   [
+    1,
+    2
+   ],
+   [
+    1,
+    5
+   ],
+   [
+    1,
+    6
+   ],
+   [
+    1,
+    7
+   ],
+   [
+    2,
+    3
+   ],
+   [
+    2,
+    7
+   ],
+   [
+    2,
+    8
+   ],
+   [
+    3,
+    7
+   ],
+   [
+    3,
+    8
+   ],
+   [
+    3,
+    9
+   ],
+   [
+    3,
+    10
+   ],
+   [
+    4,
+    6
+   ],
+   [
+    4,
+    8
+   ],
+   [
+    4,
+    10
+   ],
+   [
+    4,
+    11
+   ],
+   [
+    5,
+    6
+   ],
+   [
+    5,
+    7
+   ],
+   [
+    5,
+    9
+   ],
+   [
+    5,
+    11
+   ],
+   [
+    6,
+    11
+   ],
+   [
+    7,
+    9
+   ],
+   [
+    8,
+    10
+   ],
+   [
+    9,
+    10
+   ],
+   [
+    9,
+    11
+   ],
+   [
+    10,
+    11
+   ]
+  ],
+  "warrant_leg_discharged": "owed_a (LI cold on the triadic floor) + owed_b (B_r <-> d)"
+ }
+}

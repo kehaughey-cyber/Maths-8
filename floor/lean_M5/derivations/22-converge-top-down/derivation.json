@@ -1,0 +1,87 @@
+{
+ "container": "22-converge-top-down",
+ "grades": {
+  "DERIVED": 2,
+  "OWED": 1,
+  "POSTULATE": 0
+ },
+ "steps": [
+  {
+   "check": "both densities are forced positive-integer archon counts (top-down LI cited, bottom-up |B_r| derived)",
+   "determines": "UNIQUE (both are forced integer counts; the kind-agreement is exact)",
+   "expr": "top-down rho = I(d)/alpha = |A(d)| (Theorem LI, cited); bottom-up rho = |B_r| (13, derived); both positive integers, no continuum, no free cutoff",
+   "frm": [
+    "13.A.2"
+   ],
+   "grade": "DERIVED",
+   "id": "CV.1",
+   "value": {
+    "both_are_forced_integer_counts": true,
+    "bottom_up_example_B1": 6,
+    "bottom_up_is_positive_integer": true,
+    "no_continuum_no_free_cutoff": true,
+    "top_down": "rho = I(d)/alpha = |A(d)| (Theorem LI, cited)"
+   },
+   "what": "the two densities agree IN KIND: both rho are forced integer archon COUNTS",
+   "why": "the archic density is ONE object reached two ways, and the structural claim -- that BOTH are forced INTEGER COUNTS of archons -- holds. TOP-DOWN (cited, quarantined external, `prime_framework_master_handoff.docx` sec 2.2): Theorem LI gives rho(d) = I(d)/alpha = |A(d)|, a positive integer = the archon count of d, from R6/R10b/R13/R14. BOTTOM-UP (container 13, derived cold): rho(v) = |B_r(v)| is the breadth-first archon count, also a positive integer (e.g. |B_1| = 6 on R1). Neither has a continuum or a free 'line' to guess -- rho is a FORCED COUNT both directions. This is the structural half of the framework's primary evidence, and it is sound."
+  },
+  {
+   "check": "I = alpha*c (alpha>0) => I/alpha = c, on instances -> the convergence condition",
+   "determines": "UNIQUE (the arithmetic condition is exact)",
+   "expr": "Theorem LI: I(d)=alpha*|A(d)|; for d=B_r, I(B_r)/alpha = |B_r|; core: I=alpha*c, alpha>0 => I/alpha = c exactly",
+   "frm": [
+    "CV.1"
+   ],
+   "grade": "DERIVED",
+   "id": "CV.2",
+   "value": {
+    "arithmetic_core": "I = alpha*c, alpha>0  =>  I/alpha = c",
+    "condition_holds": true,
+    "convergence_condition": "I(B_r) = alpha * |B_r|  <=>  I/alpha = |B_r| (top-down = bottom-up)",
+    "instances": {
+     "alpha=2,count=51": true,
+     "alpha=3,count=6": true,
+     "alpha=5,count=12": true,
+     "alpha=7,count=372": true
+    },
+    "ties": "the density observable (13) to the alpha ruler (Stone 5)"
+   },
+   "what": "the convergence condition: I = alpha*|B_r| makes top-down = bottom-up (arithmetic)",
+   "why": "the convergence, reduced to what is actually checkable. Theorem LI states I(d) = alpha * |A(d)| (each archon carries alpha, Theorem EAI). Take a ball as a registration element d = B_r whose archons are its registrations; then I(B_r)/alpha = |A(B_r)| = |B_r| -- the TOP-DOWN count (I/alpha) EQUALS the BOTTOM-UP count (|B_r|). The kernel-checkable core is pure arithmetic: given I = alpha * c with alpha > 0, I/alpha recovers c exactly (checked on instances, alpha times the bottom-up counts 6/12/51/372). So the two densities CONVERGE PRECISELY WHEN I(B_r) = alpha*|B_r| -- each registration carrying alpha. This ties the density observable (13) to the alpha ruler (Stone 5). The IDENTIFICATION making it hold on this substrate is CV.3's owed work."
+  },
+  {
+   "check": null,
+   "determines": "OWED (only the alpha VALUE, 24.SG.4, external; the structural warrant is discharged by 23/24 modulo SG.2)",
+   "expr": "owed_a/owed_b/owed_c are DISCHARGED -- 23 reconstructed Theorem LI cold on the triadic floor and identified the ball B_r as a registration element (L(B_r)=|B_r|); 24 grounded the alpha-link structurally (EAI forced, I(B_r)=alpha*|B_r|), modulo the SG.2 intrinsicness postulate. So the warrant condition (top-down meets bottom-up) is STRUCTURALLY MET; only the alpha VALUE (external) is owed",
+   "frm": [
+    "CV.1",
+    "CV.2"
+   ],
+   "grade": "OWED",
+   "id": "CV.3",
+   "value": {
+    "discharged_owed_a": "Theorem LI reconstructed cold on the triadic floor -- container 23 (LI.2/LI.3)",
+    "discharged_owed_b": "the ball B_r identified as a registration element, L(B_r)=|B_r| -- container 23 (LI.4)",
+    "discharged_owed_c_structurally": "the alpha-link grounded (EAI forced, I(B_r)=alpha*|B_r|) -- container 24 (SG.1), modulo the SG.2 intrinsicness postulate",
+    "gates": "every physical value (Step 14, rho_Lambda) waits only on the external alpha value, not on the structure",
+    "is_finding_not_failure": true,
+    "present": false,
+    "remaining_owed": "only the alpha VALUE -- container 24 (SG.4), external Stone input, owner-decision boundary (danger zone)",
+    "structural_warrant": "MET -- top-down meets bottom-up is DERIVED-cold (23+24) modulo SG.2"
+   },
+   "what": "the finding, DISCHARGED: the structural warrant is met (23 + 24); only the alpha VALUE (24.SG.4, external) remains owed",
+   "why": "RETREATED 2026-09-03: this finding located the gap, and the gap was then CLOSED by the containers built after 22. When CV.3 was written, LI + EAI rested on the DCPO floor (R6/R10b/R13/R14), superseded by the triadic floor, so the warrant condition was NOT yet met and it awaited (a) LI cold on the triadic floor, (b) B_r identified with a registration element d, (c) the alpha-link grounded. ALL THREE ARE NOW DISCHARGED: container 23 (level-integrality) reconstructed Theorem LI COLD on the triadic floor -- the level L(d)=|A(d)| is a well-defined, path-independent, additive integer count (23.LI.2/LI.3, DERIVED zero-axiom) -- and identified the ball as a registration element, L(B_r)=|B_r|=(1,6,11,12) on every R1 vertex (23.LI.4, DERIVED zero-axiom, discharging owed_a AND owed_b); container 24 (stone-grounding) grounded the alpha-link STRUCTURALLY -- EAI (a constant per-archon alpha) is FORCED by symmetry + additivity, not assumed, giving I(B_r)=alpha*|B_r| (24.SG.1, DERIVED zero-axiom), MODULO the single archon-intrinsicness postulate (24.SG.2) -- discharging owed_c at the level the warrant condition needs. So the WARRANT CONDITION (top-down meets bottom-up) is now STRUCTURALLY MET, DERIVED-cold, modulo SG.2. WHAT REMAINS OWED is only the alpha VALUE -- container 24.SG.4, external Stone input (base-2/SEC9/Planck hypothesis), quarantined, never a premise; and it is an OWNER-DECISION boundary (accept hbar/c/mass external, or derive -- the danger zone). The numeric convergence therefore no longer awaits the STRUCTURE (that is done); every physical VALUE (Step 14, rho_Lambda) waits only on the external alpha value (SG.4). The primary evidence is sound in KIND and now GROUNDED in structure; only the scale is external."
+  }
+ ],
+ "values": {
+  "both_are_forced_integer_counts": true,
+  "bottom_up_example_B1": 6,
+  "convergence_condition": "I(B_r) = alpha*|B_r|  <=>  I/alpha = |B_r|",
+  "convergence_condition_holds": true,
+  "finding": "convergence holds IN KIND and is now GROUNDED in structure -- the warrant condition is DISCHARGED by 23 (LI cold + B_r a registration element) and 24 (alpha-link grounded, EAI forced), modulo SG.2. Only the alpha VALUE (24.SG.4, external Stone input, owner-decision) remains owed; every physical value waits only on that scale, not on the structure.",
+  "is_load_bearer": true,
+  "structural_warrant_met": true,
+  "structural_warrant_note": "DERIVED-cold by 23 (LI.2/LI.3/LI.4) + 24 (SG.1), modulo the SG.2 intrinsicness postulate",
+  "value_owed_external": true
+ }
+}

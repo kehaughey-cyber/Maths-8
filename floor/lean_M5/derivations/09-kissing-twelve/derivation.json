@@ -1,0 +1,528 @@
+{
+ "container": "09-kissing-twelve",
+ "grades": {
+  "DERIVED": 5,
+  "OWED": 1,
+  "POSTULATE": 1
+ },
+ "steps": [
+  {
+   "check": "exactly 12 distinct icosahedral vertices",
+   "determines": "CHOSEN (a witness configuration; UNIQUE up to icosahedral symmetry)",
+   "expr": "(0,+-1,+-phi), (+-1,+-phi,0), (+-phi,0,+-1) in Z[phi]",
+   "frm": [
+    "05.1"
+   ],
+   "grade": "DERIVED",
+   "id": "6.1",
+   "value": {
+    "count": 12,
+    "distinct": true,
+    "vertices": [
+     [
+      [
+       0,
+       0
+      ],
+      [
+       1,
+       0
+      ],
+      [
+       0,
+       1
+      ]
+     ],
+     [
+      [
+       0,
+       0
+      ],
+      [
+       1,
+       0
+      ],
+      [
+       0,
+       -1
+      ]
+     ],
+     [
+      [
+       0,
+       0
+      ],
+      [
+       -1,
+       0
+      ],
+      [
+       0,
+       1
+      ]
+     ],
+     [
+      [
+       0,
+       0
+      ],
+      [
+       -1,
+       0
+      ],
+      [
+       0,
+       -1
+      ]
+     ],
+     [
+      [
+       1,
+       0
+      ],
+      [
+       0,
+       1
+      ],
+      [
+       0,
+       0
+      ]
+     ],
+     [
+      [
+       1,
+       0
+      ],
+      [
+       0,
+       -1
+      ],
+      [
+       0,
+       0
+      ]
+     ],
+     [
+      [
+       -1,
+       0
+      ],
+      [
+       0,
+       1
+      ],
+      [
+       0,
+       0
+      ]
+     ],
+     [
+      [
+       -1,
+       0
+      ],
+      [
+       0,
+       -1
+      ],
+      [
+       0,
+       0
+      ]
+     ],
+     [
+      [
+       0,
+       1
+      ],
+      [
+       0,
+       0
+      ],
+      [
+       1,
+       0
+      ]
+     ],
+     [
+      [
+       0,
+       1
+      ],
+      [
+       0,
+       0
+      ],
+      [
+       -1,
+       0
+      ]
+     ],
+     [
+      [
+       0,
+       -1
+      ],
+      [
+       0,
+       0
+      ],
+      [
+       1,
+       0
+      ]
+     ],
+     [
+      [
+       0,
+       -1
+      ],
+      [
+       0,
+       0
+      ],
+      [
+       -1,
+       0
+      ]
+     ]
+    ]
+   },
+   "what": "the twelve icosahedral vertices -- the kissing witness",
+   "why": "the twelve candidate sphere-centers are the regular-icosahedron vertices, in golden-ratio coordinates -- twelve distinct points, the even cyclic images of (0,1,phi) with all sign choices. This is the WITNESS that kissing number >= 12; it lives in the Euclidean 3-space the bridge (05) provides."
+  },
+  {
+   "check": "every vertex norm^2 = (2,1) = 2 + phi",
+   "determines": "UNIQUE (all norms equal, = R^2)",
+   "expr": "|v|^2 = 2 + phi for all twelve (using phi^2 = phi + 1)",
+   "frm": [
+    "6.1"
+   ],
+   "grade": "DERIVED",
+   "id": "6.2",
+   "value": {
+    "R_sq": [
+     2,
+     1
+    ],
+    "all_norms_equal_R2": true
+   },
+   "what": "equidistant from the center -- every vertex has norm^2 = 2 + phi = R^2",
+   "why": "each vertex is the same distance R from the origin: |(0,1,phi)|^2 = 1 + phi^2 = 2 + phi, and likewise for all twelve by symmetry. So the twelve centers lie on one sphere of radius R -- the precondition for kissing a central sphere. Exact in Z[phi]."
+  },
+  {
+   "check": "pairwise dist^2 take exactly {4, 4+4phi, 8+4phi}; min = 4",
+   "determines": "UNIQUE (the distance multiset is fixed by the configuration)",
+   "expr": "pairwise dist^2 in {4, 4+4phi, 8+4phi}; min = 4 (the icosahedron edge)",
+   "frm": [
+    "6.1"
+   ],
+   "grade": "DERIVED",
+   "id": "6.3",
+   "value": {
+    "as_expected": true,
+    "classes": {
+     "4+0phi": 30,
+     "4+4phi": 30,
+     "8+4phi": 6
+    },
+    "min_dist_sq": [
+     4,
+     0
+    ]
+   },
+   "what": "three pairwise distance classes {4, 4+4phi, 8+4phi}; the minimum is the edge",
+   "why": "the 66 vertex pairs take exactly three squared distances: 4 (the 30 edges), 4+4phi (the off-edges), and 8+4phi (the 6 antipodal pairs). The MINIMUM pairwise distance^2 is 4, the edge -- this is what must clear R^2 for the spheres not to overlap. All exact in Z[phi]."
+  },
+  {
+   "check": "every dist^2 > R^2; the edge gap 2 - phi > 0 reduces to 5 < 9",
+   "determines": "UNIQUE (the kissing configuration exists; kissing number >= 12)",
+   "expr": "dist^2 - R^2 > 0 for all three classes; the tightest, 4 - (2+phi) = 2 - phi, is > 0 <=> 5 < 9",
+   "frm": [
+    "6.2",
+    "6.3"
+   ],
+   "grade": "DERIVED",
+   "id": "6.4",
+   "value": {
+    "all_clear_strict": true,
+    "edge_gap": [
+     2,
+     -1
+    ],
+    "edge_reduces_to": "5 < 9",
+    "gaps": {
+     "4+0phi": [
+      2,
+      -1
+     ],
+     "4+4phi": [
+      2,
+      3
+     ],
+     "8+4phi": [
+      6,
+      3
+     ]
+    },
+    "reduction_true": true
+   },
+   "what": "THE KISSING -- every pairwise distance^2 exceeds R^2 (reduces to 5 < 9)",
+   "why": "for the twelve spheres (radius R/2) to kiss the central one without overlapping, every pairwise distance must be at least R -- i.e. every dist^2 - R^2 >= 0. The two large gaps (2+3phi, 6+3phi) are positive because phi > 0; the tightest, the EDGE, gives 4 - (2+phi) = 2 - phi, and 2 - phi > 0 <=> phi < 2 <=> 1 + sqrt5 < 4 <=> sqrt5 < 3 <=> 5 < 9. So the whole kissing result bottoms out at exact Z[phi] arithmetic plus the integer fact 5 < 9. The inequality is STRICT -- the twelve spheres rattle, they do not touch each other."
+  },
+  {
+   "check": null,
+   "determines": "the reading (12 achieved; saturation is the central OWED), held",
+   "expr": "kissing >= 12 (built); kissing = 12 and 'why exactly 12' point beyond",
+   "frm": [
+    "6.4"
+   ],
+   "grade": "POSTULATE",
+   "id": "6.5",
+   "value": {
+    "achieved": "kissing >= 12",
+    "central_owed": "why registration saturates at 12",
+    "equivalent_to": "the dim=3 upper bound",
+    "see": "container 01 (1.6), 03, CORRECTIONS #6"
+   },
+   "what": "the reading -- 12 is achieved; whether the substrate SATURATES at 12 is the deep OWED",
+   "why": "the icosahedral twelve is the kissing witness, built. Whether REGISTRATION forces exactly twelve mutual adjacencies -- the SATURATION -- is the framework's central number: it is container 01's OWED (1.6, adjacency -> 12) and the phase cycle -> 12, and it is EQUIVALENT to the dim=3 upper bound (12 is the maximum kissing number only in 3-D: d=2 caps at 6, d=4 reaches 24). So dim=3 should FALL OUT of why-12, not be attacked head-on. Held as the reading."
+  },
+  {
+   "check": null,
+   "determines": "OWED (external; not machine-checked here)",
+   "expr": "no 13 equal spheres kiss a central one in 3-D (kissing(3) = 12)",
+   "frm": [
+    "6.4"
+   ],
+   "grade": "OWED",
+   "id": "6.6",
+   "value": {
+    "built_here": "the >= 12 half only",
+    "source": "Schuette-van der Waerden 1953",
+    "status": "external, cited, not machine-checked",
+    "upper_bound": "kissing(3) = 12, no 13th"
+   },
+   "what": "the upper bound (kissing = 12, no 13th) -- external / OWED",
+   "why": "the >= 12 half is built here. The <= 12 half -- that no 13th sphere fits -- is Schuette-van der Waerden 1953, EXTERNAL accepted mathematics, NOT machine-checked in this repo (a formalization far beyond reasonable effort). Cited, not claimed as our THEOREM; same tier as maths 4's KISSING-UPPER-BOUND-EXTERNAL. Together with 6.4 it gives kissing(3) = 12, the >= half ours and the <= half on citation."
+  },
+  {
+   "check": "surface slack = 3*sqrt3 - 5 in (0,1), proved at Mathlib's three axioms",
+   "determines": "UNIQUE (the surface slack is a fixed real value, 3*sqrt3 - 5)",
+   "expr": "twelve caps of half-angle pi/6 leave uncovered fraction 1 - 12*(1-cos(pi/6))/2 = 3*sqrt3 - 5, strictly between 0 and 1",
+   "frm": [
+    "6.4"
+   ],
+   "grade": "DERIVED",
+   "id": "6.7",
+   "value": {
+    "approx": 0.196,
+    "cold_recompute": false,
+    "companion_to": "6.4 (the combinatorial rattle, Z[phi])",
+    "in_open_unit_interval": true,
+    "proved_in_lean": true,
+    "slack": "3*sqrt3 - 5",
+    "status": "proved in-repo at Container09.SurfaceSlackReal (Mathlib) as of 2026-08-21"
+   },
+   "what": "the metric surface slack is exactly 3*sqrt3 - 5, in (0,1) -- the rattle, metrically",
+   "why": "6.4 shows the twelve spheres rattle COMBINATORIALLY (every pairwise dist^2 > R^2, exact in Z[phi], bottoming out at 5 < 9). This is the METRIC companion, which needs a real square root: the twelve contact caps (half-angle pi/6 = arcsin(1/2)) cover 12*(1-cos(pi/6))/2 = 6 - 3*sqrt3 of the central sphere, leaving EXACTLY 3*sqrt3 - 5 (~19.6%) uncovered -- strictly positive (the surface is NOT saturated, the rattle room) and strictly < 1. Saturation on the 1-D phase circle (twelve pi/6 arcs fill 2pi -- container 10's W.2), frustration on the 2-D surface (this slack): one angle pi/6 doing both. This was maths-4's REFRAME-PHASE-LEDGER-ARITHMETIC surface half, CITED while Maths 5 had no Real; as of the Mathlib-setup session (2026-08-21) it is PROVED IN-REPO at Container09.SurfaceSlackReal (surface_slack_exact / _pos / _lt_one; import Mathlib, axioms = Mathlib's three, kernel-confirmed). The Z[phi] core (6.1-6.4) stays zero-axiom; the two tiers are separate modules under one lib. Checked by the kernel (lake build), not by a cold Python recompute -- the model shows it Lean-proved, not re-run."
+  }
+ ],
+ "values": {
+  "R_sq": [
+   2,
+   1
+  ],
+  "all_clear": true,
+  "count": 12,
+  "distance_classes": [
+   [
+    4,
+    0
+   ],
+   [
+    4,
+    4
+   ],
+   [
+    8,
+    4
+   ]
+  ],
+  "min_dist_sq": [
+   4,
+   0
+  ],
+  "vertices": [
+   [
+    [
+     0,
+     0
+    ],
+    [
+     1,
+     0
+    ],
+    [
+     0,
+     1
+    ]
+   ],
+   [
+    [
+     0,
+     0
+    ],
+    [
+     1,
+     0
+    ],
+    [
+     0,
+     -1
+    ]
+   ],
+   [
+    [
+     0,
+     0
+    ],
+    [
+     -1,
+     0
+    ],
+    [
+     0,
+     1
+    ]
+   ],
+   [
+    [
+     0,
+     0
+    ],
+    [
+     -1,
+     0
+    ],
+    [
+     0,
+     -1
+    ]
+   ],
+   [
+    [
+     1,
+     0
+    ],
+    [
+     0,
+     1
+    ],
+    [
+     0,
+     0
+    ]
+   ],
+   [
+    [
+     1,
+     0
+    ],
+    [
+     0,
+     -1
+    ],
+    [
+     0,
+     0
+    ]
+   ],
+   [
+    [
+     -1,
+     0
+    ],
+    [
+     0,
+     1
+    ],
+    [
+     0,
+     0
+    ]
+   ],
+   [
+    [
+     -1,
+     0
+    ],
+    [
+     0,
+     -1
+    ],
+    [
+     0,
+     0
+    ]
+   ],
+   [
+    [
+     0,
+     1
+    ],
+    [
+     0,
+     0
+    ],
+    [
+     1,
+     0
+    ]
+   ],
+   [
+    [
+     0,
+     1
+    ],
+    [
+     0,
+     0
+    ],
+    [
+     -1,
+     0
+    ]
+   ],
+   [
+    [
+     0,
+     -1
+    ],
+    [
+     0,
+     0
+    ],
+    [
+     1,
+     0
+    ]
+   ],
+   [
+    [
+     0,
+     -1
+    ],
+    [
+     0,
+     0
+    ],
+    [
+     -1,
+     0
+    ]
+   ]
+  ]
+ }
+}

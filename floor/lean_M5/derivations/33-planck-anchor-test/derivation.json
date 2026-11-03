@@ -1,0 +1,137 @@
+{
+ "container": "33-planck-anchor-test",
+ "grades": {
+  "DERIVED": 2,
+  "OWED": 1,
+  "POSTULATE": 1
+ },
+ "steps": [
+  {
+   "check": "the edge = minimal adjacency (sq dist 4, 13); one archon per tick (24); the rate is one edge/tick, constant",
+   "determines": "UNIQUE (the edge = minimal adjacency (13); the tick = one step (24); the rate = one edge/tick, constant)",
+   "expr": "the edge = the minimal adjacency separation (13.A.1, squared distance 4 in Z[phi]); the tick = one registration step = one archon (24.SG.3); the propagation rate is one edge per tick, position-independent (24.SG.3) -- so the substrate natively has a CONSTANT rate c = edge/tick",
+   "frm": [
+    "13.A.1",
+    "24.SG.3"
+   ],
+   "grade": "DERIVED",
+   "id": "PA.1",
+   "value": {
+    "archons_per_tick": 1,
+    "edge": "the minimal adjacency separation (13.A.1) = the registration-to-registration edge",
+    "edge_is_minimal_adjacency": true,
+    "edge_sq_dist": 4,
+    "rate": "one edge per tick, position-independent (24.SG.3) -- a native constant c = edge/tick",
+    "rate_constant_one_edge_per_tick": true,
+    "tick": "one registration step = one archon (24.SG.3) = the state-change unit"
+   },
+   "what": "the substrate HAS a definite EDGE and TICK, and a CONSTANT edge/tick rate",
+   "why": "the substrate side of the Planck-anchor test: does the substrate HAVE the two things Kevin's hypothesis identifies with l_P and t_P? YES, both are definite. (a) THE EDGE: container 13.A.1 builds adjacency from the minimal squared distance -- the pure integer 4 in Z[phi]; that minimal separation IS the registration-to-registration edge of the web (01's adjacency). (b) THE TICK: container 24.SG.3 (covering-cold) shows each registration step advances exactly ONE archon -- one state change; that step IS the tick. (c) THE RATE: 24.SG.3 proves the gain is one archon per tick, constant across archons and positions. So the substrate has a native CONSTANT rate = one edge per one tick = c = edge/tick. This is not vacuous: the substrate genuinely carries the edge/tick/constant-rate structure Kevin's Planck hypothesis needs -- an edge (a length-like unit), a tick (a time-like unit), and a constant edge-per-tick propagation. Whether that edge IS l_P and that tick IS t_P is PA.3 (the correspondence); here the STRUCTURE is derived. DANGER-FREE: dimensionless structure (an edge, a tick, a constant rate); no Planck value."
+  },
+  {
+   "check": "edge/tick = (1,-1,0) = speed = c's dimension = l_P/t_P (18) -- c=alpha/tau (24) is the same KIND",
+   "determines": "UNIQUE (edge/tick = (1,-1,0) = speed = c; l_P/t_P = (1,-1,0); the same kind)",
+   "expr": "in the (L,T,M) accounting (27): edge = length (1,0,0), tick = time (0,1,0), so the rate edge/tick = (1,-1,0) = speed = c's dimension; Stone 18's c=l_P/t_P has the same (1,-1,0). So the substrate's native rate (= container 24's c=alpha/tau, the LENGTH reading of alpha, 27.DA.3) is the SAME KIND as the Planck rate",
+   "frm": [
+    "PA.1",
+    "24.SG.3",
+    "27.DA.3"
+   ],
+   "grade": "DERIVED",
+   "id": "PA.2",
+   "value": {
+    "c_dim": [
+     1,
+     -1,
+     0
+    ],
+    "c_eq_alpha_over_tau": "container 24.SG.3 -- alpha = the edge quantum (length reading, 27.DA.3), tau = the tick",
+    "edge_dim": [
+     1,
+     0,
+     0
+    ],
+    "lP_over_tP_dim": [
+     1,
+     -1,
+     0
+    ],
+    "rate_dim": [
+     1,
+     -1,
+     0
+    ],
+    "rate_is_speed": true,
+    "same_kind": "edge/tick and l_P/t_P are both (length)/(time) = (1,-1,0) = speed",
+    "same_kind_as_planck_rate": true,
+    "tick_dim": [
+     0,
+     1,
+     0
+    ]
+   },
+   "what": "the constant rate IS c=alpha/tau, same dimension (speed) as Stone 18's c=l_P/t_P",
+   "why": "the identification of the substrate's rate with the physical c, at the level of KIND (dimension). Container 24.SG.3 proved c = alpha/tau: each step contributes exactly alpha per tick, a constant rate. Reading alpha as the EDGE quantum -- a length (container 27.DA.3's length reading of alpha, the c=alpha/tau leg) -- and tau as the tick (a time), the rate alpha/tau = edge/tick has dimension (length)/(time) = (1,-1,0) = SPEED, exactly c's dimension. Stone 18 P.2's c = l_P/t_P is also (length)/(time) = (1,-1,0). So the substrate's native constant rate and the Planck rate c=l_P/t_P are the SAME KIND -- both a length per time. This is the dimensional pre-condition for Kevin's hypothesis: you cannot identify edge/tick with l_P/t_P unless they are the same kind, and they are. (The VALUES are a separate matter -- external, PA.4. Here only the KIND is derived, from 27's dimension algebra.) So c=alpha/tau (24) is dimensionally a speed, matching c=l_P/t_P (18)."
+  },
+  {
+   "check": null,
+   "determines": "POSTULATE (Kevin's Planck hypothesis: edge=l_P, tick=t_P; a held correspondence, not proven/refuted)",
+   "expr": "filed through the 19 gate: Kevin's Planck hypothesis (Stone 18 P.3) -- the edge = l_P, the tick = t_P -- so the substrate's c=edge/tick (PA.1/PA.2) <-> the Planck c=l_P/t_P (18.P.2); and alpha (the length/edge reading) = the Planck edge quantum. A CORRESPONDENCE; the Planck VALUES stay external (27), the physical identification is assumed",
+   "frm": [
+    "PA.1",
+    "PA.2",
+    "18.P.3"
+   ],
+   "grade": "POSTULATE",
+   "id": "PA.3",
+   "value": {
+    "correspondence": "edge <-> l_P; tick <-> t_P; c=edge/tick <-> c=l_P/t_P; alpha (edge reading) <-> the Planck edge quantum",
+    "correspondence_not_resolution": true,
+    "downstream_premise_use": false,
+    "honest_result": "NOT REFUTED (the substrate has the structure) and NOT PROVEN (values external; reproduces c by construction) -- STRUCTURALLY CONSISTENT",
+    "not_discriminating": "c=l_P/t_P is a standard identity (18.P.2), so it reproduces c by construction -- an identity, not a prediction",
+    "physics_side_cited": "c=l_P/t_P exactly (18.P.2); Kevin's hypothesis l_P=edge, t_P=tick (18.P.3, flagged)",
+    "substrate_side": "a definite edge + tick + constant edge/tick rate (PA.1), dimensionally a speed (PA.2)",
+    "weak_consistency_not_discrimination": true,
+    "what_does_not_travel": "the Planck VALUES l_P, t_P (3 external anchors, 27); the physical identification (assumed)"
+   },
+   "what": "THE FILED ENTRY (18.P.3): edge = l_P, tick = t_P => c=edge/tick <-> c=l_P/t_P (correspondence)",
+   "why": "the entry, and the honest status of the test. SUBSTRATE SIDE (checked): the substrate has a definite edge, a definite tick, and a constant edge/tick rate (PA.1) that is dimensionally a speed = c's kind (PA.2). PHYSICS SIDE (cited, Stone 18 P.2/P.3): c = l_P/t_P exactly (P.2); Kevin's hypothesis (P.3, held FLAGGED) is that l_P is the registration edge and t_P the tick. THE CORRESPONDENCE: the substrate's edge <-> l_P, the tick <-> t_P, so c=edge/tick <-> c=l_P/t_P, and alpha (the edge/length reading, 27.DA.3) <-> the Planck edge quantum. WHAT DOES NOT TRAVEL: the Planck VALUES l_P, t_P (among the 3 irreducibly-external anchors, container 27 -- NOT derived; they enter at measurement); the physical identification (that a registration step IS a Planck time, that the adjacency edge IS a Planck length -- assumed, Kevin's flagged hypothesis). FALSIFICATION SURFACE / THE HONEST RESULT: the substrate MUST have an edge, a tick, and a constant edge/tick rate of the right KIND -- it DOES (PA.1/PA.2), so the hypothesis is NOT REFUTED. But it is also NOT PROVEN: because c=l_P/t_P is a standard identity (18.P.2), the identification reproduces c BY CONSTRUCTION -- an IDENTITY, not a prediction that could have failed. So the Planck-anchor test comes out STRUCTURALLY CONSISTENT but NOT DISCRIMINATING: the substrate has exactly the edge/tick/rate structure Kevin's hypothesis needs, held as a CORRESPONDENCE, with the values external. A CORRESPONDENCE, WEAK; quarantined."
+  },
+  {
+   "check": null,
+   "determines": "OWED (discrimination -- 18.P.4; the Planck values -- external, 27; the alpha value -- Step 4; located)",
+   "expr": "the test as discharged is an IDENTITY (c=edge/tick reproduces c by construction, since c=l_P/t_P is exact, 18.P.2), consistent NOT discriminating (18.P.4); the Planck VALUES l_P, t_P stay external (27); the full alpha value (the edge quantum's number) waits behind the external anchor and the dimensionless alpha_hat. Located",
+   "frm": [
+    "PA.3",
+    "27.DA.2"
+   ],
+   "grade": "OWED",
+   "id": "PA.4",
+   "value": {
+    "discrimination_owed": "the test is an identity (reproduces c by construction, 18.P.2); consistent not discriminating (18.P.4)",
+    "located_not_attempted": true,
+    "next": "Step 4 -- rho_Lambda = alpha x min archic density (15), computed-then-compared, gated on alpha_hat + anchor",
+    "planck_values_external": "l_P, t_P among the 3 irreducibly-external anchors (27); not derived",
+    "present": false,
+    "the_value": "the full alpha value = alpha_hat (dimensionless, forward work) x the external Planck anchor"
+   },
+   "what": "DISCRIMINATION owed: the test is an IDENTITY not a prediction; the Planck values external; the value",
+   "why": "the residual, located and NOT attempted -- the honest boundary. PA.1-PA.3 establish that the substrate HAS the edge/tick/constant-rate structure Kevin's Planck hypothesis needs, and file the identification as a held correspondence. What remains: (i) DISCRIMINATION -- the test is an IDENTITY (Stone 18 P.4): because c=l_P/t_P is exact, edge=l_P & tick=t_P reproduces c by construction; it cannot FAIL, so it does not yet forbid any measurement; it passes on consistency, not discrimination; (ii) the PLANCK VALUES l_P, t_P are among the 3 irreducibly-external anchors (container 27) -- the substrate does not, and cannot, emit them; (iii) the full alpha VALUE -- the edge quantum's number -- is alpha_hat (dimensionless, the substrate's forward work) times the external Planck anchor. So the Planck-anchor test is discharged as a consistent correspondence; the discrimination, the Planck values, and the value are the forward work / external. NOT attempted here. NEXT in the alpha-value chain: Step 4, the cosmological-constant value (rho_Lambda = alpha x min archic density, container 15), computed-then-compared, gated behind alpha_hat + the anchor."
+  }
+ ],
+ "values": {
+  "archons_per_tick": 1,
+  "edge_sq_dist": 4,
+  "finding": "the Planck-anchor test: the substrate HAS a definite edge (minimal adjacency, 13), a definite tick (one archon per step, 24), and a CONSTANT edge/tick rate that is dimensionally a speed = c (PA.1/PA.2 -- = container 24's c=alpha/tau, length reading of alpha, 27.DA.3); Kevin's hypothesis edge=l_P/tick=t_P is filed as a held correspondence (PA.3, POSTULATE, WEAK). HONEST OUTCOME: STRUCTURALLY CONSISTENT but NOT DISCRIMINATING -- not refuted (the substrate has the structure), not proven (the Planck values are external, 27, and it reproduces c by construction -- an identity, 18.P.4). Discrimination + the values are OWED (PA.4). Danger-free.",
+  "planck_hypothesis_structurally_consistent": true,
+  "rate_constant": true,
+  "rate_dim": [
+   1,
+   -1,
+   0
+  ],
+  "rate_is_speed": true,
+  "same_kind_as_planck_rate": true
+ }
+}

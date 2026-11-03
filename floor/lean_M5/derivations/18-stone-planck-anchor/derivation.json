@@ -1,0 +1,100 @@
+{
+ "container": "18-stone-planck-anchor",
+ "grades": {
+  "DERIVED": 2,
+  "OWED": 1,
+  "POSTULATE": 1
+ },
+ "steps": [
+  {
+   "check": "hbar*c = 2Gm^2 and m_P^2*G = 2Gm^2 on witnesses; m = m_P/sqrt2; R = sqrt2 l_P",
+   "determines": "UNIQUE (the crossover mass m = m_P/sqrt2; the squared identities are exact)",
+   "expr": "R*(mc)=hbar and R*(cc)=2Gm (same R) => hbar*c = 2G m^2; with m_P^2 G = hbar c => m_P^2 = 2 m^2 => m = m_P/sqrt2; length R = sqrt2 l_P",
+   "frm": [],
+   "grade": "DERIVED",
+   "id": "P.1",
+   "value": {
+    "cleared_planck": "m_P^2*G = 2*G*m^2",
+    "crossover_identity": "hbar*c = 2*G*m^2",
+    "crossover_mass": "m = m_P/sqrt2",
+    "crossover_mass_numeric_planck_units": 0.707107,
+    "crossover_radius_eq_sqrt2_lP": true,
+    "factor_2_from": "the Schwarzschild radius 2Gm/c^2",
+    "m_P_squared_eq_2_m_squared": true,
+    "witnesses_checked": 4
+   },
+   "what": "the crossover anchor: Compton = Schwarzschild gives hbar*c = 2Gm^2, so m = m_P/sqrt2",
+   "why": "the reduced Compton radius R_C = hbar/(mc) and the Schwarzschild radius R_S = 2Gm/c^2 CROSS at one mass. Cleared of denominators (honest content whenever m,c nonzero): R*(m c)=hbar and R*(c c)=2Gm. When the SAME R is both, mass appears SQUARED with the factor 2 straight from the Schwarzschild radius: hbar*c = 2 G m^2 (exact, zero-axiom, re-proved fresh here on integer witnesses -- not maths-4's). Against the Planck mass (m_P^2 G = hbar c): m_P^2 G = 2 G m^2 (cleared), so m_P^2 = 2 m^2 and the crossover mass is m = m_P/sqrt2 -- THE 1/sqrt2 on the Schwarzschild factor-2. Length dual: R = sqrt2 l_P. The div-by-G and sqrt are routine scalar steps (cited), as maths-4 and Stone 5 leave theirs."
+  },
+  {
+   "check": "the two Stones hold concurrently (ruler + anchor); c = l_P/t_P exact",
+   "determines": "UNIQUE (the two Stones hold concurrently; c = l_P/t_P is exact)",
+   "expr": "Stone 5 dimensionless BC (scale-invariant step) + this anchor (Planck, absolute rung zero) hold concurrently; c = l_P/t_P (exact)",
+   "frm": [
+    "P.1",
+    "17.S.2"
+   ],
+   "grade": "DERIVED",
+   "id": "P.2",
+   "value": {
+    "anchor": "this: Planck crossover (absolute, rung zero)",
+    "c_eq_lP_over_tP": true,
+    "ladder": "absolute anchor + scale-invariant rungs",
+    "ruler": "Stone 5: BC = 2*pi/ln2 (dimensionless, scale-invariant step)"
+   },
+   "what": "the two Stones = the ladder: the ruler (BC, scale-invariant) + the anchor (Planck, absolute)",
+   "why": "the two Stones do different jobs and hold at the same time. Stone 5 is the RULER -- BC = 2*pi/ln2 is dimensionless, the SAME at every scale, so it is a scale-invariant STEP. This anchor is ABSOLUTE -- the Compton-Schwarzschild crossover pins a definite mass and length (the Planck scale), rung ZERO. An absolute anchor plus scale-invariant rungs is a climbable LADDER (maths-4 STONES-LADDER-CONCURRENT). The Planck length and time are linked by the standard identity c = l_P/t_P (exact: l_P/t_P = sqrt(c^5/c^3) = c) -- the length and time faces of rung zero."
+  },
+  {
+   "check": null,
+   "determines": "POSTULATE (Kevin's hypothesis; flagged; to prove or refute; not relied on)",
+   "expr": "l_P = registration-to-registration edge; t_P = the tick (state-change rate); then c = l_P/t_P = (edge)/(tick), and c = alpha/tau",
+   "frm": [
+    "P.2"
+   ],
+   "grade": "POSTULATE",
+   "id": "P.3",
+   "value": {
+    "author": "Kevin, 2026-08-25",
+    "c_form": "c = l_P/t_P = (edge)/(tick); Kevin: c = alpha/tau",
+    "planck_length": "registration-to-registration (the edge)",
+    "planck_time": "the state-change rate registration-to-registration (the tick)",
+    "same_as": "17.S.5 (kept flagged)",
+    "status": "flagged hypothesis; to prove or refute; not relied on"
+   },
+   "what": "c = alpha/tau AND Kevin's Planck hypothesis: l_P = reg-to-reg, t_P = state-change rate (a FLAGGED hypothesis)",
+   "why": "the candidate physical meaning for the anchor, kept a FLAGGED HYPOTHESIS (Kevin, 2026-08-25; not derived, not relied on). PLANCK LENGTH = registration-to-registration (the edge of the adjacency web); PLANCK TIME = the state-change RATE registration-to-registration (the tick). With P.2's exact c = l_P/t_P, this reads c = (edge)/(tick), and Kevin's c = alpha/tau (an information quantum per tick) would identify alpha with the edge quantum and tau with the tick. If proven, this supplies the physical anchoring P.4 flags as assumed. It is a HYPOTHESIS to prove or refute, held and capped -- exactly as flagged at 17.S.5."
+  },
+  {
+   "check": null,
+   "determines": "OWED (the physical anchoring proof; discrimination)",
+   "expr": "assumed: the Compton-Schwarzschild crossover IS a registration threshold (SEC9-type, open); owed: discrimination (it is an identity)",
+   "frm": [
+    "P.1",
+    "17.S.4"
+   ],
+   "grade": "OWED",
+   "id": "P.4",
+   "value": {
+    "assumed_crossover_is_registration_threshold": "SEC9-type, OPEN, unproven",
+    "owed_discrimination": "an identity (crossover of standard radii), not a prediction yet",
+    "present": false,
+    "quarantine": "physical reading NOT a downstream premise; only P.1 algebra + P.2 concurrency relied on"
+   },
+   "what": "what is ASSUMED / OWED: the crossover as a physical registration threshold; discrimination",
+   "why": "same quarantine as Stone 5. That the crossover pins a PHYSICAL registration threshold (not merely the meeting of two standard radii) is ASSUMED -- the SEC9-type interpretive gap, OPEN, unproven. And like Stone 5 the anchor is an IDENTITY (two standard radii set equal), not yet a prediction that forbids anything standard physics permits. QUARANTINE: no downstream container may use the physical reading as a premise; only the exact algebra (P.1) and the concurrency (P.2) may be relied on. These are the owed items, named so momentum does not erase them."
+  }
+ ],
+ "values": {
+  "c_eq_lP_over_tP": true,
+  "crossover_identity": "hbar*c = 2*G*m^2",
+  "crossover_mass": "m = m_P/sqrt2",
+  "crossover_radius": "R = sqrt2 * l_P",
+  "factor_2_from": "Schwarzschild radius",
+  "is_external_stone": true,
+  "planck_hypothesis": "l_P = reg-to-reg; t_P = state-change rate (Kevin, flagged)",
+  "quarantined": true,
+  "two_stones_ladder": "ruler (BC) + anchor (Planck) = climbable scale",
+  "witnesses_checked": 4
+ }
+}

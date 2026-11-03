@@ -1,0 +1,321 @@
+{
+ "container": "01-recursive-registration",
+ "grades": {
+  "DERIVED": 3,
+  "OWED": 1,
+  "POSTULATE": 2
+ },
+ "steps": [
+  {
+   "check": "each step defines one residual thing",
+   "determines": "UNIQUE given the minimal rule",
+   "expr": "reg N+1 : within the totality, define one more of the residual (undefined-existent)",
+   "frm": [],
+   "grade": "DERIVED",
+   "id": "1.1",
+   "value": {
+    "chain": [
+     {
+      "defined": [
+       "a"
+      ],
+      "defined_this_step": "a",
+      "registration": 2,
+      "residual": [
+       "b",
+       "c",
+       "d",
+       "e"
+      ],
+      "totality": [
+       "a",
+       "b",
+       "c",
+       "d",
+       "e"
+      ]
+     },
+     {
+      "defined": [
+       "a",
+       "b"
+      ],
+      "defined_this_step": "b",
+      "registration": 3,
+      "residual": [
+       "c",
+       "d",
+       "e"
+      ],
+      "totality": [
+       "a",
+       "b",
+       "c",
+       "d",
+       "e"
+      ]
+     },
+     {
+      "defined": [
+       "a",
+       "b",
+       "c"
+      ],
+      "defined_this_step": "c",
+      "registration": 4,
+      "residual": [
+       "d",
+       "e"
+      ],
+      "totality": [
+       "a",
+       "b",
+       "c",
+       "d",
+       "e"
+      ]
+     },
+     {
+      "defined": [
+       "a",
+       "b",
+       "c",
+       "d"
+      ],
+      "defined_this_step": "d",
+      "registration": 5,
+      "residual": [
+       "e"
+      ],
+      "totality": [
+       "a",
+       "b",
+       "c",
+       "d",
+       "e"
+      ]
+     }
+    ],
+    "totality": [
+     "a",
+     "b",
+     "c",
+     "d",
+     "e"
+    ]
+   },
+   "what": "registration 2+ subdivides the residual of all-that-is",
+   "why": "both true at once: the division is OF the totality (all-that-is is the ever-present context) AND lands its minimal cut at the residual's edge (what is not yet defined). The residual is selected positively as 'undefined', not as 'not the state'."
+  },
+  {
+   "check": "both poles at every step",
+   "determines": "UNIQUE",
+   "expr": "each step has a defined thing AND an undefined thing -> isDistinction",
+   "frm": [
+    "1.1"
+   ],
+   "grade": "DERIVED",
+   "id": "1.2",
+   "value": {
+    "every_step_is_a_distinction": true
+   },
+   "what": "each registration is a container-00 distinction (rests on 00)",
+   "why": "every registration, being a defined part with a residual left, is exactly a container-00 distinction: both poles witnessed, both existent. THE DEPENDENCY on 00, computed."
+  },
+  {
+   "check": "residual_{k} subset of residual_{k-1}",
+   "determines": "UNIQUE",
+   "expr": "residual_{N+1} subset of residual_N subset of ... subset of all-that-is",
+   "frm": [
+    "1.1"
+   ],
+   "grade": "DERIVED",
+   "id": "1.3",
+   "value": {
+    "nests": true,
+    "residual_sizes": [
+     4,
+     3,
+     2,
+     1
+    ]
+   },
+   "what": "the residual nests: each is inside the previous",
+   "why": "the extents are monotone -- what is defined stays defined, so the undefined residual only ever shrinks and never re-covers a defined thing. This is the positive, live form of non-overlap: the state and residual are disjoint by their labels, at every step."
+  },
+  {
+   "check": null,
+   "determines": "LOCAL (adjacency), live",
+   "expr": "identity(reg) := its live juxtaposition to its ADJACENT registrations",
+   "frm": [
+    "1.1"
+   ],
+   "grade": "POSTULATE",
+   "id": "1.4",
+   "value": {
+    "adjacency": {
+     "2": [
+      3
+     ],
+     "3": [
+      2,
+      4
+     ],
+     "4": [
+      3,
+      5
+     ],
+     "5": [
+      4
+     ]
+    },
+    "propagation": "stepwise (BFS over adjacency)"
+   },
+   "what": "co-definition is by adjacency -- live, stepwise (the inject)",
+   "why": "a registration is not defined by all others but by its adjacency; the definition is forever live -- change one and its adjacent relativities change, and that change propagates STEPWISE through the web. This is exactly why 'inject' spreads one ring at a time. The count of adjacencies is where 12 and the icosahedron will come from (owed, step 1.6)."
+  },
+  {
+   "check": null,
+   "determines": "UNIQUE up to the web",
+   "expr": "identity read off the live web of adjacent co-definitions; equal web => equal identity",
+   "frm": [
+    "1.4"
+   ],
+   "grade": "POSTULATE",
+   "id": "1.5",
+   "value": {
+    "determined_by": "the live adjacency web",
+    "triad_carries_up": true
+   },
+   "what": "relational identity: a registration IS its live adjacency, nothing stored",
+   "why": "identity is not independent data: a registration is its live juxtaposition to its adjacent registrations, forever co-defining. Two identities with the same live web are the same. The triad carries up -- every registration is registered by three observers (container 00)."
+  },
+  {
+   "check": null,
+   "determines": "OWED (only the metric no-thirteenth; the 12-achieved -> icosahedron is DISCHARGED by 03/09/11)",
+   "expr": "|adjacency(reg)| = 12 -> the icosahedron: the 12 is ACHIEVED and the shape FORCED; the residual is only the metric no-thirteenth (exactly 12, no 13th)",
+   "frm": [
+    "1.4"
+   ],
+   "grade": "OWED",
+   "id": "1.6",
+   "value": {
+    "achieved": "12 adjacencies -> the icosahedron, FORCED by 03 (closure+separation) / 09 (kissing) / 11 (shell)",
+    "built_here": false,
+    "consolidation": "four OWEDs (01.1.6, 03.3.7, 09.6.6, 25.DF.3) collapse to ONE open problem: the metric no-thirteenth / ambient dim=3",
+    "remaining_owed": "a substrate-native metric no-thirteenth (exactly 12, no 13th) -- the SAME open item as 03.3.7, 09.6.6, 25.DF.3"
+   },
+   "what": "the adjacency count 12 -> the icosahedron: 12 ACHIEVED + shape FORCED (03/09/11); only the metric no-thirteenth remains OWED",
+   "why": "RETREATED 2026-09-03: this was filed 'OWED, to be earned at 05/06', and it has since been largely DISCHARGED. That a registration can carry 12 adjacencies (the kissing number) and that the 12 form the ICOSAHEDRON is FORCED downstream: container 03 forces the closed uniform triangular trichotomy (d,V) = (3,4),(4,6),(5,12) and the three-observer separation selects the icosahedron UNIQUELY (03.3.3/3.4, DERIVED); container 09 achieves the kissing 12; container 11 builds the icosahedral shell. What REMAINS is only the UPPER bound -- a substrate-native METRIC no-thirteenth (exactly 12, no 13th neighbour by geometry, not the topological census) -- and this is the SAME single open item as 03.3.7, 09.6.6 and 25.DF.3. So four OWEDs collapse to ONE open problem, which container 03 records nothing in the corpus yet supplies. The 12 is achieved and the shape forced; only its uniqueness (no 13th, hence the ambient dim=3) is open."
+  }
+ ],
+ "values": {
+  "adjacency": {
+   "2": [
+    3
+   ],
+   "3": [
+    2,
+    4
+   ],
+   "4": [
+    3,
+    5
+   ],
+   "5": [
+    4
+   ]
+  },
+  "chain": [
+   {
+    "defined": [
+     "a"
+    ],
+    "defined_this_step": "a",
+    "registration": 2,
+    "residual": [
+     "b",
+     "c",
+     "d",
+     "e"
+    ],
+    "totality": [
+     "a",
+     "b",
+     "c",
+     "d",
+     "e"
+    ]
+   },
+   {
+    "defined": [
+     "a",
+     "b"
+    ],
+    "defined_this_step": "b",
+    "registration": 3,
+    "residual": [
+     "c",
+     "d",
+     "e"
+    ],
+    "totality": [
+     "a",
+     "b",
+     "c",
+     "d",
+     "e"
+    ]
+   },
+   {
+    "defined": [
+     "a",
+     "b",
+     "c"
+    ],
+    "defined_this_step": "c",
+    "registration": 4,
+    "residual": [
+     "d",
+     "e"
+    ],
+    "totality": [
+     "a",
+     "b",
+     "c",
+     "d",
+     "e"
+    ]
+   },
+   {
+    "defined": [
+     "a",
+     "b",
+     "c",
+     "d"
+    ],
+    "defined_this_step": "d",
+    "registration": 5,
+    "residual": [
+     "e"
+    ],
+    "totality": [
+     "a",
+     "b",
+     "c",
+     "d",
+     "e"
+    ]
+   }
+  ],
+  "length": 4,
+  "nests": true,
+  "totality": [
+   "a",
+   "b",
+   "c",
+   "d",
+   "e"
+  ]
+ }
+}

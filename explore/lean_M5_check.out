@@ -1,0 +1,364 @@
+toolchain: Lean (version 4.33.0-rc1, x86_64-w64-windows-gnu, commit 62eed1db4d67327ec8120be05f1a1b0847d74561, Release)
+lean-toolchain file: v4.33.0-rc1
+mathlib libs found: ['LeanSearchClient', 'Qq', 'aesop', 'batteries', 'importGraph', 'mathlib', 'plausible', 'proofwidgets']
+71 modules in total, 68 selected (skipped: ['Container05', 'Container06']); workers 6, timeout 900s each
+
+Container00.Distinction                                 OK                   theorems   7 sorry 0 axiom-decls 0 imports (none)
+    'Container00.undefined_ne_nonexistent' does not depend on any axioms
+    'Container00.defined_perceivable' does not depend on any axioms
+    'Container00.undefined_perceivable' does not depend on any axioms
+    'Container00.nonexistent_not_perceivable' does not depend on any axioms
+    'Container00.base_is_distinction' does not depend on any axioms
+    'Container00.all_defined_is_not_a_distinction' does not depend on any axioms
+    'Container00.none_defined_is_not_a_distinction' does not depend on any axioms
+Container01.RecursiveRegistration                       OK                   theorems   5 sorry 0 axiom-decls 0 imports Container00.Distinction
+    'Container01.stage1_is_distinction' does not depend on any axioms
+    'Container01.stage2_is_distinction' does not depend on any axioms
+    'Container01.residual_stage0_len' does not depend on any axioms
+    'Container01.residual_stage1_len' does not depend on any axioms
+    'Container01.residual_stage2_len' does not depend on any axioms
+Container02.RegistrationEvent                           OK                   theorems   8 sorry 0 axiom-decls 0 imports Container00.Distinction
+    'Container02.potential_not_stable' does not depend on any axioms
+    'Container02.event_stabilises' does not depend on any axioms
+    'Container02.observer_observed_co_emerge' does not depend on any axioms
+    'Container02.one_static' does not depend on any axioms
+    'Container02.two_polarity_no_turning' does not depend on any axioms
+    'Container02.three_turns_and_differs' does not depend on any axioms
+    'Container02.three_is_first_closure_rank' does not depend on any axioms
+    'Container02.differs_three_through_eight' does not depend on any axioms
+Container03.DimensionalEmergence                        OK                   theorems   7 sorry 0 axiom-decls 0 imports (none)
+    'Container03.clique_has_triangles' does not depend on any axioms
+    'Container03.local_path_has_none' does not depend on any axioms
+    'Container03.twelve_forced' depends on axioms: [propext, Quot.sound]
+    'Container03.closure_trichotomy' depends on axioms: [propext, Classical.choice, Quot.sound]
+    'Container03.closures_exist' does not depend on any axioms
+    'Container03.icosahedron_uniquely_separated' does not depend on any axioms
+    'Container03.d4_admits_thirteen' does not depend on any axioms
+Container04.Integers                                    OK                   theorems  23 sorry 0 axiom-decls 0 imports Container01.RecursiveRegistration
+    'Container04.IntEquiv.trans' does not depend on any axioms
+    'Container04.diagonal_is_zero' does not depend on any axioms
+    'Container04.plus_one_ne_minus_one' does not depend on any axioms
+    'Container04.add_neg_equiv_zero' does not depend on any axioms
+    'Container04.plus_add_minus_zero' does not depend on any axioms
+    'Container04.addPair_congr' does not depend on any axioms
+    'Container04.negPair_congr' does not depend on any axioms
+    'Container04.ofNatPair_add' does not depend on any axioms
+    'Container04.mulPair_congr' depends on axioms: [propext, Quot.sound]
+    'Container04.mul_one_equiv' depends on axioms: [propext, Quot.sound]
+    'Container04.mulPair_comm' depends on axioms: [propext, Quot.sound]
+    'Container04.left_distrib_equiv' depends on axioms: [propext, Quot.sound]
+    'Container04.orientation_trichotomy' depends on axioms: [propext, Quot.sound]
+    'Container04.orientation_exclusive' depends on axioms: [propext, Quot.sound]
+    'Container04.mulPair_assoc' depends on axioms: [propext, Quot.sound]
+Container07.Dynamics                                    OK                   theorems   6 sorry 0 axiom-decls 0 imports Container02.RegistrationEvent,Container04.Integers
+    'Container07.tick_order_total' does not depend on any axioms
+    'Container07.history_entry_is_change' does not depend on any axioms
+    'Container07.step_directions_distinct' does not depend on any axioms
+    'Container07.walk_net' does not depend on any axioms
+    'Container07.rate_is_a_ratio' does not depend on any axioms
+    'Container07.cycle_returns' does not depend on any axioms
+Container08.MetricDynamics                              OK                   theorems  14 sorry 0 axiom-decls 0 imports Container07.Dynamics
+    'Container08.straight_disp_eq_path' does not depend on any axioms
+    'Container08.turned_disp_lt_path' does not depend on any axioms
+    'Container08.turned_normSq_two' does not depend on any axioms
+    'Container08.reversed_nets_zero' does not depend on any axioms
+    'Container08.elbow_triangle' does not depend on any axioms
+    'Container08.metric_time_is_ordinal_ticks' does not depend on any axioms
+    'Container08.straight_zero_accel' does not depend on any axioms
+    'Container08.turned_accel' does not depend on any axioms
+    'Container08.reversed_accel_magsq_four' does not depend on any axioms
+    'Container08.elbow_accel_localizes' does not depend on any axioms
+    'Container08.elbow_accel_telescopes' does not depend on any axioms
+Container09.KissingTwelve                               OK                   theorems   6 sorry 0 axiom-decls 0 imports (none)
+    'Container09.vertex_norm_R2' does not depend on any axioms
+    'Container09.edge_distSq_four' does not depend on any axioms
+    'Container09.edge_gap_pos' does not depend on any axioms
+    'Container09.gap_offedge_pos' does not depend on any axioms
+    'Container09.kissing_reduces_to' does not depend on any axioms
+Container09.SurfaceSlackReal                            OK                   theorems   3 sorry 0 axiom-decls 0 imports Mathlib
+    'Container09.surface_slack_exact' depends on axioms: [propext, Classical.choice, Quot.sound]
+    'Container09.surface_slack_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
+    'Container09.surface_slack_lt_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+Container10.PhaseLedgerReal                             OK                   theorems   5 sorry 0 axiom-decls 0 imports Mathlib
+    'Container10.kissing_half_angle' depends on axioms: [propext, Classical.choice, Quot.sound]
+    'Container10.phase_ledger_saturates_at_twelve' depends on axioms: [propext, Classical.choice, Quot.sound]
+    'Container10.thirteenth_overflows' depends on axioms: [propext, Classical.choice, Quot.sound]
+    'Container10.shared_interface_width' depends on axioms: [propext, Classical.choice, Quot.sound]
+    'Container10.capacity_split' depends on axioms: [propext, Classical.choice, Quot.sound]
+Container10.WhyTwelve                                   OK                   theorems   5 sorry 0 axiom-decls 0 imports (none)
+    'Container10.twelve_fills' does not depend on any axioms
+    'Container10.thirteen_overflows' does not depend on any axioms
+    'Container10.phase_cap_constant' does not depend on any axioms
+    'Container10.kissing_varies' does not depend on any axioms
+    'Container10.twelve_selects_dim_three' does not depend on any axioms
+Container11.Icosahedron                                 OK                   theorems   8 sorry 0 axiom-decls 0 imports (none)
+    'Container11.transfer_rule' does not depend on any axioms
+    'Container11.twelve_are_six_and_negatives' does not depend on any axioms
+    'Container11.six_direction_det_eq_eight' does not depend on any axioms
+    'Container11.overlap_squared_lengths' does not depend on any axioms
+    'Container11.overlap_field_norms' does not depend on any axioms
+    'Container11.cuboctahedron_is_not_a_triangulation' does not depend on any axioms
+    'Container11.minimal_shell_is_twelve_plus_twenty' does not depend on any axioms
+Container12.E8Roots                                     OK                   theorems   4 sorry 0 axiom-decls 0 imports (none)
+    'Container12.root_count' does not depend on any axioms
+    'Container12.all_norm_two' does not depend on any axioms
+    'Container12.roots_nodup' does not depend on any axioms
+    'Container12.neg_closed' does not depend on any axioms
+Container13.ArchicDensity                               OK                   theorems   6 sorry 0 axiom-decls 0 imports (none)
+    'Container13.edge_count_thirty' does not depend on any axioms
+    'Container13.all_degree_five' does not depend on any axioms
+    'Container13.twenty_triangular_faces' does not depend on any axioms
+    'Container13.euler_characteristic_two' does not depend on any axioms
+    'Container13.ball_profile_uniform' does not depend on any axioms
+    'Container13.ball_one_eq_deg_plus_one' does not depend on any axioms
+Container14.DensityDeficit                              OK                   theorems   4 sorry 0 axiom-decls 0 imports Container13.ArchicDensity
+    'Container14.flat_ball_values' does not depend on any axioms
+    'Container14.angle_defect_two_per_vertex' does not depend on any axioms
+    'Container14.curvature_charge_is_twelve_chi' does not depend on any axioms
+    'Container14.primordial_law_r1' does not depend on any axioms
+Container15.DensityExtremum                             OK                   theorems   4 sorry 0 axiom-decls 0 imports Container14.DensityDeficit
+    'Container15.density_extrema_values' does not depend on any axioms
+    'Container15.minimum_below_flat_gradient' does not depend on any axioms
+    'Container15.net_curvature_positive' does not depend on any axioms
+    'Container15.no_hyperbolic_vertex_R1' does not depend on any axioms
+Container16.FrustrationDynamo                           OK                   theorems   3 sorry 0 axiom-decls 0 imports (none)
+    'Container16.squared_core' does not depend on any axioms
+    'Container16.frustration_strictly_positive' does not depend on any axioms
+    'Container16.frustration_core_bool' does not depend on any axioms
+Container17.StoneBekensteinCompton                      OK                   theorems   3 sorry 0 axiom-decls 0 imports (none)
+    'Container17.natMulAssoc' does not depend on any axioms
+    'Container17.mass_cancels' does not depend on any axioms
+    'Container17.mass_cancels_witness' does not depend on any axioms
+Container18.StonePlanckAnchor                           OK                   theorems   5 sorry 0 axiom-decls 0 imports (none)
+    'Container18.natMulAssoc' does not depend on any axioms
+    'Container18.natMulComm' does not depend on any axioms
+    'Container18.compton_schwarzschild_crossover' does not depend on any axioms
+    'Container18.crossover_planck_cleared' does not depend on any axioms
+    'Container18.crossover_witness' does not depend on any axioms
+Container19.EntryProtocol                               OK                   theorems   2 sorry 0 axiom-decls 0 imports (none)
+    'Container19.quarantine_holds' does not depend on any axioms
+    'Container19.stone_used_as_algebra_not_reading' does not depend on any axioms
+Container20.DensityGradient                             OK                   theorems   3 sorry 0 axiom-decls 0 imports (none)
+    'Container20.gauss_sources_sum_to_zero' does not depend on any axioms
+    'Container20.local_minimum_is_positive_source' does not depend on any axioms
+    'Container20.leaf_is_a_sink' does not depend on any axioms
+Container21.EntryGravityCurvature                       OK                   theorems   2 sorry 0 axiom-decls 0 imports (none)
+    'Container21.deficit_is_curvature_integral' does not depend on any axioms
+    'Container21.V_eps_coeff_n2' does not depend on any axioms
+Container22.ConvergeTopDown                             OK                   theorems   2 sorry 0 axiom-decls 0 imports (none)
+    'Container22.convergence_on_instances' does not depend on any axioms
+    'Container22.top_down_recovers_bottom_up' does not depend on any axioms
+Container23.LevelIntegrality                            OK                   theorems   8 sorry 0 axiom-decls 0 imports Container13.ArchicDensity
+    'Container23.path_independent_length' does not depend on any axioms
+    'Container23.path_independent_set' does not depend on any axioms
+    'Container23.covering_fresh_plus_one' does not depend on any axioms
+    'Container23.covering_idempotent_on_present' does not depend on any axioms
+    'Container23.additivity_orthogonal' does not depend on any axioms
+    'Container23.additivity_overlap_fails' does not depend on any axioms
+    'Container23.ball_profile_is_level' does not depend on any axioms
+    'Container23.level_eq_ball_count' does not depend on any axioms
+Container24.StoneGrounding                              OK                   theorems   8 sorry 0 axiom-decls 0 imports Container23.LevelIntegrality
+    'Container24.rep_is_alpha_count' does not depend on any axioms
+    'Container24.rep_empty' does not depend on any axioms
+    'Container24.rep_additive' does not depend on any axioms
+    'Container24.rep_nonconstant_breaks' does not depend on any axioms
+    'Container24.rep_scale_free' does not depend on any axioms
+    'Container24.info_of_ball' does not depend on any axioms
+    'Container24.step_gain_constant' does not depend on any axioms
+    'Container24.step_gain_position_indep' does not depend on any axioms
+Container25.DimensionForcing                            OK                   theorems   7 sorry 0 axiom-decls 0 imports Container14.DensityDeficit
+    'Container25.flat_ball_second_diff_const' does not depend on any axioms
+    'Container25.flat_ball_third_diff_zero' does not depend on any axioms
+    'Container25.ring_is_linear' does not depend on any axioms
+    'Container25.line_is_degree1' does not depend on any axioms
+    'Container25.coeff_at_n2' does not depend on any axioms
+    'Container25.coeff_eq_measured_gauss_bonnet' does not depend on any axioms
+    'Container25.coeff_eq_gb_only_sphere' does not depend on any axioms
+Container26.Base2Forcing                                OK                   theorems   6 sorry 0 axiom-decls 0 imports Container00.Distinction
+    'Container26.alphabet_is_two' does not depend on any axioms
+    'Container26.base3_refuted' does not depend on any axioms
+    'Container26.observers_typed_apart_from_alphabet' does not depend on any axioms
+    'Container26.base_two_doubling' does not depend on any axioms
+    'Container26.configs_zero' does not depend on any axioms
+    'Container26.base_is_two' does not depend on any axioms
+Container27.DimensionalAccounting                       OK                   theorems   7 sorry 0 axiom-decls 0 imports (none)
+    'Container27.substrate_dimensionless' does not depend on any axioms
+    'Container27.anchors_basis_det_two' does not depend on any axioms
+    'Container27.anchors_independent' does not depend on any axioms
+    'Container27.alpha_readings_differ' does not depend on any axioms
+    'Container27.alpha_compton_dual' does not depend on any axioms
+    'Container27.alpha_energy_is_planck_energy' does not depend on any axioms
+    'Container27.alpha_length_is_planck_length' does not depend on any axioms
+Container28.WeakSU2                                     OK                   theorems   6 sorry 0 axiom-decls 0 imports (none)
+    'Container28.su2_bracket_ij' does not depend on any axioms
+    'Container28.su2_bracket_jk' does not depend on any axioms
+    'Container28.su2_bracket_ki' does not depend on any axioms
+    'Container28.split_one_plus_three' does not depend on any axioms
+    'Container28.double_cover_120' does not depend on any axioms
+    'Container28.generators_three' does not depend on any axioms
+Container29.EmU1                                        OK                   theorems   5 sorry 0 axiom-decls 0 imports Container14.DensityDeficit,Container28.WeakSU2
+    'Container29.charge_signed_mirror' does not depend on any axioms
+    'Container29.charge_conserved_is_12chi' does not depend on any axioms
+    'Container29.u1_abelian' does not depend on any axioms
+    'Container29.weak_nonabelian' does not depend on any axioms
+    'Container29.electroweak_is_quaternion' does not depend on any axioms
+Container30.StrongSU3                                   OK                   theorems   6 sorry 0 axiom-decls 0 imports (none)
+    'Container30.roots_norm_two' does not depend on any axioms
+    'Container30.six_roots' does not depend on any axioms
+    'Container30.dim_su3_is_eight' does not depend on any axioms
+    'Container30.cartan_det_three' does not depend on any axioms
+    'Container30.cyc_permutes_roots' does not depend on any axioms
+    'Container30.cyc_order_three' does not depend on any axioms
+Container31.ColorSeating                                OK                   theorems   4 sorry 0 axiom-decls 0 imports (none)
+    'Container31.g3_doubled_cube' does not depend on any axioms
+    'Container31.seatings_three' does not depend on any axioms
+    'Container31.cycles_partition_120' does not depend on any axioms
+    'Container31.centralizer_times_class' does not depend on any axioms
+Container32.RegistrationBoundary                        OK                   theorems   3 sorry 0 axiom-decls 0 imports (none)
+    'Container32.twelve_writes_fill' does not depend on any axioms
+    'Container32.thirteenth_overflows' does not depend on any axioms
+    'Container32.boundary_is_twelve_radits' does not depend on any axioms
+Container33.PlanckAnchorTest                            OK                   theorems   4 sorry 0 axiom-decls 0 imports (none)
+    'Container33.rate_constant' does not depend on any axioms
+    'Container33.edge_is_minimal_adjacency' does not depend on any axioms
+    'Container33.rate_is_speed' does not depend on any axioms
+    'Container33.planck_rate_same_kind' does not depend on any axioms
+Container34.VacuumValue                                 OK                   theorems   3 sorry 0 axiom-decls 0 imports Container14.DensityDeficit
+    'Container34.rho_min_values' does not depend on any axioms
+    'Container34.deficit_is_triangular' does not depend on any axioms
+    'Container34.rho_lambda_is_energy_density' does not depend on any axioms
+Container35.ForceAlphaHat                               OK                   theorems   3 sorry 0 axiom-decls 0 imports (none)
+    'Container35.naive_alpha_hat_is_one' does not depend on any axioms
+    'Container35.order_gap_is_122' does not depend on any axioms
+    'Container35.alpha_hat_one_refuted' does not depend on any axioms
+Container36.NegativeCurvature                           OK                   theorems  11 sorry 0 axiom-decls 0 imports Container14.DensityDeficit
+    'Container36.flat_ball_one' does not depend on any axioms
+    'Container36.deficit_across_mirror' does not depend on any axioms
+    'Container36.left_wing_negative' does not depend on any axioms
+    'Container36.star_denser_than_flat' does not depend on any axioms
+    'Container36.star_deficit_neg' does not depend on any axioms
+    'Container36.hyp_values' does not depend on any axioms
+    'Container36.flat_reference_is_container14' does not depend on any axioms
+    'Container36.hyp_denser_than_flat' does not depend on any axioms
+    'Container36.hyp_deficit_neg_and_growing' does not depend on any axioms
+    'Container36.right_wing_sphere' does not depend on any axioms
+    'Container36.left_wing_chi_negative' does not depend on any axioms
+Container37.GeodesicMotion                              OK                   theorems   4 sorry 0 axiom-decls 0 imports Container36.NegativeCurvature
+    'Container37.flat_straight' does not depend on any axioms
+    'Container37.deflection_is_deficit' does not depend on any axioms
+    'Container37.focusing_sign' does not depend on any axioms
+    'Container37.accel_localizes' does not depend on any axioms
+Container38.DeflectionValue                             OK                   theorems   3 sorry 0 axiom-decls 0 imports Container37.GeodesicMotion
+    'Container38.deflection_value' does not depend on any axioms
+    'Container38.deflection_is_full_deficit' does not depend on any axioms
+    'Container38.total_is_double_cover' does not depend on any axioms
+Container39.PointMassLimit                              OK                   theorems   2 sorry 0 axiom-decls 0 imports (none)
+    'Container39.intrinsic_continuum_is_orbifold' does not depend on any axioms
+    'Container39.deficit_stays_concentrated' does not depend on any axioms
+Container40.DeflectionForm                              OK                   theorems   3 sorry 0 axiom-decls 0 imports (none)
+    'Container40.flux_and_exponents' does not depend on any axioms
+    'Container40.two_d_impact_independent' does not depend on any axioms
+    'Container40.three_d_is_one_over_b' does not depend on any axioms
+Container41.MetricNoThirteenth                          OK                   theorems   3 sorry 0 axiom-decls 0 imports (none)
+    'Container41.carrier_is_double_cover' does not depend on any axioms
+    'Container41.one_su2_forces_three_d' does not depend on any axioms
+    'Container41.kissing_by_dimension' does not depend on any axioms
+Container42.SingleSU2Root                               OK                   theorems   3 sorry 0 axiom-decls 0 imports (none)
+    'Container42.one_H_is_three_d' does not depend on any axioms
+    'Container42.frobenius_forces_H' does not depend on any axioms
+    'Container42.H_imaginary_closes' does not depend on any axioms
+Container43.CompositionNorm                             OK                   theorems   2 sorry 0 axiom-decls 0 imports (none)
+    'Container43.group_algebra_has_zero_divisor' does not depend on any axioms
+    'Container43.hurwitz_then_H' does not depend on any axioms
+Container44.Chirality                                   OK                   theorems   2 sorry 0 axiom-decls 0 imports (none)
+    'Container44.carrier_orientation_pure' does not depend on any axioms
+    'Container44.parity_is_not_a_self_map' does not depend on any axioms
+Container45.Spinor                                      OK                   theorems   2 sorry 0 axiom-decls 0 imports (none)
+    'Container45.central_minus_one' does not depend on any axioms
+    'Container45.spinor_returns_at_4pi' does not depend on any axioms
+Container46.SpacetimeSignature                          OK                   theorems   2 sorry 0 axiom-decls 0 imports (none)
+    'Container46.three_plus_one' does not depend on any axioms
+    'Container46.signature_forced' does not depend on any axioms
+Container47.FocusingResolution                          OK                   theorems   2 sorry 0 axiom-decls 0 imports (none)
+    'Container47.twelve_spatial_focus' does not depend on any axioms
+    'Container47.no_contradiction' does not depend on any axioms
+Container48.ClosedLeftWing                              OK                   theorems   3 sorry 0 axiom-decls 0 imports (none)
+    'Container48.sphere_spectrum' does not depend on any axioms
+    'Container48.mirror_spectrum' does not depend on any axioms
+    'Container48.anti_twelve' does not depend on any axioms
+Container49.CPT                                         OK                   theorems   2 sorry 0 axiom-decls 0 imports (none)
+    'Container49.C_charge_conjugation' does not depend on any axioms
+    'Container49.P_and_T_involutions' does not depend on any axioms
+Container50.ElectroweakMixing                           OK                   theorems   2 sorry 0 axiom-decls 0 imports (none)
+    'Container50.cartan_rank_two' does not depend on any axioms
+    'Container50.mixing_forces_Z' does not depend on any axioms
+Container51.GaugeProduct                                OK                   theorems   2 sorry 0 axiom-decls 0 imports (none)
+    'Container51.gauge_dimensions' does not depend on any axioms
+    'Container51.not_a_forced_decomposition' does not depend on any axioms
+Container52.ContinuumLimit                              OK                   theorems   2 sorry 0 axiom-decls 0 imports (none)
+    'Container52.flat_coarse_limit' does not depend on any axioms
+    'Container52.twelve_cone_orbifold' does not depend on any axioms
+Container53.QuantumKinematics                           OK                   theorems   3 sorry 0 axiom-decls 0 imports (none)
+    'Container53.phase_is_U1' does not depend on any axioms
+    'Container53.complex_amplitude' does not depend on any axioms
+    'Container53.unitary_evolution' does not depend on any axioms
+Container54.DeflectionFactor                            OK                   theorems   2 sorry 0 axiom-decls 0 imports (none)
+    'Container54.front_feels_both' does not depend on any axioms
+    'Container54.factor_of_two' does not depend on any axioms
+Container55.BornHinge                                   OK                   theorems   2 sorry 0 axiom-decls 0 imports (none)
+    'Container55.norm_is_squared_modulus' does not depend on any axioms
+    'Container55.square_forced' does not depend on any axioms
+Container56.MatterCensus                                OK                   theorems   2 sorry 0 axiom-decls 0 imports (none)
+    'Container56.colour_type_split' does not depend on any axioms
+    'Container56.three_kinds_located' does not depend on any axioms
+Container57.WeinbergAngle                               OK                   theorems   3 sorry 0 axiom-decls 0 imports (none)
+    'Container57.cartan_equal_norm' does not depend on any axioms
+    'Container57.u2_gives_half' does not depend on any axioms
+    'Container57.half_ne_gut' does not depend on any axioms
+Container58.HyperchargeGrading                          OK                   theorems   2 sorry 0 axiom-decls 0 imports (none)
+    'Container58.zmod6_bijection' does not depend on any axioms
+    'Container58.anomaly_free' does not depend on any axioms
+Container59.ContentSelection                            OK                   theorems   3 sorry 0 axiom-decls 0 imports (none)
+    'Container59.irrep_split' does not depend on any axioms
+    'Container59.count_mismatch' does not depend on any axioms
+    'Container59.mass_spectrum' does not depend on any axioms
+Container60.ContentARoot                                OK                   theorems   3 sorry 0 axiom-decls 0 imports (none)
+    'Container60.generation_is_a_real_structure' does not depend on any axioms
+    'Container60.e8_matter_surface' does not depend on any axioms
+    'Container60.wrong_surface_counts' does not depend on any axioms
+Container61.K2SurfaceTest                               OK                   theorems   3 sorry 0 axiom-decls 0 imports (none)
+    'Container61.e8_branching' does not depend on any axioms
+    'Container61.generation_count_three' does not depend on any axioms
+    'Container61.block_not_a_generation' does not depend on any axioms
+Container62.EmbeddingDistinction                        OK                   theorems   3 sorry 0 axiom-decls 0 imports (none)
+    'Container62.a2_orbit_decomposition' does not depend on any axioms
+    'Container62.fixed_locus_is_A2xA2' does not depend on any axioms
+    'Container62.axis_not_canonical' does not depend on any axioms
+Container63.BoundaryMap                                 OK                   theorems   3 sorry 0 axiom-decls 0 imports (none)
+    'Container63.sin2_thetaW_is_three_eighths' does not depend on any axioms
+    'Container63.split_and_structural_gap' does not depend on any axioms
+    'Container63.spin_tower' does not depend on any axioms
+Container64.CoxeterBridge                               OK                   theorems   6 sorry 0 axiom-decls 0 imports (none)
+    'Container64.helix_bookkeeping' does not depend on any axioms
+    'Container64.charpoly_is_phi30_of_degree_rank' does not depend on any axioms
+    'Container64.exponents_are_e8' does not depend on any axioms
+    'Container64.generation_fixed_point_free' does not depend on any axioms
+    'Container64.colour_A2xA2_and_central_fold' does not depend on any axioms
+    'Container64.mass_walk_degree' does not depend on any axioms
+Container65.FourClocks                                  OK                   theorems   3 sorry 0 axiom-decls 0 imports (none)
+    'Container65.seat_bookkeeping' does not depend on any axioms
+    'Container65.canonical_frame' does not depend on any axioms
+    'Container65.frame_alignment_selector' does not depend on any axioms
+Container66.ArbiterSeating                              OK                   theorems   4 sorry 0 axiom-decls 0 imports (none)
+    'Container66.shells_and_arbiter_seats' does not depend on any axioms
+    'Container66.arbiter_lag_is_nine_squared' does not depend on any axioms
+    'Container66.arbiter_lean_and_total' does not depend on any axioms
+    'Container66.selector_cuts_288_to_two' does not depend on any axioms
+Container67.ConjugationGeneration                       OK                   theorems   5 sorry 0 axiom-decls 0 imports (none)
+    'Container67.flippers_split' does not depend on any axioms
+    'Container67.trichotomy_no_preserve' does not depend on any axioms
+    'Container67.convention_independent' does not depend on any axioms
+    'Container67.C_acts_nontrivially' does not depend on any axioms
+    'Container67.C_selfmaps_all_improper' does not depend on any axioms
+
+summary: 68 compiled, 0 not  (of 68)

@@ -1,0 +1,189 @@
+{
+ "container": "67-conjugation-generation",
+ "grades": {
+  "DERIVED": 5,
+  "OWED": 1,
+  "POSTULATE": 1
+ },
+ "steps": [
+  {
+   "check": "full isometry group order 14400; exactly 24 colour-flipping involutions (18 proper + 6 improper); all walk-symmetries",
+   "determines": "UNIQUE (24 colour-flipping involutions: 18 proper + 6 improper, exhaustive over the 14400)",
+   "expr": "every automorphism of the +phi/2 Cayley graph of 2I is an isometry of the 600-cell, i.e. v -> p v q (orientation-preserving, det +1 on R^4) or v -> p vbar q (orientation-reversing, det -1), p,q in 2I -- the group H4 of order 14400 (enumerated here as 7200+7200 distinct maps, deduped). Keeping the involutions (X^2 = id, X != id) that FLIP COLOUR (conjugate COL = conj b^2 to its inverse) yields EXACTLY 24: 18 with det +1 and 6 with det -1. Each of the 24 is independently checked to preserve the +phi/2 adjacency (a genuine walk-symmetry), so the enumeration is of walk-symmetries, not merely of isometries",
+   "frm": [
+    "64.CX.4",
+    "06.2.1"
+   ],
+   "grade": "DERIVED",
+   "id": "CG.1",
+   "value": {
+    "all_are_walk_symmetries": true,
+    "isometry_group_order": 14400,
+    "n_colour_flipping_involutions": 24,
+    "n_improper_det_minus1": 6,
+    "n_proper_det_plus1": 18
+   },
+   "what": "THE COLOUR-FLIPPING INVOLUTIONS: over the 120's full isometry group (v->pvq det+1, v->p vbar q det-1; p,q in 2I; order 14400 = |H4|), the involutions that flip colour (X COL X^-1 = COL^-1, COL = conj b^2) number EXACTLY 24 -- 18 proper (det+1) + 6 improper (det-1); each VERIFIED a walk-symmetry (preserves the +phi/2 adjacency)",
+   "why": "the complete, exhaustive population the classification runs on -- not a hand-picked family (the refuted P1 used a 6-element subfamily). The parametrization v->pvq / v->p vbar q is the standard complete symmetry group of the 600-cell (|H4| = 14400, reproduced cold); colour-flipping + involution cuts it to 24. Exact-integer over Z[phi]; the sweep is deterministic."
+  },
+  {
+   "check": "on <R_b4>: 0 preserve; 18 proper all invert; 6 improper all scramble (refutes P1's improper-preserve)",
+   "determines": "UNIQUE (0 preserve; 18 proper invert, 6 improper scramble -- exhaustive)",
+   "expr": "generation is the outer Z/3 = <R_{b^4}> (64.CX.3: C^10 = R_{b^4}, order-3 fixed-point-free, 40 three-cycles). For each of the 24 colour-flipping involutions X, compute X GEN X^-1 and test membership in <GEN> = {id, R_{b^4}, R_{b^8}}: PRESERVE if = GEN, INVERT if = GEN^-1, SCRAMBLE otherwise. Result: the 18 proper (det+1) ALL INVERT (X GEN X^-1 = GEN^-1 -- swap gen1<->gen2, fix gen0); the 6 improper (det-1) ALL SCRAMBLE (X GEN X^-1 is a LEFT multiplication, out of the right-regular <GEN> -- because quaternion conjugation is an anti-automorphism carrying R_x to L_{xbar}). PRESERVE count = 0 across all 24. So NO colour-flipping involution of the 120 leaves the outer Z/3 invariant",
+   "frm": [
+    "CG.1",
+    "64.CX.3"
+   ],
+   "grade": "DERIVED",
+   "id": "CG.2",
+   "value": {
+    "by_orientation": {
+     "-1": {
+      "invert": 0,
+      "preserve": 0,
+      "scramble": 6
+     },
+     "1": {
+      "invert": 18,
+      "preserve": 0,
+      "scramble": 0
+     }
+    },
+    "classification_R_b4": {
+     "invert": 18,
+     "preserve": 0,
+     "scramble": 6
+    },
+    "improper_all_scramble": true,
+    "n_preserve": 0,
+    "proper_all_invert": true
+   },
+   "what": "THE TRICHOTOMY -- NO INVOLUTION PRESERVES GENERATION: on the outer Z/3 = <R_{b^4}> (64.CX.3) each colour-flipping involution acts as exactly one of PRESERVE (=GEN), INVERT (=GEN^-1), SCRAMBLE (not in <GEN>). The 18 proper ALL INVERT (gen1<->gen2, gen0 fixed); the 6 improper ALL SCRAMBLE (to a LEFT action, out of <GEN>). PRESERVE = 0. (Refutes P1: improper SCRAMBLE, not preserve)",
+   "why": "the headline, and the cold correction of the refuted P1. P1 claimed 'improper (det-1) => preserve the outer Z/3'; the truth is improper => SCRAMBLE (the sign was backwards). The P1 bug was a binary FLIP-vs-not test (mesh_bridge.py fgen) on a THREE-way question, mislabelling SCRAMBLE as 'preserve'. G4 refuter: had any of the 24 PRESERVED generation, 'a colour-flipping involution can fix the outer Z/3' would hold -- none does (0/24); had any improper landed in <GEN>, P1's 'improper preserve' would stand -- all 6 scramble. G3: the computation names no physics (lag-free group arithmetic on 2I). Exact-integer over the 24."
+  },
+  {
+   "check": "generation = L_g3 (61) gives the same 18 invert / 6 scramble / 0 preserve as R_b4 (64)",
+   "determines": "UNIQUE (same 18/6/0 under the left (61) convention as the right (64))",
+   "expr": "61 reads the outer Z/3 as LEFT-multiplication (g3, 3 blocks of 40); 64 reads it as RIGHT-multiplication (R_{b^4}, 40 three-cycles). Classifying the same 24 involutions against GEN_L = L_{g3} reproduces the SAME counts -- 18 invert, 6 scramble, 0 preserve. This is structural: conjugation is an anti-automorphism exchanging the left and right regular actions, so an orientation-reversing map always carries <R> out to <L> (scramble) and an orientation-preserving map normalises each (invert here), symmetrically in L and R. So 'C does not preserve the outer Z/3' is independent of the 61-vs-64 reading",
+   "frm": [
+    "CG.2"
+   ],
+   "grade": "DERIVED",
+   "id": "CG.3",
+   "value": {
+    "classification_L_g3": {
+     "invert": 18,
+     "preserve": 0,
+     "scramble": 6
+    },
+    "convention_independent": true
+   },
+   "what": "CONVENTION INDEPENDENCE: re-running the trichotomy with generation = L_{g3} (61's LEFT reading of the outer Z/3) gives the IDENTICAL classification -- 18 invert / 6 scramble / 0 preserve. The result does not depend on reading the outer Z/3 as left (61) or right (64)",
+   "why": "closes the one convention ambiguity in the corpus (61 left vs 64 right for 'the outer Z/3'). The verdict is the same either way, so no step rides on a choice of side. Exact-integer."
+  },
+  {
+   "check": "C is a colour-flipping involution; 0 of the 24 preserve generation => C acts non-trivially on the outer Z/3",
+   "determines": "UNIQUE that C acts non-trivially (0 preserve); UNDETERMINED which of invert/scramble (C's orientation owed)",
+   "expr": "C (49.CT.1) is an involution that negates the signed charge and (as charge conjugation) sends colour to anti-colour -- a colour-flipping walk-symmetry involution of the 120, i.e. one of the 24 of CG.1. CG.2 showed 0 of the 24 PRESERVE the outer Z/3. Therefore C acts NON-TRIVIALLY on the outer Z/3, necessarily and independent of which orientation C carries: if C is proper it INVERTS (gen1<->gen2); if improper it SCRAMBLES (R<->L). The statement is purely about the substrate -- it names no Standard Model. WHICH orientation C has (= 49's degree-mirror d->12-d realised on the 120 as a specific det+/-1 self-map) is not settled here (CG.7, OWED)",
+   "frm": [
+    "CG.2",
+    "49.CT.1"
+   ],
+   "grade": "DERIVED",
+   "id": "CG.4",
+   "value": {
+    "c_acts_nontrivially": true,
+    "c_is_one_of_the_24": true,
+    "c_orientation": "OWED (49's d->12-d realization on the 120; proper=>invert, improper=>scramble)",
+    "n_preserve": 0
+   },
+   "what": "C DOES NOT LEAVE THE OUTER Z/3 INVARIANT: charge conjugation C (49) negates charge and is colour-flipping (anti-colour), hence one of the 24. By CG.2 none of the 24 preserves generation, so C acts non-trivially on the outer Z/3 -- proper => invert (gen1<->gen2), improper => scramble (L<->R). No 'SM' in the statement",
+   "why": "the convention-free, SM-free conclusion the NOTE-to-Maths-5 asked for: state what the substrate does, cold. C cannot fix the outer Z/3 (the 0-preserve result is exhaustive), so 'C preserves generation' is impossible on this carrier -- but the comparison to any SM convention is deferred to CG.6 (OPEN), not asserted here. Determinacy: the non-triviality is UNIQUE (0 preserve); C's specific orientation is UNDETERMINED (owed). Exact-integer."
+  },
+  {
+   "check": "the improper colour-flippers are self-maps of the 120; parity (coord reflection) is not -> C != P",
+   "determines": "UNIQUE (C a self-map of the 120; P not -- distinct det-1 involutions)",
+   "expr": "every one of the 24 colour-flipping involutions (including the 6 improper, det-1, the candidates for C's wing-mirror realization) is by construction a permutation of the 120 icosians -- a self-map of the carrier (checked: each sorts to 0..119). Parity P (44.CH): a coordinate reflection (here the odd axis-swap 0<->1) is an orientation-reversing map that does NOT fix the icosian set -- it carries 2I to its mirror copy 2I' (44/48). So although C and P are both det-1 involutions, C is a self-map of 2I and P is not; they are distinct. This is why C's action on generation is readable ON the carrier (CG.2-4) while the geometric left wing (anti-twelve, 48) is a separate unrealized geometry not needed here",
+   "frm": [
+    "CG.1",
+    "44.CH.2",
+    "48.LW.1"
+   ],
+   "grade": "DERIVED",
+   "id": "CG.5",
+   "value": {
+    "improper_colour_flippers_are_self_maps": true,
+    "parity_is_self_map": false
+   },
+   "what": "C != P -- C IS A CARRIER SELF-MAP: the improper colour-flipper (the enantiomorph / wing-mirror) is a permutation of the 120 (a self-map). Parity P (44, a coordinate reflection = the even<->odd orbit swap) carries 2I OUT to the mirror copy 2I' -- NOT a self-map of the 120. So C and P are distinct orientation-reversing involutions; C is realizable on the carrier (the left wing, 48, is not needed)",
+   "why": "preserves the one cold, correct fact that survived the refuted P1 (mesh_bridge's C-vs-P section): C is an algebra self-map of the carrier, P is not. It grounds reading C's generation-action internally (no left wing required) without reinstating any P1 claim about preservation. Exact (set membership over Z[phi])."
+  },
+  {
+   "check": null,
+   "determines": "POSTULATE (SM comparison OPEN and two-sided; the test is the universe, not the SM convention)",
+   "expr": "the disciplined framing (NOTE to Maths 5, Kevin). CG.4 is cold and names no Standard Model, and must not carry one: two SM conventions would be smuggled in -- (i) that the outer Z/3 IS 'generation' (the charge-vs-family question is OPEN, 61/k2), and (ii) that C SHOULD preserve generation (an SM CONVENTION, not a law of the universe, which mixes flavor everywhere: CKM, PMNS, neutrino oscillations, CP violation -- and the SM assumes, does not explain, the 3 families). So the comparison is TWO-SIDED and OPEN: IF the outer Z/3 is a FAMILY label, C's non-trivial action is a FALSIFIABLE prediction, to be tested against the observed flavor/CP sector, NOT against the SM's C-preserves-generation convention; IF the outer Z/3 is a CHARGE, C acting on it is expected (no tension). COMPASS 1: the test is match the universe, not the SM -- the SM is in the dock, not on the bench; and it cuts both ways (do not flip to 'substrate = truth where it differs' either). The word 'divergence' is retired from the conclusion -- it installs the SM as judge",
+   "frm": [
+    "CG.4"
+   ],
+   "grade": "POSTULATE",
+   "id": "CG.6",
+   "value": {
+    "cuts_both_ways": true,
+    "divergence_language_retired": true,
+    "downstream_premise_use": false,
+    "needs_no_sm": true,
+    "open_identifications": [
+     "outer Z/3 = family vs charge (61/k2)",
+     "whether C should preserve generation is an SM convention, not a law"
+    ],
+    "test_against": "the observed flavor/CP sector (CKM/PMNS/oscillations/CP), not the SM convention"
+   },
+   "what": "(reading, POSTULATE, filed 19) THE SM COMPARISON -- OPEN, TWO-SIDED, NOT A VERDICT. The cold fact needs no SM. IF the outer Z/3 is a FAMILY label, C acting non-trivially is a prediction to test against the observed flavor/CP sector (not the SM convention); IF a CHARGE, C acting on it is expected. COMPASS 1: match the universe, not the SM. 'Divergence' retired from the conclusion",
+   "why": "the honest landing, de-dogmatized. It does NOT read CG.4 as 'the substrate diverges from the SM' (that makes the SM the standard of truth); it does NOT read it as 'the SM is wrong' (the opposite dogma). It states what the substrate does (CG.2-4, cold) and defers the comparison to the universe, pending the two open identifications (CG.7). No downstream premise rests on this reading; filed through 19, quarantined."
+  },
+  {
+   "check": null,
+   "determines": "OWED (C's orientation via 49's d->12-d realization; the outer-Z/3 charge-vs-family identity; then the test)",
+   "expr": "OWED: (a) a cold realization of 49's charge-mirror d->12-d AS a specific involution on the 120 (the step mesh_bridge only guessed, v->vbar o inner) -- its determinant then fixes whether C INVERTS (proper) or SCRAMBLES (improper) the outer Z/3, upgrading CG.4 from 'non-trivial' to the specific action; (b) the identification of the outer Z/3 as a FAMILY label vs a CHARGE (the open k2 question, 61/63); (c) with (a)+(b), CG.6's two-sided test becomes decidable against the observed flavor/CP sector. None of these is attempted here; the refused-list binds and nothing is fitted",
+   "frm": [
+    "CG.4",
+    "CG.6"
+   ],
+   "grade": "OWED",
+   "id": "CG.7",
+   "value": {
+    "owed_c_orientation": "49's d->12-d realized on the 120 as a det+/-1 self-map (proper=>invert, improper=>scramble)",
+    "owed_outer_z3_identity": "family vs charge (61/63/k2)",
+    "owed_then": "CG.6's two-sided SM/universe test becomes decidable",
+    "present": false
+   },
+   "what": "OWED: (a) WHICH orientation C has = 49's d->12-d realised on the 120 as a specific det+/-1 self-map (mesh_bridge guessed it; unbanked) -> upgrades CG.4 to the specific action; (b) the charge-vs-family identity of the outer Z/3 (61/63/k2); (c) then CG.6's test decides against the universe. Nothing fitted",
+   "why": "the located residual, not attempted. The cold classification (CG.1-3) and C's non-triviality (CG.4) stand without any of these; they are what would turn the convention-free fact into a specific, testable physical statement. A finding does not authorise their repair here."
+  }
+ ],
+ "values": {
+  "all_are_walk_symmetries": true,
+  "c_acts_nontrivially": true,
+  "classification_L_g3": {
+   "invert": 18,
+   "preserve": 0,
+   "scramble": 6
+  },
+  "classification_R_b4": {
+   "invert": 18,
+   "preserve": 0,
+   "scramble": 6
+  },
+  "convention_independent": true,
+  "finding": "CONJUGATION ON GENERATION -- the convention-free salvage from the REFUTED P1. Exhaustively over the 120's full isometry group (14400 = |H4|; v->pvq det+1, v->p vbar q det-1), the colour-flipping involutions number 24 = 18 proper + 6 improper (CG.1, each a walk-symmetry). On the outer Z/3 = <R_{b^4}> (64) the TRICHOTOMY is: 18 proper ALL INVERT, 6 improper ALL SCRAMBLE, 0 PRESERVE (CG.2) -- the SAME under 61's left L_{g3} reading (CG.3, convention-independent). So NO colour-flipping involution leaves the outer Z/3 invariant, hence charge conjugation C acts NON-TRIVIALLY on it (CG.4; proper=>invert, improper=>scramble -- which, = 49's d->12-d realization, is OWED). This REFUTES P1's 'improper preserve' (the sign was backwards: improper SCRAMBLE); the P1 bug was a binary flip-vs-not test on a three-way question. C != P: the improper colour-flipper is a carrier self-map, parity is not (CG.5). The SM comparison is OPEN/two-sided (CG.6, POSTULATE): the cold fact needs no SM; test against the universe (flavor/CP), not the SM convention -- 'divergence' retired. OWED (CG.7): C's orientation (49's d->12-d), the outer-Z/3 charge-vs-family identity. Nothing fitted.",
+  "improper_all_scramble": true,
+  "improper_colour_flippers_are_self_maps": true,
+  "isometry_group_order": 14400,
+  "n_colour_flipping_involutions": 24,
+  "n_improper_det_minus1": 6,
+  "n_preserve": 0,
+  "n_proper_det_plus1": 18,
+  "parity_is_self_map": false,
+  "proper_all_invert": true
+ }
+}

@@ -1,0 +1,213 @@
+{
+ "container": "43-composition-norm",
+ "grades": {
+  "DERIVED": 4,
+  "OWED": 1,
+  "POSTULATE": 1
+ },
+ "steps": [
+  {
+   "check": "SR.4 unpacks into (over-R+pos-def) + (finite-dim,unital,product) + (division)",
+   "determines": "UNIQUE (SR.4 = the three requirements Frobenius/Hurwitz consumes)",
+   "expr": "42.SR.4 ('the carrier's ambient algebra is a finite-dim DIVISION algebra over R') = (i) over R + positive-definite norm; (ii) finite-dim, unital, product=composition; (iii) DIVISION (no zero divisors). Frobenius/Hurwitz consumes exactly these",
+   "frm": [
+    "42.SR.4"
+   ],
+   "grade": "DERIVED",
+   "id": "CN.1",
+   "value": {
+    "consumed_by": "42.SR.5 (Frobenius) / Hurwitz",
+    "requirements": [
+     "over R with a positive-definite norm",
+     "finite-dimensional, unital, product=composition",
+     "DIVISION (no zero divisors / every nonzero element invertible)"
+    ],
+    "sorting": "(i) bridge 05 [CN.2]; (ii) cold [00/06/07]; (iii) the residual -- needs multiplicativity [CN.3-CN.5]"
+   },
+   "what": "the target: what Frobenius/Hurwitz needs from 42.SR.4, as three checkable requirements",
+   "why": "state precisely what must be floor-forced, so each piece can be sorted honestly. 42 forced H (hence dim=3) from associativity + non-commutativity + SR.4, via Frobenius. SR.4 is the one held premise. Unpack it into the three things Frobenius/Hurwitz actually uses: (i) the algebra is over R and carries a positive-definite quadratic form (norm); (ii) it is finite-dimensional, unital, and its product is the composition of registrations; (iii) it is a DIVISION algebra -- no zero divisors, equivalently (finite-dim) every nonzero element invertible. CN.2-CN.5 sort these: (i) is the bridge (existing), (ii) is cold, (iii) is the residual that needs the multiplicative norm."
+  },
+  {
+   "check": "requirement (i) over-R + positive-definite = the bridge 05.1 (existing postulate)",
+   "determines": "DERIVED given 05.1 (the bridge supplies real + positive-definite; an existing postulate, not new)",
+   "expr": "the bridge (05.1) already gives: the registration structure corresponds to points in real Euclidean space with the ORDINARY inner product -- real, positive-definite, explicitly NOT Hilbert and NOT split. So requirement (i) of SR.4 is supplied by the floor ALREADY; it is not a new assumption",
+   "frm": [
+    "CN.1",
+    "05.5.1"
+   ],
+   "grade": "DERIVED",
+   "id": "CN.2",
+   "value": {
+    "already_rested_on_by": "the metric tower (08+), DERIVED",
+    "is_new_postulate": false,
+    "supplied_by": "05.1 (the bridge -- real Euclidean, positive-definite, not Hilbert/split)"
+   },
+   "what": "(i) over R + positive-definite norm = the BRIDGE (05.1) -- an EXISTING floor postulate, not new",
+   "why": "the first third of SR.4 costs nothing new. Container 05 (the geometric-balance bridge, a POSTULATE the whole metric tower already rests on) states that registrations correspond to points in a REAL EUCLIDEAN space with the ordinary inner product -- which is exactly a positive-definite quadratic form over R (05.1 is emphatic: Euclidean, NOT Hilbert space, real coordinates + ordinary inner product). The downstream metric containers (08 etc.) are DERIVED resting on 05, so resting on it here imports no new commitment. Requirement (i) -- over R with a positive-definite norm -- is thus GRANTED by the existing floor, not a fresh premise. (This is why the norm in CN.4/CN.5 is positive-definite: because the bridge's is.)"
+  },
+  {
+   "check": "(1+t)(1-t)=(0,0) in R[Z/2] with both nonzero -- a zero divisor; group does not give a division algebra",
+   "determines": "UNIQUE (R[Z/2] has an explicit zero divisor => group alone does not give a division algebra)",
+   "expr": "the carrier is a group (06.3), but a group's real ALGEBRA (its R-span) generally has ZERO DIVISORS: in R[Z/2] (t^2=1), (1+t)(1-t) = 1 - t^2 = 0 with 1+t, 1-t both nonzero. And a sum of isometries is not an isometry, so a group of norm-1 isometries does not make the norm multiplicative. So being a group of isometries is INSUFFICIENT for a division algebra -- the multiplicative norm is genuinely EXTRA",
+   "frm": [
+    "CN.1",
+    "06.6.3"
+   ],
+   "grade": "DERIVED",
+   "id": "CN.3",
+   "value": {
+    "also": "a sum of isometries is not an isometry => norm not automatically multiplicative",
+    "is_zero_divisor": true,
+    "so": "group (06.3) alone does NOT force division; the multiplicative norm is genuinely extra",
+    "z2_product_rule": "(a,b)*(c,d) = (ac+bd, ad+bc), t^2=1",
+    "zero_divisor_witness": {
+     "one_minus_t": [
+      1,
+      -1
+     ],
+     "one_plus_t": [
+      1,
+      1
+     ],
+     "product": [
+      0,
+      0
+     ]
+    }
+   },
+   "what": "(iii, negative) the group ALONE does NOT force division: R[Z/2] has a zero divisor (1+t)(1-t)=0",
+   "why": "the honest step that stops the over-claim, and it is cold. It is tempting to say 'the carrier is a group (06.3), every element invertible, so the algebra is a division algebra'. FALSE, and provably: the group ALGEBRA R[G] is not the division algebra. RUN THE COUNTEREXAMPLE on the smallest group Z/2 = {1,t}, t^2=1: represent a*1+b*t as (a,b), so (a,b)*(c,d) = (ac+bd, ad+bc). Then (1+t)(1-t) = (1,1)*(1,-1) = (1-1, -1+1) = (0,0) -- a ZERO DIVISOR, with both factors nonzero. So R[Z/2] is not a division algebra, though Z/2 is a perfectly good group. Moreover, a sum of norm-1 isometries is generally not an isometry (|g+h|.v depends on v), so the positive-definite norm is NOT automatically multiplicative on the span. CONCLUSION: the carrier being a group of isometries (06.3 + 05) does NOT supply the division property; something more is needed, and CN.4 names exactly what -- multiplicativity of the norm. This is the guard against the false floor-force 'group => division'."
+  },
+  {
+   "check": null,
+   "determines": "POSTULATE (the composition norm is multiplicative; rooted in intensivity/shares, the count its log; the isolated residual)",
+   "expr": "the composition norm is MULTIPLICATIVE: N(xy) = N(x)N(y). The reading that roots it: registration is INTENSIVE -- it subdivides the one, it does not replicate (00.0.1; 01.1.3) -- so composing registrations composes SHARES multiplicatively (a share of a share is the product), while the ADDITIVE archon count (23.LI.4) is its LOGARITHM (the Shannon reading, 26; log turns x into +). This is SR.4's true floor-kernel; USED as a premise by CN.5",
+   "frm": [
+    "CN.3",
+    "00.0.1",
+    "23.LI.4",
+    "26.B2.3"
+   ],
+   "grade": "POSTULATE",
+   "id": "CN.4",
+   "value": {
+    "claim": "N(xy) = N(x)N(y) (the composition norm is multiplicative)",
+    "count_is_the_log": "the additive archon count (23.LI.4) = log of the multiplicative share (Shannon, 26); +/x consistent",
+    "downstream_premise_use": true,
+    "is_the_one_residual": true,
+    "premise_not_quarantined_reading": "USED by CN.5 -- a premise, not a quarantined reading",
+    "reading_not_derivation": true,
+    "root_reading": "registration intensive (00/01) => composing registrations composes SHARES multiplicatively"
+   },
+   "what": "the isolated root (POSTULATE): the composition norm is MULTIPLICATIVE, N(xy)=N(x)N(y)",
+   "why": "the residual, isolated and named -- the point of the container. CN.3 showed the group does not give division; the missing piece is a MULTIPLICATIVE norm N(xy)=N(x)N(y). Where can that root in the floor? The reading: registration is INTENSIVE -- 00/01 (and the alpha-hat work, 23/24) establish that registration SUBDIVIDES the one rather than replicating it, so a registration carries a SHARE of the whole. Composing two registrations composes their shares MULTIPLICATIVELY -- a share of a share is the product of the shares -- so the natural norm (the share/measure) is multiplicative. This is consistent with, not contrary to, the ADDITIVE archon count (23.LI.4): the count is the LOGARITHM of the multiplicative share (the Shannon reading already in play at 26/32 -- additive information = log of multiplicative probability), and log turns multiplication into addition, so counts add exactly when shares multiply. HONEST GRADE: this identification -- that the composition-algebra norm IS the intensive share -- is a READING, held as the single POSTULATE. It is the deepest the root goes here: SR.4 ('division algebra over R') is now reduced to (05, existing) + THIS one multiplicative-norm postulate. It is USED by CN.5 (downstream_premise_use=True) -- a premise, not a quarantined reading."
+  },
+  {
+   "check": "pos-def + multiplicative => no zero divisors => division; Hurwitz dims [1,2,4,8], assoc+non-comm => H (dim 4)",
+   "determines": "UNIQUE (pos-def + multiplicative => division; Hurwitz + assoc + non-comm => H (dim 4) => dim 3)",
+   "expr": "positive-definite (CN.2/05) + multiplicative (CN.4): if N(x)>0 for x!=0 and N(xy)=N(x)N(y), then xy=0 => N(x)N(y)=0 => x=0 or y=0 -- NO ZERO DIVISORS => (finite-dim) DIVISION. Hurwitz 1898 (cited): a positive-definite multiplicative real algebra is R, C, H, or O (dims 1,2,4,8); with 42's associativity (excl. O) + non-commutativity (excl. R,C) => H (dim 4) => dim=3. So SR.4 is DISCHARGED given CN.4",
+   "frm": [
+    "CN.2",
+    "CN.4",
+    "42.SR.5"
+   ],
+   "grade": "DERIVED",
+   "id": "CN.5",
+   "value": {
+    "cited_external": "Hurwitz 1898 (positive-definite multiplicative real algebra = R,C,H,O)",
+    "discharges": "42.SR.4 given CN.4 -- the edifice bottoms at 05 (bridge) + CN.4 (mult. norm) + 42's assoc/non-comm",
+    "forced_algebra": [
+     "H"
+    ],
+    "h_real_dim": 4,
+    "hurwitz_dims": [
+     1,
+     2,
+     4,
+     8
+    ],
+    "hurwitz_then_H": true,
+    "posdef_plus_mult_give_no_zero_divisors": true
+   },
+   "what": "positive-definite (05) + multiplicative (CN.4) => division; Hurwitz => H (dim 4) => dim=3 -- SR.4 discharged given CN.4",
+   "why": "the payoff: SR.4 falls out of the bridge + the one multiplicative-norm postulate. First the DIVISION property, cold from CN.2+CN.4: a positive-definite norm has N(x)>0 for every nonzero x (05), and if the norm is multiplicative (CN.4) then N(xy)=N(x)N(y); so xy=0 forces N(x)N(y)=0, hence N(x)=0 or N(y)=0, hence x=0 or y=0 -- NO ZERO DIVISORS. In finite dimension (06) no zero divisors <=> a division algebra. So requirement (iii) is met. Then the classification is even cleaner than Frobenius: HURWITZ 1898 (cited external, as 42 cites Frobenius/41 cites Newton-Gregory) says a finite-dim unital real algebra with a positive-definite MULTIPLICATIVE quadratic form is exactly R, C, H, or O (real dims 1,2,4,8). Applying 42's associativity (the group, excl. the non-associative O) and non-commutativity (the chirality, excl. the commutative R, C) leaves H (real dim 4), whose imaginary part is 3 -- so dim=3 (42.SR.1). Therefore the entire 'carrier is H / dim=3' edifice now bottoms at: the bridge (05) + CN.4 (the multiplicative norm) + 42's associativity/non-commutativity. SR.4 is no longer a broad standalone premise -- it is reduced to ONE crisp, dimension-free postulate (CN.4) atop the existing bridge."
+  },
+  {
+   "check": null,
+   "determines": "OWED (CN.4 fully derived; Hurwitz re-derived; the identifications) + the tension named",
+   "expr": "OWED: (a) CN.4 fully DERIVED -- the intensivity->multiplicative-share reading (and the count=log tie) made a theorem, not a reading; (b) Hurwitz re-derived on the substrate (cited, not re-proved); (c) the product=composition / 0=non-existence identifications. THE TENSION, named: the multiplicative norm (CN.4) is CLOSE to the crux -- composition algebras essentially ARE the normed division algebras -- so CN.4 is load-bearing; but it is NOT circular",
+   "frm": [
+    "CN.4",
+    "CN.5"
+   ],
+   "grade": "OWED",
+   "id": "CN.6",
+   "value": {
+    "net": "42.SR.4 reduced from a broad premise to the existing bridge (05) + ONE named multiplicative-norm postulate; group-only shortcut disproved",
+    "owed_derive_CN4": "the intensivity->multiplicative-norm reading made a theorem (with the count=log tie)",
+    "owed_hurwitz": "Hurwitz re-derived on the substrate (cited external)",
+    "owed_identifications": "product=composition; 0=non-existence (00)",
+    "present": false,
+    "tension": "CN.4 (multiplicative norm) is close to the crux (composition algebras ~ normed division algebras) -- load-bearing, but NOT circular: Hurwitz's 1,2,4,8 + the assoc/non-comm cut are real content, and CN.4 is motivated by intensivity, not by H"
+   },
+   "what": "OWED + the honest tension: CN.4 is load-bearing (close to the crux) but NOT circular",
+   "why": "the honest residuals and the one tension a careful reader will (rightly) press on. WHAT THIS CONTAINER DID: floor-forced 42.SR.4 as a LANDING -- (i) over-R+positive-definite = the existing bridge 05 (CN.2, no new cost); (ii) finite-dim/unital/product cold; (iii) division reduced to ONE postulate, the multiplicative norm (CN.4), after proving the group alone cannot supply it (CN.3). So SR.4 is reduced from a broad premise to 05 + CN.4. WHAT IT DID NOT DO: (a) turn CN.4 into a theorem -- the intensivity->multiplicativity step is a (well-motivated, Shannon-consistent) READING; (b) re-derive Hurwitz on the substrate; (c) discharge the product=composition and 0=non-existence identifications. THE TENSION (stated, not hidden -- CORRECTIONS #7 discipline): because a positive-definite MULTIPLICATIVE norm essentially CHARACTERIZES the normed division algebras, CN.4 is doing heavy lifting and sits close to the conclusion. It is NOT circular: Hurwitz's restriction to dims 1,2,4,8 is a hard, non-trivial theorem (not assumed), the cut to H via associativity + non-commutativity (42) is real content, and CN.4 is motivated by INTENSIVITY (the floor's subdivide-not-replicate), not reverse-engineered from H. The honest standing: SR.4 is REDUCED to its bedrock -- the bridge plus a single, named, dimension-free, independently-motivated postulate -- with the group-only shortcut disproved. Fully deriving CN.4 (the share/log picture as a theorem) would finish it. NOT attempted further here; danger-free throughout."
+  }
+ ],
+ "values": {
+  "algebras": [
+   "R",
+   "C",
+   "H",
+   "O"
+  ],
+  "associative": {
+   "C": true,
+   "H": true,
+   "O": false,
+   "R": true
+  },
+  "commutative": {
+   "C": true,
+   "H": false,
+   "O": false,
+   "R": true
+  },
+  "finding": "FLOOR-FORCING 42.SR.4 as a LANDING. SR.4 ('the carrier's ambient algebra is a finite-dim DIVISION algebra over R') splits into (i) over-R + positive-definite = the BRIDGE 05 (CN.2, an EXISTING postulate, not new); (ii) finite-dim/unital/product cold; (iii) DIVISION. The group ALONE does NOT give (iii) -- R[Z/2] has the zero divisor (1+t)(1-t)=0 (CN.3, cold) -- so a MULTIPLICATIVE norm is genuinely extra. That is the isolated root (CN.4, POSTULATE): the composition norm is multiplicative, rooted in INTENSIVITY (registration subdivides => shares multiply; the additive count 23 is its log, Shannon 26). Then positive-definite + multiplicative => no zero divisors => DIVISION, and Hurwitz (cited) + 42's assoc/non-comm => H (dim 4) => dim=3 (CN.5). So SR.4 is REDUCED to 05 + ONE named, dimension-free, independently-motivated postulate; the group-only shortcut is disproved. TENSION named (CN.6): CN.4 is load-bearing (close to the crux) but NOT circular. Danger-free, nothing fitted.",
+  "forced_algebra": [
+   "H"
+  ],
+  "hurwitz_dims": [
+   1,
+   2,
+   4,
+   8
+  ],
+  "real_dim": {
+   "C": 2,
+   "H": 4,
+   "O": 8,
+   "R": 1
+  },
+  "requirements": [
+   "over R with a positive-definite norm",
+   "finite-dimensional, unital, product=composition",
+   "DIVISION (no zero divisors / every nonzero element invertible)"
+  ],
+  "z2_zero_divisor": {
+   "is_zero_divisor": true,
+   "one_minus_t": [
+    1,
+    -1
+   ],
+   "one_plus_t": [
+    1,
+    1
+   ],
+   "product": [
+    0,
+    0
+   ]
+  }
+ }
+}

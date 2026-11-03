@@ -1,0 +1,153 @@
+{
+ "container": "57-weinberg-angle",
+ "grades": {
+  "DERIVED": 4,
+  "OWED": 1,
+  "POSTULATE": 1
+ },
+ "steps": [
+  {
+   "check": "the target is the dimensionless mixing fraction sin^2(theta_W)=g'^2/(g^2+g'^2); measured ~0.231, GUT 3/8 cited",
+   "determines": "UNIQUE (the dimensionless target: sin^2(theta_W) = g'^2/(g^2+g'^2))",
+   "expr": "the dimensionless target is sin^2(theta_W) = g'^2/(g^2+g'^2) -- the mixing FRACTION setting the angle between the U(1)_Y gauge field B and the physical (massless) photon in the rank-2 electroweak Cartan plane (50.EW.1: the photon is a combination of Y and T3, the Z the orthogonal). It is a pure dimensionless number (a ratio of couplings), an alpha-hat-type quantity (27) -- forceable in principle, never manufactured. Measured sin^2(theta_W)(M_Z) ~ 0.23122; canonical GUT tree value 3/8",
+   "frm": [
+    "50.EW.1",
+    "50.EW.4",
+    "27.DA.2"
+   ],
+   "grade": "DERIVED",
+   "id": "WA.1",
+   "value": {
+    "cartan_rank": 2,
+    "dimensionless": true,
+    "gut_den": 8,
+    "gut_num": 3,
+    "gut_value": 0.375,
+    "measured": 0.23122
+   },
+   "what": "the target (G1, dimensionless): sin^2(theta_W) = g'^2/(g^2+g'^2), the electroweak mixing fraction",
+   "why": "gate G1 first: dimensionless-only. Unlike a mass or the arcsec, theta_W carries no anchor -- it is a ratio of the two electroweak couplings, so it is exactly the kind of quantity the substrate may force (27). The measured value 0.23122 and the canonical GUT value 3/8 = 0.375 are CITED here only to mark the target; they enter as falsification references (G2), never as inputs. The container computes the substrate's own answer and then compares."
+  },
+  {
+   "check": "theta_W reduces to the U(1)_Y-vs-su(2) normalization ratio; su(2) is carrier-fixed (28)",
+   "determines": "UNIQUE (theta_W collapses to the U(1)_Y-vs-su(2) normalization ratio; su(2) carrier-fixed by 28)",
+   "expr": "theta_W reduces to ONE question -- the relative NORMALIZATION of the abelian U(1)_Y generator against the su(2) generators in the rank-2 Cartan (50.EW.1). The su(2) side is FIXED by the carrier: the quaternion bracket [i,j]=2k, [j,k]=2i, [k,i]=2j (28.W.1) gives su(2) a definite structure and trace normalization. So everything unknown in theta_W sits in the abelian Y normalization",
+   "frm": [
+    "WA.1",
+    "50.EW.1",
+    "28.W.1"
+   ],
+   "grade": "DERIVED",
+   "id": "WA.2",
+   "value": {
+    "reduces_to": "the relative normalization of the abelian U(1)_Y against su(2)",
+    "su2_fixed_by": "28.W.1 ([i,j]=2k) -- the carrier's trace normalization"
+   },
+   "what": "the reduction (like 43): theta_W IS the relative normalization of U(1)_Y against su(2); the su(2) side is carrier-fixed",
+   "why": "the reduction, in the spirit of 43 (which collapsed dim=3 to one premise). tan(theta_W) = g'/g, and a coupling is the inverse scale of its generator; so sin^2(theta_W) = g'^2/(g^2+g'^2) is entirely determined by the RATIO of the U(1)_Y normalization to the su(2) normalization. The su(2) half is not free: 28.W.1 fixed its structure constants by cold quaternion multiplication ([i,j]=2k), so su(2) carries the carrier's own trace normalization. The entire content of theta_W therefore collapses onto the ONE remaining question: how is the abelian Y normalized relative to that? WA.3 shows this cannot be answered inside the electroweak algebra."
+  },
+  {
+   "check": "abelian [X,X]=0 (29) => Killing form 0 => Y scaleless in the EW algebra; needs a non-abelian embedding",
+   "determines": "UNIQUE (abelian => Killing form == 0 => Y is scaleless in the EW algebra; the normalization needs a non-abelian embedding)",
+   "expr": "an abelian u(1) has [X,X]=0 (29.EM.2, the abelian direction), so ad_X = 0 for its generator, so its Killing form K(X,X) = tr(ad_X ad_X) is IDENTICALLY ZERO. An abelian factor therefore carries NO intrinsic normalization -- there is no algebra-fixed scale for Y. Hence theta_W CANNOT be fixed by the electroweak algebra alone: the U(1)_Y coupling g' is a FREE parameter (exactly the SM situation). The normalization MUST come from embedding Y into a NON-abelian trace (a larger structure)",
+   "frm": [
+    "WA.2",
+    "29.EM.2"
+   ],
+   "grade": "DERIVED",
+   "id": "WA.3",
+   "value": {
+    "abelian_self_bracket": 0,
+    "consequence": "Y has no algebra-intrinsic scale; g' is free in the SM; the normalization needs a non-abelian trace",
+    "killing_form_abelian": 0
+   },
+   "what": "the abelian U(1) is SCALELESS: [X,X]=0 (29) => Killing form == 0 => no intrinsic normalization -- exactly why g' is free in the SM",
+   "why": "the crux, and the honest reason theta_W is hard. This is not a substrate defect -- it is a theorem of Lie theory that mirrors the physics exactly. su(2) is non-abelian, so its Killing form is non-degenerate and it self-normalizes (WA.2). u(1) is abelian: [X,X]=0 (already cold in 29.EM.2, [i,i]=0), so ad_X=0 and the Killing form vanishes on it -- an abelian Lie algebra has no invariant inner product of its own, hence no intrinsic scale. This is PRECISELY why, in the Standard Model, the hypercharge coupling g' is a free input and sin^2(theta_W) is not predicted by the SM: the abelian factor is scaleless. So the substrate does not (and cannot) force theta_W from the electroweak algebra; it forces the QUESTION into the open -- the normalization of Y must be supplied by embedding it into a non-abelian trace. WA.4 tries the minimal such trace intrinsic to the carrier; WA.5 shows the physical one needs the fork."
+  },
+  {
+   "check": "u(2) trace form: equal-norm T0=T3; sin^2=2/4=1/2 on the doublet; 1/2 != 3/8 => REFUTED",
+   "determines": "UNIQUE (u(2) trace form => equal-norm => sin^2=1/2 on the doublet; 1/2 != 3/8 => REFUTED)",
+   "expr": "the only normalization intrinsic to the located structure H (without invoking the owed fork) is the quaternion/u(2) trace form <X,Y> = -Tr(XY), under which the two Cartan generators T0 (the u(1) center) and T3 are EQUAL-norm (2<T0,T0> = 2<T3,T3> = 1). On the electroweak doublet (nu,e): T3 = +-1/2, Q = T3+Y = 0,-1, so sin^2(theta_W) = Tr(T3^2)/Tr(Q^2) = (1/4+1/4)/(0+1) = 1/2. REFUTER FIRST (G4): a U(2) unification predicts exactly 1/2; measurement gives ~0.231 and the GUT tree value is 3/8 -- NOT 1/2. So the naive quaternion-center identification of Y is REFUTED (1/2 != 3/8, cold)",
+   "frm": [
+    "WA.3",
+    "29.EM.2",
+    "50.EW.1"
+   ],
+   "grade": "DERIVED",
+   "id": "WA.4",
+   "value": {
+    "four_tr_qsq": 4,
+    "four_tr_t3sq": 2,
+    "gates": "G1 dimensionless (WA.1); G2 compute-then-compare (here); G3 name-free; G4 refuter=1/2; G5 no-fit",
+    "refuter": "U(2) predicts 1/2; measured ~0.231 and GUT 3/8 -- NOT 1/2",
+    "sinsq_u2_den": 2,
+    "sinsq_u2_num": 1,
+    "sinsq_u2_value": 0.5,
+    "two_norm_t0": 1,
+    "two_norm_t3": 1,
+    "u2_equals_gut": false,
+    "u2_refuted": true
+   },
+   "what": "the substrate-native candidate (u(2) trace form) gives sin^2(theta_W)=1/2 -- REFUTED (G2/G3/G4/G5): measured ~0.231, GUT 3/8, NOT 1/2",
+   "why": "the substrate's minimal honest attempt, run through all five gates and REFUTED -- the discipline working as designed (a discriminating negative). G3 (renaming): erase 'Weinberg' -- the substrate says the rank-2 Cartan (50) has an abelian direction that, normalized by the carrier's own trace form, is equal-norm to T3, and the equal-norm mixing fraction on the doublet is 1/2; produced name-free. G2 (compute-then-compare, sealed): 1/2 is computed from the trace form FIRST; the measured 0.231 and the GUT 3/8 enter HERE, cited only to falsify. G4 (cannot-fail): the refuter is stated first -- IF the electroweak U(1)_Y were simply the quaternion/u(2) center (equal-norm), sin^2(theta_W) would be 1/2; it is not, so the candidate COULD fail and DID. G5 (no-fit): 1/2 is read off the trace form, not assembled toward any target; no refused-list fishing. THE COLD FACT (Lean-checked): 4Tr(T3^2)=2, 4Tr(Q^2)=4, so the fraction is 2/4 = 1/2, and 1/2 != 3/8 (1*8=8 != 3*2=6). So the substrate's minimal electroweak-only normalization is RULED OUT. This is honest forward motion: it eliminates the U(2) shortcut and forces the question to the larger embedding (WA.5). Not a cold matched value -- a discriminating refutation."
+  },
+  {
+   "check": null,
+   "determines": "POSTULATE (theta_W located at the fork's native Z/6 grading + K2 content, 58; NOT SU(5)/3/8; cold value owed)",
+   "expr": "the refutation's LESSON: u(2) gives 1/2 because it uses only the electroweak doublet -- it OMITS COLOUR. The correct Tr(Q^2) must fold in the strong sector (colour, 30/31). The collaborator's fork (now integrated as container 58) supplies exactly this, and NOT by an SU(5)/3/8 GUT embedding: it builds hypercharge from TWO NATIVE gradings -- colour triality Z/3 (31) x duality Z/2 (45) = Z/6 -- giving (SU(3)xSU(2)xU(1))/Z6 and the forced fractional Y = -(t/3+w/2); the mass-founded Q=T3+Y is abandoned. The ABSOLUTE hypercharge levels (fork K2) remain conditional on the multiplet content. So theta_W is LOCATED precisely at K2 (the representation assignment, 58.HC.5/HC.6), NOT delivered as a cold value -- the fork's own sin^2(theta_W)=1/phi^3 is a FENCED candidate (WA.6), not banked",
+   "frm": [
+    "WA.4",
+    "58.HC.2",
+    "58.HC.5",
+    "56.MC.6"
+   ],
+   "grade": "POSTULATE",
+   "id": "WA.5",
+   "value": {
+    "correction": "prior draft cited SU(5)->3/8 as the fork's route; the actual fork is native Z/6, Q=T3+Y abandoned; 3/8 kept only as WA.4's GUT reference",
+    "downstream_premise_use": false,
+    "located_in": "the native Z/6 hypercharge grading (58.HC.2) + the content selection K2 (58.HC.5 / 56.MC.6)",
+    "rests_on": "the correspondence located-structure <-> physical theta_W (filed 19); K2 content owed",
+    "why_u2_wrong": "u(2) omits colour; the correct grading folds the strong sector in (Z/3 x Z/2 = Z/6, 58)"
+   },
+   "what": "the location (POSTULATE, filed 19; UPDATED w/ the fork): u(2) gives 1/2 because it OMITS COLOUR; the fork's route is the NATIVE Z/6 hypercharge grading (58), NOT SU(5)/3/8 -- theta_W owed to K2",
+   "why": "the honest placement, graded POSTULATE, UPDATED after integrating the fork (container 58; CORRECTIONS logs the earlier over-cite). What the substrate has EARNED cold: theta_W is one normalization question (WA.2), the abelian factor cannot answer it (WA.3), the minimal carrier answer (u(2)->1/2) is refuted (WA.4), AND the SM gauge group (SU(3)xSU(2)xU(1))/Z6 with the forced fractional hypercharge is now native (58, from colour Z/3 x duality Z/2). What is a READING (filed 19, quarantined): that the PHYSICAL theta_W follows once the multiplet CONTENT (the absolute hypercharge levels, fork K2 / 56.MC.6) is selected. CORRECTION to the prior draft: the earlier WA.5 cited the canonical SU(5)-in-E8 value 3/8 as 'what the fork must reproduce'. The actual fork does NOT take the GUT/SU(5) route -- it uses the native Z/6 grading (58) and abandons Q=T3+Y; 3/8 is retained only as the standard GUT reference in WA.4's cold comparison, NOT as the substrate's predicted value. So the correspondence 'located structure <-> physical theta_W' is a POSTULATE; the cold value awaits K2. The refutation (WA.4) is name-free and stands regardless. No downstream premise rests on this reading."
+  },
+  {
+   "check": null,
+   "determines": "OWED (cold value owed to the content K2, 58; 1/phi^3 fenced not banked; RG external)",
+   "expr": "OWED: (a) the cold sin^2(theta_W) VALUE -- now located at the content selection K2 (58.HC.5/HC.6): the native Z/6 hypercharge grading (58) is forced, but its ABSOLUTE levels ride on which irreps are the fermions (the representation assignment, fork K2 / 56.MC.6); only then does the substrate emit its own number. (b) the fork's candidate sin^2(theta_W) = 1/phi^3 ~ 0.2360679 is a FENCED near-miss -- graded OBSERVATION by the fork (inversion-then-match, representation UNFORCED), 2.1% off measured 0.23122 (MS-bar), more off on-shell -- NOT banked (rule 17: resemblance != result; the refused-list ethos). (c) the RG running to the M_Z value is external QFT, not a substrate quantity. The reduction + the refutation stand; the cold value is owed to K2",
+   "frm": [
+    "WA.4",
+    "WA.5",
+    "58.HC.6"
+   ],
+   "grade": "OWED",
+   "id": "WA.6",
+   "value": {
+    "fork_candidate": "sin^2(theta_W) = 1/phi^3 ~ 0.2360679 -- FENCED (OBSERVATION, inversion-match, rep unforced, 2.1% off); NOT banked",
+    "next_unblock": "select the multiplet content (K2) -- the representation assignment (58 supplied the Z/6 grading)",
+    "owed_running": "1/phi^3 (or the K2 value) -> ~0.231 by RG flow -- external QFT, not a substrate quantity",
+    "owed_value": "the substrate's own sin^2(theta_W) -- owed to the content selection K2 (58.HC.5/HC.6, 56.MC.6)",
+    "present": false
+   },
+   "what": "OWED (UPDATED w/ the fork): the cold sin^2(theta_W) value needs the content K2 (58); the fork's 1/phi^3 ~ 0.2361 is a FENCED candidate, NOT banked; RG running external",
+   "why": "the honest residual, UPDATED after the fork (58). WA.1-WA.4 make a genuine, disciplined crossing: theta_W reduces to one normalization (WA.2), shown unanswerable by the abelian algebra (WA.3), and the minimal carrier guess is refuted cold (WA.4, 1/2 != 3/8, and != measured 0.231). Integrating the fork (58) supplies the native Z/6 hypercharge grading and the forced fractional Y -- but the ABSOLUTE levels are conditional on the content (K2), so the substrate's OWN cold theta_W is still owed, now located precisely at K2 (the representation assignment). The fork's 1/phi^3 is carried as the frontier's stated target ONLY -- a fenced OBSERVATION at 2.1%, not a result, never banked. The RG running is external QFT. So the crossing is bounded and truthful: a reduction + a discriminating negative, the joint now native (58), the cold value owed to the content K2; nothing fitted."
+  }
+ ],
+ "values": {
+  "cartan_rank": 2,
+  "finding": "CROSSING B (Rung 0): the WEINBERG ANGLE, attacked head-on -- a REDUCTION + a DISCRIMINATING REFUTATION, no cold matched value. sin^2(theta_W)=g'^2/(g^2+g'^2) is dimensionless (WA.1). It REDUCES to one thing: the relative normalization of U(1)_Y vs su(2) (WA.2; su(2) carrier-fixed by 28). The abelian factor is SCALELESS -- [X,X]=0 (29) => Killing form 0 => no intrinsic scale, exactly why g' is free in the SM (WA.3). The minimal carrier normalization (the quaternion/u(2) trace form) makes T0 and T3 equal-norm and gives, cold, sin^2(theta_W)=Tr(T3^2)/Tr(Q^2)=1/2 on the doublet -- REFUTED: measured ~0.231, GUT 3/8, not 1/2 (WA.4, passes G1-G5 as a discriminating negative). WHY: u(2) omits COLOUR; the correct grading folds the strong sector in. The fork (now container 58) supplies exactly this NATIVELY -- colour Z/3 (31) x duality Z/2 (45) = Z/6, giving (SU(3)xSU(2)xU(1))/Z6 and the forced fractional Y=-(t/3+w/2), abandoning Q=T3+Y -- NOT an SU(5)/3/8 GUT route (WA.5, POSTULATE; corrects the prior SU(5) over-cite). OWED: the ABSOLUTE levels + the cold value need the content K2 (58/56); the fork's sin^2(theta_W)=1/phi^3~0.2361 is a FENCED candidate (OBSERVATION, 2.1% off), NOT banked; RG running external (WA.6). Nothing fitted; the next unblock is the content selection K2.",
+  "four_tr_qsq": 4,
+  "four_tr_t3sq": 2,
+  "gut_den": 8,
+  "gut_num": 3,
+  "measured": 0.23122,
+  "sinsq_u2_den": 2,
+  "sinsq_u2_num": 1,
+  "two_norm_t0": 1,
+  "two_norm_t3": 1,
+  "u2_equals_gut": false,
+  "u2_refuted": true
+ }
+}

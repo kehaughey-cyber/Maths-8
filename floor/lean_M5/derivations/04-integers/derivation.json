@@ -1,0 +1,293 @@
+{
+ "container": "04-integers",
+ "grades": {
+  "DERIVED": 9,
+  "OWED": 0,
+  "POSTULATE": 1
+ },
+ "steps": [
+  {
+   "check": "no n:Nat satisfies n+1 = 0",
+   "determines": "UNIQUE (a property of Nat)",
+   "expr": "for all n:Nat, n + 1 != 0",
+   "frm": [],
+   "grade": "DERIVED",
+   "id": "4.1",
+   "value": {
+    "any_n_with_succ_zero": false,
+    "checked_range": 200,
+    "reason": "n+1 >= 1 > 0 for every n:Nat"
+   },
+   "what": "the count has no additive inverse -- the lack rung 4 repairs",
+   "why": "rung 1 hands up a COUNT (a chain length): a Nat. A count cannot be undone -- there is no n with n+1 = 0, because n+1 >= 1 > 0 always. This missing inverse is exactly what 'algebra' adds beyond 'number', and it is added below, not assumed."
+  },
+  {
+   "check": "cross-add relation is refl/symm/trans over the sample",
+   "determines": "the integer is UNIQUE (as a class); its representative is CHOSEN",
+   "expr": "(a,b) ~ (c,d) iff a+d = c+b -- reflexive, symmetric, transitive",
+   "frm": [
+    "4.1"
+   ],
+   "grade": "DERIVED",
+   "id": "4.2",
+   "value": {
+    "distinct_classes": 11,
+    "refl": true,
+    "sample_size": 36,
+    "symm": true,
+    "trans": true
+   },
+   "what": "an integer is a signed displacement; cross-add is an equivalence relation",
+   "why": "the pair (a,b) is a DIRECTION with magnitude ('a one way, b the other'), never a located thing. Sameness is same NET displacement, tested by cross-ADD so Nat's truncated subtraction (the is-not operation) is never invoked -- the positive form. Reflexive/symmetric/transitive make 'the integer' a genuine class, not an accident of the chosen pair."
+  },
+  {
+   "check": "the (n,n) diagonal is exactly the class of 0",
+   "determines": "UNIQUE (the zero class is the whole diagonal)",
+   "expr": "the class of ZERO = { (n,n) : n:Nat } ; and (a,b) ~ 0 iff a = b",
+   "frm": [
+    "4.2"
+   ],
+   "grade": "DERIVED",
+   "id": "4.3",
+   "value": {
+    "canonical_of_zero": [
+     0,
+     0
+    ],
+    "diagonal_is_zero": true,
+    "note": "0 names balance, not an object -- the counterpoint",
+    "zero_iff_balanced": true
+   },
+   "what": "'0' is the counterpoint -- the balanced (diagonal) class, not a thing",
+   "why": "zero is not an object among the counts. It is the class of the BALANCED pairs (n,n) -- the diagonal a=b, where the two directions cancel to null displacement. It names BALANCE, the counterpoint, not a located thing (CORRECTIONS #2: 0 does not exist; it is the counterpoint). A pair sits at 0 exactly when its two directions are equal."
+  },
+  {
+   "check": "+1,-1 distinct, inverse, and generate every class from 0",
+   "determines": "UNIQUE (the two unit-direction classes)",
+   "expr": "+1 := class(1,0) ; -1 := class(0,1) ; distinct, mutually inverse, and generating",
+   "frm": [
+    "4.3"
+   ],
+   "grade": "DERIVED",
+   "id": "4.4",
+   "value": {
+    "all_reached_from_zero": true,
+    "distinct": true,
+    "minus_one": [
+     0,
+     1
+    ],
+    "plus_minus_inverse": true,
+    "plus_one": [
+     1,
+     0
+    ],
+    "reach_bound": 8
+   },
+   "what": "+1 and -1 are the two unit directions off the counterpoint",
+   "why": "+1 is one net step the defined way, -1 one net step the opposite way -- DIRECTIONS, not is/is-not. They are distinct (1+1 != 0+0), each other's inverse, and every integer is reached from the counterpoint 0 by iterating one direction or the other. This is what earns 'the number line': an origin and two directions."
+  },
+  {
+   "check": "(a,b)+(b,a) ~ 0 for every pair in the sample",
+   "determines": "UNIQUE (each class has one inverse class)",
+   "expr": "negPair(a,b) = (b,a) ; (a,b) + (b,a) ~ 0 for every pair",
+   "frm": [
+    "4.1",
+    "4.4"
+   ],
+   "grade": "DERIVED",
+   "id": "4.5",
+   "value": {
+    "all_have_inverse": true,
+    "inverse_is": "the reversed direction (swap the two components)",
+    "sample_size": 36,
+    "witnesses": [
+     {
+      "at_zero": true,
+      "neg": [
+       0,
+       1
+      ],
+      "p": [
+       1,
+       0
+      ],
+      "sum": [
+       1,
+       1
+      ]
+     },
+     {
+      "at_zero": true,
+      "neg": [
+       1,
+       0
+      ],
+      "p": [
+       0,
+       1
+      ],
+      "sum": [
+       1,
+       1
+      ]
+     },
+     {
+      "at_zero": true,
+      "neg": [
+       1,
+       3
+      ],
+      "p": [
+       3,
+       1
+      ],
+      "sum": [
+       4,
+       4
+      ]
+     },
+     {
+      "at_zero": true,
+      "neg": [
+       5,
+       2
+      ],
+      "p": [
+       2,
+       5
+      ],
+      "sum": [
+       7,
+       7
+      ]
+     }
+    ]
+   },
+   "what": "THE HEADLINE -- every integer has an additive inverse (its reversed direction)",
+   "why": "the one thing Nat lacked (4.1) is now supplied for EVERY element: reverse the direction (swap the components) and the sum balances to the counterpoint. The inverse of a direction IS the opposite direction; the two meet at 0. This is the whole content of 'algebra beyond counting', proved -- not assumed."
+  },
+  {
+   "check": "add/neg representative-independent; embedding preserves +; rung-1 Nat embeds",
+   "determines": "UNIQUE (well-definedness makes the class operation unique)",
+   "expr": "addPair_congr, negPair_congr ; ofNatPair(a+b) = ofNatPair a + ofNatPair b (outright)",
+   "frm": [
+    "4.2",
+    "4.5"
+   ],
+   "grade": "DERIVED",
+   "id": "4.6",
+   "value": {
+    "add_congr": true,
+    "embed_of_rung1": [
+     4,
+     0
+    ],
+    "embed_preserves_add": true,
+    "neg_congr": true,
+    "rung1_chain_length": 4,
+    "tie": "thin, honest -- an available Nat, not a structural correspondence"
+   },
+   "what": "the operations are well-defined on the class; the count embeds, preserving +",
+   "why": "addition and negation do not depend on which representative is chosen -- the direction is a genuine property of the CLASS, so these are operations on integers, not on pairs. And counting sits inside as pure defined-direction displacement: n -> (n,0) preserves addition OUTRIGHT (definitionally, not merely up to ~). The tie to rung 1 is deliberately thin and honest: rung 1 produces a real Nat (a chain length) and that Nat embeds as (n,0) -- no rich structural correspondence is claimed."
+  },
+  {
+   "check": null,
+   "determines": "the reading (identification), held",
+   "expr": "identify(class(a,b)) := the net registration displacement; +1/-1 the two directions, 0 the counterpoint",
+   "frm": [
+    "4.3",
+    "4.4",
+    "4.5"
+   ],
+   "grade": "POSTULATE",
+   "id": "4.7",
+   "value": {
+    "held": true,
+    "proven": false,
+    "reading": "+1/-1 are the registration directions; 0 is the counterpoint"
+   },
+   "what": "the reading: this signed-displacement structure IS the floor's number line",
+   "why": "the mathematics above is unconditional. THIS step is the reading, held not proven: that the signed displacements ARE the floor's number line -- +1 and -1 the two directions a registration count can be extended in, 0 the counterpoint (not a thing). Kevin's floor note, now earned by the algebra but not derived from it. Capped as a postulate."
+  },
+  {
+   "check": "product representative-independent, unit (1,0), commutative, left-distributive",
+   "determines": "UNIQUE (well-definedness makes the class product unique)",
+   "expr": "(a,b)*(c,d) = (ac+bd, ad+bc) ; representative-independent ; 1=(1,0) ; distributes over +",
+   "frm": [
+    "4.2",
+    "4.6"
+   ],
+   "grade": "DERIVED",
+   "id": "4.8",
+   "value": {
+    "left_distrib": true,
+    "mul_comm": true,
+    "mul_congr": true,
+    "mul_one": true,
+    "unit": [
+     1,
+     0
+    ]
+   },
+   "what": "multiplication -- the ring core: a well-defined, commutative, distributive product",
+   "why": "the product of two signed displacements, kept in Nat ((ac+bd)-(ad+bc), no subtraction). Its HEADLINE is well-definedness -- multiplication is genuinely an operation on the CLASSES, not on pairs (mul_congr). With +1=(1,0) as the unit, commutativity, and distribution over addition, the integers become a commutative RING -- multiplication is real, derived from the same construction as the sum."
+  },
+  {
+   "check": "order total & representative-independent; +/0/- trichotomy is EXACTLY one per integer",
+   "determines": "UNIQUE (a total order; the trichotomy is exhaustive and exclusive)",
+   "expr": "(a,b) <= (c,d) iff a+d <= c+b ; isPos(a,b) := b < a ; exactly one of +,0,- per integer",
+   "frm": [
+    "4.3",
+    "4.4"
+   ],
+   "grade": "DERIVED",
+   "id": "4.9",
+   "value": {
+    "exclusivity_in_kernel": true,
+    "le_congr": true,
+    "le_refl": true,
+    "le_total": true,
+    "positive_is_the_plus_direction": true,
+    "trichotomy_exactly_one": true
+   },
+   "what": "the order and the ORIENTATION -- which direction is positive (trichotomy)",
+   "why": "the order is a total order on the classes (reflexive, total, representative-independent). Its content for the floor is the ORIENTATION: isPos says which of the two directions is positive (the +1 direction), and the TRICHOTOMY -- every integer is positive, the counterpoint 0, or negative, exactly one -- is precisely how the two directions and the counterpoint partition the number line. This is the orientation OWED by step 4.4's 'directions', now supplied."
+  },
+  {
+   "check": "(p*q)*r ~ p*(q*r) over the sample; kernel proof mulPair_assoc",
+   "determines": "UNIQUE (associativity is an identity)",
+   "expr": "(p*q)*r ~ p*(q*r)",
+   "frm": [
+    "4.8"
+   ],
+   "grade": "DERIVED",
+   "id": "4.10",
+   "value": {
+    "assoc_holds": true,
+    "built_in_kernel": true
+   },
+   "what": "associativity of the product -- the last ring axiom, now mechanised -- DERIVED",
+   "why": "the product is associative: distributing and reassociating the triple products puts both sides over the same eight degree-3 monomials, a linear identity. Verified exactly over the sample here, and PROVED in the kernel (mulPair_assoc) -- the commutative-ring structure is now complete, no ring axiom left owed."
+  }
+ ],
+ "values": {
+  "all_have_inverse": true,
+  "distinct_classes": 11,
+  "minus_one": [
+   0,
+   1
+  ],
+  "plus_one": [
+   1,
+   0
+  ],
+  "rung1_chain_length": 4,
+  "sample_range": 6,
+  "sample_size": 36,
+  "zero": [
+   0,
+   0
+  ]
+ }
+}

@@ -1,0 +1,252 @@
+{
+ "container": "02-registration-event",
+ "grades": {
+  "DERIVED": 4,
+  "OWED": 1,
+  "POSTULATE": 1
+ },
+ "steps": [
+  {
+   "check": "potential not stable; after the event, stable",
+   "determines": "UNIQUE given the stabilising rule",
+   "expr": "event : potential (raw candidate) -> stable (a distinction)",
+   "frm": [],
+   "grade": "DERIVED",
+   "id": "2.1",
+   "value": {
+    "after_event": {
+     "a": "defined",
+     "b": "undefined",
+     "c": "undefined",
+     "d": "undefined"
+    },
+    "potential": {
+     "a": "undefined",
+     "b": "undefined",
+     "c": "undefined",
+     "d": "undefined"
+    },
+    "stable_after": true,
+    "stable_before": false
+   },
+   "what": "the registration event: potential becomes stable (the first change)",
+   "why": "a registration event is the process by which a potential distinction becomes a stable one. Before, nothing is distinguished (no defined thing) -- it is not yet a distinction. The event stabilises it, and THAT transition is the first difference/change the floor carries. Rung 2 is where dynamics begin; no time is claimed, only a change."
+  },
+  {
+   "check": "both present together, disjoint by label",
+   "determines": "UNIQUE",
+   "expr": "before: no distinction; after: state and residual present together, disjoint by label",
+   "frm": [
+    "2.1"
+   ],
+   "grade": "DERIVED",
+   "id": "2.2",
+   "value": {
+    "co_emerge": true,
+    "disjoint_by_label": true,
+    "observed_state": [
+     "a"
+    ],
+    "observer_ground": [
+     "b",
+     "c",
+     "d"
+    ]
+   },
+   "what": "observer and observed co-emerge through the event",
+   "why": "the observer and observed are not assumed to exist independently -- they emerge together through registration. On the corrected floor these are the two WITHIN: the state and its co-defining residual, both existent, arriving together, disjoint by label (no is-not). Neither is meaningful without the other, and neither precedes the other."
+  },
+  {
+   "check": "rot=perm at 1,2; rot<perm & turns from 3",
+   "determines": "UNIQUE",
+   "expr": "rotations(n)=n ; permutations(n)=n! ; turning iff exists 0<k<n with 2k != 0 mod n",
+   "frm": [
+    "2.2"
+   ],
+   "grade": "DERIVED",
+   "id": "2.3",
+   "value": {
+    "first_closure_rank": 3,
+    "table": {
+     "1": {
+      "permutations": 1,
+      "rotation_is_permutation": true,
+      "rotations": 1,
+      "turns": false
+     },
+     "2": {
+      "permutations": 2,
+      "rotation_is_permutation": true,
+      "rotations": 2,
+      "turns": false
+     },
+     "3": {
+      "permutations": 6,
+      "rotation_is_permutation": false,
+      "rotations": 3,
+      "turns": true
+     },
+     "4": {
+      "permutations": 24,
+      "rotation_is_permutation": false,
+      "rotations": 4,
+      "turns": true
+     },
+     "5": {
+      "permutations": 120,
+      "rotation_is_permutation": false,
+      "rotations": 5,
+      "turns": true
+     },
+     "6": {
+      "permutations": 720,
+      "rotation_is_permutation": false,
+      "rotations": 6,
+      "turns": true
+     },
+     "7": {
+      "permutations": 5040,
+      "rotation_is_permutation": false,
+      "rotations": 7,
+      "turns": true
+     },
+     "8": {
+      "permutations": 40320,
+      "rotation_is_permutation": false,
+      "rotations": 8,
+      "turns": true
+     }
+    }
+   },
+   "what": "the observer triad, as arithmetic: three is the first closure rank",
+   "why": "a rotation is indistinguishable from a permutation exactly when n! = n -- true at 1 and 2, false from 3. And a cyclic order turns iff n >= 3. So ONE is static; TWO has polarity (the swap) but no turning; THREE is the first rank that turns AND where a rotation differs from a permutation. Polarity is two; orientation -- a registered difference -- is three."
+  },
+  {
+   "check": null,
+   "determines": "UNIQUE",
+   "expr": "registering a DIFFERENCE requires the third observer (the without)",
+   "frm": [
+    "2.3"
+   ],
+   "grade": "POSTULATE",
+   "id": "2.4",
+   "value": {
+    "criticality": "manifest under change (this rung)",
+    "polarity_is_two": true,
+    "registered_difference_is_three": true
+   },
+   "what": "the third observer is what registers a change (criticality manifests here)",
+   "why": "two poles co-defining is polarity; a registered difference -- a change, an orientation -- first exists at three, exactly where the skeleton (2.3) says rotation splits from permutation and turning appears. This is where the floor's latent triad becomes CRITICAL: under change, the third's role is manifest. The reading that this rank transition IS the three-observer condition is held, not proven (maths 4's OBSERVER-TRIAD-REGISTERS-DIFFERENCE)."
+  },
+  {
+   "check": "stable product is a distinction",
+   "determines": "UNIQUE",
+   "expr": "stable(event) = a container-00 distinction; rung 1 subdivides its residual",
+   "frm": [
+    "2.1"
+   ],
+   "grade": "DERIVED",
+   "id": "2.5",
+   "value": {
+    "stable_is_distinction": true
+   },
+   "what": "the event's stable product is a distinction -- the artifact rung 1 chains",
+   "why": "the event is the PROCESS (potential -> stable); the registration is its stable artifact -- a container-00 distinction. That is the join to rung 1, whose recursive registration divides the residual this event leaves. The event stabilises; the chain carries on."
+  },
+  {
+   "check": null,
+   "determines": "OWED",
+   "expr": "a cyclic order of minimal arcs; saturation fixes a capacity (to be derived)",
+   "frm": [
+    "2.3"
+   ],
+   "grade": "OWED",
+   "id": "2.6",
+   "value": {
+    "built_here": false,
+    "leads_to": "phase and the 12-capacity"
+   },
+   "what": "the phase cycle at the event, and its capacity -> 12",
+   "why": "the event opens a cyclic/phase structure (interchangeable minimal arcs, a write ledger that saturates). Its capacity is where the 12 will come from, with the icosahedron -- but that is downstream (05/06 and the phase tier), not built here. Foreshadowed, not claimed."
+  }
+ ],
+ "values": {
+  "after_event": {
+   "a": "defined",
+   "b": "undefined",
+   "c": "undefined",
+   "d": "undefined"
+  },
+  "base": [
+   "a",
+   "b",
+   "c",
+   "d"
+  ],
+  "first_closure_rank": 3,
+  "observed_state": [
+   "a"
+  ],
+  "observer_ground": [
+   "b",
+   "c",
+   "d"
+  ],
+  "potential": {
+   "a": "undefined",
+   "b": "undefined",
+   "c": "undefined",
+   "d": "undefined"
+  },
+  "triad_table": {
+   "1": {
+    "permutations": 1,
+    "rotation_is_permutation": true,
+    "rotations": 1,
+    "turns": false
+   },
+   "2": {
+    "permutations": 2,
+    "rotation_is_permutation": true,
+    "rotations": 2,
+    "turns": false
+   },
+   "3": {
+    "permutations": 6,
+    "rotation_is_permutation": false,
+    "rotations": 3,
+    "turns": true
+   },
+   "4": {
+    "permutations": 24,
+    "rotation_is_permutation": false,
+    "rotations": 4,
+    "turns": true
+   },
+   "5": {
+    "permutations": 120,
+    "rotation_is_permutation": false,
+    "rotations": 5,
+    "turns": true
+   },
+   "6": {
+    "permutations": 720,
+    "rotation_is_permutation": false,
+    "rotations": 6,
+    "turns": true
+   },
+   "7": {
+    "permutations": 5040,
+    "rotation_is_permutation": false,
+    "rotations": 7,
+    "turns": true
+   },
+   "8": {
+    "permutations": 40320,
+    "rotation_is_permutation": false,
+    "rotations": 8,
+    "turns": true
+   }
+  }
+ }
+}

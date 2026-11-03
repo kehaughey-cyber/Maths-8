@@ -1,0 +1,172 @@
+{
+ "container": "62-embedding-distinction",
+ "grades": {
+  "DERIVED": 4,
+  "OWED": 1,
+  "POSTULATE": 1
+ },
+ "steps": [
+  {
+   "check": "exhaustive: 1120 A2 subsystems in E8; one reflection-orbit covers all 1120 (W-transitive)",
+   "determines": "UNIQUE (1120 A2 subsystems; one W(E8) orbit)",
+   "expr": "an A2 subsystem = 6 roots {+-a, +-b, +-(a+b)} with <a,b> = -1 (120 degrees); exhaustive over 12's 240 roots gives EXACTLY 1120 such subsystems; a single reflection-orbit (BFS under the 240 root reflections) of ONE A2 reaches all 1120 -> W(E8) transitive. With no extra structure the A2 is maximally undetermined: one Weyl orbit, nothing singled out",
+   "frm": [
+    "12.E.2",
+    "12.E.3"
+   ],
+   "grade": "DERIVED",
+   "id": "ED.1",
+   "value": {
+    "n_a2_subsystems": 1120,
+    "weyl_orbit_size": 1120,
+    "weyl_transitive": true
+   },
+   "what": "BASELINE: the A2 subsystems of E8 number EXACTLY 1120 and W(E8) is transitive on them -- computed from 12's 240 roots (the prose-only '1120 checked' now a checked object)",
+   "why": "the honest baseline, and a needed correction. Containers 31 and 61 CITE 'all A2 subgroups of E8 are Weyl-transitive (1120 checked)' -- but neither COMPUTED it; it lived only in prose (an answer-in-prose, the CORRECTIONS #1 pattern). Here it is derived cold: enumerate every A2 subsystem from 12's roots (1120), and witness transitivity by a single Weyl orbit reaching all 1120. This is the object the embedding-distinction test must cut. Exact-integer over H; the orbit BFS is deterministic."
+  },
+  {
+   "check": "conjugation-by-g3: M^3=I!=M, M H M^T=H, permutes 240 roots; fixed locus 12 roots = A2xA2",
+   "determines": "UNIQUE (conjugation by g3 is an order-3 E8 isometry; fixed locus = A2 x A2, 12 roots)",
+   "expr": "Xi = conjugation x -> g3.x.g3^-1 by g3=(-1/2,1/2,1/2,1/2) (31); unit-quaternion conjugation preserves the codifferent form, so M is an ISOMETRY (M H M^T = H), of order 3 (M^3=I != M), permuting the 240 roots. Its FIXED subspace is 4-dimensional and contains EXACTLY 12 roots, whose inner-product signature (12 self, 12 antipodal, 24 at +1, 24 at -1, 72 at 0) is that of A2 x A2 -- two ORTHOGONAL A2's. (Contrast: the Galois involution sigma, phi->1-phi, is order 2 and NOT an isometry of the trace form -- it swaps the two real embeddings -- so 'sigma-fixed A2' is ill-posed; conjugation by g3 is the well-posed, substrate-native Xi.)",
+   "frm": [
+    "ED.1",
+    "31.CS.1",
+    "06.6.5"
+   ],
+   "grade": "DERIVED",
+   "id": "ED.2",
+   "value": {
+    "fixed_dim": 4,
+    "fixed_ip_signature": {
+     "-1": 24,
+     "-2": 12,
+     "0": 72,
+     "1": 24,
+     "2": 12
+    },
+    "fixed_locus_is_A2xA2": true,
+    "fixed_root_count": 12,
+    "galois_sigma_is_isometry": false,
+    "isometry": true,
+    "note": "sigma (phi->1-phi) is the two-embedding swap, NOT an E8 isometry -> Xi = conjugation by g3",
+    "order3": true,
+    "permutes_roots": true
+   },
+   "what": "the substrate-native Xi: CONJUGATION by g3 (31's colour element) is an order-3 E8 isometry; its FIXED LOCUS is an A2 x A2 (12 roots, 4-dim). (The Galois sigma is NOT an isometry -- why this Xi.)",
+   "why": "the choice of Xi, made principled and well-posed. The K2 review doc asked for a substrate-native datum recovered as the FIXED-POINT LOCUS of an intrinsic operator. The obvious candidate -- the Galois involution sigma -- FAILS to be an isometry (checked: it is the two-embedding swap, not a symmetry of E8), so it does not act on the root system and cannot have 'fixed A2's'. The correct Xi is container 31's own colour operator: conjugation by an order-3 element g3 of 2I. Because g3 is a unit, conjugation preserves the quaternion norm and hence the codifferent form (06.6) -- a genuine element of Aut(E8)=W(E8). Cold computation: M^3=I, M!=I, M H M^T = H, M permutes the 240 roots; the fixed space is 4-dimensional with exactly 12 roots in the A2 x A2 signature. So the substrate's colour-Z/3 has a real, 4-dimensional fixed root-subsystem inside E8 -- the object ED.3 tests against the 1120."
+  },
+  {
+   "check": "g3 on the 1120 A2's: 4 invariant (2 fixed + 2 triality) + 372 three-cycles = 4+3*372=1120",
+   "determines": "UNIQUE (4 invariant A2's = 2 fixed + 2 triality; 372 three-cycles; 4+3*372=1120)",
+   "expr": "acting on the 1120 A2 subsystems, conjugation-by-g3 leaves EXACTLY 4 setwise-invariant: 2 are pointwise-FIXED (the two orthogonal A2's of the ED.2 fixed A2 x A2) and 2 are TRIALITY A2's -- g3 acts on each as cycle-type [3,3], cyclically permuting its 3 positive roots (and its 3 negatives): g3 IS the A2 centre / the colour-Z/3 seating (exactly 31's 'three seatings' realized inside an E8 A2). The remaining 1116 A2's fall into 372 three-cycles (4 + 3*372 = 1120). So Xi CUTS the Weyl-transitive 1120 down to a distinguished handful. It does NOT isolate a unique A2 (no forcing); it does NOT leave them fully arbitrary (the cut is real and substrate-native)",
+   "frm": [
+    "ED.1",
+    "ED.2",
+    "31.CS.1"
+   ],
+   "grade": "DERIVED",
+   "id": "ED.3",
+   "value": {
+    "decomp_ok": true,
+    "invariant_a2_count": 4,
+    "orbit_fixed": 4,
+    "orbit_three_cycles": 372,
+    "pointwise_fixed_a2": 2,
+    "reading": "g3 cuts 1120 -> an A2xA2 (fixed) + 2 triality A2's; not a unique A2",
+    "triality_a2": 2
+   },
+   "what": "THE CUT: conjugation-by-g3 leaves EXACTLY 4 of the 1120 A2's invariant -- 2 pointwise-FIXED (the A2xA2 components) + 2 TRIALITY (g3 cycles their 3 roots) -- the other 1116 in 372 three-cycles. A real cut, not a unique A2",
+   "why": "the discriminating result -- neither dismissal nor forcing. Against the null hypothesis (the A2 is one undifferentiated W-orbit of 1120, ED.1), the substrate's OWN colour operator is NOT inert: it fixes an A2 x A2 and, more tellingly, acts as exact TRIALITY on two further A2's -- meaning g3 plays the role of the SU(3) centre on them, the group-theoretic content of 'colour = three seatings' (31) seen directly inside E8. That is a genuine reduction of the 1120. But it is a cut to a HANDFUL (an A2xA2 + 2 triality A2's), not a selection of one A2 -- so it forces nothing, and ED.4 shows even this handful is not canonical. G4 refuter: had g3 left all 1120 in free 3-cycles (no invariant A2), Xi would be inert and the arbitrary verdict (option 1) would stand cold; it does not. G3: the computation never names 'colour' or 'family' -- it is g3's action on root subsystems."
+  },
+  {
+   "check": "20 order-3 elements (one 2I-class); 10 A2xA2 loci; all 2I-conjugate -> axis unforced",
+   "determines": "UNIQUE (20 order-3 elements = one 2I-class; 10 A2xA2 loci; all 2I-conjugate)",
+   "expr": "the order-3 elements of 2I are EXACTLY 20 and form a SINGLE 2I-conjugacy class (conjugating g3 by the 120 icosians yields all 20 -- 31's class of 20). They give 10 distinct A2 x A2 fixed-loci (g3 and g3^-1=g3^2 share a locus, 20/2=10), and all 10 lie in ONE orbit under the inner-automorphism isometries (conjugation by the 120 icosians) -- hence W(E8)-conjugate. So the distinguished A2 x A2 is determined only up to the CHOICE of order-3 colour axis, and that choice is itself substrate-unforced (all 20 conjugate). The arbitrariness is RELOCATED to 'which colour axis', not removed",
+   "frm": [
+    "ED.3",
+    "31.CS.2"
+   ],
+   "grade": "DERIVED",
+   "id": "ED.4",
+   "value": {
+    "all_loci_2I_conjugate": true,
+    "n_distinct_loci": 10,
+    "n_order3_elements": 20,
+    "reading": "distinguished A2xA2 is canonical only up to the colour axis, itself unforced",
+    "single_2I_class": true
+   },
+   "what": "NON-CANONICITY: g3 is one of EXACTLY 20 order-3 elements (a single 2I-conjugacy class), giving 10 distinct A2xA2 loci, ALL 2I-conjugate -- so the distinguished A2xA2 is fixed only UP TO the colour axis, itself unforced",
+   "why": "the honest residual -- and it is the crux of the verdict. The cut of ED.3 is real, but is it canonical? No. The substrate has no distinguished order-3 element: the 20 are one conjugacy class (31), and their fixed A2 x A2's are all conjugate (checked: one 2I-orbit covers all 10 loci). So choosing g3 and thereby its A2 x A2 is exactly as unforced as choosing a colour axis -- which is physically apt: colour SU(3) has no canonical embedding either (31 already makes 'colour' basis-/conjugacy-dependent). The embedding-distinction is therefore a REDUCTION -- 'which A2' collapses to 'which order-3 element' -- not an elimination to a unique object. This is precisely the twin of 61's count-3: there 'which count' reduced to 'the outer Z/3'; here 'which A2' reduces to 'the native order-3 conjugation'."
+  },
+  {
+   "check": null,
+   "determines": "POSTULATE (embedding-distinction reduces to the native order-3 axis: eliminative (opt 2) + residual arbitrary (opt 1); not forced)",
+   "expr": "the disciplined verdict of the embedding-distinction test. The substrate-native Xi (conjugation by an order-3 element, 31's colour operator) is NOT inert against the Weyl-transitive 1120 A2's: it cuts them to a distinguished A2 x A2 (its fixed locus) plus two triality A2's where g3 IS the colour centre (ED.2/ED.3). But it forces no unique A2, and the cut is canonical only up to the choice of order-3 colour axis, which is itself unforced (ED.4: 20 elements, one class, 10 conjugate loci). Mapping to Kevin's three options: this is OPTION (2) -- we ELIMINATE (1120 -> an A2xA2 + triality A2's) but cannot derive a UNIQUE one -- with the residual choice OPTION (1) [the colour axis is arbitrary]. It is NOT option (3): no perceived mechanism forces a canonical axis here. Whether a DEEPER substrate structure canonicalizes the axis (option 3 -- possibly a separate research program, or a later-discovery) is OPEN. So the embedding-distinction is a genuine REDUCTION ('which A2' -> 'which native order-3 element'), structurally identical to 61's count-3 reduction -- partly structured (a real, substrate-native cut), unforced (no unique A2; axis arbitrary). NOT a root, NOT solved, NOT refuted",
+   "frm": [
+    "ED.3",
+    "ED.4"
+   ],
+   "grade": "POSTULATE",
+   "id": "ED.5",
+   "value": {
+    "deeper_mechanism_open": "whether a substrate structure canonicalizes the colour axis is open (possibly a separate program)",
+    "downstream_premise_use": false,
+    "option_1_residual_arbitrary": true,
+    "option_2_eliminative": true,
+    "option_3_forcing": false,
+    "reduction": "'which A2 subset E8' -> 'which native order-3 element (colour axis)'",
+    "status": "K2 embedding-distinction OPEN -- partly structured (a real cut to A2xA2), unforced (no unique A2; axis arbitrary)",
+    "twin_of_61_count3": "as 61 reduced 'generation count' to 'the outer Z/3', 62 reduces 'which A2' to 'the native order-3 conjugation'"
+   },
+   "what": "(verdict, POSTULATE) Xi = the native colour-Z/3 REDUCES 'which A2' to 'which order-3 axis' -- an ELIMINATIVE cut (option 2), residual arbitrary (option 1); NOT a forcing (option 3). K2's embedding-distinction: partly structured, unforced",
+   "why": "the corrected, disciplined standing. It neither dismisses the E8 route (the substrate's own colour operator DOES cut the 1120 -- the A2 is not inertly arbitrary) nor over-affirms it (no unique A2, no canonical axis). The truth in the middle, and it is a REDUCTION, the success this program is after (FRONTIER): the embedding-distinction reduces to the substrate's native order-3 element -- the same colour-Z/3 that 31 located and that 61's count-3 rests on. The open question that would move it to a forcing (option 3): a substrate reason to canonicalize the colour axis. No downstream premise rests on this reading; filed through 19, quarantined."
+  },
+  {
+   "check": null,
+   "determines": "OWED (a canonical colour axis; a single-A2 selection; or the impossibility proof; plus content + exotics from 61)",
+   "expr": "OWED: (a) a substrate principle selecting a CANONICAL order-3 colour axis among the 20 -- would single out one A2 x A2 (turning the reduction into a forcing, option 3); (b) a reason to pick ONE of the A2 x A2's two A2's (or one of the two triality A2's) -- would give a single colour/family A2; (c) failing either, a proof that no substrate reason exists -- option 1 (arbitrary) made rigorous. Independently, this test addresses ONLY the embedding distinction; the K2 content selection proper (which irreps are the fermions, with their quantum numbers) and the exotic (10+1) projection remain owed (61). No content is fitted; the refused-list binds",
+   "frm": [
+    "ED.5"
+   ],
+   "grade": "OWED",
+   "id": "ED.6",
+   "value": {
+    "owed_canonical_axis": "a substrate invariant selecting one order-3 colour axis (-> one A2xA2)",
+    "owed_from_61": "content selection (which irreps are fermions) + exotic (10+1) projection -- still owed",
+    "owed_impossibility": "or a proof no such reason exists (option 1 made rigorous)",
+    "owed_single_a2": "a reason to pick one A2 within the A2xA2 (-> a single colour/family A2)",
+    "present": false
+   },
+   "what": "OWED: a substrate reason for a CANONICAL colour axis (-> one A2xA2) AND to pick one of its two A2's (-> a single colour/family A2); OR proof none exists (option 1 rigorous). Content selection + exotic projection still owed (61)",
+   "why": "the honest residual, located and not attempted. The embedding-distinction test is run and lands as a reduction, not a forcing. What would move it: a canonical colour axis (a substrate invariant that breaks the 20-fold conjugacy) -- which, if found, would cascade; or a proof of its impossibility. And even a unique A2 x A2 would not close K2: the content selection (61's ST.6) and the exotic projection are the remaining owed items. The discipline holds: nothing about the SM multiplets is assembled here."
+  }
+ ],
+ "values": {
+  "all_loci_2I_conjugate": true,
+  "finding": "THE K2 EMBEDDING-DISTINCTION TEST (Kevin: 'run the scope as proposed'), target out of view, refused-list at MAXIMUM. BASELINE (ED.1): E8 has EXACTLY 1120 A2 subsystems, W(E8)-TRANSITIVE (computed from 12's 240 roots -- the prose-only '1120 checked' now a checked object; CORRECTIONS #10). Xi (ED.2) = conjugation by an order-3 element g3 of 2I (31's colour operator; the Galois sigma is NOT an isometry, so NOT usable): a genuine order-3 E8 isometry whose FIXED LOCUS is an A2 x A2 (12 roots, 4-dim). THE CUT (ED.3): g3 leaves EXACTLY 4 of the 1120 A2's invariant -- 2 pointwise-FIXED (the A2xA2) + 2 TRIALITY (g3 cycles their 3 roots = the colour centre, 31's 'three seatings' inside E8) -- the other 1116 in 372 three-cycles (4+3*372=1120). So Xi CUTS the 1120 to a distinguished handful -- NOT a unique A2, NOT full arbitrariness. NON-CANONICITY (ED.4): the 20 order-3 elements are one 2I-conjugacy class -> 10 A2xA2 loci, all 2I-conjugate; so the distinguished A2xA2 is fixed only up to the colour axis, itself unforced. VERDICT (ED.5): the embedding-distinction REDUCES 'which A2' to 'which native order-3 element' -- Kevin's option (2) [eliminate, not derive a unique one] with the residual option (1) [axis arbitrary]; NOT option (3) [no perceived mechanism forces a canonical axis]. A genuine reduction (twin of 61's count-3), partly structured, unforced -- NOT a root, NOT solved, NOT refuted. OWED (ED.6): a canonical colour axis (-> one A2xA2), a single-A2 selection, or the impossibility proof; plus 61's content selection + exotic projection. Nothing fitted.",
+  "fixed_dim": 4,
+  "fixed_ip_signature": {
+   "-1": 24,
+   "-2": 12,
+   "0": 72,
+   "1": 24,
+   "2": 12
+  },
+  "fixed_locus_is_A2xA2": true,
+  "fixed_root_count": 12,
+  "invariant_a2_count": 4,
+  "isometry": true,
+  "n_a2_subsystems": 1120,
+  "n_distinct_loci": 10,
+  "n_order3_elements": 20,
+  "orbit_fixed": 4,
+  "orbit_three_cycles": 372,
+  "order3": true,
+  "permutes_roots": true,
+  "pointwise_fixed_a2": 2,
+  "single_2I_class": true,
+  "triality_a2": 2,
+  "weyl_orbit_size": 1120,
+  "weyl_transitive": true
+ }
+}

@@ -1,0 +1,172 @@
+{
+ "container": "46-spacetime-signature",
+ "grades": {
+  "DERIVED": 4,
+  "OWED": 1,
+  "POSTULATE": 1
+ },
+ "steps": [
+  {
+   "check": "the tick order is total & transitive (07.7.1, a line) -> time dim = 1, directed (07.7.2)",
+   "determines": "UNIQUE (a total order is 1-dimensional; the direction orients it -- time dim = 1, arrowed)",
+   "expr": "the succession of ticks IS container 04's TOTAL order (07.7.1: total and transitive -- every pair comparable, before/after), which is a LINE: one parameter. And each change carries a single DIRECTION (07.7.2, the +1/-1 arrow). So the temporal dimension is exactly 1, and oriented -- an arrow of time",
+   "frm": [
+    "07.7.1",
+    "07.7.2"
+   ],
+   "grade": "DERIVED",
+   "id": "LS.1",
+   "value": {
+    "directed": true,
+    "order_total": true,
+    "order_transitive": true,
+    "time_dimension": 1,
+    "why_1d": "a total order (07.7.1) embeds in one parameter = a line; the +/- direction (07.7.2) orients it"
+   },
+   "what": "TIME is 1-D and directed: the tick order is 04's TOTAL order (07.7.1, a line); each step is one direction (07.7.2, the arrow)",
+   "why": "the first half, clean. A dimension's count is the number of independent parameters. Container 07.7.1 established that the moments of the substrate are ordered by 04's TOTAL order -- total (every pair before-or-after) and transitive. A total order is a LINE: it embeds in one real parameter, so it is 1-dimensional. There is no second, independent temporal direction -- succession is along the single ordinal line. And 07.7.2 gives each step a DIRECTION (+1/-1 off the counterpoint), so the line is ORIENTED: an arrow of time (the asymmetry 07 built, distinct from space's undirected separations). RUN IT: the tick order is total and transitive on the index set. So TIME is exactly one oriented dimension -- forced by 04/07, not chosen. (This is the temporal counterpart of 25's intrinsic n=2 and 41's ambient 3 for space.)"
+  },
+  {
+   "check": "space 3 (41/25) + time 1 (LS.1) = 4; time ordinal/directed vs space metric/undirected -- distinct kinds",
+   "determines": "UNIQUE (3 space + 1 time = 4; time is ordinal/directed, space is metric/undirected -- distinct kinds)",
+   "expr": "space is 3-dimensional (ambient, 41/42; the intrinsic 2-surface, 25) and time is 1 (LS.1): total 3+1 = 4. And time is a DIFFERENT KIND of extent -- space is metric SEPARATION (05, undirected, positive distance), time is ordinal SUCCESSION (07, directed, an order/rate, not a distance)",
+   "frm": [
+    "LS.1",
+    "41.NT.4",
+    "25.DF.1",
+    "05.5.1"
+   ],
+   "grade": "DERIVED",
+   "id": "LS.2",
+   "value": {
+    "ladder": "07 (time, ordinal) -> 05 (space, metric) -> the signature (LS.4)",
+    "space_dim": 3,
+    "space_is": "metric separation (05, undirected, positive distance)",
+    "time_dim": 1,
+    "time_is": "ordinal succession (07, directed, an order/rate -- not a distance)",
+    "total_dim": 4
+   },
+   "what": "the (3+1) split: space is 3 (41/25), time is 1 (LS.1), and time is CATEGORICALLY DISTINCT from space",
+   "why": "the split and the crucial distinction. COUNT: space is the ambient 3 (41/42's single-SU(2)=>3D; the substrate is an intrinsic 2-surface, 25.DF.1, embedded in 3) and time is 1 (LS.1) -- total four dimensions, 3+1. KIND: these are NOT four dimensions of one type. Space arrives at the BRIDGE (05) as metric SEPARATION -- real, positive, UNDIRECTED distance between registrations. Time arrives EARLIER, in the ordinal dynamics (07), as SUCCESSION -- a directed total order and a rate (a ratio of counts), NOT a distance; it has an arrow (LS.1) space does not. Kevin's ladder built them in this order deliberately: ORDINAL dynamics (time, 07) -> the geometric bridge (space, 05) -> metric. So the four-dimensional arena is 3 spatial + 1 temporal, with time categorically distinct -- and that distinction is exactly what the signature (LS.4) encodes as an opposite sign."
+  },
+  {
+   "check": "the finite maximal rate c (33) bounds influence to a cone -- the causal structure",
+   "determines": "UNIQUE (a finite maximal rate c bounds influence to a cone -- the causal structure)",
+   "expr": "the substrate has a constant maximal edge/tick rate c (33.PA.1/PA.2: one edge of adjacency per tick of succession) -- a maximal propagation speed. The set of events reachable within c per tick is a CONE; events outside it cannot be causally connected. That cone is the substrate's causal structure",
+   "frm": [
+    "LS.2",
+    "33.PA.1",
+    "33.PA.2"
+   ],
+   "grade": "DERIVED",
+   "id": "LS.3",
+   "value": {
+    "cone": "reachable within c*t -> a light-cone; outside = causally disconnected",
+    "finite_maximal_rate_c": true,
+    "needs": "a directed time (LS.1) + a finite rate (33)",
+    "rate_source": "33.PA.1/PA.2 (constant edge/tick = c)"
+   },
+   "what": "the finite maximal rate c is a CAUSAL light-cone (33: one edge per tick)",
+   "why": "the causal ingredient -- the third pillar. Container 33 (PA.1/PA.2) established the substrate has a definite EDGE (minimal adjacency) and TICK (one succession step) and a CONSTANT edge/tick RATE -- a maximal propagation speed c (= alpha/tau, 24.SG.3; same dimension as l_P/t_P). A maximal rate means influence spreads at most one edge per tick: from an event, the reachable future by tick t is bounded by distance c*t -- a CONE. Events separated by more space than c*(their time separation) are OUTSIDE each other's cones -- causally disconnected. This is a light-cone / causal structure, built from the finite rate (33) and the directed time (LS.1). It is the substrate feature a Euclidean geometry CANNOT have (LS.4): Euclidean space has no invariant cone, no causal order."
+  },
+  {
+   "check": "Euclidean (4,0) has no null vector; Lorentzian (3,1) has the cone; 1 timelike (time) + 3 spacelike (space)",
+   "determines": "UNIQUE (a causal cone forbids (4,0); one directed time + three space => Lorentzian (3,1))",
+   "expr": "a positive-definite (4,0) metric has NO nonzero null vector -- no cone, no causal order. A causal cone (LS.3) with a directed time (LS.1) REQUIRES a metric with a null cone: exactly ONE timelike direction (opposite sign) and three spacelike -- signature (3,1), ds^2 = -c^2 dt^2 + dl^2. The count (3,1) and the Lorentzian-over-Euclidean choice are forced by causality",
+   "frm": [
+    "LS.1",
+    "LS.2",
+    "LS.3"
+   ],
+   "grade": "DERIVED",
+   "id": "LS.4",
+   "value": {
+    "euclid_signature": [
+     1,
+     1,
+     1,
+     1
+    ],
+    "euclidean_no_null_cone": true,
+    "forced": "causality (LS.1 directed + LS.3 finite rate) forbids Euclidean (4,0); signature is (3,1)",
+    "interval": "ds^2 = -c^2 dt^2 + dl^2 -- time opposite sign, c the conversion, the cone its null set",
+    "lorentz_signature": [
+     -1,
+     1,
+     1,
+     1
+    ],
+    "lorentzian_has_null_cone": true,
+    "spacelike_count": 3,
+    "timelike_count": 1
+   },
+   "what": "causality forces LORENTZIAN (3,1), not Euclidean (4,0): the cone needs one timelike direction (time, opposite sign)",
+   "why": "the payoff -- the signature, forced by causality. The invariant interval of a metric is sum(sign_i * x_i^2). RUN THE DISCRIMINANT: a Euclidean (4,0) form [+,+,+,+] has interval > 0 for every nonzero vector -- NO nonzero null vector, hence NO cone and NO causal order (all directions alike, none timelike). A Lorentzian (3,1) form [-,+,+,+] has null vectors: the candidate (1,1,0,0) gives -1+1 = 0, ON the cone. So a metric can carry the substrate's causal cone (LS.3) ONLY if it is NOT positive-definite -- it must have a timelike direction (opposite sign). The directed time (LS.1) is that one distinguished direction, and space (LS.2) the three of the other sign: signature (3,1), one timelike + three spacelike, ds^2 = -c^2 dt^2 + dl^2 with c (LS.3) the conversion and the cone its null set. The categorical time/space distinction (LS.2) is realized as the OPPOSITE SIGN. So the signature COUNT (3,1) and the choice of Lorentzian over Euclidean are FORCED: a causal substrate cannot be metrized Euclidean. (What is NOT forced here is that it is metrized at all -- LS.5. This step is the conditional: IF a metric, THEN (3,1).)"
+  },
+  {
+   "check": null,
+   "determines": "POSTULATE (causal order + rate <-> a Lorentzian pseudo-Riemannian metric (3,1); a reading, held)",
+   "expr": "filed through the 19 gate: the substrate's causal structure (the directed time LS.1, the finite-rate cone LS.3, over 3 space) <-> a pseudo-Riemannian LORENTZIAN metric of signature (3,1). A CORRESPONDENCE, WEAK -- the pseudo-Riemannian structure, its curvature dynamics, and any value do NOT travel",
+   "frm": [
+    "LS.4",
+    "21.GC.3"
+   ],
+   "grade": "POSTULATE",
+   "id": "LS.5",
+   "value": {
+    "correspondence": "causal order + maximal rate <-> Lorentzian metric; light-cone <-> null cone; time <-> timelike",
+    "does_not_travel": "that it is a smooth METRIC (vs a causal set); the curvature/Einstein dynamics; any value",
+    "downstream_premise_use": false,
+    "physics_side_cited": "spacetime is pseudo-Riemannian, Lorentzian signature (3,1) (relativity)",
+    "substrate_side": "directed time (LS.1) + finite-rate cone (LS.3) + 3 space => any metric is (3,1) (LS.4)",
+    "unlocks": "45.SP.3 (spin-statistics needs the Lorentz structure)"
+   },
+   "what": "the metric identification (filed through 19): the substrate's causal order + rate <-> a pseudo-Riemannian LORENTZIAN metric (3,1)",
+   "why": "the entry, held to the 19 discipline (mirror of 21.GC.3 gravity<->curvature). SUBSTRATE side (checked, LS.1-LS.4): time is 1-D directed, space is 3, there is a finite-rate causal cone, and any metric carrying that cone has signature (3,1). PHYSICS side (cited): spacetime is a pseudo-Riemannian manifold of Lorentzian signature (3,1) (special/general relativity). THE CORRESPONDENCE: the substrate's causal order + maximal rate <-> the Lorentzian metric; the light-cone <-> the null cone; time <-> the timelike direction. FALSIFICATION: a substrate with no maximal rate (no cone) or a symmetric (undirected) time would not be Lorentzian; ours has both (LS.1, LS.3) -- it PASSES. WHAT DOES NOT TRAVEL: that the causal order IS a smooth pseudo-Riemannian METRIC (rather than just a causal set / order), its curvature/Einstein DYNAMICS (that is gravity, 21/37, and its value is danger), and any numerical metric component. A correspondence, quarantined; no downstream premise use. NOTE it unlocks 45.SP.3: spin-statistics needs exactly this Lorentz structure."
+  },
+  {
+   "check": null,
+   "determines": "OWED (the smooth metric derived not corresponded; Einstein dynamics/gravity; values -- danger zone)",
+   "expr": "OWED: (a) the pseudo-Riemannian metric DERIVED on the substrate rather than corresponded (LS.5 is a reading -- the causal order might be a causal SET, not a smooth metric); (b) the metric DYNAMICS -- the Einstein equations / curvature (that is gravity, partly built 21/37; its VALUE is the danger zone); (c) the numerical metric / c's value (danger). The signature (3,1) is forced; the smooth metric and its dynamics are owed",
+   "frm": [
+    "LS.4",
+    "LS.5"
+   ],
+   "grade": "OWED",
+   "id": "LS.6",
+   "value": {
+    "owed_dynamics": "the Einstein equations / curvature = gravity (21/37; the coupling value = danger zone)",
+    "owed_metric": "the smooth pseudo-Riemannian metric derived (vs a causal set) -- LS.5 is a reading",
+    "owed_value": "c and metric components -- danger zone",
+    "present": false,
+    "unlocks": "45.SP.3 spin-statistics (now has its Lorentz structure)"
+   },
+   "what": "OWED: the Lorentzian metric DERIVED (not corresponded); the metric DYNAMICS (Einstein/gravity); the value",
+   "why": "the honest residual. LS.1-LS.4 force the COUNT and SIGNATURE ((3+1), Lorentzian, forced by causality); LS.5 files the metric correspondence. What remains: (a) deriving that the causal structure is a smooth pseudo-Riemannian METRIC (not merely a causal order / causal set) -- the identification LS.5 is a reading; (b) the metric's DYNAMICS -- the Einstein field equations, the curvature -- which is gravity (containers 21/37 built the deficit<->curvature and geodesic pieces; the quantitative gravitational coupling is the DANGER ZONE); (c) any numerical value (c, metric components) -- danger. So the (3+1) Lorentzian signature is forced and danger-free; the smooth metric structure and its dynamics/values are owed. This signature also UNLOCKS the spin-statistics connection (45.SP.3), previously gated on it. NOT attempted further here."
+  }
+ ],
+ "values": {
+  "euclid_signature": [
+   1,
+   1,
+   1,
+   1
+  ],
+  "euclidean_no_null_cone": true,
+  "finding": "THE SPACETIME SIGNATURE (steps 1+2: time + signature). TIME is 1-D and directed -- the tick order is 04's TOTAL order (07.7.1, a line), each step one direction (07.7.2, the arrow) (LS.1). The (3+1) split: space 3 (41/25), time 1, categorically distinct -- space is metric separation (05, undirected), time is ordinal succession (07, directed) (LS.2). The finite maximal rate c (33) is a CAUSAL cone (LS.3). CAUSALITY FORCES LORENTZIAN (3,1): a Euclidean (4,0) metric has no null cone, so a causal substrate cannot be metrized Euclidean -- it needs exactly one timelike direction (time, opposite sign) + three spacelike = (3,1), ds^2=-c^2dt^2+dl^2 (LS.4, forced). The metric identification is filed (LS.5, POSTULATE); the smooth metric + Einstein dynamics + values are OWED (LS.6). This unlocks 45.SP.3 (spin-statistics). Danger-free; nothing fitted.",
+  "lorentz_signature": [
+   -1,
+   1,
+   1,
+   1
+  ],
+  "lorentzian_has_null_cone": true,
+  "order_total": true,
+  "order_transitive": true,
+  "space_dim": 3,
+  "spacelike_count": 3,
+  "time_dimension": 1,
+  "timelike_count": 1,
+  "total_dim": 4
+ }
+}

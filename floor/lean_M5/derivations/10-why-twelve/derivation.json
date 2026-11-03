@@ -1,0 +1,228 @@
+{
+ "container": "10-why-twelve",
+ "grades": {
+  "DERIVED": 3,
+  "OWED": 1,
+  "POSTULATE": 2
+ },
+ "steps": [
+  {
+   "check": null,
+   "determines": "CHOSEN (one reading unifying four occurrences; the counts agree, the identity is held)",
+   "expr": "adjacency-12 (01) = phase-12 (02) = icosahedral (03) = kissing-12 (09)",
+   "frm": [
+    "01.6",
+    "02.6",
+    "03.4",
+    "09.4"
+   ],
+   "grade": "POSTULATE",
+   "id": "W.1",
+   "value": {
+    "all_count_twelve": true,
+    "note": "counts agree (consistency); identity is the postulate, not the agreement",
+    "threads": [
+     {
+      "count": 12,
+      "from": "01 / 1.6",
+      "grade_there": "OWED",
+      "road": "adjacency -> 12"
+     },
+     {
+      "count": 12,
+      "from": "02 / 2.6",
+      "grade_there": "OWED",
+      "road": "phase-cycle -> 12"
+     },
+     {
+      "count": 12,
+      "from": "03 / 3.4",
+      "grade_there": "DERIVED",
+      "road": "icosahedral selection"
+     },
+     {
+      "count": 12,
+      "from": "09 / 6.1,6.4",
+      "grade_there": "DERIVED",
+      "road": "kissing-12"
+     }
+    ]
+   },
+   "what": "the four 12-threads are one and the same 12",
+   "why": "the number 12 appears on four separate roads: the adjacency coordination number (01's OWED 1.6), the phase-cycle write capacity (02's OWED 2.6), the icosahedral selection (03.4), and the kissing witness (09). Each road independently lands on 12. THAT THEY ARE THE SAME 12 -- one substrate fact wearing four faces -- is a structural READING, held, not proven. The consistency witness (all four counts equal 12) is necessary but not sufficient: two roads agreeing on a number does not make them the same object. Held as the reading that unifies the container."
+  },
+  {
+   "check": "12 writes fill the cycle (12=12); a 13th overflows (13>12)",
+   "determines": "UNIQUE (given the pi/6 write cost, the capacity is exactly 12)",
+   "expr": "12 * (pi/6) = 2pi (fills); 13 * (pi/6) > 2pi (overflows); in radits: 12 = 12, 13 > 12",
+   "frm": [
+    "W.1"
+   ],
+   "grade": "DERIVED",
+   "id": "W.2",
+   "value": {
+    "cycle_radits": 12,
+    "provenance": {
+     "capacity": "2pi/(pi/6) = 12",
+     "half_angle": "arcsin(1/2) = pi/6",
+     "saturation": "12*(pi/6) = 2pi",
+     "source": "maths-4 REFRAME-PHASE-LEDGER-ARITHMETIC (THEOREM)",
+     "status": "proved in-repo at Container10.PhaseLedgerReal (Mathlib) as of 2026-08-21"
+    },
+    "thirteen_overflows": true,
+    "twelve_fills": true,
+    "write_cost_radits": 1
+   },
+   "what": "the phase-ledger arithmetic: twelve pi/6-writes fill the 2pi cycle, thirteen overflow",
+   "why": "the phase cycle has capacity 2pi; one adjacency write costs pi/6 (the contact half-angle arcsin(1/2), split between the two co-owners). So the cycle holds exactly 2pi/(pi/6) = 12 writes: twelve saturate it to the last arc, a thirteenth strictly overflows. The trig provenance (arcsin(1/2) = pi/6, 12*(pi/6) = 2pi, capacity = 12) was maths-4's REFRAME-PHASE-LEDGER-ARITHMETIC (THEOREM, needs Real) -- and as of the Mathlib-setup session (2026-08-21) it is now PROVED IN-REPO at Container10.PhaseLedgerReal (import Mathlib; axioms = Mathlib's three), no longer merely cited. What is DERIVED and Mathlib-FREE HERE is the COUNTING core: with the cycle measured in radits (units of pi/6), 12 = 12 fills and 13 > 12 overflows -- pure integer arithmetic by `decide`, zero-axiom, the same shape as rung 6's 5 < 9. This proves the arithmetic IF the ledger picture (W.4) is right; it does not prove the picture."
+  },
+  {
+   "check": "phase cap = 12 for all d; kissing varies (2,6,12,24)",
+   "determines": "UNIQUE (the phase cap is 12 independent of dimension)",
+   "expr": "phase_cap(d) = 2pi/(pi/6) = 12 for all d; kissing(d) = 2,6,12,24 for d = 1,2,3,4",
+   "frm": [
+    "W.2"
+   ],
+   "grade": "DERIVED",
+   "id": "W.3",
+   "value": {
+    "cited": "kissing numbers are external; arcsin(1/2)=pi/6 is dimension-independent (maths-4)",
+    "kissing_by_dim": {
+     "1": 2,
+     "2": 6,
+     "3": 12,
+     "4": 24
+    },
+    "kissing_varies": true,
+    "phase_cap_by_dim": {
+     "1": 12,
+     "2": 12,
+     "3": 12,
+     "4": 12
+    },
+    "phase_cap_constant": true
+   },
+   "what": "the phase cap is 12 in ANY dimension (unlike spatial kissing, which varies)",
+   "why": "the contact half-angle arcsin(1/2) = pi/6 is a TWO-BODY planar computation (two equal spheres in contact span a 2-plane; the subtended angle is fixed there) -- it does not depend on the ambient dimension. And the phase cycle is 1-D (2pi). So the phase capacity is 12 in EVERY dimension. Spatial kissing, by contrast, VARIES: 2 (d=1), 6 (d=2), 12 (d=3), 24 (d=4) -- cited external values. This is WHY the phase road is the only route that can bound adjacencies at 12 as such: geometry gives 12 only at d=3, but the phase ledger gives 12 everywhere. The dimension-independence of arcsin(1/2) is the cited fact; the integer 'cap = 12 in any d' is the content."
+  },
+  {
+   "check": null,
+   "determines": "POSTULATE (the substrate identification; provably not derivable from its own road)",
+   "expr": "each mutual adjacency costs one pi/6 arc of the 2pi phase cycle (maths-4 GATE-PHASE-LEDGER half-a, OPEN)",
+   "frm": [
+    "W.2",
+    "W.3"
+   ],
+   "grade": "POSTULATE",
+   "id": "W.4",
+   "value": {
+    "equivalent_to": "dim = 3",
+    "is_headline": true,
+    "not_derivable": "circular via CLOSURE-ZERO-SELF-INFORMATION (GATE-PHASE-LEDGER-HALF-ANSWERED)",
+    "postulate": "the phase cycle is the adjacency ledger; one adjacency = one pi/6 arc",
+    "source": "maths-4 GATE-PHASE-LEDGER half-a (OPEN)"
+   },
+   "what": "THE POSTULATE: the phase cycle is the ledger on which adjacencies are written",
+   "why": "THE HEADLINE, and the grade of this whole container. The load-bearing identification is: 'the phase cycle is the ledger on which a registration's adjacencies are written', each mutual adjacency spending one pi/6 arc. This is maths-4's GATE-PHASE-LEDGER half-a, and it is OPEN there for a precise reason: it is provably NOT derivable from its own road (the attempt is circular via CLOSURE-ZERO-SELF-INFORMATION; see GATE-PHASE-LEDGER-HALF-ANSWERED). It is EQUIVALENT to dim=3. So why-12 does not bottom out in a theorem -- it bottoms out in ONE named substrate postulate, the same species of bedrock as the reg-1 triad (00) and the geometric-balance bridge (05). Held, not proven. NOT dressed as a derivation."
+  },
+  {
+   "check": "12 is max-kissing uniquely at d=3; so W.4 + completeness => 12 and d=3",
+   "determines": "UNIQUE given W.4 + completeness (12 selects d=3 uniquely)",
+   "expr": "IF adjacency-count = phase-writes = 12 (W.4) AND completeness, THEN count = 12 and dim = 3",
+   "frm": [
+    "W.4",
+    "W.3"
+   ],
+   "grade": "DERIVED",
+   "id": "W.5",
+   "value": {
+    "conditional_on": "W.4 (the postulate) -- NOT a derivation of 12 from below",
+    "dims_where_kissing_is_12": [
+     3
+    ],
+    "discharges": [
+     "01 / 1.6 (adjacency -> 12)",
+     "the dim=3 upper bound"
+    ],
+    "kissing_by_dim": {
+     "1": 2,
+     "2": 6,
+     "3": 12,
+     "4": 24
+    },
+    "selects_dim_three": true
+   },
+   "what": "GIVEN the postulate, 12 and d=3 follow (12 is max-kissing only at d=3)",
+   "why": "CONDITIONAL, and the conditionality is the honesty. GIVEN W.4 (the adjacency count equals the phase writes = 12) and registration completeness (a saturated substrate realizes the maximum kissing in its dimension), the adjacency count is 12 and the dimension is 3. The integer selection: 12 is the maximum kissing number ONLY at d=3 (d=2 caps at 6, d=4 reaches 24), so 'saturates at 12 mutual adjacencies' picks out d=3 uniquely. This DISCHARGES 01's OWED 1.6 (adjacency -> 12) and the dim=3 upper bound AS CONSEQUENCES of the one postulate W.4 -- NOT as a from-below derivation of 12. The implication is derived; its antecedent is the postulate."
+  },
+  {
+   "check": null,
+   "determines": "OWED (no geometric closer; the postulate is irreducible; the upper bound is external)",
+   "expr": "the separation lever is a checked negative; W.4 is irreducible; the no-13th is external",
+   "frm": [
+    "W.4",
+    "W.5"
+   ],
+   "grade": "OWED",
+   "id": "W.6",
+   "value": {
+    "postulate_irreducible": "W.4 not derivable from its own road",
+    "separation_lever": "checked NEGATIVE (03/dim4-separation-check.py; 24-cell valid at d=4)",
+    "upper_bound_external": "no 13th = Schuette-van der Waerden 1953 (cited)",
+    "what_would_close_it": "a new substrate principle excluding 24 neighbors / selecting 12 over 24"
+   },
+   "what": "the honest boundary: geometry ALONE cannot force 12",
+   "why": "what is NOT closed, stated as loud as what is. (a) GEOMETRY ALONE does not force 12: the three-observer SEPARATION lever was checked and FAILED (03/dim4-separation-check.py, control 6/3/0 reproduced) -- the 24-cell is a fully valid 4-D neighbor shell (24 neighbors, unseparated = 0), so equal-separation admits 24 at d=4. (b) The postulate W.4 is IRREDUCIBLE -- provably not derivable from its own road. (c) The no-13th upper bound (kissing(3)=12 exactly) is EXTERNAL (Schuette-van der Waerden 1953), cited, not machine-checked here. So why-12 has no clean geometric closer in hand; a real advance would need a NEW substrate principle that specifically excludes 24 neighbors / picks 12 over 24. This is the same species of bedrock as the reg-1 triad and the bridge -- named, not smuggled."
+  }
+ ],
+ "values": {
+  "all_count_twelve": true,
+  "cycle_radits": 12,
+  "dims_where_kissing_is_12": [
+   3
+  ],
+  "headline_grade": "POSTULATE",
+  "kissing_by_dim": {
+   "1": 2,
+   "2": 6,
+   "3": 12,
+   "4": 24
+  },
+  "phase_cap_by_dim": {
+   "1": 12,
+   "2": 12,
+   "3": 12,
+   "4": 12
+  },
+  "selects_dim_three": true,
+  "thirteen_overflows": true,
+  "threads": [
+   {
+    "count": 12,
+    "from": "01 / 1.6",
+    "grade_there": "OWED",
+    "road": "adjacency -> 12"
+   },
+   {
+    "count": 12,
+    "from": "02 / 2.6",
+    "grade_there": "OWED",
+    "road": "phase-cycle -> 12"
+   },
+   {
+    "count": 12,
+    "from": "03 / 3.4",
+    "grade_there": "DERIVED",
+    "road": "icosahedral selection"
+   },
+   {
+    "count": 12,
+    "from": "09 / 6.1,6.4",
+    "grade_there": "DERIVED",
+    "road": "kissing-12"
+   }
+  ],
+  "twelve_fills": true,
+  "write_cost_radits": 1
+ }
+}

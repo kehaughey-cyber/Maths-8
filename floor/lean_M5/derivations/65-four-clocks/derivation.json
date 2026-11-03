@@ -1,0 +1,175 @@
+{
+ "container": "65-four-clocks",
+ "grades": {
+  "DERIVED": 3,
+  "OWED": 1,
+  "POSTULATE": 2
+ },
+ "steps": [
+  {
+   "check": "the tick tau(v)=a.v.b cuts the 120 into exactly 4 orbits of 30 (the four clocks)",
+   "determines": "UNIQUE (4 clocks of 30, given the tick)",
+   "expr": "the tick tau(v) = a.v.b (a order-5, b order-6, the canonical tick of 64) acts on the 120 icosians; its orbits are EXACTLY 4 cycles of length 30 (4*30 = 120). These are the corpus's 'four H30 clocks' (the order-30 beat in four 30-orbits). The tick's order is 30 (64.CX.1), and 120/30 = 4",
+   "frm": [
+    "64.CX.1",
+    "06.6.5"
+   ],
+   "grade": "DERIVED",
+   "id": "FC.1",
+   "value": {
+    "clock_sizes": [
+     30,
+     30,
+     30,
+     30
+    ],
+    "n_clocks": 4
+   },
+   "what": "THE FOUR CLOCKS: the tick permutation tau(v)=a.v.b cuts the 120 icosians into EXACTLY 4 orbits of 30 -- the four H30 clocks (the corpus's four 30-orbits)",
+   "why": "the four clocks as first-class objects. 64 recorded that the tick cuts the 120 into 4 loops of 30 (the H4 Coxeter structure); this container makes those four clocks the object of study and asks how the canonical frame labels them. Exact-integer over Z[phi]; deterministic orbit computation."
+  },
+  {
+   "check": "Galois sigma fixes 24 Hurwitz units (2T); 8 axis units {+-1,+-i,+-j,+-k} = 4 antipodal pairs = the frame",
+   "determines": "UNIQUE (the Galois-fixed spine: 24 Hurwitz, 8 axis units, 4 pairs)",
+   "expr": "the Galois automorphism sigma acts on each Z[phi] component by phi -> 1-phi, i.e. (a,b) -> (a+b,-b). Its FIXED icosians are exactly the 24 phi-free ones -- the Hurwitz units (= the binary tetrahedral group 2T). Of these, the 8 AXIS units (single nonzero component = +-1,+-i,+-j,+-k) are the corpus's Q8 seam -- the canonical quaternion frame, 4 antipodal pairs {+-1},{+-i},{+-j},{+-k}. sigma is NOT a symmetry of this embedding (it sends the other 96 icosians to the conjugate copy, 62.ED.2 / CORRECTIONS #5), so the frame is its FIXED spine -- a canonical coordinate system, not sigma-as-a-map",
+   "frm": [
+    "06.6.5"
+   ],
+   "grade": "DERIVED",
+   "id": "FC.2",
+   "value": {
+    "n_axis_pairs": 4,
+    "n_axis_units": 8,
+    "n_galois_fixed": 24,
+    "note": "the 8 axis units {+-1,+-i,+-j,+-k} = the Q8 seam = the canonical quaternion frame"
+   },
+   "what": "THE CANONICAL FRAME: the Galois automorphism sigma (phi->1-phi) fixes EXACTLY the 24 phi-free Hurwitz units (=2T); its 8 AXIS units {+-1,+-i,+-j,+-k} are the Q8 seam -- the canonical quaternion frame (4 antipodal pairs)",
+   "why": "the substrate-native canonical frame, computed cold -- the structure CORRECTIONS #12 identified as the true canonicalizer (a fixed frame, NOT a conjugation-invariant, which by theorem cannot distinguish W-conjugate Coxeter elements). The corpus names it the 'canonical quaternion frame' (BeltComplete) / the 'sigma-fixed spine' (the silicon project); here it is the Galois-fixed locus, 24 Hurwitz units of which 8 are the axis frame. Exact-integer."
+  },
+  {
+   "check": "each clock owns one antipodal axis pair (4 clocks = 4 axes); antipode fixes each clock; 288/480 aligned, 6 labelings, 48 each",
+   "determines": "UNIQUE (each clock one axis pair; antipode fixes clocks; 288/480 aligned, 6 labelings, 48 each)",
+   "expr": "the canonical frame labels the four clocks. For the canonical tick, EACH of the 4 clocks contains EXACTLY ONE antipodal axis pair {+e,-e} of the frame -- so the 4 clocks are canonically identified with the 4 quaternion axes {1,i,j,k}. The antipode C^15 = -I (64.CX.4) FIXES each clock (each clock is antipode-closed: it contains v iff it contains -v). And this frame-alignment is a genuine SELECTOR, not a universal property: sweeping all 480 order-5 x order-6 ticks, EXACTLY 288 are frame-aligned (each clock exactly one axis), falling into 6 distinct clock->axis labelings (the S3 naming of {i,j,k}, the identity clock {+-1} fixed), 48 ticks per labeling. So the canonical frame CUTS the tick arbitrariness 480 -> 288 -- the owed frame-alignment rule of 64.CX.7, built cold",
+   "frm": [
+    "FC.1",
+    "FC.2",
+    "64.CX.4"
+   ],
+   "grade": "DERIVED",
+   "id": "FC.3",
+   "value": {
+    "antipode_fixes_each_clock": true,
+    "canonical_clock_to_axis": [
+     0,
+     1,
+     3,
+     2
+    ],
+    "canonical_tick_aligned": true,
+    "n_aligned": 288,
+    "n_labelings": 6,
+    "n_total_ticks": 480,
+    "note": "the 4 clocks are the 4 quaternion axes {1,i,j,k}; frame-alignment cuts 480 -> 288 (a real selector, not universal)",
+    "ticks_per_labeling": 48
+   },
+   "what": "THE FRAME-ALIGNMENT RULE: each clock owns EXACTLY ONE antipodal axis pair {+e,-e} -- the 4 clocks ARE the 4 quaternion axes {1,i,j,k}; the antipode C^15=-I fixes each clock. And alignment is a SELECTOR: EXACTLY 288 of 480 ticks are frame-aligned (6 labelings) -- a real cut 480->288",
+   "why": "the headline, and the discharge of 64.CX.7's owed frame-alignment rule. CORRECTIONS #12 located the canonicalizer as the Galois-fixed frame + parity; this step shows the frame is NOT inert -- it canonically labels the four clocks (each clock = one quaternion axis) and, crucially, it SELECTS (288/480, not all), so it genuinely cuts the arbiterness. G4 refuter: had all 480 ticks been frame-aligned, the frame would carry no selective content (structure, not a reduction); had none been, the frame would be irrelevant -- instead exactly 288 align, a real cut. G3: the computation names no physics -- it is axis units in clocks. Exact-integer over the 480 ticks."
+  },
+  {
+   "check": null,
+   "determines": "POSTULATE (116 = the four clock-origins meter; the origin=+axis/parity reading, not forced)",
+   "expr": "the four clocks have 4 * 30 = 120 seats total (the whole carrier -- FC.1 arithmetic). The corpus reads 116 = 4 clocks x 29 lagging seats = 120 minus four clock-ORIGINS = 4x30 - 4, and meters the neutron-proton splitting with it (Nucleons chapter). The bare arithmetic (120 - 4 = 116 = 4x29) is trivially true; what is a READING is designating ONE distinguished origin per clock and identifying it with the + axis unit -- which each aligned clock owns exactly one of (FC.3), the + chosen by the PARITY BIT ('the sign set at the origin', the CPT chapter). That parity choice is a free ZZ/2, not forced. So 116-as-the-four-origins-meter is POSTULATE, and the fork's n-p splitting built on it rests on this reading (and on K2, 59/61) -- CANDIDATE, not banked",
+   "frm": [
+    "FC.3"
+   ],
+   "grade": "POSTULATE",
+   "id": "FC.4",
+   "value": {
+    "downstream_premise_use": false,
+    "fork_np_splitting_rests_on_this": "CANDIDATE, not banked",
+    "n_clock_seats": 120,
+    "n_lag_seats": 116,
+    "n_origins": 4,
+    "origin_is_plus_axis": "the parity-bit sign, set at the origin (the CPT chapter) -- a free ZZ/2, not forced",
+    "readings": [
+     "116 = 4 clocks x 29 lag-seats",
+     "116 = 120 - 4 clock-origins",
+     "116 = 4x30 - 4"
+    ]
+   },
+   "what": "(reading, POSTULATE) THE FOUR CLOCK-ORIGINS: designating ONE origin per clock reads 116 = 120 - 4 = 4 x 29 (the carrier minus its four clock-origins) -- the fork's native 116 that meters the neutron-proton splitting. The origin = the + axis unit is the PARITY BIT choice, not forced -- so the fork's n-p meter rests on a reading",
+   "why": "the fork's 116, placed honestly. The n-p splitting (fork) rests on 116; this container locates 116 in the four clocks (120 - 4) but REFUSES to over-grade it: the 'four clock-origins' one-per-clock and the origin = + axis / parity-sign identification is the arbiter reading, a free ZZ/2, POSTULATE and quarantined. So the fork's mass numbers built on 116 stay CANDIDATE. This is exactly the value-gate discipline: map the path in, do not import the answer. No mass value is computed here."
+  },
+  {
+   "check": null,
+   "determines": "POSTULATE (the frame-alignment rule reduces the tick to 288/480 -- a real cut, 64.CX.7's owed rule built; not yet a forcing; residual = axis-labeling + parity; the arbiter seating owed)",
+   "expr": "the disciplined reading. The owed frame-alignment rule of 64.CX.7 is BUILT: the substrate's canonical frame (FC.2) canonically labels the four clocks -- each clock is one quaternion axis {1,i,j,k} (FC.3), the antipode fixes each -- and frame-alignment is a genuine SELECTOR (288/480). So the frame CUTS the tick arbitrariness (480 -> 288). But it is a REDUCTION, NOT a forcing: alignment plus the fixed frame leave a residual -- the 6 clock->axis labelings (the S3 naming of {i,j,k}, a convention like colour labeling) and 48 ticks per labeling -- so a UNIQUE tick is not forced. The remaining PARITY BIT is the origin-sign, a free ZZ/2 that SHOULD be free (it is P-violation, unobservable from within, the CPT chapter). What would upgrade the reduction to a forcing (cutting 288 -> 1 up to parity): the arbiter's canonical seating -- the fork's total-lean sign / the -93 -- RE-DERIVED at our standard, owed (FC.6). This is the twin, at the frame level, of 61's count-3, 62's which-A2, and 64's unification: a genuine reduction. It does NOT touch the content map (K2, 63)",
+   "frm": [
+    "FC.3",
+    "FC.4"
+   ],
+   "grade": "POSTULATE",
+   "id": "FC.5",
+   "value": {
+    "builds_cx7_frame_alignment_rule": true,
+    "cut": "480 -> 288 aligned ticks (a real selector)",
+    "does_not_touch": "the content map (K2, 63)",
+    "downstream_premise_use": false,
+    "is_forcing": false,
+    "is_reduction": true,
+    "owed_to_force": "the arbiter's canonical seating (the fork's -93 lean) re-derived cold -> cuts 288 -> 1 up to parity",
+    "residual": "6 clock->axis labelings (S3 naming of {i,j,k}) x 48 ticks per labeling; plus the parity bit (free ZZ/2, P-violation)",
+    "twin_of": "61's count-3, 62's which-A2, 64's unification -- a reduction at the frame level"
+   },
+   "what": "(verdict, POSTULATE) The frame-alignment rule REDUCES the tick's canonicity -- the canonical frame labels the four clocks (each = one quaternion axis), a real cut 480->288 (64.CX.7's owed rule, BUILT). But a REDUCTION, not a forcing: the residual (6 axis-labelings, 48/labeling) leaves the tick not-unique; the parity bit is the free origin-sign. A unique tick needs the arbiter seating (owed)",
+   "why": "the corrected, disciplined standing -- and it is careful in BOTH directions. It does not dismiss the frame-alignment (the frame really does label the clocks and select 288/480 -- the over-negation of the first step-3 probe, CORRECTIONS #12, is repaired). It does not over-affirm (frame-alignment does NOT force a unique tick -- 6 labelings, 48 each remain; claiming a forcing would be the over-affirmation twin). So it lands as a reduction with the residual and the owed arbiter-seating named. No downstream premise rests on this reading; filed through 19, quarantined."
+  },
+  {
+   "check": null,
+   "determines": "OWED (the arbiter's canonical seating re-derived cold -> a forcing; plus K2)",
+   "expr": "OWED: (a) the arbiter's canonical seating -- the fork's total-lean sign (the -93 over the four clocks, the Keystone chapter) -- RE-DERIVED at our standard (target out of view), which would cut the residual 288 aligned ticks to a UNIQUE tick up to the parity bit, upgrading the reduction (FC.5) to a forcing; (b) failing that, a proof the residual is irreducible; (c) independently, the K2 content selection (which irreps are the fermions, 61/63). The fork's mass numbers -- including the neutron-proton splitting metered by the 116 of FC.4, and the proton ratio -- rest on this chain (the arbiter seating + K2) and stay CANDIDATE, not banked, while these are owed. Nothing is fitted; the refused-list binds",
+   "frm": [
+    "FC.5"
+   ],
+   "grade": "OWED",
+   "id": "FC.6",
+   "value": {
+    "fork_masses_status": "CANDIDATE (rest on the arbiter seating + K2, both owed); not banked",
+    "owed_arbiter_seating": "the fork's total-lean sign (-93) re-derived cold -> cuts 288 to a unique tick up to parity (a forcing)",
+    "owed_from_61_63": "the K2 content selection -- still the lone open input",
+    "owed_impossibility": "or a proof the residual (axis-labeling x 48) is irreducible",
+    "present": false
+   },
+   "what": "OWED: the arbiter's canonical origin/lean (the fork's -93) re-derived cold -- would cut the residual 288 to a unique tick up to parity (a forcing); plus the K2 content selection (61/63). Nothing fitted; the fork's mass numbers (incl. the 116-metered n-p splitting) stay CANDIDATE",
+   "why": "the honest residual, located and not attempted. The frame-alignment rule is built and reduces the arbiterness (480 -> 288); what remains to force a unique tick is the arbiter's canonical seating, and re-deriving it cold at our standard (not importing the fork's -93) is the next crossing. Even a unique tick would not close K2. The discipline holds: no mass value is assembled here; the fork's numbers wait on the arbiter seating and K2."
+  }
+ ],
+ "values": {
+  "antipode_fixes_each_clock": true,
+  "canonical_clock_to_axis": [
+   0,
+   1,
+   3,
+   2
+  ],
+  "canonical_tick_aligned": true,
+  "clock_sizes": [
+   30,
+   30,
+   30,
+   30
+  ],
+  "finding": "THE FOUR CLOCKS AND THE FRAME-ALIGNMENT RULE (Kevin: after 'look at the corpus again', the owed piece of 64.CX.7). The tick's four 30-clocks on the 120 (FC.1) are canonically labeled by the four quaternion axes {1,i,j,k} of the Galois-fixed canonical frame (FC.2: 24 Hurwitz, 8 axis units = the Q8 seam): EACH clock owns exactly one antipodal axis pair {+e,-e}, the antipode C^15=-I fixes each clock, and frame-alignment is a genuine SELECTOR -- 288 of 480 ticks align, in 6 labelings, 48 each (FC.3). So the canonical frame CUTS the tick arbitrariness 480 -> 288 -- 64.CX.7's owed frame-alignment rule, BUILT. The four clock-origins give 120-4 = 116 = 4x29 (the fork's n-p-splitting meter) cold as a count (FC.4). VERDICT (FC.5, POSTULATE): a REDUCTION toward canonicalizing the tick, NOT a forcing -- the residual (6 axis-labelings x 48) leaves the tick not-unique; the parity bit is the free origin-sign (P-violation). A unique tick needs the arbiter's canonical seating (the fork's -93 lean), OWED at our standard (FC.6) -- which would cut 288 -> 1 up to parity. Does not touch K2. The fork's mass numbers stay CANDIDATE. Nothing fitted.",
+  "n_aligned": 288,
+  "n_axis_pairs": 4,
+  "n_axis_units": 8,
+  "n_clock_seats": 120,
+  "n_clocks": 4,
+  "n_galois_fixed": 24,
+  "n_labelings": 6,
+  "n_lag_seats": 116,
+  "n_origins": 4,
+  "n_total_ticks": 480,
+  "ticks_per_labeling": 48
+ }
+}

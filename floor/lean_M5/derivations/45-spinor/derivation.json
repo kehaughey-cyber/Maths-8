@@ -1,0 +1,148 @@
+{
+ "container": "45-spinor",
+ "grades": {
+  "DERIVED": 2,
+  "OWED": 1,
+  "POSTULATE": 1
+ },
+ "steps": [
+  {
+   "check": "(-1)^2=+1 (order 2), central, conjugation by -1 = identity rotation, yet -1 != +1 -- the double-cover kernel",
+   "determines": "UNIQUE (-1 in 2I: order 2, central, conj = identity rotation, yet -1 != +1 -- the kernel)",
+   "expr": "the carrier 2I contains -1 = (-1,0,0,0): (-1)^2 = +1 (order 2), it is CENTRAL (commutes with i,j,k), and conjugation by -1 acts as the IDENTITY rotation on the vector part ((-1)v(-1)^-1 = v) -- so -1 maps to the identity in SO(3). It is the non-trivial element of the kernel {+-1} of the double cover SU(2)->SO(3) (28.W.2, 120=2*60). Yet -1 != +1 in SU(2)",
+   "frm": [
+    "28.W.2",
+    "06.6.2"
+   ],
+   "grade": "DERIVED",
+   "id": "SP.1",
+   "value": {
+    "central": true,
+    "conj_is_identity_rotation": true,
+    "conjugation_by_neg1": {
+     "i": [
+      0,
+      1,
+      0,
+      0
+     ],
+     "j": [
+      0,
+      0,
+      1,
+      0
+     ],
+     "k": [
+      0,
+      0,
+      0,
+      1
+     ]
+    },
+    "kernel": "-1 is the non-trivial element of ker(SU(2)->SO(3)) = {+-1} (28.W.2, 120=2*60)",
+    "neg1_ne_1": true,
+    "neg_one_squared": [
+     1,
+     0,
+     0,
+     0
+    ]
+   },
+   "what": "the central -1: 2I contains -1 (order 2, central), the non-trivial kernel of SU(2)->SO(3); conjugation by -1 = the identity rotation",
+   "why": "the seat of the spinor, sitting in the carrier. Container 28.W.2 established 2I is the 2:1 preimage of the icosahedral rotation group I under the double cover SU(2)->SO(3): |2I|=120=2*60, and the factor 2 is the kernel {+-1}. Here is that kernel, concretely: -1 = (-1,0,0,0) is in the carrier (it is 1*-1, the negative of the identity, present since 2I is a group closed under the quaternion product). RUN IT: (-1)^2 = +1 (order 2); -1 commutes with i,j,k (central); and conjugation q -> (-1)q(-1)^-1 fixes i,j,k -- so -1 acts as the IDENTITY on 3-space (SO(3)), i.e. it is a full 2*pi rotation, which is the identity rotation. BUT -1 != +1 as elements of SU(2). That gap -- a 2*pi rotation is the identity in SO(3) but -1 in SU(2) -- is the double cover being NON-TRIVIAL, and it is the seat of the spinor (SP.2)."
+  },
+  {
+   "check": "on the spinor rep: 2*pi acts as -1 (!= +1), 4*pi as +1 -- returns only after 4*pi (half-integer spin)",
+   "determines": "UNIQUE (2*pi acts as -1, 4*pi as +1 on the spinor rep -- 2-valued, half-integer spin)",
+   "expr": "on the 2-dimensional fundamental (spinor) representation, SU(2) acts DIRECTLY (not through SO(3)), so the 2*pi rotation acts as -1: psi -> -psi, and only the 4*pi rotation (= (2*pi)^2) returns psi -> +psi. The double cover being non-trivial (-1 != +1, SP.1) IS the 4*pi holonomy (38.DV.3). So the substrate carries 2-VALUED (spinor) representations -- half-integer spin -- alongside the single-valued (integer-spin) tensor reps of SO(3)",
+   "frm": [
+    "SP.1",
+    "38.DV.3"
+   ],
+   "grade": "DERIVED",
+   "id": "SP.2",
+   "value": {
+    "four_pi_acts_as": [
+     1,
+     0,
+     0,
+     0
+    ],
+    "meaning": "the substrate carries 2-valued (spinor / half-integer-spin) reps, not only SO(3)'s single-valued ones",
+    "same_double_cover": "= the 4*pi holonomy (38.DV.3), dim=3 (41/42), the 1/b flux (40)",
+    "spinor_returns_only_at_4pi": true,
+    "two_pi_acts_as": [
+     -1,
+     0,
+     0,
+     0
+    ]
+   },
+   "what": "the spinor: on the 2D fundamental rep a 2*pi turn sends psi -> -psi; only 4*pi returns it -- the substrate carries 2-valued (half-integer-spin) reps",
+   "why": "the spinor, forced -- what 38.DV.3 named as a reading. A representation of SO(3) is single-valued (a 2*pi rotation acts as +1 -- integer spin, tensors). But SU(2) = Spin(3) has representations SO(3) does NOT: the 2D fundamental, on which the carrier acts directly, where the central -1 (SP.1) acts as -1. So a 2*pi rotation sends a spinor psi -> -psi, and only 4*pi returns it to +psi. RUN IT: 2*pi acts as -1 (!= +1), 4*pi = (2*pi)^2 acts as +1. This is precisely the 4*pi total holonomy of 38.DV.3 (the substrate's twelve deficits sum to 4*pi = 2*(2*pi)) read on the reps: the substrate is spinorial, it distinguishes a 2*pi turn from no turn. Half-integer spin exists on the substrate -- forced by the carrier being the double cover 2I (not the single cover I), the same fact that gives dim=3 (41/42) and the 1/b light-bending flux (40). One structure, many faces."
+  },
+  {
+   "check": null,
+   "determines": "POSTULATE (spinors <-> fermions; spin-statistics cited pending the Lorentz structure; held)",
+   "expr": "filed through the 19 gate: spinorial matter (half-integer spin, the 4*pi objects of SP.2) is FERMIONIC -- antisymmetric, obeying Pauli exclusion. The substrate's spinor structure <-> the existence of fermions. The spin<->statistics LINK is CITED (the spin-statistics theorem needs the Lorentz/causal structure, not yet forced -- container 50). A CORRESPONDENCE, WEAK; the matter fields, the exclusion dynamics, values do NOT travel",
+   "frm": [
+    "SP.2",
+    "28.W.3"
+   ],
+   "grade": "POSTULATE",
+   "id": "SP.3",
+   "value": {
+    "correspondence": "substrate spinor structure <-> the existence of fermionic matter",
+    "does_not_travel": "the matter fields/census; the exclusion dynamics; any mass/value",
+    "downstream_premise_use": false,
+    "physics_side_cited": "half-integer spin => fermions (Pauli); the spin-statistics theorem needs the Lorentz structure (50)",
+    "spin_statistics_gated_on": "the metric signature / Lorentz structure (container 50)",
+    "substrate_side": "the carrier carries 2-valued spinor reps -- half-integer spin (SP.1-SP.2)"
+   },
+   "what": "the correspondence (filed through 19): spinorial (half-integer, 4*pi) matter is FERMIONIC (Pauli); spin-statistics CITED",
+   "why": "the physical entry, held to the 19 discipline. SUBSTRATE side (checked, SP.1-SP.2): the carrier carries 2-valued spinor reps -- half-integer spin, the objects that need 4*pi to return. PHYSICS side (cited): half-integer-spin fields are FERMIONS (antisymmetric wavefunctions, Pauli exclusion); the spin-statistics THEOREM ties spin to statistics -- but that theorem needs relativistic (Lorentz-invariant, causal) QFT, i.e. the metric SIGNATURE, which is NOT yet forced on the substrate (that is container 50). THE CORRESPONDENCE: the substrate's spinor structure <-> the existence of fermionic matter. FALSIFICATION: a substrate with no 2-valued reps could carry no fundamental fermions; ours does (SP.2). WHAT DOES NOT TRAVEL: which objects are the fermion fields (the matter census), the exclusion dynamics, any mass/value. And spin<->statistics itself is CITED, pending the Lorentz structure (50). A correspondence, quarantined; no downstream premise use."
+  },
+  {
+   "check": null,
+   "determines": "OWED (the fermion matter census; spin-statistics via the Lorentz structure (50); masses -- danger zone)",
+   "expr": "OWED: (a) WHICH substrate objects carry the spinor reps as fermion fields -- the matter census; (b) the spin-statistics connection re-derived on the substrate -- needs the signature/Lorentz structure (container 50); (c) masses and couplings of the matter -- the danger zone. The spinor STRUCTURE is forced; the matter content and dynamics are owed",
+   "frm": [
+    "SP.3"
+   ],
+   "grade": "OWED",
+   "id": "SP.4",
+   "value": {
+    "owed_census": "which substrate objects are the fermion fields -- the matter census",
+    "owed_masses": "matter masses and couplings -- danger zone",
+    "owed_spin_statistics": "the spin<->statistics connection re-derived -- needs the signature/Lorentz structure (container 50)",
+    "present": false
+   },
+   "what": "OWED: which substrate objects are fermion fields (matter census); spin-statistics re-derived (needs 50); masses/values (danger zone)",
+   "why": "the honest residual. SP.1-SP.2 force the spinor structure (2-valued reps, half-integer spin, the 4*pi return); SP.3 files the fermion correspondence. What remains: (a) the MATTER CENSUS -- which substrate objects actually carry these spinor reps as physical fermion fields (electrons, quarks, neutrinos) -- not addressed (matter sector); (b) SPIN-STATISTICS re-derived on the substrate rather than cited -- this needs the metric SIGNATURE / Lorentz structure (container 50 forces the signature; only then is a spin-statistics argument available); (c) the MASSES and couplings of the matter -- the danger zone, out. So the spinor structure is forced and danger-free; the matter it dresses is owed. NOT attempted further here."
+  }
+ ],
+ "values": {
+  "central": true,
+  "conj_is_identity": true,
+  "finding": "THE SPINOR STRUCTURE forced (38.DV.3 only NAMED it). The carrier 2I contains the central -1 (order 2, conjugation = identity rotation, yet -1 != +1) -- the non-trivial kernel of the double cover SU(2)->SO(3) (28.W.2, 120=2*60) (SP.1). On the 2D fundamental (spinor) rep a 2*pi rotation acts as -1 (psi -> -psi) and only 4*pi returns it -- so the substrate carries 2-VALUED (half-integer-spin) reps, the 4*pi holonomy of 38.DV.3 read on the reps (SP.2). Filed correspondence (SP.3, POSTULATE): spinors <-> FERMIONS (Pauli); spin-statistics CITED, pending the Lorentz structure (50). The matter census + spin-statistics re-derivation + masses are OWED (SP.4). Same double cover as dim=3 (41/42) and the 1/b flux (40). Danger-free; nothing fitted.",
+  "four_pi_acts_as": [
+   1,
+   0,
+   0,
+   0
+  ],
+  "neg_one_squared": [
+   1,
+   0,
+   0,
+   0
+  ],
+  "spinor_returns_only_at_4pi": true,
+  "two_pi_acts_as": [
+   -1,
+   0,
+   0,
+   0
+  ]
+ }
+}

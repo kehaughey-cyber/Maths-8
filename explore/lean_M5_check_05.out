@@ -1,0 +1,19 @@
+toolchain: Lean (version 4.33.0-rc1, x86_64-w64-windows-gnu, commit 62eed1db4d67327ec8120be05f1a1b0847d74561, Release)
+lean-toolchain file: v4.33.0-rc1
+mathlib libs found: ['LeanSearchClient', 'Qq', 'aesop', 'batteries', 'importGraph', 'mathlib', 'plausible', 'proofwidgets']
+71 modules in total, 2 selected (skipped: none); workers 2, timeout 10800s each
+
+Container05.EquidistantDimensionReal                    OK                   theorems   5 sorry 0 axiom-decls 0 imports Mathlib
+    'Container05.equidistant_affineIndependent' depends on axioms: [propext, Classical.choice, Quot.sound]
+    'Container05.equidistant_card_le_finrank_succ' depends on axioms: [propext, Classical.choice, Quot.sound]
+    'Container05.two_equidistant_force_line' depends on axioms: [propext, Classical.choice, Quot.sound]
+    'Container05.three_equidistant_force_plane' depends on axioms: [propext, Classical.choice, Quot.sound]
+    'Container05.four_equidistant_force_volume' depends on axioms: [propext, Classical.choice, Quot.sound]
+Container05.GeometricBridge                             OK                   theorems   9 sorry 0 axiom-decls 0 imports (none)
+    'Container05.det_IplusJ_2' does not depend on any axioms
+    'Container05.det_IplusJ_3' does not depend on any axioms
+    'Container05.triangle_indep' does not depend on any axioms
+    'Container05.tetrahedron_indep' does not depend on any axioms
+    'Container05.tetrahedron_gram_det' does not depend on any axioms
+
+summary: 2 compiled, 0 not  (of 2)

@@ -1,0 +1,149 @@
+{
+ "container": "28-weak-su2",
+ "grades": {
+  "DERIVED": 2,
+  "OWED": 1,
+  "POSTULATE": 1
+ },
+ "steps": [
+  {
+   "check": "[i,j]=2k, [j,k]=2i, [k,i]=2j -- the imaginary quaternions close to su(2); the internal 3 IS the weak Lie algebra",
+   "determines": "UNIQUE (the imaginary quaternions close under the commutator to the su(2) structure constants)",
+   "expr": "a quaternion splits scalar+vector (1+3); the vector part {i,j,k} (container 11's pure-imaginary / internal sector) closes under the Lie bracket [a,b]=ab-ba to su(2): [i,j]=2k, [j,k]=2i, [k,i]=2j -- so the weak Lie algebra su(2) IS the internal 3",
+   "frm": [
+    "06.2",
+    "11.I.2"
+   ],
+   "grade": "DERIVED",
+   "id": "W.1",
+   "value": {
+    "comm_i_j": [
+     0,
+     0,
+     0,
+     2
+    ],
+    "comm_j_k": [
+     0,
+     2,
+     0,
+     0
+    ],
+    "comm_k_i": [
+     0,
+     0,
+     2,
+     0
+    ],
+    "scalar_dim": 1,
+    "split_1_plus_3": true,
+    "step1_requirement": "the weak force is an SU(2) gauge symmetry (dim su(2) = 3 generators)",
+    "step2_location": "the carrier's ambient H; the vector part {i,j,k} = the internal 3",
+    "su2_is_the_internal_3": "the weak Lie algebra = the pure-imaginary / internal sector (11), 3 generators",
+    "su2_structure_closes": true,
+    "vector_dim": 3
+   },
+   "what": "su(2) IS the carrier's internal sector: the imaginary quaternions close under the commutator",
+   "why": "the pipeline's first landing, and the reason the weak force is the right first force. STEP 1, the REQUIREMENT: the weak force is an SU(2) gauge symmetry, whose Lie algebra su(2) has exactly 3 generators. STEP 2, the LOCATION: the carrier's ambient algebra is the quaternions H (container 06: the 120 icosians are unit quaternions), and a quaternion splits as scalar + vector = 1 + 3; the 3-dimensional VECTOR part is the pure-imaginary directions {i,j,k}, which is exactly container 11's INTERNAL (pure-imaginary) sector -- the non-spatial degrees of freedom. STEP 3/4, the CONDITION and CHECK: for that internal 3 to BE su(2) (not merely be 3-dimensional), the imaginary directions must close under the Lie bracket with su(2)'s structure constants. RUN IT: [i,j] = ij - ji = k - (-k) = 2k; [j,k] = 2i; [k,i] = 2j -- the su(2) commutation relations, exactly. So the substrate's internal sector IS the weak Lie algebra su(2); it is not something to be bolted on. This is 'look where it should be, and find it': the forces are internal, and the internal 3 is su(2). (The quaternion arithmetic is the carrier's own, container 06/11; this states a structural fact about it, no physics apparatus imported.)"
+  },
+  {
+   "check": "|2I|=120=2*60 (SU(2)->SO(3) double cover); dim su(2)=3 generators; the double cover = the substrate's chirality",
+   "determines": "UNIQUE (|2I| = 120 = 2*60 the double cover; dim su(2) = 3 generators)",
+   "expr": "SU(2) = the unit quaternions; the carrier 2I (06, 120 unit icosians closed under multiplication) is a finite subgroup of SU(2), order 120 = 2*60 -- the 2:1 double cover SU(2)->SO(3) (2I->I, icosahedral 60); SU(2) has exactly 3 generators = dim(internal-3); the double cover IS the substrate's chirality (no orientation-reversing self-maps), what the chiral weak force requires",
+   "frm": [
+    "W.1",
+    "06.3"
+   ],
+   "grade": "DERIVED",
+   "id": "W.2",
+   "value": {
+    "SU2_is_unit_quaternions": "SU(2) = the unit quaternions; 2I (06) is a finite subgroup, order 120",
+    "chirality": "the 2:1 double cover SU(2)->SO(3) (2I->I) = the substrate's chirality (maths-4), what chiral weak needs",
+    "double_cover_2to1": true,
+    "generators_match_internal_3": true,
+    "order_2I": 120,
+    "order_I": 60,
+    "step_requirement_met": "3 generators (dim su(2)) + chirality (double cover) both present in the carrier",
+    "su2_generators": 3
+   },
+   "what": "2I is a finite subgroup of SU(2) via the double cover 120=2*60; 3 generators; the chirality",
+   "why": "the location made precise, and the chirality condition met. SU(2) is (isomorphic to) the group of UNIT quaternions. The carrier 2I is container 06's 120 unit icosians, closed under multiplication (06.3 generates all 120 from two -- a group), so 2I is a FINITE SUBGROUP OF SU(2) of order 120. Its order factors 120 = 2 * 60: 2I is the 2:1 preimage of the icosahedral rotation group I (order 60) under the double cover SU(2) -> SO(3). That factor 2 is the SPIN double cover, and it is the substrate's own CHIRALITY -- maths-4 established 'orientation is chirality; zero orientation- reversing self-maps', the rotations cannot reverse a cycle. STEP 3/4 for chirality: the weak force is the one force that is CHIRAL (couples only to left-handed fermions), and the carrier sits inside SU(2) precisely via the chiral double cover -- the requirement and the structure match. And the generator count matches: dim su(2) = 3 = the internal-3 (W.1), the weak isospin generators. So the carrier realizes SU(2) with the right generator count AND the right chirality. (The 120-closure is 06's, cited not re-run; here: 120 = 2*60 and the generator count.)"
+  },
+  {
+   "check": null,
+   "determines": "POSTULATE (the filed correspondence weak-SU(2) <-> carrier; a reading, held, quarantined)",
+   "expr": "filed through the 19 gate: the weak gauge group SU(2) <-> the carrier's ambient SU(2) (2I subset SU(2), W.2); weak isospin (3 generators) <-> the internal su(2) (W.1); weak chirality <-> the substrate's double-cover chirality (W.2). A CORRESPONDENCE, never a premise; reps/breaking/coupling do NOT travel",
+   "frm": [
+    "W.1",
+    "W.2",
+    "06.2"
+   ],
+   "grade": "POSTULATE",
+   "id": "W.3",
+   "value": {
+    "correspondence": "weak gauge SU(2) <-> carrier's ambient SU(2); weak isospin <-> internal su(2); chirality <-> double cover",
+    "correspondence_not_resolution": true,
+    "downstream_premise_use": false,
+    "falsification_surface": "the carrier must be a subgroup of SU(2) (checked) and chiral (checked); a larger required group would fail",
+    "first_force_entry": "the pattern: forces = internal/carrier symmetry (gravity = the geometry, 13-24)",
+    "physics_side_cited": "the weak force is a chiral SU(2) gauge symmetry, 3 generators, broken (W/Z massive)",
+    "substrate_side": "2I subset SU(2) (W.2); su(2) = internal 3 (W.1); double cover = chirality (W.2)",
+    "weak_consistency_not_discrimination": true,
+    "what_does_not_travel": "matter representations; the symmetry breaking (Higgs, W/Z masses); the coupling value g_weak"
+   },
+   "what": "THE FILED ENTRY: the weak gauge group SU(2) <-> the carrier's ambient SU(2) (correspondence)",
+   "why": "the entry itself, the four parts (19's format). SUBSTRATE SIDE (checked): 2I is a finite subgroup of SU(2) (W.2), su(2) = the internal 3 (W.1), the double cover = the chirality (W.2). PHYSICS SIDE (cited, never re-derived): the weak force is a chiral SU(2) gauge symmetry, 3 generators, broken to give massive W+-/Z. THE CORRESPONDENCE: the weak gauge group SU(2) <-> the carrier's ambient SU(2); weak isospin charge <-> the internal su(2) generators; weak chirality <-> the substrate's chirality. WHAT DOES NOT TRAVEL: the matter REPRESENTATIONS (which fields are doublets), the symmetry BREAKING (the Higgs mechanism, the W/Z masses), and the COUPLING VALUE g_weak -- none of these is claimed. FALSIFICATION SURFACE: the carrier MUST be a subgroup of SU(2) (it is, W.2) and chiral (it is, W.2); if the weak force required a group the carrier is not inside, or a chirality it does not have, the correspondence would FAIL. It PASSES the consistency it asserts. This is a CORRESPONDENCE, not a resolution -- WEAK (consistency, not discrimination), exactly as the 21 gravity-curvature entry is; it is quarantined (downstream_premise_use=False), a reading no DERIVED step may rest on. It is the FIRST filed FORCE entry, establishing the pattern: forces = internal/carrier symmetry."
+  },
+  {
+   "check": null,
+   "determines": "OWED (the weak dynamics: breaking, W/Z masses, reps, the coupling g_weak; located, not closed)",
+   "expr": "the electroweak breaking (Higgs -> W+-/Z masses), the doublet representations, and the coupling value g_weak (its share of the couplings) are OWED; the masses are the DANGER ZONE (not attempted), the coupling value needs the internal alpha_hat work (container 27). Located, not closed",
+   "frm": [
+    "W.3",
+    "27.DA.4"
+   ],
+   "grade": "OWED",
+   "id": "W.4",
+   "value": {
+    "coupling_is_alpha_hat_type": "g_weak is a dimensionless coupling -> an alpha_hat quantity to FORCE not fit (27), refused-list respected",
+    "danger_zone": "the breaking and masses involve the matter census -- NOT attempted (no return-kernel/census)",
+    "located": "the weak GROUP + CHIRALITY are checked (W.1-W.3); the DYNAMICS + COUPLING are the forward work",
+    "not_attempted": true,
+    "owed": "electroweak breaking (Higgs -> W/Z masses); the doublet representations; the coupling g_weak",
+    "present": false
+   },
+   "what": "the weak DYNAMICS (breaking, masses, reps, coupling) is OWED -- masses = danger zone, not attempted",
+   "why": "the residual, located and NOT attempted -- the honest boundary. W.1-W.3 locate the weak gauge GROUP (SU(2)) and its chirality in the carrier, as a correspondence. What remains for the weak force to be more than a located group: (i) the SYMMETRY BREAKING -- electroweak SU(2)xU(1) -> U(1)_EM, the Higgs mechanism giving the W+- and Z their masses (the photon staying massless); (ii) the matter REPRESENTATIONS -- which substrate objects are the left-handed doublets; (iii) the COUPLING VALUE g_weak, hence the weak force's strength. (i) and (ii) involve MASSES and the matter census -- the DANGER ZONE -- and are NOT attempted here (no return-kernel, no census). (iii) is a dimensionless coupling, so per container 27 it is an alpha_hat-type quantity the substrate must FORCE (not fit), and it belongs with the internal-coupling work, respecting the refused-list. So the weak force's GROUP and CHIRALITY are located (checked, correspondence); its DYNAMICS and COUPLING are the forward work, located precisely. NOT attempted here."
+  }
+ ],
+ "values": {
+  "comm_i_j": [
+   0,
+   0,
+   0,
+   2
+  ],
+  "comm_j_k": [
+   0,
+   2,
+   0,
+   0
+  ],
+  "comm_k_i": [
+   0,
+   0,
+   2,
+   0
+  ],
+  "double_cover_2to1": true,
+  "finding": "the WEAK force located in the carrier: su(2) IS the internal sector (imaginary quaternions close under the commutator, [i,j]=2k etc. -- W.1), 2I is a finite subgroup of SU(2) via the 120=2*60 double cover with the right chirality (W.2); the correspondence weak-SU(2) <-> carrier is filed through the 19 gate (W.3, POSTULATE, WEAK -- reps/breaking/coupling do not travel); the dynamics + coupling are OWED (W.4). The pattern: forces = internal/carrier symmetry, gravity = the geometry (13-24).",
+  "first_force_entry": true,
+  "generators_match": true,
+  "order_2I": 120,
+  "order_I": 60,
+  "split_1_plus_3": true,
+  "su2_generators": 3,
+  "su2_structure_closes": true,
+  "vector_dim": 3
+ }
+}
